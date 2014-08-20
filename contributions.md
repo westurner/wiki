@@ -30,6 +30,36 @@ https://github.com/willkg/richard/
 * *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 
+
+# Salt Stack
+
+## Salt
+https://github.com/saltstack/salt
+
+* *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
+* *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
+* *ENH: Read Pillar files into OrderedDict to preserve source order* \* https://github.com/saltstack/salt/issues/12161
+* *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
+* *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
+* *Formula dependency management* \* https://github.com/saltstack/salt/issues/12179
+* *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)* \* https://github.com/saltstack/salt/issues/12183
+
+### apt-formula
+https://github.com/saltstack-formulas/apt-formula
+
+### dnsmasq-formula
+https://github.com/saltstack-formulas/dnsmasq-formula
+
+### nginx-formula
+https://github.com/saltstack-formulas/nginx-formula
+
+### openssh-formula
+https://github.com/saltstack-formulas/openssh-formula
+
+### salt-formula
+https://github.com/saltstack-formulas/salt-formula
+
+
 ## Seaborn
 https://github.com/mwaskom/seaborn
 
@@ -74,33 +104,6 @@ https://github.com/pypa/warehouse
 * *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
-# Salt Stack
-
-## Salt
-https://github.com/saltstack/salt
-
-* *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
-* *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
-* *ENH: Read Pillar files into OrderedDict to preserve source order* https://github.com/saltstack/salt/issues/12161
-* *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
-* *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
-* *Formula dependency management* https://github.com/saltstack/salt/issues/12179
-* *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)* https://github.com/saltstack/salt/issues/12183
-
-## nginx-formula
-https://github.com/saltstack-formulas/nginx-formula
-
-## dnsmasq-formula
-https://github.com/saltstack-formulas/dnsmasq-formula
-
-## apt-formula
-https://github.com/saltstack-formulas/apt-formula
-
-## salt-formula
-https://github.com/saltstack-formulas/salt-formula
-
-## openssh-formula
-https://github.com/saltstack-formulas/openssh-formula
 
 # Docs
 
