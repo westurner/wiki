@@ -121,10 +121,20 @@ https://github.com/pypa/warehouse
 ## Scipy-lecture-notes
 https://github.com/scipy-lectures/scipy-lecture-notes
 
-## jrjo
+* *Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
+* *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
+
+
+## scientific-python-lectures
+https://github.com/jrjohansson/scientific-python-lectures
+
+* *Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
 
 ## datasciencemasters
 https://github.com/datasciencemasters/go/
+
+* *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
+* *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization  * https://github.com/datasciencemasters/go/pull/29
 
 # Awesomeness
 
@@ -132,5 +142,4 @@ https://github.com/datasciencemasters/go/
 * https://github.com/vinta/awesome-python
 * https://github.com/dypsilon/frontend-dev-bookmarks
 * https://github.com/bento-io/collection
-
 * https://github.com/samsquire/ideas
