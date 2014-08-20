@@ -7,6 +7,7 @@ https://github.com/ipython/nbviewer
 ## pandas
 https://github.com/pydata/pandas
 
+* *ENH: Linked Datasets (RDF)* \* https://github.com/pydata/pandas/issues/3402
 * *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
 * *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
