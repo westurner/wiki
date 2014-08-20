@@ -65,6 +65,8 @@ https://github.com/vladris/tinkerer
 ## turses
 https://github.com/alejandrogomez/turses
 
+* *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
+* *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
 
 ## warehouse
 https://github.com/pypa/warehouse
@@ -72,11 +74,15 @@ https://github.com/pypa/warehouse
 * *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
-
 # Salt Stack
 
 ## Salt
 https://github.com/saltstack/salt
+
+* *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
+* *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
+* *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
+
 
 ## nginx-formula
 https://github.com/saltstack-formulas/nginx-formula
