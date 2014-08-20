@@ -1,6 +1,4 @@
 # tags
-
-
 ```
 FEAT: Feature
 ENH: Enhancement
@@ -12,8 +10,8 @@ PERF: Performance
 CLN: Cleanup
 SEC: Security
 ```
+-- adapted from [pandas/CONTRIBUTING.md](https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md)
 
--- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md#pull-requests>`_
 
 # code
 
