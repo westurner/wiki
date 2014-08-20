@@ -25,12 +25,12 @@ Tools
 
 Personal
 
-* https://github.com/westurner/westurner.github.io
 * https://bitbucket.org/westurner/westurner.bitbucket.org
+* https://github.com/westurner/westurner.github.io
 * https://github.com/westurner/wiki
 * https://github.com/westurner/dotfiles
 * https://github.com/westurner/dotvim
-* https://bitbucket.org/westurner/hello_world
-* https://westurner.github.io/redditlog
+* https://github.com/westurner/hello_world
+* https://github.com/westurner/redditlog
 * https://github.com/westurner/healthref
 * https://github.com/westurner/USA
