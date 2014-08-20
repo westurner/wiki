@@ -24,6 +24,11 @@ https://github.com/Pylons/pyramid
 * *DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)* https://github.com/Pylons/pyramid/commit/f1f35b7
 * *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
 
+## redditlog
+https://github.com/westurner/redem
+
+* https://github.com/westurner/redditlog
+
 ## richard
 https://github.com/willkg/richard/
 
