@@ -2,13 +2,14 @@
 
 
 ## Repositories
-* My Repositories: https://bitbucket.org/dashboard/overview
-* My Repositories: https://bitbucket.org/dashboard/overview?section=mine
-* My Repositories: https://bitbucket.org/westurner/profile/repositories
+* Repositories: https://bitbucket.org/dashboard/overview
+* Repositories: https://bitbucket.org/dashboard/overview?section=mine
+* Repositories: https://bitbucket.org/westurner/profile/repositories
 
 ## Activity
 
-* My Public Activity: https://bitbucket.org/dashboard/overview
+* Activities: https://bitbucket.org/dashboard/overview
+* Activities: https://bitbucket.org/westurner/profile/activity
 * Contributions (Pull Requests): https://www.google.com/search?q=site%3Abitbucket.org+inurl%3Apull-request+westurner
 
 ## Pull Requests
