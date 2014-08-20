@@ -3,7 +3,9 @@
 - [x] https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
 - [x] [resume_wes-turner.rst](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.rst)
 - [x] [resume.html](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/html/resume.html)
+ ([web](http://westurner.github.io/resume/html/resume.html))
 - [x] [resume.html (singlehtml)](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/singlehtml/resume.html)
+ ([web](http://westurner.github.io/resume/singlehtml/resume.html))
 - [x] [resume_wes-turner.tex](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.tex)
 - [x] [resume_wes-turner.pdf](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.pdf)
 - [x] [resume_wes-turner.odf](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.odf)
