@@ -34,6 +34,7 @@ Personal
 * https://github.com/westurner/dotfiles ([docs](http://wrdfiles.readthedocs.org/en/latest/))
 * https://github.com/westurner/dotvim ([docs](http://wrdfiles.readthedocs.org/en/latest/usage.html#vim))
 * https://github.com/westurner/hello_world
+* [Resume Portfolio (Screenshot Gallery)](https://plus.google.com/photos/114596103453008801526/albums/5232361918341295905)
 * https://github.com/westurner/redditlog
   ([web](https://westurner.github.io/redditlog/))
 * https://github.com/westurner/healthref
