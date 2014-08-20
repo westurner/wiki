@@ -82,7 +82,9 @@ https://github.com/saltstack/salt
 * *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
 * *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
 * *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
-
+* *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
+* *Formula dependency management* https://github.com/saltstack/salt/issues/12179
+* *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)* https://github.com/saltstack/salt/issues/12183
 
 ## nginx-formula
 https://github.com/saltstack-formulas/nginx-formula
