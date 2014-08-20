@@ -1,3 +1,9 @@
+## fixture
+https://github.com/fixture-py/fixture
+
+* *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
+
+
 ## nbviewer
 https://github.com/ipython/nbviewer
 
@@ -18,6 +24,7 @@ https://github.com/briandailey/pycon-2014-job-fair
 * *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
 * *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
 
+
 ## pyramid
 https://github.com/Pylons/pyramid
 
@@ -25,11 +32,13 @@ https://github.com/Pylons/pyramid
 * *DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)* https://github.com/Pylons/pyramid/commit/f1f35b7
 * *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
 
+
 ## redditlog
 https://github.com/westurner/redem
 
 * https://westurner.github.io/redditlog/
 * https://github.com/westurner/redditlog
+
 
 ## richard
 https://github.com/willkg/richard/
@@ -48,6 +57,7 @@ https://github.com/saltstack/salt
 * *Formula dependency management* \* https://github.com/saltstack/salt/issues/12179
 * *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)* \* https://github.com/saltstack/salt/issues/12183
 
+
 ### apt-formula
 https://github.com/saltstack-formulas/apt-formula
 
@@ -55,11 +65,13 @@ https://github.com/saltstack-formulas/apt-formula
 * *ENH: Add apt.transports.https and apt.transports.debtorrent* https://github.com/saltstack-formulas/apt-formula/pull/6
 * *ENH: Add apt.ppa for pkg:python-software-properties (add-apt-repository)* https://github.com/saltstack-formulas/apt-formula/pull/7
 
+
 ### dnsmasq-formula
 https://github.com/saltstack-formulas/dnsmasq-formula
 
 * *ENH: Add dnsmasq.absent (pkg, service)* https://github.com/saltstack-formulas/dnsmasq-formula/pull/4
 * *DOC: Update README.rst: formatting, Available states* https://github.com/saltstack-formulas/dnsmasq-formula/pull/5
+
 
 ### nginx-formula
 https://github.com/saltstack-formulas/nginx-formula
@@ -73,10 +85,12 @@ https://github.com/saltstack-formulas/openssh-formula
 
 * *ENH: Add a UseDNS option* https://github.com/saltstack-formulas/openssh-formula/pull/13
 
+
 ### salt-formula
 https://github.com/saltstack-formulas/salt-formula
 
 * *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
+
 
 ## seaborn
 https://github.com/mwaskom/seaborn
@@ -95,26 +109,31 @@ https://github.com/tell-k/sphinxjp.themes.basicstrap
 
 * *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
 
+
 ## sphinx_rtd_theme
 https://github.com/snide/sphinx_rtd_theme
 
 * *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+
 
 ## readthedocs.org
 https://github.com/rtfd/readthedocs.org
 
 * *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
+
 ## tinkerer
 https://github.com/vladris/tinkerer
 
 * *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
+
 
 ## turses
 https://github.com/alejandrogomez/turses
 
 * *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 * *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
+
 
 ## version_information
 https://github.com/jrjohansson/version_information
@@ -127,7 +146,6 @@ https://github.com/jrjohansson/version_information
 https://github.com/pypa/warehouse
 
 * *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
-
 
 
 # docs
