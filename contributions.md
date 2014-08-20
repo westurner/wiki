@@ -55,11 +55,16 @@ https://github.com/snide/sphinx_rtd_theme
 ## readthedocs.org
 https://github.com/rtfd/readthedocs.org
 
+* *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+
 ## tinkerer
 https://github.com/vladris/tinkerer
 
+* *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
+
 ## turses
 https://github.com/alejandrogomez/turses
+
 
 ## warehouse
 https://github.com/pypa/warehouse
