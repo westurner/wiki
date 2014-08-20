@@ -27,3 +27,39 @@
 * http://www.githubarchive.org/
 * https://github.com/igrigorik/githubarchive.org/tree/master/bigquery
 * https://bigquery.cloud.google.com/ (project:githubarchive)
+
+### My Activity
+
+```sql
+SELECT actor, repository_url, created_at, payload_action, url, type
+FROM [githubarchive:github.timeline]
+WHERE
+  actor=="westurner"
+LIMIT 1000
+```
+
+### My Activity (-WatchEvent)
+
+```sql
+SELECT actor, repository_url, created_at, payload_action, url, type
+FROM [githubarchive:github.timeline]
+WHERE
+  actor=="westurner"
+  and
+  type!="WatchEvent"
+ORDER BY created_at
+LIMIT 1000
+```
+
+### My Activity - Started Following
+
+```sql
+SELECT repository_url, created_at
+FROM [githubarchive:github.timeline]
+WHERE
+  actor=="westurner"
+  AND
+  payload_action=="started"
+ORDER BY created_at
+LIMIT 500
+```
