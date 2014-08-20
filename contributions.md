@@ -1,12 +1,7 @@
 ## nbviewer
 https://github.com/ipython/nbviewer
 
-* 
-
-
-## PyCon 2014 Job Survey Analysis
-https://github.com/briandailey/pycon-2014-job-fair
-
+* *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
 ## pandas
@@ -14,6 +9,13 @@ https://github.com/pydata/pandas
 
 * *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
 * *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
+
+
+## PyCon 2014 Job Survey Analysis
+https://github.com/briandailey/pycon-2014-job-fair
+
+* *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
+* *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
 
 ## Pyramid
 https://github.com/Pylons/pyramid
