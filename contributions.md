@@ -20,7 +20,9 @@ https://github.com/briandailey/pycon-2014-job-fair
 ## Pyramid
 https://github.com/Pylons/pyramid
 
-
+* *DOC: XSS in quicktour/views/views.py* https://github.com/Pylons/pyramid/issues/1294
+* *DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)* https://github.com/Pylons/pyramid/commit/f1f35b7
+* *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
 
 ## richard
 https://github.com/willkg/richard/
