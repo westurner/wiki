@@ -21,3 +21,6 @@
 - [x] [accounts.html](https://github.com/westurner/westurner.github.io/blob/source/_themes/flat5000/accounts.html)
 - [x] https://westurner.github.io/resume (redirect)
 - [ ] https://github.com/westurner/resume (November 2013)
+- [ ] http://resume.wrd.nu/skills (~2010)
+- [ ] http://resume.wrd.nu/skills
+- [ ] http://resume.wrd.nu/portfolio
