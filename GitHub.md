@@ -11,3 +11,9 @@
 * My Public Activity: https://github.com/westurner?tab=activity
 * Contributions: Past Month: https://github.com/westurner?tab=contributions&period=monthly
 * Contributions: Past Week: https://github.com/westurner?tab=contributions&period=weekly
+
+* Pull Requests (Open): https://github.com/dashboard/pulls?direction=desc&page=1&sort=created&state=open
+* Pull Requests (Closed): https://github.com/dashboard/pulls?direction=desc&page=1&sort=created&state=closed
+
+* Issues (Open): https://github.com/dashboard/issues?direction=desc&page=1&repos=true&sort=created&state=open
+* Issues (Closed): https://github.com/dashboard/issues?direction=desc&page=1&repos=true&sort=created&state=closed
