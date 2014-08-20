@@ -1,1 +1,1 @@
-Welcome to the projects wiki!
+https://github.com/westurner/wiki/wiki
