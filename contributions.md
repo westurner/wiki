@@ -7,7 +7,7 @@ https://github.com/twbs/bootstrap
 ## conda
 https://github.com/conda/conda
 
-- [ ] *ENH: Mirroring/caching support* \* https://github.com/conda/conda/issues/414
+- [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
 
 ## fixture
 https://github.com/fixture-py/fixture
@@ -30,7 +30,7 @@ https://github.com/ipython/nbviewer
 ## pandas
 https://github.com/pydata/pandas
 
-- [ ] *ENH: Linked Datasets (RDF)* \* https://github.com/pydata/pandas/issues/3402
+- [ ] *ENH: Linked Datasets (RDF)*  https://github.com/pydata/pandas/issues/3402
 - [X] *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
 - [X] *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
@@ -68,11 +68,11 @@ https://github.com/saltstack/salt
 
 - [X] *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
 - [X] *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
-- [ ] *ENH: Read Pillar files into OrderedDict to preserve source order* \* https://github.com/saltstack/salt/issues/12161
+- [ ] *ENH: Read Pillar files into OrderedDict to preserve source order*  https://github.com/saltstack/salt/issues/12161
 - [X] *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
 - [X] *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
-- [ ] *Formula dependency management* \* https://github.com/saltstack/salt/issues/12179
-- [ ] *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)* \* https://github.com/saltstack/salt/issues/12183
+- [ ] *Formula dependency management*  https://github.com/saltstack/salt/issues/12179
+- [ ] *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)*  https://github.com/saltstack/salt/issues/12183
 
 
 ### apt-formula
@@ -196,7 +196,7 @@ https://github.com/scipy-lectures/scipy-lecture-notes
 
 - [X] https://github.com/bayandin/awesome-awesomeness
 - [X] https://github.com/onurakpolat/awesome-bigdata
-- [ ] https://github.com/josephmisiti/awesome-machine-learning \*
+- [ ] https://github.com/josephmisiti/awesome-machine-learning 
 - [X] https://github.com/vinta/awesome-python
 - [X] https://github.com/dypsilon/frontend-dev-bookmarks
 - [X] https://github.com/bento-io/collection
