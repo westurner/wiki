@@ -9,16 +9,16 @@ https://github.com/fixture-py/fixture
 * *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
 
 
-## nbviewer
-https://github.com/ipython/nbviewer
-
-* *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
-
-
 ## ipython
 https://github.com/ipython/ipython
 
 * *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
+
+
+## nbviewer
+https://github.com/ipython/nbviewer
+
+* *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
 ## pandas
