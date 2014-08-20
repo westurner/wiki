@@ -1,7 +1,7 @@
 Projects
 
-* https://github.com/westurner/provis
-* https://github.com/westurner/self-directed-learning
+* https://github.com/westurner/provis ([docs](http://provis.readthedocs.org/en/latest/))
+* https://github.com/westurner/self-directed-learning ([docs](http://self-directed-learning.readthedocs.org/en/latest/))
 * https://github.com/westurner/menuapp
 * https://bitbucket.org/westurner/nhs-social-web
 * https://bitbucket.org/westurner/presense
@@ -16,8 +16,8 @@ Tools
 * https://github.com/westurner/pkgsetcomp
 * https://github.com/westurner/pycd10api
 * https://bitbucket.org/westurner/pyjobsearch
-* https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline))
-* https://github.com/westurner/pyrpo ([pypi](https://pypi.python.org/pypi/pyrpo))
+* https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline)) ([docs](http://pyline.readthedocs.org/en/latest/))
+* https://github.com/westurner/pyrpo ([pypi](https://pypi.python.org/pypi/pyrpo)) ([docs](http://pyrpo.readthedocs.org/en/latest/))
 * https://bitbucket.org/westurner/pyrtm-task-cli
 * https://bitbucket.org/westurner/pywifiloc
 * https://github.com/westurner/redem
