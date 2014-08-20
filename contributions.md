@@ -115,6 +115,13 @@ https://github.com/alejandrogomez/turses
 * *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 * *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
 
+## version_information
+https://github.com/jrjohansson/version_information
+
+* *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
+* *Added check for pkg_resources version and extended __doc__* https://github.com/jrjohansson/version_information/pull/3
+
+
 ## warehouse
 https://github.com/pypa/warehouse
 
