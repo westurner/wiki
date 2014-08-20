@@ -33,7 +33,7 @@ Personal
 * https://github.com/westurner/westurner.github.io
   ([westurner.github.io](https://westurner.github.io/))
 * https://github.com/westurner/wiki/wiki
-* https://github.com/westurner/wiki/wiki/resume ([westurner.github.io/resume](https://westurner.github.io/resume))
+* https://github.com/westurner/wiki/wiki/resume ([westurner.github.io/resume](https://westurner.github.io/pages/resume))
 * https://github.com/westurner/wiki/wiki/projects
 * https://github.com/westurner/wiki/wiki/contributions
 * https://github.com/westurner/dotfiles ([docs](http://wrdfiles.readthedocs.org/en/latest/))
