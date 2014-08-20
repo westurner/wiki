@@ -2,6 +2,7 @@ Projects
 
 * https://github.com/westurner/provis
 * https://github.com/westurner/self-directed-learning
+* https://github.com/westurner/menuapp
 * https://bitbucket.org/westurner/nhs-social-web
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
