@@ -27,6 +27,7 @@ https://github.com/Pylons/pyramid
 ## redditlog
 https://github.com/westurner/redem
 
+* https://westurner.github.io/redditlog/
 * https://github.com/westurner/redditlog
 
 ## richard
