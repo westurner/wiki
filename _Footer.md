@@ -6,5 +6,4 @@
 - [/github](https://github.com/westurner/wiki/wiki/GitHub)
 - [/bitbucket](https://github.com/westurner/wiki/wiki/BitBucket)
 
-
 -- [westurner.github.io](https://westurner.github.io/)
