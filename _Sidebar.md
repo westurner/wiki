@@ -1,1 +1,2 @@
-\- [westurner/ideas](https://github.com/westurner/ideas)
+\- [westurner/projects](https://github.com/westurner/ideas/wiki)
+\- [westurner/ideas](https://github.com/westurner/ideas/wiki)
