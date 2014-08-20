@@ -1,6 +1,7 @@
 ## Sphinx
 https://bitbucket.org/birkenfeld/sphinx
 
+* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
 * https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 
 ## Seaborn
