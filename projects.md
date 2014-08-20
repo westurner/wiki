@@ -14,6 +14,7 @@ Tools
 * https://github.com/westurner/cookiecutter-saltformula
 * https://github.com/westurner/pkgsetcomp
 * https://github.com/westurner/pycd10api
+* https://github.com/westurner/pygments-style-jellywrd
 * https://bitbucket.org/westurner/pyjobsearch
 * https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline)) ([docs](http://pyline.readthedocs.org/en/latest/))
 * https://github.com/westurner/pyrpo ([pypi](https://pypi.python.org/pypi/pyrpo)) ([docs](http://pyrpo.readthedocs.org/en/latest/))
