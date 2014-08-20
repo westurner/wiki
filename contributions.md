@@ -44,18 +44,32 @@ https://github.com/saltstack/salt
 ### apt-formula
 https://github.com/saltstack-formulas/apt-formula
 
+* *DOC: Use full state names; add RST formatting* https://github.com/saltstack-formulas/apt-formula/pull/5
+* *ENH: Add apt.transports.https and apt.transports.debtorrent* https://github.com/saltstack-formulas/apt-formula/pull/6
+* *ENH: Add apt.ppa for pkg:python-software-properties (add-apt-repository)* https://github.com/saltstack-formulas/apt-formula/pull/7
+
 ### dnsmasq-formula
 https://github.com/saltstack-formulas/dnsmasq-formula
+
+* *ENH: Add dnsmasq.absent (pkg, service)* https://github.com/saltstack-formulas/dnsmasq-formula/pull/4
+* *DOC: Update README.rst: formatting, Available states* https://github.com/saltstack-formulas/dnsmasq-formula/pull/5
 
 ### nginx-formula
 https://github.com/saltstack-formulas/nginx-formula
 
+* *ENH: Add install_from_ppa pillar setting and PPA pkgrepo* https://github.com/saltstack-formulas/nginx-formula/pull/42
+* *BUG: pkgrepo.absent, pkgrepo:watch_in(pkg), install_from_ppa* https://github.com/saltstack-formulas/nginx-formula/pull/44
+
+
 ### openssh-formula
 https://github.com/saltstack-formulas/openssh-formula
+
+* *ENH: Add a UseDNS option* https://github.com/saltstack-formulas/openssh-formula/pull/13
 
 ### salt-formula
 https://github.com/saltstack-formulas/salt-formula
 
+* *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
 
 ## Seaborn
 https://github.com/mwaskom/seaborn
