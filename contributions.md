@@ -81,6 +81,7 @@ https://github.com/saltstack/salt
 
 * *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
 * *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
+* *ENH: Read Pillar files into OrderedDict to preserve source order* https://github.com/saltstack/salt/issues/12161
 * *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
 * *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
 * *Formula dependency management* https://github.com/saltstack/salt/issues/12179
