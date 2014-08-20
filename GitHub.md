@@ -9,6 +9,7 @@
 * My Public Activity: https://github.com/westurner?tab=activity
 * Contributions: Past Month: https://github.com/westurner?tab=contributions&period=monthly
 * Contributions: Past Week: https://github.com/westurner?tab=contributions&period=weekly
+* Mentions: https://www.google.com/search?q=site%3Agithub.com+"%40westurner"
 
 ## Pull Requests
 
