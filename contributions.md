@@ -30,9 +30,6 @@ https://github.com/willkg/richard/
 * *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 
-
-# Salt Stack
-
 ## Salt
 https://github.com/saltstack/salt
 
