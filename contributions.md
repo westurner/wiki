@@ -161,6 +161,10 @@ https://github.com/datasciencemasters/go/
 * *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 * *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
+## schema-org-rdf
+https://github.com/mhausenblas/schema-org-rdf
+
+* *Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
 
 ## scientific-python-lectures
 https://github.com/jrjohansson/scientific-python-lectures
