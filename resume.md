@@ -1,6 +1,14 @@
 - [x] https://westurner.github.io/pages/resume (April 2014)
 - [x] https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
 - [x] https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.rst
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/html/resume.html
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/singlehtml/resume.html
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.tex
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.pdf
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.odf
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.doc
+- [x] https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.docx
 - [x] https://github.com/westurner/westurner.github.io/blob/source/Makefile
 - [x] https://westurner.github.io/resume (redirect)
 - [ ] https://github.com/westurner/resume (November 2013)
