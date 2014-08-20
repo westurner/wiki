@@ -20,6 +20,7 @@ Tools
 * https://bitbucket.org/westurner/pyrtm-task-cli
 * https://bitbucket.org/westurner/pywifiloc
 * https://github.com/westurner/redem
+* https://github.com/westurner/vim2vim
 * https://bitbucket.org/westurner/workhours
 
 Personal
@@ -30,5 +31,6 @@ Personal
 * https://github.com/westurner/dotfiles
 * https://github.com/westurner/dotvim
 * https://bitbucket.org/westurner/hello_world
+* https://westurner.github.io/redditlog
 * https://github.com/westurner/healthref
 * https://github.com/westurner/USA
