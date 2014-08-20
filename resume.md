@@ -2,6 +2,5 @@
 - [x] https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
 - [x] https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
 - [x] https://github.com/westurner/westurner.github.io/blob/source/Makefile
-
 - [x] https://westurner.github.io/resume (redirect)
 - [ ] https://github.com/westurner/resume (November 2013)
