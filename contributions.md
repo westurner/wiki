@@ -1,3 +1,8 @@
+## nbviewer
+https://github.com/ipython/nbviewer
+
+* 
+
 ## Sphinx
 https://bitbucket.org/birkenfeld/sphinx
 
@@ -10,11 +15,7 @@ https://github.com/mwaskom/seaborn
 ## PyCon 2014 Job Survey Analysis
 https://github.com/briandailey/pycon-2014-job-fair
 
-## Pyramid
-https://github.com/Pylons/pyramid
 
-## warehouse
-https://github.com/pypa/warehouse
 
 ## pandas
 https://github.com/pydata/pandas
@@ -22,8 +23,15 @@ https://github.com/pydata/pandas
 * *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
 * *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
+## Pyramid
+https://github.com/Pylons/pyramid
+
+
+
 ## richard
 https://github.com/willkg/richard/
+
+* *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 ## Sphinxjp.themes.basicstrap
 https://github.com/tell-k/sphinxjp.themes.basicstrap
@@ -40,8 +48,11 @@ https://github.com/vladris/tinkerer
 ## turses
 https://github.com/alejandrogomez/turses
 
-## nbviewer
-https://github.com/ipython/nbviewer
+## warehouse
+https://github.com/pypa/warehouse
+
+* https://github.com/pypa/warehouse/pull/263
+
 
 
 # Salt Stack
