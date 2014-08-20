@@ -11,13 +11,13 @@ https://github.com/pydata/pandas
 * *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
 
-## PyCon 2014 Job Survey Analysis
+## pycon 2014 job survey analysis
 https://github.com/briandailey/pycon-2014-job-fair
 
 * *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
 * *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
 
-## Pyramid
+## pyramid
 https://github.com/Pylons/pyramid
 
 * *DOC: XSS in quicktour/views/views.py* https://github.com/Pylons/pyramid/issues/1294
@@ -30,7 +30,7 @@ https://github.com/willkg/richard/
 * *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 
-## Salt
+## salt
 https://github.com/saltstack/salt
 
 * *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
@@ -71,19 +71,19 @@ https://github.com/saltstack-formulas/salt-formula
 
 * *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
 
-## Seaborn
+## seaborn
 https://github.com/mwaskom/seaborn
 
 * 
 
-## Sphinx
+## sphinx
 https://bitbucket.org/birkenfeld/sphinx
 
 * *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
 * *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 
 
-## Sphinxjp.themes.basicstrap
+## sphinxjp.themes.basicstrap
 https://github.com/tell-k/sphinxjp.themes.basicstrap
 
 * *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
@@ -116,14 +116,13 @@ https://github.com/pypa/warehouse
 
 
 
-# Docs
+# docs
 
-## Scipy-lecture-notes
+## scipy-lecture-notes
 https://github.com/scipy-lectures/scipy-lecture-notes
 
 * *Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
 * *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
-
 
 ## scientific-python-lectures
 https://github.com/jrjohansson/scientific-python-lectures
@@ -136,7 +135,7 @@ https://github.com/datasciencemasters/go/
 * *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 * *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization  * https://github.com/datasciencemasters/go/pull/29
 
-# Awesomeness
+# awesome
 
 * https://github.com/bayandin/awesome-awesomeness
 * https://github.com/vinta/awesome-python
