@@ -15,6 +15,12 @@ https://github.com/ipython/nbviewer
 * *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
+## ipython
+https://github.com/ipython/ipython
+
+* *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
+
+
 ## pandas
 https://github.com/pydata/pandas
 
@@ -154,6 +160,7 @@ https://github.com/pypa/warehouse
 
 
 # docs
+
 
 ## datasciencemasters
 https://github.com/datasciencemasters/go/
