@@ -146,7 +146,7 @@ https://github.com/jrjohansson/scientific-python-lectures
 https://github.com/datasciencemasters/go/
 
 * *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
-* *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization  * https://github.com/datasciencemasters/go/pull/29
+* *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
 # awesome
 
