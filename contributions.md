@@ -3,14 +3,6 @@ https://github.com/ipython/nbviewer
 
 * 
 
-## Sphinx
-https://bitbucket.org/birkenfeld/sphinx
-
-* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
-* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
-
-## Seaborn
-https://github.com/mwaskom/seaborn
 
 ## PyCon 2014 Job Survey Analysis
 https://github.com/briandailey/pycon-2014-job-fair
@@ -33,11 +25,28 @@ https://github.com/willkg/richard/
 
 * *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
+
+## Seaborn
+https://github.com/mwaskom/seaborn
+
+* 
+
+## Sphinx
+https://bitbucket.org/birkenfeld/sphinx
+
+* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
+* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
+
+
 ## Sphinxjp.themes.basicstrap
 https://github.com/tell-k/sphinxjp.themes.basicstrap
 
+* *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
+
 ## sphinx_rtd_theme
 https://github.com/snide/sphinx_rtd_theme
+
+* *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 ## readthedocs.org
 https://github.com/rtfd/readthedocs.org
@@ -51,7 +60,7 @@ https://github.com/alejandrogomez/turses
 ## warehouse
 https://github.com/pypa/warehouse
 
-* https://github.com/pypa/warehouse/pull/263
+* *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
 
