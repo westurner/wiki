@@ -60,7 +60,7 @@ https://github.com/Pylons/pyramid
 ### cpython
 http://hg.python.org/cpython
 
-* [X] *ENH:random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
+* [X] *ENH: random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
 
 ## redditlog
 https://github.com/westurner/redem
