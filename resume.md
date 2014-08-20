@@ -10,5 +10,6 @@
 - [x] [resume_wes-turner.doc](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.doc)
 - [x] [resume_wes-turner.docx](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.docx)
 - [x] https://github.com/westurner/westurner.github.io/blob/source/Makefile
+- [x] [accounts.html](https://github.com/westurner/westurner.github.io/blob/source/_themes/flat5000/accounts.html)
 - [x] https://westurner.github.io/resume (redirect)
 - [ ] https://github.com/westurner/resume (November 2013)
