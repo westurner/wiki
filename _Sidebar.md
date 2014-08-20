@@ -1,2 +1,2 @@
-- [westurner/projects](https://github.com/westurner/projects/wiki)
-- [westurner/ideas](https://github.com/westurner/ideas/wiki)
+- [/projects](https://github.com/westurner/wiki/wiki/projects)
+- [/ideas](https://github.com/westurner/wiki/wiki/ideas)
