@@ -24,3 +24,4 @@
 - [ ] http://resume.wrd.nu/skills (~2010)
 - [ ] http://resume.wrd.nu/skills
 - [ ] http://resume.wrd.nu/portfolio
+- [ ] https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
