@@ -16,8 +16,8 @@ Tools
 * https://github.com/westurner/pkgsetcomp
 * https://github.com/westurner/pycd10api
 * https://bitbucket.org/westurner/pyjobsearch
-* https://github.com/westurner/pyline
-* https://github.com/westurner/pyrpo
+* https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline))
+* https://github.com/westurner/pyrpo ([pypi](https://pypi.python.org/pypi/pyrpo))
 * https://bitbucket.org/westurner/pyrtm-task-cli
 * https://bitbucket.org/westurner/pywifiloc
 * https://github.com/westurner/redem
