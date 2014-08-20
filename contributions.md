@@ -19,6 +19,9 @@ https://github.com/pypa/warehouse
 ## pandas
 https://github.com/pydata/pandas
 
+* *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
+* *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
+
 ## richard
 https://github.com/willkg/richard/
 
