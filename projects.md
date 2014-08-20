@@ -3,7 +3,6 @@ Projects
 * https://github.com/westurner/provis ([docs](http://provis.readthedocs.org/en/latest/))
 * https://github.com/westurner/self-directed-learning ([docs](http://self-directed-learning.readthedocs.org/en/latest/))
 * https://github.com/westurner/menuapp
-* https://bitbucket.org/westurner/nhs-social-web
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
 * https://bitbucket.org/westurner/presense
