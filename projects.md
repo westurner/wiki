@@ -20,6 +20,7 @@ Tools
 * https://bitbucket.org/westurner/pyrtm-task-cli
 * https://bitbucket.org/westurner/pywifiloc
 * https://github.com/westurner/redem
+* https://bitbucket.org/westurner/workhours
 
 Personal
 
