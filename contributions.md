@@ -196,7 +196,7 @@ https://github.com/scipy-lectures/scipy-lecture-notes
 
 - [X] https://github.com/bayandin/awesome-awesomeness
 - [X] https://github.com/onurakpolat/awesome-bigdata
-- [ ] https://github.com/josephmisiti/awesome-machine-learning 
+- [X] https://github.com/josephmisiti/awesome-machine-learning 
 - [X] https://github.com/vinta/awesome-python
 - [X] https://github.com/dypsilon/frontend-dev-bookmarks
 - [X] https://github.com/bento-io/collection
