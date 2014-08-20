@@ -37,8 +37,7 @@ Personal
 * https://github.com/westurner/hello_world
 * https://github.com/westurner/wiki/wiki
 * https://github.com/westurner/wiki/wiki/projects
-* https://github.com/westurner/wiki/wiki/resume ([westurner.github.io/resume](https://westurner.github.io/pages/resume))
-* [Resume Portfolio (Screenshot Gallery)](https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905)
+* https://github.com/westurner/wiki/wiki/resume ([westurner.github.io/resume](https://westurner.github.io/pages/resume)) ([pics](https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905))
 * https://github.com/westurner/wiki/wiki/contributions
 * https://github.com/westurner/redditlog
   ([web](https://westurner.github.io/redditlog/))
