@@ -35,6 +35,11 @@ https://github.com/pydata/pandas
 - [X] *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
 
+## pip
+
+* [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
+* [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
+
 ## pycon 2014 job survey analysis
 https://github.com/briandailey/pycon-2014-job-fair
 
