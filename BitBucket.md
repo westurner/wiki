@@ -2,8 +2,8 @@
 
 
 ## Repositories
-* My Repositories: https://bitbucket.org/westurner/profile/repositories
 * My Repositories: https://bitbucket.org/dashboard/overview?section=mine
+* My Repositories: https://bitbucket.org/westurner/profile/repositories
 
 ## Activity
 
