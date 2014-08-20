@@ -1,5 +1,13 @@
-## Views
+## Search Views
 
 * My Repositories: https://github.com/search?l=&q=user%3Awesturner&ref=advsearch&type=Repositories&utf8=%E2%9C%93
 * My Issues: https://github.com/search?l=&q=user%3Awesturner&ref=advsearch&type=Issues&utf8=%E2%9C%93
 * My Issue Mentions: https://github.com/search?q=mentions%3Awesturner&ref=searchresults&type=Issues&utf8=%E2%9C%93
+
+
+## Views
+
+* My Repositories: https://github.com/westurner?tab=repositories
+* My Public Activity: https://github.com/westurner?tab=activity
+* Contributions: Past Month: https://github.com/westurner?tab=contributions&period=monthly
+* Contributions: Past Week: https://github.com/westurner?tab=contributions&period=weekly
