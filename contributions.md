@@ -38,8 +38,8 @@ https://github.com/mwaskom/seaborn
 ## Sphinx
 https://bitbucket.org/birkenfeld/sphinx
 
-* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
-* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
+* *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
+* *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 
 
 ## Sphinxjp.themes.basicstrap
