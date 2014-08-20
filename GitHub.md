@@ -53,7 +53,7 @@ ORDER BY created_at
 LIMIT 1000
 ```
 
-### My Activity - Started Following
+### My Activity (Starred / Started Following)
 
 ```sql
 SELECT repository_url, created_at
