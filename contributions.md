@@ -189,6 +189,8 @@ https://github.com/scipy-lectures/scipy-lecture-notes
 # awesome
 
 * https://github.com/bayandin/awesome-awesomeness
+* https://github.com/onurakpolat/awesome-bigdata \*
+* https://github.com/josephmisiti/awesome-machine-learning \*
 * https://github.com/vinta/awesome-python
 * https://github.com/dypsilon/frontend-dev-bookmarks
 * https://github.com/bento-io/collection
