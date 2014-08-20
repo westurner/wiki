@@ -50,6 +50,13 @@ https://github.com/Pylons/pyramid
 - [X] *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
 
 
+## python
+
+### cpython
+http://hg.python.org/cpython
+
+* [X] *ENH:random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
+
 ## redditlog
 https://github.com/westurner/redem
 
