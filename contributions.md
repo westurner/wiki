@@ -112,7 +112,7 @@ https://github.com/saltstack-formulas/salt-formula
 ## seaborn
 https://github.com/mwaskom/seaborn
 
-- [X] 
+- [ ] *Add Arial and Liberation Sans to mpl.rcParams["font.sans-serif"]* https://github.com/mwaskom/seaborn/pull/171
 
 ## sphinx
 https://bitbucket.org/birkenfeld/sphinx
@@ -173,6 +173,11 @@ https://github.com/datasciencemasters/go/
 
 - [X] *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 - [X] *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
+
+## opsschool
+https://github.com/opsschool/curriculum
+
+- [ ]
 
 ## schema-org-rdf
 https://github.com/mhausenblas/schema-org-rdf
