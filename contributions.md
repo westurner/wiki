@@ -119,7 +119,7 @@ https://github.com/alejandrogomez/turses
 https://github.com/jrjohansson/version_information
 
 * *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
-* *Added check for pkg_resources version and extended __doc__* https://github.com/jrjohansson/version_information/pull/3
+* *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
 
 
 ## warehouse
