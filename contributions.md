@@ -1,3 +1,8 @@
+## conda
+https://github.com/conda/conda
+
+* *ENH: Mirroring/caching support* \* https://github.com/conda/conda/issues/414
+
 ## fixture
 https://github.com/fixture-py/fixture
 
