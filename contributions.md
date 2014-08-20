@@ -1,3 +1,22 @@
+# tags
+
+
+```
+FEAT: Feature
+ENH: Enhancement
+BUG: Bug
+DOC: Documentation
+TST: Test
+BLD: Build
+PERF: Performance
+CLN: Cleanup
+SEC: Security
+```
+
+-- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md#pull-requests>`_
+
+# code
+
 ## bootstrap
 https://github.com/twbs/bootstrap
 
