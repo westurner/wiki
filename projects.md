@@ -29,7 +29,7 @@ Personal
 
 * https://bitbucket.org/westurner/westurner.bitbucket.org
 * https://github.com/westurner/westurner.github.io
-* https://github.com/westurner/wiki
+* https://github.com/westurner/wiki/wiki
 * https://github.com/westurner/dotfiles ([docs](http://wrdfiles.readthedocs.org/en/latest/))
 * https://github.com/westurner/dotvim
 * https://github.com/westurner/hello_world
