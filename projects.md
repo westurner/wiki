@@ -13,6 +13,8 @@ Tools
 * https://bitbucket.org/westurner/certtool
 * https://github.com/westurner/cookiecutter-saltformula
 * https://github.com/westurner/pkgsetcomp
+  ([pypi](https://pypi.python.org/pypi/pkgsetcomp))
+  ([docs](http://pkgsetcomp.readthedocs.org/en/latest/))
 * https://github.com/westurner/pycd10api
 * https://github.com/westurner/pygments-style-jellywrd
 * https://bitbucket.org/westurner/pyjobsearch
