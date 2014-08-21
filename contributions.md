@@ -25,10 +25,6 @@ https://github.com/twbs/bootstrap
 
 - [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
 
-## conda
-https://github.com/conda/conda
-
-- [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
 
 ## fixture
 https://github.com/fixture-py/fixture
@@ -80,6 +76,11 @@ https://github.com/Pylons/pyramid
 
 
 ## python
+### conda
+https://github.com/conda/conda
+
+- [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
+
 
 ### cpython
 http://hg.python.org/cpython
