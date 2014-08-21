@@ -48,6 +48,13 @@ https://github.com/ipython/nbviewer
 - [X] *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
+### pycon 2014 job survey analysis
+https://github.com/briandailey/pycon-2014-job-fair
+
+- [X] *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
+- [X] *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
+
+
 ### version_information
 https://github.com/jrjohansson/version_information
 
@@ -67,12 +74,6 @@ https://github.com/pydata/pandas
 
 * [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
 * [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
-
-## pycon 2014 job survey analysis
-https://github.com/briandailey/pycon-2014-job-fair
-
-- [X] *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
-- [X] *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
 
 
 ## pyramid
