@@ -42,10 +42,17 @@ https://github.com/ipython/ipython
 - [X] *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
 
 
-## nbviewer
+### nbviewer
 https://github.com/ipython/nbviewer
 
 - [X] *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
+
+
+### version_information
+https://github.com/jrjohansson/version_information
+
+- [X] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
+- [X] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
 
 
 ## pandas
@@ -183,13 +190,6 @@ https://github.com/alejandrogomez/turses
 
 - [X] *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 - [X] *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
-
-
-## version_information
-https://github.com/jrjohansson/version_information
-
-- [X] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
-- [X] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
 
 
 ## warehouse
