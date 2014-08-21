@@ -90,6 +90,7 @@ http://hg.python.org/cpython
 
 
 ### pip
+https://github.com/pypa/pip
 
 * [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
 * [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
