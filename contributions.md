@@ -167,25 +167,25 @@ https://bitbucket.org/birkenfeld/sphinx
 - [X] *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 
 
-## sphinxjp.themes.basicstrap
+### sphinxjp.themes.basicstrap
 https://github.com/tell-k/sphinxjp.themes.basicstrap
 
 - [X] *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
 
 
-## sphinx_rtd_theme
+### sphinx_rtd_theme
 https://github.com/snide/sphinx_rtd_theme
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
-## readthedocs.org
+### readthedocs.org
 https://github.com/rtfd/readthedocs.org
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
-## tinkerer
+### tinkerer
 https://github.com/vladris/tinkerer
 
 - [X] *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
