@@ -70,11 +70,6 @@ https://github.com/pydata/pandas
 - [X] *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
 
 
-## pip
-
-* [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
-* [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
-
 
 ## pyramid
 https://github.com/Pylons/pyramid
@@ -91,17 +86,24 @@ http://hg.python.org/cpython
 
 * [X] *ENH: random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
 
-## redditlog
+
+### pip
+
+* [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
+* [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
+
+
+### richard
+https://github.com/willkg/richard/
+
+- [X] *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
+
+
+## reddit
 https://github.com/westurner/redem
 
 - [ ] https://westurner.github.io/redditlog/
 - [ ] https://github.com/westurner/redditlog
-
-
-## richard
-https://github.com/willkg/richard/
-
-- [X] *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 
 ## salt
