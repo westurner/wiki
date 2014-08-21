@@ -21,6 +21,10 @@ https://github.com/twbs/bootstrap
 - [X] *ENH: Add WAI-ARIA roles to examples/theme/index.html (document, main)* https://github.com/twbs/bootstrap/pull/12228
 
 
+## celery
+
+- [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
+
 ## conda
 https://github.com/conda/conda
 
