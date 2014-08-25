@@ -25,7 +25,7 @@ Tools
 * https://github.com/westurner/redem
 * https://bitbucket.org/westurner/structuredp
 * https://github.com/westurner/vim2vim
-* https://bitbucket.org/westurner/workhours
+* https://github.com/westurner/workhours
 
 Personal
 
