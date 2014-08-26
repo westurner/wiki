@@ -1,4 +1,4 @@
-# Awesome Python
+# Awesome Python Testing
 
 **[Software Testing](https://en.wikipedia.org/wiki/Software_testing) and [Python](https://en.wikipedia.org/wiki/Python_\(programming_language\))**
 
