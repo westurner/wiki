@@ -27,16 +27,17 @@ https://github.com/celery/celery
 - [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
 
 
+## chromium
+https://code.google.com/p/chromium/
+
+- [ ] *SEC: Security: fullscreen nagbar forces (unsafe) site whitelist* https://code.google.com/p/chromium/issues/detail?id=409458
+
+
 ## fixture
 https://github.com/fixture-py/fixture
 
 - [X] *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
 
-
-## chromium
-https://code.google.com/p/chromium/
-
-- [ ] *SEC: Security: fullscreen nagbar forces (unsafe) site whitelist* https://code.google.com/p/chromium/issues/detail?id=409458
 
 ## ipython
 https://github.com/ipython/ipython
