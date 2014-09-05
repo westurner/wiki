@@ -6,6 +6,7 @@ Projects
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
 * https://bitbucket.org/westurner/presense
+* https://github.com/westurner/notebooks
 
 Tools
 
