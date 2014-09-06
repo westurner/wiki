@@ -5,6 +5,7 @@ Projects
 * https://github.com/westurner/health-marketplace
 * https://github.com/westurner/healthref
   ([web](https://westurner.github.io/healthref/))
+* https://github.com/westurner/pycd10api
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
 * https://bitbucket.org/westurner/presense
@@ -18,7 +19,6 @@ Tools
 * https://github.com/westurner/pkgsetcomp
   ([pypi](https://pypi.python.org/pypi/pkgsetcomp))
   ([docs](http://pkgsetcomp.readthedocs.org/en/latest/))
-* https://github.com/westurner/pycd10api
 * https://github.com/westurner/pygments-style-jellywrd
 * https://bitbucket.org/westurner/pyjobsearch
 * https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline)) ([docs](http://pyline.readthedocs.org/en/latest/))
