@@ -1,5 +1,8 @@
 # Quicklinks
 
+- [x] Task Lists: https://github.com/blog/1825-task-lists-in-all-markdown-documents
+- [x] GitHub Markdown: https://help.github.com/articles/github-flavored-markdown
+
 ## Repositories
 * Repositories: https://github.com/westurner?tab=repositories
 * Repositories: https://github.com/search?l=&q=user%3Awesturner&ref=advsearch&type=Repositories&utf8=%E2%9C%93
