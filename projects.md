@@ -34,8 +34,8 @@ Personal
   ([westurner.bitbucket.org](https://westurner.bitbucket.org/))
 * https://github.com/westurner/westurner.github.io
   ([westurner.github.io](https://westurner.github.io/))
-* https://github.com/westurner/dotfiles ([docs](http://wrdfiles.readthedocs.org/en/latest/))
-* https://github.com/westurner/dotvim ([docs](http://wrdfiles.readthedocs.org/en/latest/usage.html#vim))
+* https://github.com/westurner/dotfiles (**[docs](http://wrdfiles.readthedocs.org/en/latest/)**)
+* https://github.com/westurner/dotvim (**[docs](http://wrdfiles.readthedocs.org/en/latest/usage.html#vim)**)
 * https://github.com/westurner/hello_world
 * https://github.com/westurner/wiki/wiki
 * https://github.com/westurner/wiki/wiki/projects
