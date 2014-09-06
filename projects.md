@@ -41,7 +41,7 @@ Personal
 * https://github.com/westurner/wiki/wiki/resume ([westurner.github.io/resume](https://westurner.github.io/pages/resume)) ([pics](https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905))
 * https://github.com/westurner/wiki/wiki/contributions
 * https://github.com/westurner/redditlog
-  ([web](https://westurner.github.io/redditlog/))
+  ([westurner.github.io/redditlog](https://westurner.github.io/redditlog/))
 * https://bitbucket.org/westurner/westurner.bitbucket.org
   ([westurner.bitbucket.org](https://westurner.bitbucket.org/))
 * https://github.com/westurner/westurner.github.io
