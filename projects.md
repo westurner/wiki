@@ -3,6 +3,8 @@ Projects
 * https://github.com/westurner/provis ([docs](http://provis.readthedocs.org/en/latest/))
 * https://github.com/westurner/self-directed-learning ([docs](http://self-directed-learning.readthedocs.org/en/latest/))
 * https://github.com/westurner/health-marketplace
+* https://github.com/westurner/healthref
+  ([web](https://westurner.github.io/healthref/))
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
 * https://bitbucket.org/westurner/presense
@@ -30,10 +32,7 @@ Tools
 
 Personal
 
-* https://bitbucket.org/westurner/westurner.bitbucket.org
-  ([westurner.bitbucket.org](https://westurner.bitbucket.org/))
-* https://github.com/westurner/westurner.github.io
-  ([westurner.github.io](https://westurner.github.io/))
+
 * https://github.com/westurner/dotfiles (**[docs](http://wrdfiles.readthedocs.org/en/latest/)**)
 * https://github.com/westurner/dotvim (**[docs](http://wrdfiles.readthedocs.org/en/latest/usage.html#vim)**)
 * https://github.com/westurner/hello_world
@@ -43,7 +42,9 @@ Personal
 * https://github.com/westurner/wiki/wiki/contributions
 * https://github.com/westurner/redditlog
   ([web](https://westurner.github.io/redditlog/))
-* https://github.com/westurner/healthref
-  ([web](https://westurner.github.io/healthref/))
+* https://bitbucket.org/westurner/westurner.bitbucket.org
+  ([westurner.bitbucket.org](https://westurner.bitbucket.org/))
+* https://github.com/westurner/westurner.github.io
+  ([westurner.github.io](https://westurner.github.io/))
 * https://github.com/westurner/USA
   ([web](https://westurner.github.io/USA/))
