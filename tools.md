@@ -1,6 +1,6 @@
 # Tool Collections
 
-https://bitbucket.org/westurner/bobcat (RDF -> ReStructuredText)
+https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
 
 https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
 
