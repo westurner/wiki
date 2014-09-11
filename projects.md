@@ -21,6 +21,7 @@ Tools
   ([docs](http://pkgsetcomp.readthedocs.org/en/latest/))
 * https://github.com/westurner/pygments-style-jellywrd
 * https://bitbucket.org/westurner/pyjobsearch
+* https://github.com/westurner/pyleset
 * https://github.com/westurner/pyline ([pypi](https://pypi.python.org/pypi/pyline)) ([docs](http://pyline.readthedocs.org/en/latest/))
 * https://github.com/westurner/pyrpo ([pypi](https://pypi.python.org/pypi/pyrpo)) ([docs](http://pyrpo.readthedocs.org/en/latest/))
 * https://bitbucket.org/westurner/pyrtm-task-cli
