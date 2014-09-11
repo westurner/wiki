@@ -4,6 +4,8 @@ https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> 
 
 https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
 
+https://github.com/westurner/sphinxcontrib-rdf
+
 https://github.com/westurner/healthref/blob/gh-pages/healthref.py (RDF -> HTML (Jinja))
 
 https://github.com/westurner/provis/blob/master/docs/tools.rst (ReStructuredText -> HTML)
