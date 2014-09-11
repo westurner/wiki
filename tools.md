@@ -1,7 +1,5 @@
 # Tools Docs
 
-(chronological)
-
 https://bitbucket.org/westurner/bobcat
 
 https://github.com/westurner/wiki/wiki/awesome-python-testing
