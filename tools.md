@@ -12,7 +12,7 @@ https://github.com/westurner/provis/blob/master/docs/tools.rst (ReStructuredText
 
 **https://provis.readthedocs.org/en/latest/tools.html** (HTML)
 
-https://github.com/westurner/westurner.github.io/issues/2 (RDF Tools Ontology)
+https://github.com/westurner/westurner.github.io/issues/2 (RDF tools Ontology)
 
 https://github.com/westurner/wiki/wiki/awesome-python-testing (Markdown wiki)
 
