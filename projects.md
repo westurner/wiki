@@ -4,7 +4,7 @@ Projects
 * https://github.com/westurner/self-directed-learning ([docs](http://self-directed-learning.readthedocs.org/en/latest/))
 * https://github.com/westurner/health-marketplace
 * https://github.com/westurner/healthref
-  ([web](https://westurner.github.io/healthref/))
+  ([westurner.github.io/healthref](https://westurner.github.io/healthref/))
 * https://github.com/westurner/pycd10api
 * https://bitbucket.org/westurner/eaglefin
 * https://bitbucket.org/westurner/wbcms
