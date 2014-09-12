@@ -3,7 +3,7 @@ Projects
 
 * https://github.com/westurner/provis
 
-  |Docs: [provis.rtfd.org](http://provis.readthedocs.org/en/latest/)
+  |Docs: https://provis.readthedocs.org/en/latest/
 
 * https://github.com/westurner/self-directed-learning
 
@@ -40,13 +40,13 @@ Tools
 
   |PyPi: https://pypi.python.org/pypi/pyline
 
-  |Docs: http://pyline.readthedocs.org/en/latest/
+  |Docs: https://pyline.readthedocs.org/en/latest/
   
 * https://github.com/westurner/pyrpo
 
   |PyPi: https://pypi.python.org/pypi/pyrpo
 
-  |Docs: http://pyrpo.readthedocs.org/en/latest/
+  |Docs: https://pyrpo.readthedocs.org/en/latest/
   
 * https://bitbucket.org/westurner/pyrtm-task-cli
 * https://bitbucket.org/westurner/pywifiloc
@@ -59,11 +59,11 @@ Personal
 
 * https://github.com/westurner/dotfiles
 
-  |Docs: http://wrdfiles.readthedocs.org/en/latest/
+  |Docs: https://wrdfiles.readthedocs.org/en/latest/
   
 * https://github.com/westurner/dotvim
 
-  |Docs: http://wrdfiles.readthedocs.org/en/latest/usage.html#vim
+  |Docs: https://wrdfiles.readthedocs.org/en/latest/usage.html#vim
   
 * https://github.com/westurner/hello_world
 * https://github.com/westurner/wiki/wiki
@@ -72,7 +72,6 @@ Personal
   * https://github.com/westurner/wiki/wiki/contributions
   * https://github.com/westurner/wiki/wiki/resume
 
-  
 * https://github.com/westurner/redditlog
 
   | Web: https://westurner.github.io/redditlog/
