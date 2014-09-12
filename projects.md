@@ -47,4 +47,4 @@ Personal
 * https://github.com/westurner/westurner.github.io
   ([westurner.github.io](https://westurner.github.io/))
 * https://github.com/westurner/USA
-  ([web](https://westurner.github.io/USA/))
+  ([westurner.github.io/USA](https://westurner.github.io/USA/))
