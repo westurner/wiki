@@ -129,10 +129,9 @@ Personal
 ### wiki
 
 * URL: https://github.com/westurner/wiki/wiki
+* URL: https://github.com/westurner/wiki/wiki/projects
+* URL: https://github.com/westurner/wiki/wiki/contributions
 
-  * URL: https://github.com/westurner/wiki/wiki/projects
-  * URL: https://github.com/westurner/wiki/wiki/contributions
-  * URL: https://github.com/westurner/wiki/wiki/resume
 
 ### redditlog
 
@@ -143,7 +142,7 @@ Personal
 
 * Web: https://westurner.github.io/resume
 * Web: https://westurner.github.io/pages/resume
-* Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+* Pics: [Wes Turner Resume Portfolio](https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905)
 
 ### westurner.bitbucket.org
 
