@@ -1,6 +1,10 @@
 Projects
 ===========
 
+- [#projects](#projects)
+- [#tools](#tools)
+- [#personal](#personal)
+
 ### Provis
 
 * URL: https://github.com/westurner/provis
