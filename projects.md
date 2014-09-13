@@ -139,6 +139,12 @@ Personal
 * URL: https://github.com/westurner/redditlog
 * Web: https://westurner.github.io/redditlog/
   
+### resume
+
+* Web: https://westurner.github.io/resume
+* Web: https://westurner.github.io/pages/resume
+* Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
 ### westurner.bitbucket.org
 
 * URL: https://bitbucket.org/westurner/westurner.bitbucket.org
@@ -148,8 +154,7 @@ Personal
   
 * URL: https://github.com/westurner/westurner.github.io
 * Web: https://westurner.github.io/
-* Web: https://westurner.github.io/pages/resume
-* Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
  
 ### USA
  
