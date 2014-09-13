@@ -1,14 +1,14 @@
 # tags
 ```
-FEAT: Feature
-ENH: Enhancement
-BUG: Bug
-DOC: Documentation
-TST: Test
 BLD: Build
-PERF: Performance
+BUG: Bug
 CLN: Cleanup
+DOC: Documentation
+ENH: Enhancement
+FEAT: Feature
+PERF: Performance
 SEC: Security
+TST: Test
 ```
 -- adapted from [pandas/CONTRIBUTING.md](https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md)
 
