@@ -22,7 +22,9 @@ Projects
 
   |Web: https://westurner.github.io/notebooks/
 
+
 Tools
+-------
 
 * https://bitbucket.org/westurner/bobcat
 * https://bitbucket.org/westurner/certtool
