@@ -1,41 +1,42 @@
 Projects
 ===========
 
-## Provis
+### Provis
+
 * URL: https://github.com/westurner/provis
 * Docs: https://provis.readthedocs.org/en/latest/
 
-## Self Directed Learning
+### Self Directed Learning
 
 * URL: https://github.com/westurner/self-directed-learning
 * Docs: https://self-directed-learning.readthedocs.org/en/latest/
 
-## health-marketplace
+### health-marketplace
 
 * URL: https://github.com/westurner/health-marketplace
 
-## healthref
+### healthref
 
 * URL: https://github.com/westurner/healthref
 * Web: https://westurner.github.io/healthref/
  
-## pycd10api
+### pycd10api
 
 * URL: https://github.com/westurner/pycd10api
 
-## eaglefin
+### eaglefin
 
 * URL: https://bitbucket.org/westurner/eaglefin
 
-## wbcms
+### wbcms
 
 * URL: https://bitbucket.org/westurner/wbcms
 
-## presense
+### presense
 
 * URL: https://bitbucket.org/westurner/presense
 
-## notebooks
+### notebooks
 
 * URL: https://github.com/westurner/notebooks
 * Web: https://westurner.github.io/notebooks/
