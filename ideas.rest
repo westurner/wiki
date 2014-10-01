@@ -1,0 +1,11 @@
+Trails
+=======
+* Sequences of actions
+
+Twedges
+========
+* (Directed) edges between tweets, later
+
+Overlay
+========
+* EAV visualization
