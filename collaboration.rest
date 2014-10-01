@@ -1,0 +1,6 @@
+TODO: Import contributing.rst from https://github.com/westurner/dotfiles
+
+
+Project Tags
+=============
+* TODO: Project tag color codes & swatches 
