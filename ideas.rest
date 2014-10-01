@@ -1,12 +1,21 @@
+Themes
+=======
+* URIs
+* Linked Data (RDF, RDFa, JSONLD)
+* Graphs, Nodes, Edges
+
+Projects
+=========
+* https://github.com/westurner/wiki/wiki/projects
 
 Twedges
-========
+--------
 * (Directed) edges between tweets, later
 
 Trails
-=======
+-------
 * Sequences of actions
 
 Overlay
-========
+--------
 * EAV visualization
