@@ -23,49 +23,49 @@ Code
 
 bootstrap
 -----------
-https://github.com/twbs/bootstrap
+| Src: https://github.com/twbs/bootstrap
 
 - [X] *ENH: Add WAI-ARIA roles to examples/theme/index.html (document, main)* https://github.com/twbs/bootstrap/pull/12228
 
 
 celery
 -----------
-https://github.com/celery/celery
+| Src: https://github.com/celery/celery
 
 - [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
 
 
 chromium
 ----------
-https://code.google.com/p/chromium/
+| Src: https://code.google.com/p/chromium/
 
 - [ ] *SEC: Security: fullscreen nagbar forces (unsafe) site whitelist* https://code.google.com/p/chromium/issues/detail?id=409458
 
 
 fixture
 ---------
-https://github.com/fixture-py/fixture
+| Src: https://github.com/fixture-py/fixture
 
 - [X] *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
 
 
 ipython
 ------------
-https://github.com/ipython/ipython
+| Src: https://github.com/ipython/ipython
 
 - [X] *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
 
 
 nbviewer
 +++++++++++++++
-https://github.com/ipython/nbviewer
+| Src: https://github.com/ipython/nbviewer
 
 - [X] *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
 pycon 2014 job survey analysis
 +++++++++++++++++++++++++++++++++
-https://github.com/briandailey/pycon-2014-job-fair
+| Src: https://github.com/briandailey/pycon-2014-job-fair
 
 - [X] *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
 - [X] *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
@@ -73,7 +73,7 @@ https://github.com/briandailey/pycon-2014-job-fair
 
 version_information
 ++++++++++++++++++++++++++
-https://github.com/jrjohansson/version_information
+| Src: https://github.com/jrjohansson/version_information
 
 - [X] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
 - [X] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
@@ -81,7 +81,7 @@ https://github.com/jrjohansson/version_information
 
 pandas
 ---------
-https://github.com/pydata/pandas
+| Src: https://github.com/pydata/pandas
 
 - [ ] *ENH: Linked Datasets (RDF)*  https://github.com/pydata/pandas/issues/3402
 - [X] *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
@@ -91,7 +91,7 @@ https://github.com/pydata/pandas
 
 pyramid
 --------------
-https://github.com/Pylons/pyramid
+| Src: https://github.com/Pylons/pyramid
 
 - [X] *DOC: XSS in quicktour/views/views.py* https://github.com/Pylons/pyramid/issues/1294
 - [X] *DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)* https://github.com/Pylons/pyramid/commit/f1f35b7
@@ -103,7 +103,7 @@ python
 
 conda
 ++++++++
-https://github.com/conda/conda
+| Src: https://github.com/conda/conda
 
 - [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
 
@@ -117,7 +117,7 @@ http://hg.python.org/cpython
 
 pip
 +++++
-https://github.com/pypa/pip
+| Src: https://github.com/pypa/pip
 
 * [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
 * [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
@@ -125,14 +125,20 @@ https://github.com/pypa/pip
 
 richard
 +++++++++
-https://github.com/willkg/richard/
+| Src: https://github.com/willkg/richard/
 
 - [X] *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
+
+warehouse
++++++++++++
+| Src: https://github.com/pypa/warehouse
+
+- [X] *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
 redem
 ---------
-https://github.com/westurner/redem
+| Src: https://github.com/westurner/redem
 
 - [ ] https://westurner.github.io/redditlog/
 - [ ] https://github.com/westurner/redditlog
@@ -140,7 +146,7 @@ https://github.com/westurner/redem
 
 salt
 ------
-https://github.com/saltstack/salt
+| Src: https://github.com/saltstack/salt
 
 - [X] *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
 - [X] *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
@@ -153,7 +159,7 @@ https://github.com/saltstack/salt
 
 apt-formula
 +++++++++++++
-https://github.com/saltstack-formulas/apt-formula
+| Src: https://github.com/saltstack-formulas/apt-formula
 
 - [X] *DOC: Use full state names; add RST formatting* https://github.com/saltstack-formulas/apt-formula/pull/5
 - [X] *ENH: Add apt.transports.https and apt.transports.debtorrent* https://github.com/saltstack-formulas/apt-formula/pull/6
@@ -162,7 +168,7 @@ https://github.com/saltstack-formulas/apt-formula
 
 dnsmasq-formula
 ++++++++++++++++++++
-https://github.com/saltstack-formulas/dnsmasq-formula
+| Src: https://github.com/saltstack-formulas/dnsmasq-formula
 
 - [X] *ENH: Add dnsmasq.absent (pkg, service)* https://github.com/saltstack-formulas/dnsmasq-formula/pull/4
 - [X] *DOC: Update README.rst: formatting, Available states* https://github.com/saltstack-formulas/dnsmasq-formula/pull/5
@@ -170,7 +176,7 @@ https://github.com/saltstack-formulas/dnsmasq-formula
 
 nginx-formula
 +++++++++++++++
-https://github.com/saltstack-formulas/nginx-formula
+| Src: https://github.com/saltstack-formulas/nginx-formula
 
 - [X] *ENH: Add install_from_ppa pillar setting and PPA pkgrepo* https://github.com/saltstack-formulas/nginx-formula/pull/42
 - [X] *BUG: pkgrepo.absent, pkgrepo:watch_in(pkg), install_from_ppa* https://github.com/saltstack-formulas/nginx-formula/pull/44
@@ -178,21 +184,21 @@ https://github.com/saltstack-formulas/nginx-formula
 
 openssh-formula
 ++++++++++++++++++
-https://github.com/saltstack-formulas/openssh-formula
+| Src: https://github.com/saltstack-formulas/openssh-formula
 
 - [X] *ENH: Add a UseDNS option* https://github.com/saltstack-formulas/openssh-formula/pull/13
 
 
 salt-formula
 ++++++++++++++
-https://github.com/saltstack-formulas/salt-formula
+| Src: https://github.com/saltstack-formulas/salt-formula
 
 - [X] *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
 
 
 seaborn
 ------------
-https://github.com/mwaskom/seaborn
+| Src: https://github.com/mwaskom/seaborn
 
 - [ ] *Add Arial and Liberation Sans to mpl.rcParams["font.sans-serif"]* https://github.com/mwaskom/seaborn/pull/171
 
@@ -206,45 +212,39 @@ https://bitbucket.org/birkenfeld/sphinx
 
 sphinxjp.themes.basicstrap
 ++++++++++++++++++++++++++++++
-https://github.com/tell-k/sphinxjp.themes.basicstrap
+| Src: https://github.com/tell-k/sphinxjp.themes.basicstrap
 
 - [X] *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
 
 
 sphinx_rtd_theme
 +++++++++++++++++++
-https://github.com/snide/sphinx_rtd_theme
+| Src: https://github.com/snide/sphinx_rtd_theme
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
 readthedocs.org
 +++++++++++++++++
-https://github.com/rtfd/readthedocs.org
+| Src: https://github.com/rtfd/readthedocs.org
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
 tinkerer
 +++++++++++++
-https://github.com/vladris/tinkerer
+| Src: https://github.com/vladris/tinkerer
 
 - [X] *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
 
 
 turses
 --------
-https://github.com/alejandrogomez/turses
+| Src: https://github.com/alejandrogomez/turses
 
 - [X] *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 - [X] *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
 
-
-warehouse
------------
-https://github.com/pypa/warehouse
-
-- [X] *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
 Docs
@@ -252,35 +252,35 @@ Docs
 
 datasciencemasters
 --------------------
-| Src: https://github.com/datasciencemasters/go/
 | Web: http://datasciencemasters.org/
+| Src: https://github.com/datasciencemasters/go/
 
 - [X] *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 - [X] *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
 jsonld.org
 -----------
-| Src: https://github.com/json-ld/json-ld.org
 | Web: http://json-ld.org/
+| Src: https://github.com/json-ld/json-ld.org
 
 opsschool
 --------------
-| Src: https://github.com/opsschool/curriculum
 | Web: http://www.opsschool.org/en/latest/
+| Src: https://github.com/opsschool/curriculum
 
 - [ ]
 
 schema-org-rdf
 ----------------
-| Src: https://github.com/mhausenblas/schema-org-rdf
 | Web: http://schema.rdfs.org/
+| Src: https://github.com/mhausenblas/schema-org-rdf
 
 - [X] *Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
 
 scientific-python-lectures
 ----------------------------
-| Src: https://github.com/jrjohansson/scientific-python-lectures
 | Web: http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/
+| Src: https://github.com/jrjohansson/scientific-python-lectures
 
 - [X] *Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
 
