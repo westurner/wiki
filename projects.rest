@@ -152,7 +152,7 @@ westurner.bitbucket.org
 | Web: https://westurner.bitbucket.org/
 
 westurner.github.io
----------------
+----------------------
 | Src: https://github.com/westurner/westurner.github.io
 | Web: https://westurner.github.io/
 
@@ -160,4 +160,4 @@ westurner.github.io
 USA
 ---------------
 | Src: https://github.com/westurner/USA
-| Web: https://westurner.github.io/USA/
+| Web: https://westurner.github.io/USA
