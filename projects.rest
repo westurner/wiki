@@ -1,4 +1,4 @@
-.. contents:
+.. contents::
 
 Projects
 ===========
