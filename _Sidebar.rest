@@ -1,5 +1,3 @@
-`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
-
 - `resume <https://github.com/westurner/wiki/wiki/resume>`_
 - `projects <https://github.com/westurner/wiki/wiki/projects>`_
 - `contributions <https://github.com/westurner/wiki/wiki/contributions>`_
@@ -13,3 +11,5 @@
 **Links**
 
 `westurner.github.io/ <https://westurner.github.io/>`_
+
+`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
