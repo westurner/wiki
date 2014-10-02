@@ -477,128 +477,140 @@ Labels
 Task Labels
 ---------------
 
--next
-   : a next action
+-next :
+    a next action
 
--waiting
-   : a task that is blocked
+-waiting :
+    a task that is blocked
 
--someday
-   : an opportunity for a later date
-
-random
-   : a note to self
-
-.d
-   : degree catchall
-
-.d.<course>
-   : degree course
-
-.bills
-   : bills
-
-.p.<project>
-   : project
-
-.career
-   : career
-
-.civic
-   : civic
-
-o.<orgname>
-   : organization
-
-health
-   : health
-
-.healthy
-   : health
-
-.ride
-   : vehicle
-
-@home
-   : when at home
-
-@campus
-   : when at school
-
-@class
-   : when in class
-
-@work
-   : when at work
-
-@team
-   : <TODO>
-
-@phone
-   : when at the phone
-
-@pc
-   : when at a computer
-
-@online
-   : when at a computer with internet access
-
-@email
-   : when checking email
-
-@forum
-   : when reading forums
-
-@reading
-   : when having time for reading
-
-@errands
-   : when running errands
-
-@grocery
-   : when in a grocery
-
-@list
-   : general shopping list
+-someday :
+    an opportunity for a later date
 
 
-Task Labels
-------------
+Topical Labels
+---------------
+
+.random :
+    an unfiled note to self
+
+.d :
+    degrees
+
+.d.<course> :
+    degree course
+
+.bills :
+    .
+
+.p.<project> :
+    .
+
+.p.<person> :
+    .
+
+.career :
+    .
+
+.civic :
+    .
+
+.l.<name> :
+    mailing lists
+
+
+.o.<orgname> :
+    organization
+
+.health :
+    .
+
+.ride :
+    transportation
+
+
+Context Labels
+----------------
+
+@home :
+    when at home
+
+@campus :
+    when at school
+
+@class :
+    when in class
+
+@work :
+    when at work
+
+@team :
+    <TODO>
+
+@phone :
+    when at the phone
+
+@pc :
+    when at a computer
+
+@online :
+    when at a computer with internet access
+
+@email :
+    when checking email
+
+@forum :
+    when reading forums
+
+@reading :
+    when having time for reading
+
+@errands :
+    when running errands
+
+@grocery :
+    when in a grocery
+
+@list :
+    general shopping list
+
 
 
 Email Labels
 -------------
-.tasks
+.tasks :
+    .
 
-.tasks.daily
+.tasks.daily :
+    .
 
-.tasks.done
+.tasks.done :
+    .
 
-l.
-   : mailing lists
-
-d.
-   : degree
-
-p.
-   : people
-
-wd.
-   : web development
 
 
 Code Labels
 ------------
 Tests, Documentation, Enhancements, Bugs, Builds, Merges
 
-Comma-delimited, CASE-insensitive prefix-labelling::
+* Comma-delimited ordered set of prefix labels
+* CASE-insensitive (technically)
+* Regex: ``[\W,\s]+:``
 
-   TST: <desc>
+::
 
-   DOC,ENH: <desc>
-   BUG,TST: <desc>
+    ENH: Enhancement    # blue
+    BUG: Bug            # red
+    DOC: Documentation  # light blue
+    TST: Test           # light purple
+    PRF: Performance    #
+    SEC: Security       #
+    BLD: Build	        # light green
+    CLN: Cleanup	    #
+    
+    
+-- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
-   # ... BLD, MERGE
+
 
 
 Project Labels
