@@ -4,14 +4,15 @@ Tags
 ======
 ::
 
+    ENH: Enhancement	# github blue
     BUG: Bug		# red
     DOC: Documentation  # light blue
-    ENH: Enhancement	# github blue
+    TST: Test 		# light purple
     PRF: Performance	#
     SEC: Security	#
-    CLN: Cleanup	#
     BLD: Build		# light green
-    TST: Test 		# light purple
+    CLN: Cleanup	        #
+
     
 -- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
