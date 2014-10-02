@@ -19,7 +19,8 @@ Concept
                           | 10 |
                           | 11 |
                           | 12 -
-                          |  1 | Read or overlook my accounts, and dine. 
+                          |  1 | Read or overlook my accounts, and
+                          |      dine. 
                           |  2 -
                           |  3 | Work.
                           |  4 |
