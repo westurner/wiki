@@ -449,6 +449,9 @@ ReStructuredText, Markdown, [MediaWiki, BBCode, Textile]::
    - green
    - blue
 
+Checkboxes
+++++++++++++
+
 ReStructuredText::
 
    * [x] one **bold**
