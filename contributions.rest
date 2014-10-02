@@ -291,6 +291,7 @@ Awesome
 - [X] https://github.com/onurakpolat/awesome-bigdata
 - [X] https://github.com/josephmisiti/awesome-machine-learning 
 - [X] https://github.com/vinta/awesome-python
+- [ ] https://github.com/dahlia/awesome-sqlalchemy
 - [ ] https://github.com/kahun/awesome-sysadmin
 - [X] https://github.com/dypsilon/frontend-dev-bookmarks
 - [X] https://github.com/bento-io/collection
