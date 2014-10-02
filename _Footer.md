@@ -1,10 +1,15 @@
-[westurner/wiki](https://github.com/westurner/wiki/wiki)
+- `resume <https://github.com/westurner/wiki/wiki/resume>`_
+- `projects <https://github.com/westurner/wiki/wiki/projects>`_
+- `contributions <https://github.com/westurner/wiki/wiki/contributions>`_
+- `workflow <https://github.com/westurner/wiki/wiki/workflow>`_
 
-- [/resume](https://github.com/westurner/wiki/wiki/resume)
-- [/projects](https://github.com/westurner/wiki/wiki/projects)
-- [/contributions](https://github.com/westurner/wiki/wiki/contributions)
-- [/workflow](https://github.com/westurner/wiki/wiki/workflow)
-- [/github](https://github.com/westurner/wiki/wiki/GitHub)
-- [/bitbucket](https://github.com/westurner/wiki/wiki/BitBucket)
+  - `github <https://github.com/westurner/wiki/wiki/GitHub>`_
+  - `bitbucket <https://github.com/westurner/wiki/wiki/BitBucket>`_
 
-[westurner.github.io](https://westurner.github.io/)
+******
+
+**Links**
+
+`westurner.github.io/ <https://westurner.github.io/>`_
+
+`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
