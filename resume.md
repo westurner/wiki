@@ -1,4 +1,6 @@
-- [x] https://westurner.github.io/pages/resume (April 2014)
+Current Resume: **https://westurner.github.io/pages/resume.html**
+
+- [x] https://westurner.github.io/pages/resume.html (April 2014)
 - [x] https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
 - [x] https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
 - [x] [resume_wes-turner.rst](https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.rst)

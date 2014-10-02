@@ -9,22 +9,25 @@ Concept
 ========
 ::
 
-   The morning question,  |  5 | Rise, wash, and address *Powerful Goodness*;
+   The morning question,  |  5 | Rise, wash, and address
+                          |      *Powerful Goodness*;
    What good shall I do   |  6 | contrive day's business and take the
-   this day?              |  7 | resolution of the day; prosecute the present
-                          |    | study; and breakfast.
+   this day?              |  7 | resolution of the day; prosecute the
+                          |      present study; and breakfast.
                           |  8 -
                           |  9 | Work.
                           | 10 |
                           | 11 |
                           | 12 -
-                          |  1 | Read or overlook my accounts, and dine. 
+                          |  1 | Read or overlook my accounts, and
+                          |      dine. 
                           |  2 -
                           |  3 | Work.
                           |  4 |
                           |  5 |
                           |  6 -
-                          |  7 | Put things in their places, supper, music,
+                          |  7 | Put things in their places,
+                          |      supper, music,
                           |  8 | or diversion, or conversation;
     Evening question,     |  9 | examination of the day.
     What good have I done | 10 -
@@ -40,8 +43,7 @@ Concept
 
 Goals
 =======
-* Find simple workflows for productivity, efficiency, and collaboration.
-
+* Find simple workflows for productivity, efficiency, and collaboration
 * Develop methods to retain and analyze relevant information
 * Develop heuristics to identify tasks and sub-tasks  
 
@@ -49,13 +51,11 @@ Goals
 Objectives
 -----------
 
-Document personal workflow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* [ ] Document optimal workflows
 * [x] Create ``workflow.rst`` (see: current headings)   
 * [ ] File metadata strategies: (folders, names, tagging, labeling)
 * [ ] Synthesize existing labeling strategies
-* [ ] Define and describe inputs: tasks
-* [ ] Define and describe resources: skills, time, tools
+* [ ] Define and describe resources: skills, time, tools, tasks
 * [ ] Define and describe outputs: artifacts, products, deliverables
 * [ ] RnD: integrated workflow information flows
 
