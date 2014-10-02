@@ -1,4 +1,7 @@
-# tags
+.. contents::
+
+tags
+======
 ```
 BLD: Build
 BUG: Bug
@@ -13,59 +16,69 @@ TST: Test
 -- adapted from [pandas/CONTRIBUTING.md](https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md)
 
 
-# code
+code
+======
 
-## bootstrap
+bootstrap
+-----------
 https://github.com/twbs/bootstrap
 
 - [X] *ENH: Add WAI-ARIA roles to examples/theme/index.html (document, main)* https://github.com/twbs/bootstrap/pull/12228
 
 
-## celery
+celery
+-----------
 https://github.com/celery/celery
 
 - [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
 
 
-## chromium
+chromium
+----------
 https://code.google.com/p/chromium/
 
 - [ ] *SEC: Security: fullscreen nagbar forces (unsafe) site whitelist* https://code.google.com/p/chromium/issues/detail?id=409458
 
 
-## fixture
+fixture
+---------
 https://github.com/fixture-py/fixture
 
 - [X] *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
 
 
-## ipython
+ipython
+------------
 https://github.com/ipython/ipython
 
 - [X] *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
 
 
-### nbviewer
+nbviewer
++++++++++++++++
 https://github.com/ipython/nbviewer
 
 - [X] *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
 
 
-### pycon 2014 job survey analysis
+pycon 2014 job survey analysis
++++++++++++++++++++++++++++++++++
 https://github.com/briandailey/pycon-2014-job-fair
 
 - [X] *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
 - [X] *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
 
 
-### version_information
+version_information
+++++++++++++++++++++++++++
 https://github.com/jrjohansson/version_information
 
 - [X] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
 - [X] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
 
 
-## pandas
+pandas
+---------
 https://github.com/pydata/pandas
 
 - [ ] *ENH: Linked Datasets (RDF)*  https://github.com/pydata/pandas/issues/3402
@@ -74,7 +87,8 @@ https://github.com/pydata/pandas
 
 
 
-## pyramid
+pyramid
+--------------
 https://github.com/Pylons/pyramid
 
 - [X] *DOC: XSS in quicktour/views/views.py* https://github.com/Pylons/pyramid/issues/1294
@@ -82,40 +96,48 @@ https://github.com/Pylons/pyramid
 - [X] *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
 
 
-## python
-### conda
+python
+--------
+
+conda
+++++++++
 https://github.com/conda/conda
 
 - [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
 
 
-### cpython
+cpython
+++++++++++++
 http://hg.python.org/cpython
 
 * [X] *ENH: random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
 
 
-### pip
+pip
++++++
 https://github.com/pypa/pip
 
 * [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
 * [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
 
 
-### richard
+richard
++++++++++
 https://github.com/willkg/richard/
 
 - [X] *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
 
 
-## reddit
+redem
+---------
 https://github.com/westurner/redem
 
 - [ ] https://westurner.github.io/redditlog/
 - [ ] https://github.com/westurner/redditlog
 
 
-## salt
+salt
+------
 https://github.com/saltstack/salt
 
 - [X] *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
@@ -127,7 +149,8 @@ https://github.com/saltstack/salt
 - [ ] *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)*  https://github.com/saltstack/salt/issues/12183
 
 
-### apt-formula
+apt-formula
++++++++++++++
 https://github.com/saltstack-formulas/apt-formula
 
 - [X] *DOC: Use full state names; add RST formatting* https://github.com/saltstack-formulas/apt-formula/pull/5
@@ -135,33 +158,38 @@ https://github.com/saltstack-formulas/apt-formula
 - [X] *ENH: Add apt.ppa for pkg:python-software-properties (add-apt-repository)* https://github.com/saltstack-formulas/apt-formula/pull/7
 
 
-### dnsmasq-formula
+dnsmasq-formula
+++++++++++++++++++++
 https://github.com/saltstack-formulas/dnsmasq-formula
 
 - [X] *ENH: Add dnsmasq.absent (pkg, service)* https://github.com/saltstack-formulas/dnsmasq-formula/pull/4
 - [X] *DOC: Update README.rst: formatting, Available states* https://github.com/saltstack-formulas/dnsmasq-formula/pull/5
 
 
-### nginx-formula
+nginx-formula
++++++++++++++++
 https://github.com/saltstack-formulas/nginx-formula
 
 - [X] *ENH: Add install_from_ppa pillar setting and PPA pkgrepo* https://github.com/saltstack-formulas/nginx-formula/pull/42
 - [X] *BUG: pkgrepo.absent, pkgrepo:watch_in(pkg), install_from_ppa* https://github.com/saltstack-formulas/nginx-formula/pull/44
 
 
-### openssh-formula
+openssh-formula
+++++++++++++++++++
 https://github.com/saltstack-formulas/openssh-formula
 
 - [X] *ENH: Add a UseDNS option* https://github.com/saltstack-formulas/openssh-formula/pull/13
 
 
-### salt-formula
+salt-formula
+++++++++++++++
 https://github.com/saltstack-formulas/salt-formula
 
 - [X] *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
 
 
-## seaborn
+seaborn
+------------
 https://github.com/mwaskom/seaborn
 
 - [ ] *Add Arial and Liberation Sans to mpl.rcParams["font.sans-serif"]* https://github.com/mwaskom/seaborn/pull/171
