@@ -8,6 +8,8 @@
   - `github <https://github.com/westurner/wiki/wiki/GitHub>`_
   - `bitbucket <https://github.com/westurner/wiki/wiki/BitBucket>`_
 
---
+******
+
+**Links**
 
 `westurner.github.io/ <https://westurner.github.io/>`_
