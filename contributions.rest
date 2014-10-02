@@ -110,7 +110,7 @@ conda
 
 cpython
 ++++++++++++
-http://hg.python.org/cpython
+| Src: http://hg.python.org/cpython
 
 * [X] *ENH: random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
 
@@ -204,7 +204,7 @@ seaborn
 
 sphinx
 ---------
-https://bitbucket.org/birkenfeld/sphinx
+| Src: https://bitbucket.org/birkenfeld/sphinx
 
 - [X] *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
 - [X] *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
