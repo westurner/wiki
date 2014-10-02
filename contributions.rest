@@ -1,6 +1,6 @@
 .. contents::
 
-tags
+Tags
 ======
 ```
 BLD: Build
@@ -16,7 +16,7 @@ TST: Test
 -- adapted from [pandas/CONTRIBUTING.md](https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md)
 
 
-code
+Code
 ======
 
 bootstrap
@@ -245,7 +245,7 @@ https://github.com/pypa/warehouse
 - [X] *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
-docs
+Docs
 ======
 
 datasciencemasters
@@ -282,7 +282,7 @@ https://github.com/scipy-lectures/scipy-lecture-notes
 - [X] *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
 
 
-awesome
+Awesome
 ==========
 
 - [X] https://github.com/bayandin/awesome-awesomeness
