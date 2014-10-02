@@ -143,7 +143,7 @@ resume
 ---------------
 | Web: https://westurner.github.io/resume
 | Web: https://westurner.github.io/pages/resume
-| Pics: [Wes Turner Resume Portfolio](https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905)
+| Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
 
 westurner.bitbucket.org
 --------------------------
@@ -160,4 +160,4 @@ westurner.github.io
 USA
 ---------------
 | URL: https://github.com/westurner/USA
-| Web: ([westurner.github.io/USA](https://westurner.github.io/USA/))
+| Web: https://westurner.github.io/USA/
