@@ -51,13 +51,11 @@ Goals
 Objectives
 -----------
 
-Document personal workflow
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* [ ] Document optimal workflows
 * [x] Create ``workflow.rst`` (see: current headings)   
 * [ ] File metadata strategies: (folders, names, tagging, labeling)
 * [ ] Synthesize existing labeling strategies
-* [ ] Define and describe inputs: tasks
-* [ ] Define and describe resources: skills, time, tools
+* [ ] Define and describe resources: skills, time, tools, tasks
 * [ ] Define and describe outputs: artifacts, products, deliverables
 * [ ] RnD: integrated workflow information flows
 
