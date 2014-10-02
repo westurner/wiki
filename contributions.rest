@@ -2,18 +2,18 @@
 
 Tags
 ======
-```
-BLD: Build
-BUG: Bug
-CLN: Cleanup
-DOC: Documentation
-ENH: Enhancement
-FEAT: Feature
-PERF: Performance
-SEC: Security
-TST: Test
-```
--- adapted from [pandas/CONTRIBUTING.md](https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md)
+::
+
+    BUG: Bug		# red
+    DOC: Documentation  # light blue
+    ENH: Enhancement	# github blue
+    PRF: Performance	#
+    SEC: Security	#
+    CLN: Cleanup	#
+    BLD: Build		# light green
+    TST: Test 		# light purple
+    
+-- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
 
 Code
