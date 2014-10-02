@@ -252,33 +252,43 @@ Docs
 
 datasciencemasters
 --------------------
-https://github.com/datasciencemasters/go/
+| Src: https://github.com/datasciencemasters/go/
+| Web: http://datasciencemasters.org/
 
 - [X] *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 - [X] *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
+jsonld.org
+-----------
+| Src: https://github.com/json-ld/json-ld.org
+| Web: http://json-ld.org/
+
 opsschool
 --------------
-https://github.com/opsschool/curriculum
+| Src: https://github.com/opsschool/curriculum
+| Web: http://www.opsschool.org/en/latest/
 
 - [ ]
 
 schema-org-rdf
 ----------------
-https://github.com/mhausenblas/schema-org-rdf
+| Src: https://github.com/mhausenblas/schema-org-rdf
+| Web: http://schema.rdfs.org/
 
 - [X] *Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
 
 scientific-python-lectures
 ----------------------------
-https://github.com/jrjohansson/scientific-python-lectures
+| Src: https://github.com/jrjohansson/scientific-python-lectures
+| Web: http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/
 
 - [X] *Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
 
 
 scipy-lecture-notes
 ---------------------------
-https://github.com/scipy-lectures/scipy-lecture-notes
+| Src: https://github.com/scipy-lectures/scipy-lecture-notes
+| Web: https://scipy-lectures.github.io/
 
 - [X] *Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
 - [X] *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
