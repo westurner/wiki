@@ -112,6 +112,11 @@ workhours
 Personal
 ==========
 
+USA
+---------------
+| Src: https://github.com/westurner/USA
+| Web: https://westurner.github.io/USA
+
 dotfiles
 ---------------
 
@@ -127,17 +132,16 @@ hello_world
 ---------------
 | Src: https://github.com/westurner/hello_world
 
+redditlog
+---------------
+| Src: https://github.com/westurner/redditlog
+| Web: https://westurner.github.io/redditlog/
+
 wiki
 ---------------
 | Src: https://github.com/westurner/wiki/wiki
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
-
-
-redditlog
----------------
-| Src: https://github.com/westurner/redditlog
-| Web: https://westurner.github.io/redditlog/
   
 resume
 ---------------
@@ -156,8 +160,3 @@ westurner.github.io
 | Src: https://github.com/westurner/westurner.github.io
 | Web: https://westurner.github.io/
 
- 
-USA
----------------
-| Src: https://github.com/westurner/USA
-| Web: https://westurner.github.io/USA
