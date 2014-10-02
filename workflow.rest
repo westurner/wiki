@@ -1,7 +1,7 @@
 =========
 Workflow
 =========
-Goal: Find simple workflows for productivity, efficiency, and collaboration.
+Find simple workflows for productivity, efficiency, and collaboration.
 
 .. contents::
 
