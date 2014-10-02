@@ -391,27 +391,33 @@ Cons
 
 Implementations
 ~~~~~~~~~~~~~~~~~
+
 Schedule
-   : Chronological sequence of events
++++++++++
+Chronological sequence of events
    
 Calendar
-   : Visual grid of day, week, month, quarter, year
+++++++++++
+Visual grid of day, week, month, quarter, year
 
-   Weekly views: ``M-Su``, ``Su-Sa``
+Weekly views: ``M-Su``, ``Su-Sa``
 
 Agenda
-   : Action items to accomplish within a given context
+++++++++
+Action items to accomplish within a given context
    
-To-do List
-   : List of items to accomplish,
-   visually designating completion
-   by ``[x]`` checkmarks,
-   strikethrough (crossing things off)
+TODO List
+++++++++++++
+List of items to accomplish,
+visually designating completion
+by ``[x]`` checkmarks,
+strikethrough (crossing things off)
 
 Hipster PDA
-   : Pocket-sized notebook sheet of paper
++++++++++++++
+Pocket-sized notebook sheet of paper
 
-   https://bitbucket.org/westurner/pyrtm-task-cli/src/tip/simp.py
+https://bitbucket.org/westurner/pyrtm-task-cli/src/tip/simp.py
 
 
 Text
