@@ -50,7 +50,7 @@ Objectives
 -----------
 
 Document personal workflow
-++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * [x] Create ``workflow.rst`` (see: current headings)   
 * [ ] File metadata strategies: (folders, names, tagging, labeling)
 * [ ] Synthesize existing labeling strategies
