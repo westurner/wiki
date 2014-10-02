@@ -43,8 +43,7 @@ Concept
 
 Goals
 =======
-* Find simple workflows for productivity, efficiency, and collaboration.
-
+* Find simple workflows for productivity, efficiency, and collaboration
 * Develop methods to retain and analyze relevant information
 * Develop heuristics to identify tasks and sub-tasks  
 
