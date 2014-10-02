@@ -3,6 +3,8 @@ Workflow
 =========
 Find simple workflows for productivity, efficiency, and collaboration.
 
+.. contents::
+
 Concept
 ========
 ::
