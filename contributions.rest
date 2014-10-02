@@ -194,83 +194,96 @@ https://github.com/mwaskom/seaborn
 
 - [ ] *Add Arial and Liberation Sans to mpl.rcParams["font.sans-serif"]* https://github.com/mwaskom/seaborn/pull/171
 
-## sphinx
+sphinx
+---------
 https://bitbucket.org/birkenfeld/sphinx
 
 - [X] *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
 - [X] *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 
 
-### sphinxjp.themes.basicstrap
+sphinxjp.themes.basicstrap
+++++++++++++++++++++++++++++++
 https://github.com/tell-k/sphinxjp.themes.basicstrap
 
 - [X] *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
 
 
-### sphinx_rtd_theme
+sphinx_rtd_theme
++++++++++++++++++++
 https://github.com/snide/sphinx_rtd_theme
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
-### readthedocs.org
+readthedocs.org
++++++++++++++++++
 https://github.com/rtfd/readthedocs.org
 
 - [X] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
-### tinkerer
+tinkerer
++++++++++++++
 https://github.com/vladris/tinkerer
 
 - [X] *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
 
 
-## turses
+turses
+--------
 https://github.com/alejandrogomez/turses
 
 - [X] *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 - [X] *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
 
 
-## warehouse
+warehouse
+-----------
 https://github.com/pypa/warehouse
 
 - [X] *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
-# docs
+docs
+======
 
-
-## datasciencemasters
+datasciencemasters
+--------------------
 https://github.com/datasciencemasters/go/
 
 - [X] *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
 - [X] *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
-## opsschool
+opsschool
+--------------
 https://github.com/opsschool/curriculum
 
 - [ ]
 
-## schema-org-rdf
+schema-org-rdf
+----------------
 https://github.com/mhausenblas/schema-org-rdf
 
 - [X] *Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
 
-## scientific-python-lectures
+scientific-python-lectures
+----------------------------
 https://github.com/jrjohansson/scientific-python-lectures
 
 - [X] *Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
 
 
-## scipy-lecture-notes
+scipy-lecture-notes
+---------------------------
 https://github.com/scipy-lectures/scipy-lecture-notes
 
 - [X] *Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
 - [X] *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
 
 
-# awesome
+awesome
+==========
 
 - [X] https://github.com/bayandin/awesome-awesomeness
 - [X] https://github.com/onurakpolat/awesome-bigdata
