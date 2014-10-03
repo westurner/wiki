@@ -1,4 +1,10 @@
-# Tool Collections
+Tools
+======
+
+.. contents::
+
+Tool Collections
+=================
 
 https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
 
