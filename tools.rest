@@ -17,7 +17,7 @@ https://github.com/westurner/healthref/blob/gh-pages/healthref.py (RDF -> HTML (
 
 https://github.com/westurner/provis/blob/master/docs/tools.rst (ReStructuredText -> HTML)
 
-**https://provis.readthedocs.org/en/latest/tools.html** (HTML)
+https://provis.readthedocs.org/en/latest/tools.html (HTML)
 
 https://github.com/westurner/westurner.github.io/issues/2 (RDF tools Ontology)
 
