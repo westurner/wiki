@@ -1,4 +1,4 @@
-# Quicklinks
+# GitHub Quicklinks
 
 - [x] Task Lists: https://github.com/blog/1825-task-lists-in-all-markdown-documents
 - [x] GitHub Markdown: https://help.github.com/articles/github-flavored-markdown
