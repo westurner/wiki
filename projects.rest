@@ -1,4 +1,3 @@
-
 ===========
 Projects
 ===========
@@ -7,6 +6,7 @@ Projects
 
 Projects
 ==========
+https://github.com/westurner/wiki/wiki/ideas
 
 Provis
 -------
