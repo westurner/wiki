@@ -48,9 +48,14 @@ notebooks
 | Src: https://github.com/westurner/notebooks
 | Web: https://westurner.github.io/notebooks/
 
+contributions
+---------------
+| See: https://github.com/westurner/wiki/wiki/contributions
+
 
 Tools
 =======
+| See: https://github.com/westurner/wiki/wiki/tools
 
 bobcat
 ---------------
