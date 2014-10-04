@@ -1037,10 +1037,10 @@ Requirements Traceability
 
 - [ ] Write a Roadmap wiki entry with links to Release Plans
   and/or issue milestones
-  (``git@github.com:westurner/wiki.wiki.git`` / ``Roadmap.rest``)
+  (`<git@github.com:westurner/wiki.wiki.git>`_ / ``Roadmap.rest``)
 
-  * Roadmap wiki page: ``https://github.com/westurner/wiki/wiki/Roadmap``
-  * Milestone: ``https://github.com/westurner/wiki/milestones/0.3``
+  * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
+  * Milestone: https://github.com/westurner/wiki/milestones/0.3
 
 - [ ] Write `User Stories`_ as issues labeled ``ENH``:
 
