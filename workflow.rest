@@ -976,7 +976,7 @@ Requirements Traceability
   * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
   * Milestone: https://github.com/westurner/wiki/milestones/0.1
 
-- [ ] Write `User Stories`_ as issues prefixed with ``ENH:`` (#123)::
+- [ ] Write `User Stories`_ as issues prefixed with ``ENH:``::
 
       ENH: Users can place orders
 
@@ -987,15 +987,14 @@ Requirements Traceability
       BLD: Update the build configuration
 
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
-  *Release Logs*
-
-  - [ ] Reference an issue number: ``#123``::
+  *Release Logs* by referencing an issue number::
 
       TST: Create order placing tests (#123)
       DOC: Add order placing documentation (for #123)
       CLN: Cleanup syntax for style guide (#5678)
 
-- [ ] Link things with URIs
+- [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
+  *Release Logs* by referencing an absolute URL::
  
   - [ ] Paste the link (URL, URI) as-is (with no anchor text)
     into the documentation
