@@ -621,38 +621,8 @@ Tests, Documentation, Enhancements, Bugs, Builds, Merges
 
 Project Labels
 ----------------
-dotfiles
-   :
 
-dotvim
-   :
-
-provis
-   :
-
-workhours
-   :
-
-menuapp
-   :
-
-pyrpo
-   :
-
-pyline
-   :
-
-self-directed-learning
-   : 
-
-   Research:
-
-   * Report
-   * Presentation
-
-   Development:
-
-   * STEM Labs
+See: https://github.com/westurner/wiki/wiki/projects
 
 career
    :
@@ -677,11 +647,6 @@ exercise
 
 relax
    :
-
-
-
-
-
 
 
 Services
