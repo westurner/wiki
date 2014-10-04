@@ -1008,5 +1008,6 @@ Continuous Integration
 https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 
 - [ ] Tag builds of versions and their artifacts with short commit ids
-  and conda selectors e.g. ``v1.0.01-eb4df7f-linux64``
-  (`<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_)
+  and conda selectors: `<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_
+  (e.g. ``v1.0.01-eb4df7f-linux64``)
+
