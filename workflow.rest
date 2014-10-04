@@ -1061,7 +1061,14 @@ Source Control
   (`<https://datasift.github.io/gitflow/>`_,
   for managing project repository branches:
   ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
-- [ ] Tag builds and their artifacts with conda selectors
-  (`<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_)
 - [ ] Release semantic versions (`<http://semver.org>`_) tagged as
   ``major.minor.patch`` (e.g. ``v1.0.01``)
+
+
+Continuous Integration
+-------------------------
+https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
+
+- [ ] Tag builds of versions and their artifacts with short commit ids
+  and conda selectors e.g. ``v1.0.01-eb4df7f-linux64``
+  (`<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_)
