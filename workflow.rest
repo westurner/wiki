@@ -541,146 +541,80 @@ History
     .q
     .q.r    # quote.random
 
-Syntax
--------
+Label Syntax
+--------------
 Personal labeling syntax
 
 * ``lower case``
 * ``dash-slugified``
 * ``period.delimited``
 * ``-task`` (``-next``, ``-waiting``, ``-someday``)
-* ``@context``
-* ``.pro.ject``
+* ``@context`` (``@home``, ``@campus``, ``@work``)
+* ``.project`` (``.project.subproject``)
 
 
 Task Labels
 ---------------
+::
 
--next :
-    a next action
-
--waiting :
-    a task that is blocked
-
--someday :
-    an opportunity for a later date
-
-
-Topical Labels
----------------
-
-.random :
-    an unfiled note to self
-
-.d :
-    degrees
-
-.d.<course> :
-    degree course
-
-.bills :
-    .
-
-.p.<project> :
-    .
-
-.p.<people> :
-    .
-
-.career :
-    .
-
-.civic :
-    .
-
-.l.<name> :
-    mailing lists
-
-
-.o.<orgname> :
-    organization
-
-.health :
-    .
-
-.diet
-   :
-
-.exercise
-   :
-
-.relax
-   :
-
-.ride :
-    transportation
-
-
-Context Labels
-----------------
-
-@home :
-    when at home
-
-@campus :
-    when at school
-
-@class :
-    when in class
-
-@work :
-    when at work
-
-@team :
-    <TODO>
-
-@phone :
-    when at the phone
-
-@pc :
-    when at a computer
-
-@online :
-    when at a computer with internet access
-
-@email :
-    when checking email
-
-@forum :
-    when reading forums
-
-@reading :
-    when having time for reading
-
-@errands :
-    when running errands
-
-@grocery :
-    when in a grocery
-
-@list :
-    general shopping list
-
-
-
-Email Labels
--------------
-.tasks :
-    .
-
-.tasks.daily :
-    .
-
-.tasks.done :
-    .
+   -next       a next action
+   -waiting    a task that is blocked
+   -someday    an opportunity for a later date
 
 
 Project Labels
 ----------------
-.dotfiles :
-    .
-
 See: https://github.com/westurner/wiki/wiki/projects
+
+::
+
+   .random        an unfiled note to self
+   .d             degrees
+   .d.<course>    degree course
+   .bills         bills
+   .career        career
+   .civic         civic
+   .health        health
+   .diet          diet
+   .exercise      exercise
+   .relax         relax
+   .ride          transportation
+
+   .<projectname> project
+   .dotfiles      dotfiles project
+
+
+Context Labels
+----------------
+::
+
+   @home    at home
+   @campus  at school
+   @class   in class
+   @work    at work
+   @team    working with a team
+   @phone   at the phone
+   @pc      at a computer
+   @online  at a computer with internet access
+   @email   checking email
+   @forum   reading forums
+   @read    having time for reading
+   @food    buying food
+   @list    general shopping list
+
+
+Email Labels
+-------------
+::
+
+   .tasks         tasks, action items
+   .tasks.daily   repeating daily tasks
+   .tasks.done    completed tasks
+
+   .p.<project>   project (-> .project)
+   .p.<people>    people
+   .l.<name>      mailing lists
+   .o.<orgname>   organization
 
 
 Code Labels
