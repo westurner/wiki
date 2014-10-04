@@ -99,8 +99,8 @@ Emails
 Text Files
 ------------
 * ``README``, ``README.txt``, ``README.md``, ``README.rst``  
-* ``CHANGES``,``CHANGES.txt``,``CHANGES.md``,``CHANGES.rst``,
-* ``CHANGELOG``,``CHANGELOG.txt``,``CHANGELOG.md``,``CHANGELOG.rst``,
+* ``CHANGES``, ``CHANGES.txt``, ``CHANGES.md``, ``CHANGES.rst``
+* ``CHANGELOG``, ``CHANGELOG.txt``, ``CHANGELOG.md``, ``CHANGELOG.rst``
 * ``HISTORY``, ``HISTORY.txt``, ``HISTORY.md``, ``HISTORY.rst``
 * ``TODO``, ``TODO.rst``, ``TODO.md``, ``TODO.html``
 * ``index.html``, ``index.htm``
