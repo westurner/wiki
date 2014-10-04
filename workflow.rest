@@ -989,7 +989,7 @@ Requirements Traceability
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
   *Release Logs*
 
-  - [ ] Reference an issue number: ``#123``
+  - [ ] Reference an issue number: ``#123``::
 
       TST: Create order placing tests (#123)
       DOC: Add order placing documentation (for #123)
