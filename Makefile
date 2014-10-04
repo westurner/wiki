@@ -28,9 +28,13 @@ copy_sidebar_to_home:
 	echo '' >> Home.rest
 	cat _Sidebar.rest >> Home.rest
 
+copy_sidebar_to_readme: copy_sidebar_to_home
+	cp Home.rest README.rst
+
 copy_sidebars:
 	$(MAKE) copy_sidebar_to_footer
-	$(MAKE) copy_sidebar_to_home
+	#$(MAKE) copy_sidebar_to_home
+	$(MAKE) copy_sidebar_to_readme
 
 copy_sidebar_and_commit:
 	$(MAKE) copy_sidebars
