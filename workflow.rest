@@ -1024,23 +1024,42 @@ updating, and reporting on tasks, their statuses, and their priorities.
 There are plugins to host and synchronize TaskWarrior task databases.
 
 
-Requirements Traceability
+Best Practices
 ============================
-- [ ] Prefix commit messages with `Code Labels`_ (``ENH``, ``BUG``, ``DOC``, ``TST``, )
-- [ ] Write `User Stories`_ as ``ENH`` issues
+Project Templating
+--------------------
+- [ ] Generate a new project with templated packaging and documentation
+  (e.g. with `<https://github.com/audreyr/cookiecutter>`_)
 
-  * Issues can reference other issues and pull requests: ``TST: Tests for #123`` 
 
-- [ ] Write Release Plans as wiki entries if issue milestones are not enough
+Requirements Traceability
+---------------------------
+
+- [ ] Write a Roadmap wiki entry with links to Release Plans
+  and/or issue milestones are not enough
   (``git@github.com:westurner/wiki.wiki.git``)
+
+  * Roadmap wiki page: ``https://github.com/westurner/wiki/wiki/Roadmap``
+  * Milestone: ``https://github.com/westurner/wiki/milestones/0.3``
+
+- [ ] Write `User Stories`_ as issues labeled ``ENH``:
+
+  ``ENH: Users can place orders``
+
+- [ ] Prefix commit messages with `Code Labels`_
 - [ ] Link ``Issues`` with ``Commits``, ``Pull Requests``, and Release Logs
 
   - [ ] Reference an issue number: ``#123``
   - [ ] Paste the link (URL, URI) as-is (with no anchor text) into the documentation
 
+- [ ] Reference other issues and pull requests: ``TST: Tests for #123``
+
+Source Control
+----------------
+
 - [ ] Utilize Git HubFlow
-  (`<https://datasift.github.io/gitflow/>`_, 
+  (`<https://datasift.github.io/gitflow/>`_,
   for managing project repository branches:
-  ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``   
+  ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
 - [ ] Release semantic versions (`<semver.org>`_) tagged as
   ``major.minor.patch`` (e.g. ``v1.0.01``)
