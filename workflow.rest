@@ -1042,17 +1042,21 @@ Requirements Traceability
   * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
   * Milestone: https://github.com/westurner/wiki/milestones/0.1
 
-- [ ] Write `User Stories`_ as issues labeled ``ENH``:
+- [ ] Write `User Stories`_ as issues prefixed with ``ENH``::
 
-  ``ENH: Users can place orders``
+      ENH: Users can place orders
 
-- [ ] Prefix commit messages with `Code Labels`_
-- [ ] Link ``Issues`` with ``Commits``, ``Pull Requests``, and Release Logs
+- [ ] Prefix commit messages with `Code Labels`_::
+
+      TST: Create order placing tests (#123)
+      DOC: Add order placing documentation (for #123)
+
+- [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
+  *Release Logs*
 
   - [ ] Reference an issue number: ``#123``
   - [ ] Paste the link (URL, URI) as-is (with no anchor text) into the documentation
 
-- [ ] Reference other issues and pull requests: ``TST: Tests for #123``
 
 Source Control
 ----------------
