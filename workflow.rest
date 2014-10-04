@@ -1058,8 +1058,8 @@ Requirements Traceability
   - [ ] Paste the link (URL, URI) as-is (with no anchor text) into the documentation
 
 
-Source Control
-----------------
+Revision Control
+-----------------
 
 - [ ] Utilize Git HubFlow
   (`<https://datasift.github.io/gitflow/>`_,
