@@ -107,31 +107,32 @@ Text Files
 
 Text File Attributes
 ~~~~~~~~~~~~~~~~~~~~~~
-* Absolute local file path  
+* Relative file path (``~/path/to/file.ext``)
+* Absolute path (``/home/user/path/to/file.ext``)
+* File extension (``.ext``)
+* Filesystem attributes
 * Byte-order-marker
-* File extension  
-* Line endings (DOS, UNIX)  
-* Shebang line
-* Creation time  
+* Line endings (DOS, UNIX)
+* Shebang line (``#!/bin/sh``, ``#!/usr/bin/env python``)
+* Creation time
 * Modification time
-* Local undo/backup cache
 * Lightweight Markup Headings (h0 -> title)
+
+  * ATX Headers: ``#``, ``##``, ``###`` (Markdown,)
+  * Setex: (ReStructuredText, Markdown)
+
 * ReStructuredText Bibliographic Fields:
   ``:Author:`` <name>,  ``:Title:`` <title>
+* Local undo/backup cache
+* Local repository path, working directory commit id
 
 
-Code
------
-* Repository `Text Files`_
-* Comment tags: TODO, FIXME, XXX
+Source Code
+-------------
+https://en.wikipedia.org/wiki/Source_code
 
-.. code-block:: sh
-
-   hg grep 'TODO|FIXME|XXX'
-   git grep 'TODO|FIXME|XXX'
-
-Code Attributes
-~~~~~~~~~~~~~~~~
+Source Code File Attributes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Absolute local file path
 * Shebang line
 * File extension
@@ -142,15 +143,89 @@ Code Attributes
 * Repository file history log across renames
 * Local undo/backup cache  
 
+Source Code Comment Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Comment tags::
+
+    TODO
+    FIXME
+    XXX
+
+.. code-block:: sh
+
+   grep 'TODO|FIXME|XXX'
+   grin 'TODO|FIXME|XXX'
+   hg grep 'TODO|FIXME|XXX'
+   git grep 'TODO|FIXME|XXX'
+
+
+Patches
+---------
+Also referred to as a diff.
+
+When an author has modified a file in a repository,
+there is a difference (in terms of text lines and/or bytes changed) 
+between their local revision and
+the repository revision they started with.
+That's called a 'diff' or a 'patch'.
+
+To share those changes, an author must submit a patch to
+a repository maintainer, who is responsible for applying
+or not applying the changes to a branch of a repository.
+
+The patch review feedback cycle -- classically over NNTP or SMTP (email) --
+can produce lots of text: both revisions to the patch and an
+asynchronous stream of emails and IRC messages.
+
+Patch attributes
+~~~~~~~~~~~~~~~~~
+
+* Header (first n chars of first line)
+* Header
+* Body (made of hunks)  
+
+
+Patch Workflow
+~~~~~~~~~~~~~~~
+* Send patch(es) as an email attachment ("a patch bomb")
+
+  * TST,BLD,CLN: code and test an ENHancement or fix a BUG
+  * DOC: write  
+  * DOC: prepend Code Labels to first line of patch header (commit message)
+  * DOC: write a commit message
+  * (.sent, .code) Open Loop: wait for feedback (add email label)
+  * (pending) respond, revise, respond (add email labels) 
+  * (pending) correlate manual line references in feedback emails with
+    the correct revision of the patch
+  * (pending|accepted|rejected) review constructive feedback
+  * (closed,done) Reach 'done'; update TODO system
+
+* Receive patch(es) as an email attachment
+
+  * (.unread) Open Loop: they're waiting for feedback
+  * (.read) read, review, revise, respond: email, editor
+  * (.tested) Test: run existing or documentation tests
+  * (pending) Respond: [Email] Feedback
+  * (pending|accepted|rejected) Evauluate: Apply or do not apply
+  * (accepted) Update release log (Desire Code Labels)  
+  * (released) Release: issue a version identifier with merged patch  
+  * (closed,done) Reach 'done'; update TODO system  
+
+Forge
+-------
+`<https://en.wikipedia.org/wiki/Forge_(software)>`_
+
 
 Issues
---------
+~~~~~~~~
+https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
+
 A finite request, report, or work item.
 
 Also referred to as tickets, issues, or cards.
 
 Issue attributes
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 * a title
 * a description
@@ -260,58 +335,18 @@ Issue attributes
     * Component
 
 
+Code Hosting
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities
 
-Patches
----------
-Also referred to as a diff.
-
-When an author has modified a file in a repository,
-there is a difference (in terms of text lines and/or bytes changed) 
-between their local revision and
-the repository revision they started with.
-That's called a 'diff' or a 'patch'.
-
-To share those changes, an author must submit a patch to
-a repository maintainer, who is responsible for applying
-or not applying the changes to a branch of a repository.
-
-The patch review feedback cycle -- classically over NNTP or SMTP (email) --
-can produce lots of text: both revisions to the patch and an
-asynchronous stream of emails and IRC messages.
-
-Patch attributes
-~~~~~~~~~~~~~~~~~
-
-* Header (first n chars of first line)
-* Header
-* Body (made of hunks)  
+* https://github.com/westurner/wiki/wiki/GitHub
+* https://github.com/westurner/wiki/wiki/BitBucket
 
 
-Patch Workflow
-~~~~~~~~~~~~~~~
-* Send patch(es) as an email attachment ("a patch bomb")
+Collaborative Software
+~~~~~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/List_of_collaborative_software
 
-  * TST,BLD,CLN: code and test an ENHancement or fix a BUG
-  * DOC: write  
-  * DOC: prepend Code Labels to first line of patch header (commit message)
-  * DOC: write a commit message
-  * (.sent, .code) Open Loop: wait for feedback (add email label)
-  * (pending) respond, revise, respond (add email labels) 
-  * (pending) correlate manual line references in feedback emails with
-    the correct revision of the patch
-  * (pending|accepted|rejected) review constructive feedback
-  * (closed,done) Reach 'done'; update TODO system
-
-* Receive patch(es) as an email attachment
-
-  * (.unread) Open Loop: they're waiting for feedback
-  * (.read) read, review, revise, respond: email, editor
-  * (.tested) Test: run existing or documentation tests
-  * (pending) Respond: [Email] Feedback
-  * (pending|accepted|rejected) Evauluate: Apply or do not apply
-  * (accepted) Update release log (Desire Code Labels)  
-  * (released) Release: issue a version identifier with merged patch  
-  * (closed,done) Reach 'done'; update TODO system  
 
 
 Pull Requests
@@ -330,7 +365,9 @@ and line-based commenting
 
 Pull Request Workflow
 ~~~~~~~~~~~~~~~~~~~~~~~
-* Send a Pull Request
+
+Send a Pull Request
+^^^^^^^^^^^^^^^^^^^^^^
 
   * Branch/fork, update, commit
   * Compare, test (review diff)
@@ -343,8 +380,9 @@ Pull Request Workflow
 
   * (.code) Open Loop: wait for feedback
   
-* Review a Pull Request
 
+Review a Pull Request
+^^^^^^^^^^^^^^^^^^^^^^^
   * Open Loop: they're waiting for feedback
   * Check whether the tests pass with the pull request applied
   * Read, Review, Test*, Respond
