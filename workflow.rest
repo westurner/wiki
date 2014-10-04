@@ -982,14 +982,23 @@ Requirements Traceability
 
 - [ ] Prefix commit messages with `Code Labels`_::
 
-      TST: Create order placing tests (#123)
-      DOC: Add order placing documentation (for #123)
+      TST: Create order placing tests
+      DOC: Add order placing documentation
+      BLD: Update the build configuration
 
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
   *Release Logs*
 
   - [ ] Reference an issue number: ``#123``
-  - [ ] Paste the link (URL, URI) as-is (with no anchor text) into the documentation
+
+      TST: Create order placing tests (#123)
+      DOC: Add order placing documentation (for #123)
+      CLN: Cleanup syntax for style guide (#5678)
+
+- [ ] Link things with URIs
+ 
+  - [ ] Paste the link (URL, URI) as-is (with no anchor text)
+    into the documentation
 
 
 Revision Control
