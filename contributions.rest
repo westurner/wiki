@@ -1,7 +1,26 @@
 .. contents::
 
-Tags
-======
+Code Labels
+=============
+::
+
+    ENH: Enhancement    # blue
+    BUG: Bug            # red
+    DOC: Documentation  # light blue
+    TST: Test           # light purple
+    BLD: Build          # light green
+    CLN: Cleanup        #
+    SEC: Security       #
+    PRF: Performance    #
+    UBY: Usability      #
+    RLS: Release        #
+
+
+-- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
+
+
+See: `<workflow#code-labels>`_
+
 
 Code
 ======
@@ -284,7 +303,7 @@ Awesome
 
 - [x] https://github.com/bayandin/awesome-awesomeness
 - [x] https://github.com/onurakpolat/awesome-bigdata
-- [x] https://github.com/josephmisiti/awesome-machine-learning 
+- [x] https://github.com/josephmisiti/awesome-machine-learning
 - [x] https://github.com/vinta/awesome-python
 - [x] https://github.com/dahlia/awesome-sqlalchemy
 - [ ] https://github.com/kahun/awesome-sysadmin
