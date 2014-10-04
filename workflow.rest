@@ -1040,7 +1040,7 @@ Requirements Traceability
   (`<git@github.com:westurner/wiki.wiki.git>`_ / ``Roadmap.rest``)
 
   * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
-  * Milestone: https://github.com/westurner/wiki/milestones/0.3
+  * Milestone: https://github.com/westurner/wiki/milestones/0.1
 
 - [ ] Write `User Stories`_ as issues labeled ``ENH``:
 
@@ -1061,5 +1061,7 @@ Source Control
   (`<https://datasift.github.io/gitflow/>`_,
   for managing project repository branches:
   ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
+- [ ] Tag builds and their artifacts with conda selectors
+  (`<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_)
 - [ ] Release semantic versions (`<http://semver.org>`_) tagged as
   ``major.minor.patch`` (e.g. ``v1.0.01``)
