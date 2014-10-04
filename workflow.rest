@@ -994,10 +994,10 @@ Requirements Traceability
       CLN: Cleanup syntax for style guide (#5678)
 
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
-  *Release Logs* by referencing an absolute URL::
- 
-  - [ ] Paste the link (URL, URI) as-is (with no anchor text)
-    into the documentation
+  *Release Logs* by referencing (pasting) a link (URL, URI)
+  as-is (with no anchor text)::
+
+      https://github.com/westurner/wiki/issues/1
 
 
 Revision Control
