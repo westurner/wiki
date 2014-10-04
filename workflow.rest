@@ -1042,7 +1042,7 @@ Requirements Traceability
   * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
   * Milestone: https://github.com/westurner/wiki/milestones/0.1
 
-- [ ] Write `User Stories`_ as issues prefixed with ``ENH``::
+- [ ] Write `User Stories`_ as issues prefixed with ``ENH:`` (#123)::
 
       ENH: Users can place orders
 
