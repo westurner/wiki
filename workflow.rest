@@ -480,6 +480,35 @@ Markdown::
 Labels
 =======
 
+History
+---------
+* Text files
+* PDA memos
+
+  * Nokia 3660, Samsung SPH-i500, Treo 650, Palm Pre, Motorola Photon, Nexus
+
+* first-line file naming::
+
+    quote
+    quote.movie
+    q
+    q.m
+    q.r
+    .q
+    .q.r    # quote.random
+
+Syntax
+-------
+Personal labeling syntax
+
+* ``lower case``
+* ``dash-slugified``
+* ``period.delimited``
+* ``-task`` (``-next``, ``-waiting``, ``-someday``)
+* ``@context``
+* ``.pro.ject``
+
+
 Task Labels
 ---------------
 
@@ -511,7 +540,7 @@ Topical Labels
 .p.<project> :
     .
 
-.p.<person> :
+.p.<people> :
     .
 
 .career :
@@ -529,6 +558,15 @@ Topical Labels
 
 .health :
     .
+
+.diet
+   :
+
+.exercise
+   :
+
+.relax
+   :
 
 .ride :
     transportation
@@ -593,6 +631,12 @@ Email Labels
     .
 
 
+Project Labels
+----------------
+.dotfiles :
+    .
+
+See: https://github.com/westurner/wiki/wiki/projects
 
 Code Labels
 ------------
@@ -617,36 +661,6 @@ Tests, Documentation, Enhancements, Bugs, Builds, Merges
 -- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
 
-
-
-Project Labels
-----------------
-
-See: https://github.com/westurner/wiki/wiki/projects
-
-career
-   :
-
-skills
-   :
-
-networking
-   :
-
-paycheck
-   :
-
-health
-   :
-
-diet
-   :
-
-exercise
-   :
-
-relax
-   :
 
 
 Services
