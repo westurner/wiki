@@ -15,7 +15,12 @@ rst2html_all: build_setup
 		| xargs -0 -I % rst2html.py % _build/html/%.html
 
 copy_sidebar_to_footer:
-	cp _Sidebar.rest _Footer.rest
+	echo '' > _Footer.rest
+	echo '`#top <#>`_' >> _Footer.rest
+	echo '' >> _Footer.rest
+	echo '*****' >> _Footer.rest
+	echo '' >> _Footer.rest
+	cat _Sidebar.rest >> _Footer.rest
 
 copy_sidebar_to_home:
 	echo '' > Home.rest

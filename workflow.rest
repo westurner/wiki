@@ -1020,6 +1020,3 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
   (e.g. ``v1.0.01-eb4df7f-linux64``)
 
 
-*****
-
-`#top <#workflow>`_
