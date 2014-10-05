@@ -49,5 +49,19 @@ clean:
 commit:
 	git commit
 
+setup_git_remotes:
+	# git clone ssh://git@github.com/westurner/wiki
+	git remote remove origin || true
+	git remote add origin ssh://git@github.com/westurner/wiki
+	git remote remove wiki || true
+	git remote add wiki ssh://git@github.com/westurner/wiki.wiki.git
+
+pull:
+	git pull origin master
+	git pull wiki master
+
 push:
-	git push
+	git push origin master
+	git push -f wiki master
+	git push -f origin gh-pages
+
