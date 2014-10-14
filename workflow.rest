@@ -106,27 +106,61 @@ Text Files
 * ``TODO``, ``TODO.rst``, ``TODO.md``, ``TODO.html``
 * ``index.html``, ``index.htm``
 
+Lightweight Markup Syntax
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Lightweight_markup_language
+
+
+Text File Headings
+++++++++++++++++++++
+
+ATX Headings (Markdown,)::
+
+    # h1
+    ## h2
+    ### h3
+
+Setext Headings (document-local ordering) (ReStructuredText, Markdown)
+
+| https://docs.python.org/devguide/documenting.html#sections
+| http://sphinx-doc.org/rest.html#sections
+
+::
+
+    #####
+    part
+    #####
+
+    chapter
+    ********
+
+    section
+    ========
+
+    subsection
+    -----------
+
+    subsection
+    ^^^^^^^^^^^
+
+    paragraph
+    """"""""""
+
+
+
 Text File Attributes
 ~~~~~~~~~~~~~~~~~~~~~~
-* Relative file path (``~/path/to/file.ext``)
-* Absolute path (``/home/user/path/to/file.ext``)
+* Path: relative (``./path/to/file.ext``)
+* Path: absolute (``/home/user/path/to/file.ext``)
 * File extension (``.ext``)
-* Filesystem attributes
-* Byte-order-marker
-* Line endings (DOS, UNIX)
+* Filesystem attributes (``getfacl``, ``setfacl``)
+* MIME-type (``file --mime``)
+* Byte-order-marker (``file --mime``)
+* Line endings (DOS, UNIX) (``Ctrl-V Ctrl-M``)
 * Shebang line (``#!/bin/sh``, ``#!/usr/bin/env python``)
-* Creation time
-* Modification time
-* Lightweight Markup Headings (h0 -> title)
-
-  * ATX Headers: ``#``, ``##``, ``###`` (Markdown,)
-  * Setex: (ReStructuredText, Markdown)
-
-* ReStructuredText Bibliographic Fields:
-  ``:Author:`` <name>,  ``:Title:`` <title>
-* Local undo/backup cache
-* Local repository path, working directory commit id
-
+* Creation time (``stat``)
+* Modification time (``stat``)
+* Local undo/backup cache path
 
 Source Code
 -------------
@@ -134,15 +168,13 @@ https://en.wikipedia.org/wiki/Source_code
 
 Source Code File Attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Absolute local file path
-* Shebang line
-* File extension
-* Relative repository path
-* Repository name
+* `Text File Attributes`_
+* Path: repository-relative
+* Repository revision hash id
+* Repository path
 * Repository remote URL(s)
 * Repository file history log
 * Repository file history log across renames
-* Local undo/backup cache
 
 Source Code Comment Tags
 +++++++++++++++++++++++++++
@@ -255,7 +287,6 @@ Issue attributes
       * question
       * wontfix
 
-
   * BitBucket
 
     * title (Title)
@@ -330,10 +361,6 @@ Issue attributes
          * Performance
          * Usability
          * Maintainability
-
-  * Trac
-
-    * Component
 
 
 Code Hosting
@@ -972,7 +999,7 @@ Requirements Traceability
   * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
   * Milestone: https://github.com/westurner/wiki/milestones/0.1
 
-- [ ] Write `User Stories`_ as issues prefixed with ``ENH:``::
+- [ ] Write Features and *User Stories* as issues prefixed with ``ENH:``::
 
       ENH: Users can place orders
 
