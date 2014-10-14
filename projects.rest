@@ -93,6 +93,10 @@ pyline
 | Pypi: https://pypi.python.org/pypi/pyline
 | Docs: https://pyline.readthedocs.org/en/latest/
 
+pyliveping
+------------
+| Src: https://github.com/westurner/pyliveping
+
 pyrpo
 ---------------
 | Src: https://github.com/westurner/pyrpo
@@ -102,6 +106,10 @@ pyrpo
 pyrtm-task-cli
 ---------------
 | Src: https://bitbucket.org/westurner/pyrtm-task-cli
+
+pytracepath
+-------------
+| Src: https://github.com/westurner/pytracepath
 
 pywifiloc
 ---------------
