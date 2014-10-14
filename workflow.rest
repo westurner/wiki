@@ -391,7 +391,7 @@ Review a Pull Request
 
    * Apply
 
-      * Update release log (See: `<#code-labels>`_)
+      * Update release log (See: `<#code-labels>`__)
       * Commit
       * Push
 
