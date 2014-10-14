@@ -527,19 +527,8 @@ Labels
 History
 ---------
 * Text files
+* First-line file naming
 * PDA memos
-
-  * Nokia 3660, Samsung SPH-i500, Treo 650, Palm Pre, Motorola Photon, Nexus
-
-* first-line file naming::
-
-    quote
-    quote.movie
-    q
-    q.m
-    q.r
-    .q
-    .q.r    # quote.random
 
 Label Syntax
 --------------
@@ -638,10 +627,16 @@ Three-letter codes with which commit messages can be prefixed.
 Code Label Syntax
 ~~~~~~~~~~~~~~~~~~~
 
-* REGEX: ``[\W,\s]+:``
-* Split by: first colon from left
-* ``COMMA,DELIMITED,ORDERED, SET: of prefix labels``
-* Technically CASE insensitive
+::
+
+    ENH: Add new feature (#1)
+    BUG: Fixes #3
+    DOC: index.rst: Add readme.rst
+    TST: Extend tests for #1
+    BLD,CLN: Makefile: remove extra newlines
+
+* ``COMMA,DELIMITED, SET: of prefix labels``
+* Three-characters, if possible
 
 Code labels are helpful for:
 
@@ -649,6 +644,7 @@ Code labels are helpful for:
 * aggregating changes into release logs (``HISTORY``)
 * correlating changes with requirements
   (https://en.wikipedia.org/wiki/Requirements_traceability)
+  [`<#requirements-traceability>`__]
 
 
 -- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
