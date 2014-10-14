@@ -644,7 +644,7 @@ Code labels are helpful for:
 * aggregating changes into release logs (``HISTORY``)
 * correlating changes with requirements
   (https://en.wikipedia.org/wiki/Requirements_traceability)
-  [`Requirements Traceability`__]
+  [`Requirements Traceability`_]
 
 
 -- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
