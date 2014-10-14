@@ -14,7 +14,7 @@
 		pull \
 		push
 
-WIKI_REPO_URL="github.com/westurner/wiki"
+WIKI_REPO_URL=github.com/westurner/wiki
 
 default: build
 
@@ -36,7 +36,7 @@ copy_sidebar_to_footer:
 
 copy_sidebar_to_home:
 	echo '' > Home.rest
-	echo 'Welcome to `<https://$$WIKI_REPO_URL/wiki>`_' >> Home.rest
+	echo 'Welcome to `<https://$(WIKI_REPO_URL)/wiki>`_' >> Home.rest
 	echo '' >> Home.rest
 	cat _Sidebar.rest >> Home.rest
 
@@ -69,11 +69,11 @@ setup_pip_requirements:
 	pip install -r ./requirements.txt
 
 setup_git_remotes:
-	# git clone ssh://git@$$WIKI_REPO_URL
+	# git clone ssh://git@$(WIKI_REPO_URL)
 	git remote remove origin || true
-	git remote add origin ssh://git@$$WIKI_REPO_URL
+	git remote add origin ssh://git@$(WIKI_REPO_URL)
 	git remote remove wiki || true
-	git remote add wiki ssh://git@$$WIKI_REPO_URL.wiki.git
+	git remote add wiki ssh://git@$(WIKI_REPO_URL).wiki.git
 
 pull:
 	git pull origin master
