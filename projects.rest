@@ -119,6 +119,10 @@ redem
 ---------------
 | Src: https://github.com/westurner/redem
 
+rst-tools
+---------------
+| Src: https://github.com/westurner/rst-tools
+
 vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
