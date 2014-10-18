@@ -577,6 +577,8 @@ Task Labels
    -waiting    a task that is blocked
    -someday    an opportunity for a later date
 
+https://en.wikipedia.org/wiki/Getting_Things_Done
+
 
 Project Labels
 ----------------
@@ -1064,5 +1066,4 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 - [ ] Tag builds of versions and their artifacts with short commit ids
   and conda selectors: `<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_
   (e.g. ``v1.0.01-eb4df7f-linux64``)
-
 
