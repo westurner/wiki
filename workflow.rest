@@ -942,9 +942,12 @@ Workflow
 
       See: `Resolve issues automatically when users push code <https://confluence.atlassian.com/display/BITBUCKET/Resolve+issues+automatically+when+users+push+code>`_
 
+* Create Pull Request Tasks: http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/
+
 
 Trac
 -----
+
 
 Redmine
 --------
