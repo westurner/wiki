@@ -212,6 +212,7 @@ sphinx
 
 - [x] *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
 - [x] *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
+- [x] *DOC: Add reference to markup/para.rst#glossary-directive from markup/inline.rst* https://bitbucket.org/birkenfeld/sphinx/pull-request/310/doc-add-reference-to-markup-pararst/diff
 
 
 sphinxjp.themes.basicstrap
