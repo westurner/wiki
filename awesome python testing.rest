@@ -171,12 +171,25 @@ Continuous Integration (CI) and Continuous Delivery (CD)
 
 * https://en.wikipedia.org/wiki/Continuous_integration
 * https://en.wikipedia.org/wiki/Continuous_delivery
+* https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
+
 * http://docs.python-guide.org/en/latest/scenarios/ci/
 
-* https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
-* https://en.wikipedia.org/wiki/Buildbot
-* `<https://en.wikipedia.org/wiki/Jenkins_(software)>`__
-* https://en.wikipedia.org/wiki/Travis_CI
+
+Buildbot
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Buildbot
+
+
+Jenkins
+--------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Jenkins_(software)>`__
+
+
+Travis
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/Travis_CI
+
 * http://about.travis-ci.org/docs/user/getting-started/
 
 
