@@ -1,4 +1,8 @@
-# Awesome Python Testing
+########################
+Awesome Python Testing
+########################
+
+.. contents::
 
 **[Software Testing](https://en.wikipedia.org/wiki/Software_testing) and [Python](https://en.wikipedia.org/wiki/Python_\(programming_language\))**
 
@@ -8,7 +12,9 @@
 * http://ipython.org/ipython-doc/dev/interactive/tips.html
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy 
 
-Testing Process Development:
+Testing Process Development
+============================
+::
 
     1. edit, edit, commit
     2. edit, commit
@@ -20,7 +26,12 @@ Testing Process Development:
     7. todo, branch, test, edit, test, commit, { tag, push, send patch }
     8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
 
-Testing Techniques: /r/IPython REPL
+
+Testing Techniques
+===================
+/r/IPython REPL
+
+::
 
     ?
     %edit?
@@ -38,7 +49,9 @@ Testing Techniques: /r/IPython REPL
 
     %nose # ipython_nose
 
+
 Testing Science: Learning
+===========================
 
 * http://software-carpentry.org/
 * https://github.com/jiffyclub/ipythonblocks
@@ -48,7 +61,9 @@ Testing Science: Learning
 * https://en.wikipedia.org/wiki/Bayesian_inference
 * https://en.wikipedia.org/wiki/Sensitivity_analysis
 
+
 Testing Software
+===================
 
 * https://en.wikipedia.org/wiki/Software_testing
 * https://en.wikipedia.org/wiki/Test-driven_development
@@ -61,7 +76,9 @@ Testing Software
 * https://en.wikipedia.org/wiki/Template:Software_development_process
 * https://en.wikipedia.org/wiki/Category:Formal_methods
 
+
 Python Testing
+================
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
@@ -70,6 +87,7 @@ Python Testing
 * https://pypi.python.org/pypi/unittest2
 
 Testing Techniques: Logging
+=============================
 
 * https://en.wikipedia.org/wiki/Computer_data_logging
 * https://en.wikipedia.org/wiki/Syslog
@@ -77,7 +95,9 @@ Testing Techniques: Logging
 * http://docs.python.org/3/library/logging.config.html
 * http://pythonhosted.org/Logbook/features.html
 
+
 Testing Tools: Nose
+=====================
 
 * https://github.com/nose-devs/nose
 * http://nose.readthedocs.org/en/latest/testing.html
@@ -86,42 +106,55 @@ Testing Tools: Nose
 * https://github.com/flavioamieiro/nose-ipdb
 * https://github.com/wolever/nose-parameterized
 
+
 Testing Tools: py.test
+=======================
 
 * https://bitbucket.org/hpk42/pytest
 * http://pytest.org/latest/
 
+
 Testing Tools: GUI
+===================
 
 * https://github.com/pybee/cricket
 
 
 Testing Tools: Tox
+====================
 
 * https://bitbucket.org/hpk42/tox
 * http://tox.readthedocs.org/en/latest/
 
+
 Testing Techniques: Mocks
+===========================
 
 * https://en.wikipedia.org/wiki/Mock_object
 * http://mock.readthedocs.org/en/latest/index.html
 * http://mock.readthedocs.org/en/latest/patch.html
 * http://docs.python.org/3/library/unittest.mock.html
 
+
 Testing Tools: BDD
+====================
 
 * https://en.wikipedia.org/wiki/Behavior-driven_development
 * http://pythonhosted.org/lettuce/
 * http://pythonhosted.org/lettuce/tutorial/simple.html
 * http://heynemann.github.io/pyvows/
 
+
 Testing Techniques: Continuous Integration and Delivery
+=========================================================
 
 * https://en.wikipedia.org/wiki/Continuous_integration
 * https://en.wikipedia.org/wiki/Continuous_delivery
 * http://docs.python-guide.org/en/latest/scenarios/ci/
 
+
 Testing Tools: Continuous Integration (CI)
+============================================
 
 * https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
 * https://en.wikipedia.org/wiki/Buildbot
@@ -129,7 +162,9 @@ Testing Tools: Continuous Integration (CI)
 * https://en.wikipedia.org/wiki/Travis_CI
 * http://about.travis-ci.org/docs/user/getting-started/
 
+
 Testing Techniques: Patches, Tags, Branches, Merging
+=======================================================
 
 * https://en.wikipedia.org/wiki/ACID
 * https://en.wikipedia.org/wiki/Patch_(computing)
@@ -144,7 +179,9 @@ Testing Techniques: Patches, Tags, Branches, Merging
 * http://hgbook.red-bean.com/read/advanced-uses-of-mercurial-queues.html
 * http://mercurial.selenic.com/wiki/Bookmarks
 
+
 Testing Techniques: DVCS: Bisect, Blame
+=========================================
 
 * https://en.wikipedia.org/wiki/Code_Bisection
 * https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html
@@ -154,7 +191,9 @@ Testing Techniques: DVCS: Bisect, Blame
 * http://www.selenic.com/mercurial/hg.1.html#annotate
 * http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#sec:undo:bisect
 
+
 Debugging
+===========
 
 * https://en.wikipedia.org/wiki/Debugging
 * https://en.wikipedia.org/wiki/Breakpoint
@@ -163,7 +202,10 @@ Debugging
 * https://en.wikipedia.org/wiki/Fault_injection
 * https://en.wikipedia.org/wiki/Probe_effect
 
+
 Debugging: Console, CLI, Terminal, REPL, /r/IPython
+=====================================================
+::
 
     import pdb; pdb.set_trace()
 
@@ -174,7 +216,9 @@ Debugging: Console, CLI, Terminal, REPL, /r/IPython
 * https://dev.launchpad.net/UltimateVimPythonSetup (F7 for `set_trace`)
 * https://github.com/mattboehm/vim-unstack
 
+
 Debugging: Web
+================
 
 * http://werkzeug.pocoo.org/
 * https://github.com/django-debug-toolbar/django-debug-toolbar
@@ -182,7 +226,9 @@ Debugging: Web
 * http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
 * http://firelogger.binaryage.com#python
 
+
 Debugging: GUI
+================
 
 * http://winpdb.org/docs/
 * https://github.com/lmacken/pyrasite-gui
@@ -195,7 +241,9 @@ Debugging: GUI
 * https://pytools.codeplex.com/
 * https://github.com/pybee/bugjar
 
+
 Advanced Debugging
+====================
 
 * http://docs.python.org/2/library/inspect.html
 * http://docs.python.org/2/library/dis.html
@@ -204,10 +252,12 @@ Advanced Debugging
 * https://github.com/alonho/pytrace
 * https://github.com/wyplay/pytracemalloc
 
-Instrumentation
 
-* https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)
-* https://en.wikipedia.org/wiki/Profiling_(computer_programming)
+Instrumentation
+==================
+
+* `<https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)>`__
+* `<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>`__
 * https://en.wikipedia.org/wiki/Call_graph
 * https://github.com/tobami/codespeed/
 * https://github.com/pydata/vbench
@@ -216,7 +266,9 @@ Instrumentation
 * http://firelogger.binaryage.com#python
 * http://scikit-learn.org/dev/developers/performance.html
 
+
 Testing Databases: Fixtures
+=============================
 
 * https://en.wikipedia.org/wiki/Test_fixture
 * http://farmdev.com/projects/fixture/
@@ -224,7 +276,9 @@ Testing Databases: Fixtures
 * https://pypi.python.org/pypi/tablib
 * https://pypi.python.org/pypi/anyconfig
 
+
 Testing Databases: Schema Migrations
+======================================
 
 * https://en.wikipedia.org/wiki/Schema_migration
 * https://en.wikipedia.org/wiki/Database_refactoring
@@ -233,7 +287,9 @@ Testing Databases: Schema Migrations
 * https://sqlalchemy-migrate.readthedocs.org/en/latest/
 * http://alembic.readthedocs.org/en/latest/
 
+
 Testing Web Frameworks
+========================
 
 * https://en.wikipedia.org/wiki/Web_application_framework
 * https://en.wikipedia.org/wiki/Software_configuration_management
