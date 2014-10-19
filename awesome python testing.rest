@@ -36,6 +36,9 @@ Workflow Evolution
 
 Python
 -----------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Python_(programming_language)>`__
+| Homepage: https://www.python.org/
+| Source: https://hg.python.org/cpython
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
@@ -103,15 +106,15 @@ Logging
 * http://docs.python.org/2/howto/logging.html
 * http://docs.python.org/3/library/logging.config.html
 * http://pythonhosted.org/Logbook/features.html
-* http://structlog.readthedocs.org/en/latest/
+* https://structlog.readthedocs.org/en/latest/
 
 
 Nose
 =====================
 
 * https://github.com/nose-devs/nose
-* http://nose.readthedocs.org/en/latest/testing.html
-* http://nose.readthedocs.org/en/latest/writing_tests.html
+* https://nose.readthedocs.org/en/latest/testing.html
+* https://nose.readthedocs.org/en/latest/writing_tests.html
 * https://github.com/taavi/ipython_nose
 * https://github.com/flavioamieiro/nose-ipdb
 * https://github.com/wolever/nose-parameterized
@@ -276,28 +279,34 @@ Instrumentation
 * http://scikit-learn.org/dev/developers/performance.html
 
 
-Testing Databases: Fixtures
-=============================
+Databases
+==========
+
+Fixtures
+----------------
 
 * https://en.wikipedia.org/wiki/Test_fixture
-* http://farmdev.com/projects/fixture/
+* https://factoryboy.readthedocs.org/en/latest/orms.html
 * https://docs.djangoproject.com/en/dev/topics/testing/overview/#topics-testing-fixtures
+* http://farmdev.com/projects/fixture/
+
+
 * https://pypi.python.org/pypi/tablib
 * https://pypi.python.org/pypi/anyconfig
 
 
-Testing Databases: Schema Migrations
-======================================
+Schema Migrations
+-------------------
 
 * https://en.wikipedia.org/wiki/Schema_migration
 * https://en.wikipedia.org/wiki/Database_refactoring
 * https://en.wikipedia.org/wiki/Database_normalization
-* http://south.readthedocs.org/en/latest/
+* https://south.readthedocs.org/en/latest/
 * https://sqlalchemy-migrate.readthedocs.org/en/latest/
-* http://alembic.readthedocs.org/en/latest/
+* https://alembic.readthedocs.org/en/latest/
 
 
-Testing Web Frameworks
+Web Frameworks
 ========================
 
 * https://en.wikipedia.org/wiki/Web_application_framework
@@ -305,8 +314,8 @@ Testing Web Frameworks
 * http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
 * https://docs.djangoproject.com/en/dev/topics/settings/
 * https://docs.djangoproject.com/en/dev/topics/testing/
-* http://flask.readthedocs.org/en/latest/config/
-* http://flask.pocoo.org/docs/testing/
+* https://flask.readthedocs.org/en/latest/config/
+* https://flask.pocoo.org/docs/testing/
 * http://developer.plone.org/testing_and_debugging/
 * http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
 
