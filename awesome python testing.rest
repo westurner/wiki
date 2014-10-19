@@ -299,14 +299,21 @@ Advanced Debugging
 Performance Instrumentation and Profiling
 ============================================
 
+Profiling
+----------
 * `<https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)>`__
 * `<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>`__
 * https://en.wikipedia.org/wiki/Call_graph
+* https://docs.python.org/2/library/profile.html
 * https://github.com/tobami/codespeed/
 * https://github.com/pydata/vbench
 * https://github.com/amcfague/linesman
 * https://github.com/bdarnell/plop
 * http://firelogger.binaryage.com#python
+
+Performance
+-------------
+
 * http://scikit-learn.org/dev/developers/performance.html
 
 
