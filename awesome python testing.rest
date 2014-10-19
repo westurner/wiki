@@ -106,13 +106,7 @@ Logging
 * https://structlog.readthedocs.org/en/latest/
 
 
-Mocks
-===========================
 
-* https://en.wikipedia.org/wiki/Mock_object
-* http://mock.readthedocs.org/en/latest/index.html
-* http://mock.readthedocs.org/en/latest/patch.html
-* http://docs.python.org/3/library/unittest.mock.html
 
 TDD
 ====================
@@ -126,9 +120,19 @@ BDD
 * http://pythonhosted.org/lettuce/tutorial/simple.html
 * http://heynemann.github.io/pyvows/
 
+Mocks
+===========================
+
+* https://en.wikipedia.org/wiki/Mock_object
+* http://mock.readthedocs.org/en/latest/index.html
+* http://mock.readthedocs.org/en/latest/patch.html
+* http://docs.python.org/3/library/unittest.mock.html
+
+Test Runners
+==============
 
 Nose
-=====================
+--------------
 
 * https://github.com/nose-devs/nose
 * https://nose.readthedocs.org/en/latest/testing.html
@@ -139,20 +143,20 @@ Nose
 
 
 py.test
-=======================
+---------------
 
 * https://bitbucket.org/hpk42/pytest
 * http://pytest.org/latest/
 
 
 GUI
-===================
+---------------
 
 * https://github.com/pybee/cricket
 
 
 Tox
-====================
+----------------
 
 * https://bitbucket.org/hpk42/tox
 * http://tox.readthedocs.org/en/latest/
