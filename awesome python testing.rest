@@ -270,8 +270,8 @@ Advanced Debugging
 * https://github.com/wyplay/pytracemalloc
 
 
-Instrumentation
-==================
+Performance Instrumentation and Profiling
+============================================
 
 * `<https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)>`__
 * `<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>`__
@@ -325,8 +325,8 @@ Web Frameworks
 * http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
 
 
-Testing Web Apps
-==================
+Web Apps
+===========
 
 * http://webtest.pythonpaste.org/en/latest/
 * http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
