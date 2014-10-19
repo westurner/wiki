@@ -172,8 +172,11 @@ Tools: Continuous Integration (CI)
 * http://about.travis-ci.org/docs/user/getting-started/
 
 
-Techniques: Patches, Tags, Branches, Merging
-=======================================================
+Version Control
+==================
+
+Patches, Tags, Branches, Merging
+------------------------------------
 
 * https://en.wikipedia.org/wiki/ACID
 * `<https://en.wikipedia.org/wiki/Patch_(computing)>`__
@@ -189,8 +192,8 @@ Techniques: Patches, Tags, Branches, Merging
 * http://mercurial.selenic.com/wiki/Bookmarks
 
 
-Techniques: DVCS: Bisect, Blame
-=========================================
+Bisect, Blame
+----------------
 
 * https://en.wikipedia.org/wiki/Code_Bisection
 * https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html
@@ -213,7 +216,7 @@ Debugging
 
 
 Debugging: Console, CLI, Terminal, REPL, /r/IPython
-=====================================================
+-----------------------------------------------------
 ::
 
     import pdb; pdb.set_trace()
@@ -227,7 +230,7 @@ Debugging: Console, CLI, Terminal, REPL, /r/IPython
 
 
 Debugging: Web
-================
+----------------
 
 * http://werkzeug.pocoo.org/
 * https://github.com/django-debug-toolbar/django-debug-toolbar
@@ -237,7 +240,7 @@ Debugging: Web
 
 
 Debugging: GUI
-================
+----------------
 
 * http://winpdb.org/docs/
 * https://github.com/lmacken/pyrasite-gui
@@ -252,7 +255,7 @@ Debugging: GUI
 
 
 Advanced Debugging
-====================
+--------------------
 
 * http://docs.python.org/2/library/inspect.html
 * http://docs.python.org/2/library/dis.html
