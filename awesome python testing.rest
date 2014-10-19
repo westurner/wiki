@@ -248,14 +248,19 @@ Debugging: GUI
 
 * http://winpdb.org/docs/
 * https://github.com/lmacken/pyrasite-gui
+* https://github.com/pybee/bugjar
+
+IDEs
+~~~~~
 * http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger
+
+* http://www.jetbrains.com/pycharm/features/index.html#debugger
+* http://www.activestate.com/komodo-ide/features#debugging
 * http://pythonhosted.org/spyder/debugging.html
 * http://pydev.org/manual_adv_debugger.html
-* http://www.activestate.com/komodo-ide/features#debugging
-* http://www.jetbrains.com/pycharm/features/index.html#debugger
 * https://wingware.com/doc/debug
 * https://pytools.codeplex.com/
-* https://github.com/pybee/bugjar
+
 
 
 Debugging: Web
