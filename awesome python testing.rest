@@ -262,10 +262,20 @@ Debugging: Web
 ----------------
 
 * http://werkzeug.pocoo.org/
-* https://github.com/django-debug-toolbar/django-debug-toolbar
-* https://flask-debugtoolbar.readthedocs.org/en/latest/
-* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
 * http://firelogger.binaryage.com#python
+
+Django
+~~~~~~~~
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+
+Flask
+~~~~~~
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+
+Pyramid
+~~~~~~~~
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+
 
 
 Advanced Debugging
