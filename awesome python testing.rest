@@ -10,6 +10,9 @@ Awesome Python Testing
 .. contents::
 
 
+Background
+============
+
 * http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test
 * http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test
 * http://docs.python-guide.org/en/latest/writing/tests.html
