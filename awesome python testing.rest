@@ -314,7 +314,14 @@ Schema Migrations
 * https://en.wikipedia.org/wiki/Schema_migration
 * https://en.wikipedia.org/wiki/Database_refactoring
 * https://en.wikipedia.org/wiki/Database_normalization
+
+Django
+~~~~~~~~
+* https://docs.djangoproject.com/en/1.7/topics/migrations/
 * https://south.readthedocs.org/en/latest/
+
+SQLAlchemy
+~~~~~~~~~~~
 * https://sqlalchemy-migrate.readthedocs.org/en/latest/
 * https://alembic.readthedocs.org/en/latest/
 
