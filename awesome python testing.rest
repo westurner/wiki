@@ -13,11 +13,25 @@ Awesome Python Testing
 Background
 ============
 
+Software Testing
+-------------------
+
+* https://en.wikipedia.org/wiki/Software_testing
+* https://en.wikipedia.org/wiki/Test-driven_development
+* `<https://en.wikipedia.org/wiki/Assertion_(computing)>`__
+* http://docs.python-guide.org/en/latest/writing/tests/
+* http://martinfowler.com/bliki/TestCoverage.html
+* http://martinfowler.com/eaaCatalog/
+* https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria
+* https://en.wikipedia.org/wiki/Category:Formal_methods
+
+
+Unit, Functional, Integration, Acceptance
+--------------------------------------------
+
 * http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test
 * http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test
-* http://docs.python-guide.org/en/latest/writing/tests.html
-* http://ipython.org/ipython-doc/dev/interactive/tips.html
-* http://wiki.python.org/moin/PythonTestingToolsTaxonomy 
+
 
 Workflow Evolution
 ----------------------
@@ -42,9 +56,9 @@ Python
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
-* http://docs.python-guide.org/en/latest/writing/tests/
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
 * https://pypi.python.org/pypi/unittest2
+* http://docs.python-guide.org/en/latest/writing/tests/
 
 
 IPython
@@ -52,6 +66,8 @@ IPython
 | Wikipedia: https://en.wikipedia.org/wiki/IPython
 | Homepage: http://ipython.org
 | Source: https://github.com/ipython/ipython
+
+* http://ipython.org/ipython-doc/dev/interactive/tips.html
 
 ::
 
@@ -84,17 +100,7 @@ Testing Science: Learning
 * https://en.wikipedia.org/wiki/Sensitivity_analysis
 
 
-Software Testing
--------------------
 
-* https://en.wikipedia.org/wiki/Software_testing
-* https://en.wikipedia.org/wiki/Test-driven_development
-* `<https://en.wikipedia.org/wiki/Assertion_(computing)>`__
-* http://docs.python-guide.org/en/latest/writing/tests/
-* http://martinfowler.com/bliki/TestCoverage.html
-* http://martinfowler.com/eaaCatalog/
-* https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria
-* https://en.wikipedia.org/wiki/Category:Formal_methods
 
 
 
