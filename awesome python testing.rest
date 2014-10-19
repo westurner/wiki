@@ -215,7 +215,7 @@ Debugging
 * https://en.wikipedia.org/wiki/Probe_effect
 
 
-Debugging: Console, CLI, Terminal, REPL, /r/IPython
+Debugging: Console, CLI, Terminal, REPL, IPython
 -----------------------------------------------------
 ::
 
