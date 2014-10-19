@@ -20,7 +20,7 @@ Background
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy 
 
 Testing Process Development
-============================
+-------------------------------
 ::
 
     1. edit, edit, commit
@@ -34,8 +34,8 @@ Testing Process Development
     8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
 
 
-Techniques
-===================
+Tools: IPython
+----------------
 /r/IPython REPL
 
 ::
@@ -58,7 +58,7 @@ Techniques
 
 
 Testing Science: Learning
-===========================
+-----------------------------
 
 * http://software-carpentry.org/
 * https://github.com/jiffyclub/ipythonblocks
@@ -69,8 +69,8 @@ Testing Science: Learning
 * https://en.wikipedia.org/wiki/Sensitivity_analysis
 
 
-Testing Software
-===================
+Software Testing
+-------------------
 
 * https://en.wikipedia.org/wiki/Software_testing
 * https://en.wikipedia.org/wiki/Test-driven_development
@@ -84,8 +84,8 @@ Testing Software
 * https://en.wikipedia.org/wiki/Category:Formal_methods
 
 
-Python Testing
-================
+Tools: Python
+-----------------
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
