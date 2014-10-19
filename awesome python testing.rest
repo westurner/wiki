@@ -19,8 +19,8 @@ Background
 * http://ipython.org/ipython-doc/dev/interactive/tips.html
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy 
 
-Testing Process Development
--------------------------------
+Workflow Evolution
+----------------------
 ::
 
     1. edit, edit, commit
@@ -34,8 +34,8 @@ Testing Process Development
     8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
 
 
-Tools: Python
------------------
+Python
+-----------
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
@@ -44,9 +44,11 @@ Tools: Python
 * https://pypi.python.org/pypi/unittest2
 
 
-Tools: IPython
+IPython
 ----------------
-/r/IPython REPL
+| Wikipedia: https://en.wikipedia.org/wiki/IPython
+| Homepage: http://ipython.org
+| Source: https://github.com/ipython/ipython
 
 ::
 
@@ -86,26 +88,25 @@ Software Testing
 * https://en.wikipedia.org/wiki/Test-driven_development
 * `<https://en.wikipedia.org/wiki/Assertion_(computing)>`__
 * http://docs.python-guide.org/en/latest/writing/tests/
-* https://pypi.python.org/pypi?%3Aaction=search&term=fixture&submit=search
 * http://martinfowler.com/bliki/TestCoverage.html
 * http://martinfowler.com/eaaCatalog/
 * https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria
-* https://en.wikipedia.org/wiki/Template:Software_development_process
 * https://en.wikipedia.org/wiki/Category:Formal_methods
 
 
 
-Techniques: Logging
-=============================
+Logging
+=========
 
 * https://en.wikipedia.org/wiki/Computer_data_logging
 * https://en.wikipedia.org/wiki/Syslog
 * http://docs.python.org/2/howto/logging.html
 * http://docs.python.org/3/library/logging.config.html
 * http://pythonhosted.org/Logbook/features.html
+* http://structlog.readthedocs.org/en/latest/
 
 
-Tools: Nose
+Nose
 =====================
 
 * https://github.com/nose-devs/nose
@@ -116,27 +117,27 @@ Tools: Nose
 * https://github.com/wolever/nose-parameterized
 
 
-Tools: py.test
+py.test
 =======================
 
 * https://bitbucket.org/hpk42/pytest
 * http://pytest.org/latest/
 
 
-Tools: GUI
+GUI
 ===================
 
 * https://github.com/pybee/cricket
 
 
-Tools: Tox
+Tox
 ====================
 
 * https://bitbucket.org/hpk42/tox
 * http://tox.readthedocs.org/en/latest/
 
 
-Techniques: Mocks
+Mocks
 ===========================
 
 * https://en.wikipedia.org/wiki/Mock_object
@@ -145,7 +146,7 @@ Techniques: Mocks
 * http://docs.python.org/3/library/unittest.mock.html
 
 
-Tools: BDD
+BDD
 ====================
 
 * https://en.wikipedia.org/wiki/Behavior-driven_development
@@ -154,16 +155,12 @@ Tools: BDD
 * http://heynemann.github.io/pyvows/
 
 
-Techniques: Continuous Integration and Delivery
+Continuous Integration and Delivery
 =========================================================
 
 * https://en.wikipedia.org/wiki/Continuous_integration
 * https://en.wikipedia.org/wiki/Continuous_delivery
 * http://docs.python-guide.org/en/latest/scenarios/ci/
-
-
-Tools: Continuous Integration (CI)
-============================================
 
 * https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
 * https://en.wikipedia.org/wiki/Buildbot
