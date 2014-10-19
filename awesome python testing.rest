@@ -354,6 +354,7 @@ Bottle
 Pyramid
 --------
 * http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+* http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
 * http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
 
 
