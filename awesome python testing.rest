@@ -16,7 +16,8 @@ Background
 Software Testing
 -------------------
 
-* https://en.wikipedia.org/wiki/Software_testing
+https://en.wikipedia.org/wiki/Software_testing
+
 * https://en.wikipedia.org/wiki/Test-driven_development
 * `<https://en.wikipedia.org/wiki/Assertion_(computing)>`__
 * http://docs.python-guide.org/en/latest/writing/tests/
@@ -108,14 +109,13 @@ Logging
 
 Test-Driven Development (TDD)
 ================================
-
-* https://en.wikipedia.org/wiki/Test-driven_development
+https://en.wikipedia.org/wiki/Test-driven_development
 
 
 Behavior-Driven Development (BDD)
 ===================================
+https://en.wikipedia.org/wiki/Behavior-driven_development
 
-* https://en.wikipedia.org/wiki/Behavior-driven_development
 * http://pythonhosted.org/lettuce/
 * http://pythonhosted.org/lettuce/tutorial/simple.html
 * http://heynemann.github.io/pyvows/
@@ -123,8 +123,8 @@ Behavior-Driven Development (BDD)
 
 Mocks
 ===========================
+https://en.wikipedia.org/wiki/Mock_object
 
-* https://en.wikipedia.org/wiki/Mock_object
 * http://mock.readthedocs.org/en/latest/index.html
 * http://mock.readthedocs.org/en/latest/patch.html
 * http://docs.python.org/3/library/unittest.mock.html
