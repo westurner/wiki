@@ -155,6 +155,7 @@ GUI
 ---------------
 
 * https://github.com/pybee/cricket
+* See: `Debugging: GUI`_
 
 
 Tox
