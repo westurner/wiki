@@ -108,12 +108,12 @@ Logging
 
 
 
-TDD
-====================
+Test-Driven Development (TDD)
+================================
+* https://en.wikipedia.org/wiki/Test-driven_development
 
-
-BDD
-====================
+Behavior-Driven Development
+===============================
 
 * https://en.wikipedia.org/wiki/Behavior-driven_development
 * http://pythonhosted.org/lettuce/
