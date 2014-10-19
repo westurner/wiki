@@ -88,20 +88,11 @@ IPython
     %nose # ipython_nose
 
 
-Testing Science: Learning
------------------------------
+IPython Blocks
+~~~~~~~~~~~~~~~~
 
-* http://software-carpentry.org/
 * https://github.com/jiffyclub/ipythonblocks
 * http://nbviewer.ipython.org/urls/raw.github.com/jiffyclub/ipythonblocks/master/demos/ipythonblocks_animation.ipynb
-* https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
-* https://en.wikipedia.org/wiki/Null_hypothesis
-* https://en.wikipedia.org/wiki/Bayesian_inference
-* https://en.wikipedia.org/wiki/Sensitivity_analysis
-
-
-
-
 
 
 Logging
@@ -113,6 +104,27 @@ Logging
 * http://docs.python.org/3/library/logging.config.html
 * http://pythonhosted.org/Logbook/features.html
 * https://structlog.readthedocs.org/en/latest/
+
+
+Mocks
+===========================
+
+* https://en.wikipedia.org/wiki/Mock_object
+* http://mock.readthedocs.org/en/latest/index.html
+* http://mock.readthedocs.org/en/latest/patch.html
+* http://docs.python.org/3/library/unittest.mock.html
+
+TDD
+====================
+
+
+BDD
+====================
+
+* https://en.wikipedia.org/wiki/Behavior-driven_development
+* http://pythonhosted.org/lettuce/
+* http://pythonhosted.org/lettuce/tutorial/simple.html
+* http://heynemann.github.io/pyvows/
 
 
 Nose
@@ -145,23 +157,6 @@ Tox
 * https://bitbucket.org/hpk42/tox
 * http://tox.readthedocs.org/en/latest/
 
-
-Mocks
-===========================
-
-* https://en.wikipedia.org/wiki/Mock_object
-* http://mock.readthedocs.org/en/latest/index.html
-* http://mock.readthedocs.org/en/latest/patch.html
-* http://docs.python.org/3/library/unittest.mock.html
-
-
-BDD
-====================
-
-* https://en.wikipedia.org/wiki/Behavior-driven_development
-* http://pythonhosted.org/lettuce/
-* http://pythonhosted.org/lettuce/tutorial/simple.html
-* http://heynemann.github.io/pyvows/
 
 
 Continuous Integration and Delivery
