@@ -263,18 +263,7 @@ Debugging: Web
 
 * http://werkzeug.pocoo.org/
 * http://firelogger.binaryage.com#python
-
-Django
-~~~~~~~~
-* https://github.com/django-debug-toolbar/django-debug-toolbar
-
-Flask
-~~~~~~
-* https://flask-debugtoolbar.readthedocs.org/en/latest/
-
-Pyramid
-~~~~~~~~
-* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+* See: `Web Frameworks`_
 
 
 
@@ -340,36 +329,46 @@ SQLAlchemy
 Web Frameworks
 ========================
 
-* https://en.wikipedia.org/wiki/Web_application_framework
-
-Pyramid
---------
-* http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
-
-Django
---------
-* https://docs.djangoproject.com/en/dev/topics/testing/
-* https://docs.djangoproject.com/en/dev/topics/settings/
-
-Flask
-------
-* https://flask.readthedocs.org/en/latest/config/
-* https://flask.pocoo.org/docs/testing/
+https://en.wikipedia.org/wiki/Web_application_framework
 
 Plone
 ------
 * http://developer.plone.org/testing_and_debugging/
 
+Django
+--------
+* https://docs.djangoproject.com/en/dev/topics/testing/
+* https://docs.djangoproject.com/en/dev/topics/settings/
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+
+Flask
+------
+* https://flask.readthedocs.org/en/latest/config/
+* https://flask.pocoo.org/docs/testing/
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+
 Bottle
 -------
 * http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+
+Pyramid
+--------
+* http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
 
 
 Web Apps
 ===========
 
+* http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
+
+WebTest
+--------
+
 * http://webtest.pythonpaste.org/en/latest/
+
+Selenium
+----------
 * http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
 * https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin
 * http://www.seleniumhq.org/projects/ide/
-* http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
