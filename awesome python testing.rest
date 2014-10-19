@@ -106,19 +106,20 @@ Logging
 * https://structlog.readthedocs.org/en/latest/
 
 
-
-
 Test-Driven Development (TDD)
 ================================
+
 * https://en.wikipedia.org/wiki/Test-driven_development
 
-Behavior-Driven Development
-===============================
+
+Behavior-Driven Development (BDD)
+===================================
 
 * https://en.wikipedia.org/wiki/Behavior-driven_development
 * http://pythonhosted.org/lettuce/
 * http://pythonhosted.org/lettuce/tutorial/simple.html
 * http://heynemann.github.io/pyvows/
+
 
 Mocks
 ===========================
@@ -127,6 +128,7 @@ Mocks
 * http://mock.readthedocs.org/en/latest/index.html
 * http://mock.readthedocs.org/en/latest/patch.html
 * http://docs.python.org/3/library/unittest.mock.html
+
 
 Test Runners
 ==============
@@ -163,7 +165,7 @@ Tox
 
 
 
-Continuous Integration and Delivery
+Continuous Integration (CI) and Continuous Delivery (CD)
 =========================================================
 
 * https://en.wikipedia.org/wiki/Continuous_integration
@@ -227,21 +229,17 @@ Debugging: Console, CLI, Terminal, REPL, IPython
     import pdb; pdb.set_trace()
 
 * http://docs.python.org/2/library/pdb.html
+* http://docs.python.org/2/library/inspect.html
+* http://docs.python.org/2/library/dis.html
 * https://pypi.python.org/pypi/pudb
 * https://github.com/gotcha/ipdb
+
+Vim
+~~~~~
 * https://github.com/gotcha/vimpdb
 * https://dev.launchpad.net/UltimateVimPythonSetup (F7 for `set_trace`)
 * https://github.com/mattboehm/vim-unstack
 
-
-Debugging: Web
-----------------
-
-* http://werkzeug.pocoo.org/
-* https://github.com/django-debug-toolbar/django-debug-toolbar
-* https://flask-debugtoolbar.readthedocs.org/en/latest/
-* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
-* http://firelogger.binaryage.com#python
 
 
 Debugging: GUI
@@ -259,13 +257,23 @@ Debugging: GUI
 * https://github.com/pybee/bugjar
 
 
+Debugging: Web
+----------------
+
+* http://werkzeug.pocoo.org/
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+* http://firelogger.binaryage.com#python
+
+
 Advanced Debugging
 --------------------
 
-* http://docs.python.org/2/library/inspect.html
-* http://docs.python.org/2/library/dis.html
 * https://github.com/tmetsch/python-dtrace
 * https://github.com/lmacken/pyrasite
+* https://github.com/lmacken/pyrasite-gui
+* https://github.com/google/pyringe
 * https://github.com/alonho/pytrace
 * https://github.com/wyplay/pytracemalloc
 
@@ -315,13 +323,27 @@ Web Frameworks
 ========================
 
 * https://en.wikipedia.org/wiki/Web_application_framework
-* https://en.wikipedia.org/wiki/Software_configuration_management
+
+Pyramid
+--------
 * http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
-* https://docs.djangoproject.com/en/dev/topics/settings/
+
+Django
+--------
 * https://docs.djangoproject.com/en/dev/topics/testing/
+* https://docs.djangoproject.com/en/dev/topics/settings/
+
+Flask
+------
 * https://flask.readthedocs.org/en/latest/config/
 * https://flask.pocoo.org/docs/testing/
+
+Plone
+------
 * http://developer.plone.org/testing_and_debugging/
+
+Bottle
+-------
 * http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
 
 
