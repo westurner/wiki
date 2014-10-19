@@ -31,7 +31,7 @@ Testing Process Development
     8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
 
 
-Testing Techniques
+Techniques
 ===================
 /r/IPython REPL
 
@@ -90,7 +90,7 @@ Python Testing
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
 * https://pypi.python.org/pypi/unittest2
 
-Testing Techniques: Logging
+Techniques: Logging
 =============================
 
 * https://en.wikipedia.org/wiki/Computer_data_logging
@@ -100,7 +100,7 @@ Testing Techniques: Logging
 * http://pythonhosted.org/Logbook/features.html
 
 
-Testing Tools: Nose
+Tools: Nose
 =====================
 
 * https://github.com/nose-devs/nose
@@ -111,27 +111,27 @@ Testing Tools: Nose
 * https://github.com/wolever/nose-parameterized
 
 
-Testing Tools: py.test
+Tools: py.test
 =======================
 
 * https://bitbucket.org/hpk42/pytest
 * http://pytest.org/latest/
 
 
-Testing Tools: GUI
+Tools: GUI
 ===================
 
 * https://github.com/pybee/cricket
 
 
-Testing Tools: Tox
+Tools: Tox
 ====================
 
 * https://bitbucket.org/hpk42/tox
 * http://tox.readthedocs.org/en/latest/
 
 
-Testing Techniques: Mocks
+Techniques: Mocks
 ===========================
 
 * https://en.wikipedia.org/wiki/Mock_object
@@ -140,7 +140,7 @@ Testing Techniques: Mocks
 * http://docs.python.org/3/library/unittest.mock.html
 
 
-Testing Tools: BDD
+Tools: BDD
 ====================
 
 * https://en.wikipedia.org/wiki/Behavior-driven_development
@@ -149,7 +149,7 @@ Testing Tools: BDD
 * http://heynemann.github.io/pyvows/
 
 
-Testing Techniques: Continuous Integration and Delivery
+Techniques: Continuous Integration and Delivery
 =========================================================
 
 * https://en.wikipedia.org/wiki/Continuous_integration
@@ -157,7 +157,7 @@ Testing Techniques: Continuous Integration and Delivery
 * http://docs.python-guide.org/en/latest/scenarios/ci/
 
 
-Testing Tools: Continuous Integration (CI)
+Tools: Continuous Integration (CI)
 ============================================
 
 * https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
@@ -167,7 +167,7 @@ Testing Tools: Continuous Integration (CI)
 * http://about.travis-ci.org/docs/user/getting-started/
 
 
-Testing Techniques: Patches, Tags, Branches, Merging
+Techniques: Patches, Tags, Branches, Merging
 =======================================================
 
 * https://en.wikipedia.org/wiki/ACID
@@ -184,7 +184,7 @@ Testing Techniques: Patches, Tags, Branches, Merging
 * http://mercurial.selenic.com/wiki/Bookmarks
 
 
-Testing Techniques: DVCS: Bisect, Blame
+Techniques: DVCS: Bisect, Blame
 =========================================
 
 * https://en.wikipedia.org/wiki/Code_Bisection
@@ -307,6 +307,7 @@ Testing Web Frameworks
 
 
 Testing Web Apps
+==================
 
 * http://webtest.pythonpaste.org/en/latest/
 * http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
