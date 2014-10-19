@@ -34,6 +34,16 @@ Testing Process Development
     8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
 
 
+Tools: Python
+-----------------
+
+* http://docs.python.org/2/library/unittest.html
+* http://docs.python.org/2/library/doctest.html
+* http://docs.python-guide.org/en/latest/writing/tests/
+* http://wiki.python.org/moin/PythonTestingToolsTaxonomy
+* https://pypi.python.org/pypi/unittest2
+
+
 Tools: IPython
 ----------------
 /r/IPython REPL
@@ -84,14 +94,6 @@ Software Testing
 * https://en.wikipedia.org/wiki/Category:Formal_methods
 
 
-Tools: Python
------------------
-
-* http://docs.python.org/2/library/unittest.html
-* http://docs.python.org/2/library/doctest.html
-* http://docs.python-guide.org/en/latest/writing/tests/
-* http://wiki.python.org/moin/PythonTestingToolsTaxonomy
-* https://pypi.python.org/pypi/unittest2
 
 Techniques: Logging
 =============================
