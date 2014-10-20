@@ -718,6 +718,7 @@ with these permissions."
 * Cost/Paid: yes/link/no
 * Reminders/Pop-up: yes/link/no
 * Reminders/Email: yes/link/no
+* Tagging: yes/no
 
 
 Google Calendar
@@ -746,15 +747,17 @@ RememberTheMilk
 * Integrates with Gmail: yes
 * Integrates with Twitter: yes
 * Integrates with Evernote: yes
+* Tagging: yes
 
 
 Google Tasks
 -------------
 * Integrates with Google Calendar: https://www.google.com/calendar/
 * Web Interface: https://www.gmail.com/mail/help/tasks/
-* Mobile Interface: http://gmail.com/tasks
+* Mobile Interface: https://www.gmail.com/mail/help/tasks/
 * API: https://developers.google.com/google-apps/tasks/
 * JSON: yes
+* Tagging: no
 
 
 
@@ -766,6 +769,7 @@ Google Keep
 * API: no
 * Sharing/Internal: no
 * Sharing/External: no
+* Tagging: no
 
 
 
@@ -1066,4 +1070,3 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 - [ ] Tag builds of versions and their artifacts with short commit ids
   and conda selectors: `<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_
   (e.g. ``v1.0.01-eb4df7f-linux64``)
-
