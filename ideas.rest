@@ -21,3 +21,10 @@ Trails
 Overlay
 --------
 * EAV visualization
+
+RDFLib Extensions
+-------------------
+* RDFLib IPython notebook
+* RDF exploration CLI: https://github.com/jonathanslenders/python-prompt-toolkit
+  
+  * schema-aware tab-completion
