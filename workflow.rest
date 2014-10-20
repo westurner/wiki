@@ -747,7 +747,7 @@ RememberTheMilk
 * Integrates with Gmail: yes
 * Integrates with Twitter: yes
 * Integrates with Evernote: yes
-* Tagging: yes
+* Tagging: yes (see: `Task Labels`_, `Project Labels`_, `Context Labels`_)
 
 
 Google Tasks
@@ -789,6 +789,7 @@ Email relay application server
 
 * Mailman: listserv e-mail relay server with archive
 * Google Groups: https://groups.google.com/
+* Tagging: no
 
 `<https://en.wikipedia.org/wiki/Electronic_mailing_list>`_
 
@@ -811,6 +812,7 @@ Github Repos, Issues, Wikis
 * API note: most recent 1000 events
 * XML: no
 * JSON: yes
+* Tagging: yes (issue labels: see `Code Labels`_)
 
 GitHub renders the first README {.md, .rst, .txt, } it finds.
 
