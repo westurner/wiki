@@ -57,10 +57,6 @@ Tools
 =======
 | See: https://github.com/westurner/wiki/wiki/tools
 
-bambu
----------------
-| Src: https://github.com/westurner/bambu
-
 bobcat
 ---------------
 | Src: https://bitbucket.org/westurner/bobcat
@@ -72,6 +68,10 @@ certtool
 cookiecutter-saltformula
 --------------------------
 | Src: https://github.com/westurner/cookiecutter-saltformula
+
+pandas-rdf
+---------------
+| Src: https://github.com/westurner/pandas-rdf
 
 pkgsetcomp
 ---------------
