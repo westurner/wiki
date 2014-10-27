@@ -1,20 +1,25 @@
 
-******
 
-`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
+westurner/wiki
+================
 
-@ `westurner.github.io <https://westurner.github.io/>`_
+Contents:
 
-******
+.. toctree::
 
-.. toctree:: Contents
-
-   Home
    projects
    contributions
    resume
    workflow
    github
    bitbucket
+   ideas
+   tools
    awesome-python-testing
    awesome-python-android
+
+
+******
+
+@ `westurner.github.io <https://westurner.github.io/>`__
+

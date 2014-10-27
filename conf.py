@@ -44,7 +44,7 @@ project_github_url = "https://github.com/{}".format(project_github_path)
 project_src_url = project_github_url
 project_src_path = project_github_path
 project_url = project_github_url
-project_title = u'{} Documentation'.format(project_name)
+project_title = u'{}'.format(project_src_path)
 project_description_oneline = (
     u'Documentation for the {} project'.format(project_name))
 project_og_site_name = project_src_path  # e.g. westurner/dotfiles
@@ -183,7 +183,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = project_title
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None

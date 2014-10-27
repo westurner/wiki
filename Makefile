@@ -265,3 +265,8 @@ push:
 	git push -f wiki master
 	git push -f origin gh-pages
 
+gh-pages:
+	# Push docs to gh-pages branch with a .nojekyll file
+	ghp-import -n -p ./_build/html/
+	#ghp-import -n -p ./docs/_build/singlehtml/
+
