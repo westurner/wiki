@@ -13,12 +13,11 @@ Contents:
    workflow
    github
    bitbucket
+   ideas
+   tools
    awesome-python-testing
    awesome-python-android
-   tools
-   ideas
 
-.. Home
 
 ******
 
