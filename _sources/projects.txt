@@ -1,0 +1,188 @@
+===========
+Projects
+===========
+
+.. contents::
+
+Projects
+==========
+https://github.com/westurner/wiki/wiki/ideas
+
+Provis
+-------
+| Src: https://github.com/westurner/provis
+| Docs: https://provis.readthedocs.org/en/latest/
+
+Self Directed Learning
+-----------------------
+| Src: https://github.com/westurner/self-directed-learning
+| Docs: https://self-directed-learning.readthedocs.org/en/latest/
+
+health-marketplace
+--------------------
+| Src: https://github.com/westurner/health-marketplace
+
+healthref
+---------------
+| Src: https://github.com/westurner/healthref
+| Web: https://westurner.github.io/healthref/
+ 
+pycd10api
+---------------
+| Src: https://github.com/westurner/pycd10api
+
+eaglefin
+---------------
+| Src: https://bitbucket.org/westurner/eaglefin
+
+wbcms
+---------------
+| Src: https://bitbucket.org/westurner/wbcms
+
+presense
+---------------
+| Src: https://bitbucket.org/westurner/presense
+
+notebooks
+---------------
+| Src: https://github.com/westurner/notebooks
+| Web: https://westurner.github.io/notebooks/
+
+contributions
+---------------
+| See: https://github.com/westurner/wiki/wiki/contributions
+
+
+Tools
+=======
+| See: https://github.com/westurner/wiki/wiki/tools
+
+bobcat
+---------------
+| Src: https://bitbucket.org/westurner/bobcat
+
+certtool
+---------------
+| Src: https://bitbucket.org/westurner/certtool
+
+cookiecutter-saltformula
+--------------------------
+| Src: https://github.com/westurner/cookiecutter-saltformula
+
+pandas-rdf
+---------------
+| Src: https://github.com/westurner/pandas-rdf
+
+pkgsetcomp
+---------------
+| Src: https://github.com/westurner/pkgsetcomp
+| Pypi: https://pypi.python.org/pypi/pkgsetcomp
+| Docs: http://pkgsetcomp.readthedocs.org/en/latest/
+
+pygments-style-jellywrd
+---------------------------
+| Src: https://github.com/westurner/pygments-style-jellywrd
+
+pyjobsearch
+---------------
+| Src: https://bitbucket.org/westurner/pyjobsearch
+
+pyleset
+---------------
+| Src: https://github.com/westurner/pyleset
+
+pyline
+---------------
+| Src: https://github.com/westurner/pyline
+| Pypi: https://pypi.python.org/pypi/pyline
+| Docs: https://pyline.readthedocs.org/en/latest/
+
+pyliveping
+------------
+| Src: https://github.com/westurner/pyliveping
+
+pyrpo
+---------------
+| Src: https://github.com/westurner/pyrpo
+| Pypi: https://pypi.python.org/pypi/pyrpo
+| Docs: https://pyrpo.readthedocs.org/en/latest/
+
+pyrtm-task-cli
+---------------
+| Src: https://bitbucket.org/westurner/pyrtm-task-cli
+
+pytracepath
+-------------
+| Src: https://github.com/westurner/pytracepath
+
+pywifiloc
+---------------
+| Src: https://bitbucket.org/westurner/pywifiloc
+
+redem
+---------------
+| Src: https://github.com/westurner/redem
+
+rst-tools
+---------------
+| Src: https://github.com/westurner/rst-tools
+
+vim2vim
+---------------
+| Src: https://github.com/westurner/vim2vim
+
+workhours
+---------------
+| Src: https://github.com/westurner/workhours
+
+Personal
+==========
+
+USA
+---------------
+| Src: https://github.com/westurner/USA
+| Web: https://westurner.github.io/USA
+
+dotfiles
+---------------
+
+| Src: https://github.com/westurner/dotfiles
+| Docs: https://wrdfiles.readthedocs.org/en/latest/
+
+dotvim
+---------------
+| Src: https://github.com/westurner/dotvim
+| Docs: https://wrdfiles.readthedocs.org/en/latest/usage.html#vim
+
+hello_world
+---------------
+| Src: https://github.com/westurner/hello_world
+
+redditlog
+---------------
+| Src: https://github.com/westurner/redditlog
+| Web: https://westurner.github.io/redditlog/
+
+wiki
+---------------
+| Src: https://github.com/westurner/wiki/wiki
+| Src: https://github.com/westurner/wiki/wiki/projects
+| Src: https://github.com/westurner/wiki/wiki/contributions
+  
+resume
+---------------
+| Web: https://westurner.github.io/pages/resume.html
+| Web: https://westurner.github.io/resume
+| Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
+westurner.bitbucket.org
+--------------------------
+
+| Src: https://bitbucket.org/westurner/westurner.bitbucket.org
+| Web: https://westurner.bitbucket.org/
+
+westurner.github.io
+----------------------
+| Src: https://github.com/westurner/westurner.github.io
+| Web: https://westurner.github.io/
+

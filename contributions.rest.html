@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#code-labels" id="id1">Code Labels</a></li>
+<li><a class="reference internal" href="#code" id="id2">Code</a><ul>
+<li><a class="reference internal" href="#bootstrap" id="id3">bootstrap</a></li>
+<li><a class="reference internal" href="#celery" id="id4">celery</a></li>
+<li><a class="reference internal" href="#chromium" id="id5">chromium</a></li>
+<li><a class="reference internal" href="#fixture" id="id6">fixture</a></li>
+<li><a class="reference internal" href="#ipython" id="id7">ipython</a><ul>
+<li><a class="reference internal" href="#nbviewer" id="id8">nbviewer</a></li>
+<li><a class="reference internal" href="#pycon-2014-job-survey-analysis" id="id9">pycon 2014 job survey analysis</a></li>
+<li><a class="reference internal" href="#version-information" id="id10">version_information</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pandas" id="id11">pandas</a></li>
+<li><a class="reference internal" href="#pyramid" id="id12">pyramid</a></li>
+<li><a class="reference internal" href="#python" id="id13">python</a><ul>
+<li><a class="reference internal" href="#conda" id="id14">conda</a></li>
+<li><a class="reference internal" href="#cpython" id="id15">cpython</a></li>
+<li><a class="reference internal" href="#pip" id="id16">pip</a></li>
+<li><a class="reference internal" href="#richard" id="id17">richard</a></li>
+<li><a class="reference internal" href="#warehouse" id="id18">warehouse</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#redem" id="id19">redem</a></li>
+<li><a class="reference internal" href="#salt" id="id20">salt</a><ul>
+<li><a class="reference internal" href="#apt-formula" id="id21">apt-formula</a></li>
+<li><a class="reference internal" href="#dnsmasq-formula" id="id22">dnsmasq-formula</a></li>
+<li><a class="reference internal" href="#nginx-formula" id="id23">nginx-formula</a></li>
+<li><a class="reference internal" href="#openssh-formula" id="id24">openssh-formula</a></li>
+<li><a class="reference internal" href="#salt-formula" id="id25">salt-formula</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#seaborn" id="id26">seaborn</a></li>
+<li><a class="reference internal" href="#sphinx" id="id27">sphinx</a><ul>
+<li><a class="reference internal" href="#sphinxjp-themes-basicstrap" id="id28">sphinxjp.themes.basicstrap</a></li>
+<li><a class="reference internal" href="#sphinx-rtd-theme" id="id29">sphinx_rtd_theme</a></li>
+<li><a class="reference internal" href="#readthedocs-org" id="id30">readthedocs.org</a></li>
+<li><a class="reference internal" href="#tinkerer" id="id31">tinkerer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#turses" id="id32">turses</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#docs" id="id33">Docs</a><ul>
+<li><a class="reference internal" href="#datasciencemasters" id="id34">datasciencemasters</a></li>
+<li><a class="reference internal" href="#jsonld-org" id="id35">jsonld.org</a></li>
+<li><a class="reference internal" href="#opsschool" id="id36">opsschool</a></li>
+<li><a class="reference internal" href="#schema-org-rdf" id="id37">schema-org-rdf</a></li>
+<li><a class="reference internal" href="#scientific-python-lectures" id="id38">scientific-python-lectures</a></li>
+<li><a class="reference internal" href="#scipy-lecture-notes" id="id39">scipy-lecture-notes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#awesome" id="id40">Awesome</a></li>
+</ul>
+</div>
+<div class="section" id="code-labels">
+<h1><a class="toc-backref" href="#id1">Code Labels</a></h1>
+<pre class="literal-block">
+ENH: Enhancement    # blue
+BUG: Bug            # red
+DOC: Documentation  # light blue
+TST: Test           # light purple
+BLD: Build          # light green
+CLN: Cleanup        #
+SEC: Security       #
+PRF: Performance    #
+UBY: Usability      #
+RLS: Release        #
+</pre>
+<p>-- adapted from <a class="reference external" href="https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md">pandas/CONTRIBUTING.md</a></p>
+<p>See: <a class="reference external" href="workflow#code-labels">workflow#code-labels</a></p>
+</div>
+<div class="section" id="code">
+<h1><a class="toc-backref" href="#id2">Code</a></h1>
+<div class="section" id="bootstrap">
+<h2><a class="toc-backref" href="#id3">bootstrap</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/twbs/bootstrap">https://github.com/twbs/bootstrap</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: Add WAI-ARIA roles to examples/theme/index.html (document, main)</em> <a class="reference external" href="https://github.com/twbs/bootstrap/pull/12228">https://github.com/twbs/bootstrap/pull/12228</a></li>
+</ul>
+</div>
+<div class="section" id="celery">
+<h2><a class="toc-backref" href="#id4">celery</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/celery/celery">https://github.com/celery/celery</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>BLD: Use console_scripts entry_points in the setup.py file</em> <a class="reference external" href="https://github.com/celery/celery/commit/cf2148e90">https://github.com/celery/celery/commit/cf2148e90</a></li>
+</ul>
+</div>
+<div class="section" id="chromium">
+<h2><a class="toc-backref" href="#id5">chromium</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://code.google.com/p/chromium/">https://code.google.com/p/chromium/</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <em>SEC: Security: fullscreen nagbar forces (unsafe) site whitelist</em> <a class="reference external" href="https://code.google.com/p/chromium/issues/detail?id=409458">https://code.google.com/p/chromium/issues/detail?id=409458</a></li>
+</ul>
+</div>
+<div class="section" id="fixture">
+<h2><a class="toc-backref" href="#id6">fixture</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/fixture-py/fixture">https://github.com/fixture-py/fixture</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Google Datastore (String)ListProperty</em> <a class="reference external" href="https://code.google.com/p/fixture/issues/detail?id=36">https://code.google.com/p/fixture/issues/detail?id=36</a></li>
+</ul>
+</div>
+<div class="section" id="ipython">
+<h2><a class="toc-backref" href="#id7">ipython</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/ipython/ipython">https://github.com/ipython/ipython</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Allow passing extra arguments to iptest through for nose</em> <a class="reference external" href="https://github.com/ipython/ipython/pull/4242">https://github.com/ipython/ipython/pull/4242</a></li>
+</ul>
+<div class="section" id="nbviewer">
+<h3><a class="toc-backref" href="#id8">nbviewer</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/ipython/nbviewer">https://github.com/ipython/nbviewer</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: Redirect github blob URLs to raw.github URLs</em> <a class="reference external" href="https://github.com/ipython/nbviewer/pull/118">https://github.com/ipython/nbviewer/pull/118</a></li>
+</ul>
+</div>
+<div class="section" id="pycon-2014-job-survey-analysis">
+<h3><a class="toc-backref" href="#id9">pycon 2014 job survey analysis</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/briandailey/pycon-2014-job-fair">https://github.com/briandailey/pycon-2014-job-fair</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Add ipynb crosstab and chart</em>: <a class="reference external" href="https://github.com/briandailey/pycon-2014-job-fair/pull/8">https://github.com/briandailey/pycon-2014-job-fair/pull/8</a></li>
+<li>[x] <em>Updated README.md paths, matplotlib fonts, added a Makefile</em> <a class="reference external" href="https://github.com/briandailey/pycon-2014-job-fair/pull/10">https://github.com/briandailey/pycon-2014-job-fair/pull/10</a></li>
+</ul>
+</div>
+<div class="section" id="version-information">
+<h3><a class="toc-backref" href="#id10">version_information</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/jrjohansson/version_information">https://github.com/jrjohansson/version_information</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings</em> <a class="reference external" href="https://github.com/jrjohansson/version_information/pull/2">https://github.com/jrjohansson/version_information/pull/2</a></li>
+<li>[x] <em>Added check for pkg_resources version and extended `__doc__`</em> <a class="reference external" href="https://github.com/jrjohansson/version_information/pull/3">https://github.com/jrjohansson/version_information/pull/3</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="pandas">
+<h2><a class="toc-backref" href="#id11">pandas</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/pydata/pandas">https://github.com/pydata/pandas</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <em>ENH: Linked Datasets (RDF)</em>  <a class="reference external" href="https://github.com/pydata/pandas/issues/3402">https://github.com/pydata/pandas/issues/3402</a></li>
+<li>[x] <em>PERF: generators in dataframe.from_records</em> <a class="reference external" href="https://github.com/pydata/pandas/issues/6700">https://github.com/pydata/pandas/issues/6700</a></li>
+<li>[x] <em>DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown</em> <a class="reference external" href="https://github.com/pydata/pandas/commit/372226c">https://github.com/pydata/pandas/commit/372226c</a></li>
+</ul>
+</div>
+<div class="section" id="pyramid">
+<h2><a class="toc-backref" href="#id12">pyramid</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/Pylons/pyramid">https://github.com/Pylons/pyramid</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>DOC: XSS in quicktour/views/views.py</em> <a class="reference external" href="https://github.com/Pylons/pyramid/issues/1294">https://github.com/Pylons/pyramid/issues/1294</a></li>
+<li>[x] <em>DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)</em> <a class="reference external" href="https://github.com/Pylons/pyramid/commit/f1f35b7">https://github.com/Pylons/pyramid/commit/f1f35b7</a></li>
+<li>[x] <em>DOC: Response.content_type defaults to text/html (#1181)</em> <a class="reference external" href="https://github.com/Pylons/pyramid/pull/1295">https://github.com/Pylons/pyramid/pull/1295</a></li>
+</ul>
+</div>
+<div class="section" id="python">
+<h2><a class="toc-backref" href="#id13">python</a></h2>
+<div class="section" id="conda">
+<h3><a class="toc-backref" href="#id14">conda</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/conda/conda">https://github.com/conda/conda</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <em>ENH: Mirroring/caching support</em>  <a class="reference external" href="https://github.com/conda/conda/issues/414">https://github.com/conda/conda/issues/414</a></li>
+</ul>
+</div>
+<div class="section" id="cpython">
+<h3><a class="toc-backref" href="#id15">cpython</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="http://hg.python.org/cpython">http://hg.python.org/cpython</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: random.shuffle could be faster</em> (rejected) <a class="reference external" href="http://bugs.python.org/issue18511">http://bugs.python.org/issue18511</a></li>
+</ul>
+</div>
+<div class="section" id="pip">
+<h3><a class="toc-backref" href="#id16">pip</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/pypa/pip">https://github.com/pypa/pip</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <em>Implement &quot;hook&quot; support for package signature verification</em> <a class="reference external" href="https://github.com/pypa/pip/issues/1035#issuecomment-20656810">https://github.com/pypa/pip/issues/1035#issuecomment-20656810</a></li>
+<li>[ ] <em>option to confirm expected package hashes when installing</em> (<cite>requirements.lock</cite>) <a class="reference external" href="https://github.com/pypa/pip/issues/1175#issuecomment-39012189">https://github.com/pypa/pip/issues/1175#issuecomment-39012189</a></li>
+</ul>
+</div>
+<div class="section" id="richard">
+<h3><a class="toc-backref" href="#id17">richard</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/willkg/richard/">https://github.com/willkg/richard/</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Add Schema.org VideoObject RDFa metadata</em> <a class="reference external" href="https://github.com/willkg/richard/pull/213">https://github.com/willkg/richard/pull/213</a></li>
+</ul>
+</div>
+<div class="section" id="warehouse">
+<h3><a class="toc-backref" href="#id18">warehouse</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/pypa/warehouse">https://github.com/pypa/warehouse</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)</em> <a class="reference external" href="https://github.com/pypa/warehouse/pull/263">https://github.com/pypa/warehouse/pull/263</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="redem">
+<h2><a class="toc-backref" href="#id19">redem</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/redem">https://github.com/westurner/redem</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <a class="reference external" href="https://westurner.github.io/redditlog/">https://westurner.github.io/redditlog/</a></li>
+<li>[ ] <a class="reference external" href="https://github.com/westurner/redditlog">https://github.com/westurner/redditlog</a></li>
+</ul>
+</div>
+<div class="section" id="salt">
+<h2><a class="toc-backref" href="#id20">salt</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack/salt">https://github.com/saltstack/salt</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>DOC: dockerio state: code-block docstring syntax</em> <a class="reference external" href="https://github.com/saltstack/salt/pull/9292">https://github.com/saltstack/salt/pull/9292</a></li>
+<li>[x] <em>DOC: dockerio module: docs syntax and formatting</em> <a class="reference external" href="https://github.com/saltstack/salt/pull/9294">https://github.com/saltstack/salt/pull/9294</a></li>
+<li>[ ] <em>ENH: Read Pillar files into OrderedDict to preserve source order</em>  <a class="reference external" href="https://github.com/saltstack/salt/issues/12161">https://github.com/saltstack/salt/issues/12161</a></li>
+<li>[x] <em>DOC: Update GitFS documentation (syntax, links)</em> <a class="reference external" href="https://github.com/saltstack/salt/pull/12181">https://github.com/saltstack/salt/pull/12181</a></li>
+<li>[x] <em>BUG, ENH, PERF: Debian/Ubuntu network configuration</em> <a class="reference external" href="https://github.com/saltstack/salt/issues/12216">https://github.com/saltstack/salt/issues/12216</a></li>
+<li>[ ] <em>Formula dependency management</em>  <a class="reference external" href="https://github.com/saltstack/salt/issues/12179">https://github.com/saltstack/salt/issues/12179</a></li>
+<li>[ ] <em>ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)</em>  <a class="reference external" href="https://github.com/saltstack/salt/issues/12183">https://github.com/saltstack/salt/issues/12183</a></li>
+</ul>
+<div class="section" id="apt-formula">
+<h3><a class="toc-backref" href="#id21">apt-formula</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack-formulas/apt-formula">https://github.com/saltstack-formulas/apt-formula</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>DOC: Use full state names; add RST formatting</em> <a class="reference external" href="https://github.com/saltstack-formulas/apt-formula/pull/5">https://github.com/saltstack-formulas/apt-formula/pull/5</a></li>
+<li>[x] <em>ENH: Add apt.transports.https and apt.transports.debtorrent</em> <a class="reference external" href="https://github.com/saltstack-formulas/apt-formula/pull/6">https://github.com/saltstack-formulas/apt-formula/pull/6</a></li>
+<li>[x] <em>ENH: Add apt.ppa for pkg:python-software-properties (add-apt-repository)</em> <a class="reference external" href="https://github.com/saltstack-formulas/apt-formula/pull/7">https://github.com/saltstack-formulas/apt-formula/pull/7</a></li>
+</ul>
+</div>
+<div class="section" id="dnsmasq-formula">
+<h3><a class="toc-backref" href="#id22">dnsmasq-formula</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack-formulas/dnsmasq-formula">https://github.com/saltstack-formulas/dnsmasq-formula</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: Add dnsmasq.absent (pkg, service)</em> <a class="reference external" href="https://github.com/saltstack-formulas/dnsmasq-formula/pull/4">https://github.com/saltstack-formulas/dnsmasq-formula/pull/4</a></li>
+<li>[x] <em>DOC: Update README.rst: formatting, Available states</em> <a class="reference external" href="https://github.com/saltstack-formulas/dnsmasq-formula/pull/5">https://github.com/saltstack-formulas/dnsmasq-formula/pull/5</a></li>
+</ul>
+</div>
+<div class="section" id="nginx-formula">
+<h3><a class="toc-backref" href="#id23">nginx-formula</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack-formulas/nginx-formula">https://github.com/saltstack-formulas/nginx-formula</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: Add install_from_ppa pillar setting and PPA pkgrepo</em> <a class="reference external" href="https://github.com/saltstack-formulas/nginx-formula/pull/42">https://github.com/saltstack-formulas/nginx-formula/pull/42</a></li>
+<li>[x] <em>BUG: pkgrepo.absent, pkgrepo:watch_in(pkg), install_from_ppa</em> <a class="reference external" href="https://github.com/saltstack-formulas/nginx-formula/pull/44">https://github.com/saltstack-formulas/nginx-formula/pull/44</a></li>
+</ul>
+</div>
+<div class="section" id="openssh-formula">
+<h3><a class="toc-backref" href="#id24">openssh-formula</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack-formulas/openssh-formula">https://github.com/saltstack-formulas/openssh-formula</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>ENH: Add a UseDNS option</em> <a class="reference external" href="https://github.com/saltstack-formulas/openssh-formula/pull/13">https://github.com/saltstack-formulas/openssh-formula/pull/13</a></li>
+</ul>
+</div>
+<div class="section" id="salt-formula">
+<h3><a class="toc-backref" href="#id25">salt-formula</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack-formulas/salt-formula">https://github.com/saltstack-formulas/salt-formula</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>BUG: Fix for nested [file|pillar]_roots in minion tmp</em> <a class="reference external" href="https://github.com/saltstack-formulas/salt-formula/pull/42">https://github.com/saltstack-formulas/salt-formula/pull/42</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="seaborn">
+<h2><a class="toc-backref" href="#id26">seaborn</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mwaskom/seaborn">https://github.com/mwaskom/seaborn</a></div>
+</div>
+<ul class="simple">
+<li>[ ] <em>Add Arial and Liberation Sans to mpl.rcParams[&quot;font.sans-serif&quot;]</em> <a class="reference external" href="https://github.com/mwaskom/seaborn/pull/171">https://github.com/mwaskom/seaborn/pull/171</a></li>
+</ul>
+</div>
+<div class="section" id="sphinx">
+<h2><a class="toc-backref" href="#id27">sphinx</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://bitbucket.org/birkenfeld/sphinx">https://bitbucket.org/birkenfeld/sphinx</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)</em> <a class="reference external" href="https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff">https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff</a></li>
+<li>[x] <em>apidoc: Add a -M option to put module documentation before submodule documentation</em> <a class="reference external" href="https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff">https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff</a></li>
+</ul>
+<div class="section" id="sphinxjp-themes-basicstrap">
+<h3><a class="toc-backref" href="#id28">sphinxjp.themes.basicstrap</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/tell-k/sphinxjp.themes.basicstrap">https://github.com/tell-k/sphinxjp.themes.basicstrap</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)</em> <a class="reference external" href="https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7">https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7</a></li>
+</ul>
+</div>
+<div class="section" id="sphinx-rtd-theme">
+<h3><a class="toc-backref" href="#id29">sphinx_rtd_theme</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">https://github.com/snide/sphinx_rtd_theme</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)</em> <a class="reference external" href="https://github.com/snide/sphinx_rtd_theme/pull/86">https://github.com/snide/sphinx_rtd_theme/pull/86</a></li>
+</ul>
+</div>
+<div class="section" id="readthedocs-org">
+<h3><a class="toc-backref" href="#id30">readthedocs.org</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/rtfd/readthedocs.org">https://github.com/rtfd/readthedocs.org</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)</em> <a class="reference external" href="https://github.com/snide/sphinx_rtd_theme/pull/86">https://github.com/snide/sphinx_rtd_theme/pull/86</a></li>
+</ul>
+</div>
+<div class="section" id="tinkerer">
+<h3><a class="toc-backref" href="#id31">tinkerer</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/vladris/tinkerer">https://github.com/vladris/tinkerer</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)</em> <a class="reference external" href="https://github.com/vladris/tinkerer/pull/43">https://github.com/vladris/tinkerer/pull/43</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="turses">
+<h2><a class="toc-backref" href="#id32">turses</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/alejandrogomez/turses">https://github.com/alejandrogomez/turses</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Inverted configuration keybindings to make reverse lookups faster</em> <a class="reference external" href="https://github.com/alejandrogomez/turses/pull/172">https://github.com/alejandrogomez/turses/pull/172</a></li>
+<li>[x] <em>ENH: Add mouse scroll wheel support (#165)</em> <a class="reference external" href="https://github.com/alejandrogomez/turses/pull/171">https://github.com/alejandrogomez/turses/pull/171</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="docs">
+<h1><a class="toc-backref" href="#id33">Docs</a></h1>
+<div class="section" id="datasciencemasters">
+<h2><a class="toc-backref" href="#id34">datasciencemasters</a></h2>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="http://datasciencemasters.org/">http://datasciencemasters.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/datasciencemasters/go/">https://github.com/datasciencemasters/go/</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources</em> <a class="reference external" href="https://github.com/datasciencemasters/go/pull/28">https://github.com/datasciencemasters/go/pull/28</a></li>
+<li>[x] <em>Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization</em> <a class="reference external" href="https://github.com/datasciencemasters/go/pull/29">https://github.com/datasciencemasters/go/pull/29</a></li>
+</ul>
+</div>
+<div class="section" id="jsonld-org">
+<h2><a class="toc-backref" href="#id35">jsonld.org</a></h2>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="http://json-ld.org/">http://json-ld.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/json-ld/json-ld.org">https://github.com/json-ld/json-ld.org</a></div>
+</div>
+</div>
+<div class="section" id="opsschool">
+<h2><a class="toc-backref" href="#id36">opsschool</a></h2>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="http://www.opsschool.org/en/latest/">http://www.opsschool.org/en/latest/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/opsschool/curriculum">https://github.com/opsschool/curriculum</a></div>
+</div>
+<ul class="simple">
+<li>[ ]</li>
+</ul>
+</div>
+<div class="section" id="schema-org-rdf">
+<h2><a class="toc-backref" href="#id37">schema-org-rdf</a></h2>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="http://schema.rdfs.org/">http://schema.rdfs.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/mhausenblas/schema-org-rdf">https://github.com/mhausenblas/schema-org-rdf</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Added links to RDFa 1.1 lite and HTML versions</em> <a class="reference external" href="https://github.com/mhausenblas/schema-org-rdf/pull/49">https://github.com/mhausenblas/schema-org-rdf/pull/49</a></li>
+</ul>
+</div>
+<div class="section" id="scientific-python-lectures">
+<h2><a class="toc-backref" href="#id38">scientific-python-lectures</a></h2>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/">http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/jrjohansson/scientific-python-lectures">https://github.com/jrjohansson/scientific-python-lectures</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification</em> <a class="reference external" href="https://github.com/jrjohansson/scientific-python-lectures/pull/12">https://github.com/jrjohansson/scientific-python-lectures/pull/12</a></li>
+</ul>
+</div>
+<div class="section" id="scipy-lecture-notes">
+<h2><a class="toc-backref" href="#id39">scipy-lecture-notes</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/scipy-lectures/scipy-lecture-notes">https://github.com/scipy-lectures/scipy-lecture-notes</a></div>
+<div class="line">Web: <a class="reference external" href="https://scipy-lectures.github.io/">https://scipy-lectures.github.io/</a></div>
+</div>
+<ul class="simple">
+<li>[x] <em>Showing the effects of rounding as in the documentation for `numpy.around`</em> <a class="reference external" href="https://github.com/scipy-lectures/scipy-lecture-notes/pull/31">https://github.com/scipy-lectures/scipy-lecture-notes/pull/31</a></li>
+<li>[x] <em>Update README.rst: github.com -&gt; github.io</em> <a class="reference external" href="https://github.com/scipy-lectures/scipy-lecture-notes/pull/95">https://github.com/scipy-lectures/scipy-lecture-notes/pull/95</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="awesome">
+<h1><a class="toc-backref" href="#id40">Awesome</a></h1>
+<ul class="simple">
+<li>[x] <a class="reference external" href="https://github.com/bayandin/awesome-awesomeness">https://github.com/bayandin/awesome-awesomeness</a></li>
+<li>[x] <a class="reference external" href="https://github.com/onurakpolat/awesome-bigdata">https://github.com/onurakpolat/awesome-bigdata</a></li>
+<li>[x] <a class="reference external" href="https://github.com/josephmisiti/awesome-machine-learning">https://github.com/josephmisiti/awesome-machine-learning</a></li>
+<li>[x] <a class="reference external" href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+<li>[x] <a class="reference external" href="https://github.com/yoloseem/awesome-sphinxdoc">https://github.com/yoloseem/awesome-sphinxdoc</a></li>
+<li>[x] <a class="reference external" href="https://github.com/dahlia/awesome-sqlalchemy">https://github.com/dahlia/awesome-sqlalchemy</a></li>
+<li>[ ] <a class="reference external" href="https://github.com/kahun/awesome-sysadmin">https://github.com/kahun/awesome-sysadmin</a></li>
+<li>[x] <a class="reference external" href="https://github.com/bento-io/collection">https://github.com/bento-io/collection</a></li>
+<li>[x] <a class="reference external" href="https://github.com/dypsilon/frontend-dev-bookmarks">https://github.com/dypsilon/frontend-dev-bookmarks</a></li>
+<li>[x] <a class="reference external" href="https://github.com/samsquire/ideas">https://github.com/samsquire/ideas</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
