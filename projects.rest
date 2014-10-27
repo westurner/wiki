@@ -145,7 +145,7 @@ USA
 
 dotfiles
 ---------------
-
+| https://westurner.github.io/dotfiles/
 | Src: https://github.com/westurner/dotfiles
 | Docs: https://wrdfiles.readthedocs.org/en/latest/
 
