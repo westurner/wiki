@@ -1,15 +1,6 @@
 
-******
-
-`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
-
-@ `westurner.github.io <https://westurner.github.io/>`_
-
-******
-
 .. toctree:: Contents
 
-   Home
    projects
    contributions
    resume
@@ -18,3 +9,16 @@
    bitbucket
    awesome-python-testing
    awesome-python-android
+   tools
+   ideas
+
+.. Home
+
+******
+
+`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
+
+@ `westurner.github.io <https://westurner.github.io/>`_
+
+******
+
