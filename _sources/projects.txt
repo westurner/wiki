@@ -165,6 +165,7 @@ redditlog
 
 wiki
 ---------------
+| https://westurner.github.io/wiki/
 | Src: https://github.com/westurner/wiki/wiki
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
