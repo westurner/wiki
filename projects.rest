@@ -101,6 +101,10 @@ pyliveping
 ------------
 | Src: https://github.com/westurner/pyliveping
 
+pypfi
+---------------
+| Src: https://github.com/westurner/pypfi
+
 pyrpo
 ---------------
 | Src: https://github.com/westurner/pyrpo

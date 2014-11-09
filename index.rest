@@ -11,8 +11,8 @@ Contents:
    contributions
    resume
    workflow
-   github
-   bitbucket
+   GitHub
+   BitBucket
    ideas
    tools
    awesome-python-testing
