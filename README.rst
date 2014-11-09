@@ -12,8 +12,6 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
 
 ******
 
-`github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
-
-`westurner.github.io/wiki <https://westurner.github.io/wiki/>`_
-
-`westurner.github.io <https://westurner.github.io/>`_
+| `github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
+| `westurner.github.io/wiki <https://westurner.github.io/wiki/>`_
+| `westurner.github.io <https://westurner.github.io/>`_
