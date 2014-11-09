@@ -8,7 +8,7 @@ Projects
 ==========
 https://github.com/westurner/wiki/wiki/ideas
 
-Provis
+provis
 -------
 | Src: https://github.com/westurner/provis
 | Docs: https://provis.readthedocs.org/en/latest/
@@ -38,6 +38,11 @@ eaglefin
 wbcms
 ---------------
 | Src: https://bitbucket.org/westurner/wbcms
+
+opengov
+---------------
+| Src: https://github.com/westurner/opengov
+| Docs: https://westurner.github.io/opengov/
 
 presense
 ---------------
