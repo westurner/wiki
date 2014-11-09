@@ -184,7 +184,7 @@ westurner.bitbucket.org
 --------------------------
 
 | Src: https://bitbucket.org/westurner/westurner.bitbucket.org
-| Web: https://westurner.bitbucket.org/
+| Web: http://westurner.bitbucket.org/
 
 westurner.github.io
 ----------------------
