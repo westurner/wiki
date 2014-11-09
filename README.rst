@@ -7,8 +7,8 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
 - `resume <https://github.com/westurner/wiki/wiki/resume>`_
 - `workflow <https://github.com/westurner/wiki/wiki/workflow>`_
 
-  - `github <https://github.com/westurner/wiki/wiki/GitHub>`_
-  - `bitbucket <https://github.com/westurner/wiki/wiki/BitBucket>`_
+  - `github <https://github.com/westurner/wiki/wiki/github>`_
+  - `bitbucket <https://github.com/westurner/wiki/wiki/bitbucket>`_
 
 ******
 
