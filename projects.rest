@@ -140,6 +140,10 @@ vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
 
+wandroid
+---------------
+| Src: https://bitbucket.org/westurner/wandroid
+
 workhours
 ---------------
 | Src: https://github.com/westurner/workhours
