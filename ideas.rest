@@ -23,6 +23,8 @@ Trails
 -------
 * Sequences of actions
 
+  * https://bitbucket.org/westurner/browselinks
+
 Overlay
 --------
 * EAV visualization
@@ -30,6 +32,9 @@ Overlay
 RDFLib Extensions
 -------------------
 * RDFLib IPython notebook
+
+  * https://bitbucket.org/westurner/rdflib_notebooks
+
 * RDF exploration CLI
 
   * https://github.com/jonathanslenders/python-prompt-toolkit
