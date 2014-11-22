@@ -652,7 +652,11 @@ Three-letter codes with which commit messages can be prefixed.
     TST: Test           # light purple
     UBY: Usability      #
 
-
+    # Workflow Labels
+    Ready		#
+    Working		#
+    Done		#
+    
 Code Label Syntax
 ~~~~~~~~~~~~~~~~~~~
 
