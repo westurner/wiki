@@ -74,9 +74,9 @@ cookiecutter-saltformula
 --------------------------
 | Src: https://github.com/westurner/cookiecutter-saltformula
 
-pandas-rdf
+pandasrdf
 ---------------
-| Src: https://github.com/westurner/pandas-rdf
+| Src: https://github.com/westurner/pandasrdf
 
 pkgsetcomp
 ---------------
