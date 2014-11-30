@@ -39,3 +39,12 @@ RDFLib Extensions
 
   * https://github.com/jonathanslenders/python-prompt-toolkit
   * schema-aware tab-completion
+
+Sphinx Extensions
+-------------------
+* sphinxcontrib-RDF
+
+  * https://github.com/westurner/sphinxcontrib-rdf
+* sphinxcontrib-tmpipnb
+
+  * ipythonify source doctests
