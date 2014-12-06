@@ -7,6 +7,8 @@ Tools
 Tool Collections
 =================
 
+https://westurner.github.io/dotfiles/tools.html (originally from provis#tools)
+
 https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
 
 https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
