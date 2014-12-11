@@ -88,6 +88,12 @@ version_information
 - [x] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
 
 
+jinja2
+---------
+| Src: https://github.com/mitsuhiko/jinja2
+
+- [ ] *DOC: Update templates.rst: syntax, commas, expansion* https://github.com/mitsuhiko/jinja2/pull/389
+
 pandas
 ---------
 | Src: https://github.com/pydata/pandas
