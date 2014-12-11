@@ -45,6 +45,26 @@ help:
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo ""
+	@echo "  setup                   to install dependencies and configure the git repo"
+	@echo "  setup_pip_requirements  to install pip dependencies"
+	@echo "  setup_git_remotes       to configure the git repo"
+	@echo "  build_setup             to create a _build/html directory"
+	@echo "  copy_sidebar_to_footer  to copy _Sidebar.rest to _Footer.rest"
+	@echo "  copy_sidebar_to_readme  to copy _Sidebar.rest to README.rst"
+	@echo "  copy_sidebar_to_home    to copy _Sidebar.rest to _Home.rest"
+	@echo "  copy_sidebars           to copy _Sidebar.rest to Footer, README"
+	@echo "  copy_sidebars_and_commit  to copy sidebars and git commit"
+	@echo "  commit                  to git commit"
+	@echo "  pull                    to git pull from both repos: .wiki and origin"
+	@echo "  push                    to git push to both repos: .wiki and origin"
+	@echo "  gh-pages                to overwrite the gh-pages branch with _build/html"
+	@echo ""
+	@echo "  rst2html_all            to build all .rest pages with rst2html"
+	@echo "  build                   to build sidebars, rst2html_all, and html"
+	@echo ""
+	@echo "  Example: make commit pull build gh-pages push"
+
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -235,7 +255,7 @@ copy_sidebars_and_commit:
 	git commit _Footer.rest _Home.rest README.rst \
 		-m "DOC: Regenerate _Home, _Sidebar, _Footer, and README navigation"
 
-build: copy_sidebars rst2html_all
+build: copy_sidebars rst2html_all html
 
 #clean:
 #	rm -rf ./_build

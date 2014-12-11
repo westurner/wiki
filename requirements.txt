@@ -1,1 +1,4 @@
 docutils
+-e git+https://github.com/westurner/sphinxjp.themes.basicstrap#egg=sphinxjp.themes.basicstrap
+# ghp-import
+-e git+https://github.com/davisp/ghp-import#egg=ghp-import
