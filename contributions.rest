@@ -316,6 +316,7 @@ Awesome
 - [x] https://github.com/bayandin/awesome-awesomeness
 - [x] https://github.com/onurakpolat/awesome-bigdata
 - [x] https://github.com/josephmisiti/awesome-machine-learning
+- [ ] https://github.com/caesar0301/awesome-public-datasets
 - [x] https://github.com/vinta/awesome-python
 - [x] https://github.com/yoloseem/awesome-sphinxdoc
 - [x] https://github.com/dahlia/awesome-sqlalchemy
