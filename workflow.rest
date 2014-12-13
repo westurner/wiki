@@ -146,6 +146,7 @@ Setext Headings (document-local ordering) (ReStructuredText, Markdown)
     paragraph
     """"""""""
 
+See: https://github.com/westurner/rst-tools
 
 
 Text File Attributes
@@ -354,13 +355,13 @@ Issue attributes
     * Cc
     * Labels: (configurable)
 
-         * OpSys-*
-         * Milestone-Release*
-         * Component-*
-         * Security
-         * Performance
-         * Usability
-         * Maintainability
+      * OpSys-*
+      * Milestone-Release*
+      * Component-*
+      * Security
+      * Performance
+      * Usability
+      * Maintainability
 
 
 Code Hosting
@@ -397,12 +398,13 @@ Send a Pull Request
 * Branch/fork, update, commit
 * Compare, test (review diff)
 * DOC: Prepend Code Labels to first line of patch header (commit message)
-* Send a pull request (tags: ``.code``, ``-waiting``)
+* Send a pull request 
 
-   * Email: Send a URL to the branch to pull from
+   * Email: Send a URL to the branch to pull from (tags: ``.tasks``, ``.code``, ``-waiting``)
    * GitHub: Click 'Send Pull Request'
    * BitBucket: Click 'Send Pull Request'
-   * Open Loop: ``-waiting`` for feedback
+
+* Open Loop: ``-waiting`` for feedback
 
 
 Review a Pull Request
@@ -414,13 +416,13 @@ Review a Pull Request
 
    * Do Not Apply
 
-      * Send feedback: not interested, needs work
+     * Send feedback: not interested, needs work
 
    * Apply
 
-      * Update release log (See: `<#code-labels>`__)
-      * Commit
-      * Push
+     * Update release log (See: `<#code-labels>`__)
+     * Commit
+     * Push
 
 
 
