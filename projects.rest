@@ -78,6 +78,11 @@ pandasrdf
 ---------------
 | Src: https://github.com/westurner/pandasrdf
 
+promiumbookmarks
+-----------------
+| Src: https://github.com/westurner/promiumbookmarks
+| Pypi: https://pypi.python.org/pypi/promiumbookmarks
+
 pkgsetcomp
 ---------------
 | Src: https://github.com/westurner/pkgsetcomp
