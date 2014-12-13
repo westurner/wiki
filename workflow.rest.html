@@ -614,6 +614,7 @@ subsection
 paragraph
 &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
 </pre>
+<p>See: <a class="reference external" href="https://github.com/westurner/rst-tools">https://github.com/westurner/rst-tools</a></p>
 </div>
 </div>
 <div class="section" id="text-file-attributes">
@@ -726,17 +727,12 @@ the correct revision of the patch</li>
 <p>Also referred to as tickets, issues, or cards.</p>
 <div class="section" id="issue-attributes">
 <h4><a class="toc-backref" href="#id27">Issue attributes</a></h4>
-<ul>
-<li><p class="first">a title</p>
-</li>
-<li><p class="first">a description</p>
-</li>
-<li><p class="first">comments</p>
-</li>
-<li><p class="first">metadata</p>
-<ul>
-<li><p class="first">GitHub</p>
 <ul class="simple">
+<li>a title</li>
+<li>a description</li>
+<li>comments</li>
+<li>metadata<ul>
+<li>GitHub<ul>
 <li>title</li>
 <li>body</li>
 <li>user</li>
@@ -759,8 +755,7 @@ the correct revision of the patch</li>
 </li>
 </ul>
 </li>
-<li><p class="first">BitBucket</p>
-<ul class="simple">
+<li>BitBucket<ul>
 <li>title (Title)</li>
 <li>content (Description)</li>
 <li>reported_by</li>
@@ -796,18 +791,12 @@ the correct revision of the patch</li>
 <li>version (configurable)</li>
 </ul>
 </li>
-<li><p class="first">Google Code (configurable templates)</p>
-<ul>
-<li><p class="first">Summary</p>
-</li>
-<li><p class="first">Description</p>
-</li>
-<li><p class="first">Reporter</p>
-</li>
-<li><p class="first">Attachments</p>
-</li>
-<li><p class="first">Status: (configurable)</p>
-<ul class="simple">
+<li>Google Code (configurable templates)<ul>
+<li>Summary</li>
+<li>Description</li>
+<li>Reporter</li>
+<li>Attachments</li>
+<li>Status: (configurable)<ul>
 <li>Open: (configurable)<ul>
 <li>New</li>
 <li>Accepted</li>
@@ -829,13 +818,9 @@ the correct revision of the patch</li>
 </li>
 </ul>
 </li>
-<li><p class="first">Owner</p>
-</li>
-<li><p class="first">Cc</p>
-</li>
-<li><p class="first">Labels: (configurable)</p>
-<blockquote>
-<ul class="simple">
+<li>Owner</li>
+<li>Cc</li>
+<li>Labels: (configurable)<ul>
 <li>OpSys-*</li>
 <li>Milestone-Release*</li>
 <li>Component-*</li>
@@ -844,7 +829,6 @@ the correct revision of the patch</li>
 <li>Usability</li>
 <li>Maintainability</li>
 </ul>
-</blockquote>
 </li>
 </ul>
 </li>
@@ -886,15 +870,16 @@ and line-based commenting
 </li>
 <li><p class="first">DOC: Prepend Code Labels to first line of patch header (commit message)</p>
 </li>
-<li><p class="first">Send a pull request (tags: <tt class="docutils literal">.code</tt>, <tt class="docutils literal"><span class="pre">-waiting</span></tt>)</p>
+<li><p class="first">Send a pull request</p>
 <blockquote>
 <ul class="simple">
-<li>Email: Send a URL to the branch to pull from</li>
+<li>Email: Send a URL to the branch to pull from (tags: <tt class="docutils literal">.tasks</tt>, <tt class="docutils literal">.code</tt>, <tt class="docutils literal"><span class="pre">-waiting</span></tt>)</li>
 <li>GitHub: Click 'Send Pull Request'</li>
 <li>BitBucket: Click 'Send Pull Request'</li>
-<li>Open Loop: <tt class="docutils literal"><span class="pre">-waiting</span></tt> for feedback</li>
 </ul>
 </blockquote>
+</li>
+<li><p class="first">Open Loop: <tt class="docutils literal"><span class="pre">-waiting</span></tt> for feedback</p>
 </li>
 </ul>
 </div>
@@ -909,22 +894,16 @@ and line-based commenting
 </li>
 <li><p class="first">Apply or do not apply</p>
 <blockquote>
-<ul>
-<li><p class="first">Do Not Apply</p>
-<blockquote>
 <ul class="simple">
+<li>Do Not Apply<ul>
 <li>Send feedback: not interested, needs work</li>
 </ul>
-</blockquote>
 </li>
-<li><p class="first">Apply</p>
-<blockquote>
-<ul class="simple">
+<li>Apply<ul>
 <li>Update release log (See: <a class="reference external" href="#code-labels">#code-labels</a>)</li>
 <li>Commit</li>
 <li>Push</li>
 </ul>
-</blockquote>
 </li>
 </ul>
 </blockquote>
