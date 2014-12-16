@@ -639,7 +639,7 @@ Email Labels
 
 Code Labels
 ------------
-Three-letter codes with which commit messages can be prefixed.
+Code labels are three-letter codes with which commit messages can be prefixed.
 
 ::
 
@@ -688,12 +688,11 @@ Code labels are helpful for:
 
 Services
 ==========
-Web applications and web services
-https://en.wikipedia.org/wiki/List_of_collaborative_software
-
-Systems designed to track task state for one or more people
+Web applications and web service
+systems designed to track task state for one or more people
 moving toward achieving objectives that satisfy the goals.
 
+https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 Service Evaluation Criteria
 ----------------------------------
@@ -719,7 +718,7 @@ with these permissions."
 * Integrates with Gmail: yes/link/no
 * Integrates with Twitter: yes/link/no
 * Integrates with Evernote: yes/link/no
-* Integrates with Github: yes/link/no
+* Integrates with GitHub: yes/link/no
 * Cost/Free: yes/link/no
 * Cost/Paid: yes/link/no
 * Reminders/Pop-up: yes/link/no
@@ -773,7 +772,7 @@ Google Keep
 * Web Interface: https://drive.google.com/keep/
 * Mobile Interface: yes
 * API: no
-* Sharing/Internal: no
+* Sharing/Internal: yes
 * Sharing/External: no
 * Tagging: no
 
@@ -791,11 +790,36 @@ Roadmaps, Outlines
 
 Mailing Lists
 --------------
-Email relay application server
+Email relay application server ("listserv")
 
-* Mailman: listserv e-mail relay server with archive
-* Google Groups: https://groups.google.com/
+GNU Mailman
+~~~~~~~~~~~~~
+| Homepage: https://www.gnu.org/software/mailman/
+| Src: https://launchpad.net/mailman/3.0
+| Docs: https://pythonhosted.org/mailman/
+| Docs: https://pythonhosted.org/mailman/src/mailman/docs/WebUIin5.html
+
+* Hosting: Self-hosted
+* Cost: Free
+* Language: Python
+* Mailman 3 Web UI: Postorious (Django)
+
+  * https://launchpad.net/postorius
+
 * Tagging: no
+* Lightweight Markup Languages: no
+* Editing: no
+
+
+Google Groups
+~~~~~~~~~~~~~~~
+| Homepage: https://groups.google.com/
+
+* Hosting: Cloud
+* Cost: Free
+* Tagging: no
+* Lightweight Markup Languages: no
+* Editing: no
 
 `<https://en.wikipedia.org/wiki/Electronic_mailing_list>`_
 
@@ -808,10 +832,18 @@ Code Repository + Mailing List / Forums + Wikis + Downloads + Issue Tracking
 
 `<https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities>`_
 
+Examples:
+
+* SourceForge
+* GNU Savannah
+* LaunchPad
+* GitHub
+* Bitbucket
+
 
 Github Repos, Issues, Wikis
 -----------------------------
-* Free public GitHub repositories
+* Free public Git repositories
 * Web Interface: https://github.com/
 * Mobile Interface: https://mobile.github.com/
 * API: https://developer.github.com/v3/
@@ -819,6 +851,7 @@ Github Repos, Issues, Wikis
 * XML: no
 * JSON: yes
 * Tagging: yes (issue labels: see `Code Labels`_)
+* Language: Ruby
 
 GitHub renders the first README {.md, .rst, .txt, } it finds.
 
@@ -910,6 +943,13 @@ BitBucket Repos, Issues, Wikis
 * Mobile Interface: Third Party
 * Integration with Jira: Yes
 * Integration with Crucible: yes
+* API: https://bitbucket-api.readthedocs.org/en/latest/
+* API note: http://restbrowser.bitbucket.org/
+* XML: yes
+* JSON: yes
+* YAML: yes
+* Tagging: yes (issue labels: see `Code Labels`_)
+* Language: Python
 
 Workflow
 ~~~~~~~~~~

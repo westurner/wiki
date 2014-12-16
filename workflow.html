@@ -180,7 +180,11 @@
 <li><a class="reference internal" href="#google-tasks">Google Tasks</a></li>
 <li><a class="reference internal" href="#google-keep">Google Keep</a></li>
 <li><a class="reference internal" href="#wikis">Wikis</a></li>
-<li><a class="reference internal" href="#mailing-lists">Mailing Lists</a></li>
+<li><a class="reference internal" href="#mailing-lists">Mailing Lists</a><ul>
+<li><a class="reference internal" href="#gnu-mailman">GNU Mailman</a></li>
+<li><a class="reference internal" href="#google-groups">Google Groups</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#forge-sites">Forge Sites</a></li>
 <li><a class="reference internal" href="#github-repos-issues-wikis">Github Repos, Issues, Wikis</a><ul>
 <li><a class="reference internal" href="#id4">Workflow</a></li>
@@ -357,32 +361,36 @@
 <li><a class="reference internal" href="#google-tasks" id="id64">Google Tasks</a></li>
 <li><a class="reference internal" href="#google-keep" id="id65">Google Keep</a></li>
 <li><a class="reference internal" href="#wikis" id="id66">Wikis</a></li>
-<li><a class="reference internal" href="#mailing-lists" id="id67">Mailing Lists</a></li>
-<li><a class="reference internal" href="#forge-sites" id="id68">Forge Sites</a></li>
-<li><a class="reference internal" href="#github-repos-issues-wikis" id="id69">Github Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#id4" id="id70">Workflow</a></li>
+<li><a class="reference internal" href="#mailing-lists" id="id67">Mailing Lists</a><ul>
+<li><a class="reference internal" href="#gnu-mailman" id="id68">GNU Mailman</a></li>
+<li><a class="reference internal" href="#google-groups" id="id69">Google Groups</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id71">BitBucket Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#id5" id="id72">Workflow</a></li>
+<li><a class="reference internal" href="#forge-sites" id="id70">Forge Sites</a></li>
+<li><a class="reference internal" href="#github-repos-issues-wikis" id="id71">Github Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#id4" id="id72">Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#trac" id="id73">Trac</a></li>
-<li><a class="reference internal" href="#redmine" id="id74">Redmine</a></li>
-<li><a class="reference internal" href="#gitlab" id="id75">GitLab</a></li>
+<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id73">BitBucket Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#id5" id="id74">Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tools" id="id76">Tools</a><ul>
-<li><a class="reference internal" href="#pyrtm-task-cli" id="id77">pyrtm-task-cli</a></li>
-<li><a class="reference internal" href="#workhours" id="id78">workhours</a></li>
-<li><a class="reference internal" href="#taskwarrior" id="id79">TaskWarrior</a></li>
+<li><a class="reference internal" href="#trac" id="id75">Trac</a></li>
+<li><a class="reference internal" href="#redmine" id="id76">Redmine</a></li>
+<li><a class="reference internal" href="#gitlab" id="id77">GitLab</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#best-practices" id="id80">Best Practices</a><ul>
-<li><a class="reference internal" href="#project-templating" id="id81">Project Templating</a></li>
-<li><a class="reference internal" href="#requirements-traceability" id="id82">Requirements Traceability</a></li>
-<li><a class="reference internal" href="#revision-control" id="id83">Revision Control</a></li>
-<li><a class="reference internal" href="#continuous-integration" id="id84">Continuous Integration</a></li>
+<li><a class="reference internal" href="#tools" id="id78">Tools</a><ul>
+<li><a class="reference internal" href="#pyrtm-task-cli" id="id79">pyrtm-task-cli</a></li>
+<li><a class="reference internal" href="#workhours" id="id80">workhours</a></li>
+<li><a class="reference internal" href="#taskwarrior" id="id81">TaskWarrior</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#best-practices" id="id82">Best Practices</a><ul>
+<li><a class="reference internal" href="#project-templating" id="id83">Project Templating</a></li>
+<li><a class="reference internal" href="#requirements-traceability" id="id84">Requirements Traceability</a></li>
+<li><a class="reference internal" href="#revision-control" id="id85">Revision Control</a></li>
+<li><a class="reference internal" href="#continuous-integration" id="id86">Continuous Integration</a></li>
 </ul>
 </li>
 </ul>
@@ -1045,7 +1053,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </div>
 <div class="section" id="code-labels">
 <h3><a class="toc-backref" href="#id58">Code Labels</a><a class="headerlink" href="#code-labels" title="Permalink to this headline">¶</a></h3>
-<p>Three-letter codes with which commit messages can be prefixed.</p>
+<p>Code labels are three-letter codes with which commit messages can be prefixed.</p>
 <div class="highlight-python"><div class="highlight"><pre>BLD: Build          # light green
 BUG: Bug            # red (github default)
 CLN: Cleanup         #
@@ -1090,10 +1098,10 @@ BLD,CLN: Makefile: remove extra newlines
 </div>
 <div class="section" id="services">
 <h2><a class="toc-backref" href="#id60">Services</a><a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
-<p>Web applications and web services
-<a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
-<p>Systems designed to track task state for one or more people
+<p>Web applications and web service
+systems designed to track task state for one or more people
 moving toward achieving objectives that satisfy the goals.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
 <div class="section" id="service-evaluation-criteria">
 <h3><a class="toc-backref" href="#id61">Service Evaluation Criteria</a><a class="headerlink" href="#service-evaluation-criteria" title="Permalink to this headline">¶</a></h3>
 <p>There is a spectrum between
@@ -1118,7 +1126,7 @@ with these permissions.&#8221;</p>
 <li>Integrates with Gmail: yes/link/no</li>
 <li>Integrates with Twitter: yes/link/no</li>
 <li>Integrates with Evernote: yes/link/no</li>
-<li>Integrates with Github: yes/link/no</li>
+<li>Integrates with GitHub: yes/link/no</li>
 <li>Cost/Free: yes/link/no</li>
 <li>Cost/Paid: yes/link/no</li>
 <li>Reminders/Pop-up: yes/link/no</li>
@@ -1175,7 +1183,7 @@ with these permissions.&#8221;</p>
 <li>Web Interface: <a class="reference external" href="https://drive.google.com/keep/">https://drive.google.com/keep/</a></li>
 <li>Mobile Interface: yes</li>
 <li>API: no</li>
-<li>Sharing/Internal: no</li>
+<li>Sharing/Internal: yes</li>
 <li>Sharing/External: no</li>
 <li>Tagging: no</li>
 </ul>
@@ -1192,24 +1200,61 @@ with these permissions.&#8221;</p>
 </div>
 <div class="section" id="mailing-lists">
 <h3><a class="toc-backref" href="#id67">Mailing Lists</a><a class="headerlink" href="#mailing-lists" title="Permalink to this headline">¶</a></h3>
-<p>Email relay application server</p>
+<p>Email relay application server (&#8220;listserv&#8221;)</p>
+<div class="section" id="gnu-mailman">
+<h4><a class="toc-backref" href="#id68">GNU Mailman</a><a class="headerlink" href="#gnu-mailman" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/mailman/">https://www.gnu.org/software/mailman/</a></div>
+<div class="line">Src: <a class="reference external" href="https://launchpad.net/mailman/3.0">https://launchpad.net/mailman/3.0</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pythonhosted.org/mailman/">https://pythonhosted.org/mailman/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pythonhosted.org/mailman/src/mailman/docs/WebUIin5.html">https://pythonhosted.org/mailman/src/mailman/docs/WebUIin5.html</a></div>
+</div>
 <ul class="simple">
-<li>Mailman: listserv e-mail relay server with archive</li>
-<li>Google Groups: <a class="reference external" href="https://groups.google.com/">https://groups.google.com/</a></li>
+<li>Hosting: Self-hosted</li>
+<li>Cost: Free</li>
+<li>Language: Python</li>
+<li>Mailman 3 Web UI: Postorious (Django)<ul>
+<li><a class="reference external" href="https://launchpad.net/postorius">https://launchpad.net/postorius</a></li>
+</ul>
+</li>
 <li>Tagging: no</li>
+<li>Lightweight Markup Languages: no</li>
+<li>Editing: no</li>
+</ul>
+</div>
+<div class="section" id="google-groups">
+<h4><a class="toc-backref" href="#id69">Google Groups</a><a class="headerlink" href="#google-groups" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://groups.google.com/">https://groups.google.com/</a></div>
+</div>
+<ul class="simple">
+<li>Hosting: Cloud</li>
+<li>Cost: Free</li>
+<li>Tagging: no</li>
+<li>Lightweight Markup Languages: no</li>
+<li>Editing: no</li>
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Electronic_mailing_list">https://en.wikipedia.org/wiki/Electronic_mailing_list</a></p>
 </div>
+</div>
 <div class="section" id="forge-sites">
-<h3><a class="toc-backref" href="#id68">Forge Sites</a><a class="headerlink" href="#forge-sites" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id70">Forge Sites</a><a class="headerlink" href="#forge-sites" title="Permalink to this headline">¶</a></h3>
 <p>Code Repository + Mailing List / Forums + Wikis + Downloads + Issue Tracking</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Forge_(software)">https://en.wikipedia.org/wiki/Forge_(software)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities</a></p>
+<p>Examples:</p>
+<ul class="simple">
+<li>SourceForge</li>
+<li>GNU Savannah</li>
+<li>LaunchPad</li>
+<li>GitHub</li>
+<li>Bitbucket</li>
+</ul>
 </div>
 <div class="section" id="github-repos-issues-wikis">
-<h3><a class="toc-backref" href="#id69">Github Repos, Issues, Wikis</a><a class="headerlink" href="#github-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id71">Github Repos, Issues, Wikis</a><a class="headerlink" href="#github-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Free public GitHub repositories</li>
+<li>Free public Git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://github.com/">https://github.com/</a></li>
 <li>Mobile Interface: <a class="reference external" href="https://mobile.github.com/">https://mobile.github.com/</a></li>
 <li>API: <a class="reference external" href="https://developer.github.com/v3/">https://developer.github.com/v3/</a></li>
@@ -1217,11 +1262,12 @@ with these permissions.&#8221;</p>
 <li>XML: no</li>
 <li>JSON: yes</li>
 <li>Tagging: yes (issue labels: see <a class="reference internal" href="#code-labels">Code Labels</a>)</li>
+<li>Language: Ruby</li>
 </ul>
 <p>GitHub renders the first README {.md, .rst, .txt, } it finds.</p>
 <p>GitHub ReStructuredText does not support Sphinx ReStructuredText.</p>
 <div class="section" id="id4">
-<h4><a class="toc-backref" href="#id70">Workflow</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id72">Workflow</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Ways to work with tasks and GitHub:</p>
 <ul>
 <li><p class="first">Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
@@ -1314,16 +1360,23 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 </div>
 </div>
 <div class="section" id="bitbucket-repos-issues-wikis">
-<h3><a class="toc-backref" href="#id71">BitBucket Repos, Issues, Wikis</a><a class="headerlink" href="#bitbucket-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id73">BitBucket Repos, Issues, Wikis</a><a class="headerlink" href="#bitbucket-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Free public and private hg and git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://bitbucket.org/">https://bitbucket.org/</a></li>
 <li>Mobile Interface: Third Party</li>
 <li>Integration with Jira: Yes</li>
 <li>Integration with Crucible: yes</li>
+<li>API: <a class="reference external" href="https://bitbucket-api.readthedocs.org/en/latest/">https://bitbucket-api.readthedocs.org/en/latest/</a></li>
+<li>API note: <a class="reference external" href="http://restbrowser.bitbucket.org/">http://restbrowser.bitbucket.org/</a></li>
+<li>XML: yes</li>
+<li>JSON: yes</li>
+<li>YAML: yes</li>
+<li>Tagging: yes (issue labels: see <a class="reference internal" href="#code-labels">Code Labels</a>)</li>
+<li>Language: Python</li>
 </ul>
 <div class="section" id="id5">
-<h4><a class="toc-backref" href="#id72">Workflow</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id74">Workflow</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first">Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
 <div class="highlight-python"><div class="highlight"><pre>1. [ ] mkdir tasks &amp;&amp; cd tasks
@@ -1384,7 +1437,7 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="trac">
-<h3><a class="toc-backref" href="#id73">Trac</a><a class="headerlink" href="#trac" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id75">Trac</a><a class="headerlink" href="#trac" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Trac">https://en.wikipedia.org/wiki/Trac</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></div>
@@ -1396,7 +1449,7 @@ BUG: fix bug (fixes: #03)
 </ul>
 </div>
 <div class="section" id="redmine">
-<h3><a class="toc-backref" href="#id74">Redmine</a><a class="headerlink" href="#redmine" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id76">Redmine</a><a class="headerlink" href="#redmine" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Redmine">https://en.wikipedia.org/wiki/Redmine</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.redmine.org/">http://www.redmine.org/</a></div>
@@ -1404,7 +1457,7 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="gitlab">
-<h3><a class="toc-backref" href="#id75">GitLab</a><a class="headerlink" href="#gitlab" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id77">GitLab</a><a class="headerlink" href="#gitlab" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://about.gitlab.com/">https://about.gitlab.com/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/gitlabhq/gitlabhq">https://github.com/gitlabhq/gitlabhq</a></div>
@@ -1412,9 +1465,9 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="tools">
-<h2><a class="toc-backref" href="#id76">Tools</a><a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id78">Tools</a><a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="pyrtm-task-cli">
-<h3><a class="toc-backref" href="#id77">pyrtm-task-cli</a><a class="headerlink" href="#pyrtm-task-cli" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id79">pyrtm-task-cli</a><a class="headerlink" href="#pyrtm-task-cli" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/pyrtm-task-cli">https://bitbucket.org/westurner/pyrtm-task-cli</a></div>
 </div>
@@ -1423,7 +1476,7 @@ BUG: fix bug (fixes: #03)
 Hipster PDA from a template.</p>
 </div>
 <div class="section" id="workhours">
-<h3><a class="toc-backref" href="#id78">workhours</a><a class="headerlink" href="#workhours" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id80">workhours</a><a class="headerlink" href="#workhours" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/workhours">https://bitbucket.org/westurner/workhours</a></div>
 </div>
@@ -1431,7 +1484,7 @@ Hipster PDA from a template.</p>
 (bookmarks, existing browser history, <tt class="docutils literal"><span class="pre">.usrlog</span></tt> files)</p>
 </div>
 <div class="section" id="taskwarrior">
-<h3><a class="toc-backref" href="#id79">TaskWarrior</a><a class="headerlink" href="#taskwarrior" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id81">TaskWarrior</a><a class="headerlink" href="#taskwarrior" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Taskwarrior">https://en.wikipedia.org/wiki/Taskwarrior</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://taskwarrior.org/">http://taskwarrior.org/</a></div>
@@ -1445,16 +1498,16 @@ updating, and reporting on tasks, their statuses, and their priorities.</p>
 </div>
 </div>
 <div class="section" id="best-practices">
-<h2><a class="toc-backref" href="#id80">Best Practices</a><a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id82">Best Practices</a><a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="project-templating">
-<h3><a class="toc-backref" href="#id81">Project Templating</a><a class="headerlink" href="#project-templating" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id83">Project Templating</a><a class="headerlink" href="#project-templating" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[ ] Generate a new project with templated packaging and documentation
 (e.g. with <a class="reference external" href="https://github.com/audreyr/cookiecutter">https://github.com/audreyr/cookiecutter</a>)</li>
 </ul>
 </div>
 <div class="section" id="requirements-traceability">
-<h3><a class="toc-backref" href="#id82">Requirements Traceability</a><a class="headerlink" href="#requirements-traceability" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id84">Requirements Traceability</a><a class="headerlink" href="#requirements-traceability" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">[ ] Write a Roadmap wiki entry with links to Release Plans
 and/or issue milestones
@@ -1494,7 +1547,7 @@ as-is (with no anchor text):</p>
 </ul>
 </div>
 <div class="section" id="revision-control">
-<h3><a class="toc-backref" href="#id83">Revision Control</a><a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id85">Revision Control</a><a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[ ] Utilize Git HubFlow
 (<a class="reference external" href="https://datasift.github.io/gitflow/">https://datasift.github.io/gitflow/</a>,
@@ -1505,7 +1558,7 @@ for managing project repository branches:
 </ul>
 </div>
 <div class="section" id="continuous-integration">
-<h3><a class="toc-backref" href="#id84">Continuous Integration</a><a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id86">Continuous Integration</a><a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration#Best_practices">https://en.wikipedia.org/wiki/Continuous_integration#Best_practices</a></p>
 <ul class="simple">
 <li>[ ] Tag builds of versions and their artifacts with short commit ids
@@ -1624,7 +1677,11 @@ and conda selectors: <a class="reference external" href="http://conda.pydata.org
 <li><a class="reference internal" href="#google-tasks">Google Tasks</a></li>
 <li><a class="reference internal" href="#google-keep">Google Keep</a></li>
 <li><a class="reference internal" href="#wikis">Wikis</a></li>
-<li><a class="reference internal" href="#mailing-lists">Mailing Lists</a></li>
+<li><a class="reference internal" href="#mailing-lists">Mailing Lists</a><ul>
+<li><a class="reference internal" href="#gnu-mailman">GNU Mailman</a></li>
+<li><a class="reference internal" href="#google-groups">Google Groups</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#forge-sites">Forge Sites</a></li>
 <li><a class="reference internal" href="#github-repos-issues-wikis">Github Repos, Issues, Wikis</a><ul>
 <li><a class="reference internal" href="#id4">Workflow</a></li>
