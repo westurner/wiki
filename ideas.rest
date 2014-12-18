@@ -95,3 +95,4 @@ Use cases:
 
   * http://mailman-bundler.readthedocs.org/en/latest/
   * http://pythonhosted.org//mailman/
+  * https://mail.python.org/mailman/listinfo/mailman-developers
