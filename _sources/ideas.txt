@@ -87,6 +87,7 @@ Use cases:
   * PyPI pkg: https://pypi.python.org/pypi/<path>
   * Warehouse pkg: https://warehouse.python.org/project/<path>
   * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
+  * Build: http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771
 
 
 * This could - most efficiently - be added to mailman
