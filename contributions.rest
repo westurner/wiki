@@ -6,23 +6,29 @@ Contributions
 .. contents::
 
 Code Labels
-=============
+------------
+Code labels are three-letter codes with which commit messages can be prefixed.
+
 ::
 
-    ENH: Enhancement    # blue
-    BUG: Bug            # red
-    DOC: Documentation  # light blue
-    TST: Test           # light purple
-    BLD: Build          # light green
-    CLN: Cleanup        #
-    SEC: Security       #
-    PRF: Performance    #
-    UBY: Usability      #
-    RLS: Release        #
+    CODE Label          color name      background  text
+    ---  -------------- -------------   ----------  -------
+    BLD: Build          light green     #bfe5bf     #2a332a
+    BUG: Bug            red             #fc2929     #ffffff  (github default)
+    CLN: Cleanup        light yellow    #fef2c0     #333026
+    DOC: Documentation  light blue      #c7def8     #282d33
+    ENH: Enhancement    blue            #84b6eb     #1c2733  (github default)
+    PRF: Performance    deep purple     #5319e7     #ffffff
+    RLS: Release        dark blue       #0052cc     #ffffff
+    SEC: Security       orange          #eb6420     #ffffff
+    TST: Test           light purple    #d4c5f9     #2b2833
+    UBY: Usability      light pink      #f7c6c7     #332829
 
+    # Workflow Labels
+    Ready               dark sea green  #006b75     #ffffff
+    In Progress         yellow          #fbca04     #332900
 
--- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
-
+    Color codes are drawn from the default GitHub palette.
 
 See: `<workflow#code-labels>`_
 
