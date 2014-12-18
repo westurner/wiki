@@ -166,6 +166,7 @@ html_theme_options = {
     'content_width': '768px',
     'row_fixed': False,
     'noresponsive': False,
+    'noresponsiverelbar': True,
     'googlewebfont': False,
     'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',
     'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
@@ -389,6 +390,7 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
 
 def setup(app):
     app.add_javascript('js/local.js')
+    app.add_stylesheet('css/local.css')
     app.connect('html-page-context', configure_meta_tags)
 
 
