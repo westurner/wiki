@@ -672,6 +672,8 @@ Code labels are three-letter codes with which commit messages can be prefixed.
 
     Note: There are 17 labels listed here.
 
+.. note:: For examples with color swatches in alphabetical order,
+   see https://github.com/westurner/dotfiles/labels
 
 Code Label Syntax
 ~~~~~~~~~~~~~~~~~~~
