@@ -1072,7 +1072,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <div class="section" id="task-labels">
 <h2><a class="toc-backref" href="#id53">Task Labels</a></h2>
 <pre class="literal-block">
--next       a next action
+-next       a next action                    ( seeAlso: code: ready )
 -waiting    a task that is blocked
 -someday    an opportunity for a later date
 </pre>
@@ -1084,7 +1084,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <pre class="literal-block">
 .random        an unfiled note to self
 .d             degrees
-.d.&lt;course&gt;    degree course
+.d.&lt;name&gt;      degree course/project/team
 .bills         bills
 .career        career
 .civic         civic
@@ -1102,13 +1102,13 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <h2><a class="toc-backref" href="#id55">Context Labels</a></h2>
 <pre class="literal-block">
 &#64;home    at home
+&#64;travel  when traveling
 &#64;campus  at school
-&#64;class   in class
+&#64;class   in class    ( see: .d.&lt;course&gt; )
 &#64;work    at work
-&#64;team    working with a team
 &#64;phone   at the phone
 &#64;pc      at a computer
-&#64;online  at a computer with internet access
+&#64;online  at a computer with internet
 &#64;email   checking email
 &#64;forum   reading forums
 &#64;read    having time for reading
@@ -1120,13 +1120,34 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <h2><a class="toc-backref" href="#id56">Email Labels</a></h2>
 <pre class="literal-block">
 .tasks         tasks, action items
-.tasks.daily   repeating daily tasks
-.tasks.done    completed tasks
+.tasks/.daily  repeating daily tasks
+.tasks/.done   completed tasks
 
-.p.&lt;project&gt;   project (-&gt; .project)
-.p.&lt;people&gt;    people
-.l.&lt;name&gt;      mailing lists
-.o.&lt;orgname&gt;   organization
+b.
+b./b.ills
+b./b.rent
+b./b.svc
+b./b.uy
+c.ode         GitHub, BitBucket, SourceForge, Savannah (list: circle:#me)
+d.            degrees                     ( seeAlso: .d )
+d./d.&lt;name&gt;   degree course/project/team  ( seeAlso: .d.&lt;course&gt; )
+d./o.&lt;org&gt;    academic organizations
+p.            people / humans
+p./p.career   job offers, applications
+p./p.fam      family and friends
+p./p.self     from:me AND to:me
+p./p.sweb     social web
+l.            mailing lists
+l./l.art      art things
+l./l.biz      business
+l./l.music    music, concerts
+l./l.py       Python (list:python.org)
+l./l.semweb   semantic web
+o.&lt;orgname&gt;   organization
+wd.
+wd.&lt;project&gt;  web development
+
+&#64;travel
 </pre>
 </div>
 <div class="section" id="code-labels">
