@@ -35,7 +35,13 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     question            fuschia         #cc317c     #ffffff  (github default)
     wontfix             white           #ffffff     #333333  (github default)
 
-    Note: All of these color codes are drawn from the default GitHub palette.
+    Note: All of these color codes (except for fuschia)
+    are drawn from the default GitHub palette.
+
+    Note: There are 17 labels listed here.
+
+.. note:: For examples with color swatches in alphabetical order,
+   see https://github.com/westurner/dotfiles/labels
 
 See: `<workflow#code-labels>`_ for *Code Label* syntax and usage information.
 
