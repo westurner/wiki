@@ -575,7 +575,7 @@ Task Labels
 ---------------
 ::
 
-   -next       a next action
+   -next       a next action                    ( seeAlso: code: ready )
    -waiting    a task that is blocked
    -someday    an opportunity for a later date
 
@@ -590,7 +590,7 @@ See: https://github.com/westurner/wiki/wiki/projects
 
    .random        an unfiled note to self
    .d             degrees
-   .d.<course>    degree course
+   .d.<name>      degree course/project/team
    .bills         bills
    .career        career
    .civic         civic
@@ -609,13 +609,13 @@ Context Labels
 ::
 
    @home    at home
+   @travel  when traveling
    @campus  at school
-   @class   in class
+   @class   in class    ( see: .d.<course> )
    @work    at work
-   @team    working with a team
    @phone   at the phone
    @pc      at a computer
-   @online  at a computer with internet access
+   @online  at a computer with internet
    @email   checking email
    @forum   reading forums
    @read    having time for reading
@@ -628,13 +628,34 @@ Email Labels
 ::
 
    .tasks         tasks, action items
-   .tasks.daily   repeating daily tasks
-   .tasks.done    completed tasks
+   .tasks/.daily  repeating daily tasks
+   .tasks/.done   completed tasks
 
-   .p.<project>   project (-> .project)
-   .p.<people>    people
-   .l.<name>      mailing lists
-   .o.<orgname>   organization
+   b.
+   b./b.ills
+   b./b.rent
+   b./b.svc
+   b./b.uy
+   c.ode         GitHub, BitBucket, SourceForge, Savannah (list: circle:#me)
+   d.            degrees                     ( seeAlso: .d )
+   d./d.<name>   degree course/project/team  ( seeAlso: .d.<course> )
+   d./o.<org>    academic organizations
+   p.            people / humans
+   p./p.career   job offers, applications
+   p./p.fam      family and friends
+   p./p.self     from:me AND to:me
+   p./p.sweb     social web
+   l.            mailing lists
+   l./l.art      art things
+   l./l.biz      business
+   l./l.music    music, concerts
+   l./l.py       Python (list:python.org)
+   l./l.semweb   semantic web
+   o.<orgname>   organization
+   wd.
+   wd.<project>  web development
+
+   @travel
 
 
 Code Labels
