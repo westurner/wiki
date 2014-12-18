@@ -166,6 +166,14 @@ pip
 * [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
 
 
+pypi
++++++
+| Src: https://bitbucket.org/pypa/pypi
+
+* [ ] *UBY: static/css/pypi-screen.css: collapse and lighten table.docutils borders*
+  https://bitbucket.org/pypa/pypi/pull-request/61/uby-static-css-pypi-screencss-collapse-and/diff
+
+
 richard
 +++++++++
 | Src: https://github.com/willkg/richard/
