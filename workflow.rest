@@ -670,6 +670,8 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     Note: All of these color codes (except for fuschia)
     are drawn from the default GitHub palette.
 
+    Note: There are 17 labels listed here.
+
 
 Code Label Syntax
 ~~~~~~~~~~~~~~~~~~~
