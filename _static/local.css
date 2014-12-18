@@ -1,0 +1,16 @@
+.navbar {
+    margin-bottom: 0; 
+}
+
+/* div.sidebar < parent */
+#sidebar-wrapper {
+    background: #f8f8f8;
+    border-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-top: 0;
+    margin-top: -1px;
+}
+
+div#contents {
+    display: none;
+}
