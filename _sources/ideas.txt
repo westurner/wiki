@@ -48,3 +48,49 @@ Sphinx Extensions
 * sphinxcontrib-tmpipnb
 
   * ipythonify source doctests
+
+
+Open Source Mailing List Extractor
+----------------------------------
+Use cases:
+
+* https://mail.python.org/pipermail/python-ideas/2014-December/030228.html
+* incentivization of actionable crossreferences
+* PEP research
+* "is this actionable?"
+* "are we voting?"
+
+
+* Crawl/parse/extract links and +1 from given thread(s)
+  
+  * Detect a few standard link types:
+
+    * Issue
+    * Src
+    * Doc
+    * Ref
+    * x-link
+
+  * +1s with expandable snippets? (like ``grep -C``)
+
+* There could be configurable per-list link heuristics:
+
+  * http[s]
+  * Issue: https://bugs.python.org/issue(\d+)
+  * Src: https://hg.python.org/<repo>/<path>
+  * Src: https://github.com/<org>/<project>/<path>
+  * Src: https://bitbucket.org/<org>/<project>/<path>
+  * Patch/Attachment: http[s]://bugs.python.org/(file[\d]+)/<filename(.diff)>
+  * Doc: https://docs.python.org/<ver>/<path>
+  * Wiki: https://wiki.python.org/moin/<path>
+  * Homepage: https://www.python.org/<path>
+  * PyPI pkg: https://pypi.python.org/pypi/<path>
+  * Warehouse pkg: https://warehouse.python.org/project/<path>
+  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
+
+
+* This could - most efficiently - be added to mailman
+  (e.g. in Postorious and/or HyperKitty)
+
+  * http://mailman-bundler.readthedocs.org/en/latest/
+  * http://pythonhosted.org//mailman/

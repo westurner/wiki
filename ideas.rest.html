@@ -351,6 +351,7 @@ ul.auto-toc {
 <li><a class="reference internal" href="#overlay" id="id5">Overlay</a></li>
 <li><a class="reference internal" href="#rdflib-extensions" id="id6">RDFLib Extensions</a></li>
 <li><a class="reference internal" href="#sphinx-extensions" id="id7">Sphinx Extensions</a></li>
+<li><a class="reference internal" href="#open-source-mailing-list-extractor" id="id8">Open Source Mailing List Extractor</a></li>
 </ul>
 </li>
 </ul>
@@ -412,6 +413,50 @@ ul.auto-toc {
 </li>
 <li>sphinxcontrib-tmpipnb<ul>
 <li>ipythonify source doctests</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="open-source-mailing-list-extractor">
+<h2><a class="toc-backref" href="#id8">Open Source Mailing List Extractor</a></h2>
+<p>Use cases:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://mail.python.org/pipermail/python-ideas/2014-December/030228.html">https://mail.python.org/pipermail/python-ideas/2014-December/030228.html</a></li>
+<li>incentivization of actionable crossreferences</li>
+<li>PEP research</li>
+<li>&quot;is this actionable?&quot;</li>
+<li>&quot;are we voting?&quot;</li>
+<li>Crawl/parse/extract links and +1 from given thread(s)<ul>
+<li>Detect a few standard link types:<ul>
+<li>Issue</li>
+<li>Src</li>
+<li>Doc</li>
+<li>Ref</li>
+<li>x-link</li>
+</ul>
+</li>
+<li>+1s with expandable snippets? (like <tt class="docutils literal">grep <span class="pre">-C</span></tt>)</li>
+</ul>
+</li>
+<li>There could be configurable per-list link heuristics:<ul>
+<li>http[s]</li>
+<li>Issue: <a class="reference external" href="https://bugs.python.org/issue(d+">https://bugs.python.org/issue(d+</a>)</li>
+<li>Src: <a class="reference external" href="https://hg.python.org">https://hg.python.org</a>/&lt;repo&gt;/&lt;path&gt;</li>
+<li>Src: <a class="reference external" href="https://github.com">https://github.com</a>/&lt;org&gt;/&lt;project&gt;/&lt;path&gt;</li>
+<li>Src: <a class="reference external" href="https://bitbucket.org">https://bitbucket.org</a>/&lt;org&gt;/&lt;project&gt;/&lt;path&gt;</li>
+<li>Patch/Attachment: http[s]://bugs.python.org/(file[d]+)/&lt;filename(.diff)&gt;</li>
+<li>Doc: <a class="reference external" href="https://docs.python.org">https://docs.python.org</a>/&lt;ver&gt;/&lt;path&gt;</li>
+<li>Wiki: <a class="reference external" href="https://wiki.python.org/moin">https://wiki.python.org/moin</a>/&lt;path&gt;</li>
+<li>Homepage: <a class="reference external" href="https://www.python.org">https://www.python.org</a>/&lt;path&gt;</li>
+<li>PyPI pkg: <a class="reference external" href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>/&lt;path&gt;</li>
+<li>Warehouse pkg: <a class="reference external" href="https://warehouse.python.org/project">https://warehouse.python.org/project</a>/&lt;path&gt;</li>
+<li>Wikipedia: <a class="reference external" href="https://[lang].wikipedia.org/wiki">https://[lang].wikipedia.org/wiki</a>/&lt;page&gt; --&gt; (dbpedia:&lt;page&gt;)</li>
+</ul>
+</li>
+<li>This could - most efficiently - be added to mailman
+(e.g. in Postorious and/or HyperKitty)<ul>
+<li><a class="reference external" href="http://mailman-bundler.readthedocs.org/en/latest/">http://mailman-bundler.readthedocs.org/en/latest/</a></li>
+<li><a class="reference external" href="http://pythonhosted.org//mailman/">http://pythonhosted.org//mailman/</a></li>
 </ul>
 </li>
 </ul>
