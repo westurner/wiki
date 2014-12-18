@@ -94,6 +94,15 @@ jinja2
 
 - [ ] *DOC: Update templates.rst: syntax, commas, expansion* https://github.com/mitsuhiko/jinja2/pull/389
 
+
+jquery-lifestream
+------------------
+| Src: https://github.com/christianv/jquery-lifestream
+
+- [x] *BUG: Match tweet #hashtag word boundaries, https:// URLS, min.js*
+  https://github.com/christianv/jquery-lifestream/issues/181 (#182, #183)
+
+
 pandas
 ---------
 | Src: https://github.com/pydata/pandas
