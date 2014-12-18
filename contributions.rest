@@ -6,7 +6,7 @@ Contributions
 .. contents::
 
 Code Labels
-------------
+============
 Code labels are three-letter codes with which commit messages can be prefixed.
 
 ::
@@ -24,13 +24,20 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     TST: Test           light purple    #d4c5f9     #2b2833
     UBY: Usability      light pink      #f7c6c7     #332829
 
-    # Workflow Labels
+    # Workflow Labels   (e.g. for kanban board columns)
     Ready               dark sea green  #006b75     #ffffff
     In Progress         yellow          #fbca04     #332900
 
-    Color codes are drawn from the default GitHub palette.
+    # GitHub Labels
+    duplicate           darker gray     #cccccc     #333333  (github default)
+    help wanted         green           #159818     #ffffff  (github default)
+    invalid             light gray      #e6e6e6     #333333  (github default)
+    question            fuschia         #cc317c     #ffffff  (github default)
+    wontfix             white           #ffffff     #333333  (github default)
 
-See: `<workflow#code-labels>`_
+    Note: All of these color codes are drawn from the default GitHub palette.
+
+See: `<workflow#code-labels>`_ for *Code Label* syntax and usage information.
 
 
 Code
