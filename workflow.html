@@ -1054,21 +1054,31 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <div class="section" id="code-labels">
 <h3><a class="toc-backref" href="#id58">Code Labels</a><a class="headerlink" href="#code-labels" title="Permalink to this headline">¶</a></h3>
 <p>Code labels are three-letter codes with which commit messages can be prefixed.</p>
-<div class="highlight-python"><div class="highlight"><pre>BLD: Build          # light green
-BUG: Bug            # red (github default)
-CLN: Cleanup         #
-DOC: Documentation  # light blue
-ENH: Enhancement    # blue (github default)
-PRF: Performance    #
-RLS: Release        # dark blue
-SEC: Security       #
-TST: Test           # light purple
-UBY: Usability      #
+<div class="highlight-python"><div class="highlight"><pre>CODE Label          color name      background  text
+---  -------------- -------------   ----------  -------
+BLD: Build          light green     #bfe5bf     #2a332a
+BUG: Bug            red             #fc2929     #ffffff  (github default)
+CLN: Cleanup        light yellow    #fef2c0     #333026
+DOC: Documentation  light blue      #c7def8     #282d33
+ENH: Enhancement    blue            #84b6eb     #1c2733  (github default)
+PRF: Performance    deep purple     #5319e7     #ffffff
+RLS: Release        dark blue       #0052cc     #ffffff
+SEC: Security       orange          #eb6420     #ffffff
+TST: Test           light purple    #d4c5f9     #2b2833
+UBY: Usability      light pink      #f7c6c7     #332829
 
-# Workflow Labels
-Ready               #
-Working             #
-Done                #
+# Workflow Labels   (e.g. for kanban board columns)
+Ready               dark sea green  #006b75     #ffffff
+In Progress         yellow          #fbca04     #332900
+
+# GitHub Labels
+duplicate           darker gray     #cccccc     #333333  (github default)
+help wanted         green           #159818     #ffffff  (github default)
+invalid             light gray      #e6e6e6     #333333  (github default)
+question            fuschia         #cc317c     #ffffff  (github default)
+wontfix             white           #ffffff     #333333  (github default)
+
+Note: All of these color codes are drawn from the default GitHub palette.
 </pre></div>
 </div>
 <div class="section" id="code-label-syntax">
