@@ -24,7 +24,7 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     TST: test           light purple    #d4c5f9     #2b2833
     UBY: usability      light pink      #f7c6c7     #332829
 
-    # Workflow Labels   (e.g. for kanban board columns)
+    # Workflow Labels   (e.g. for waffle.io kanban board columns)
     ready               dark sea green  #006b75     #ffffff
     in progress         yellow          #fbca04     #332900
 

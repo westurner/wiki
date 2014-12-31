@@ -522,11 +522,11 @@ this day?              |  7 | resolution of the day; prosecute the
 <ul class="simple">
 <li>[ ] Document optimal workflows</li>
 <li>[x] Create <tt class="docutils literal">workflow.rst</tt> (see: current headings)</li>
-<li>[ ] File metadata strategies: (folders, names, tagging, labeling)</li>
-<li>[ ] Synthesize existing labeling strategies</li>
+<li>[ ] Develop file metadata strategies: (folders, names, tagging, labeling)</li>
+<li>[x] Synthesize existing labeling strategies</li>
 <li>[ ] Define and describe resources: skills, time, tools, tasks</li>
 <li>[ ] Define and describe outputs: artifacts, products, deliverables</li>
-<li>[ ] RnD: integrated workflow information flows<ul>
+<li>[ ] R&amp;D: integrate workflow information flows<ul>
 <li>Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli, pytodo?)</li>
 <li>Logs: workhours, heka, elasticsearch, kibana</li>
 </ul>
@@ -1167,7 +1167,7 @@ SEC: security       orange          #eb6420     #ffffff
 TST: test           light purple    #d4c5f9     #2b2833
 UBY: usability      light pink      #f7c6c7     #332829
 
-# Workflow Labels   (e.g. for kanban board columns)
+# Workflow Labels   (e.g. for waffle.io kanban board columns)
 ready               dark sea green  #006b75     #ffffff
 in progress         yellow          #fbca04     #332900
 
@@ -1387,16 +1387,18 @@ with these permissions.&quot;</p>
 <h3><a class="toc-backref" href="#id71">Workflow</a></h3>
 <p>Ways to work with tasks and GitHub:</p>
 <ul>
-<li><p class="first">Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
+<li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
 <pre class="literal-block">
-1. [ ] mkdir tasks &amp;&amp; cd tasks
-2. [ ] git init
-3. [ ] echo &quot;Tasks list&quot; &gt;&gt; README.md
-4. [ ] git add README.md
-5. [ ] git diff README.md
-6. [ ] git commit
-7. [ ] git remote add origin ssh://git&#64;github.com/&lt;username&gt;/&lt;reponame&gt;
-8. [ ] git push origin master
+1.  [ ] mkdir tasks &amp;&amp; cd tasks
+2.  [ ] git init
+3.  [ ] echo &quot;Tasks list&quot; &gt;&gt; README.md
+4.  [ ] git diff README.md
+5.  [ ] git add README.md
+6.  [ ] git diff --cached README.md
+7.  [ ] git commit -m &quot;DOC: Create tasks list&quot;
+8.  [ ] git remote add origin ssh://git&#64;github.com/&lt;username&gt;/&lt;reponame&gt;
+9.  [ ] Create a new github project named &lt;reponame&gt;
+10. [ ] git push origin master
 </pre>
 <ul class="simple">
 <li>Learn to git pull, diff, patch, merge, stash, push, and send pull requests
@@ -1410,15 +1412,18 @@ automation commands.</li>
 <li><a class="reference external" href="https://github.com/datasift/gitflow">hubflow</a> --
 adds <tt class="docutils literal">git hf &lt;command&gt;</tt>
 branching workflow automation commands by extending gitflow.</li>
+<li>see: <a class="reference external" href="https://westurner.github.io/dotfiles/tools.html#hubflow">https://westurner.github.io/dotfiles/tools.html#hubflow</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p class="first">Create a GitHub Issue with a title and a description (Markdown) {.md}</p>
+<li><p class="first">[ ] Create a GitHub Issue with a title and a description (Markdown) {.md}</p>
 <pre class="literal-block">
 1. [ ] Open the GitHub url in the browser
 2. [ ] Click 'Issues'
 3. [ ] Click 'New Issue'
+4. [ ] Add a description &quot;ENH: New Feature&quot;
+5. [ ] Also select corresponding `&lt;#code-labels&gt;`__
 </pre>
 <ul>
 <li><p class="first">Per-objective</p>
@@ -1443,22 +1448,26 @@ BUG: fix bug (fixes: #03)
 </li>
 </ul>
 </li>
-<li><p class="first">Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}:</p>
+<li><p class="first">[ ] Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}:</p>
 <pre class="literal-block">
-- [x] one --bold--
-- [ ] two -italic-
-  - [x] two.one
-  - [ ] two.two \- two
-- [ ] ``three`` (also `three`)
+* [ ] Add list items with checkboxes (``- [x] Task three``)
 </pre>
+<blockquote>
 <ul class="simple">
-<li>Check off each checkbox to complete the issue</li>
-<li>Add list items with checkboxes (<tt class="docutils literal">- [x] Task three</tt>)</li>
+<li>[x] one --bold--</li>
+<li>[ ] two -italic-
+- [x] two.one
+- [ ] two.two - two</li>
+<li>[ ] <tt class="docutils literal">three</tt> (also <cite>three</cite>)</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>[ ] Check off each checkbox to complete the issue</li>
 </ul>
 </li>
-<li><p class="first">Create a GitHub Wiki page w/ title and text (Markdown) {.md}</p>
+<li><p class="first">[ ] Create a GitHub Wiki page w/ title and text (Markdown, ReST) {.md, .rest}</p>
 <ul class="simple">
-<li>Create a Roadmap page with a sprint/release plan of issue number/links</li>
+<li>[ ] Create a Roadmap page with a sprint/release plan of issue number/links</li>
 </ul>
 </li>
 <li><p class="first">Publish Task Reports into a repository as HTML served by GitHub Pages</p>
@@ -1495,20 +1504,20 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 <div class="section" id="id5">
 <h3><a class="toc-backref" href="#id73">Workflow</a></h3>
 <ul>
-<li><p class="first">Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
+<li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
 <pre class="literal-block">
 1. [ ] mkdir tasks &amp;&amp; cd tasks
 2. [ ] hg init
 3. [ ] echo &quot;Tasks list&quot; &gt;&gt; README.md
 4. [ ] hg add README.md
 5. [ ] hg diff README.md
-6. [ ] hg commit
+6. [ ] hg commit -m &quot;DOC: Create tasks list&quot;
 7. [ ] Add &quot;bb = ssh://hg&#64;bitbucket.org/${USERNAME}/${REPONAME}&quot; to ``[paths]`` in ./.hgrc
+8. [ ] Create a new bitbucket repository named REPONAME
 8. [ ] hg push bb
 </pre>
 <ul class="simple">
-<li>Learn to hg pull, diff, patch, merge, shelve, push, and send pull requests
-(with a terminal interface)<ul>
+<li>Learn to hg pull, diff, patch, merge, shelve, push, and send pull requests<ul>
 <li><a class="reference external" href="http://mercurial.selenic.com/wiki/MqExtension">mq</a> --
 a mercurial extension for working with Mercurial Patch Queues</li>
 <li><a class="reference external" href="http://tortoisehg.bitbucket.org/">tortoisehg</a> --
@@ -1517,22 +1526,24 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </li>
 </ul>
 </li>
-<li><p class="first">Create a BitBucket Issue with a title and a description (Markdown) {.md}</p>
+<li><p class="first">[ ] Create a BitBucket Issue with a title and a description (Markdown) {.md}</p>
 <pre class="literal-block">
 1. [ ] Open the BitBucket url in the browser
 2. [ ] Click 'Issues'
 3. [ ] Click 'Create Issue'
+4. [ ] Add a description &quot;ENH: New Feature&quot;
+5. [ ] Also select corresponding `&lt;#code-labels&gt;`__
 </pre>
 <ul>
 <li><p class="first">Per-objective</p>
 </li>
-<li><p class="first">Apply kind and priority values to the issue with the web interface</p>
+<li><p class="first">[ ] Apply kind and priority values to the issue with the web interface</p>
 </li>
-<li><p class="first">Collaborators assign an issue to a user</p>
+<li><p class="first">[ ] Collaborators may assign an issue to a specific user</p>
 </li>
-<li><p class="first">Link to issues with <tt class="docutils literal">#123</tt> in commit messages, issues, and wikis</p>
+<li><p class="first">[ ] Link to issues with <tt class="docutils literal">#123</tt> in commit messages, issues, and wikis</p>
 </li>
-<li><p class="first">Close the issue when it is done or not going to be done</p>
+<li><p class="first">[ ] Close the issue when it is done or not going to be done</p>
 <ul>
 <li><p class="first">Close a BitBucket issue with the 'Resolve' button</p>
 </li>
@@ -1548,7 +1559,7 @@ BUG: fix bug (fixes: #03)
 </li>
 </ul>
 </li>
-<li><p class="first">Create Pull Request Tasks: <a class="reference external" href="http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/">http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/</a></p>
+<li><p class="first">[ ] Create Pull Request Tasks: <a class="reference external" href="http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/">http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/</a></p>
 </li>
 </ul>
 </div>
