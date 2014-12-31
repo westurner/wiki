@@ -53,11 +53,11 @@ Objectives
 
 * [ ] Document optimal workflows
 * [x] Create ``workflow.rst`` (see: current headings)
-* [ ] File metadata strategies: (folders, names, tagging, labeling)
-* [ ] Synthesize existing labeling strategies
+* [ ] Develop file metadata strategies: (folders, names, tagging, labeling)
+* [x] Synthesize existing labeling strategies
 * [ ] Define and describe resources: skills, time, tools, tasks
 * [ ] Define and describe outputs: artifacts, products, deliverables
-* [ ] RnD: integrated workflow information flows
+* [ ] R&D: integrate workflow information flows
 
   * Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli, pytodo?)
   * Logs: workhours, heka, elasticsearch, kibana
@@ -677,7 +677,7 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     TST: test           light purple    #d4c5f9     #2b2833
     UBY: usability      light pink      #f7c6c7     #332829
 
-    # Workflow Labels   (e.g. for kanban board columns)
+    # Workflow Labels   (e.g. for waffle.io kanban board columns)
     ready               dark sea green  #006b75     #ffffff
     in progress         yellow          #fbca04     #332900
 
@@ -898,17 +898,19 @@ Workflow
 ~~~~~~~~~
 Ways to work with tasks and GitHub:
 
-* Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
+* [ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
   ::
 
-     1. [ ] mkdir tasks && cd tasks
-     2. [ ] git init
-     3. [ ] echo "Tasks list" >> README.md
-     4. [ ] git add README.md
-     5. [ ] git diff README.md
-     6. [ ] git commit
-     7. [ ] git remote add origin ssh://git@github.com/<username>/<reponame>
-     8. [ ] git push origin master
+     1.  [ ] mkdir tasks && cd tasks
+     2.  [ ] git init
+     3.  [ ] echo "Tasks list" >> README.md
+     4.  [ ] git diff README.md
+     5.  [ ] git add README.md
+     6.  [ ] git diff --cached README.md
+     7.  [ ] git commit -m "DOC: Create tasks list"
+     8.  [ ] git remote add origin ssh://git@github.com/<username>/<reponame>
+     9.  [ ] Create a new github project named <reponame>
+     10. [ ] git push origin master
 
   * Learn to git pull, diff, patch, merge, stash, push, and send pull requests
     (with a terminal interface)
@@ -922,14 +924,17 @@ Ways to work with tasks and GitHub:
     * `hubflow <https://github.com/datasift/gitflow>`_ --
       adds ``git hf <command>``
       branching workflow automation commands by extending gitflow.
+    * see: https://westurner.github.io/dotfiles/tools.html#hubflow
 
 
-* Create a GitHub Issue with a title and a description (Markdown) {.md}
+* [ ] Create a GitHub Issue with a title and a description (Markdown) {.md}
   ::
 
      1. [ ] Open the GitHub url in the browser
      2. [ ] Click 'Issues'
      3. [ ] Click 'New Issue'
+     4. [ ] Add a description "ENH: New Feature"
+     5. [ ] Also select corresponding `<#code-labels>`__ 
 
   * Per-objective
   * Collaborators add labels, a milestone, and an assignee to the issue
@@ -946,20 +951,21 @@ Ways to work with tasks and GitHub:
       See: `Closing issues via commit messages <https://help.github.com/articles/closing-issues-via-commit-messages>`_
 
 
-* Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}::
+* [ ] Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}::
 
-   - [x] one --bold--
-   - [ ] two -italic-
-     - [x] two.one
-     - [ ] two.two \- two
-   - [ ] ``three`` (also `three`)
+  * [ ] Add list items with checkboxes (``- [x] Task three``)
 
-  * Check off each checkbox to complete the issue
-  * Add list items with checkboxes (``- [x] Task three``)
+    - [x] one --bold--
+    - [ ] two -italic-
+      - [x] two.one
+      - [ ] two.two \- two
+    - [ ] ``three`` (also `three`)
 
-* Create a GitHub Wiki page w/ title and text (Markdown) {.md}
+  * [ ] Check off each checkbox to complete the issue
 
-  * Create a Roadmap page with a sprint/release plan of issue number/links
+* [ ] Create a GitHub Wiki page w/ title and text (Markdown, ReST) {.md, .rest}
+
+  * [ ] Create a Roadmap page with a sprint/release plan of issue number/links
 
 * Publish Task Reports into a repository as HTML served by GitHub Pages
 
@@ -990,7 +996,7 @@ BitBucket Repos, Issues, Wikis
 
 Workflow
 ~~~~~~~~~~
-* Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
+* [ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
   ::
 
      1. [ ] mkdir tasks && cd tasks
@@ -998,12 +1004,12 @@ Workflow
      3. [ ] echo "Tasks list" >> README.md
      4. [ ] hg add README.md
      5. [ ] hg diff README.md
-     6. [ ] hg commit
+     6. [ ] hg commit -m "DOC: Create tasks list"
      7. [ ] Add "bb = ssh://hg@bitbucket.org/${USERNAME}/${REPONAME}" to ``[paths]`` in ./.hgrc
+     8. [ ] Create a new bitbucket repository named REPONAME
      8. [ ] hg push bb
 
   * Learn to hg pull, diff, patch, merge, shelve, push, and send pull requests
-    (with a terminal interface)
 
     * `mq <http://mercurial.selenic.com/wiki/MqExtension>`_ --
       a mercurial extension for working with Mercurial Patch Queues
@@ -1011,18 +1017,20 @@ Workflow
       an excellent VCS gui for Mercurial (and git, with hg-git)
 
 
-* Create a BitBucket Issue with a title and a description (Markdown) {.md}
+* [ ] Create a BitBucket Issue with a title and a description (Markdown) {.md}
   ::
 
      1. [ ] Open the BitBucket url in the browser
      2. [ ] Click 'Issues'
      3. [ ] Click 'Create Issue'
+     4. [ ] Add a description "ENH: New Feature"
+     5. [ ] Also select corresponding `<#code-labels>`__ 
 
   * Per-objective
-  * Apply kind and priority values to the issue with the web interface
-  * Collaborators assign an issue to a user
-  * Link to issues with ``#123`` in commit messages, issues, and wikis
-  * Close the issue when it is done or not going to be done
+  * [ ] Apply kind and priority values to the issue with the web interface
+  * [ ] Collaborators may assign an issue to a specific user
+  * [ ] Link to issues with ``#123`` in commit messages, issues, and wikis
+  * [ ] Close the issue when it is done or not going to be done
 
     * Close a BitBucket issue with the 'Resolve' button
     * Close a BitBucket issue with text in a patch header
@@ -1033,7 +1041,7 @@ Workflow
 
       See: `Resolve issues automatically when users push code <https://confluence.atlassian.com/display/BITBUCKET/Resolve+issues+automatically+when+users+push+code>`_
 
-* Create Pull Request Tasks: http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/
+* [ ] Create Pull Request Tasks: http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/
 
 
 Trac
