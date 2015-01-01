@@ -49,9 +49,9 @@ project_description_oneline = (
     u'Documentation for the {} project'.format(project_name))
 project_og_site_name = project_src_path  # e.g. westurner/dotfiles
 
-edit_on_github_project = project_github_path
-edit_on_github_src_path = ''
-edit_on_github_branch = 'master'
+srclink_project = project_github_url
+srclink_src_path = ''
+srclink_branch = 'master'
 
 # current_git_branch=subprocess.check_output("git b") && parse
 
@@ -72,7 +72,7 @@ extensions = [
     #'sphinxcontrib.ansi',
     #'sphinxcontrib.programoutput',
     #'sphinxcontrib.issuetracker',
-    'edit_on_github'
+    'sphinxcontrib.srclinks'
 ]
 
 autodoc_member_order = 'bysource'
@@ -216,14 +216,14 @@ html_sidebars = {
     '**': [
         'localtoc.html',
         'relations.html',
-        'sourcelink.html',
+        'srclinks.html',
         'searchbox.html',
         'links.html',
         ],
     'index': [
         'globaltoc.html',
         'relations.html',
-        'sourcelink.html',
+        'srclinks.html',
         'searchbox.html',
         'links.html',
         ],
