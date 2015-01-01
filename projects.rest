@@ -141,6 +141,10 @@ rst-tools
 ---------------
 | Src: https://github.com/westurner/rst-tools
 
+sphinxcontrib-srclinks
+------------------------
+| Src: https://github.com/westurner/sphinxcontrib-srclinks
+
 vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
