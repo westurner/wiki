@@ -96,3 +96,16 @@ Use cases:
   * http://mailman-bundler.readthedocs.org/en/latest/
   * http://pythonhosted.org//mailman/
   * https://mail.python.org/mailman/listinfo/mailman-developers
+
+
+Path Library __div__ operator
+-------------------------------
+* build URI paths with ``/``
+
+  * https://pypi.python.org/pypi/path.py
+  * https://pypi.python.org/pypi/pathlib
+  * https://pypi.python.org/pypi/furl
+  * https://pypi.python.org/pypi/URLObject
+  * https://pypi.python.org/pypi/rdflib
+
+* ``*`` could be ``#``
