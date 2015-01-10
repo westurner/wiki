@@ -98,14 +98,43 @@ Use cases:
   * https://mail.python.org/mailman/listinfo/mailman-developers
 
 
-Path Library __div__ operator
--------------------------------
+Path / URI / URN and the __div__ operator
+-------------------------------------------
 * build URI paths with ``/``
+* some combination of operators could be useful::
 
-  * https://pypi.python.org/pypi/path.py
-  * https://pypi.python.org/pypi/pathlib
-  * https://pypi.python.org/pypi/furl
-  * https://pypi.python.org/pypi/URLObject
-  * https://pypi.python.org/pypi/rdflib
+   scheme://user@host.netloc:port/path/?query#fragment
 
-* ``*`` could be ``#``
+   from _ import URI, https, //, http
+   https // 'user@host.netloc:port' / path ** query % fragment
+
+* __div__      /
+* __floordiv__ //
+* __and__      &&
+* __mod__      %
+* __invert__   ~
+* __or__       |
+* __xor__      ^
+* __and__      +
+* __mul__      *
+* __pow__      **
+* __lshift__   <<
+* __rshift__   >>
+
+References
+------------
+* https://pypi.python.org/pypi/path.py -- __div__
+* https://pypi.python.org/pypi/pathlib (stdlib)
+* https://pypi.python.org/pypi/furl
+* https://pypi.python.org/pypi/URLObject
+* https://pypi.python.org/pypi/rdflib
+
+Tools Vocabularies
+=====================
+
+Central tools.rst [ ... -> tools.rdf ]
+
+* https://westurner.github.io/wiki/tools.html#tool-collections
+* https://westurner.github.io/provis/tools.html
+* https://westurner.github.io/dotfiles/tools.html
+* https://wrdrd.github.io/docs/tools ./tools

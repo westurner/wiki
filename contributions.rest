@@ -184,7 +184,7 @@ warehouse
 +++++++++++
 | Src: https://github.com/pypa/warehouse
 
-- [x] *Updated tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
+- [x] *TST: tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
 
 
 redem
@@ -257,8 +257,8 @@ sphinx
 ---------
 | Src: https://bitbucket.org/birkenfeld/sphinx
 
-- [x] *Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
-- [x] *apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
+- [x] *ENH: Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
+- [x] *ENH: apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
 - [x] *DOC: Add reference to markup/para.rst#glossary-directive from markup/inline.rst* https://bitbucket.org/birkenfeld/sphinx/pull-request/310/doc-add-reference-to-markup-pararst/diff
 
 
@@ -266,35 +266,35 @@ sphinxjp.themes.basicstrap
 ++++++++++++++++++++++++++++++
 | Src: https://github.com/tell-k/sphinxjp.themes.basicstrap
 
-- [x] *Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
+- [x] *ENH: Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
 
 
 sphinx_rtd_theme
 +++++++++++++++++++
 | Src: https://github.com/snide/sphinx_rtd_theme
 
-- [x] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+- [x] *ENH: Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
 readthedocs.org
 +++++++++++++++++
 | Src: https://github.com/rtfd/readthedocs.org
 
-- [x] *Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+- [x] *ENH: Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
 
 
 tinkerer
 +++++++++++++
 | Src: https://github.com/vladris/tinkerer
 
-- [x] *Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
+- [x] *ENH: Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
 
 
 turses
 --------
 | Src: https://github.com/alejandrogomez/turses
 
-- [x] *Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
+- [x] *PERF: Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
 - [x] *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
 
 
@@ -307,8 +307,8 @@ datasciencemasters
 | Web: http://datasciencemasters.org/
 | Src: https://github.com/datasciencemasters/go/
 
-- [x] *Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
-- [x] *Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
+- [x] *DOC: Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
+- [x] *DOC: Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
 
 jsonld.org
 -----------
@@ -327,14 +327,15 @@ schema-org-rdf
 | Web: http://schema.rdfs.org/
 | Src: https://github.com/mhausenblas/schema-org-rdf
 
-- [x] *Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
+- [x] *DOC: Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
+- [ ] TODO: DOC: Add links to topbraid versions
 
 scientific-python-lectures
 ----------------------------
 | Web: http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/
 | Src: https://github.com/jrjohansson/scientific-python-lectures
 
-- [x] *Updated Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
+- [x] *DOC: Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
 
 
 scipy-lecture-notes
@@ -342,8 +343,8 @@ scipy-lecture-notes
 | Src: https://github.com/scipy-lectures/scipy-lecture-notes
 | Web: https://scipy-lectures.github.io/
 
-- [x] *Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
-- [x] *Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
+- [x] *DOC: Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
+- [x] *DOC: Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
 
 
 Awesome
