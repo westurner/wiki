@@ -6,6 +6,7 @@ Tools
 
 Tool Collections
 =================
+https://westurner.github.io/tools/
 
 https://westurner.github.io/dotfiles/tools.html (originally from provis#tools)
 
