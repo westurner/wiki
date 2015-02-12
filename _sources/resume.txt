@@ -3,7 +3,16 @@
 Resume
 #######
 
+HTML
+=====
 Current Resume: https://westurner.github.io/pages/resume.html
+
+PDF
+=====
+http://westurner.github.io/resume/latex/resume_wes-turner.pdf
+
+Links
+=======
 
 - [x] https://westurner.github.io/pages/resume.html (April 2014)
 - [x] https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
