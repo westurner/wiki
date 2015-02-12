@@ -283,17 +283,18 @@ Patch workflow
 
 Issues
 --------
-https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
 
-A finite request, report, or work item.
+An issue records attributes of, notes regarding, and progress towards a finite request, report, or work item.
 
-Also referred to as tickets, issues, cards, and bugtracking.
+Issues are often also referred to as tickets, issues, cards, and bugtracking.
 
-Different XP, Agile methodologies for working with finite work items:
-
+Agile methodologies for working with issues:
 https://wrdrd.github.io/docs/consulting/software-development#agile
 
-* https://waffle.io/ -- Kanban board of GitHub issues with code labels
+https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
+
+* https://waffle.io/ -- Kanban board of `GitHub Issues`_
+  with ``in progress``
 * https://taiga.io/ -- Kanban/Scrum issues with code labels
 
 
