@@ -157,8 +157,8 @@ html_theme = 'basicstrap'
 html_theme_options = {
     'lang': 'en',
     'nosidebar': False,
-    'rightsidebar': True,
-    'sidebar_span': 5,
+    'rightsidebar': False,
+    'sidebar_span': 3,
     'nav_fixed_top': False,
     'nav_fixed': False,
     'nav_width': '900px',
