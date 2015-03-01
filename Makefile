@@ -255,9 +255,28 @@ copy_sidebars_and_commit:
 	git commit _Footer.rest _Home.rest README.rst \
 		-m "DOC: Regenerate _Home, _Sidebar, _Footer, and README navigation"
 
-build: copy_sidebars rst2html_all html singlehtml
+STATIC:=./_static
+LOCALJS=$(STATIC)/js/local.js
+LOCALCSS=$(STATIC)/css/local.css
+
+localjs:
+	echo '' > $(LOCALJS)
+	cat $(STATIC)/js/ga.js >> $(LOCALJS)
+	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
+	cat $(STATIC)/js/affix-sidenav.js >> $(LOCALJS)
+
+localcss:
+	echo '' > $(LOCALCSS)
+	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	cat $(STATIC)/css/wiki.css >> $(LOCALCSS)
+
+
+build: copy_sidebars rst2html_all localjs localcss html singlehtml
 
 docs: build
+
+open:
+	open _build/html/index.html
 
 #clean:
 #	rm -rf ./_build

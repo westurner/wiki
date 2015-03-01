@@ -216,15 +216,15 @@ html_sidebars = {
     '**': [
         'localtoc.html',
         'relations.html',
-        'srclinks.html',
         'searchbox.html',
+        'srclinks.html',
         'links.html',
         ],
     'index': [
         'globaltoc.html',
         'relations.html',
-        'srclinks.html',
         'searchbox.html',
+        'srclinks.html',
         'links.html',
         ],
 }

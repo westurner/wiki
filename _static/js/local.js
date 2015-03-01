@@ -19,3 +19,10 @@ if (document.location.hostname in keymap) {
 $(document).ready(function() {
     $("a[href^='http']").attr('target','_blank');
 });
+
+// <affix-sidenav>
+$(document).ready(function() {
+  $('#sidebar-wrapper').affix({
+  });
+})
+// </affix-sidenav>
