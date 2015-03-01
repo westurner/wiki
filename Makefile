@@ -268,6 +268,7 @@ localjs:
 localcss:
 	echo '' > $(LOCALCSS)
 	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
 	cat $(STATIC)/css/wiki.css >> $(LOCALCSS)
 
 
