@@ -12,16 +12,13 @@
     padding-top: 4px;
 }
 
-div.document ul {
+div.document ul,
+div.sidebar ul ul{
     padding-left: 17px;
 }
 
 div.sidebar {
     padding-bottom: 14px; /* square */
-}
-
-div.sidebar ul ul {
-    padding-left: 20px;
 }
 
 div.sidebar pre {
@@ -74,26 +71,21 @@ footer {
     opacity: 0.7;
 }
 
-body > div.container-fluid > div:nth-child(1) > div.col-md-9 {
+#content-wrapper {
     background: white;
     border: 1px solid #e7e7e7;
     margin-top: -1px;
 }
-/* TODO: responsive break */
+
+
+/* leftnavbar.css */
 @media (min-width: 767px) {
-    body > div.container-fluid > div:nth-child(1) > div.col-md-9 {
+    #content-wrapper, div.footer-relbar, footer {
+        position: relative;
         left: 25%;
-    }
-
-    #navbar-related, footer {
-        padding-left: 25%;
-    }
-
-    footer {
-        width: inherit;
+        width: 75%;
     }
 }
-
 
 
 /* GitHub wiki CSS */
