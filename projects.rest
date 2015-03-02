@@ -16,6 +16,7 @@ provis
 Self Directed Learning
 -----------------------
 | Src: https://github.com/westurner/self-directed-learning
+| Docs: https://westurner.github.io/self-directed-learning/
 | Docs: https://self-directed-learning.readthedocs.org/en/latest/
 
 health-marketplace
