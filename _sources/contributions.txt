@@ -16,10 +16,10 @@ Code labels are three-letter codes with which commit messages can be prefixed.
     BLD: build          light green     #bfe5bf     #2a332a
     BUG: bug            red             #fc2929     #ffffff  (github default)
     CLN: cleanup        light yellow    #fef2c0     #333026
-    REF: refactor       dark green      #009800     #ffffff
     DOC: documentation  light blue      #c7def8     #282d33
     ENH: enhancement    blue            #84b6eb     #1c2733  (github default)
     PRF: performance    deep purple     #5319e7     #ffffff
+    REF: refactor       dark green      #009800     #ffffff
     RLS: release        dark blue       #0052cc     #ffffff
     SEC: security       orange          #eb6420     #ffffff
     TST: test           light purple    #d4c5f9     #2b2833
