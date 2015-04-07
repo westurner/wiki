@@ -259,21 +259,72 @@
 </div>
 <div class="section" id="themes">
 <h2><a class="toc-backref" href="#id2">Themes</a><a class="headerlink" href="#themes" title="Permalink to this headline">¶</a></h2>
+<p>Data</p>
 <ul class="simple">
 <li>URIs</li>
 <li>Linked Data (RDF, RDFa, JSONLD)</li>
 <li>Graphs, Nodes, Edges</li>
 </ul>
+<p>seeAlso:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://wrdrd.com/docs/consulting/knowledge-engineering.html">https://wrdrd.com/docs/consulting/knowledge-engineering.html</a></li>
+</ul>
 </div>
 <div class="section" id="projects">
 <h2><a class="toc-backref" href="#id3">Projects</a><a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></li>
-</ul>
+<p>Projects I have created:</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://westurner.org/wiki/projects">https://westurner.org/wiki/projects</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></div>
+</div>
+<p>Open Source Contributions</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://westurner.org/wiki/contributions">https://westurner.org/wiki/contributions</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></div>
+</div>
 <div class="section" id="twedges">
 <h3><a class="toc-backref" href="#id4">Twedges</a><a class="headerlink" href="#twedges" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>(Directed) edges between tweets, later</li>
+<li>(Directed) edges between tweets, later<ul>
+<li>Visualize &#8220;View Conversation&#8221; directed edges</li>
+<li>Add edges with attributes and provenance metadata</li>
+<li>Add a hashtag (recent/all tags w/ checkboxes)<ul>
+<li>Use case: I am developing a report on [Self Directed Learning],
+and have a few topics I&#8217;d like to discover and curate, mashup,
+remix</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] Twitter #JSONLD &#64;context<ul>
+<li>Additional properties:<ul>
+<li>Expanded links</li>
+<li>Picture URIs</li>
+<li>Twitter Card Metadata</li>
+<li>OpenGraph Metadata</li>
+<li>Extracted RDF<ul>
+<li>Parse Errors</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Additional edge classes:<ul>
+<li>TopicEdge</li>
+<li>ReplyEdge</li>
+<li>ReplyWithCommentEdge</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>FOAF, SIOC, Schema.org</li>
+<li>Extract links, count uniques</li>
+<li>#Nanotation RDF microsyntax (seeAlso: <cite>Sphinx Extensions</cite>)<ul>
+<li>Tab-completion for subjects, predicates, objects?<ul>
+<li>see <a class="reference external" href="http://json-ld.org/playground/">http://json-ld.org/playground/</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="trails">
@@ -310,10 +361,16 @@
 <ul class="simple">
 <li>sphinxcontrib-RDF<ul>
 <li><a class="reference external" href="https://github.com/westurner/sphinxcontrib-rdf">https://github.com/westurner/sphinxcontrib-rdf</a></li>
+<li>Directive to include an RDF syntax w/ pygments highlighting (see: healthref
+(ttl))</li>
+<li>Extract triples from an RST (docutils) node graph</li>
+<li>Role w/ context? (like RDFa)</li>
 </ul>
 </li>
-<li>sphinxcontrib-tmpipnb<ul>
-<li>ipythonify source doctests</li>
+<li>sphinxcontrib-ipython<ul>
+<li>run sphinx docs with <code class="docutils literal"><span class="pre">..</span> <span class="pre">ipython::</span></code> directives through IPython
+interactively (e.g. w/ tmpipnb)</li>
+<li>ipythonify tests (ipython_nose + what API w/ a notebook?)</li>
 </ul>
 </li>
 </ul>
@@ -416,12 +473,16 @@ https // &#39;user@host.netloc:port&#39; / path ** query % fragment
 </div>
 <div class="section" id="tools-vocabularies">
 <h2><a class="toc-backref" href="#id12">Tools Vocabularies</a><a class="headerlink" href="#tools-vocabularies" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://westurner.org/tools/">https://westurner.org/tools/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/tools">https://github.com/westurner/tools</a></div>
+<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/wiki/tools.html#tool-collections">https://westurner.github.io/wiki/tools.html#tool-collections</a></div>
+</div>
 <p>Central tools.rst [ ... -&gt; tools.rdf ]</p>
 <ul class="simple">
-<li><a class="reference external" href="https://westurner.github.io/wiki/tools.html#tool-collections">https://westurner.github.io/wiki/tools.html#tool-collections</a></li>
 <li><a class="reference external" href="https://westurner.github.io/provis/tools.html">https://westurner.github.io/provis/tools.html</a></li>
 <li><a class="reference external" href="https://westurner.github.io/dotfiles/tools.html">https://westurner.github.io/dotfiles/tools.html</a></li>
-<li><a class="reference external" href="https://wrdrd.github.io/docs/tools">https://wrdrd.github.io/docs/tools</a> ./tools</li>
+<li>See RDFJS pad:</li>
 </ul>
 </div>
 </div>

@@ -7,17 +7,67 @@ Ideas
 
 Themes
 =======
+
+Data
+
 * URIs
 * Linked Data (RDF, RDFa, JSONLD)
 * Graphs, Nodes, Edges
 
+seeAlso:
+
+* https://wrdrd.com/docs/consulting/knowledge-engineering.html
+
 Projects
 =========
-* https://github.com/westurner/wiki/wiki/projects
+
+Projects I have created:
+
+| https://westurner.org/wiki/projects
+| Src: https://github.com/westurner/wiki/wiki/projects
+
+Open Source Contributions
+
+| https://westurner.org/wiki/contributions
+| Src: https://github.com/westurner/wiki/wiki/projects
 
 Twedges
 --------
 * (Directed) edges between tweets, later
+
+  * Visualize "View Conversation" directed edges
+  * Add edges with attributes and provenance metadata
+  * Add a hashtag (recent/all tags w/ checkboxes)
+
+    * Use case: I am developing a report on [Self Directed Learning],
+      and have a few topics I'd like to discover and curate, mashup,
+      remix
+
+* [ ] Twitter #JSONLD @context
+
+  * Additional properties:
+
+    * Expanded links
+    * Picture URIs
+    * Twitter Card Metadata
+    * OpenGraph Metadata
+    * Extracted RDF
+
+      * Parse Errors
+
+  * Additional edge classes:
+
+    * TopicEdge
+    * ReplyEdge
+    * ReplyWithCommentEdge
+
+* FOAF, SIOC, Schema.org
+* Extract links, count uniques
+* #Nanotation RDF microsyntax (seeAlso: `Sphinx Extensions`)
+
+  * Tab-completion for subjects, predicates, objects?
+
+    * see http://json-ld.org/playground/
 
 Trails
 -------
@@ -42,12 +92,20 @@ RDFLib Extensions
 
 Sphinx Extensions
 -------------------
+
 * sphinxcontrib-RDF
 
   * https://github.com/westurner/sphinxcontrib-rdf
-* sphinxcontrib-tmpipnb
+  * Directive to include an RDF syntax w/ pygments highlighting (see: healthref
+    (ttl))
+  * Extract triples from an RST (docutils) node graph
+  * Role w/ context? (like RDFa)
 
-  * ipythonify source doctests
+* sphinxcontrib-ipython
+
+  * run sphinx docs with ``.. ipython::`` directives through IPython
+    interactively (e.g. w/ tmpipnb)
+  * ipythonify tests (ipython_nose + what API w/ a notebook?)
 
 
 Open Source Mailing List Extractor
@@ -131,10 +189,12 @@ References
 
 Tools Vocabularies
 =====================
+| https://westurner.org/tools/
+| Src: https://github.com/westurner/tools
+| Docs: https://westurner.github.io/wiki/tools.html#tool-collections
 
 Central tools.rst [ ... -> tools.rdf ]
 
-* https://westurner.github.io/wiki/tools.html#tool-collections
 * https://westurner.github.io/provis/tools.html
 * https://westurner.github.io/dotfiles/tools.html
-* https://wrdrd.github.io/docs/tools ./tools
+* See RDFJS pad: 
