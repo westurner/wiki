@@ -26,10 +26,10 @@ Projects I have created:
 | https://westurner.org/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/projects
 
-Open Source Contributions
+Open Source Projects I have contributed to:
 
 | https://westurner.org/wiki/contributions
-| Src: https://github.com/westurner/wiki/wiki/projects
+| Src: https://github.com/westurner/wiki/wiki/contributions
 
 Twedges
 --------
@@ -159,6 +159,7 @@ Use cases:
 Path / URI / URN and the __div__ operator
 -------------------------------------------
 * build URI paths with ``/``
+* URL encoding
 * some combination of operators could be useful::
 
    scheme://user@host.netloc:port/path/?query#fragment
@@ -191,10 +192,10 @@ Tools Vocabularies
 =====================
 | https://westurner.org/tools/
 | Src: https://github.com/westurner/tools
-| Docs: https://westurner.github.io/wiki/tools.html#tool-collections
+| Docs: https://westurner.org/wiki/tools.html#tool-collections
 
-Central tools.rst [ ... -> tools.rdf ]
+Central tools.rst [ ... -> tools.rdf, tools.ttl, tools.jsonld ]
 
-* https://westurner.github.io/provis/tools.html
-* https://westurner.github.io/dotfiles/tools.html
-* See RDFJS pad: 
+* https://westurner.org/provis/tools.html
+* https://westurner.org/dotfiles/tools.html
+* See RDFJS pad re "Tools Schema" Classes and Properties: https://text.allmende.io/p/rdfjs 
