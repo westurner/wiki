@@ -843,7 +843,7 @@ Ways to work with tasks and GitHub:
     * `hubflow <https://github.com/datasift/gitflow>`_ --
       adds ``git hf <command>``
       branching workflow automation commands by extending gitflow.
-    * see: https://westurner.github.io/dotfiles/tools.html#hubflow
+    * see: https://westurner.org/dotfiles/tools.html#hubflow
 
 
 * [ ] Create a GitHub Issue with a title and a description (Markdown) {.md}

@@ -16,7 +16,7 @@ provis
 Self Directed Learning
 -----------------------
 | Src: https://github.com/westurner/self-directed-learning
-| Docs: https://westurner.github.io/self-directed-learning/
+| Docs: https://westurner.org/self-directed-learning/
 | Docs: https://self-directed-learning.readthedocs.org/en/latest/
 
 health-marketplace
@@ -26,7 +26,7 @@ health-marketplace
 healthref
 ---------------
 | Src: https://github.com/westurner/healthref
-| Web: https://westurner.github.io/healthref/
+| Web: https://westurner.org/healthref/
  
 pycd10api
 ---------------
@@ -43,7 +43,7 @@ wbcms
 opengov
 ---------------
 | Src: https://github.com/westurner/opengov
-| Docs: https://westurner.github.io/opengov/
+| Docs: https://westurner.org/opengov/
 
 presense
 ---------------
@@ -52,7 +52,7 @@ presense
 notebooks
 ---------------
 | Src: https://github.com/westurner/notebooks
-| Web: https://westurner.github.io/notebooks/
+| Web: https://westurner.org/notebooks/
 
 contributions
 ---------------
@@ -164,16 +164,16 @@ Personal
 USA
 ---------------
 | Src: https://github.com/westurner/USA
-| Web: https://westurner.github.io/USA
+| Web: https://westurner.org/USA
 
 tools
 ---------------
-| https://westurner.github.io/tools/
+| https://westurner.org/tools/
 | Src: https://github.com/westurner/tools
 
 dotfiles
 ---------------
-| https://westurner.github.io/dotfiles/
+| https://westurner.org/dotfiles/
 | Src: https://github.com/westurner/dotfiles
 | Docs: https://wrdfiles.readthedocs.org/en/latest/
 
@@ -189,19 +189,19 @@ hello_world
 redditlog
 ---------------
 | Src: https://github.com/westurner/redditlog
-| Web: https://westurner.github.io/redditlog/
+| Web: https://westurner.org/redditlog/
 
 wiki
 ---------------
-| https://westurner.github.io/wiki/
+| https://westurner.org/wiki/
 | Src: https://github.com/westurner/wiki/wiki
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
   
 resume
 ---------------
-| Web: https://westurner.github.io/pages/resume.html
-| Web: https://westurner.github.io/resume
+| Web: https://westurner.org/pages/resume.html
+| Web: https://westurner.org/resume
 | Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
 
 westurner.bitbucket.org
@@ -210,8 +210,8 @@ westurner.bitbucket.org
 | Src: https://bitbucket.org/westurner/westurner.bitbucket.org
 | Web: http://westurner.bitbucket.org/
 
-westurner.github.io
+westurner.org
 ----------------------
 | Src: https://github.com/westurner/westurner.github.io
-| Web: https://westurner.github.io/
+| Web: https://westurner.org/
 

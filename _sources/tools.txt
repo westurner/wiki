@@ -6,13 +6,13 @@ Tools
 
 Tool Collections
 =================
-https://westurner.github.io/tools/
+https://westurner.org/tools/
 
-https://westurner.github.io/dotfiles/tools.html (originally from provis#tools)
+https://westurner.org/dotfiles/tools.html (originally from provis#tools)
 
 https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
 
-https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
+https://westurner.org/redditlog/#comment/c9tfxgd (Markdown comment)
 
 https://github.com/westurner/sphinxcontrib-rdf (ReStructuredText + RDF ?-> HTML)
 
