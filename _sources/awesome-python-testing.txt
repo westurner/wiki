@@ -247,6 +247,7 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 * http://docs.python.org/2/library/dis.html
 * https://pypi.python.org/pypi/pudb
 * https://github.com/gotcha/ipdb
+* https://pypi.python.org/pypi/pdbpp/
 
 Vim
 ~~~~~
