@@ -259,6 +259,11 @@ html_sidebars = {
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
 
+# Suffix for generated links to HTML files.
+# The default is whatever html_file_suffix is set to;
+# it can be set differently (e.g. to support different web server setups).
+html_link_suffix = ''
+
 # Filename affix
 filename_affix = "{}".format(project_name_slug)
 
