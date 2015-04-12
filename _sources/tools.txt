@@ -10,6 +10,8 @@ https://westurner.org/tools/
 
 https://westurner.org/dotfiles/tools.html (originally from provis#tools)
 
+https://westurner.org/provis/tools.html
+
 https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
 
 https://westurner.org/redditlog/#comment/c9tfxgd (Markdown comment)
