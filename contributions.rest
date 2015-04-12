@@ -193,7 +193,7 @@ redem
 ---------
 | Src: https://github.com/westurner/redem
 
-- [ ] https://westurner.github.io/redditlog/
+- [ ] https://westurner.org/redditlog/
 - [ ] https://github.com/westurner/redditlog
 
 
