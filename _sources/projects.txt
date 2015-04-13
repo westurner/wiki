@@ -90,6 +90,10 @@ pkgsetcomp
 | Pypi: https://pypi.python.org/pypi/pkgsetcomp
 | Docs: http://pkgsetcomp.readthedocs.org/en/latest/
 
+pygitpages
+------------
+| Src: https://github.com/westurner/pygitpages
+
 pygments-style-jellywrd
 ---------------------------
 | Src: https://github.com/westurner/pygments-style-jellywrd
