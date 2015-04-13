@@ -189,8 +189,8 @@ References
 * https://pypi.python.org/pypi/rdflib
 
 
-schema:Animal, AnimalShelter, and ImageNet
---------------------------------------------
+schema.org/Animal, AnimalShelter, and ImageNet
+-----------------------------------------------
 https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html
 
 * http://schema.org/Animal ( http://schema.org/AnimalShelter )
