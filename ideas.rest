@@ -188,6 +188,20 @@ References
 * https://pypi.python.org/pypi/URLObject
 * https://pypi.python.org/pypi/rdflib
 
+
+schema:Animal, AnimalShelter, and ImageNet
+--------------------------------------------
+https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html
+
+* http://schema.org/Animal ( http://schema.org/AnimalShelter )
+* Labeling (e.g. ImageNet animals)
+* Matching / gamification
+
+schema.org/Course
+-------------------
+https://github.com/schemaorg/schemaorg/issues/195
+
+
 Tools Vocabularies
 =====================
 | https://westurner.org/tools/
