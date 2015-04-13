@@ -181,7 +181,7 @@ Path / URI / URN and the __div__ operator
 * __rshift__   >>
 
 References
-------------
+~~~~~~~~~~~~
 * https://pypi.python.org/pypi/path.py -- __div__
 * https://pypi.python.org/pypi/pathlib (stdlib)
 * https://pypi.python.org/pypi/furl
