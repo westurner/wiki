@@ -63,6 +63,10 @@ Tools
 =======
 | See: https://github.com/westurner/wiki/wiki/tools
 
+browenv
+--------
+| Src: https://github.com/westurner/browenv
+
 bobcat
 ---------------
 | Src: https://bitbucket.org/westurner/bobcat
