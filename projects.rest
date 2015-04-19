@@ -67,6 +67,11 @@ browenv
 --------
 | Src: https://github.com/westurner/browenv
 
+brw
+----
+| Src: https://github.com/westurner/brw
+| Web: https://westurner.org/brw/
+
 bobcat
 ---------------
 | Src: https://bitbucket.org/westurner/bobcat
@@ -82,6 +87,10 @@ cookiecutter-saltformula
 pandasrdf
 ---------------
 | Src: https://github.com/westurner/pandasrdf
+
+pgs
+---------------
+| Src: https://github.com/westurner/pgs
 
 promiumbookmarks
 -----------------
