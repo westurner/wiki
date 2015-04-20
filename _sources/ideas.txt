@@ -73,6 +73,7 @@ Trails
 -------
 * Sequences of actions
 
+  * https://github.com/westurner/brw
   * https://bitbucket.org/westurner/browselinks
 
 Overlay
