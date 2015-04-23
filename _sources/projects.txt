@@ -88,14 +88,14 @@ pandasrdf
 ---------------
 | Src: https://github.com/westurner/pandasrdf
 
-pgs
----------------
-| Src: https://github.com/westurner/pgs
-
 pbm
 -----------------
 | Src: https://github.com/westurner/pbm
 | Pypi: https://pypi.python.org/pypi/pbm
+
+pgs
+---------------
+| Src: https://github.com/westurner/pgs
 
 pkgsetcomp
 ---------------
@@ -166,10 +166,6 @@ sphinxcontrib-srclinks
 vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
-
-wandroid
----------------
-| Src: https://bitbucket.org/westurner/wandroid
 
 workhours
 ---------------
