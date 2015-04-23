@@ -92,10 +92,10 @@ pgs
 ---------------
 | Src: https://github.com/westurner/pgs
 
-promiumbookmarks
+pbm
 -----------------
-| Src: https://github.com/westurner/promiumbookmarks
-| Pypi: https://pypi.python.org/pypi/promiumbookmarks
+| Src: https://github.com/westurner/pbm
+| Pypi: https://pypi.python.org/pypi/pbm
 
 pkgsetcomp
 ---------------
