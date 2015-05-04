@@ -108,10 +108,6 @@ pwd
 | Src: https://github.com/westurner/pwd
 | Web: https://westurner.org/pwd/
 
-pygitpages
-------------
-| Src: https://github.com/westurner/pygitpages
-
 pygments-style-jellywrd
 ---------------------------
 | Src: https://github.com/westurner/pygments-style-jellywrd
