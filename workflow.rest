@@ -726,6 +726,8 @@ https://github.com/westurner/wiki/blob/master/Makefile
 
 Mailing Lists
 --------------
+`<https://en.wikipedia.org/wiki/Electronic_mailing_list>`_
+
 Email relay application server ("listserv")
 
 GNU Mailman
@@ -757,7 +759,6 @@ Google Groups
 * Lightweight Markup Languages: no
 * Editing: no
 
-`<https://en.wikipedia.org/wiki/Electronic_mailing_list>`_
 
 
 Forge Sites
