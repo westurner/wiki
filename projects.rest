@@ -103,6 +103,11 @@ pkgsetcomp
 | Pypi: https://pypi.python.org/pypi/pkgsetcomp
 | Docs: http://pkgsetcomp.readthedocs.org/en/latest/
 
+pwd
+-----
+| Src: https://github.com/westurner/pwd
+| Web: https://westurner.org/pwd/
+
 pygitpages
 ------------
 | Src: https://github.com/westurner/pygitpages
