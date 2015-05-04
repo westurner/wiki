@@ -214,7 +214,7 @@ wiki
   
 resume
 ---------------
-| Web: https://westurner.org/pages/resume.html
+| Web: https://westurner.org/pages/resume
 | Web: https://westurner.org/resume
 | Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
 
