@@ -688,7 +688,7 @@ Google Keep
 * API: no
 * Sharing/Internal: yes
 * Sharing/External: no
-* Tagging: no
+* Tagging: colors, labels
 
 
 
