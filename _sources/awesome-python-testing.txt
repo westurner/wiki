@@ -60,6 +60,9 @@ Python
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
 * https://pypi.python.org/pypi/unittest2
 * https://github.com/testing-cabal/testtools
+
+  * https://westurner.org/testtools/ (temp docs)
+
 * http://docs.python-guide.org/en/latest/writing/tests/
 
 
@@ -167,9 +170,10 @@ Test Runners
 Nose
 --------------
 
-* https://github.com/nose-devs/nose
-* https://nose.readthedocs.org/en/latest/testing.html
-* https://nose.readthedocs.org/en/latest/writing_tests.html
+| Src: git https://github.com/nose-devs/nose
+| Docs: https://nose.readthedocs.org/en/latest/testing.html
+| Docs https://nose.readthedocs.org/en/latest/writing_tests.html
+
 * https://github.com/taavi/ipython_nose
 * https://github.com/flavioamieiro/nose-ipdb (pip install ipdbplugin)
 * https://github.com/wolever/nose-parameterized
@@ -178,11 +182,22 @@ Nose
 py.test
 ---------------
 
-* https://bitbucket.org/hpk42/pytest
-* http://pytest.org/latest/
+| Src: https://bitbucket.org/hpk42/pytest
+| Docs: http://pytest.org/latest/
+
+testtools
+-------------
+
+| Src: git https://github.com/testing-cabal/testtools
+| PyPI: https://pypi.python.org/pypi/testtools
+| Docs: https://westurner.org/testtools/ (temp docs)
+
+* https://westurner.org/testtools/for-test-authors.html#assertions
+* https://westurner.org/testtools/for-test-authors.html#matchers
+* https://westurner.org/testtools/for-test-authors.html#running-your-tests
 
 
-GUI
+GUI Test Runners
 ---------------
 
 * https://github.com/pybee/cricket
@@ -192,9 +207,10 @@ GUI
 Tox
 ----------------
 
-* https://bitbucket.org/hpk42/tox
-* http://tox.readthedocs.org/en/latest/
+| Src: https://bitbucket.org/hpk42/tox
+| Docs: http://tox.readthedocs.org/en/latest/
 
+* https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/tox.ini
 
 
 Continuous Integration (CI) and Continuous Delivery (CD)
@@ -277,7 +293,7 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 
 .. code:: bash
 
-    nosetests --ipdb --ipdb-failure
+    nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
     py.test --pdb  # --full-trace
 
 * http://docs.python.org/2/library/pdb.html
