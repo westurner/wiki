@@ -309,23 +309,36 @@ Profiling
 * `<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>`__
 * https://en.wikipedia.org/wiki/Call_graph
 * https://docs.python.org/2/library/profile.html
+
+Benchmarks
+--------------
+
 * https://github.com/tobami/codespeed/
+
+  + https://speed.python.org/
+  + https://bitbucket.org/pypy/benchmarks/
+
+    + https://speed.pypy.org/
+
+* https://github.com/numfocus/python-benchmarks
+
+  * https://numfocus.github.io/python-benchmarks/
+
+* https://github.com/scikit-learn/scikit-learn/tree/master/benchmarks 
 * https://github.com/pydata/vbench
 
-  * https://github.com/pydata/pandas/wiki/Performance-Testing
-  * http://pandas.pydata.org/pandas-docs/vbench/
+  + https://github.com/statsmodels/vbench
+
+    + http://statsmodels.sourceforge.net/vbench/
+
+  + https://github.com/pydata/pandas/tree/master/bench
+
+    + http://pandas.pydata.org/pandas-docs/vbench/
+    + https://github.com/pydata/pandas/wiki/Performance-Testing
 
 * https://github.com/amcfague/linesman
 * https://github.com/bdarnell/plop
 * http://firelogger.binaryage.com#python
-
-Benchmarks
---------------
-* https://speed.python.org/
-* https://speed.pypy.org/
-* https://github.com/numfocus/python-benchmarks
-
-  * https://numfocus.github.io/python-benchmarks/
 
 * https://github.com/scikit-learn/ml-benchmarks
 * https://github.com/TechEmpower/FrameworkBenchmarks
@@ -334,6 +347,7 @@ Benchmarks
 
 * https://benchmarksgame.alioth.debian.org/
 * http://rosettacode.org/wiki/Category:Programming_Tasks
+
 
 Performance
 -------------
