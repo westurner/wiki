@@ -269,9 +269,16 @@ Debugging
 
 Debugging: Console, CLI, Terminal, REPL, IPython
 -----------------------------------------------------
-::
+.. code:: python
 
-    import pdb; pdb.set_trace()
+    import pdb; pdb.set_trace()    # pdb, pdbpp
+    import ipdb; ipdb.set_trace()  # ipdb
+    
+
+.. code:: bash
+
+    nosetests --ipdb --ipdb-failure
+    py.test --pdb  # --full-trace
 
 * http://docs.python.org/2/library/pdb.html
 * http://docs.python.org/2/library/inspect.html
