@@ -323,6 +323,10 @@ Benchmarks
 --------------
 * https://speed.python.org/
 * https://speed.pypy.org/
+* https://github.com/numfocus/python-benchmarks
+
+  * https://numfocus.github.io/python-benchmarks/
+
 * https://github.com/scikit-learn/ml-benchmarks
 * https://github.com/TechEmpower/FrameworkBenchmarks
 
