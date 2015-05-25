@@ -234,7 +234,7 @@ Debugging
 * `<https://en.wikipedia.org/wiki/Tracing_(software)>`__
 * https://en.wikipedia.org/wiki/Fault_injection
 * https://en.wikipedia.org/wiki/Probe_effect
-
+* https://scipy-lectures.github.io/advanced/debugging/
 
 Debugging: Console, CLI, Terminal, REPL, IPython
 -----------------------------------------------------
@@ -311,15 +311,35 @@ Profiling
 * https://docs.python.org/2/library/profile.html
 * https://github.com/tobami/codespeed/
 * https://github.com/pydata/vbench
+
+  * https://github.com/pydata/pandas/wiki/Performance-Testing
+  * http://pandas.pydata.org/pandas-docs/vbench/
+
 * https://github.com/amcfague/linesman
 * https://github.com/bdarnell/plop
 * http://firelogger.binaryage.com#python
 
+Benchmarks
+--------------
+* https://speed.python.org/
+* https://speed.pypy.org/
+* https://github.com/scikit-learn/ml-benchmarks
+* https://github.com/TechEmpower/FrameworkBenchmarks
+
+  * https://www.techempower.com/benchmarks/
+
+* https://benchmarksgame.alioth.debian.org/
+* http://rosettacode.org/wiki/Category:Programming_Tasks
+
 Performance
 -------------
 
+* https://scipy-lectures.github.io/advanced/optimizing/
+* http://pypy.org/performance.html
 * http://scikit-learn.org/dev/developers/performance.html
-
+* http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html
+* http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf
+* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb
 
 Databases
 ==========
