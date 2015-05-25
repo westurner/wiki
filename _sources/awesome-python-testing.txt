@@ -81,7 +81,7 @@ IPython
 
     !nosetests ./log_input_and_output_to_here.py
     !nosetests --help
-    !nosetests --ipdb
+    !nosetests --ipdb   # pip install ipdbplugin # nose-progressive
 
     # Run a file in IPython's namespace, print timing, skip sys.exit
     %run -i -t -e ./log_input_and_output_to_here.py
@@ -107,7 +107,7 @@ IPython
     %prun (2**2)*2)
 
     # Time a number of loops
-    %timeit test_true
+    %timeit test_true()
     %timeit (lambda x: (x**2)*2)(10)
 
     # Run tests (see ipython_nose)
@@ -171,7 +171,7 @@ Nose
 * https://nose.readthedocs.org/en/latest/testing.html
 * https://nose.readthedocs.org/en/latest/writing_tests.html
 * https://github.com/taavi/ipython_nose
-* https://github.com/flavioamieiro/nose-ipdb
+* https://github.com/flavioamieiro/nose-ipdb (pip install ipdbplugin)
 * https://github.com/wolever/nose-parameterized
 
 
