@@ -59,7 +59,9 @@ Python
 * http://docs.python.org/2/library/doctest.html
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
 * https://pypi.python.org/pypi/unittest2
+* https://github.com/testing-cabal/testtools
 * http://docs.python-guide.org/en/latest/writing/tests/
+
 
 
 IPython
@@ -72,21 +74,50 @@ IPython
 
 ::
 
-    ?
-    %edit?
-    %edit -p
-    %ed -p
-    %logstart?
+    def test_true(): assert True == True
     %logstart log_input_to_here.py
     %logstart -o log_input_and_output_to_here.py
+    %ed log_input_and_output_to_here.py
 
-    %run nosetests
+    !nosetests ./log_input_and_output_to_here.py
     !nosetests --help
     !nosetests --ipdb
 
-    %doctest_mode?
+    # Run a file in IPython's namespace, print timing, skip sys.exit
+    %run -i -t -e ./log_input_and_output_to_here.py
 
-    %nose # ipython_nose
+    # Run a file in IPython's namespace, print timing, skip sys.exit, and pdb
+    %run -i -t -e -d ./log_input_and_output_to_here.py
+
+    # Add >>> and ... prompts (useful for recording doctests)
+    %doctest_mode
+
+    # List defined aliases
+    %alias
+
+    # Get help for an alias
+    %logstart?
+    %alias?
+
+    # List available aliases and commands
+    %<TAB>
+
+    # Run a statement through the Python line profiler
+    %prun test_true()
+    %prun (2**2)*2)
+
+    # Time a number of loops
+    %timeit test_true
+    %timeit (lambda x: (x**2)*2)(10)
+
+    # Run tests (see ipython_nose)
+    %nose
+
+
+IPython Notebook
+~~~~~~~~~~~~~~~~~
+* https://github.com/westurner/notebooks/blob/gh-pages/Makefile
+* https://pypi.python.org/pypi/runipy
 
 
 IPython Blocks
@@ -324,7 +355,7 @@ Benchmarks
 
   * https://numfocus.github.io/python-benchmarks/
 
-* https://github.com/scikit-learn/scikit-learn/tree/master/benchmarks 
+* https://github.com/scikit-learn/scikit-learn/tree/master/benchmarks
 * https://github.com/pydata/vbench
 
   + https://github.com/statsmodels/vbench
