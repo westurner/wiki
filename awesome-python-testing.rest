@@ -277,7 +277,7 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 
 .. code:: bash
 
-    nosetests --ipdb --ipdb-failure
+    nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
     py.test --pdb  # --full-trace
 
 * http://docs.python.org/2/library/pdb.html
