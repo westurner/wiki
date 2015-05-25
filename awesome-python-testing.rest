@@ -1,6 +1,6 @@
-########################
+========================
 Awesome Python Testing
-########################
+========================
 
 `<https://en.wikipedia.org/wiki/Software_testing>`__
 
@@ -58,14 +58,59 @@ Python
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
-* https://pypi.python.org/pypi/unittest2
-* https://github.com/testing-cabal/testtools
-
-  * https://westurner.org/testtools/ (temp docs)
-
 * http://docs.python-guide.org/en/latest/writing/tests/
+* https://pypi.python.org/pypi/unittest2 (python < 2.7)
+* https://pypi.python.org/pypi/mock (python < 3.3)
+* https://pypi.python.org/pypi/pathlib (python < 3.4)
+* `testtools`_
+
+Python 3
+~~~~~~~~~~~
+* https://docs.python.org/3/library/unittest.html
+* https://docs.python.org/3/library/unittest.mock.html (python >= 3.3)
+* https://docs.python.org/3/library/doctest.html
+* https://docs.python.org/3/library/pathlib.html
+* `testtools`_
+
+Python 2 <--> Python 3
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* https://mail.python.org/mailman/listinfo/python-porting
+* http://python3porting.com/
+* `2to3`_, `six`_, `nine`_, `future`_
 
 
+2to3
+^^^^^
+| Src: https://hg.python.org/cpython/file/tip/Lib/lib2to3
+| Docs: https://docs.python.org/2/library/2to3.html
+| Docs: https://docs.python.org/3/library/2to3.html
+
+* https://hg.python.org/cpython/file/tip/Lib/lib2to3/Grammar.txt
+* https://pythonhosted.org/setuptools/python3.html#supporting-both-python-2-and-python-3-with-setuptools
+
+six
+^^^^
+| Src: hg https://bitbucket.org/gutworth/six
+| PyPI: http://pypi.python.org/pypi/six/
+| Docs: https://pythonhosted.org/six/
+
+* https://pythonhosted.org/six/#module-six.moves
+
+nine
+^^^^^^
+| Src: git https://github.com/nandoflorestan/nine
+| PyPI: https://pypi.python.org/pypi/nine
+
+* https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py
+
+future
+^^^^^^^
+| Src: git https://github.com/PythonCharmers/python-future
+| PyPI: https://pypi.python.org/pypi/future
+| Docs: http://python-future.org/
+
+* http://python-future.org/compatible_idioms.html
 
 IPython
 ----------------
@@ -198,7 +243,7 @@ testtools
 
 
 GUI Test Runners
----------------
+-----------------
 
 * https://github.com/pybee/cricket
 * See: `Debugging: GUI`_
@@ -289,7 +334,7 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 
     import pdb; pdb.set_trace()    # pdb, pdbpp
     import ipdb; ipdb.set_trace()  # ipdb
-    
+
 
 .. code:: bash
 
