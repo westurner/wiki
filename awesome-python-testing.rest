@@ -289,12 +289,15 @@ Debugging: Web
 Advanced Debugging
 --------------------
 
+* https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py
+* https://hg.python.org/cpython/file/tip/Misc/README.valgrind
+* https://hg.python.org/cpython/file/tip/Misc/valgrind-python.supp
 * https://github.com/tmetsch/python-dtrace
 * https://github.com/lmacken/pyrasite
 * https://github.com/lmacken/pyrasite-gui
 * https://github.com/google/pyringe
 * https://github.com/alonho/pytrace
-* https://github.com/wyplay/pytracemalloc
+* https://github.com/haypo/pytracemalloc
 
 
 Performance Instrumentation and Profiling
