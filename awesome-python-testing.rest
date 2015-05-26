@@ -614,7 +614,7 @@ without running a webserver
 
 Splinter
 ---------
-| Src: https://github.com/cobrateam/splinter
+| Src: git https://github.com/cobrateam/splinter
 | PyPI: https://pypi.python.org/pypi/splinter
 | Docs: https://splinter.readthedocs.org/en/latest/
 
@@ -622,7 +622,8 @@ Splinter
 
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
   zopetestbrowser, remote webdriver)
-  *  css and xpath selectors
+
+  *  css and xpath selectors *
 
 
 Selenium
