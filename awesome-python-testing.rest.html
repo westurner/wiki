@@ -346,88 +346,100 @@ ul.auto-toc {
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#background" id="id2">Background</a><ul>
-<li><a class="reference internal" href="#software-testing" id="id3">Software Testing</a></li>
-<li><a class="reference internal" href="#unit-functional-integration-acceptance" id="id4">Unit, Functional, Integration, Acceptance</a></li>
-<li><a class="reference internal" href="#workflow-evolution" id="id5">Workflow Evolution</a></li>
-<li><a class="reference internal" href="#python" id="id6">Python</a></li>
-<li><a class="reference internal" href="#ipython" id="id7">IPython</a><ul>
-<li><a class="reference internal" href="#ipython-notebook" id="id8">IPython Notebook</a></li>
-<li><a class="reference internal" href="#ipython-blocks" id="id9">IPython Blocks</a></li>
+<li><a class="reference internal" href="#background" id="id1">Background</a><ul>
+<li><a class="reference internal" href="#software-testing" id="id2">Software Testing</a></li>
+<li><a class="reference internal" href="#unit-functional-integration-acceptance" id="id3">Unit, Functional, Integration, Acceptance</a></li>
+<li><a class="reference internal" href="#workflow-evolution" id="id4">Workflow Evolution</a></li>
+<li><a class="reference internal" href="#python" id="id5">Python</a><ul>
+<li><a class="reference internal" href="#python-3" id="id6">Python 3</a></li>
+<li><a class="reference internal" href="#python-2-python-3" id="id7">Python 2 &lt;--&gt; Python 3</a><ul>
+<li><a class="reference internal" href="#to3" id="id8">2to3</a></li>
+<li><a class="reference internal" href="#six" id="id9">six</a></li>
+<li><a class="reference internal" href="#nine" id="id10">nine</a></li>
+<li><a class="reference internal" href="#future" id="id11">future</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#logging" id="id10">Logging</a></li>
-<li><a class="reference internal" href="#test-driven-development-tdd" id="id11">Test-Driven Development (TDD)</a></li>
-<li><a class="reference internal" href="#behavior-driven-development-bdd" id="id12">Behavior-Driven Development (BDD)</a></li>
-<li><a class="reference internal" href="#mocks" id="id13">Mocks</a></li>
-<li><a class="reference internal" href="#test-runners" id="id14">Test Runners</a><ul>
-<li><a class="reference internal" href="#nose" id="id15">Nose</a></li>
-<li><a class="reference internal" href="#py-test" id="id16">py.test</a></li>
-<li><a class="reference internal" href="#testtools" id="id17">testtools</a></li>
-<li><a class="reference internal" href="#gui-test-runners" id="id18">GUI Test Runners</a></li>
-<li><a class="reference internal" href="#tox" id="id19">Tox</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id20">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
-<li><a class="reference internal" href="#buildbot" id="id21">Buildbot</a></li>
-<li><a class="reference internal" href="#jenkins" id="id22">Jenkins</a></li>
-<li><a class="reference internal" href="#travis" id="id23">Travis</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#version-control" id="id24">Version Control</a><ul>
-<li><a class="reference internal" href="#patches-tags-branches-merging" id="id25">Patches, Tags, Branches, Merging</a></li>
-<li><a class="reference internal" href="#bisect-blame" id="id26">Bisect, Blame</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debugging" id="id27">Debugging</a><ul>
-<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id28">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
-<li><a class="reference internal" href="#vim" id="id29">Vim</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debugging-gui" id="id30">Debugging: GUI</a><ul>
-<li><a class="reference internal" href="#ides" id="id31">IDEs</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debugging-web" id="id32">Debugging: Web</a></li>
-<li><a class="reference internal" href="#advanced-debugging" id="id33">Advanced Debugging</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id34">Performance Instrumentation and Profiling</a><ul>
-<li><a class="reference internal" href="#profiling" id="id35">Profiling</a></li>
-<li><a class="reference internal" href="#benchmarks" id="id36">Benchmarks</a></li>
-<li><a class="reference internal" href="#performance" id="id37">Performance</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#databases" id="id38">Databases</a><ul>
-<li><a class="reference internal" href="#fixtures" id="id39">Fixtures</a></li>
-<li><a class="reference internal" href="#schema-migrations" id="id40">Schema Migrations</a><ul>
-<li><a class="reference internal" href="#django" id="id41">Django</a></li>
-<li><a class="reference internal" href="#sqlalchemy" id="id42">SQLAlchemy</a></li>
+<li><a class="reference internal" href="#ipython" id="id12">IPython</a><ul>
+<li><a class="reference internal" href="#ipython-notebook" id="id13">IPython Notebook</a></li>
+<li><a class="reference internal" href="#ipython-blocks" id="id14">IPython Blocks</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-frameworks" id="id43">Web Frameworks</a><ul>
-<li><a class="reference internal" href="#plone" id="id44">Plone</a></li>
-<li><a class="reference internal" href="#id1" id="id45">Django</a></li>
-<li><a class="reference internal" href="#flask" id="id46">Flask</a></li>
-<li><a class="reference internal" href="#bottle" id="id47">Bottle</a></li>
-<li><a class="reference internal" href="#pyramid" id="id48">Pyramid</a></li>
+<li><a class="reference internal" href="#logging" id="id15">Logging</a></li>
+<li><a class="reference internal" href="#test-driven-development-tdd" id="id16">Test-Driven Development (TDD)</a></li>
+<li><a class="reference internal" href="#behavior-driven-development-bdd" id="id17">Behavior-Driven Development (BDD)</a></li>
+<li><a class="reference internal" href="#mocks" id="id18">Mocks</a></li>
+<li><a class="reference internal" href="#test-runners" id="id19">Test Runners</a><ul>
+<li><a class="reference internal" href="#nose" id="id20">Nose</a></li>
+<li><a class="reference internal" href="#py-test" id="id21">py.test</a></li>
+<li><a class="reference internal" href="#testtools" id="id22">testtools</a></li>
+<li><a class="reference internal" href="#gui-test-runners" id="id23">GUI Test Runners</a></li>
+<li><a class="reference internal" href="#tox" id="id24">Tox</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-apps" id="id49">Web Apps</a><ul>
-<li><a class="reference internal" href="#webtest" id="id50">WebTest</a></li>
-<li><a class="reference internal" href="#selenium" id="id51">Selenium</a></li>
+<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id25">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
+<li><a class="reference internal" href="#buildbot" id="id26">Buildbot</a></li>
+<li><a class="reference internal" href="#jenkins" id="id27">Jenkins</a></li>
+<li><a class="reference internal" href="#xunit-xml" id="id28">xUnit XML</a></li>
+<li><a class="reference internal" href="#travis" id="id29">Travis</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#version-control" id="id30">Version Control</a><ul>
+<li><a class="reference internal" href="#patches-tags-branches-merging" id="id31">Patches, Tags, Branches, Merging</a></li>
+<li><a class="reference internal" href="#bisect-blame" id="id32">Bisect, Blame</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#debugging" id="id33">Debugging</a><ul>
+<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id34">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
+<li><a class="reference internal" href="#vim" id="id35">Vim</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#debugging-gui" id="id36">Debugging: GUI</a><ul>
+<li><a class="reference internal" href="#ides" id="id37">IDEs</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#debugging-web" id="id38">Debugging: Web</a></li>
+<li><a class="reference internal" href="#advanced-debugging" id="id39">Advanced Debugging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id40">Performance Instrumentation and Profiling</a><ul>
+<li><a class="reference internal" href="#profiling" id="id41">Profiling</a></li>
+<li><a class="reference internal" href="#benchmarks" id="id42">Benchmarks</a></li>
+<li><a class="reference internal" href="#performance" id="id43">Performance</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#databases" id="id44">Databases</a><ul>
+<li><a class="reference internal" href="#fixtures" id="id45">Fixtures</a></li>
+<li><a class="reference internal" href="#schema-migrations" id="id46">Schema Migrations</a><ul>
+<li><a class="reference internal" href="#django-migrations" id="id47">Django Migrations</a></li>
+<li><a class="reference internal" href="#sqlalchemy-migrations" id="id48">SQLAlchemy Migrations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-frameworks" id="id49">Web Frameworks</a><ul>
+<li><a class="reference internal" href="#plone" id="id50">Plone</a></li>
+<li><a class="reference internal" href="#django" id="id51">Django</a></li>
+<li><a class="reference internal" href="#flask" id="id52">Flask</a></li>
+<li><a class="reference internal" href="#bottle" id="id53">Bottle</a></li>
+<li><a class="reference internal" href="#pyramid" id="id54">Pyramid</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-applications" id="id55">Web Applications</a><ul>
+<li><a class="reference internal" href="#webtest" id="id56">WebTest</a></li>
+<li><a class="reference internal" href="#splinter" id="id57">Splinter</a></li>
+<li><a class="reference internal" href="#selenium" id="id58">Selenium</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="background">
-<h1><a class="toc-backref" href="#id2">Background</a></h1>
+<h1><a class="toc-backref" href="#id1">Background</a></h1>
 <div class="section" id="software-testing">
-<h2><a class="toc-backref" href="#id3">Software Testing</a></h2>
+<h2><a class="toc-backref" href="#id2">Software Testing</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_testing">https://en.wikipedia.org/wiki/Software_testing</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">https://en.wikipedia.org/wiki/Test-driven_development</a></li>
@@ -440,14 +452,14 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="unit-functional-integration-acceptance">
-<h2><a class="toc-backref" href="#id4">Unit, Functional, Integration, Acceptance</a></h2>
+<h2><a class="toc-backref" href="#id3">Unit, Functional, Integration, Acceptance</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test">http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test</a></li>
 <li><a class="reference external" href="http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test">http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test</a></li>
 </ul>
 </div>
 <div class="section" id="workflow-evolution">
-<h2><a class="toc-backref" href="#id5">Workflow Evolution</a></h2>
+<h2><a class="toc-backref" href="#id4">Workflow Evolution</a></h2>
 <pre class="literal-block">
 1. edit, edit, commit
 2. edit, commit
@@ -461,7 +473,7 @@ ul.auto-toc {
 </pre>
 </div>
 <div class="section" id="python">
-<h2><a class="toc-backref" href="#id6">Python</a></h2>
+<h2><a class="toc-backref" href="#id5">Python</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.python.org/">https://www.python.org/</a></div>
@@ -471,16 +483,77 @@ ul.auto-toc {
 <li><a class="reference external" href="http://docs.python.org/2/library/unittest.html">http://docs.python.org/2/library/unittest.html</a></li>
 <li><a class="reference external" href="http://docs.python.org/2/library/doctest.html">http://docs.python.org/2/library/doctest.html</a></li>
 <li><a class="reference external" href="http://wiki.python.org/moin/PythonTestingToolsTaxonomy">http://wiki.python.org/moin/PythonTestingToolsTaxonomy</a></li>
-<li><a class="reference external" href="https://pypi.python.org/pypi/unittest2">https://pypi.python.org/pypi/unittest2</a></li>
-<li><a class="reference external" href="https://github.com/testing-cabal/testtools">https://github.com/testing-cabal/testtools</a><ul>
-<li><a class="reference external" href="https://westurner.org/testtools/">https://westurner.org/testtools/</a> (temp docs)</li>
-</ul>
-</li>
 <li><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/tests/">http://docs.python-guide.org/en/latest/writing/tests/</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/unittest2">https://pypi.python.org/pypi/unittest2</a> (python &lt; 2.7)</li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/mock">https://pypi.python.org/pypi/mock</a> (python &lt; 3.3)</li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/pathlib">https://pypi.python.org/pypi/pathlib</a> (python &lt; 3.4)</li>
+<li><a class="reference internal" href="#testtools">testtools</a></li>
+</ul>
+<div class="section" id="python-3">
+<h3><a class="toc-backref" href="#id6">Python 3</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
+<li><a class="reference external" href="https://docs.python.org/3/library/unittest.mock.html">https://docs.python.org/3/library/unittest.mock.html</a> (python &gt;= 3.3)</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/doctest.html">https://docs.python.org/3/library/doctest.html</a></li>
+<li><a class="reference external" href="https://docs.python.org/3/library/pathlib.html">https://docs.python.org/3/library/pathlib.html</a></li>
+<li><a class="reference internal" href="#testtools">testtools</a></li>
 </ul>
 </div>
+<div class="section" id="python-2-python-3">
+<h3><a class="toc-backref" href="#id7">Python 2 &lt;--&gt; Python 3</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://mail.python.org/mailman/listinfo/python-porting">https://mail.python.org/mailman/listinfo/python-porting</a></li>
+<li><a class="reference external" href="http://python3porting.com/">http://python3porting.com/</a></li>
+<li><a class="reference internal" href="#to3">2to3</a>, <a class="reference internal" href="#six">six</a>, <a class="reference internal" href="#nine">nine</a>, <a class="reference internal" href="#future">future</a></li>
+</ul>
+<div class="section" id="to3">
+<h4><a class="toc-backref" href="#id8">2to3</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://hg.python.org/cpython/file/tip/Lib/lib2to3">https://hg.python.org/cpython/file/tip/Lib/lib2to3</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.python.org/2/library/2to3.html">https://docs.python.org/2/library/2to3.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.python.org/3/library/2to3.html">https://docs.python.org/3/library/2to3.html</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Lib/lib2to3/Grammar.txt">https://hg.python.org/cpython/file/tip/Lib/lib2to3/Grammar.txt</a></li>
+<li><a class="reference external" href="https://pythonhosted.org/setuptools/python3.html#supporting-both-python-2-and-python-3-with-setuptools">https://pythonhosted.org/setuptools/python3.html#supporting-both-python-2-and-python-3-with-setuptools</a></li>
+</ul>
+</div>
+<div class="section" id="six">
+<h4><a class="toc-backref" href="#id9">six</a></h4>
+<div class="line-block">
+<div class="line">Src: hg <a class="reference external" href="https://bitbucket.org/gutworth/six">https://bitbucket.org/gutworth/six</a></div>
+<div class="line">PyPI: <a class="reference external" href="http://pypi.python.org/pypi/six/">http://pypi.python.org/pypi/six/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pythonhosted.org/six/">https://pythonhosted.org/six/</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://pythonhosted.org/six/#module-six.moves">https://pythonhosted.org/six/#module-six.moves</a></li>
+</ul>
+</div>
+<div class="section" id="nine">
+<h4><a class="toc-backref" href="#id10">nine</a></h4>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/nandoflorestan/nine">https://github.com/nandoflorestan/nine</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/nine">https://pypi.python.org/pypi/nine</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py">https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py</a></li>
+</ul>
+</div>
+<div class="section" id="future">
+<h4><a class="toc-backref" href="#id11">future</a></h4>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/PythonCharmers/python-future">https://github.com/PythonCharmers/python-future</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/future">https://pypi.python.org/pypi/future</a></div>
+<div class="line">Docs: <a class="reference external" href="http://python-future.org/">http://python-future.org/</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://python-future.org/compatible_idioms.html">http://python-future.org/compatible_idioms.html</a></li>
+</ul>
+</div>
+</div>
+</div>
 <div class="section" id="ipython">
-<h2><a class="toc-backref" href="#id7">IPython</a></h2>
+<h2><a class="toc-backref" href="#id12">IPython</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/IPython">https://en.wikipedia.org/wiki/IPython</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://ipython.org">http://ipython.org</a></div>
@@ -530,14 +603,14 @@ def test_true(): assert True == True
 %nose
 </pre>
 <div class="section" id="ipython-notebook">
-<h3><a class="toc-backref" href="#id8">IPython Notebook</a></h3>
+<h3><a class="toc-backref" href="#id13">IPython Notebook</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/westurner/notebooks/blob/gh-pages/Makefile">https://github.com/westurner/notebooks/blob/gh-pages/Makefile</a></li>
 <li><a class="reference external" href="https://pypi.python.org/pypi/runipy">https://pypi.python.org/pypi/runipy</a></li>
 </ul>
 </div>
 <div class="section" id="ipython-blocks">
-<h3><a class="toc-backref" href="#id9">IPython Blocks</a></h3>
+<h3><a class="toc-backref" href="#id14">IPython Blocks</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/jiffyclub/ipythonblocks">https://github.com/jiffyclub/ipythonblocks</a></li>
 <li><a class="reference external" href="http://nbviewer.ipython.org/urls/raw.github.com/jiffyclub/ipythonblocks/master/demos/ipythonblocks_animation.ipynb">http://nbviewer.ipython.org/urls/raw.github.com/jiffyclub/ipythonblocks/master/demos/ipythonblocks_animation.ipynb</a></li>
@@ -546,7 +619,7 @@ def test_true(): assert True == True
 </div>
 </div>
 <div class="section" id="logging">
-<h1><a class="toc-backref" href="#id10">Logging</a></h1>
+<h1><a class="toc-backref" href="#id15">Logging</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Computer_data_logging">https://en.wikipedia.org/wiki/Computer_data_logging</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Syslog">https://en.wikipedia.org/wiki/Syslog</a></li>
@@ -557,11 +630,11 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="test-driven-development-tdd">
-<h1><a class="toc-backref" href="#id11">Test-Driven Development (TDD)</a></h1>
+<h1><a class="toc-backref" href="#id16">Test-Driven Development (TDD)</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">https://en.wikipedia.org/wiki/Test-driven_development</a></p>
 </div>
 <div class="section" id="behavior-driven-development-bdd">
-<h1><a class="toc-backref" href="#id12">Behavior-Driven Development (BDD)</a></h1>
+<h1><a class="toc-backref" href="#id17">Behavior-Driven Development (BDD)</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Behavior-driven_development">https://en.wikipedia.org/wiki/Behavior-driven_development</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://pythonhosted.org/lettuce/">http://pythonhosted.org/lettuce/</a></li>
@@ -570,7 +643,7 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="mocks">
-<h1><a class="toc-backref" href="#id13">Mocks</a></h1>
+<h1><a class="toc-backref" href="#id18">Mocks</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Mock_object">https://en.wikipedia.org/wiki/Mock_object</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://mock.readthedocs.org/en/latest/index.html">http://mock.readthedocs.org/en/latest/index.html</a></li>
@@ -579,9 +652,9 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="test-runners">
-<h1><a class="toc-backref" href="#id14">Test Runners</a></h1>
+<h1><a class="toc-backref" href="#id19">Test Runners</a></h1>
 <div class="section" id="nose">
-<h2><a class="toc-backref" href="#id15">Nose</a></h2>
+<h2><a class="toc-backref" href="#id20">Nose</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/nose-devs/nose">https://github.com/nose-devs/nose</a></div>
 <div class="line">Docs: <a class="reference external" href="https://nose.readthedocs.org/en/latest/testing.html">https://nose.readthedocs.org/en/latest/testing.html</a></div>
@@ -594,14 +667,14 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="py-test">
-<h2><a class="toc-backref" href="#id16">py.test</a></h2>
+<h2><a class="toc-backref" href="#id21">py.test</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/hpk42/pytest">https://bitbucket.org/hpk42/pytest</a></div>
 <div class="line">Docs: <a class="reference external" href="http://pytest.org/latest/">http://pytest.org/latest/</a></div>
 </div>
 </div>
 <div class="section" id="testtools">
-<h2><a class="toc-backref" href="#id17">testtools</a></h2>
+<h2><a class="toc-backref" href="#id22">testtools</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/testing-cabal/testtools">https://github.com/testing-cabal/testtools</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/testtools">https://pypi.python.org/pypi/testtools</a></div>
@@ -614,22 +687,14 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="gui-test-runners">
-<h2><a class="toc-backref" href="#id18">GUI Test Runners</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">./awesome-python-testing.rest</tt>, line 201)</p>
-<p>Title underline too short.</p>
-<pre class="literal-block">
-GUI Test Runners
----------------
-</pre>
-</div>
+<h2><a class="toc-backref" href="#id23">GUI Test Runners</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/pybee/cricket">https://github.com/pybee/cricket</a></li>
 <li>See: <a class="reference internal" href="#debugging-gui">Debugging: GUI</a></li>
 </ul>
 </div>
 <div class="section" id="tox">
-<h2><a class="toc-backref" href="#id19">Tox</a></h2>
+<h2><a class="toc-backref" href="#id24">Tox</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/hpk42/tox">https://bitbucket.org/hpk42/tox</a></div>
 <div class="line">Docs: <a class="reference external" href="http://tox.readthedocs.org/en/latest/">http://tox.readthedocs.org/en/latest/</a></div>
@@ -640,7 +705,7 @@ GUI Test Runners
 </div>
 </div>
 <div class="section" id="continuous-integration-ci-and-continuous-delivery-cd">
-<h1><a class="toc-backref" href="#id20">Continuous Integration (CI) and Continuous Delivery (CD)</a></h1>
+<h1><a class="toc-backref" href="#id25">Continuous Integration (CI) and Continuous Delivery (CD)</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></li>
@@ -648,31 +713,58 @@ GUI Test Runners
 <li><a class="reference external" href="http://docs.python-guide.org/en/latest/scenarios/ci/">http://docs.python-guide.org/en/latest/scenarios/ci/</a></li>
 </ul>
 <div class="section" id="buildbot">
-<h2><a class="toc-backref" href="#id21">Buildbot</a></h2>
+<h2><a class="toc-backref" href="#id26">Buildbot</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Buildbot">https://en.wikipedia.org/wiki/Buildbot</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://buildbot.net">http://buildbot.net</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/buildbot/buildbot">https://github.com/buildbot/buildbot</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/buildbot">https://pypi.python.org/pypi/buildbot</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/buildbot-slave">https://pypi.python.org/pypi/buildbot-slave</a></div>
+<div class="line">Docs: docs.buildbot.net/latest/</div>
+<div class="line">Docs: docs.buildbot.net/latest/full.html</div>
 </div>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/devguide/buildbots.html">https://docs.python.org/devguide/buildbots.html</a></li>
+</ul>
 </div>
 <div class="section" id="jenkins">
-<h2><a class="toc-backref" href="#id22">Jenkins</a></h2>
+<h2><a class="toc-backref" href="#id27">Jenkins</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Jenkins_(software)">https://en.wikipedia.org/wiki/Jenkins_(software)</a></div>
 </div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/saltstack/salt-jenkins">https://github.com/saltstack/salt-jenkins</a></li>
+<li><a class="reference external" href="https://wiki.jenkins-ci.org/display/JENKINS/ShiningPanda+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/ShiningPanda+Plugin</a></li>
+<li><a class="reference internal" href="#xunit-xml">xUnit XML</a></li>
+</ul>
+</div>
+<div class="section" id="xunit-xml">
+<h2><a class="toc-backref" href="#id28">xUnit XML</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/XUnit">https://en.wikipedia.org/wiki/XUnit</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://nose.readthedocs.org/en/latest/plugins/xunit.html">https://nose.readthedocs.org/en/latest/plugins/xunit.html</a></li>
+<li><a class="reference external" href="http://nosexunit.sourceforge.net/">http://nosexunit.sourceforge.net/</a></li>
+<li><a class="reference external" href="https://pytest.org/latest/usage.html#creating-junitxml-format-files">https://pytest.org/latest/usage.html#creating-junitxml-format-files</a></li>
+<li><a class="reference external" href="https://github.com/xmlrunner/unittest-xml-reporting">https://github.com/xmlrunner/unittest-xml-reporting</a></li>
+<li><a class="reference external" href="https://github.com/zandev/shunit2/compare/master...jeremycarroll:master">https://github.com/zandev/shunit2/compare/master...jeremycarroll:master</a></li>
+</ul>
 </div>
 <div class="section" id="travis">
-<h2><a class="toc-backref" href="#id23">Travis</a></h2>
+<h2><a class="toc-backref" href="#id29">Travis</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Travis_CI">https://en.wikipedia.org/wiki/Travis_CI</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://travis-ci.org/">http://travis-ci.org/</a></div>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="http://about.travis-ci.org/docs/user/getting-started/">http://about.travis-ci.org/docs/user/getting-started/</a></li>
+<li><a class="reference external" href="https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/.travis.yml">https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/.travis.yml</a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="version-control">
-<h1><a class="toc-backref" href="#id24">Version Control</a></h1>
+<h1><a class="toc-backref" href="#id30">Version Control</a></h1>
 <div class="section" id="patches-tags-branches-merging">
-<h2><a class="toc-backref" href="#id25">Patches, Tags, Branches, Merging</a></h2>
+<h2><a class="toc-backref" href="#id31">Patches, Tags, Branches, Merging</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/ACID">https://en.wikipedia.org/wiki/ACID</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Patch_(computing)">https://en.wikipedia.org/wiki/Patch_(computing)</a></li>
@@ -689,7 +781,7 @@ GUI Test Runners
 </ul>
 </div>
 <div class="section" id="bisect-blame">
-<h2><a class="toc-backref" href="#id26">Bisect, Blame</a></h2>
+<h2><a class="toc-backref" href="#id32">Bisect, Blame</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Code_Bisection">https://en.wikipedia.org/wiki/Code_Bisection</a></li>
 <li><a class="reference external" href="https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html">https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html</a></li>
@@ -702,7 +794,7 @@ GUI Test Runners
 </div>
 </div>
 <div class="section" id="debugging">
-<h1><a class="toc-backref" href="#id27">Debugging</a></h1>
+<h1><a class="toc-backref" href="#id33">Debugging</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Debugging">https://en.wikipedia.org/wiki/Debugging</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Breakpoint">https://en.wikipedia.org/wiki/Breakpoint</a></li>
@@ -713,7 +805,7 @@ GUI Test Runners
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/debugging/">https://scipy-lectures.github.io/advanced/debugging/</a></li>
 </ul>
 <div class="section" id="debugging-console-cli-terminal-repl-ipython">
-<h2><a class="toc-backref" href="#id28">Debugging: Console, CLI, Terminal, REPL, IPython</a></h2>
+<h2><a class="toc-backref" href="#id34">Debugging: Console, CLI, Terminal, REPL, IPython</a></h2>
 <pre class="code python literal-block">
 <span class="keyword namespace">import</span> <span class="name namespace">pdb</span><span class="punctuation">;</span> <span class="name">pdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>    <span class="comment"># pdb, pdbpp</span>
 <span class="keyword namespace">import</span> <span class="name namespace">ipdb</span><span class="punctuation">;</span> <span class="name">ipdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>  <span class="comment"># ipdb</span>
@@ -731,7 +823,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 <li><a class="reference external" href="https://pypi.python.org/pypi/pdbpp/">https://pypi.python.org/pypi/pdbpp/</a></li>
 </ul>
 <div class="section" id="vim">
-<h3><a class="toc-backref" href="#id29">Vim</a></h3>
+<h3><a class="toc-backref" href="#id35">Vim</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/gotcha/vimpdb">https://github.com/gotcha/vimpdb</a></li>
 <li><a class="reference external" href="https://dev.launchpad.net/UltimateVimPythonSetup">https://dev.launchpad.net/UltimateVimPythonSetup</a> (F7 for <cite>set_trace</cite>)</li>
@@ -740,14 +832,14 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </div>
 </div>
 <div class="section" id="debugging-gui">
-<h2><a class="toc-backref" href="#id30">Debugging: GUI</a></h2>
+<h2><a class="toc-backref" href="#id36">Debugging: GUI</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://winpdb.org/docs/">http://winpdb.org/docs/</a></li>
 <li><a class="reference external" href="https://github.com/lmacken/pyrasite-gui">https://github.com/lmacken/pyrasite-gui</a></li>
 <li><a class="reference external" href="https://github.com/pybee/bugjar">https://github.com/pybee/bugjar</a></li>
 </ul>
 <div class="section" id="ides">
-<h3><a class="toc-backref" href="#id31">IDEs</a></h3>
+<h3><a class="toc-backref" href="#id37">IDEs</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger">http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger</a></li>
 <li><a class="reference external" href="http://www.jetbrains.com/pycharm/features/index.html#debugger">http://www.jetbrains.com/pycharm/features/index.html#debugger</a></li>
@@ -760,7 +852,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </div>
 </div>
 <div class="section" id="debugging-web">
-<h2><a class="toc-backref" href="#id32">Debugging: Web</a></h2>
+<h2><a class="toc-backref" href="#id38">Debugging: Web</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://werkzeug.pocoo.org/">http://werkzeug.pocoo.org/</a></li>
 <li><a class="reference external" href="http://firelogger.binaryage.com#python">http://firelogger.binaryage.com#python</a></li>
@@ -768,7 +860,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </ul>
 </div>
 <div class="section" id="advanced-debugging">
-<h2><a class="toc-backref" href="#id33">Advanced Debugging</a></h2>
+<h2><a class="toc-backref" href="#id39">Advanced Debugging</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py">https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py</a></li>
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Misc/README.valgrind">https://hg.python.org/cpython/file/tip/Misc/README.valgrind</a></li>
@@ -783,9 +875,9 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </div>
 </div>
 <div class="section" id="performance-instrumentation-and-profiling">
-<h1><a class="toc-backref" href="#id34">Performance Instrumentation and Profiling</a></h1>
+<h1><a class="toc-backref" href="#id40">Performance Instrumentation and Profiling</a></h1>
 <div class="section" id="profiling">
-<h2><a class="toc-backref" href="#id35">Profiling</a></h2>
+<h2><a class="toc-backref" href="#id41">Profiling</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Profiling_(computer_programming)">https://en.wikipedia.org/wiki/Profiling_(computer_programming)</a></li>
@@ -794,7 +886,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </ul>
 </div>
 <div class="section" id="benchmarks">
-<h2><a class="toc-backref" href="#id36">Benchmarks</a></h2>
+<h2><a class="toc-backref" href="#id42">Benchmarks</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/tobami/codespeed/">https://github.com/tobami/codespeed/</a><ul>
 <li><a class="reference external" href="https://speed.python.org/">https://speed.python.org/</a></li>
@@ -834,7 +926,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </ul>
 </div>
 <div class="section" id="performance">
-<h2><a class="toc-backref" href="#id37">Performance</a></h2>
+<h2><a class="toc-backref" href="#id43">Performance</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/optimizing/">https://scipy-lectures.github.io/advanced/optimizing/</a></li>
 <li><a class="reference external" href="http://pypy.org/performance.html">http://pypy.org/performance.html</a></li>
@@ -846,9 +938,9 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </div>
 </div>
 <div class="section" id="databases">
-<h1><a class="toc-backref" href="#id38">Databases</a></h1>
+<h1><a class="toc-backref" href="#id44">Databases</a></h1>
 <div class="section" id="fixtures">
-<h2><a class="toc-backref" href="#id39">Fixtures</a></h2>
+<h2><a class="toc-backref" href="#id45">Fixtures</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Test_fixture">https://en.wikipedia.org/wiki/Test_fixture</a></li>
 <li><a class="reference external" href="https://factoryboy.readthedocs.org/en/latest/orms.html">https://factoryboy.readthedocs.org/en/latest/orms.html</a></li>
@@ -859,83 +951,161 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 </ul>
 </div>
 <div class="section" id="schema-migrations">
-<h2><a class="toc-backref" href="#id40">Schema Migrations</a></h2>
+<h2><a class="toc-backref" href="#id46">Schema Migrations</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Schema_migration">https://en.wikipedia.org/wiki/Schema_migration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_refactoring">https://en.wikipedia.org/wiki/Database_refactoring</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></li>
 </ul>
-<div class="section" id="django">
-<h3><a class="toc-backref" href="#id41">Django</a></h3>
+<div class="section" id="django-migrations">
+<h3><a class="toc-backref" href="#id47">Django Migrations</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://docs.djangoproject.com/en/1.7/topics/migrations/">https://docs.djangoproject.com/en/1.7/topics/migrations/</a></li>
 <li><a class="reference external" href="https://south.readthedocs.org/en/latest/">https://south.readthedocs.org/en/latest/</a></li>
 </ul>
 </div>
-<div class="section" id="sqlalchemy">
-<h3><a class="toc-backref" href="#id42">SQLAlchemy</a></h3>
+<div class="section" id="sqlalchemy-migrations">
+<h3><a class="toc-backref" href="#id48">SQLAlchemy Migrations</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://sqlalchemy-migrate.readthedocs.org/en/latest/">https://sqlalchemy-migrate.readthedocs.org/en/latest/</a></li>
 <li><a class="reference external" href="https://alembic.readthedocs.org/en/latest/">https://alembic.readthedocs.org/en/latest/</a></li>
+<li><a class="reference external" href="https://sqlalchemy-migrate.readthedocs.org/en/latest/">https://sqlalchemy-migrate.readthedocs.org/en/latest/</a></li>
 </ul>
+<div class="line-block">
+<div class="line">Awesome:  <a class="reference external" href="https://github.com/dahlia/awesome-sqlalchemy">https://github.com/dahlia/awesome-sqlalchemy</a></div>
+</div>
 </div>
 </div>
 </div>
 <div class="section" id="web-frameworks">
-<h1><a class="toc-backref" href="#id43">Web Frameworks</a></h1>
+<h1><a class="toc-backref" href="#id49">Web Frameworks</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_application_framework">https://en.wikipedia.org/wiki/Web_application_framework</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python">https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python</a></li>
+<li><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></li>
+</ul>
 <div class="section" id="plone">
-<h2><a class="toc-backref" href="#id44">Plone</a></h2>
+<h2><a class="toc-backref" href="#id50">Plone</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plone_(software)">https://en.wikipedia.org/wiki/Plone_(software)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://plone.org/">https://plone.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/plone/plone">https://github.com/plone/plone</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Plone">https://pypi.python.org/pypi/Plone</a></div>
+<div class="line">Docs: <a class="reference external" href="https://plone.org/documentation">https://plone.org/documentation</a></div>
+<div class="line">Docs: <a class="reference external" href="http://developer.plone.org/">http://developer.plone.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.plone.org/manage/installing/installation.html">http://docs.plone.org/manage/installing/installation.html</a></div>
+</div>
 <ul class="simple">
 <li><a class="reference external" href="http://developer.plone.org/testing_and_debugging/">http://developer.plone.org/testing_and_debugging/</a></li>
 </ul>
 </div>
-<div class="section" id="id1">
-<h2><a class="toc-backref" href="#id45">Django</a></h2>
+<div class="section" id="django">
+<h2><a class="toc-backref" href="#id51">Django</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Django_(web_framework)">https://en.wikipedia.org/wiki/Django_(web_framework)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/django/django">https://github.com/django/django</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/django">https://pypi.python.org/pypi/django</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/testing/">https://docs.djangoproject.com/en/dev/topics/testing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/settings/">https://docs.djangoproject.com/en/dev/topics/settings/</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/rosarior/awesome-django">https://github.com/rosarior/awesome-django</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/testing/">https://docs.djangoproject.com/en/dev/topics/testing/</a></li>
-<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/settings/">https://docs.djangoproject.com/en/dev/topics/settings/</a></li>
 <li><a class="reference external" href="https://github.com/django-debug-toolbar/django-debug-toolbar">https://github.com/django-debug-toolbar/django-debug-toolbar</a></li>
+<li><a class="reference external" href="https://www.djangopackages.com/">https://www.djangopackages.com/</a><ul>
+<li><a class="reference external" href="https://www.djangopackages.com/grids/g/cms/">https://www.djangopackages.com/grids/g/cms/</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="flask">
-<h2><a class="toc-backref" href="#id46">Flask</a></h2>
+<h2><a class="toc-backref" href="#id52">Flask</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Flask_(web_framework)">https://en.wikipedia.org/wiki/Flask_(web_framework)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://flask.pocoo.org/">https://flask.pocoo.org/</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/mitsuhiko/flask">https://github.com/mitsuhiko/flask</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Flask">https://pypi.python.org/pypi/Flask</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.readthedocs.org/en/latest/config/">https://flask.readthedocs.org/en/latest/config/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.pocoo.org/docs/latest/">https://flask.pocoo.org/docs/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.pocoo.org/docs/latest/testing/">https://flask.pocoo.org/docs/latest/testing/</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/humiaozuzu/awesome-flask">https://github.com/humiaozuzu/awesome-flask</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="https://flask.readthedocs.org/en/latest/config/">https://flask.readthedocs.org/en/latest/config/</a></li>
-<li><a class="reference external" href="https://flask.pocoo.org/docs/testing/">https://flask.pocoo.org/docs/testing/</a></li>
 <li><a class="reference external" href="https://flask-debugtoolbar.readthedocs.org/en/latest/">https://flask-debugtoolbar.readthedocs.org/en/latest/</a></li>
 </ul>
 </div>
 <div class="section" id="bottle">
-<h2><a class="toc-backref" href="#id47">Bottle</a></h2>
+<h2><a class="toc-backref" href="#id53">Bottle</a></h2>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://bottlepy.org">http://bottlepy.org</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/bottlepy/bottle">https://github.com/bottlepy/bottle</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/bottle">https://pypi.python.org/pypi/bottle</a></div>
+<div class="line">Docs: <a class="reference external" href="http://bottlepy.org/docs/dev/">http://bottlepy.org/docs/dev/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications">http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications</a></div>
+</div>
+<p>Bottle is a one file WSGI Python web framework.</p>
 <ul class="simple">
-<li><a class="reference external" href="http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications">http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications</a></li>
+<li><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></li>
 </ul>
 </div>
 <div class="section" id="pyramid">
-<h2><a class="toc-backref" href="#id48">Pyramid</a></h2>
+<h2><a class="toc-backref" href="#id54">Pyramid</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pylons_project#Pyramid">https://en.wikipedia.org/wiki/Pylons_project#Pyramid</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.pylonsproject.org/projects/pyramid/about">http://www.pylonsproject.org/projects/pyramid/about</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/pyramid">https://github.com/Pylons/pyramid</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pyramid">https://pypi.python.org/pypi/pyramid</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/">http://docs.pylonsproject.org/projects/pyramid/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html</a></div>
+<div class="line">Docs:  <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/ITCase/awesome-pyramid">https://github.com/ITCase/awesome-pyramid</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html</a></li>
-<li><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html</a></li>
 <li><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/">http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/</a></li>
 </ul>
 </div>
 </div>
-<div class="section" id="web-apps">
-<h1><a class="toc-backref" href="#id49">Web Apps</a></h1>
+<div class="section" id="web-applications">
+<h1><a class="toc-backref" href="#id55">Web Applications</a></h1>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></li>
 </ul>
 <div class="section" id="webtest">
-<h2><a class="toc-backref" href="#id50">WebTest</a></h2>
+<h2><a class="toc-backref" href="#id56">WebTest</a></h2>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/webtest">https://github.com/Pylons/webtest</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/WebTest">https://pypi.python.org/pypi/WebTest</a></div>
+<div class="line">Docs: <a class="reference external" href="http://webtest.pythonpaste.org/en/latest/">http://webtest.pythonpaste.org/en/latest/</a></div>
+</div>
+<p>WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. <a class="reference internal" href="#pyramid">Pyramid</a>, <a class="reference internal" href="#flask">Flask</a>, <a class="reference internal" href="#django">Django</a>, <a class="reference internal" href="#bottle">Bottle</a>)</p>
+</div>
+<div class="section" id="splinter">
+<h2><a class="toc-backref" href="#id57">Splinter</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/cobrateam/splinter">https://github.com/cobrateam/splinter</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/splinter">https://pypi.python.org/pypi/splinter</a></div>
+<div class="line">Docs: <a class="reference external" href="https://splinter.readthedocs.org/en/latest/">https://splinter.readthedocs.org/en/latest/</a></div>
+</div>
+<blockquote class="epigraph">
 <ul class="simple">
-<li><a class="reference external" href="http://webtest.pythonpaste.org/en/latest/">http://webtest.pythonpaste.org/en/latest/</a></li>
+<li>multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,</li>
 </ul>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">./awesome-python-testing.rest</tt>, line 624)</p>
+Bullet list ends without a blank line; unexpected unindent.</div>
+<p>zopetestbrowser, remote webdriver)
+* css and xpath selectors</p>
+</blockquote>
 </div>
 <div class="section" id="selenium">
-<h2><a class="toc-backref" href="#id51">Selenium</a></h2>
+<h2><a class="toc-backref" href="#id58">Selenium</a></h2>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></li>
 <li><a class="reference external" href="https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin</a></li>
 <li><a class="reference external" href="http://www.seleniumhq.org/projects/ide/">http://www.seleniumhq.org/projects/ide/</a></li>
 </ul>

@@ -1,6 +1,6 @@
-########################
+========================
 Awesome Python Testing
-########################
+========================
 
 `<https://en.wikipedia.org/wiki/Software_testing>`__
 
@@ -58,14 +58,59 @@ Python
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
 * http://wiki.python.org/moin/PythonTestingToolsTaxonomy
-* https://pypi.python.org/pypi/unittest2
-* https://github.com/testing-cabal/testtools
-
-  * https://westurner.org/testtools/ (temp docs)
-
 * http://docs.python-guide.org/en/latest/writing/tests/
+* https://pypi.python.org/pypi/unittest2 (python < 2.7)
+* https://pypi.python.org/pypi/mock (python < 3.3)
+* https://pypi.python.org/pypi/pathlib (python < 3.4)
+* `testtools`_
+
+Python 3
+~~~~~~~~~~~
+* https://docs.python.org/3/library/unittest.html
+* https://docs.python.org/3/library/unittest.mock.html (python >= 3.3)
+* https://docs.python.org/3/library/doctest.html
+* https://docs.python.org/3/library/pathlib.html
+* `testtools`_
+
+Python 2 <--> Python 3
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* https://mail.python.org/mailman/listinfo/python-porting
+* http://python3porting.com/
+* `2to3`_, `six`_, `nine`_, `future`_
 
 
+2to3
+^^^^^
+| Src: https://hg.python.org/cpython/file/tip/Lib/lib2to3
+| Docs: https://docs.python.org/2/library/2to3.html
+| Docs: https://docs.python.org/3/library/2to3.html
+
+* https://hg.python.org/cpython/file/tip/Lib/lib2to3/Grammar.txt
+* https://pythonhosted.org/setuptools/python3.html#supporting-both-python-2-and-python-3-with-setuptools
+
+six
+^^^^
+| Src: hg https://bitbucket.org/gutworth/six
+| PyPI: http://pypi.python.org/pypi/six/
+| Docs: https://pythonhosted.org/six/
+
+* https://pythonhosted.org/six/#module-six.moves
+
+nine
+^^^^^^
+| Src: git https://github.com/nandoflorestan/nine
+| PyPI: https://pypi.python.org/pypi/nine
+
+* https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py
+
+future
+^^^^^^^
+| Src: git https://github.com/PythonCharmers/python-future
+| PyPI: https://pypi.python.org/pypi/future
+| Docs: http://python-future.org/
+
+* http://python-future.org/compatible_idioms.html
 
 IPython
 ----------------
@@ -198,7 +243,7 @@ testtools
 
 
 GUI Test Runners
----------------
+-----------------
 
 * https://github.com/pybee/cricket
 * See: `Debugging: GUI`_
@@ -226,18 +271,43 @@ Continuous Integration (CI) and Continuous Delivery (CD)
 Buildbot
 ----------
 | Wikipedia: https://en.wikipedia.org/wiki/Buildbot
+| Homepage: http://buildbot.net
+| Src: https://github.com/buildbot/buildbot
+| PyPI: https://pypi.python.org/pypi/buildbot
+| PyPI: https://pypi.python.org/pypi/buildbot-slave
+| Docs: docs.buildbot.net/latest/
+| Docs: docs.buildbot.net/latest/full.html
+
+* https://docs.python.org/devguide/buildbots.html
 
 
 Jenkins
 --------
 | Wikipedia: `<https://en.wikipedia.org/wiki/Jenkins_(software)>`__
 
+* https://github.com/saltstack/salt-jenkins
+* https://wiki.jenkins-ci.org/display/JENKINS/ShiningPanda+Plugin
+* `xUnit XML`_
+
+
+xUnit XML
+----------
+https://en.wikipedia.org/wiki/XUnit
+
+* https://nose.readthedocs.org/en/latest/plugins/xunit.html
+* http://nosexunit.sourceforge.net/
+* https://pytest.org/latest/usage.html#creating-junitxml-format-files
+* https://github.com/xmlrunner/unittest-xml-reporting
+* https://github.com/zandev/shunit2/compare/master...jeremycarroll:master
+
 
 Travis
 --------
 | Wikipedia: https://en.wikipedia.org/wiki/Travis_CI
+| Homepage: http://travis-ci.org/
 
 * http://about.travis-ci.org/docs/user/getting-started/
+* https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/.travis.yml
 
 
 Version Control
@@ -289,7 +359,7 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 
     import pdb; pdb.set_trace()    # pdb, pdbpp
     import ipdb; ipdb.set_trace()  # ipdb
-    
+
 
 .. code:: bash
 
@@ -436,15 +506,17 @@ Schema Migrations
 * https://en.wikipedia.org/wiki/Database_refactoring
 * https://en.wikipedia.org/wiki/Database_normalization
 
-Django
-~~~~~~~~
+Django Migrations
+~~~~~~~~~~~~~~~~~~~
 * https://docs.djangoproject.com/en/1.7/topics/migrations/
 * https://south.readthedocs.org/en/latest/
 
-SQLAlchemy
-~~~~~~~~~~~
-* https://sqlalchemy-migrate.readthedocs.org/en/latest/
+SQLAlchemy Migrations
+~~~~~~~~~~~~~~~~~~~~~~~
 * https://alembic.readthedocs.org/en/latest/
+* https://sqlalchemy-migrate.readthedocs.org/en/latest/
+
+| Awesome:  https://github.com/dahlia/awesome-sqlalchemy
 
 
 Web Frameworks
@@ -452,45 +524,110 @@ Web Frameworks
 
 https://en.wikipedia.org/wiki/Web_application_framework
 
+* https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python
+* https://www.techempower.com/benchmarks/
+
 Plone
 ------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+| Homepage: https://plone.org/
+| Src: https://github.com/plone/plone
+| PyPI: https://pypi.python.org/pypi/Plone
+| Docs: https://plone.org/documentation
+| Docs: http://developer.plone.org/
+| Docs: http://docs.plone.org/manage/installing/installation.html
+
 * http://developer.plone.org/testing_and_debugging/
 
 Django
 --------
-* https://docs.djangoproject.com/en/dev/topics/testing/
-* https://docs.djangoproject.com/en/dev/topics/settings/
+| Wikipedia: `<https://en.wikipedia.org/wiki/Django_(web_framework)>`__
+| Homepage: https://www.djangoproject.com/
+| Src: git https://github.com/django/django
+| PyPI: https://pypi.python.org/pypi/django
+| Docs: https://docs.djangoproject.com/
+| Docs: https://docs.djangoproject.com/en/dev/topics/testing/
+| Docs: https://docs.djangoproject.com/en/dev/topics/settings/
+| Awesome: https://github.com/rosarior/awesome-django
+
 * https://github.com/django-debug-toolbar/django-debug-toolbar
+* https://www.djangopackages.com/
+
+  * https://www.djangopackages.com/grids/g/cms/
 
 Flask
 ------
-* https://flask.readthedocs.org/en/latest/config/
-* https://flask.pocoo.org/docs/testing/
+| Wikipedia: `<https://en.wikipedia.org/wiki/Flask_(web_framework)>`__
+| Homepage: https://flask.pocoo.org/
+| Src: git https://github.com/mitsuhiko/flask
+| PyPI: https://pypi.python.org/pypi/Flask
+| Docs: https://flask.readthedocs.org/en/latest/config/
+| Docs: https://flask.pocoo.org/docs/latest/
+| Docs: https://flask.pocoo.org/docs/latest/testing/
+| Awesome: https://github.com/humiaozuzu/awesome-flask
+
 * https://flask-debugtoolbar.readthedocs.org/en/latest/
 
 Bottle
 -------
-* http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+| Homepage: http://bottlepy.org
+| Src: git https://github.com/bottlepy/bottle
+| PyPI: https://pypi.python.org/pypi/bottle
+| Docs: http://bottlepy.org/docs/dev/
+| Docs: http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+
+Bottle is a one file WSGI Python web framework.
+
+* http://bottlepy.org/docs/dev/plugins/
 
 Pyramid
 --------
-* http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
-* http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
+| Wikipedia: `<https://en.wikipedia.org/wiki/Pylons_project#Pyramid>`__
+| Homepage: http://www.pylonsproject.org/projects/pyramid/about
+| Src: git https://github.com/Pylons/pyramid
+| PyPI: https://pypi.python.org/pypi/pyramid
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+| Docs:  http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
+| Awesome: https://github.com/ITCase/awesome-pyramid
+
 * http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
 
 
-Web Apps
-===========
+Web Applications
+==================
+https://en.wikipedia.org/wiki/Web_application
 
 * http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
 
+
 WebTest
 --------
+| Src: git https://github.com/Pylons/webtest
+| PyPI: https://pypi.python.org/pypi/WebTest
+| Docs: http://webtest.pythonpaste.org/en/latest/
 
-* http://webtest.pythonpaste.org/en/latest/
+WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. `Pyramid`_, `Flask`_, `Django`_, `Bottle`_)
+
+
+Splinter
+---------
+| Src: https://github.com/cobrateam/splinter
+| PyPI: https://pypi.python.org/pypi/splinter
+| Docs: https://splinter.readthedocs.org/en/latest/
+
+.. epigraph::
+
+  * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+  zopetestbrowser, remote webdriver)
+  * css and xpath selectors
+
 
 Selenium
 ----------
-* http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
+| Docs: http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
+
 * https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin
 * http://www.seleniumhq.org/projects/ide/
