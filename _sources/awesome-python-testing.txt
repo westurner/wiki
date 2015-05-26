@@ -622,6 +622,7 @@ Splinter
 
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
   zopetestbrowser, remote webdriver)
+
   * css and xpath selectors
 
 
