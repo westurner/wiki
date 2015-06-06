@@ -309,10 +309,10 @@ pull:
 push:
 	# git push to origin master, wiki master, origin gh-pages
 	git push origin master
-	git push -f wiki master
-	git push -f origin gh-pages
+	git push wiki master
+	git push origin gh-pages
 
 gh-pages:
 	# Push docs to gh-pages branch with a .nojekyll file
+	@echo ghp-import -n -p ./docs/_build/singlehtml/
 	ghp-import -n -p ./_build/html/
-	#ghp-import -n -p ./docs/_build/singlehtml/
