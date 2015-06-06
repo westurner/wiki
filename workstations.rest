@@ -171,35 +171,74 @@ Wandroid
 Browsers
 **********
 
-Firefox
---------
-* `HTTPS Everywhere`_
-* `Vimperator`_
-* `Wasavi`_
-
-Mobile Firefox
-----------------
-* `HTTPS Everywhere`_
-
 Chrome
 -------
-**Extensions**
 
-* `HTTPS Everywhere`_
+Chrome DevTools
+~~~~~~~~~~~~~~~~
+| Homepage: https://developer.chrome.com/devtools
+| Docs: https://developer.chrome.com/devtools
 
+* Right-click > "Inspect Element"
+* OSX: ``<option>`` + ``<command>`` + ``i``
+ 
+
+Chrome Extensions
+~~~~~~~~~~~~~~~~~~~
+
+**Accessibility**
+
+* `Accessibility Developer Tools`_
+* `ChromeVox`_
 * `Deluminate`_
 * `High Contrast`_
+* `Spectrum`_
+* `Stylish`_
+
+
+**Safety**
+
+* `Ghostery`_
+* `HTTPS Everywhere`_
+* `uBlock`_
+
+**Content**
+
+* `Hypothesis`_
+* `Pocket`_
+
+**Tab**
+
+* `OneTab`_
+* `Snipe`_
+* `Tabs Outliner`_
+
+**Development**
+
+* `FireBug`_ (see: `Chrome DevTools`_)
+* `FireLogger for Chrome`_
+* `JSONView`_
+* `Postman`_
+* `React Developer Tools`_
+* `Requirify`_
+* `Web Developer`_
+
+**Vim**
 
 * `Vimium`_
 * `Wasavi`_
-* `Requirify`_
 
-**Tools**
+pbm
+~~~~
+| Source: https://github.com/westurner/pbm
 
-* pbm: https://github.com/westurner/pbm (offline Bookmarks JSON backup,
-  date-based transforms, quicklinks, starred bookmarks)
+* Bookmarks JSON backup and organize (offline batch)
+* date-based transforms
+* quicklinks
+* starred bookmarks (with trailing ``##``)
 
-Mobile Chrome
+
+Chrome Mobile
 ---------------
 **Extensions**
 
@@ -212,10 +251,58 @@ Mobile Chrome does not support extensions.
   + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/config.py
   + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/userdata.py
 
+Firefox
+--------
+
+Firefox Extensions
+~~~~~~~~~~~~~~~~~~~
+**Accessibility**
+
+* `Stylish`_
+
+**Safety**
+
+* `Ghostery`_
+* `HTTPS Everywhere`_
+* `uBlock`_
+
+**Tabs**
+
+* `OneTab`_
+* `Tree Style Tab`_
+
+**Development**
+
+* `FireBug`_
+* `FireLogger`_
+* `Web Developer`_
+
+**Vim**
+
+* `Vimperator`_
+* `Wasavi`_
+
+Firefox Android
+----------------
+
+Firefox Android Extensions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `Ghostery`_
+* `HTTPS Everywhere`_
+
+
 Safari
 -------
 
-Mobile Safari
+Safari Extensions
+~~~~~~~~~~~~~~~~~~~
+**Safety**
+
+* `Ghostery`_
+* `uBlock`_
+
+
+Safari iOS
 ---------------
 
 
@@ -335,6 +422,8 @@ Pocket
 | Homepage: https://getpocket.com/
 | ChromeApp: https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk
 | ChromeExt: https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/read-it-later/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/7661/addon-7661-latest.xpi
 
 
 
@@ -370,6 +459,36 @@ Tree Style Tab
 
 Development Extensions
 -------------------------
+
+FireBug
+~~~~~~~~~
+| Homepage: http://getfirebug.com/
+| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/firebug/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi
+| ChromeExt: https://chrome.google.com/extensions/detail/bmagokdooijbeehmkpknfglimnifench
+
+* https://getfirebug.com/firebuglite
+* https://getfirebug.com/wiki/index.php/Firebug_Extensions
+
+FireLogger
+~~~~~~~~~~~~
+| Homepage: http://firelogger.binaryage.com/
+| Source: https://github.com/binaryage/firelogger
+| Docs: https://github.com/binaryage/firelogger/wiki
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/firelogger/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/file/226289/firelogger-1.3-fx.xpi
+
+* Python: https://github.com/binaryage/firelogger.py
+* PHP: https://github.com/binaryage/firelogger.php
+* ColdFusion: http://cffirelogger.riaforge.org/
+* Java: https://github.com/clescot/webappender
+
+FireLogger for Chrome
+~~~~~~~~~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh
+| Source: https://github.com/MattSkala/chrome-firelogger
+
+See: `FireLogger`_
 
 JSONView
 ~~~~~~~~~
