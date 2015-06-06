@@ -1,0 +1,129 @@
+
+============
+Workstations
+============
+
+Tools
+*********
+* USB 3.0 to IDE/SATA adapter (backups, recovery, migration)
+* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
+
+Dotfiles
+------------
+| Docs: https://westurner.org/dotfiles/
+| Src: https://github.com/westurner/dotfiles
+
+Salt
+------
+| Docs: http://docs.saltstack.com/en/latest/
+| Src: https://github.com/saltstack/salt
+
+.. code:: bash
+
+   salt-call --local --out=yaml grains.items
+   salt-call --local --out=yaml pkg.list_pkgs
+
+
+OS
+***
+
+Windows
+--------
+* [ ] Install Chocolatey NuGet package manager: http://chocolatey.org
+* [ ] Install packages listed here: https://gist.github.com/westurner/10950476
+
+  * [ ] (Optional) uncomment salt first (optionally specify master) [OR Install salt]
+
+* [ ] Install salt: http://docs.saltstack.com/en/latest/topics/installation/windows.html
+
+* ``<Win>+R`` (Start > Run)
+* [ ] Run ``services.msc`` and log/prune unutilized services (e.g. workstation, server)
+
+  * https://en.wikipedia.org/wiki/Windows_service
+
+
+
+OSX
+----
+
+* https://github.com/westurner/dotfiles/blob/master/scripts/ ``setup_*.sh``
+
+  * [ ] Manually updae to latest versions (of zip, tar.gz, .dmg)
+  * [ ] Port to salt formulas
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_brew.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_mavericks_python.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_chrome.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_chromium.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_firefox.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_adobereader.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_vlc.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_f.lux.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_powerline_fonts.sh
+  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_macvim.sh
+  * [ ] Miniconda #dotfiles (setup_miniconda.sh?)
+
+* https://github.com/westurner/provis
+
+  * [ ] https://github.com/westurner/provis/compare/feature/osx_support
+
+    * [ ] create / remap "root" group
+
+Reinstall
+~~~~~~~~~~
+* [ ] Generate installation media
+* [ ] Reboot to recovery partition
+* [ ] Adjust partitions
+* [ ] Format?
+* [ ] Install OS
+* [ ] (wait)
+* [ ] Manual time/date/language config
+* [ ] Run workstation provis scripts
+
+Fresh Install
+~~~~~~~~~~~~~~
+* [ ] Generate / obtain installation media
+* [ ] Boot from installation media
+* [ ] Manual time/date/language config
+* [ ] Run workstation provis scripts
+
+
+Dual Boot
+~~~~~~~~~~
+
+* http://www.rodsbooks.com/refind/installing.html#osx
+
+
+iOS
+-----
+
+Linux
+-------
+* https://github.com/westurner/provis
+  
+  * Masterless Salt Config: ``make salt_local_highstate_test``
+
+    * [ ] Workstation role
+
+Android
+---------
+
+Browser
+*********
+
+Firefox
+--------
+
+Mobile Firefox
+----------------
+
+Chrome
+-------
+
+Mobile Chrome
+---------------
+
+Safari
+-------
+
+Mobile Safari
+---------------
