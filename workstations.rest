@@ -41,6 +41,18 @@ Windows
 
   * https://en.wikipedia.org/wiki/Windows_service
 
+Dual Boot
+~~~~~~~~~~~
+* [ ] Windows MBR chainloads to parition GRUB (`Linux`_)
+* [ ] Ubuntu WUBI .exe Linux Installer (XP, 7, 8*)
+
+  * It's now better to install to a separate partition from a bootable ISO
+
+UEFI
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface
+
+* https://help.ubuntu.com/community/UEFI
 
 
 OSX
@@ -67,6 +79,11 @@ OSX
   * [ ] https://github.com/westurner/provis/compare/feature/osx_support
 
     * [ ] create / remap "root" group
+  * [ ] http://docs.saltstack.com/en/latest/topics/installation/osx.html
+
+
+    ``brew install saltstack`` OR ``pip install salt``
+
 
 Reinstall
 ~~~~~~~~~~
@@ -90,6 +107,7 @@ Fresh Install
 Dual Boot
 ~~~~~~~~~~
 
+* http://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/
 * http://www.rodsbooks.com/refind/installing.html#osx
 
 
@@ -100,30 +118,329 @@ Linux
 -------
 * https://github.com/westurner/provis
   
+  * https://github.com/saltstack/salt-bootstrap
+    
+    curl -L https://bootstrap.saltstack.com scripts/bootstrap-salt.sh
+
   * Masterless Salt Config: ``make salt_local_highstate_test``
 
     * [ ] Workstation role
 
+Dual Boot
+~~~~~~~~~~
+* [ ] GRUB chainloader to partition boot record
+
+  * Ubuntu and Fedora GRUB try to autodiscover Windows partitions
+
+
 Android
 ---------
 
-Browser
-*********
+Wandroid
+~~~~~~~~~
+* https://bitbucket.org/westurner/wandroid/
+
+  * https://bitbucket.org/westurner/wandroid/src/tip/setup.py
+    (scripts, console_scripts entry_points)
+  * https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh
+
+    .. code:: bash
+
+        #!/bin/bash -x
+        export ANDROID_PATH="${HOME}/.local/android"
+        export ANDROID_ADTPATH="${ANDROID_PATH}/adt"
+        export ANDROID_SDKPATH="${ANDROID_ADTPATH}/sdk" 
+        #      ANDROID_SDKPATH="~/.local/android/adt/sdk"
+        export ANDROID_TOOLSPATH="${ANDROID_SDKPATH}/tools"
+        #      ANDROID_TOOLSPATH="~/.local/android/adt/sdk/tools"
+        export ANDROID_PTOOLSPATH="${ANDROID_SDKPATH}/platform-tools"
+        #      ANDROID_PTOOLSPATH="~/.local/android/adt/sdk/platform-tools"
+
+        export ANDROID_WORKSPACEPATH="${PROJECT_HOME}/aclipse"
+        # westurner/dotfiles:
+        #      ANDROID_WORKSPACEPATH="~/-wrk/aclipse"
+
+        export PATH="${ANDROID_PTOOLSPATH}:${ANDROID_TOOLSPATH}:${PATH}"
+        # westurner/dotfiles:
+        #   PATH_prepend "${ANDROID_TOOLSPATH}"
+        #   PATH_prepend "${ANDROID_PTOOLSPATH}"
+
+  * [ ] ``cat scripts/postactivate >> $_BIN/postactivate # for virtualenvwrapper``
+
+
+Browsers
+**********
 
 Firefox
 --------
+* `HTTPS Everywhere`_
+* `Vimperator`_
+* `Wasavi`_
 
 Mobile Firefox
 ----------------
+* `HTTPS Everywhere`_
 
 Chrome
 -------
+**Extensions**
+
+* `HTTPS Everywhere`_
+
+* `Deluminate`_
+* `High Contrast`_
+
+* `Vimium`_
+* `Wasavi`_
+* `Requirify`_
+
+**Tools**
+
+* pbm: https://github.com/westurner/pbm (offline Bookmarks JSON backup,
+  date-based transforms, quicklinks, starred bookmarks)
 
 Mobile Chrome
 ---------------
+**Extensions**
+
+Mobile Chrome does not support extensions.
+
+**Tools**
+
+* `Wandroid`_
+
+  + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/config.py
+  + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/userdata.py
 
 Safari
 -------
 
 Mobile Safari
 ---------------
+
+
+Browser Extensions
+********************
+
+Accessibility Extensions
+--------------------------
+
+* Google Chrome Accesibility Extensions:
+  https://chrome.google.com/webstore/category/ext/22-accessibility?hl=en
+* Mozilla Firefox Accesibility Extensions: 
+  `<https://addons.mozilla.org/en-US/firefox/search/?q=accessibility>`__
+
+Accessibility Developer Tools
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb
+
+ChromeVox
+~~~~~~~~~~
+| Homepage: http://www.chromevox.com/
+| ChromeExt: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn
+
+Deluminate
+~~~~~~~~~~~
+| Homepage: https://deluminate.github.io/
+| Source: https://github.com/abstiles/deluminate
+| ChromeExt: https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa
+
+
+High Contrast
+~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph
+
+
+Spectrum
+~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb
+| Source: https://github.com/lvivski/spectrum
+
+Stylish
+~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
+| Docs: https://userstyles.org/help/stylish_chrome
+| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/stylish/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/2108/addon-2108-latest.xpi
+| Docs: https://userstyles.org/help/stylish_firefox
+
+* https://userstyles.org/
+
+Safety Extensions
+-------------------
+
+Ghostery
+~~~~~~~~~~
+| Homepage: https://www.ghostery.com/en/home
+| Source: https://www.ghostery.com/en/download
+| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/ghostery/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/9609/addon-9609-latest.xpi
+| ChromeExt: https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij
+| OperaExt: https://addons.opera.com/addons/extensions/details/ghostery/
+| SafariExt: https://www.ghostery.com/safari/Ghostery.safariextz
+| MSIEExt: https://www.ghostery.com/ie/ghostery-ie.exe
+| AndroidApp: https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery
+| iOSApp: https://itunes.apple.com/us/app/ghostery/id472789016
+| FirefoxAndroidXPI: https://addons.mozilla.org/android/downloads/latest/ghostery
+| FirefoxAndroidExt: https://addons.mozilla.org/en-US/android/addon/ghostery/ 
+
+HTTPS Everywhere
+~~~~~~~~~~~~~~~~~
+| Homepage: https://www.eff.org/https-everywhere
+| Source: https://github.com/EFForg/https-everywhere
+| ChromeExt: https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp
+| FirefoxXPI: https://www.eff.org/files/https-everywhere-latest.xpi
+| FirefoxAndroidXPI: https://www.eff.org/files/https-everywhere-android.xpi
+| Twitter: https://twitter.com/HTTPSEverywhere
+
+uBlock
+~~~~~~~~
+| Homepage: https://www.ublock.org/
+| Docs: https://www.ublock.org/faq/
+| Source: https://github.com/chrisaljoudi/ublock
+| Download: https://github.com/chrisaljoudi/uBlock/releases/latest
+| ChromeExt: https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn
+| SafariExt: https://extensions.apple.com/details/?id=net.gorhill.uBlock-96G4BAKDQ9
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/ublock/
+
+.. code:: bash
+
+   _repo="chrisaljoudi/ublock"
+   curl -s "https://api.github.com/repos/${_repo}/releases" > ./releases.json
+   cat releases.json \
+       | grep browser_download_url \
+       | pyline 'w and w[1][1:-1]' \
+       | pyline --regex \
+           '.*download/(.*)/(uBlock.(firefox.xpi|chromium.zip))$' \
+           'rgx and rgx.group(1,2)'
+
+Content Extensions
+--------------------
+
+Hypothesis
+~~~~~~~~~~~
+| Homepage: https://hypothes.is/
+| ChromeExt: https://chrome.google.com/webstore/detail/hypothesis-web-pdf-annota/bjfhmglciegochdpefhhlphglcehbmek
+| Source: https://github.com/hypothesis/h
+| Twitter: https://twitter.com/hypothes_is
+
+Hypothesis can also be included as a sidebar on a site:
+
+.. code:: html
+
+   <script async defer src="//hypothes.is/embed.js"></script>
+
+Pocket
+~~~~~~~
+| Homepage: https://getpocket.com/
+| ChromeApp: https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk
+| ChromeExt: https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
+
+
+
+
+Tab Extensions
+----------------
+
+OneTab
+~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
+| Source: 
+| Homepage: https://www.one-tab.com/
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/onetab/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/525044/addon-525044-latest.xpi
+
+* https://github.com/Greduan/chrome-ext-tabulator
+
+Snipe
+~~~~~~~
+| Source: https://github.com/josephschmitt/Snipe
+| ChromeExt: https://chrome.google.com/webstore/detail/snipe/glmjakogmemenallddiiajdgjfoogegl
+| Homepage: http://joe.sh/snipe
+
+Tabs Outliner
+~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl
+
+Tree Style Tab
+~~~~~~~~~~~~~~~
+| Homepage: http://piro.sakura.ne.jp/xul/_treestyletab.html.en
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/
+
+
+Development Extensions
+-------------------------
+
+JSONView
+~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc
+| Source: https://github.com/gildas-lormeau/JSONView-for-Chrome
+
+
+Postman
+~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm
+| Source: https://github.com/a85/POSTMan-Chrome-Extension
+| Twitter: https://twitter.com/postmanclient
+
+React Developer Tools
+~~~~~~~~~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+
+Requirify
+~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm
+| Source: https://github.com/mathisonian/requirify
+| NPM: https://www.npmjs.com/package/requirify
+
+* NPM: https://www.npmjs.com/package/local-requirify
+
+Web Developer
+~~~~~~~~~~~~~~
+| ChromeExt: https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm
+| Homepage: http://chrispederick.com/work/web-developer/
+| Source: https://github.com/chrispederick/web-developer/
+| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/web-developer/
+| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi
+
+
+.. index:: Vim Extensions
+.. _vim-extensions:
+
+Vim Extensions
+----------------
+
+.. index:: Vimium
+.. _vimium:
+
+Vimium
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Vimium
+| Homepage: https://vimium.github.io/
+| Source: git https://github.com/philc/vimium
+| ChromeExt: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
+
+
+.. index:: Vimperator
+.. _vimperator:
+
+Vimperator
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Vimperator
+| Homepage: http://www.vimperator.org/
+| Source: https://github.com/vimperator/vimperator-labs
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/vimperator/
+
+
+.. index:: Wasavi
+.. _wasavi:
+
+Wasavi
+~~~~~~~
+| Homepage: http://appsweets.net/wasavi/
+| Docs: http://appsweets.net/wasavi/
+| Source: https://github.com/akahuku/wasavi
+| ChromeExt: https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe
+| OperaExt: https://addons.opera.com/en/extensions/details/wasavi/
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/wasavi/
