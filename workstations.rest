@@ -449,6 +449,7 @@ Zotero archives and tags resources with bibliographic metadata.
 
   * https://www.zotero.org/styles
   * http://citationstyles.org/
+
 * Zotero can export a collection of resources' bibliographic metadata
   as RDF
 
