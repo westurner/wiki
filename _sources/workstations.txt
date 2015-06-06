@@ -426,7 +426,43 @@ Pocket
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/7661/addon-7661-latest.xpi
 
 
+Zotero
+~~~~~~~~
+| Homepage: https://www.zotero.org/
+| ChromeExt: https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc
+| FirefoxXPI: https://download.zotero.org/extension/zotero-4.0.26.4.xpi
+| SafariExt: https://download.zotero.org/connector/safari/Zotero_Connector-4.0.21-1.safariextz
+| Download: https://www.zotero.org/download/
+| Docs: https://www.zotero.org/support/
+| Docs: https://www.zotero.org/support/sync
+| Docs: https://www.zotero.org/support/kb/webdav_services
 
+Zotero archives and tags resources with bibliographic metadata.
+
+* Zotero is really helpful for research.
+* Zotero can store a full-page archive of a given resource (e.g. HTML, PDF)
+* Zotero can store and synchronize data on Zotero's servers
+  with Zotero File Storage
+* Zotero can store and synchronize data over WebDAV
+* Zotero can export a collection of resources' bibliographic metadata
+  in one of many citation styles ("CSL") (e.g. MLA, APA, [Journal XYZ])
+
+  * https://www.zotero.org/styles
+  * http://citationstyles.org/
+
+* Zotero can export a collection of resources' bibliographic metadata
+  as RDF
+
+-------------------------------
+[ ] Zotero and Schema.org RDFa
+-------------------------------
+* https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/
+
+> How would I go about adding HTML + RDFa [1] and/or HTML + Microdata [2] export templates with Schema.org classes and properties to Zotero?
+
+* https://groups.google.com/forum/#!topic/zotero-dev/rJnMZYrhwM4
+* https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html
+  (COinS, Citeproc-js, OpenAnnotation (+1))
 
 Tab Extensions
 ----------------
