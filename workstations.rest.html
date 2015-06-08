@@ -345,20 +345,33 @@ ul.auto-toc {
 <h1>Tools</h1>
 <ul class="simple">
 <li>USB 3.0 to IDE/SATA adapter (backups, recovery, migration)</li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh">https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh</a></li>
 </ul>
 <div class="section" id="dotfiles">
 <h2>Dotfiles</h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://westurner.org/dotfiles/">https://westurner.org/dotfiles/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotfiles">https://github.com/westurner/dotfiles</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#dotfiles">https://westurner.org/tools/#dotfiles</a></div>
 </div>
+</div>
+<div class="section" id="osquery">
+<h2>osquery</h2>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://osquery.io/">https://osquery.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/facebook/osquery">https://github.com/facebook/osquery</a></div>
+<div class="line">Docs: <a class="reference external" href="https://osquery.io/docs/tables/">https://osquery.io/docs/tables/</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#osquery">https://westurner.org/tools/#osquery</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh">https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh</a></li>
+</ul>
 </div>
 <div class="section" id="salt">
 <h2>Salt</h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="http://docs.saltstack.com/en/latest/">http://docs.saltstack.com/en/latest/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/saltstack/salt">https://github.com/saltstack/salt</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#salt">https://westurner.org/tools/#salt</a></div>
 </div>
 <pre class="code bash literal-block">
 salt-call --local --out<span class="operator">=</span>yaml grains.items
@@ -368,139 +381,44 @@ salt-call --local --out<span class="operator">=</span>yaml pkg.list_pkgs
 </div>
 <div class="section" id="os">
 <h1>OS</h1>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#operating-systems">https://westurner.org/tools/#operating-systems</a></div>
+</div>
 <div class="section" id="windows">
 <h2>Windows</h2>
-<ul class="simple">
-<li>[ ] Install Chocolatey NuGet package manager: <a class="reference external" href="http://chocolatey.org">http://chocolatey.org</a></li>
-<li>[ ] Install packages listed here: <a class="reference external" href="https://gist.github.com/westurner/10950476">https://gist.github.com/westurner/10950476</a><ul>
-<li>[ ] (Optional) uncomment salt first (optionally specify master) [OR Install salt]</li>
-</ul>
-</li>
-<li>[ ] Install salt: <a class="reference external" href="http://docs.saltstack.com/en/latest/topics/installation/windows.html">http://docs.saltstack.com/en/latest/topics/installation/windows.html</a></li>
-<li><tt class="docutils literal"><span class="pre">&lt;Win&gt;+R</span></tt> (Start &gt; Run)</li>
-<li>[ ] Run <tt class="docutils literal">services.msc</tt> and log/prune unutilized services (e.g. workstation, server)<ul>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Windows_service">https://en.wikipedia.org/wiki/Windows_service</a></li>
-</ul>
-</li>
-</ul>
-<div class="section" id="dual-boot">
-<h3>Dual Boot</h3>
-<ul class="simple">
-<li>[ ] Windows MBR chainloads to parition GRUB (<a class="reference internal" href="#linux">Linux</a>)</li>
-<li>[ ] Ubuntu WUBI .exe Linux Installer (XP, 7, 8*)<ul>
-<li>It's now better to install to a separate partition from a bootable ISO</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="uefi">
-<h3>UEFI</h3>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface">https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface</a></div>
-</div>
-<ul class="simple">
-<li><a class="reference external" href="https://help.ubuntu.com/community/UEFI">https://help.ubuntu.com/community/UEFI</a></li>
-</ul>
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#windows-notes">https://westurner.org/tools/#windows-notes</a></div>
 </div>
 </div>
 <div class="section" id="osx">
 <h2>OSX</h2>
-<ul>
-<li><p class="first"><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/">https://github.com/westurner/dotfiles/blob/master/scripts/</a> <tt class="docutils literal"><span class="pre">setup_*.sh</span></tt></p>
-<ul class="simple">
-<li>[ ] Manually updae to latest versions (of zip, tar.gz, .dmg)</li>
-<li>[ ] Port to salt formulas</li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_brew.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_brew.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_mavericks_python.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_mavericks_python.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_chrome.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_chrome.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_chromium.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_chromium.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_firefox.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_firefox.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_adobereader.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_adobereader.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_vlc.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_vlc.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_f.lux.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_f.lux.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_powerline_fonts.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_powerline_fonts.sh</a></li>
-<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/setup_macvim.sh">https://github.com/westurner/dotfiles/blob/master/scripts/setup_macvim.sh</a></li>
-<li>[ ] Miniconda #dotfiles (setup_miniconda.sh?)</li>
-</ul>
-</li>
-<li><p class="first"><a class="reference external" href="https://github.com/westurner/provis">https://github.com/westurner/provis</a></p>
-<ul>
-<li><p class="first">[ ] <a class="reference external" href="https://github.com/westurner/provis/compare/feature/osx_support">https://github.com/westurner/provis/compare/feature/osx_support</a></p>
-<ul class="simple">
-<li>[ ] create / remap &quot;root&quot; group</li>
-</ul>
-</li>
-<li><p class="first">[ ] <a class="reference external" href="http://docs.saltstack.com/en/latest/topics/installation/osx.html">http://docs.saltstack.com/en/latest/topics/installation/osx.html</a></p>
-<p><tt class="docutils literal">brew install saltstack</tt> OR <tt class="docutils literal">pip install salt</tt></p>
-</li>
-</ul>
-</li>
-</ul>
-<div class="section" id="reinstall">
-<h3>Reinstall</h3>
-<ul class="simple">
-<li>[ ] Generate installation media</li>
-<li>[ ] Reboot to recovery partition</li>
-<li>[ ] Adjust partitions</li>
-<li>[ ] Format?</li>
-<li>[ ] Install OS</li>
-<li>[ ] (wait)</li>
-<li>[ ] Manual time/date/language config</li>
-<li>[ ] Run workstation provis scripts</li>
-</ul>
-</div>
-<div class="section" id="fresh-install">
-<h3>Fresh Install</h3>
-<ul class="simple">
-<li>[ ] Generate / obtain installation media</li>
-<li>[ ] Boot from installation media</li>
-<li>[ ] Manual time/date/language config</li>
-<li>[ ] Run workstation provis scripts</li>
-</ul>
-</div>
-<div class="section" id="id1">
-<h3>Dual Boot</h3>
-<ul class="simple">
-<li><a class="reference external" href="http://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/">http://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/</a></li>
-<li><a class="reference external" href="http://www.rodsbooks.com/refind/installing.html#osx">http://www.rodsbooks.com/refind/installing.html#osx</a></li>
-</ul>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#osx-notes">https://westurner.org/tools/#osx-notes</a></div>
 </div>
 </div>
 <div class="section" id="ios">
 <h2>iOS</h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#ios-notes">https://westurner.org/tools/#ios-notes</a></div>
+</div>
 </div>
 <div class="section" id="linux">
 <h2>Linux</h2>
-<ul>
-<li><p class="first"><a class="reference external" href="https://github.com/westurner/provis">https://github.com/westurner/provis</a></p>
-<ul>
-<li><p class="first"><a class="reference external" href="https://github.com/saltstack/salt-bootstrap">https://github.com/saltstack/salt-bootstrap</a></p>
-<p>curl -L <a class="reference external" href="https://bootstrap.saltstack.com">https://bootstrap.saltstack.com</a> scripts/bootstrap-salt.sh</p>
-</li>
-<li><p class="first">Masterless Salt Config: <tt class="docutils literal">make salt_local_highstate_test</tt></p>
-<ul class="simple">
-<li>[ ] Workstation role</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="section" id="id2">
-<h3>Dual Boot</h3>
-<ul class="simple">
-<li>[ ] GRUB chainloader to partition boot record<ul>
-<li>Ubuntu and Fedora GRUB try to autodiscover Windows partitions</li>
-</ul>
-</li>
-</ul>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#linux-notes">https://westurner.org/tools/#linux-notes</a></div>
 </div>
 </div>
 <div class="section" id="android">
 <h2>Android</h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.org/tools/#android-notes">https://westurner.org/tools/#android-notes</a></div>
+</div>
 <div class="section" id="wandroid">
 <h3>Wandroid</h3>
-<ul>
-<li><p class="first"><a class="reference external" href="https://bitbucket.org/westurner/wandroid/">https://bitbucket.org/westurner/wandroid/</a></p>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/wandroid">https://bitbucket.org/westurner/wandroid</a></div>
+</div>
+<blockquote>
 <ul>
 <li><p class="first"><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/setup.py">https://bitbucket.org/westurner/wandroid/src/tip/setup.py</a>
 (scripts, console_scripts entry_points)</p>
@@ -530,508 +448,7 @@ salt-call --local --out<span class="operator">=</span>yaml pkg.list_pkgs
 <li><p class="first">[ ] <tt class="docutils literal">cat scripts/postactivate &gt;&gt; $_BIN/postactivate # for virtualenvwrapper</tt></p>
 </li>
 </ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="section" id="browsers">
-<h1>Browsers</h1>
-<div class="section" id="chrome">
-<h2>Chrome</h2>
-<div class="section" id="chrome-devtools">
-<h3>Chrome DevTools</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a></div>
-<div class="line">Docs: <a class="reference external" href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a></div>
-</div>
-<ul class="simple">
-<li>Right-click &gt; &quot;Inspect Element&quot;</li>
-<li>OSX: <tt class="docutils literal">&lt;option&gt;</tt> + <tt class="docutils literal">&lt;command&gt;</tt> + <tt class="docutils literal">i</tt></li>
-</ul>
-</div>
-<div class="section" id="chrome-extensions">
-<h3>Chrome Extensions</h3>
-<p><strong>Accessibility</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#accessibility-developer-tools">Accessibility Developer Tools</a></li>
-<li><a class="reference internal" href="#chromevox">ChromeVox</a></li>
-<li><a class="reference internal" href="#deluminate">Deluminate</a></li>
-<li><a class="reference internal" href="#high-contrast">High Contrast</a></li>
-<li><a class="reference internal" href="#spectrum">Spectrum</a></li>
-<li><a class="reference internal" href="#stylish">Stylish</a></li>
-</ul>
-<p><strong>Safety</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#ghostery">Ghostery</a></li>
-<li><a class="reference internal" href="#https-everywhere">HTTPS Everywhere</a></li>
-<li><a class="reference internal" href="#ublock">uBlock</a></li>
-</ul>
-<p><strong>Content</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#hypothesis">Hypothesis</a></li>
-<li><a class="reference internal" href="#pocket">Pocket</a></li>
-</ul>
-<p><strong>Tab</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#onetab">OneTab</a></li>
-<li><a class="reference internal" href="#snipe">Snipe</a></li>
-<li><a class="reference internal" href="#tabs-outliner">Tabs Outliner</a></li>
-</ul>
-<p><strong>Development</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#firebug">FireBug</a> (see: <a class="reference internal" href="#chrome-devtools">Chrome DevTools</a>)</li>
-<li><a class="reference internal" href="#firelogger-for-chrome">FireLogger for Chrome</a></li>
-<li><a class="reference internal" href="#jsonview">JSONView</a></li>
-<li><a class="reference internal" href="#postman">Postman</a></li>
-<li><a class="reference internal" href="#react-developer-tools">React Developer Tools</a></li>
-<li><a class="reference internal" href="#requirify">Requirify</a></li>
-<li><a class="reference internal" href="#web-developer">Web Developer</a></li>
-</ul>
-<p><strong>Vim</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#vimium">Vimium</a></li>
-<li><a class="reference internal" href="#wasavi">Wasavi</a></li>
-</ul>
-</div>
-<div class="section" id="pbm">
-<h3>pbm</h3>
-<div class="line-block">
-<div class="line">Source: <a class="reference external" href="https://github.com/westurner/pbm">https://github.com/westurner/pbm</a></div>
-</div>
-<ul class="simple">
-<li>Bookmarks JSON backup and organize (offline batch)</li>
-<li>date-based transforms</li>
-<li>quicklinks</li>
-<li>starred bookmarks (with trailing <tt class="docutils literal">##</tt>)</li>
-</ul>
-</div>
-</div>
-<div class="section" id="chrome-mobile">
-<h2>Chrome Mobile</h2>
-<p><strong>Extensions</strong></p>
-<p>Mobile Chrome does not support extensions.</p>
-<p><strong>Tools</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#wandroid">Wandroid</a><ul>
-<li><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/config.py">https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/config.py</a></li>
-<li><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/userdata.py">https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/userdata.py</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="firefox">
-<h2>Firefox</h2>
-<div class="section" id="firefox-extensions">
-<h3>Firefox Extensions</h3>
-<p><strong>Accessibility</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#stylish">Stylish</a></li>
-</ul>
-<p><strong>Safety</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#ghostery">Ghostery</a></li>
-<li><a class="reference internal" href="#https-everywhere">HTTPS Everywhere</a></li>
-<li><a class="reference internal" href="#ublock">uBlock</a></li>
-</ul>
-<p><strong>Tabs</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#onetab">OneTab</a></li>
-<li><a class="reference internal" href="#tree-style-tab">Tree Style Tab</a></li>
-</ul>
-<p><strong>Development</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#firebug">FireBug</a></li>
-<li><a class="reference internal" href="#firelogger">FireLogger</a></li>
-<li><a class="reference internal" href="#web-developer">Web Developer</a></li>
-</ul>
-<p><strong>Vim</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#vimperator">Vimperator</a></li>
-<li><a class="reference internal" href="#wasavi">Wasavi</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="firefox-android">
-<h2>Firefox Android</h2>
-<div class="section" id="firefox-android-extensions">
-<h3>Firefox Android Extensions</h3>
-<ul class="simple">
-<li><a class="reference internal" href="#ghostery">Ghostery</a></li>
-<li><a class="reference internal" href="#https-everywhere">HTTPS Everywhere</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="safari">
-<h2>Safari</h2>
-<div class="section" id="safari-extensions">
-<h3>Safari Extensions</h3>
-<p><strong>Safety</strong></p>
-<ul class="simple">
-<li><a class="reference internal" href="#ghostery">Ghostery</a></li>
-<li><a class="reference internal" href="#ublock">uBlock</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="safari-ios">
-<h2>Safari iOS</h2>
-</div>
-</div>
-<div class="section" id="browser-extensions">
-<h1>Browser Extensions</h1>
-<div class="section" id="accessibility-extensions">
-<h2>Accessibility Extensions</h2>
-<ul class="simple">
-<li>Google Chrome Accesibility Extensions:
-<a class="reference external" href="https://chrome.google.com/webstore/category/ext/22-accessibility?hl=en">https://chrome.google.com/webstore/category/ext/22-accessibility?hl=en</a></li>
-<li>Mozilla Firefox Accesibility Extensions:
-<a class="reference external" href="https://addons.mozilla.org/en-US/firefox/search/?q=accessibility">https://addons.mozilla.org/en-US/firefox/search/?q=accessibility</a></li>
-</ul>
-<div class="section" id="accessibility-developer-tools">
-<h3>Accessibility Developer Tools</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb">https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb</a></div>
-</div>
-</div>
-<div class="section" id="chromevox">
-<h3>ChromeVox</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://www.chromevox.com/">http://www.chromevox.com/</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn</a></div>
-</div>
-</div>
-<div class="section" id="deluminate">
-<h3>Deluminate</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://deluminate.github.io/">https://deluminate.github.io/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/abstiles/deluminate">https://github.com/abstiles/deluminate</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa">https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa</a></div>
-</div>
-</div>
-<div class="section" id="high-contrast">
-<h3>High Contrast</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph">https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph</a></div>
-</div>
-</div>
-<div class="section" id="spectrum">
-<h3>Spectrum</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb">https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/lvivski/spectrum">https://github.com/lvivski/spectrum</a></div>
-</div>
-</div>
-<div class="section" id="stylish">
-<h3>Stylish</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe">https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe</a></div>
-<div class="line">Docs: <a class="reference external" href="https://userstyles.org/help/stylish_chrome">https://userstyles.org/help/stylish_chrome</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/stylish/">https://addons.mozilla.org/en-us/firefox/addon/stylish/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/2108/addon-2108-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/2108/addon-2108-latest.xpi</a></div>
-<div class="line">Docs: <a class="reference external" href="https://userstyles.org/help/stylish_firefox">https://userstyles.org/help/stylish_firefox</a></div>
-</div>
-<ul class="simple">
-<li><a class="reference external" href="https://userstyles.org/">https://userstyles.org/</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="safety-extensions">
-<h2>Safety Extensions</h2>
-<div class="section" id="ghostery">
-<h3>Ghostery</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://www.ghostery.com/en/home">https://www.ghostery.com/en/home</a></div>
-<div class="line">Source: <a class="reference external" href="https://www.ghostery.com/en/download">https://www.ghostery.com/en/download</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/ghostery/">https://addons.mozilla.org/en-us/firefox/addon/ghostery/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/9609/addon-9609-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/9609/addon-9609-latest.xpi</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij">https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij</a></div>
-<div class="line">OperaExt: <a class="reference external" href="https://addons.opera.com/addons/extensions/details/ghostery/">https://addons.opera.com/addons/extensions/details/ghostery/</a></div>
-<div class="line">SafariExt: <a class="reference external" href="https://www.ghostery.com/safari/Ghostery.safariextz">https://www.ghostery.com/safari/Ghostery.safariextz</a></div>
-<div class="line">MSIEExt: <a class="reference external" href="https://www.ghostery.com/ie/ghostery-ie.exe">https://www.ghostery.com/ie/ghostery-ie.exe</a></div>
-<div class="line">AndroidApp: <a class="reference external" href="https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery">https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery</a></div>
-<div class="line">iOSApp: <a class="reference external" href="https://itunes.apple.com/us/app/ghostery/id472789016">https://itunes.apple.com/us/app/ghostery/id472789016</a></div>
-<div class="line">FirefoxAndroidXPI: <a class="reference external" href="https://addons.mozilla.org/android/downloads/latest/ghostery">https://addons.mozilla.org/android/downloads/latest/ghostery</a></div>
-<div class="line">FirefoxAndroidExt: <a class="reference external" href="https://addons.mozilla.org/en-US/android/addon/ghostery/">https://addons.mozilla.org/en-US/android/addon/ghostery/</a></div>
-</div>
-</div>
-<div class="section" id="https-everywhere">
-<h3>HTTPS Everywhere</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/EFForg/https-everywhere">https://github.com/EFForg/https-everywhere</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp">https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://www.eff.org/files/https-everywhere-latest.xpi">https://www.eff.org/files/https-everywhere-latest.xpi</a></div>
-<div class="line">FirefoxAndroidXPI: <a class="reference external" href="https://www.eff.org/files/https-everywhere-android.xpi">https://www.eff.org/files/https-everywhere-android.xpi</a></div>
-<div class="line">Twitter: <a class="reference external" href="https://twitter.com/HTTPSEverywhere">https://twitter.com/HTTPSEverywhere</a></div>
-</div>
-</div>
-<div class="section" id="ublock">
-<h3>uBlock</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://www.ublock.org/">https://www.ublock.org/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://www.ublock.org/faq/">https://www.ublock.org/faq/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/chrisaljoudi/ublock">https://github.com/chrisaljoudi/ublock</a></div>
-<div class="line">Download: <a class="reference external" href="https://github.com/chrisaljoudi/uBlock/releases/latest">https://github.com/chrisaljoudi/uBlock/releases/latest</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn">https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn</a></div>
-<div class="line">SafariExt: <a class="reference external" href="https://extensions.apple.com/details/?id=net.gorhill.uBlock-96G4BAKDQ9">https://extensions.apple.com/details/?id=net.gorhill.uBlock-96G4BAKDQ9</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/ublock/">https://addons.mozilla.org/en-US/firefox/addon/ublock/</a></div>
-</div>
-<pre class="code bash literal-block">
-<span class="name variable">_repo</span><span class="operator">=</span><span class="literal string double">&quot;chrisaljoudi/ublock&quot;</span>
-curl -s <span class="literal string double">&quot;https://api.github.com/repos/</span><span class="literal string interpol">${</span><span class="name variable">_repo</span><span class="literal string interpol">}</span><span class="literal string double">/releases&quot;</span> &gt; ./releases.json
-cat releases.json <span class="literal string escape">\
-</span>    <span class="punctuation">|</span> grep browser_download_url <span class="literal string escape">\
-</span>    <span class="punctuation">|</span> pyline <span class="literal string single">'w and w[1][1:-1]'</span> <span class="literal string escape">\
-</span>    <span class="punctuation">|</span> pyline --regex <span class="literal string escape">\
-</span>        <span class="literal string single">'.*download/(.*)/(uBlock.(firefox.xpi|chromium.zip))$'</span> <span class="literal string escape">\
-</span>        <span class="literal string single">'rgx and rgx.group(1,2)'</span>
-</pre>
-</div>
-</div>
-<div class="section" id="content-extensions">
-<h2>Content Extensions</h2>
-<div class="section" id="hypothesis">
-<h3>Hypothesis</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://hypothes.is/">https://hypothes.is/</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/hypothesis-web-pdf-annota/bjfhmglciegochdpefhhlphglcehbmek">https://chrome.google.com/webstore/detail/hypothesis-web-pdf-annota/bjfhmglciegochdpefhhlphglcehbmek</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/hypothesis/h">https://github.com/hypothesis/h</a></div>
-<div class="line">Twitter: <a class="reference external" href="https://twitter.com/hypothes_is">https://twitter.com/hypothes_is</a></div>
-</div>
-<p>Hypothesis can also be included as a sidebar on a site:</p>
-<pre class="code html literal-block">
-<span class="name tag">&lt;script </span><span class="name attribute">async</span> <span class="name attribute">defer</span> <span class="name attribute">src=</span><span class="literal string">&quot;//hypothes.is/embed.js&quot;</span><span class="name tag">&gt;&lt;/script&gt;</span>
-</pre>
-</div>
-<div class="section" id="pocket">
-<h3>Pocket</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://getpocket.com/">https://getpocket.com/</a></div>
-<div class="line">ChromeApp: <a class="reference external" href="https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk">https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj">https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/read-it-later/">https://addons.mozilla.org/en-US/firefox/addon/read-it-later/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/7661/addon-7661-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/7661/addon-7661-latest.xpi</a></div>
-</div>
-</div>
-<div class="section" id="zotero">
-<h3>Zotero</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://www.zotero.org/">https://www.zotero.org/</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://download.zotero.org/extension/zotero-4.0.26.4.xpi">https://download.zotero.org/extension/zotero-4.0.26.4.xpi</a></div>
-<div class="line">SafariExt: <a class="reference external" href="https://download.zotero.org/connector/safari/Zotero_Connector-4.0.21-1.safariextz">https://download.zotero.org/connector/safari/Zotero_Connector-4.0.21-1.safariextz</a></div>
-<div class="line">Download: <a class="reference external" href="https://www.zotero.org/download/">https://www.zotero.org/download/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://www.zotero.org/support/">https://www.zotero.org/support/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://www.zotero.org/support/sync">https://www.zotero.org/support/sync</a></div>
-<div class="line">Docs: <a class="reference external" href="https://www.zotero.org/support/kb/webdav_services">https://www.zotero.org/support/kb/webdav_services</a></div>
-</div>
-<p>Zotero archives and tags resources with bibliographic metadata.</p>
-<ul class="simple">
-<li>Zotero is really helpful for research.</li>
-<li>Zotero can store a full-page archive of a given resource (e.g. HTML, PDF)</li>
-<li>Zotero can store and synchronize data on Zotero's servers
-with Zotero File Storage</li>
-<li>Zotero can store and synchronize data over WebDAV</li>
-<li>Zotero can export a collection of resources' bibliographic metadata
-in one of many citation styles (&quot;CSL&quot;) (e.g. MLA, APA, [Journal XYZ])<ul>
-<li><a class="reference external" href="https://www.zotero.org/styles">https://www.zotero.org/styles</a></li>
-<li><a class="reference external" href="http://citationstyles.org/">http://citationstyles.org/</a></li>
-</ul>
-</li>
-<li>Zotero can export a collection of resources' bibliographic metadata
-as RDF</li>
-</ul>
-<div class="section" id="zotero-and-schema-org-rdfa">
-<h4>[ ] Zotero and Schema.org RDFa</h4>
-<ul class="simple">
-<li><a class="reference external" href="https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/">https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/</a></li>
-</ul>
-<p>&gt; How would I go about adding HTML + RDFa [1] and/or HTML + Microdata [2] export templates with Schema.org classes and properties to Zotero?</p>
-<ul class="simple">
-<li><a class="reference external" href="https://groups.google.com/forum/#!topic/zotero-dev/rJnMZYrhwM4">https://groups.google.com/forum/#!topic/zotero-dev/rJnMZYrhwM4</a></li>
-<li><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html">https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html</a>
-(COinS, Citeproc-js, OpenAnnotation (+1))</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="section" id="tab-extensions">
-<h2>Tab Extensions</h2>
-<div class="section" id="onetab">
-<h3>OneTab</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall">https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall</a></div>
-<div class="line">Source:</div>
-<div class="line">Homepage: <a class="reference external" href="https://www.one-tab.com/">https://www.one-tab.com/</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/onetab/">https://addons.mozilla.org/en-US/firefox/addon/onetab/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/525044/addon-525044-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/525044/addon-525044-latest.xpi</a></div>
-</div>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/Greduan/chrome-ext-tabulator">https://github.com/Greduan/chrome-ext-tabulator</a></li>
-</ul>
-</div>
-<div class="section" id="snipe">
-<h3>Snipe</h3>
-<div class="line-block">
-<div class="line">Source: <a class="reference external" href="https://github.com/josephschmitt/Snipe">https://github.com/josephschmitt/Snipe</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/snipe/glmjakogmemenallddiiajdgjfoogegl">https://chrome.google.com/webstore/detail/snipe/glmjakogmemenallddiiajdgjfoogegl</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://joe.sh/snipe">http://joe.sh/snipe</a></div>
-</div>
-</div>
-<div class="section" id="tabs-outliner">
-<h3>Tabs Outliner</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl">https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl</a></div>
-</div>
-</div>
-<div class="section" id="tree-style-tab">
-<h3>Tree Style Tab</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://piro.sakura.ne.jp/xul/_treestyletab.html.en">http://piro.sakura.ne.jp/xul/_treestyletab.html.en</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/</a></div>
-</div>
-</div>
-</div>
-<div class="section" id="development-extensions">
-<h2>Development Extensions</h2>
-<div class="section" id="firebug">
-<h3>FireBug</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://getfirebug.com/">http://getfirebug.com/</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/firebug/">https://addons.mozilla.org/en-us/firefox/addon/firebug/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/extensions/detail/bmagokdooijbeehmkpknfglimnifench">https://chrome.google.com/extensions/detail/bmagokdooijbeehmkpknfglimnifench</a></div>
-</div>
-<ul class="simple">
-<li><a class="reference external" href="https://getfirebug.com/firebuglite">https://getfirebug.com/firebuglite</a></li>
-<li><a class="reference external" href="https://getfirebug.com/wiki/index.php/Firebug_Extensions">https://getfirebug.com/wiki/index.php/Firebug_Extensions</a></li>
-</ul>
-</div>
-<div class="section" id="firelogger">
-<h3>FireLogger</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://firelogger.binaryage.com/">http://firelogger.binaryage.com/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/binaryage/firelogger">https://github.com/binaryage/firelogger</a></div>
-<div class="line">Docs: <a class="reference external" href="https://github.com/binaryage/firelogger/wiki">https://github.com/binaryage/firelogger/wiki</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/firelogger/">https://addons.mozilla.org/en-US/firefox/addon/firelogger/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/file/226289/firelogger-1.3-fx.xpi">https://addons.mozilla.org/firefox/downloads/file/226289/firelogger-1.3-fx.xpi</a></div>
-</div>
-<ul class="simple">
-<li>Python: <a class="reference external" href="https://github.com/binaryage/firelogger.py">https://github.com/binaryage/firelogger.py</a></li>
-<li>PHP: <a class="reference external" href="https://github.com/binaryage/firelogger.php">https://github.com/binaryage/firelogger.php</a></li>
-<li>ColdFusion: <a class="reference external" href="http://cffirelogger.riaforge.org/">http://cffirelogger.riaforge.org/</a></li>
-<li>Java: <a class="reference external" href="https://github.com/clescot/webappender">https://github.com/clescot/webappender</a></li>
-</ul>
-</div>
-<div class="section" id="firelogger-for-chrome">
-<h3>FireLogger for Chrome</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh">https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/MattSkala/chrome-firelogger">https://github.com/MattSkala/chrome-firelogger</a></div>
-</div>
-<p>See: <a class="reference internal" href="#firelogger">FireLogger</a></p>
-</div>
-<div class="section" id="jsonview">
-<h3>JSONView</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/gildas-lormeau/JSONView-for-Chrome">https://github.com/gildas-lormeau/JSONView-for-Chrome</a></div>
-</div>
-</div>
-<div class="section" id="postman">
-<h3>Postman</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm">https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/a85/POSTMan-Chrome-Extension">https://github.com/a85/POSTMan-Chrome-Extension</a></div>
-<div class="line">Twitter: <a class="reference external" href="https://twitter.com/postmanclient">https://twitter.com/postmanclient</a></div>
-</div>
-</div>
-<div class="section" id="react-developer-tools">
-<h3>React Developer Tools</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi</a></div>
-</div>
-</div>
-<div class="section" id="requirify">
-<h3>Requirify</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm">https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/mathisonian/requirify">https://github.com/mathisonian/requirify</a></div>
-<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/requirify">https://www.npmjs.com/package/requirify</a></div>
-</div>
-<ul class="simple">
-<li>NPM: <a class="reference external" href="https://www.npmjs.com/package/local-requirify">https://www.npmjs.com/package/local-requirify</a></li>
-</ul>
-</div>
-<div class="section" id="web-developer">
-<h3>Web Developer</h3>
-<div class="line-block">
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://chrispederick.com/work/web-developer/">http://chrispederick.com/work/web-developer/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/chrispederick/web-developer/">https://github.com/chrispederick/web-developer/</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/web-developer/">https://addons.mozilla.org/en-us/firefox/addon/web-developer/</a></div>
-<div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi</a></div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workstations.rest</tt>, line 563)</p>
-<p>Unknown directive type &quot;index&quot;.</p>
-<pre class="literal-block">
-.. index:: Vim Extensions
-</pre>
-</div>
-</div>
-</div>
-<div class="section" id="id3">
-<span id="vim-extensions"></span><h2>Vim Extensions</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workstations.rest</tt>, line 569)</p>
-<p>Unknown directive type &quot;index&quot;.</p>
-<pre class="literal-block">
-.. index:: Vimium
-</pre>
-</div>
-<div class="section" id="id4">
-<span id="vimium"></span><h3>Vimium</h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vimium">https://en.wikipedia.org/wiki/Vimium</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://vimium.github.io/">https://vimium.github.io/</a></div>
-<div class="line">Source: git <a class="reference external" href="https://github.com/philc/vimium">https://github.com/philc/vimium</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en">https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en</a></div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workstations.rest</tt>, line 580)</p>
-<p>Unknown directive type &quot;index&quot;.</p>
-<pre class="literal-block">
-.. index:: Vimperator
-</pre>
-</div>
-</div>
-<div class="section" id="id5">
-<span id="vimperator"></span><h3>Vimperator</h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vimperator">https://en.wikipedia.org/wiki/Vimperator</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://www.vimperator.org/">http://www.vimperator.org/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/vimperator/vimperator-labs">https://github.com/vimperator/vimperator-labs</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/vimperator/">https://addons.mozilla.org/en-US/firefox/addon/vimperator/</a></div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workstations.rest</tt>, line 591)</p>
-<p>Unknown directive type &quot;index&quot;.</p>
-<pre class="literal-block">
-.. index:: Wasavi
-</pre>
-</div>
-</div>
-<div class="section" id="id6">
-<span id="wasavi"></span><h3>Wasavi</h3>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://appsweets.net/wasavi/">http://appsweets.net/wasavi/</a></div>
-<div class="line">Docs: <a class="reference external" href="http://appsweets.net/wasavi/">http://appsweets.net/wasavi/</a></div>
-<div class="line">Source: <a class="reference external" href="https://github.com/akahuku/wasavi">https://github.com/akahuku/wasavi</a></div>
-<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe">https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe</a></div>
-<div class="line">OperaExt: <a class="reference external" href="https://addons.opera.com/en/extensions/details/wasavi/">https://addons.opera.com/en/extensions/details/wasavi/</a></div>
-<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/wasavi/">https://addons.mozilla.org/en-US/firefox/addon/wasavi/</a></div>
-</div>
+</blockquote>
 </div>
 </div>
 </div>
