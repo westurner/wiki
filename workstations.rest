@@ -6,17 +6,29 @@ Workstations
 Tools
 *********
 * USB 3.0 to IDE/SATA adapter (backups, recovery, migration)
-* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
+
 
 Dotfiles
 ------------
 | Docs: https://westurner.org/dotfiles/
 | Src: https://github.com/westurner/dotfiles
+| Tools: https://westurner.org/tools/#dotfiles
+
+osquery
+--------
+| Homepage: https://osquery.io/
+| Src: https://github.com/facebook/osquery 
+| Docs: https://osquery.io/docs/tables/
+| Tools: https://westurner.org/tools/#osquery
+
+
+* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
 
 Salt
 ------
 | Docs: http://docs.saltstack.com/en/latest/
 | Src: https://github.com/saltstack/salt
+| Tools: https://westurner.org/tools/#salt
 
 .. code:: bash
 
@@ -26,119 +38,32 @@ Salt
 
 OS
 ***
+| Tools: https://westurner.org/tools/#operating-systems
 
 Windows
---------
-* [ ] Install Chocolatey NuGet package manager: http://chocolatey.org
-* [ ] Install packages listed here: https://gist.github.com/westurner/10950476
-
-  * [ ] (Optional) uncomment salt first (optionally specify master) [OR Install salt]
-
-* [ ] Install salt: http://docs.saltstack.com/en/latest/topics/installation/windows.html
-
-* ``<Win>+R`` (Start > Run)
-* [ ] Run ``services.msc`` and log/prune unutilized services (e.g. workstation, server)
-
-  * https://en.wikipedia.org/wiki/Windows_service
-
-Dual Boot
-~~~~~~~~~~~
-* [ ] Windows MBR chainloads to parition GRUB (`Linux`_)
-* [ ] Ubuntu WUBI .exe Linux Installer (XP, 7, 8*)
-
-  * It's now better to install to a separate partition from a bootable ISO
-
-UEFI
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface
-
-* https://help.ubuntu.com/community/UEFI
-
+---------
+| Tools: https://westurner.org/tools/#windows-notes
 
 OSX
 ----
-
-* https://github.com/westurner/dotfiles/blob/master/scripts/ ``setup_*.sh``
-
-  * [ ] Manually updae to latest versions (of zip, tar.gz, .dmg)
-  * [ ] Port to salt formulas
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_brew.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_mavericks_python.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_chrome.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_chromium.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_firefox.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_adobereader.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_vlc.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_f.lux.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_powerline_fonts.sh
-  * https://github.com/westurner/dotfiles/blob/master/scripts/setup_macvim.sh
-  * [ ] Miniconda #dotfiles (setup_miniconda.sh?)
-
-* https://github.com/westurner/provis
-
-  * [ ] https://github.com/westurner/provis/compare/feature/osx_support
-
-    * [ ] create / remap "root" group
-  * [ ] http://docs.saltstack.com/en/latest/topics/installation/osx.html
-
-
-    ``brew install saltstack`` OR ``pip install salt``
-
-
-Reinstall
-~~~~~~~~~~
-* [ ] Generate installation media
-* [ ] Reboot to recovery partition
-* [ ] Adjust partitions
-* [ ] Format?
-* [ ] Install OS
-* [ ] (wait)
-* [ ] Manual time/date/language config
-* [ ] Run workstation provis scripts
-
-Fresh Install
-~~~~~~~~~~~~~~
-* [ ] Generate / obtain installation media
-* [ ] Boot from installation media
-* [ ] Manual time/date/language config
-* [ ] Run workstation provis scripts
-
-
-Dual Boot
-~~~~~~~~~~
-
-* http://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/
-* http://www.rodsbooks.com/refind/installing.html#osx
-
+| Tools: https://westurner.org/tools/#osx-notes
 
 iOS
------
+----
+| Tools: https://westurner.org/tools/#ios-notes
 
 Linux
 -------
-* https://github.com/westurner/provis
-  
-  * https://github.com/saltstack/salt-bootstrap
-    
-    curl -L https://bootstrap.saltstack.com scripts/bootstrap-salt.sh
-
-  * Masterless Salt Config: ``make salt_local_highstate_test``
-
-    * [ ] Workstation role
-
-Dual Boot
-~~~~~~~~~~
-* [ ] GRUB chainloader to partition boot record
-
-  * Ubuntu and Fedora GRUB try to autodiscover Windows partitions
-
+| Tools: https://westurner.org/tools/#linux-notes
 
 Android
 ---------
+| Tools: https://westurner.org/tools/#android-notes
+
 
 Wandroid
 ~~~~~~~~~
-* https://bitbucket.org/westurner/wandroid/
+| Src: https://bitbucket.org/westurner/wandroid
 
   * https://bitbucket.org/westurner/wandroid/src/tip/setup.py
     (scripts, console_scripts entry_points)
@@ -168,434 +93,3 @@ Wandroid
   * [ ] ``cat scripts/postactivate >> $_BIN/postactivate # for virtualenvwrapper``
 
 
-Browsers
-**********
-
-Chrome
--------
-
-Chrome DevTools
-~~~~~~~~~~~~~~~~
-| Homepage: https://developer.chrome.com/devtools
-| Docs: https://developer.chrome.com/devtools
-
-* Right-click > "Inspect Element"
-* OSX: ``<option>`` + ``<command>`` + ``i``
- 
-
-Chrome Extensions
-~~~~~~~~~~~~~~~~~~~
-
-**Accessibility**
-
-* `Accessibility Developer Tools`_
-* `ChromeVox`_
-* `Deluminate`_
-* `High Contrast`_
-* `Spectrum`_
-* `Stylish`_
-
-
-**Safety**
-
-* `Ghostery`_
-* `HTTPS Everywhere`_
-* `uBlock`_
-
-**Content**
-
-* `Hypothesis`_
-* `Pocket`_
-
-**Tab**
-
-* `OneTab`_
-* `Snipe`_
-* `Tabs Outliner`_
-
-**Development**
-
-* `FireBug`_ (see: `Chrome DevTools`_)
-* `FireLogger for Chrome`_
-* `JSONView`_
-* `Postman`_
-* `React Developer Tools`_
-* `Requirify`_
-* `Web Developer`_
-
-**Vim**
-
-* `Vimium`_
-* `Wasavi`_
-
-pbm
-~~~~
-| Source: https://github.com/westurner/pbm
-
-* Bookmarks JSON backup and organize (offline batch)
-* date-based transforms
-* quicklinks
-* starred bookmarks (with trailing ``##``)
-
-
-Chrome Mobile
----------------
-**Extensions**
-
-Mobile Chrome does not support extensions.
-
-**Tools**
-
-* `Wandroid`_
-
-  + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/config.py
-  + https://bitbucket.org/westurner/wandroid/src/tip/wandroid/apps/chrome/userdata.py
-
-Firefox
---------
-
-Firefox Extensions
-~~~~~~~~~~~~~~~~~~~
-**Accessibility**
-
-* `Stylish`_
-
-**Safety**
-
-* `Ghostery`_
-* `HTTPS Everywhere`_
-* `uBlock`_
-
-**Tabs**
-
-* `OneTab`_
-* `Tree Style Tab`_
-
-**Development**
-
-* `FireBug`_
-* `FireLogger`_
-* `Web Developer`_
-
-**Vim**
-
-* `Vimperator`_
-* `Wasavi`_
-
-Firefox Android
-----------------
-
-Firefox Android Extensions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* `Ghostery`_
-* `HTTPS Everywhere`_
-
-
-Safari
--------
-
-Safari Extensions
-~~~~~~~~~~~~~~~~~~~
-**Safety**
-
-* `Ghostery`_
-* `uBlock`_
-
-
-Safari iOS
----------------
-
-
-Browser Extensions
-********************
-
-Accessibility Extensions
---------------------------
-
-* Google Chrome Accesibility Extensions:
-  https://chrome.google.com/webstore/category/ext/22-accessibility?hl=en
-* Mozilla Firefox Accesibility Extensions: 
-  `<https://addons.mozilla.org/en-US/firefox/search/?q=accessibility>`__
-
-Accessibility Developer Tools
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb
-
-ChromeVox
-~~~~~~~~~~
-| Homepage: http://www.chromevox.com/
-| ChromeExt: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn
-
-Deluminate
-~~~~~~~~~~~
-| Homepage: https://deluminate.github.io/
-| Source: https://github.com/abstiles/deluminate
-| ChromeExt: https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa
-
-
-High Contrast
-~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph
-
-
-Spectrum
-~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb
-| Source: https://github.com/lvivski/spectrum
-
-Stylish
-~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
-| Docs: https://userstyles.org/help/stylish_chrome
-| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/stylish/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/2108/addon-2108-latest.xpi
-| Docs: https://userstyles.org/help/stylish_firefox
-
-* https://userstyles.org/
-
-Safety Extensions
--------------------
-
-Ghostery
-~~~~~~~~~~
-| Homepage: https://www.ghostery.com/en/home
-| Source: https://www.ghostery.com/en/download
-| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/ghostery/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/9609/addon-9609-latest.xpi
-| ChromeExt: https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij
-| OperaExt: https://addons.opera.com/addons/extensions/details/ghostery/
-| SafariExt: https://www.ghostery.com/safari/Ghostery.safariextz
-| MSIEExt: https://www.ghostery.com/ie/ghostery-ie.exe
-| AndroidApp: https://play.google.com/store/apps/details?id=com.ghostery.android.ghostery
-| iOSApp: https://itunes.apple.com/us/app/ghostery/id472789016
-| FirefoxAndroidXPI: https://addons.mozilla.org/android/downloads/latest/ghostery
-| FirefoxAndroidExt: https://addons.mozilla.org/en-US/android/addon/ghostery/ 
-
-HTTPS Everywhere
-~~~~~~~~~~~~~~~~~
-| Homepage: https://www.eff.org/https-everywhere
-| Source: https://github.com/EFForg/https-everywhere
-| ChromeExt: https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp
-| FirefoxXPI: https://www.eff.org/files/https-everywhere-latest.xpi
-| FirefoxAndroidXPI: https://www.eff.org/files/https-everywhere-android.xpi
-| Twitter: https://twitter.com/HTTPSEverywhere
-
-uBlock
-~~~~~~~~
-| Homepage: https://www.ublock.org/
-| Docs: https://www.ublock.org/faq/
-| Source: https://github.com/chrisaljoudi/ublock
-| Download: https://github.com/chrisaljoudi/uBlock/releases/latest
-| ChromeExt: https://chrome.google.com/webstore/detail/ublock/epcnnfbjfcgphgdmggkamkmgojdagdnn
-| SafariExt: https://extensions.apple.com/details/?id=net.gorhill.uBlock-96G4BAKDQ9
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/ublock/
-
-.. code:: bash
-
-   _repo="chrisaljoudi/ublock"
-   curl -s "https://api.github.com/repos/${_repo}/releases" > ./releases.json
-   cat releases.json \
-       | grep browser_download_url \
-       | pyline 'w and w[1][1:-1]' \
-       | pyline --regex \
-           '.*download/(.*)/(uBlock.(firefox.xpi|chromium.zip))$' \
-           'rgx and rgx.group(1,2)'
-
-Content Extensions
---------------------
-
-Hypothesis
-~~~~~~~~~~~
-| Homepage: https://hypothes.is/
-| ChromeExt: https://chrome.google.com/webstore/detail/hypothesis-web-pdf-annota/bjfhmglciegochdpefhhlphglcehbmek
-| Source: https://github.com/hypothesis/h
-| Twitter: https://twitter.com/hypothes_is
-
-Hypothesis can also be included as a sidebar on a site:
-
-.. code:: html
-
-   <script async defer src="//hypothes.is/embed.js"></script>
-
-Pocket
-~~~~~~~
-| Homepage: https://getpocket.com/
-| ChromeApp: https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk
-| ChromeExt: https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/read-it-later/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/7661/addon-7661-latest.xpi
-
-
-Zotero
-~~~~~~~~
-| Homepage: https://www.zotero.org/
-| ChromeExt: https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc
-| FirefoxXPI: https://download.zotero.org/extension/zotero-4.0.26.4.xpi
-| SafariExt: https://download.zotero.org/connector/safari/Zotero_Connector-4.0.21-1.safariextz
-| Download: https://www.zotero.org/download/
-| Docs: https://www.zotero.org/support/
-| Docs: https://www.zotero.org/support/sync
-| Docs: https://www.zotero.org/support/kb/webdav_services
-
-Zotero archives and tags resources with bibliographic metadata.
-
-* Zotero is really helpful for research.
-* Zotero can store a full-page archive of a given resource (e.g. HTML, PDF)
-* Zotero can store and synchronize data on Zotero's servers
-  with Zotero File Storage
-* Zotero can store and synchronize data over WebDAV
-* Zotero can export a collection of resources' bibliographic metadata
-  in one of many citation styles ("CSL") (e.g. MLA, APA, [Journal XYZ])
-
-  * https://www.zotero.org/styles
-  * http://citationstyles.org/
-
-* Zotero can export a collection of resources' bibliographic metadata
-  as RDF
-
--------------------------------
-[ ] Zotero and Schema.org RDFa
--------------------------------
-* https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/
-
-> How would I go about adding HTML + RDFa [1] and/or HTML + Microdata [2] export templates with Schema.org classes and properties to Zotero?
-
-* https://groups.google.com/forum/#!topic/zotero-dev/rJnMZYrhwM4
-* https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html
-  (COinS, Citeproc-js, OpenAnnotation (+1))
-
-Tab Extensions
-----------------
-
-OneTab
-~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
-| Source: 
-| Homepage: https://www.one-tab.com/
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/onetab/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/525044/addon-525044-latest.xpi
-
-* https://github.com/Greduan/chrome-ext-tabulator
-
-Snipe
-~~~~~~~
-| Source: https://github.com/josephschmitt/Snipe
-| ChromeExt: https://chrome.google.com/webstore/detail/snipe/glmjakogmemenallddiiajdgjfoogegl
-| Homepage: http://joe.sh/snipe
-
-Tabs Outliner
-~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl
-
-Tree Style Tab
-~~~~~~~~~~~~~~~
-| Homepage: http://piro.sakura.ne.jp/xul/_treestyletab.html.en
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/
-
-
-Development Extensions
--------------------------
-
-FireBug
-~~~~~~~~~
-| Homepage: http://getfirebug.com/
-| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/firebug/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi
-| ChromeExt: https://chrome.google.com/extensions/detail/bmagokdooijbeehmkpknfglimnifench
-
-* https://getfirebug.com/firebuglite
-* https://getfirebug.com/wiki/index.php/Firebug_Extensions
-
-FireLogger
-~~~~~~~~~~~~
-| Homepage: http://firelogger.binaryage.com/
-| Source: https://github.com/binaryage/firelogger
-| Docs: https://github.com/binaryage/firelogger/wiki
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/firelogger/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/file/226289/firelogger-1.3-fx.xpi
-
-* Python: https://github.com/binaryage/firelogger.py
-* PHP: https://github.com/binaryage/firelogger.php
-* ColdFusion: http://cffirelogger.riaforge.org/
-* Java: https://github.com/clescot/webappender
-
-FireLogger for Chrome
-~~~~~~~~~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh
-| Source: https://github.com/MattSkala/chrome-firelogger
-
-See: `FireLogger`_
-
-JSONView
-~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc
-| Source: https://github.com/gildas-lormeau/JSONView-for-Chrome
-
-
-Postman
-~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm
-| Source: https://github.com/a85/POSTMan-Chrome-Extension
-| Twitter: https://twitter.com/postmanclient
-
-React Developer Tools
-~~~~~~~~~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
-
-
-Requirify
-~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm
-| Source: https://github.com/mathisonian/requirify
-| NPM: https://www.npmjs.com/package/requirify
-
-* NPM: https://www.npmjs.com/package/local-requirify
-
-Web Developer
-~~~~~~~~~~~~~~
-| ChromeExt: https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm
-| Homepage: http://chrispederick.com/work/web-developer/
-| Source: https://github.com/chrispederick/web-developer/
-| FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/web-developer/
-| FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi
-
-
-.. index:: Vim Extensions
-.. _vim-extensions:
-
-Vim Extensions
-----------------
-
-.. index:: Vimium
-.. _vimium:
-
-Vimium
-~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Vimium
-| Homepage: https://vimium.github.io/
-| Source: git https://github.com/philc/vimium
-| ChromeExt: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
-
-
-.. index:: Vimperator
-.. _vimperator:
-
-Vimperator
-~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Vimperator
-| Homepage: http://www.vimperator.org/
-| Source: https://github.com/vimperator/vimperator-labs
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/vimperator/
-
-
-.. index:: Wasavi
-.. _wasavi:
-
-Wasavi
-~~~~~~~
-| Homepage: http://appsweets.net/wasavi/
-| Docs: http://appsweets.net/wasavi/
-| Source: https://github.com/akahuku/wasavi
-| ChromeExt: https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe
-| OperaExt: https://addons.opera.com/en/extensions/details/wasavi/
-| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/wasavi/
