@@ -10,6 +10,15 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
   - `GitHub <https://github.com/westurner/wiki/wiki/github>`_
   - `BitBucket <https://github.com/westurner/wiki/wiki/bitbucket>`_
 
+- `Tools <https://github.com/westurner/wiki/wiki/tools>`__
+
+  - `awesome-python-testing
+    <https://github.com/westurner/wiki/wiki/awesome-python-testing>`__
+  - `workstations
+    <https://github.com/westurner/wiki/wiki/workstations>`__
+
+- `Ideas <https://github.com/westurner/wiki/wiki/ideas>`__
+
 ******
 
 | `github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`_
