@@ -58,22 +58,21 @@ function navbar_scrollto(node) {
     }
 }
 function navbar_update(nodeurl) {
-    var navbar = $('#sidebar-wrapper').find('div.sidebar').first()[0];
-    $(navbar).find('a.youarehere').removeClass('youarehere');
-
     var content = $('#content-wrapper');
+    var navbar = $('#sidebar-wrapper').find('div.sidebar').first()[0];
     ($(content)
         .find('a.headerlink.youarehere')
         .removeClass('youarehere')
         .text('¶')
     );
+    $(navbar).find('a.youarehere').removeClass('youarehere');
     if (nodeurl) {
-        var navbarlink = $(navbar).find('a[href="' + nodeurl + '"]');
         ($(content)
-            .find('a[href="' + nodeurl + '"]')
+            .find('a.headerlink[href="' + nodeurl + '"]')
             .addClass('youarehere')
             .text('⬅')
         );
+        var navbarlink = $(navbar).find('a[href="' + nodeurl + '"]');
         if (navbarlink) {
             navbarlink.addClass('youarehere');
             navbar_scrollto(navbarlink); // # navbar a.youarehere
