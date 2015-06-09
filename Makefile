@@ -263,11 +263,14 @@ localjs:
 	echo '' > $(LOCALJS)
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
-	cat $(STATIC)/js/affix-sidenav.js >> $(LOCALJS)
+	cat $(STATIC)/js/sidenav-affix.js >> $(LOCALJS)
+	cat $(STATIC)/js/jquery.scrollTo.min.js >> $(LOCALJS)
+	cat $(STATIC)/js/sidenav-scrollto.js >> $(LOCALJS)
 
 localcss:
 	echo '' > $(LOCALCSS)
 	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	cat $(STATIC)/css/sidenav-scrollto.css >> $(LOCALCSS)
 	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
 	cat $(STATIC)/css/wiki.css >> $(LOCALCSS)
 
