@@ -30,6 +30,10 @@ function navbar_update(nodeurl) {
         .removeClass('youarehere')
         .text('¶')
     );
+    ($('#navbar-top')
+        .find('a.reference.internal')
+        .removeClass('youarehere')
+    );
     $(navbar).find('a.youarehere').removeClass('youarehere');
     if (nodeurl) {
         ($(content)
@@ -37,7 +41,14 @@ function navbar_update(nodeurl) {
             .addClass('youarehere')
             .text('⬅')
         );
+
+        ($('#navbar-top')
+            .find('a.reference.internal[href="' + nodeurl + '"]')
+            .addClass('youarehere')
+        );
+
         var navbarlink = $(navbar).find('a[href="' + nodeurl + '"]');
+
         if (navbarlink) {
             navbarlink.addClass('youarehere');
             navbar_scrollto(navbarlink); // # navbar a.youarehere
