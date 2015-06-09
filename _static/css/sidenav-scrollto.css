@@ -8,6 +8,12 @@
     visibility: visible !important;
 }
 
+#navbar-top a.youarehere {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+
 /* #content-wrapper a.youarehere:after {
  *    content: "⬅"
  * }
