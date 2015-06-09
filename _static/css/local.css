@@ -78,6 +78,20 @@ footer {
 }
 
 
+#sidebar-wrapper a.youarehere {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#content-wrapper a.youarehere {
+    visibility: visible !important;
+}
+
+/* #content-wrapper a.youarehere:after {
+ *    content: "⬅"
+ * }
+ */
+
 /* leftnavbar.css */
 @media (min-width: 767px) {
     #content-wrapper, div.footer-relbar, footer {
