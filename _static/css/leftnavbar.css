@@ -7,16 +7,9 @@
         width: 75%;
     }
 
-
     ul.navbar-nav.navbar-right {
         position: fixed;
         right: 24px;
         z-index: 1000;
     }
-}
-
-
-button.navbar-toggle {
-    z-index: 1000;
-    background-color: #f0f0f0;
 }
