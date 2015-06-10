@@ -81,7 +81,7 @@ function navbar__remap_sphinx_toc_links() {
 }
 
 function navbar__add_top_button() {
-    ($('<button type="button" class="toplink navbar-toggle"><a href="#" title="Top"><span class="glyphicon glyphicon-chevron-up">^</span></a></button>')
+    ($('<button type="button" class="toplink navbar-toggle"><a href="#" title="Top"><span>^</span></a></button>')
      .appendTo('body'));
 }
 
