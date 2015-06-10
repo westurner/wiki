@@ -1190,6 +1190,7 @@ TaskWarrior
 | Wikipedia: https://en.wikipedia.org/wiki/Taskwarrior
 | Homepage: http://taskwarrior.org/
 | Src: https://git.tasktools.org/scm/tm/task.git
+| Docs: http://taskwarrior.org/docs/
 
 TaskWarrior is a task management tool written in C with lots of plugins
 written in other languages.
