@@ -1,3 +1,5 @@
+
+
 "use strict";
 
 function navbar_scrollto(node) {
@@ -15,7 +17,12 @@ function navbar_scrollto(node) {
         }
         if (do_scroll) {
             // console.log("scrollTo", node);
-            $(sidebar).scrollTo($(node));
+            if (!($(node).isOnScreen())) {
+                $(sidebar).scrollTo($(node), {
+                    axis: 'y',
+                    offset: { top: -100 }
+                });
+            }
         }
     } else {
         console.log('sidebar is', sidebar);
@@ -62,11 +69,30 @@ function navbar_update(nodeurl) {
     }
 }
 
+function navbar__remap_sphinx_toc_links() {
+    var content = $('#content-wrapper');
+    ($(content)
+        .find('a.headerlink')
+        .map(function(node) {
+            console.log(node);
+            $(node.previousSibling).attr('href', $(node).attr('href'));
+        })
+    );
+}
+
+function navbar__add_top_button() {
+    ($('<button type="button" class="toplink navbar-toggle"><span><a href="#">Top</a></span></button>')
+     .appendTo('body'));
+}
+
 function navbar_init() {
     // require('jquery.scrollto')
     //var scriptstr = '<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>';
     //$(scriptstr).appendTo("head");
     navbar_update(window.location.hash);
+
+    navbar__remap_sphinx_toc_links();
+    navbar__add_top_button();
 
     window.onhashchange = function(e) {
         // console.log(e); // e.newURL , e.oldURL

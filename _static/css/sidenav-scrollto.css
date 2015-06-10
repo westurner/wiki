@@ -1,20 +1,27 @@
 
-#sidebar-wrapper a.youarehere {
-    font-size: 1.4em;
+#sidebar-wrapper a.youarehere,
+#navbar-top a.youarehere {
+    font-size: 1.2em;
     font-weight: bold;
+    /* text-decoration: underline; */
 }
 
 #content-wrapper a.youarehere {
     visibility: visible !important;
 }
 
-#navbar-top a.youarehere {
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 1.4em;
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 6px;
+    }
 }
 
-/* #content-wrapper a.youarehere:after {
- *    content: "⬅"
- * }
- */
+@media (max-width: 768px) {
+    button.toplink {
+        position: fixed;
+        right: 1px;
+        top: 0;
+        padding: 6px !important;
+        z-index: 900 !important;
+    }
+}
