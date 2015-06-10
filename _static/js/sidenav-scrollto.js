@@ -74,7 +74,7 @@ function navbar__remap_sphinx_toc_links() {
     ($(content)
         .find('a.headerlink')
         .map(function(i, node) {
-            console.log(i, node);
+            // console.log(i, node);
             $(node.previousSibling).attr('href', $(node).attr('href'));
         })
     );
