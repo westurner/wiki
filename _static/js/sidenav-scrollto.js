@@ -73,8 +73,8 @@ function navbar__remap_sphinx_toc_links() {
     var content = $('#content-wrapper');
     ($(content)
         .find('a.headerlink')
-        .map(function(node) {
-            console.log(node);
+        .map(function(i, node) {
+            console.log(i, node);
             $(node.previousSibling).attr('href', $(node).attr('href'));
         })
     );

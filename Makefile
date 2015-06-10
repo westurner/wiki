@@ -264,7 +264,8 @@ localjs:
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
 	cat $(STATIC)/js/sidenav-affix.js >> $(LOCALJS)
-	cat $(STATIC)/js/jquery.scrollTo.min.js >> $(LOCALJS)
+	cat $(STATIC)/js/jquery.scrollTo.js >> $(LOCALJS)
+	cat $(STATIC)/js/jquery.isonscreen.js >> $(LOCALJS)
 	cat $(STATIC)/js/sidenav-scrollto.js >> $(LOCALJS)
 
 localcss:
