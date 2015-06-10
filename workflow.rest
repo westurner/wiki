@@ -1191,6 +1191,7 @@ TaskWarrior
 | Homepage: http://taskwarrior.org/
 | Src: https://git.tasktools.org/scm/tm/task.git
 | Docs: http://taskwarrior.org/docs/
+| Standard: http://taskwarrior.org/docs/design/task.html
 
 TaskWarrior is a task management tool written in C with lots of plugins
 written in other languages.
@@ -1198,7 +1199,8 @@ written in other languages.
 TaskWarrior comes with an awesome commandline interface for adding,
 updating, and reporting on tasks, their statuses, and their priorities.
 
-There are plugins to host and synchronize TaskWarrior task databases.
+There are plugins to host and synchronize TaskWarrior task databases
+(with TaskWarrior JSON: http://taskwarrior.org/docs/design/task.html).
 
 
 Best Practices
