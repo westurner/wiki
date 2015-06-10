@@ -23,5 +23,6 @@
         top: 0;
         padding: 6px !important;
         z-index: 900 !important;
+        opacity: 0.3;
     }
 }
