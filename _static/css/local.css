@@ -18,12 +18,8 @@ button.navbar-toggle {
     padding-top: 4px;
 }
 
-div.document ul,
 div.sidebar ul ul{
     padding-left: 12px;
-}
-
-div.sidebar ul ul {
     list-style-type: none;
 }
 
@@ -68,6 +64,10 @@ div.body h1 {
 
 body {
     background: #f8f8f8;
+}
+
+div.document ul {
+    padding-left: 18px;
 }
 
 div.footer-relbar {
