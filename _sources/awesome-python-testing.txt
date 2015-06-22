@@ -185,6 +185,66 @@ Logging
 * http://pythonhosted.org/Logbook/features.html
 * https://structlog.readthedocs.org/en/latest/
 
+Python Logging Primer
+-----------------------
+A primer on `Python`_ logging (and testing):
+
+.. code:: python
+
+    #### Logging examples
+
+    # test setup (fixtures)
+    x = 2
+    data = {'x': x}
+
+    # asserts get compiled out with python -O2
+    assert x == 2
+
+    # these always run
+    class TestTwo(unittest.TestCase):
+        def test_001_x_equals_2(self):
+            self.assertEqual(self, x, 2)
+    unittest.main()
+
+    if x != 2:
+        ### Exceptions
+        err = ('...', x)
+        raise Exception(err)
+        raise ValueError(err)
+
+        ### Logging
+        import logging
+        log = logging                       # global logger
+        log = __import__('logging')         # global logger
+        log = logging.getLogger(__name__)   # local logger (<__name__>.py)
+        log.debug(err)
+        log.info(err)
+        log.error(err)
+        log.exception(err)
+        log.critical(err)
+        log.fatal(err)
+        # see: supervisor.loggers.LevelsByName and .LevelsByDescription
+        TRAC = LevelsByName.TRAC = 5
+        BLAT = LevelsByName.BLAT = 3
+        log.log(err, TRAC)
+        logging.addLevelName(TRAC, 'TRAC')
+        logging.addLevelName(BLAT, 'BLAT')
+        log.setLevel(TRAC)
+        log.log(err, BLAT)  # not printed because msg.level < log.level
+
+    # run unittest.main() when run like:
+    #   python ./filename.py
+    # but not when imported like:
+    #   import filename
+    if __name__ == "__main__":
+        import sys
+        sys.exit(unittest.main())
+
+See also:
+
+* http://learnxinyminutes.com/docs/python
+* https://westurner.org/tools/#python
+
 
 Test-Driven Development (TDD)
 ================================
@@ -621,9 +681,8 @@ Splinter
 .. epigraph::
 
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
-  zopetestbrowser, remote webdriver)
-
-  *  css and xpath selectors *
+    zopetestbrowser, remote webdriver)
+  * css and xpath selectors \*
 
 
 Selenium

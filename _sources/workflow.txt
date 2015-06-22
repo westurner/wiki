@@ -696,13 +696,14 @@ Wikis
 -----
 A wiki is a set of documents and attachments
 that can be edited through the web,
-usually with some form of `Lightweight Markup Language`_.
+usually with some form of `Lightweight Markup Language`
+and WikiText linking extensions.
 
-* `GitHub Wiki`_
-* BitBucket Wiki
-* Trac Wiki
-* MediaWiki (Wikipedia)
-* MoinMoin (wiki.python.org)
+* `GitHub Wiki`_ (Markdown, ReStructuredText)
+* BitBucket Wiki (Markdown)
+* Trac Wiki (Trac Wiki, ReStructuredText)
+* wiki.python.org (MoinMoin)
+* Wikipedia (Mediawiki)
 
 Wikis are good for:
 
@@ -710,6 +711,7 @@ Wikis are good for:
   * Roadmaps, Todo lists
 
 * Pandoc converts (sometimes lossily) between many wiki markup syntaxes
+
 
 GitHub Wiki
 ~~~~~~~~~~~~
