@@ -187,7 +187,7 @@ Logging
 
 Python Logging Primer
 -----------------------
-A primer on :ref:`Python` logging (and testing):
+A primer on `Python`_ logging (and testing):
 
 .. code:: python
 
@@ -681,9 +681,8 @@ Splinter
 .. epigraph::
 
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
-  zopetestbrowser, remote webdriver)
-
-  *  css and xpath selectors *
+    zopetestbrowser, remote webdriver)
+  * css and xpath selectors \*
 
 
 Selenium
