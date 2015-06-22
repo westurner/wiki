@@ -168,6 +168,11 @@ vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
 
+web.sh
+---------------
+| PyPI: https://pypi.python.org/pypi/web.sh
+| Src: https://github.com/westurner/web.sh
+
 workhours
 ---------------
 | Src: https://github.com/westurner/workhours
