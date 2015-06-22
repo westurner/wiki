@@ -249,6 +249,14 @@ salt-formula
 - [x] *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
 
 
+sarge
+------------
+| Src: https://bitbucket.org/vinay.sajip/sarge/pull-request/1/enh-add-call-check_call-check_output/diff
+
+* [ ] *ENH: Add call, check_call, check_output, CalledProcessError, expected_returncode (#26)*
+
+  https://bitbucket.org/vinay.sajip/sarge/pull-request/1/enh-add-call-check_call-check_output/diff
+
 seaborn
 ------------
 | Src: https://github.com/mwaskom/seaborn
