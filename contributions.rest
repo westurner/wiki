@@ -251,7 +251,7 @@ salt-formula
 
 sarge
 ------------
-| Src: https://bitbucket.org/vinay.sajip/sarge/pull-request/1/enh-add-call-check_call-check_output/diff
+| Src: https://bitbucket.org/vinay.sajip
 
 * [ ] *ENH: Add call, check_call, check_output, CalledProcessError, expected_returncode (#26)*
 
