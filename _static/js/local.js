@@ -313,6 +313,19 @@ function navbar_scrollto(node) {
     }
 }
 function navbar_update(nodeurl) {
+
+    console.log('navbar_update', nodeurl);
+
+    if (nodeurl.match('^#index-[0-9]+')) {
+        return;
+    }
+    var __node = $(nodeurl).first();
+    if (!(__node)) {
+        console.log('navbar_update: nodeurl not found', nodeurl)
+        return
+    } else {
+        console.log('node', __node);
+    }
     var content = $('#content-wrapper');
     var navbar = $('#sidebar-wrapper').find('div.sidebar').first()[0];
     ($(content)
@@ -324,7 +337,10 @@ function navbar_update(nodeurl) {
         .find('a.reference.internal')
         .removeClass('youarehere')
     );
-    $(navbar).find('a.youarehere').removeClass('youarehere');
+    ($(navbar)
+        .find('a.youarehere')
+        .removeClass('youarehere')
+    );
     if (nodeurl) {
         ($(content)
             .find('a.headerlink[href="' + nodeurl + '"]')
@@ -341,7 +357,14 @@ function navbar_update(nodeurl) {
 
         if (navbarlink) {
             navbarlink.addClass('youarehere');
-            navbar_scrollto(navbarlink); // # navbar a.youarehere
+            console.log(navbarlink);
+            try {
+                navbar_scrollto(navbarlink.first()); // # navbar a.youarehere
+            } catch(e) {
+               
+                console.log('navbar_scrollto(navbarlink.first()): err');
+                console.log(e);
+            }
         } else {
             console.log("nodeurl not found");
             console.log(nodeurl);
@@ -389,3 +412,4 @@ function navbar_init() {
 
 
 $(document).ready(navbar_init);
+
