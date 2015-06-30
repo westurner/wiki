@@ -178,9 +178,9 @@ pypi
 
 richard
 +++++++++
-| Src: https://github.com/willkg/richard/
+| Src: https://github.com/pyvideo/richard
 
-- [x] *Add Schema.org VideoObject RDFa metadata* https://github.com/willkg/richard/pull/213
+- [x] *Add Schema.org VideoObject RDFa metadata* https://github.com/pyvideo/richard/pull/213
 
 warehouse
 +++++++++++
