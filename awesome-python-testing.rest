@@ -295,11 +295,11 @@ testtools
 
 | Src: git https://github.com/testing-cabal/testtools
 | PyPI: https://pypi.python.org/pypi/testtools
-| Docs: https://westurner.org/testtools/ (temp docs)
-
-* https://westurner.org/testtools/for-test-authors.html#assertions
-* https://westurner.org/testtools/for-test-authors.html#matchers
-* https://westurner.org/testtools/for-test-authors.html#running-your-tests
+| Docs: https://testing-cabal.github.io/testtools/
+| Docs: https://testtools.readthedocs.org/en/latest/
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#assertions
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#matchers
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#running-your-tests
 
 
 GUI Test Runners
