@@ -1,3 +1,6 @@
+.. image:: https://badge.waffle.io/westurner/wiki.png?label=ready&title=Ready 
+ :target: https://waffle.io/westurner/wiki
+ :alt: 'Stories in Ready'
 
 Welcome to `<https://github.com/westurner/wiki/wiki>`_
 
