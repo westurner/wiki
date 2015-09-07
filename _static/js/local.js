@@ -316,6 +316,9 @@ function navbar_update(nodeurl) {
 
     console.log('navbar_update', nodeurl);
 
+    if (!nodeurl) {
+        return;
+    }
     if (nodeurl.match('^#index-[0-9]+')) {
         return;
     }
@@ -329,12 +332,12 @@ function navbar_update(nodeurl) {
     var content = $('#content-wrapper');
     var navbar = $('#sidebar-wrapper').find('div.sidebar').first()[0];
     ($(content)
-        .find('a.headerlink.youarehere')
+        .find('a.youarehere.headerlink')
         .removeClass('youarehere')
         .text('¶')
     );
     ($('#navbar-top')
-        .find('a.reference.internal')
+        .find('a.youarehere.reference.internal')
         .removeClass('youarehere')
     );
     ($(navbar)
@@ -408,6 +411,17 @@ function navbar_init() {
             navbar_update(loc_hash_url);
         };
     };
+
+
+    var content = $('#content-wrapper');
+    ($(content)
+        .find('a.headerlink')
+        .on("click",
+            function (event) {
+                navbar_update(event.target.hash)
+            }
+        )
+    );
 }
 
 
