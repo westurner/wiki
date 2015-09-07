@@ -31,6 +31,11 @@ https://github.com/westurner/wiki/wiki/awesome-python-testing (Markdown wiki)
 
 https://github.com/westurner/pyleset/issues/12 (Markdown comment)
 
+* https://github.com/westurner/pyleset/blob/57140bcef5/setup.py
+
+  * Requirement
+  * RequirementsMap
+
 https://text.allmende.io/p/rdfjs ## Tools Schema
 
 
