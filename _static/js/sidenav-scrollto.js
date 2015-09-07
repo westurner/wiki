@@ -51,7 +51,7 @@ function navbar_update(nodeurl) {
         .text('¶')
     );
     ($('#navbar-top')
-        .find('a.reference.internal')
+        .find('a.reference.internal.youarehere')
         .removeClass('youarehere')
     );
     ($(navbar)
