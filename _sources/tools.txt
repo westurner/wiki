@@ -29,13 +29,13 @@ https://github.com/westurner/westurner.github.io/issues/2 (RDF tools Ontology)
 
 https://github.com/westurner/wiki/wiki/awesome-python-testing (Markdown wiki)
 
-https://github.com/westurner/pyleset/issues/12 (Markdown comment)
+https://github.com/westurner/pyleset/issues/8 (Markdown comment)
 
 * https://github.com/westurner/pyleset/blob/57140bcef5/setup.py
 
   * Requirement
   * RequirementsMap
 
-https://text.allmende.io/p/rdfjs ## Tools Schema
+https://text.allmende.io/p/rdfjs ## *RDF* Tools Schema (RDFJS)
 
 
