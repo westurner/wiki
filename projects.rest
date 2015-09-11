@@ -160,6 +160,10 @@ rst-tools
 ---------------
 | Src: https://github.com/westurner/rst-tools
 
+sphinxcontrib-rdf
+------------------------
+| Src: https://github.com/westurner/sphinxcontrib-rdf
+
 sphinxcontrib-srclinks
 ------------------------
 | Src: https://github.com/westurner/sphinxcontrib-srclinks
