@@ -54,6 +54,18 @@ Python
 | Wikipedia: `<https://en.wikipedia.org/wiki/Python_(programming_language)>`__
 | Homepage: https://www.python.org/
 | Source: https://hg.python.org/cpython
+| Docs: https://docs.python.org/2/
+| Docs: https://docs.python.org/devguide/
+| Docs: https://docs.python.org/devguide/documenting.html
+| Docs: https://wiki.python.org/moin/PythonBooks
+| Docs: http://www.onlineprogrammingbooks.com/python/
+| Docs: https://www.reddit.com/r/learnpython/wiki/index
+| Docs: https://www.reddit.com/r/learnpython/wiki/books
+| Docs: https://www.quora.com/Python-programming-language-1/What-are-the-best-books-courses-for-learning-Python
+| Docs: https://en.wikiversity.org/wiki/Python
+| Docs: https://www.class-central.com/search?q=python
+| Docs: http://learnxinyminutes.com/docs/python/
+| Tools: https://westurner.org/tools/#python
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
@@ -66,6 +78,12 @@ Python
 
 Python 3
 ~~~~~~~~~~~
+| Docs: https://docs.python.org/3/
+| Docs: https://docs.python.org/3/howto/pyporting.html
+| Docs: https://docs.python.org/3/howto/cporting.html
+| Docs: http://learnxinyminutes.com/docs/python3/
+| Tools: https://westurner.org/tools/#python-3
+
 * https://docs.python.org/3/library/unittest.html
 * https://docs.python.org/3/library/unittest.mock.html (python >= 3.3)
 * https://docs.python.org/3/library/doctest.html
