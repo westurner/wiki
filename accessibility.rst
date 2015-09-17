@@ -1,0 +1,72 @@
+
+
+***************
+accessibility
+***************
+
+.. contents:: 
+
+
+Standards
+================
+
+WAI-ARIA
+-----------
+| Wikipedia: https://en.wikipedia.org/wiki/WAI-ARIA
+| Dbpedia: http://dbpedia.org/page/WAI-ARIA
+
+Mozilla MDN WAI-ARIA resources:
+
+* https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+* https://patrickhlauke.github.io/aria/presentation/
+
+
+WCAG
+------
+| Label: W3C wCAG
+| Label: Web Content Accessibility Guidelines
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines
+| Docs: http://www.w3.org/WAI/intro/wcag # WCAG Overview
+
+
+WCAG Overview:
+
+* http://www.w3.org/WAI/intro/wcag
+
+
+
+
+Accessibility support
+-------------------------------------
+Things I've heard have better than average accessibility support:
+
+Text Editors:
+
+* Emacs:
+  
+  * https://en.wikipedia.org/wiki/Emacs
+
+
+JS Libraries:
+
+* YUI:
+
+  * https://en.wikipedia.org/wiki/YUI_Library
+  * YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards
+  
+* GWT:
+
+  * https://en.wikipedia.org/wiki/Google_Web_Toolkit
+
+
+Content Management Systems / Web Portals
+
+* Plone:
+
+  * `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+
+* ReStructuredText:
+
+  * ReStructuredText ``.. contents::`` directives add a hyperlinked table of contents for the current document.
+  
+
