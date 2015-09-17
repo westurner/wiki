@@ -23,15 +23,13 @@ Mozilla MDN WAI-ARIA resources:
 
 WCAG
 ------
-| Label: W3C wCAG
+| Label: W3C WCAG
 | Label: Web Content Accessibility Guidelines
 | Wikipedia: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines
 | Docs: http://www.w3.org/WAI/intro/wcag # WCAG Overview
 
 
-WCAG Overview:
-
-* http://www.w3.org/WAI/intro/wcag
+WCAG Overview: http://www.w3.org/WAI/intro/wcag
 
 
 
