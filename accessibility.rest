@@ -15,10 +15,13 @@ WAI-ARIA
 | Wikipedia: https://en.wikipedia.org/wiki/WAI-ARIA
 | Dbpedia: http://dbpedia.org/page/WAI-ARIA
 
-Mozilla MDN WAI-ARIA resources:
+Mozilla MDN WAI-ARIA resources: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 
-* https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
-* https://patrickhlauke.github.io/aria/presentation/
+* "WAI-ARIA: An introduction to Accessible Rich Internet Applications"
+  https://patrickhlauke.github.io/aria/presentation/
+
+
+>   What is ARIA, and why do we need it?
 
 
 WCAG
