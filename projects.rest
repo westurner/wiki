@@ -84,6 +84,10 @@ cookiecutter-saltformula
 --------------------------
 | Src: https://github.com/westurner/cookiecutter-saltformula
 
+elasticsearchjsonld
+--------------------
+| Src: https://github.com/westurner/elasticsearchjsonld
+
 pandasrdf
 ---------------
 | Src: https://github.com/westurner/pandasrdf
