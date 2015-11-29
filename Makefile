@@ -215,7 +215,8 @@ pseudoxml:
 		pull \
 		push
 
-WIKI_REPO_URL=github.com/westurner/wiki
+WIKI_REPO_PATH=westurner/wiki
+WIKI_REPO_URL=github.com/${WIKI_REPO_PATH}
 
 default: build
 
@@ -238,6 +239,10 @@ copy_sidebar_to_footer:
 copy_sidebar_to_home:
 	echo '' > Home.rest
 	echo 'Welcome to `<https://$(WIKI_REPO_URL)/wiki>`_' >> Home.rest
+	echo '' >> Home.rest
+	echo '.. image:: https://badge.waffle.io/${WIKI_REPO_PATH}.png?label=ready&title=Ready'  >> Home.rest
+	echo '   :target: https://waffle.io/${WIKI_REPO_PATH}' >> Home.rest
+	echo '   :alt: "Stories in Ready"' >> Home.rest
 	echo '' >> Home.rest
 	cat _Sidebar.rest >> Home.rest
 
