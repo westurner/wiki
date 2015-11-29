@@ -9,7 +9,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
-    <meta property="og:title" content="&lt;no title&gt;" />
+    <meta property="og:title" content="accessibility" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="westurner/wiki" />
     <!--
@@ -23,12 +23,12 @@
     -->
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="&lt;no title&gt;" />
+    <meta property="twitter:title" content="accessibility" />
     <meta property="twitter:description" content="Documentation for the wiki project" />
     <meta property="twitter:site" content="westurner" />
     <meta property="twitter:creator" content="westurner" />
     
-    <title>&lt;no title&gt; &mdash; westurner/wiki</title>
+    <title>accessibility &mdash; westurner/wiki</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -78,11 +78,28 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">accessibility</a><ul>
+<li><a class="reference internal" href="#standards">Standards</a><ul>
+<li><a class="reference internal" href="#wai-aria">WAI-ARIA</a></li>
+<li><a class="reference internal" href="#wcag">WCAG</a></li>
+<li><a class="reference internal" href="#accessibility-support">Accessibility support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
 
             
               <li><a href="genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="_sources/Home.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="_sources/accessibility.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search" method="get">
@@ -114,6 +131,19 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="index">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">accessibility</a><ul>
+<li><a class="reference internal" href="#standards">Standards</a><ul>
+<li><a class="reference internal" href="#wai-aria">WAI-ARIA</a></li>
+<li><a class="reference internal" href="#wcag">WCAG</a></li>
+<li><a class="reference internal" href="#accessibility-support">Accessibility support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
 <div id="searchbox" role="search">
   <h3>Quick search</h3>
   <form class="search form-inline" action="search" method="get">
@@ -132,19 +162,19 @@
 </div>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/Home.txt"
+    <li><a href="_sources/accessibility.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
-    <li><a href="https://github.com/westurner/wiki/blob/master/Home.rest"
+    <li><a href="https://github.com/westurner/wiki/blob/master/accessibility.rest"
             rel="nofollow"
             target="_blank">Source</a></li>
-    <li><a href="https://github.com/westurner/wiki/edit/master/Home.rest"
+    <li><a href="https://github.com/westurner/wiki/edit/master/accessibility.rest"
             rel="nofollow"
             target="_blank">Edit</a></li>
-     <li><a href="https://github.com/westurner/wiki/commits/master/Home.rest"
+     <li><a href="https://github.com/westurner/wiki/commits/master/accessibility.rest"
              rel="nofollow"
              target="_blank">History</a></li>
-     <li><a href="https://github.com/westurner/wiki/blame/master/Home.rest"
+     <li><a href="https://github.com/westurner/wiki/blame/master/accessibility.rest"
              rel="nofollow"
              target="_blank">Annotate</a></li>
   </ul>
@@ -180,30 +210,82 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <p>Welcome to <a class="reference external" href="https://github.com/westurner/wiki/wiki">https://github.com/westurner/wiki/wiki</a></p>
-<a class="reference external image-reference" href="https://waffle.io/westurner/wiki"><img alt="&quot;Stories in Ready&quot;" src="https://badge.waffle.io/westurner/wiki.png?label=ready&amp;title=Ready" /></a>
+  <div class="section" id="accessibility">
+<h1><a class="toc-backref" href="#id1">accessibility</a><a class="headerlink" href="#accessibility" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki">Home</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">Projects</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/contributions">Contributions</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/resume">Resume</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/workflow">Workflow</a><ul>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/github">GitHub</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/bitbucket">BitBucket</a></li>
+<li><a class="reference internal" href="#accessibility" id="id1">accessibility</a><ul>
+<li><a class="reference internal" href="#standards" id="id2">Standards</a><ul>
+<li><a class="reference internal" href="#wai-aria" id="id3">WAI-ARIA</a></li>
+<li><a class="reference internal" href="#wcag" id="id4">WCAG</a></li>
+<li><a class="reference internal" href="#accessibility-support" id="id5">Accessibility support</a></li>
 </ul>
 </li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/tools">Tools</a><ul>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/awesome-python-testing">awesome-python-testing</a></li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/workstations">workstations</a></li>
 </ul>
 </li>
-<li><a class="reference external" href="https://github.com/westurner/wiki/wiki/ideas">Ideas</a></li>
 </ul>
-<hr class="docutils" />
+</div>
+<div class="section" id="standards">
+<h2><a class="toc-backref" href="#id2">Standards</a><a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="wai-aria">
+<h3><a class="toc-backref" href="#id3">WAI-ARIA</a><a class="headerlink" href="#wai-aria" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line"><a class="reference external" href="https://github.com/westurner/wiki/wiki">github.com/westurner/wiki/wiki</a></div>
-<div class="line"><a class="reference external" href="https://westurner.org/wiki/">westurner.org/wiki/</a></div>
-<div class="line"><a class="reference external" href="https://westurner.org/">westurner.org</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WAI-ARIA">https://en.wikipedia.org/wiki/WAI-ARIA</a></div>
+<div class="line">Dbpedia: <a class="reference external" href="http://dbpedia.org/page/WAI-ARIA">http://dbpedia.org/page/WAI-ARIA</a></div>
+</div>
+<p>Mozilla MDN WAI-ARIA resources: <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA</a></p>
+<ul class="simple">
+<li>&#8220;WAI-ARIA: An introduction to Accessible Rich Internet Applications&#8221;
+<a class="reference external" href="https://patrickhlauke.github.io/aria/presentation/">https://patrickhlauke.github.io/aria/presentation/</a></li>
+</ul>
+<p>&gt;   What is ARIA, and why do we need it?</p>
+</div>
+<div class="section" id="wcag">
+<h3><a class="toc-backref" href="#id4">WCAG</a><a class="headerlink" href="#wcag" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Label: W3C WCAG</div>
+<div class="line">Label: Web Content Accessibility Guidelines</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines">https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.w3.org/WAI/intro/wcag">http://www.w3.org/WAI/intro/wcag</a> # WCAG Overview</div>
+</div>
+<p>WCAG Overview: <a class="reference external" href="http://www.w3.org/WAI/intro/wcag">http://www.w3.org/WAI/intro/wcag</a></p>
+</div>
+<div class="section" id="accessibility-support">
+<h3><a class="toc-backref" href="#id5">Accessibility support</a><a class="headerlink" href="#accessibility-support" title="Permalink to this headline">¶</a></h3>
+<p>Things I&#8217;ve heard have better than average accessibility support:</p>
+<p>Text Editors:</p>
+<ul class="simple">
+<li>Emacs:<ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Emacs">https://en.wikipedia.org/wiki/Emacs</a></li>
+</ul>
+</li>
+</ul>
+<p>JS Libraries:</p>
+<ul class="simple">
+<li>YUI:<ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/YUI_Library">https://en.wikipedia.org/wiki/YUI_Library</a></li>
+<li>YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards</li>
+</ul>
+</li>
+<li>GWT:<ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Google_Web_Toolkit">https://en.wikipedia.org/wiki/Google_Web_Toolkit</a></li>
+</ul>
+</li>
+</ul>
+<p>Content Management Systems / Web Portals</p>
+<ul class="simple">
+<li>Plone:<ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Plone_(software)">https://en.wikipedia.org/wiki/Plone_(software)</a></li>
+</ul>
+</li>
+<li>ReStructuredText:<ul>
+<li>ReStructuredText <code class="docutils literal"><span class="pre">..</span> <span class="pre">contents::</span></code> directives add a hyperlinked table of contents for the current document.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </div>
 
 
