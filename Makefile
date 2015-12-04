@@ -343,4 +343,5 @@ gh-pages:
 	# Push docs to gh-pages branch with a .nojekyll file
 	@echo ghp-import -n -p ./docs/_build/singlehtml/
 	ghp-import -n -p ./_build/html/ \
-		-m "DOC,RLS: gh-pages from: $(shell git -C $(shell pwd) rev-parse --short HEAD)"
+		-m "DOC,RLS: :fast_forward: gh-pages from: $(shell git -C $(shell pwd) rev-parse --short HEAD)"
+
