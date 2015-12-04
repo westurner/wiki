@@ -238,7 +238,7 @@ Patch Header
       which modifies components X, Y, and Z
       in order to provide new functionality (ENH)
       indicated by new tests (TST).
-  
+
   - [ ] `Code labels`_ in subject line: ``ENH: Add sphinx Makefile and conf.py``
   - [ ] `Issues`_ number in subject line: ``(#3)``
   - [ ] `Issues`_ link in commit message:
@@ -247,7 +247,7 @@ Patch Header
 
 Patch Diff
 ++++++++++++
-* [ ] Patch ``diff`` 
+* [ ] Patch ``diff``
 
   - [ ] ``--git``-style diffs
 
@@ -430,7 +430,7 @@ Send a Pull Request
 * Branch/fork, update, commit
 * Compare, test (review diff)
 * DOC: Prepend Code Labels to first line of patch header (commit message)
-* Send a pull request 
+* Send a pull request
 
    * Email: Send a URL to the branch to pull from (tags: ``.tasks``, ``.code``, ``-waiting``)
    * GitHub: Click 'Send Pull Request'
@@ -856,7 +856,7 @@ Ways to work with tasks and GitHub:
      2. [ ] Click 'Issues'
      3. [ ] Click 'New Issue'
      4. [ ] Add a description "ENH: New Feature"
-     5. [ ] Also select corresponding `<#code-labels>`__ 
+     5. [ ] Also select corresponding `<#code-labels>`__
 
   * Per-objective
   * Collaborators add labels, a milestone, and an assignee to the issue
@@ -946,7 +946,7 @@ Workflow
      2. [ ] Click 'Issues'
      3. [ ] Click 'Create Issue'
      4. [ ] Add a description "ENH: New Feature"
-     5. [ ] Also select corresponding `<#code-labels>`__ 
+     5. [ ] Also select corresponding `<#code-labels>`__
 
   * Per-objective
   * [ ] Apply kind and priority values to the issue with the web interface
@@ -1174,7 +1174,7 @@ pyrtm-task-cli
 
 A python CLI for working with tasks and pyrtm RememberTheMilk API.
 
-Query/rename tasks in Python and generate a printable, 
+Query/rename tasks in Python and generate a printable,
 templated, minimal HTML `Hipster PDA`_
 notebook-sized sheet of paper
 of a list of tasks at one point in time.
@@ -1250,18 +1250,56 @@ Requirements Traceability
 Revision Control
 -----------------
 
-- [ ] Utilize Git HubFlow
-  (`<https://datasift.github.io/gitflow/>`_,
-  for managing project repository branches:
-  ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
-- [ ] Release semantic versions (`<http://semver.org>`_) tagged as
-  ``major.minor.patch`` (e.g. ``v1.0.01``)
-
 
 Continuous Integration
 -------------------------
 https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 
-- [ ] Tag builds of versions and their artifacts with short commit ids
-  and conda selectors: `<http://conda.pydata.org/docs/build.html#preprocessing-selectors>`_
-  (e.g. ``v1.0.01-eb4df7f-linux64``)
+| https://wrdrd.com/docs/consulting/software-development#continuous-delivery
+| https://wrdrd.com/docs/consulting/software-development#continuous-integration
+| https://westurner.org/wiki/awesome-python-testing#
+| https://westurner.org/wiki/awesome-python-testing#workflow-evolution
+| https://westurner.org/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd
+
+* [ ] Run tests before releasing
+* [ ] Run tests before merging (e.g. Pull Request Webhooks)
+* [ ] Run tests after merging. (e.g. HubFlow
+  [``feature/*`` ->] ``develop`` ->
+  ``release/v0.1.0`` -> ``master`` branch structure)
+* [ ] Run tests before committing (while coding)
+* [ ] Run tests when committing
+  (with [required/local/central] repo event scripts)
+* [ ] Write Tests First.
+* [ ] Utilize Git HubFlow for managing project repository branches:
+  ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
+
+  * https://datasift.github.io/gitflow/
+  * https://westurner.org/tools/#git
+  * https://westurner.org/tools/#hubflow
+
+* [ ] Release semantic versions (`<http://semver.org>`_) tagged as
+  ``major.minor.patch`` (e.g. ``v1.0.01``)
+
+  * Semver 3.0 (Python PEP 440 version tag compatible):
+    http://docs.openstack.org/developer/pbr/semver.html
+
+    * Python PEP 440
+      "Version Identification and Dependency Specification"
+
+      https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes
+
+  * bumpversion https://github.com/peritus/bumpversion
+
+- [ ] Include useful data (like version, revision, platform)
+  in package filenames (and/or also create a JSON-LD metadata manifest):
+
+  * e.g. ``westurner-wiki-v1.0.01-eb4df7f-linux64.whl``
+
+  * Conda selectors: {``linux64``, ``py27``, ``py35`` }
+    `<http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors>`_
+  * pbr (*Python Build Reasonableness*)
+
+    * Source:
+      https://github.com/openstack-dev/pbr
+
+    * Docs: http://docs.openstack.org/developer/pbr/
