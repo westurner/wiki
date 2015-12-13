@@ -107,6 +107,13 @@ version_information
 
 - [x] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
 - [x] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
+- [ ] ENH: "Adds %version_information extension" 
+
+   https://github.com/ipython/ipython/pull/4666 (2013)
+   
+   https://github.com/jrjohansson/version_information/issues/1
+
+   - see: https://wrdrd.com/docs/consulting/education-technology#jupyter-and-reproducibility
 
 
 jinja2
