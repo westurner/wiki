@@ -340,7 +340,7 @@ push:
 	git push origin gh-pages
 
 gh-pages:
-	# Push docs to gh-pages branch with a .nojekyll file
+	# Push docs to gh-pages branch with a .nojekyll file [pip install ghp-import]
 	@echo ghp-import -n -p ./docs/_build/singlehtml/
 	ghp-import -n -p ./_build/html/ \
 		-m "DOC,RLS: :fast_forward: gh-pages from: $(shell git -C $(shell pwd) rev-parse --short HEAD)"
