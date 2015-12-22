@@ -42,7 +42,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 	pull push
 
 help:
-	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "Please use 'make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
@@ -66,25 +66,70 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 	@echo ""
-	@echo "  setup                   to install dependencies and configure the git repo"
+	@echo "  setup                #  to install dependencies and configure the git repo"
 	@echo "  setup_pip_requirements  to install pip dependencies"
+	@echo "  setup_pgs_websh         to pip install pgs web.sh"
 	@echo "  setup_git_remotes       to configure the git repo"
 	@echo "  build_setup             to create a _build/html directory"
-	@echo "  copy_sidebar_to_footer  to copy _Sidebar.rest to _Footer.rest"
-	@echo "  copy_sidebar_to_readme  to copy _Sidebar.rest to README.rst"
-	@echo "  copy_sidebar_to_home    to copy _Sidebar.rest to _Home.rest"
-	@echo "  copy_sidebars           to copy _Sidebar.rest to Footer, README"
-	@echo "  copy_sidebars_and_commit  to copy sidebars and git commit"
-	@echo "  commit                  to git commit"
-	@echo "  pull                    to git pull from both repos: .wiki and gh-pages"
-	@echo "  push                    to git push to   both repos: .wiki and gh-pages"
-	@echo "  gh-pages                to overwrite the gh-pages branch with _build/html"
-	@echo ""
 	@echo "  rst2html_all            to build all .rest pages with rst2html"
-	@echo "  build                   to build sidebars, rst2html_all, and html"
+	@echo "  copy_sidebar_to_home    to copy _Sidebar.rest to _Home.rest"
+	@echo "  copy_sidebar_to_readme  to copy Home.rest to README.rst"
+	@echo "  copy_sidebar_to_footer  to copy _Sidebar.rest to _Footer.rest"
+	@echo "  copy_sidebars           to copy_sidebar_[...]"
+	@echo "  copy_sidebars_and_commit  to copy sidebars and git commit"
+	@echo "  localjs                 to build _static/css/local.js"
+	@echo "  localcss                to build _static/css/local.css"
+	@echo "  localjs-live            to copy _static/css/local.js  to _build/[single]html"
+	@echo "  localcss-live           to copy _static/css/local.css to _build/[single]html"
+	@echo "  docs                 #  to build sidebars, rst2html_all, and _build/{html}"
+	@echo "  open                 #  to open the docs in a browser"
+	@echo "  opensingle              to open the singleHTML docs in a browser"
+	@echo "  setup_pgs_websh         to pip install pgs web.sh"
+	@echo "  pgs                     to serve _build/html from http://localhost:10800/"
+	@echo "  pgs-gh-pages            to serve git:gh-pages from http://localhost:10801/"
+	@echo "  openpgs                 to open http://localhost:10800/ w/ web"
+	@echo "  openpgs-gh-pages        to open http://localhost:10800/ w/ web"
 	@echo ""
-	@echo "  Example: make commit pull build gh-pages push"
-
+	@echo "  build                #  to build sidebars, rst2html_all, and _build/html"
+	@echo "  docs                 #  to build sidebars, rst2html_all, and _build/html"
+	@echo "  commit                  to 'git commit'"
+	@echo "  pull                 #  to git pull from both repos: .wiki and gh-pages"
+	@echo "  push                 #  to git push to   both repos: .wiki and gh-pages"
+	@echo "  gh-pages             #  to overwrite the gh-pages branch with _build/html"
+	@echo ""
+	@echo "## Usage:"
+	@echo ""
+	@echo " Configure git remote URIs for the cloned repo ::"
+	@echo ""
+	@echo "   $ make setup_git_remotes"
+	@echo "   $ git remote -a && git branch -a"
+	@echo ""
+	@echo " Pull/push from/to repo and repo.wiki.git (repo[.wiki.git]) ::"
+	@echo ""
+	@echo "   $ make pull  # pull incoming changes from repo, repo.wiki.git"
+	@echo "   $ make push  # push outgoing changes to repo, repo.wiki.git"
+	@echo ""
+	@echo " Build the docs, push, and overwrite/push to gh-pages"
+	@echo " (``_build/html`` -> ``PGS_GIT_REV=gh-pages``) ::"
+	@echo ""
+	@echo "   $ make docs push gh-pages"
+	@echo ""
+	@echo " Install pgs and web.sh with pip ::"
+	@echo ""
+	@echo "   $ make setup_pgs_websh"
+	@echo ""
+	@echo " Serve from the filesystem & open w/ 'web' ::"
+	@echo ""
+	@echo "   $ PGS_FS_PORT=10800 make pgs & make openpgs & jobs"
+	@echo "   (web 'http://localhost:10800/')"
+	@echo ""
+	@echo " Serve from the local 'gh-pages' branch & open w/ 'web' ::"
+	@echo ""
+	@echo "   $ make setup_pgs_websh"
+	@echo "   $ PGS_GIT_PORT=10801 make pgs-gh-pages & make openpgs-gh-pages & jobs"
+	@echo "   (web 'http://localhost:10801/')"
+	@echo ""
+	@echo '.'
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -220,32 +265,7 @@ pseudoxml:
 ### </sphinx Makefile>
 
 ### <sphinxghwiki Makefile>
-## Usage:
-
-# Pull/push from/to repo and repo.wiki.git (repo[.wiki.git]) ::
-#
-#   $ make pull  # pull incoming changes from repo, repo.wiki.git
-#   $ make push  # push outgoing changes to repo, repo.wiki.git
-#
-# Build the docs, push, and overwrite/push to gh-pages
-# (``_build/html`` -> ``PGS_GIT_REV=gh-pages``) ::
-#
-# 	$ make docs push gh-pages
-#
-# Install pgs and web.sh with pip ::
-#
-#   $ make setup_pgs_websh
-#
-# Serve from the filesystem & open w/ 'web' ::
-#
-#   $ make pgs & make openpgs & jobs
-#   (web 'http://localhost:10800/')
-#
-# serve from the local 'gh-pages' branch & open w/ 'web' ::
-#
-#	$ make setup_pgs_websh
-#	$ make pgs-gh-pages & make openpgs-gh-pages & jobs
-#	(web 'http://localhost:10801/')
+# See: 'make help'
 
 #.PHONY: default \
 #        build_setup \
