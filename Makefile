@@ -23,13 +23,18 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 	default \
 	build_setup \
 	rst2html_all \
-	copy_sidebar_to_footer copy_sidebar_to_home copy_sidebar_to_readme \
-	copy_sidebars copy_sidebars_and_commit \
+	copy_sidebar_to_home \
+	copy_sidebar_to_readme \
+	copy_sidebar_to_footer \
+	copy_sidebars \
+	copy_sidebars_and_commit \
 	localjs localcss \
+	localjs-live localcss-live \
 	docs \
 	open opensingle \
-	setup_pgs
-	pgs pgs-gh-pages openpgs openpgs-gh-pages \
+	setup_pgs_websh \
+	pgs pgs-gh-pages \
+	openpgs openpgs-gh-pages \
 	commit \
 	setup \
 	setup_pip_requirements \
@@ -212,23 +217,56 @@ pseudoxml:
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
 
+### </sphinx Makefile>
 
-### wiki Makefile
+### <sphinxghwiki Makefile>
+## Usage:
 
-.PHONY: default clean build \
-		build_setup \
-		rst2html_all \
-		copy_sidebar_to_footer \
-		copy_sidebar_to_home \
-		copy_sidebar_to_readme \
-		copy_sidebar_to_footer_and_commit \
-		copy_sidebars \
-		setup \
-		setup_pip_requirements \
-		setup_git_remotes \
-		commit \
-		pull \
-		push
+# Pull/push from/to repo and repo.wiki.git (repo[.wiki.git]) ::
+#
+#   $ make pull  # pull incoming changes from repo, repo.wiki.git
+#   $ make push  # push outgoing changes to repo, repo.wiki.git
+#
+# Build the docs, push, and overwrite/push to gh-pages
+# (``_build/html`` -> ``PGS_GIT_REV=gh-pages``) ::
+#
+# 	$ make docs push gh-pages
+#
+# Install pgs and web.sh with pip ::
+#
+#   $ make setup_pgs_websh
+#
+# Serve from the filesystem & open w/ 'web' ::
+#
+#   $ make pgs & make openpgs & jobs
+#   (web 'http://localhost:10800/')
+#
+# serve from the local 'gh-pages' branch & open w/ 'web' ::
+#
+#	$ make setup_pgs_websh
+#	$ make pgs-gh-pages & make openpgs-gh-pages & jobs
+#	(web 'http://localhost:10801/')
+
+#.PHONY: default \
+#        build_setup \
+#        rst2html_all \
+#        copy_sidebar_to_home \
+#        copy_sidebar_to_readme \
+#        copy_sidebar_to_footer \
+#        copy_sidebars \
+#        copy_sidebars_and_commit \
+#        localjs localcss \
+#        localjs-live localcss-live \
+#        docs \
+#        open opensingle \
+#        setup_pgs_websh \
+#        pgs pgs-gh-pages \
+#        openpgs openpgs-gh-pages \
+#        commit \
+#        setup \
+#        setup_pip_requirements \
+#        setup_git_remotes \
+#        pull push
 
 WIKI_REPO_PATH=westurner/wiki
 WIKI_REPO_URL=github.com/${WIKI_REPO_PATH}
@@ -243,37 +281,36 @@ rst2html_all: build_setup
 	find . -name '*.rest' -print0 \
 		| xargs -0 -I % rst2html.py % _build/html/%.html
 
-copy_sidebar_to_footer:
-	echo '' > _Footer.rest
-	echo '`#top <#>`_' >> _Footer.rest
-	echo '' >> _Footer.rest
-	echo '*****' >> _Footer.rest
-	echo '' >> _Footer.rest
-	cat _Sidebar.rest >> _Footer.rest
-
 copy_sidebar_to_home:
-	echo '' > Home.rest
-	echo 'Welcome to `<https://$(WIKI_REPO_URL)/wiki>`_' >> Home.rest
-	echo '' >> Home.rest
-	echo '.. image:: https://badge.waffle.io/${WIKI_REPO_PATH}.png?label=ready&title=Ready'  >> Home.rest
-	echo '   :target: https://waffle.io/${WIKI_REPO_PATH}' >> Home.rest
-	echo '   :alt: "Stories in Ready"' >> Home.rest
-	echo '' >> Home.rest
+	@echo '' > Home.rest
+	@echo 'Welcome to `<https://$(WIKI_REPO_URL)/wiki>`_' >> Home.rest
+	@echo '' >> Home.rest
+	@echo '.. image:: https://badge.waffle.io/${WIKI_REPO_PATH}.png?label=ready&title=Ready'  >> Home.rest
+	@echo '   :target: https://waffle.io/${WIKI_REPO_PATH}' >> Home.rest
+	@echo '   :alt: "Stories in Ready"' >> Home.rest
+	@echo '' >> Home.rest
 	cat _Sidebar.rest >> Home.rest
 
 copy_sidebar_to_readme: copy_sidebar_to_home
 	cp Home.rest README.rst
 
+copy_sidebar_to_footer:
+	@echo '' > _Footer.rest
+	@echo '`#top <#>`_' >> _Footer.rest
+	@echo '' >> _Footer.rest
+	@echo '*****' >> _Footer.rest
+	@echo '' >> _Footer.rest
+	cat _Sidebar.rest >> _Footer.rest
+
 copy_sidebars:
-	$(MAKE) copy_sidebar_to_footer
-	#$(MAKE) copy_sidebar_to_home
-	$(MAKE) copy_sidebar_to_readme
+	@$(MAKE) copy_sidebar_to_readme #: copy_sidebar_to_home
+	@$(MAKE) copy_sidebar_to_footer
 
 copy_sidebars_and_commit:
 	$(MAKE) copy_sidebars
-	git add Home.rest _Footer.rest
+	git add Home.rest _Footer.rest README.rst
 	git commit _Footer.rest _Home.rest README.rst \
-		-m "DOC: Regenerate _Home, _Sidebar, _Footer, and README navigation"
+		-m "DOC: :fast_forward: _Home, _Sidebar, _Footer, and README navigation"
 
 STATIC:=./_static
 LOCALJS=$(STATIC)/js/local.js
@@ -281,19 +318,19 @@ LOCALCSS=$(STATIC)/css/local.css
 
 localjs:
 	echo '' > $(LOCALJS)
-	cat $(STATIC)/js/ga.js >> $(LOCALJS)
-	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
-	cat $(STATIC)/js/sidenav-affix.js >> $(LOCALJS)
-	cat $(STATIC)/js/jquery.scrollTo.js >> $(LOCALJS)
-	cat $(STATIC)/js/jquery.isonscreen.js >> $(LOCALJS)
-	cat $(STATIC)/js/sidenav-scrollto.js >> $(LOCALJS)
+	@cat $(STATIC)/js/ga.js >> $(LOCALJS)
+	@cat $(STATIC)/js/newtab.js >> $(LOCALJS)
+	@cat $(STATIC)/js/sidenav-affix.js >> $(LOCALJS)
+	@cat $(STATIC)/js/jquery.scrollTo.js >> $(LOCALJS)
+	@cat $(STATIC)/js/jquery.isonscreen.js >> $(LOCALJS)
+	@cat $(STATIC)/js/sidenav-scrollto.js >> $(LOCALJS)
 
 localcss:
 	echo '' > $(LOCALCSS)
-	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
-	cat $(STATIC)/css/sidenav-scrollto.css >> $(LOCALCSS)
-	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
-	cat $(STATIC)/css/wiki.css >> $(LOCALCSS)
+	@cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	@cat $(STATIC)/css/sidenav-scrollto.css >> $(LOCALCSS)
+	@cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
+	@cat $(STATIC)/css/wiki.css >> $(LOCALCSS)
 
 BUILDDIR:=./_build
 BUILDDIRHTML:=./_build/html
@@ -330,20 +367,24 @@ opensingle:
 	web '${BUILDDIRSINGLEHTML}/index.html'
 
 
+GITREPODIR=${PWD}
+
 PGS_FS_HOST=localhost
 PGS_FS_PORT=10800
 PGS_GIT_HOST=localhost
 PGS_GIT_PORT=10801
-PGS_GIT_REV=gh-pages
 
-setup_pgs:
+GH_PAGES_BRANCH=gh-pages
+PGS_GIT_REV?=${GH_PAGES_BRANCH}
+
+setup_pgs_websh:
 	pip install pgs web.sh # || pip install --user pgs web.sh
 
 pgs:
 	pgs -p '${BUILDDIRHTML}' --host='${PGS_FS_HOST}' --port='${PGS_FS_PORT}'
 
 pgs-gh-pages:
-	pgs -g '${PWD}' -r '${PGS_GIT_REV}' --host='${PGS_GIT_HOST}' --port='${PGS_GIT_PORT}'
+	pgs -g '${GITREPODIR}' -r '${PGS_GIT_REV}' --host='${PGS_GIT_HOST}' --port='${PGS_GIT_PORT}'
 
 openpgs:
 	# open the docs in a web browser
@@ -387,9 +428,11 @@ push:
 	git push wiki master
 	git push origin gh-pages
 
-gh-pages:
-	# Push docs to gh-pages branch with a .nojekyll file [pip install ghp-import]
-	@echo ghp-import -n -p ./docs/_build/singlehtml/
-	ghp-import -n -p ./_build/html/ \
-		-m "DOC,RLS: :fast_forward: gh-pages from: $(shell git -C $(shell pwd) rev-parse --short HEAD)"
+ghp-import:
+	# Push _build/html to [GH_PAGES_BRANCH:gh-pages] w/ a .nojekyll file
+	@#echo ghp-import -n -b '${GH_PAGES_BRANCH}' -p '${BUILDDIRSINGLEHTML}'
+	ghp-import -n -b '${GH_PAGES_BRANCH}' -p '${BUILDDIRHTML}' \
+		-m "DOC,RLS: :fast_forward: gh-pages from: $(shell git \
+		-C '${GITREPODIR}' rev-parse --short HEAD)"
 
+gh-pages: ghp-import
