@@ -19,7 +19,22 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext \
+	default \
+	build_setup \
+	rst2html_all \
+	copy_sidebar_to_footer copy_sidebar_to_home copy_sidebar_to_readme \
+	copy_sidebars copy_sidebars_and_commit \
+	localjs localcss \
+	docs \
+	open opensingle \
+	setup_pgs
+	pgs pgs-gh-pages openpgs openpgs-gh-pages \
+	commit \
+	setup \
+	setup_pip_requirements \
+	setup_git_remotes \
+	pull push
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -301,10 +316,43 @@ local-live:
 build: copy_sidebars rst2html_all localjs localcss html singlehtml
 
 docs: build
+	# build the docs
 
 open:
-	#open _build/html/index.html
-	web ./_build/html/index.html
+	# open the ./html/ build in a web browser (pip install web.sh)
+	@#open _build/html/index.html
+	@#web './_build/html/index.html'
+	web '${BUILDDIRHTML}/index.html'
+
+opensingle:
+	# open the ./singlehtml/ build in a web browser (pip install web.sh)
+	@#web './_build/singlehtml/index.html'
+	web '${BUILDDIRSINGLEHTML}/index.html'
+
+
+PGS_FS_HOST=localhost
+PGS_FS_PORT=10800
+PGS_GIT_HOST=localhost
+PGS_GIT_PORT=10801
+PGS_GIT_REV=gh-pages
+
+setup_pgs:
+	pip install pgs web.sh # || pip install --user pgs web.sh
+
+pgs:
+	pgs -p '${BUILDDIRHTML}' --host='${PGS_FS_HOST}' --port='${PGS_FS_PORT}'
+
+pgs-gh-pages:
+	pgs -g '.' -r '${PGS_GIT_REV}' --host='${PGS_GIT_HOST}' --port='${PGS_GIT_PORT}'
+
+openpgs:
+	# open the docs in a web browser
+	@#web 'http://localhost:10800/'
+	web 'http://${PGS_FS_HOST}:${PGS_FS_PORT}/'
+
+openpgs-gh-pages:
+	@#web 'http://localhost:10801/'
+	web 'http://${PGS_GIT_HOST}:${PGS_GIT_PORT}/'
 
 #clean:
 #	rm -rf ./_build
