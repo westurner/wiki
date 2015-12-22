@@ -343,7 +343,7 @@ pgs:
 	pgs -p '${BUILDDIRHTML}' --host='${PGS_FS_HOST}' --port='${PGS_FS_PORT}'
 
 pgs-gh-pages:
-	pgs -g '.' -r '${PGS_GIT_REV}' --host='${PGS_GIT_HOST}' --port='${PGS_GIT_PORT}'
+	pgs -g '${PWD}' -r '${PGS_GIT_REV}' --host='${PGS_GIT_HOST}' --port='${PGS_GIT_PORT}'
 
 openpgs:
 	# open the docs in a web browser
