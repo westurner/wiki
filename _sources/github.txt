@@ -55,7 +55,7 @@ My Activity
     LIMIT 1000
 
 
-My Activity (-WatchEvent)
+My Activity > -WatchEvent
 ----------------------------
 
 .. code-block:: sql
@@ -70,7 +70,7 @@ My Activity (-WatchEvent)
     LIMIT 1000
 
 
-My Activity (Starred / Started Following)
+My Activity > Recently Starred
 -------------------------------------------
 
 .. code-block:: sql
@@ -78,9 +78,12 @@ My Activity (Starred / Started Following)
     SELECT repository_url, created_at
     FROM [githubarchive:github.timeline]
     WHERE
-    actor=="westurner"
-    AND
-    payload_action=="started"
-    ORDER BY created_at
-    LIMIT 500
+      actor=="westurner"
+      AND
+      payload_action=="started"
+    GROUP BY
+     repository_url, created_at
+    ORDER BY
+     created_at DESC
+    LIMIT 1000
 

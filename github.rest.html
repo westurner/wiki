@@ -397,7 +397,7 @@ ul.auto-toc {
 </pre>
 </div>
 <div class="section" id="my-activity-watchevent">
-<h2>My Activity (-WatchEvent)</h2>
+<h2>My Activity &gt; -WatchEvent</h2>
 <pre class="code sql literal-block">
 <span class="keyword">SELECT</span> <span class="name">actor</span><span class="punctuation">,</span> <span class="name">repository_url</span><span class="punctuation">,</span> <span class="name">created_at</span><span class="punctuation">,</span> <span class="name">payload_action</span><span class="punctuation">,</span> <span class="name">url</span><span class="punctuation">,</span> <span class="keyword">type</span>
 <span class="keyword">FROM</span> <span class="punctuation">[</span><span class="name">githubarchive</span><span class="punctuation">:</span><span class="name">github</span><span class="punctuation">.</span><span class="name">timeline</span><span class="punctuation">]</span>
@@ -409,17 +409,20 @@ ul.auto-toc {
 <span class="keyword">LIMIT</span> <span class="literal number integer">1000</span>
 </pre>
 </div>
-<div class="section" id="my-activity-starred-started-following">
-<h2>My Activity (Starred / Started Following)</h2>
+<div class="section" id="my-activity-recently-starred">
+<h2>My Activity &gt; Recently Starred</h2>
 <pre class="code sql literal-block">
 <span class="keyword">SELECT</span> <span class="name">repository_url</span><span class="punctuation">,</span> <span class="name">created_at</span>
 <span class="keyword">FROM</span> <span class="punctuation">[</span><span class="name">githubarchive</span><span class="punctuation">:</span><span class="name">github</span><span class="punctuation">.</span><span class="name">timeline</span><span class="punctuation">]</span>
 <span class="keyword">WHERE</span>
-<span class="name">actor</span><span class="operator">==</span><span class="literal string symbol">&quot;westurner&quot;</span>
-<span class="keyword">AND</span>
-<span class="name">payload_action</span><span class="operator">==</span><span class="literal string symbol">&quot;started&quot;</span>
-<span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="name">created_at</span>
-<span class="keyword">LIMIT</span> <span class="literal number integer">500</span>
+  <span class="name">actor</span><span class="operator">==</span><span class="literal string symbol">&quot;westurner&quot;</span>
+  <span class="keyword">AND</span>
+  <span class="name">payload_action</span><span class="operator">==</span><span class="literal string symbol">&quot;started&quot;</span>
+<span class="keyword">GROUP</span> <span class="keyword">BY</span>
+ <span class="name">repository_url</span><span class="punctuation">,</span> <span class="name">created_at</span>
+<span class="keyword">ORDER</span> <span class="keyword">BY</span>
+ <span class="name">created_at</span> <span class="keyword">DESC</span>
+<span class="keyword">LIMIT</span> <span class="literal number integer">1000</span>
 </pre>
 </div>
 </div>
