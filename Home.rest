@@ -22,6 +22,8 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
     <https://github.com/westurner/wiki/wiki/workstations>`__
 
 - `Ideas <https://github.com/westurner/wiki/wiki/ideas>`__
+- `Accessibility
+  <https://github.com/westurner/wiki/wiki/accessibility>`__
 
 ******
 
