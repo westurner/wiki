@@ -7,16 +7,17 @@ Contents:
 
 .. toctree::
 
+   ideas
    projects
    contributions
    resume
    workflow
    github
    bitbucket
-   ideas
-   tools
    workstations
+   accessibility
    awesome-python-testing
+   tools
 
 
 ******
