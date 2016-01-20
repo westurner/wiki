@@ -257,7 +257,7 @@ Patch workflow
 * Send patch(es) as an email attachment ("a patch bomb")
 
   * DOC: write a Patch header for a new BUG,TST,ENH
-  * DOC: prepend Code Labels to first line of patch header (commit message)
+  * DOC: prepend `Code Labels`_ to first line of patch header (commit message)
 
     * ``TST,BLD,CLN: code and test an ENHancement or fix a BUG``
 
@@ -276,7 +276,7 @@ Patch workflow
   * (.tested) Test: run existing or documentation tests
   * (pending) Respond: [Email] Feedback
   * (pending|accepted|rejected) Evauluate: Apply or do not apply
-  * (accepted) Update release log (Desire Code Labels)
+  * (accepted) Update release log (Desire `Code Labels`_)
   * (released) Release: issue a version identifier with merged patch
   * (closed,done) Reach 'done'; update TODO system
 
@@ -429,7 +429,7 @@ Send a Pull Request
 
 * Branch/fork, update, commit
 * Compare, test (review diff)
-* DOC: Prepend Code Labels to first line of patch header (commit message)
+* DOC: Prepend `Code Labels`_ to first line of patch header (commit message)
 * Send a pull request
 
    * Email: Send a URL to the branch to pull from (tags: ``.tasks``, ``.code``, ``-waiting``)
