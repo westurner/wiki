@@ -1098,6 +1098,8 @@ Email Labels
    @travel
 
 
+.. _code labels:
+
 Code Labels
 ------------
 Code labels are three-letter codes with which commit messages can be prefixed.
