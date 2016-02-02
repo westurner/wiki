@@ -30,6 +30,13 @@
 - .
 - .[ ]         #  '.[ ]'
 - .[x]         #  '.[x]'
+- .1.
+- .2.
+- .3.
+- 1.
+-
+- 2.
+- 3.
 - .
 - [[[ ]        # '[[[ ]'
 - [[[x]        # '[[[x]'
@@ -39,6 +46,7 @@
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
 
+## Source (Markdown)
 ```markdown
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
@@ -72,10 +80,18 @@
 - .
 - .[ ]         #  '.[ ]'
 - .[x]         #  '.[x]'
+- .1.
+- .2.
+- .3.
+- 1.
+-
+- 2.
+- 3.
 - .
 - [[[ ]        # '[[[ ]'
 - [[[x]        # '[[[x]'
 
 .
 
-- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] ```
+- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
+```
