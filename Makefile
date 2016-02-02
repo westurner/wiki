@@ -329,8 +329,8 @@ copy_sidebars:
 copy_sidebars_and_commit:
 	$(MAKE) copy_sidebars
 	git add Home.rest _Footer.rest README.rst
-	git commit _Footer.rest _Home.rest README.rst \
-		-m "DOC: :fast_forward: _Home, _Sidebar, _Footer, and README navigation"
+	git commit _Footer.rest Home.rest README.rst \
+		-m "DOC: :fast_forward: Home, _Sidebar, _Footer, and README navigation"
 
 STATIC:=./_static
 LOCALJS=$(STATIC)/js/local.js
