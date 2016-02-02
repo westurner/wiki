@@ -40,7 +40,7 @@
 
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
-.. code:: rst
+.. code:: restructuredtext
 
     * [ ] unchecked # [checkbox:unchecked]
     * [x] checked   # [checkbox:checked]
