@@ -452,7 +452,7 @@ ghp-import:
 	# Push _build/html to [GH_PAGES_BRANCH:gh-pages] w/ a .nojekyll file
 	@#echo ghp-import -n -b '${GH_PAGES_BRANCH}' -p '${BUILDDIRSINGLEHTML}'
 	ghp-import -n -b '${GH_PAGES_BRANCH}' -p '${BUILDDIRHTML}' \
-		-m "DOC,RLS: :fast_forward: gh-pages from: $(shell git \
+		-m "DOC,RLS: :books: gh-pages from: $(shell git \
 		-C '${GITREPODIR}' rev-parse --short HEAD)"
 
 gh-pages: ghp-import
