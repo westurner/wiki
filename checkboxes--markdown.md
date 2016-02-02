@@ -1,3 +1,13 @@
+# checkboxes (markdown)
+
+A number of tests of checkboxes with Markdown
+
+* GitHub markdown:
+  * | Src: https://github.com/github/markup/
+  * | Src: https://github.com/github/markup/blob/master/lib/github/markup/markdown.rb
+
+.
+
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
 * [X] checked   # [checkbox:checked]
@@ -34,20 +44,22 @@
 - .2.
 - .3.
 - 1.
--
+- .
 - 2.
 - 3.
 - .
+- 96.
+-
+- .
 - [[[ ]        # '[[[ ]'
 - [[[x]        # '[[[x]'
-
 .
-
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
 
-## Source (Markdown)
+# Source (Markdown)
 ```markdown
+
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
 * [X] checked   # [checkbox:checked]
@@ -84,14 +96,15 @@
 - .2.
 - .3.
 - 1.
--
+- .
 - 2.
 - 3.
 - .
+- 96.
+-
+- .
 - [[[ ]        # '[[[ ]'
 - [[[x]        # '[[[x]'
-
 .
-
-- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
+- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)]
 ```
