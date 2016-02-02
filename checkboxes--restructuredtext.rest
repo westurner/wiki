@@ -1,6 +1,5 @@
 checkboxes (ReStructuredText)
 ==============================
-A number of tests of checkboxes with ReStructuredText:
 
 * docutils ReStructuredText (Python)
 
@@ -13,8 +12,10 @@ A number of tests of checkboxes with ReStructuredText:
 
   * https://github.com/github/markup/blob/master/lib/github/commands/rest2html
 
-.
 
+A number of tests of checkboxes with ReStructuredText:
+
+.
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
 * [X] checked   # [checkbox:checked]
@@ -51,15 +52,16 @@ A number of tests of checkboxes with ReStructuredText:
 - .2.
 - .3.
 - 1.
--
+- .
 - 2.
 - 3.
 - .
+- 96.
+-
+- .
 - [[[ ]        # '[[[ ]'
 - [[[x]        # '[[[x]'
-
 .
-
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
 
@@ -104,15 +106,16 @@ Source (ReStructuredText)
     - .2.
     - .3.
     - 1.
-    -
+    - .
     - 2.
     - 3.
     - .
+    - 96.
+    -
+    - .
     - [[[ ]        # '[[[ ]'
     - [[[x]        # '[[[x]'
-    
     .
-    
     - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
 
