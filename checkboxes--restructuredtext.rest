@@ -1,3 +1,7 @@
+checkboxes (ReStructuredText)
+==============================
+A number of tests of checkboxes with ReStructuredText (docutils):
+
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
 * [X] checked   # [checkbox:checked]
@@ -97,3 +101,10 @@ Source (ReStructuredText)
     .
     
     - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
+
+
+.. code:: restructuredtext
+
+    .. contents::
+
+.. contents::
