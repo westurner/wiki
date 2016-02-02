@@ -14,7 +14,7 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
   - `GitHub <https://github.com/westurner/wiki/wiki/github>`_
   - `BitBucket <https://github.com/westurner/wiki/wiki/bitbucket>`_
   - `Checkboxes (Markdown) <https://github.com/westurner/wiki/wiki/Checkboxes--markdown>`_
-  - `Checkboxes (ReStructuredText) <https://github.com/westurner/wiki/wiki/Checkboxes--markdown>`_
+  - `Checkboxes (ReStructuredText) <https://github.com/westurner/wiki/wiki/Checkboxes--restructuredtext>`_
 
 - `Tools <https://github.com/westurner/wiki/wiki/tools>`__
 
