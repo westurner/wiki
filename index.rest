@@ -14,8 +14,6 @@ Contents:
    workflow
    github
    bitbucket
-   checkboxes--markdown
-   checkboxes--restructuredtext
    workstations
    accessibility
    awesome-python-testing
