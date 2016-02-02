@@ -36,8 +36,6 @@
 
 .
 
-- 
-
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
 
 
@@ -80,7 +78,4 @@
 
 .
 
-- 
-
-- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
-```
+- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] ```
