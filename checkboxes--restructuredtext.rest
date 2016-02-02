@@ -1,6 +1,19 @@
 checkboxes (ReStructuredText)
 ==============================
-A number of tests of checkboxes with ReStructuredText (docutils):
+A number of tests of checkboxes with ReStructuredText:
+
+* docutils ReStructuredText (Python)
+
+   * | Docs: http://docutils.sourceforge.net/docs/
+   * | Docs: http://docutils.sourceforge.net/rst.html
+   * | Docs: http://docutils.sourceforge.net/docs/ref/doctree.html
+   * | Wrdrddocs: https://wrdrd.com/docs/tools/#docutils
+
+* github ReStructuredText (``rest2html`` (docutils))
+
+  * https://github.com/github/markup/blob/master/lib/github/commands/rest2html
+
+.
 
 * [ ] unchecked # [checkbox:unchecked]
 * [x] checked   # [checkbox:checked]
