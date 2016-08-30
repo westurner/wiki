@@ -654,52 +654,52 @@ def test_true(): assert True == True
 <h2><a class="toc-backref" href="#id16">Python Logging Primer</a></h2>
 <p>A primer on <a class="reference internal" href="#python">Python</a> logging (and testing):</p>
 <pre class="code python literal-block">
-<span class="comment">#### Logging examples</span>
+<span class="comment single">#### Logging examples</span>
 
-<span class="comment"># test setup (fixtures)</span>
+<span class="comment single"># test setup (fixtures)</span>
 <span class="name">x</span> <span class="operator">=</span> <span class="literal number integer">2</span>
-<span class="name">data</span> <span class="operator">=</span> <span class="punctuation">{</span><span class="literal string">'x'</span><span class="punctuation">:</span> <span class="name">x</span><span class="punctuation">}</span>
+<span class="name">data</span> <span class="operator">=</span> <span class="punctuation">{</span><span class="literal string single">'x'</span><span class="punctuation">:</span> <span class="name">x</span><span class="punctuation">}</span>
 
-<span class="comment"># asserts get compiled out with python -O2</span>
+<span class="comment single"># asserts get compiled out with python -O2</span>
 <span class="keyword">assert</span> <span class="name">x</span> <span class="operator">==</span> <span class="literal number integer">2</span>
 
-<span class="comment"># these always run</span>
+<span class="comment single"># these always run</span>
 <span class="keyword">class</span> <span class="name class">TestTwo</span><span class="punctuation">(</span><span class="name">unittest</span><span class="operator">.</span><span class="name">TestCase</span><span class="punctuation">):</span>
     <span class="keyword">def</span> <span class="name function">test_001_x_equals_2</span><span class="punctuation">(</span><span class="name builtin pseudo">self</span><span class="punctuation">):</span>
         <span class="name builtin pseudo">self</span><span class="operator">.</span><span class="name">assertEqual</span><span class="punctuation">(</span><span class="name builtin pseudo">self</span><span class="punctuation">,</span> <span class="name">x</span><span class="punctuation">,</span> <span class="literal number integer">2</span><span class="punctuation">)</span>
 <span class="name">unittest</span><span class="operator">.</span><span class="name">main</span><span class="punctuation">()</span>
 
 <span class="keyword">if</span> <span class="name">x</span> <span class="operator">!=</span> <span class="literal number integer">2</span><span class="punctuation">:</span>
-    <span class="comment">### Exceptions</span>
-    <span class="name">err</span> <span class="operator">=</span> <span class="punctuation">(</span><span class="literal string">'...'</span><span class="punctuation">,</span> <span class="name">x</span><span class="punctuation">)</span>
+    <span class="comment single">### Exceptions</span>
+    <span class="name">err</span> <span class="operator">=</span> <span class="punctuation">(</span><span class="literal string single">'...'</span><span class="punctuation">,</span> <span class="name">x</span><span class="punctuation">)</span>
     <span class="keyword">raise</span> <span class="name exception">Exception</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="keyword">raise</span> <span class="name exception">ValueError</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
 
-    <span class="comment">### Logging</span>
+    <span class="comment single">### Logging</span>
     <span class="keyword namespace">import</span> <span class="name namespace">logging</span>
-    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span>                       <span class="comment"># global logger</span>
-    <span class="name">log</span> <span class="operator">=</span> <span class="name builtin">__import__</span><span class="punctuation">(</span><span class="literal string">'logging'</span><span class="punctuation">)</span>         <span class="comment"># global logger</span>
-    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span><span class="operator">.</span><span class="name">getLogger</span><span class="punctuation">(</span><span class="name">__name__</span><span class="punctuation">)</span>   <span class="comment"># local logger (&lt;__name__&gt;.py)</span>
+    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span>                       <span class="comment single"># global logger</span>
+    <span class="name">log</span> <span class="operator">=</span> <span class="name builtin">__import__</span><span class="punctuation">(</span><span class="literal string single">'logging'</span><span class="punctuation">)</span>         <span class="comment single"># global logger</span>
+    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span><span class="operator">.</span><span class="name">getLogger</span><span class="punctuation">(</span><span class="name">__name__</span><span class="punctuation">)</span>   <span class="comment single"># local logger (&lt;__name__&gt;.py)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">debug</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">info</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">error</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">exception</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">critical</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">fatal</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
-    <span class="comment"># see: supervisor.loggers.LevelsByName and .LevelsByDescription</span>
+    <span class="comment single"># see: supervisor.loggers.LevelsByName and .LevelsByDescription</span>
     <span class="name">TRAC</span> <span class="operator">=</span> <span class="name">LevelsByName</span><span class="operator">.</span><span class="name">TRAC</span> <span class="operator">=</span> <span class="literal number integer">5</span>
     <span class="name">BLAT</span> <span class="operator">=</span> <span class="name">LevelsByName</span><span class="operator">.</span><span class="name">BLAT</span> <span class="operator">=</span> <span class="literal number integer">3</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">log</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">,</span> <span class="name">TRAC</span><span class="punctuation">)</span>
-    <span class="name">logging</span><span class="operator">.</span><span class="name">addLevelName</span><span class="punctuation">(</span><span class="name">TRAC</span><span class="punctuation">,</span> <span class="literal string">'TRAC'</span><span class="punctuation">)</span>
-    <span class="name">logging</span><span class="operator">.</span><span class="name">addLevelName</span><span class="punctuation">(</span><span class="name">BLAT</span><span class="punctuation">,</span> <span class="literal string">'BLAT'</span><span class="punctuation">)</span>
+    <span class="name">logging</span><span class="operator">.</span><span class="name">addLevelName</span><span class="punctuation">(</span><span class="name">TRAC</span><span class="punctuation">,</span> <span class="literal string single">'TRAC'</span><span class="punctuation">)</span>
+    <span class="name">logging</span><span class="operator">.</span><span class="name">addLevelName</span><span class="punctuation">(</span><span class="name">BLAT</span><span class="punctuation">,</span> <span class="literal string single">'BLAT'</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">setLevel</span><span class="punctuation">(</span><span class="name">TRAC</span><span class="punctuation">)</span>
-    <span class="name">log</span><span class="operator">.</span><span class="name">log</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">,</span> <span class="name">BLAT</span><span class="punctuation">)</span>  <span class="comment"># not printed because msg.level &lt; log.level</span>
+    <span class="name">log</span><span class="operator">.</span><span class="name">log</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">,</span> <span class="name">BLAT</span><span class="punctuation">)</span>  <span class="comment single"># not printed because msg.level &lt; log.level</span>
 
-<span class="comment"># run unittest.main() when run like:</span>
-<span class="comment">#   python ./filename.py</span>
-<span class="comment"># but not when imported like:</span>
-<span class="comment">#   import filename</span>
-<span class="keyword">if</span> <span class="name">__name__</span> <span class="operator">==</span> <span class="literal string">&quot;__main__&quot;</span><span class="punctuation">:</span>
+<span class="comment single"># run unittest.main() when run like:</span>
+<span class="comment single">#   python ./filename.py</span>
+<span class="comment single"># but not when imported like:</span>
+<span class="comment single">#   import filename</span>
+<span class="keyword">if</span> <span class="name">__name__</span> <span class="operator">==</span> <span class="literal string double">&quot;__main__&quot;</span><span class="punctuation">:</span>
     <span class="keyword namespace">import</span> <span class="name namespace">sys</span>
     <span class="name">sys</span><span class="operator">.</span><span class="name">exit</span><span class="punctuation">(</span><span class="name">unittest</span><span class="operator">.</span><span class="name">main</span><span class="punctuation">())</span>
 </pre>
@@ -887,12 +887,12 @@ def test_true(): assert True == True
 <div class="section" id="debugging-console-cli-terminal-repl-ipython">
 <h2><a class="toc-backref" href="#id35">Debugging: Console, CLI, Terminal, REPL, IPython</a></h2>
 <pre class="code python literal-block">
-<span class="keyword namespace">import</span> <span class="name namespace">pdb</span><span class="punctuation">;</span> <span class="name">pdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>    <span class="comment"># pdb, pdbpp</span>
-<span class="keyword namespace">import</span> <span class="name namespace">ipdb</span><span class="punctuation">;</span> <span class="name">ipdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>  <span class="comment"># ipdb</span>
+<span class="keyword namespace">import</span> <span class="name namespace">pdb</span><span class="punctuation">;</span> <span class="name">pdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>    <span class="comment single"># pdb, pdbpp</span>
+<span class="keyword namespace">import</span> <span class="name namespace">ipdb</span><span class="punctuation">;</span> <span class="name">ipdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>  <span class="comment single"># ipdb</span>
 </pre>
 <pre class="code bash literal-block">
-nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # nose-progressive
-</span>py.test --pdb  <span class="comment"># --full-trace</span>
+nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressive  # nose-progressive
+</span>py.test --pdb  <span class="comment single"># --full-trace</span>
 </pre>
 <ul class="simple">
 <li><a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></li>
@@ -1126,6 +1126,13 @@ nosetests --ipdb --ipdb-failure  <span class="comment"># --with-progressive  # n
 <p>Bottle is a one file WSGI Python web framework.</p>
 <ul class="simple">
 <li><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></li>
+</ul>
+<p>pgs is written with bottle.py:</p>
+<ul>
+<li><div class="first line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/pgs">https://github.com/westurner/pgs</a></div>
+</div>
+</li>
 </ul>
 </div>
 <div class="section" id="pyramid">

@@ -18,8 +18,17 @@ Awesome
 Standards
 ================
 
+WAI
+----
+| Homepage: https://www.w3.org/WAI/
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Accessibility_Initiative
+
+W3C WAI (*Web Accessibility Initiative*) is a group of standards and guidelines for developing accessible web content and applications.
+
+
 WAI-ARIA
------------
+~~~~~~~~~~
+| Homepage: https://www.w3.org/WAI/intro/aria.php
 | Wikipedia: https://en.wikipedia.org/wiki/WAI-ARIA
 | Dbpedia: http://dbpedia.org/page/WAI-ARIA
 
@@ -29,11 +38,19 @@ Mozilla MDN WAI-ARIA resources: https://developer.mozilla.org/en-US/docs/Web/Acc
   https://patrickhlauke.github.io/aria/presentation/
 
 
+* https://www.w3.org/TR/wai-aria-practices/
+* https://www.w3.org/TR/wai-aria-practices/#ariaform
+  
+  * ``aria-invalid`` -- form validation errors
+  * ``aria-required`` -- required form fields
+  
+* https://www.w3.org/TR/html51/dom.html#wai-aria 
+
 >   What is ARIA, and why do we need it?
 
 
 WCAG
-------
+~~~~~~~~
 | Label: W3C WCAG
 | Label: Web Content Accessibility Guidelines
 | Wikipedia: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines

@@ -63,7 +63,8 @@
 <script type="text/javascript">
 </script>
     <link rel="top" title="westurner/wiki" href="index" />
-    <link rel="prev" title="Workstations" href="workstations" /> 
+    <link rel="next" title="Tools" href="tools" />
+    <link rel="prev" title="Accessibility" href="accessibility" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
@@ -183,7 +184,8 @@
               </li>
 
             
-              <li><a href="workstations" title="Workstations" accesskey="P">previous </a></li>
+              <li><a href="accessibility" title="Accessibility" accesskey="P">previous </a></li>
+              <li><a href="tools" title="Tools" accesskey="N">next </a></li>
               <li><a href="genindex" title="General Index" accesskey="I">index </a></li>
             
             <li class="visible-xs"><a href="_sources/awesome-python-testing.txt" rel="nofollow">Show Source</a></li>
@@ -317,8 +319,11 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="workstations"
-                        title="previous chapter">Workstations</a></p>
+  <p class="topless"><a href="accessibility"
+                        title="previous chapter">Accessibility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tools"
+                        title="next chapter">Tools</a></p>
 <div id="searchbox" role="search">
   <h3>Quick search</h3>
   <form class="search form-inline" action="search" method="get">
@@ -512,15 +517,15 @@
 </div>
 <div class="section" id="workflow-evolution">
 <h3><a class="toc-backref" href="#id5">Workflow Evolution</a><a class="headerlink" href="#workflow-evolution" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre>1. edit, edit, commit
-2. edit, commit
-3. todo, edit, commit
-4. todo, edit, test, commit
-5. todo, test, edit, test, commit
-6. todo, test, edit, test, commit, tag
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">edit</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">commit</span>
+<span class="mf">2.</span> <span class="n">edit</span><span class="p">,</span> <span class="n">commit</span>
+<span class="mf">3.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">commit</span>
+<span class="mf">4.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">commit</span>
+<span class="mf">5.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">commit</span>
+<span class="mf">6.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">commit</span><span class="p">,</span> <span class="n">tag</span>
 
-7. todo, branch, test, edit, test, commit, { tag, push, send patch }
-8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
+<span class="mf">7.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">branch</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">commit</span><span class="p">,</span> <span class="p">{</span> <span class="n">tag</span><span class="p">,</span> <span class="n">push</span><span class="p">,</span> <span class="n">send</span> <span class="n">patch</span> <span class="p">}</span>
+<span class="mf">8.</span> <span class="n">todo</span><span class="p">,</span> <span class="n">qnew</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">edit</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">commit</span><span class="p">,</span> <span class="n">finish</span><span class="p">,</span> <span class="p">{</span> <span class="n">tag</span><span class="p">,</span> <span class="n">push</span><span class="p">,</span> <span class="n">send</span> <span class="n">patch</span> <span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -633,7 +638,7 @@
 <ul class="simple">
 <li><a class="reference external" href="http://ipython.org/ipython-doc/dev/interactive/tips.html">http://ipython.org/ipython-doc/dev/interactive/tips.html</a></li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre>def test_true(): assert True == True
+<div class="highlight-default"><div class="highlight"><pre><span></span>def test_true(): assert True == True
 %logstart log_input_to_here.py
 %logstart -o log_input_and_output_to_here.py
 %ed log_input_and_output_to_here.py
@@ -702,52 +707,52 @@
 <div class="section" id="python-logging-primer">
 <h3><a class="toc-backref" href="#id17">Python Logging Primer</a><a class="headerlink" href="#python-logging-primer" title="Permalink to this headline">¶</a></h3>
 <p>A primer on <a class="reference internal" href="#python">Python</a> logging (and testing):</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="c">#### Logging examples</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#### Logging examples</span>
 
-<span class="c"># test setup (fixtures)</span>
+<span class="c1"># test setup (fixtures)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">}</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">}</span>
 
-<span class="c"># asserts get compiled out with python -O2</span>
+<span class="c1"># asserts get compiled out with python -O2</span>
 <span class="k">assert</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span>
 
-<span class="c"># these always run</span>
+<span class="c1"># these always run</span>
 <span class="k">class</span> <span class="nc">TestTwo</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">test_001_x_equals_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 
 <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="c">### Exceptions</span>
-    <span class="n">err</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;...&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="c1">### Exceptions</span>
+    <span class="n">err</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
 
-    <span class="c">### Logging</span>
+    <span class="c1">### Logging</span>
     <span class="kn">import</span> <span class="nn">logging</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span>                       <span class="c"># global logger</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s">&#39;logging&#39;</span><span class="p">)</span>         <span class="c"># global logger</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>   <span class="c"># local logger (&lt;__name__&gt;.py)</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span>                       <span class="c1"># global logger</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;logging&#39;</span><span class="p">)</span>         <span class="c1"># global logger</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>   <span class="c1"># local logger (&lt;__name__&gt;.py)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">fatal</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
-    <span class="c"># see: supervisor.loggers.LevelsByName and .LevelsByDescription</span>
+    <span class="c1"># see: supervisor.loggers.LevelsByName and .LevelsByDescription</span>
     <span class="n">TRAC</span> <span class="o">=</span> <span class="n">LevelsByName</span><span class="o">.</span><span class="n">TRAC</span> <span class="o">=</span> <span class="mi">5</span>
     <span class="n">BLAT</span> <span class="o">=</span> <span class="n">LevelsByName</span><span class="o">.</span><span class="n">BLAT</span> <span class="o">=</span> <span class="mi">3</span>
     <span class="n">log</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">TRAC</span><span class="p">)</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">addLevelName</span><span class="p">(</span><span class="n">TRAC</span><span class="p">,</span> <span class="s">&#39;TRAC&#39;</span><span class="p">)</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">addLevelName</span><span class="p">(</span><span class="n">BLAT</span><span class="p">,</span> <span class="s">&#39;BLAT&#39;</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">addLevelName</span><span class="p">(</span><span class="n">TRAC</span><span class="p">,</span> <span class="s1">&#39;TRAC&#39;</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">addLevelName</span><span class="p">(</span><span class="n">BLAT</span><span class="p">,</span> <span class="s1">&#39;BLAT&#39;</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">TRAC</span><span class="p">)</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">BLAT</span><span class="p">)</span>  <span class="c"># not printed because msg.level &lt; log.level</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">BLAT</span><span class="p">)</span>  <span class="c1"># not printed because msg.level &lt; log.level</span>
 
-<span class="c"># run unittest.main() when run like:</span>
-<span class="c">#   python ./filename.py</span>
-<span class="c"># but not when imported like:</span>
-<span class="c">#   import filename</span>
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="c1"># run unittest.main() when run like:</span>
+<span class="c1">#   python ./filename.py</span>
+<span class="c1"># but not when imported like:</span>
+<span class="c1">#   import filename</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
@@ -935,12 +940,12 @@
 </ul>
 <div class="section" id="debugging-console-cli-terminal-repl-ipython">
 <h3><a class="toc-backref" href="#id36">Debugging: Console, CLI, Terminal, REPL, IPython</a><a class="headerlink" href="#debugging-console-cli-terminal-repl-ipython" title="Permalink to this headline">¶</a></h3>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>    <span class="c"># pdb, pdbpp</span>
-<span class="kn">import</span> <span class="nn">ipdb</span><span class="p">;</span> <span class="n">ipdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>  <span class="c"># ipdb</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>    <span class="c1"># pdb, pdbpp</span>
+<span class="kn">import</span> <span class="nn">ipdb</span><span class="p">;</span> <span class="n">ipdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>  <span class="c1"># ipdb</span>
 </pre></div>
 </div>
-<div class="code bash highlight-python"><div class="highlight"><pre><span class="n">nosetests</span> <span class="o">--</span><span class="n">ipdb</span> <span class="o">--</span><span class="n">ipdb</span><span class="o">-</span><span class="n">failure</span>  <span class="c"># --with-progressive  # nose-progressive</span>
-<span class="n">py</span><span class="o">.</span><span class="n">test</span> <span class="o">--</span><span class="n">pdb</span>  <span class="c"># --full-trace</span>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">nosetests</span> <span class="o">--</span><span class="n">ipdb</span> <span class="o">--</span><span class="n">ipdb</span><span class="o">-</span><span class="n">failure</span>  <span class="c1"># --with-progressive  # nose-progressive</span>
+<span class="n">py</span><span class="o">.</span><span class="n">test</span> <span class="o">--</span><span class="n">pdb</span>  <span class="c1"># --full-trace</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -1176,6 +1181,13 @@
 <ul class="simple">
 <li><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></li>
 </ul>
+<p>pgs is written with bottle.py:</p>
+<ul>
+<li><div class="first line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/pgs">https://github.com/westurner/pgs</a></div>
+</div>
+</li>
+</ul>
 </div>
 <div class="section" id="pyramid">
 <h3><a class="toc-backref" href="#id56">Pyramid</a><a class="headerlink" href="#pyramid" title="Permalink to this headline">¶</a></h3>
@@ -1258,7 +1270,8 @@ zopetestbrowser, remote webdriver)</li>
     </ul>
 <ul class="nav navbar-nav text-center">
       
-        <li><a href="workstations" title="Workstations" >previous</a></li>
+        <li><a href="accessibility" title="Accessibility" >previous</a></li>
+        <li><a href="tools" title="Tools" >next</a></li>
         <li><a href="genindex" title="General Index" >index</a></li>
         <li><a href="#">top</a></li> 
       
@@ -1270,7 +1283,7 @@ zopetestbrowser, remote webdriver)</li>
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright @westurner 2014-2016, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.1.
       </footer>
       <!-- /footer -->
 
