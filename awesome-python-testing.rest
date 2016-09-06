@@ -804,7 +804,7 @@ Pyramid
 
 Web Applications
 ==================
-https://en.wikipedia.org/wiki/Web_application
+| Wikipedia: https://en.wikipedia.org/wiki/Web_application
 
 * http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
 
@@ -831,6 +831,19 @@ Splinter
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
     zopetestbrowser, remote webdriver)
   * css and xpath selectors \*
+
+
+ghost.py
+---------
+| Src: git https://github.com/jeanphix/Ghost.py
+| PyPI: https://pypi.python.org/pypi/Ghost.py
+| Docs: http://ghost-py.readthedocs.org/en/latest/
+
+.. epigraph::
+
+    Webkit based scriptable web browser for python.
+
+- PyQT or PySide
 
 
 Selenium
