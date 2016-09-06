@@ -294,19 +294,120 @@ Nose
 --------------
 
 | Src: git https://github.com/nose-devs/nose
+| PyPI: https://pypi.python.org/pypi/nose
 | Docs: https://nose.readthedocs.org/en/latest/testing.html
 | Docs https://nose.readthedocs.org/en/latest/writing_tests.html
 
-* https://github.com/taavi/ipython_nose
-* https://github.com/flavioamieiro/nose-ipdb (pip install ipdbplugin)
-* https://github.com/wolever/nose-parameterized
+.. code:: bash
+
+        nosetests --help
+        nosetests --with-xunit
+
+        # python -m pdb --help
+        nosetests --pdb
+        nosetests --pdb-failures
+        nosetests --pdb-errors
+
+        # pip install nose_ipdb
+        nosetests --ipdb --ipdb-failure
+
+        # pip install nose-progressive
+        nosetests --with-progressive
+
+
+nose-ipdb
+~~~~~~~~~~~
+| Src: https://github.com/flavioamieiro/nose-ipdb
+| Docs: https://pypi.python.org/pypi/ipdbplugin
+
+nose-ipdb is a `Nose`_ plugin for running `pdb`_ debugger
+with IPython (so tab completion, ``obj?`` and ``obj??`` all work.
+
+
+nose-parameterized
+~~~~~~~~~~~~~~~~~~~~
+| Src: https://github.com/wolever/nose-parameterized
+
+nose-parameterized is a `Nose`_ plugin for separating
+test data from test code.
+
+See also:
+
+* `Fixtures`_
+
+
+nose-progressive
+~~~~~~~~~~~~~~~~~~
+| Src https://github.com/erikrose/nose-progressive
+| PyPI: https://pypi.python.org/pypi/nose-progressive
+
+nose-progressive is a `Nose`_ plugin which adds a progress bar,
+better/different configurable tracebacks, and editor shortcuts
+
+* https://github.com/erikrose/nose-progressive#editor-shortcuts
+
+  .. code:: bash
+
+      export EDITOR='e'
+
+  - https://github.com/westurner/dotfiles/blob/develop/scripts/e
+
+
+ipython_nose
+~~~~~~~~~~~~~~~
+| Src: https://github.com/taavi/ipython_nose
+
+ipython_nose is a `Nose`_ plugin for running ``test_*`` functions
+within the current Jupyter Notebook.
+
+.. code:: python
+
+   !pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
+   %load_ext ipython_nose
+   def test_func():
+       assert sum([1, 1]) == 2
+   %nose  # discover and run "test_*" functions
+
+
+nosebook
+~~~~~~~~~
+| Src: https://github.com/bollwyvl/nosebook
+| PyPI: https://pypi.python.org/pypi/nosebook
+
+* nosebook is a Nose plugin for running test functions
+  in Jupyter Notebooks from the CLI.
+
+
+nose and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pdbpp
+   nosetests --pdb
 
 
 py.test
 ---------------
 
 | Src: https://bitbucket.org/hpk42/pytest
+| PyPI: https://pypi.python.org/pypi/pytest
 | Docs: http://pytest.org/latest/
+
+.. code:: bash
+
+    py.test --pdb  # --full-trace
+
+py.test and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pytest
+   py.test --pdb
+
 
 testtools
 -------------
@@ -370,7 +471,7 @@ Jenkins
 
 xUnit XML
 ----------
-https://en.wikipedia.org/wiki/XUnit
+| Wikipedia: https://en.wikipedia.org/wiki/XUnit
 
 * https://nose.readthedocs.org/en/latest/plugins/xunit.html
 * http://nosexunit.sourceforge.net/
@@ -433,23 +534,55 @@ Debugging
 
 Debugging: Console, CLI, Terminal, REPL, IPython
 -----------------------------------------------------
+
+pdb
+~~~~~
+| Src: https://hg.python.org/cpython/file/tip/Lib/pdb.py
+| Docs: http://docs.python.org/2/library/pdb.html
+| Docs: http://docs.python.org/3/library/pdb.html
+| Docs: https://pymotw.com/2/pdb/
+| Docs: https://pymotw.com/3/pdb/
+
 .. code:: python
 
     import pdb; pdb.set_trace()    # pdb, pdbpp
-    import ipdb; ipdb.set_trace()  # ipdb
 
+* http://docs.python.org/2/library/inspect.html
+* http://docs.python.org/2/library/dis.html
+
+pudb
+~~~~~~
+| Src: https://github.com/inducer/pudb
+| PyPI: https://pypi.python.org/pypi/pudb
+
+ipdb
+~~~~~~
+| Src: https://github.com/gotcha/ipdb
+| PyPI: https://pypi.python.org/pypi/ipdb
 
 .. code:: bash
 
+    import ipdb; ipdb.set_trace()  # ipdb
     nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
-    py.test --pdb  # --full-trace
 
-* http://docs.python.org/2/library/pdb.html
-* http://docs.python.org/2/library/inspect.html
-* http://docs.python.org/2/library/dis.html
-* https://pypi.python.org/pypi/pudb
-* https://github.com/gotcha/ipdb
-* https://pypi.python.org/pypi/pdbpp/
+pdbpp
+~~~~~~~~~
+| Src: http://bitbucket.org/antocuni/pdb
+| PyPI: https://pypi.python.org/pypi/pdbpp
+
+pdb++ (pdbpp) is a "drop-in replacement for pdb" with additional
+debugging commands, tab completion, syntax highlighting, sticky mode,
+
+* When pdb++ is installed (in ``sys.path``) pdb++ overloads pdb:
+
+.. code:: bash
+
+   pip install pdbpp funcsigs  # installs pdb.py
+   python -m pdb ./code.py
+
+   nosetests --pdb ./code.py
+   py.test --pdb ./code.py
+
 
 Vim
 ~~~~~
@@ -679,7 +812,7 @@ Pyramid
 
 Web Applications
 ==================
-https://en.wikipedia.org/wiki/Web_application
+| Wikipedia: https://en.wikipedia.org/wiki/Web_application
 
 * http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
 
@@ -706,6 +839,19 @@ Splinter
   * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
     zopetestbrowser, remote webdriver)
   * css and xpath selectors \*
+
+
+ghost.py
+---------
+| Src: git https://github.com/jeanphix/Ghost.py
+| PyPI: https://pypi.python.org/pypi/Ghost.py
+| Docs: http://ghost-py.readthedocs.org/en/latest/
+
+.. epigraph::
+
+    Webkit based scriptable web browser for python.
+
+- PyQT or PySide
 
 
 Selenium

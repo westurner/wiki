@@ -376,65 +376,81 @@ ul.auto-toc {
 <li><a class="reference internal" href="#behavior-driven-development-bdd" id="id18">Behavior-Driven Development (BDD)</a></li>
 <li><a class="reference internal" href="#mocks" id="id19">Mocks</a></li>
 <li><a class="reference internal" href="#test-runners" id="id20">Test Runners</a><ul>
-<li><a class="reference internal" href="#nose" id="id21">Nose</a></li>
-<li><a class="reference internal" href="#py-test" id="id22">py.test</a></li>
-<li><a class="reference internal" href="#testtools" id="id23">testtools</a></li>
-<li><a class="reference internal" href="#gui-test-runners" id="id24">GUI Test Runners</a></li>
-<li><a class="reference internal" href="#tox" id="id25">Tox</a></li>
+<li><a class="reference internal" href="#nose" id="id21">Nose</a><ul>
+<li><a class="reference internal" href="#nose-ipdb" id="id22">nose-ipdb</a></li>
+<li><a class="reference internal" href="#nose-parameterized" id="id23">nose-parameterized</a></li>
+<li><a class="reference internal" href="#nose-progressive" id="id24">nose-progressive</a></li>
+<li><a class="reference internal" href="#ipython-nose" id="id25">ipython_nose</a></li>
+<li><a class="reference internal" href="#nosebook" id="id26">nosebook</a></li>
+<li><a class="reference internal" href="#nose-and-pdbpp" id="id27">nose and pdbpp</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id26">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
-<li><a class="reference internal" href="#buildbot" id="id27">Buildbot</a></li>
-<li><a class="reference internal" href="#jenkins" id="id28">Jenkins</a></li>
-<li><a class="reference internal" href="#xunit-xml" id="id29">xUnit XML</a></li>
-<li><a class="reference internal" href="#travis" id="id30">Travis</a></li>
+<li><a class="reference internal" href="#py-test" id="id28">py.test</a><ul>
+<li><a class="reference internal" href="#py-test-and-pdbpp" id="id29">py.test and pdbpp</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#version-control" id="id31">Version Control</a><ul>
-<li><a class="reference internal" href="#patches-tags-branches-merging" id="id32">Patches, Tags, Branches, Merging</a></li>
-<li><a class="reference internal" href="#bisect-blame" id="id33">Bisect, Blame</a></li>
+<li><a class="reference internal" href="#testtools" id="id30">testtools</a></li>
+<li><a class="reference internal" href="#gui-test-runners" id="id31">GUI Test Runners</a></li>
+<li><a class="reference internal" href="#tox" id="id32">Tox</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#debugging" id="id34">Debugging</a><ul>
-<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id35">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
-<li><a class="reference internal" href="#vim" id="id36">Vim</a></li>
+<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id33">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
+<li><a class="reference internal" href="#buildbot" id="id34">Buildbot</a></li>
+<li><a class="reference internal" href="#jenkins" id="id35">Jenkins</a></li>
+<li><a class="reference internal" href="#xunit-xml" id="id36">xUnit XML</a></li>
+<li><a class="reference internal" href="#travis" id="id37">Travis</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#debugging-gui" id="id37">Debugging: GUI</a><ul>
-<li><a class="reference internal" href="#ides" id="id38">IDEs</a></li>
+<li><a class="reference internal" href="#version-control" id="id38">Version Control</a><ul>
+<li><a class="reference internal" href="#patches-tags-branches-merging" id="id39">Patches, Tags, Branches, Merging</a></li>
+<li><a class="reference internal" href="#bisect-blame" id="id40">Bisect, Blame</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#debugging-web" id="id39">Debugging: Web</a></li>
-<li><a class="reference internal" href="#advanced-debugging" id="id40">Advanced Debugging</a></li>
+<li><a class="reference internal" href="#debugging" id="id41">Debugging</a><ul>
+<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id42">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
+<li><a class="reference internal" href="#pdb" id="id43">pdb</a></li>
+<li><a class="reference internal" href="#pudb" id="id44">pudb</a></li>
+<li><a class="reference internal" href="#ipdb" id="id45">ipdb</a></li>
+<li><a class="reference internal" href="#pdbpp" id="id46">pdbpp</a></li>
+<li><a class="reference internal" href="#vim" id="id47">Vim</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id41">Performance Instrumentation and Profiling</a><ul>
-<li><a class="reference internal" href="#profiling" id="id42">Profiling</a></li>
-<li><a class="reference internal" href="#benchmarks" id="id43">Benchmarks</a></li>
-<li><a class="reference internal" href="#performance" id="id44">Performance</a></li>
+<li><a class="reference internal" href="#debugging-gui" id="id48">Debugging: GUI</a><ul>
+<li><a class="reference internal" href="#ides" id="id49">IDEs</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#databases" id="id45">Databases</a><ul>
-<li><a class="reference internal" href="#fixtures" id="id46">Fixtures</a></li>
-<li><a class="reference internal" href="#schema-migrations" id="id47">Schema Migrations</a><ul>
-<li><a class="reference internal" href="#django-migrations" id="id48">Django Migrations</a></li>
-<li><a class="reference internal" href="#sqlalchemy-migrations" id="id49">SQLAlchemy Migrations</a></li>
+<li><a class="reference internal" href="#debugging-web" id="id50">Debugging: Web</a></li>
+<li><a class="reference internal" href="#advanced-debugging" id="id51">Advanced Debugging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id52">Performance Instrumentation and Profiling</a><ul>
+<li><a class="reference internal" href="#profiling" id="id53">Profiling</a></li>
+<li><a class="reference internal" href="#benchmarks" id="id54">Benchmarks</a></li>
+<li><a class="reference internal" href="#performance" id="id55">Performance</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#databases" id="id56">Databases</a><ul>
+<li><a class="reference internal" href="#fixtures" id="id57">Fixtures</a></li>
+<li><a class="reference internal" href="#schema-migrations" id="id58">Schema Migrations</a><ul>
+<li><a class="reference internal" href="#django-migrations" id="id59">Django Migrations</a></li>
+<li><a class="reference internal" href="#sqlalchemy-migrations" id="id60">SQLAlchemy Migrations</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-frameworks" id="id50">Web Frameworks</a><ul>
-<li><a class="reference internal" href="#plone" id="id51">Plone</a></li>
-<li><a class="reference internal" href="#django" id="id52">Django</a></li>
-<li><a class="reference internal" href="#flask" id="id53">Flask</a></li>
-<li><a class="reference internal" href="#bottle" id="id54">Bottle</a></li>
-<li><a class="reference internal" href="#pyramid" id="id55">Pyramid</a></li>
+<li><a class="reference internal" href="#web-frameworks" id="id61">Web Frameworks</a><ul>
+<li><a class="reference internal" href="#plone" id="id62">Plone</a></li>
+<li><a class="reference internal" href="#django" id="id63">Django</a></li>
+<li><a class="reference internal" href="#flask" id="id64">Flask</a></li>
+<li><a class="reference internal" href="#bottle" id="id65">Bottle</a></li>
+<li><a class="reference internal" href="#pyramid" id="id66">Pyramid</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-applications" id="id56">Web Applications</a><ul>
-<li><a class="reference internal" href="#webtest" id="id57">WebTest</a></li>
-<li><a class="reference internal" href="#splinter" id="id58">Splinter</a></li>
-<li><a class="reference internal" href="#selenium" id="id59">Selenium</a></li>
+<li><a class="reference internal" href="#web-applications" id="id67">Web Applications</a><ul>
+<li><a class="reference internal" href="#webtest" id="id68">WebTest</a></li>
+<li><a class="reference internal" href="#splinter" id="id69">Splinter</a></li>
+<li><a class="reference internal" href="#ghost-py" id="id70">ghost.py</a></li>
+<li><a class="reference internal" href="#selenium" id="id71">Selenium</a></li>
 </ul>
 </li>
 </ul>
@@ -738,24 +754,121 @@ def test_true(): assert True == True
 <h2><a class="toc-backref" href="#id21">Nose</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/nose-devs/nose">https://github.com/nose-devs/nose</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/nose">https://pypi.python.org/pypi/nose</a></div>
 <div class="line">Docs: <a class="reference external" href="https://nose.readthedocs.org/en/latest/testing.html">https://nose.readthedocs.org/en/latest/testing.html</a></div>
 <div class="line">Docs <a class="reference external" href="https://nose.readthedocs.org/en/latest/writing_tests.html">https://nose.readthedocs.org/en/latest/writing_tests.html</a></div>
 </div>
+<pre class="code bash literal-block">
+nosetests --help
+nosetests --with-xunit
+
+<span class="comment single"># python -m pdb --help
+</span>nosetests --pdb
+nosetests --pdb-failures
+nosetests --pdb-errors
+
+<span class="comment single"># pip install nose_ipdb
+</span>nosetests --ipdb --ipdb-failure
+
+<span class="comment single"># pip install nose-progressive
+</span>nosetests --with-progressive
+</pre>
+<div class="section" id="nose-ipdb">
+<h3><a class="toc-backref" href="#id22">nose-ipdb</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/flavioamieiro/nose-ipdb">https://github.com/flavioamieiro/nose-ipdb</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pypi.python.org/pypi/ipdbplugin">https://pypi.python.org/pypi/ipdbplugin</a></div>
+</div>
+<p>nose-ipdb is a <a class="reference internal" href="#nose">Nose</a> plugin for running <a class="reference internal" href="#pdb">pdb</a> debugger
+with IPython (so tab completion, <tt class="docutils literal">obj?</tt> and <tt class="docutils literal"><span class="pre">obj??</span></tt> all work.</p>
+</div>
+<div class="section" id="nose-parameterized">
+<h3><a class="toc-backref" href="#id23">nose-parameterized</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/wolever/nose-parameterized">https://github.com/wolever/nose-parameterized</a></div>
+</div>
+<p>nose-parameterized is a <a class="reference internal" href="#nose">Nose</a> plugin for separating
+test data from test code.</p>
+<p>See also:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/taavi/ipython_nose">https://github.com/taavi/ipython_nose</a></li>
-<li><a class="reference external" href="https://github.com/flavioamieiro/nose-ipdb">https://github.com/flavioamieiro/nose-ipdb</a> (pip install ipdbplugin)</li>
-<li><a class="reference external" href="https://github.com/wolever/nose-parameterized">https://github.com/wolever/nose-parameterized</a></li>
+<li><a class="reference internal" href="#fixtures">Fixtures</a></li>
 </ul>
 </div>
+<div class="section" id="nose-progressive">
+<h3><a class="toc-backref" href="#id24">nose-progressive</a></h3>
+<div class="line-block">
+<div class="line">Src <a class="reference external" href="https://github.com/erikrose/nose-progressive">https://github.com/erikrose/nose-progressive</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/nose-progressive">https://pypi.python.org/pypi/nose-progressive</a></div>
+</div>
+<p>nose-progressive is a <a class="reference internal" href="#nose">Nose</a> plugin which adds a progress bar,
+better/different configurable tracebacks, and editor shortcuts</p>
+<ul>
+<li><p class="first"><a class="reference external" href="https://github.com/erikrose/nose-progressive#editor-shortcuts">https://github.com/erikrose/nose-progressive#editor-shortcuts</a></p>
+<pre class="code bash literal-block">
+<span class="name builtin">export</span> <span class="name variable">EDITOR</span><span class="operator">=</span><span class="literal string single">'e'</span>
+</pre>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/develop/scripts/e">https://github.com/westurner/dotfiles/blob/develop/scripts/e</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="ipython-nose">
+<h3><a class="toc-backref" href="#id25">ipython_nose</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/taavi/ipython_nose">https://github.com/taavi/ipython_nose</a></div>
+</div>
+<p>ipython_nose is a <a class="reference internal" href="#nose">Nose</a> plugin for running <tt class="docutils literal">test_*</tt> functions
+within the current Jupyter Notebook.</p>
+<pre class="code python literal-block">
+<span class="error">!</span><span class="name">pip</span> <span class="name">install</span> <span class="operator">-</span><span class="name">e</span> <span class="name">git</span><span class="operator">+</span><span class="name">https</span><span class="punctuation">:</span><span class="operator">//</span><span class="name">github</span><span class="operator">.</span><span class="name">com</span><span class="operator">/</span><span class="name">taavi</span><span class="operator">/</span><span class="name">ipython_nose</span><span class="comment single">#egg=ipython_nose</span>
+<span class="operator">%</span><span class="name">load_ext</span> <span class="name">ipython_nose</span>
+<span class="keyword">def</span> <span class="name function">test_func</span><span class="punctuation">():</span>
+    <span class="keyword">assert</span> <span class="name builtin">sum</span><span class="punctuation">([</span><span class="literal number integer">1</span><span class="punctuation">,</span> <span class="literal number integer">1</span><span class="punctuation">])</span> <span class="operator">==</span> <span class="literal number integer">2</span>
+<span class="operator">%</span><span class="name">nose</span>  <span class="comment single"># discover and run &quot;test_*&quot; functions</span>
+</pre>
+</div>
+<div class="section" id="nosebook">
+<h3><a class="toc-backref" href="#id26">nosebook</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/bollwyvl/nosebook">https://github.com/bollwyvl/nosebook</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/nosebook">https://pypi.python.org/pypi/nosebook</a></div>
+</div>
+<ul class="simple">
+<li>nosebook is a Nose plugin for running test functions
+in Jupyter Notebooks from the CLI.</li>
+</ul>
+</div>
+<div class="section" id="nose-and-pdbpp">
+<h3><a class="toc-backref" href="#id27">nose and pdbpp</a></h3>
+<p><a class="reference internal" href="#nose">Nose</a> and <a class="reference internal" href="#pdbpp">pdbpp</a>:</p>
+<pre class="code bash literal-block">
+pip install pdbpp
+nosetests --pdb
+</pre>
+</div>
+</div>
 <div class="section" id="py-test">
-<h2><a class="toc-backref" href="#id22">py.test</a></h2>
+<h2><a class="toc-backref" href="#id28">py.test</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/hpk42/pytest">https://bitbucket.org/hpk42/pytest</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pytest">https://pypi.python.org/pypi/pytest</a></div>
 <div class="line">Docs: <a class="reference external" href="http://pytest.org/latest/">http://pytest.org/latest/</a></div>
+</div>
+<pre class="code bash literal-block">
+py.test --pdb  <span class="comment single"># --full-trace</span>
+</pre>
+<div class="section" id="py-test-and-pdbpp">
+<h3><a class="toc-backref" href="#id29">py.test and pdbpp</a></h3>
+<p><a class="reference internal" href="#nose">Nose</a> and <a class="reference internal" href="#pdbpp">pdbpp</a>:</p>
+<pre class="code bash literal-block">
+pip install pytest
+py.test --pdb
+</pre>
 </div>
 </div>
 <div class="section" id="testtools">
-<h2><a class="toc-backref" href="#id23">testtools</a></h2>
+<h2><a class="toc-backref" href="#id30">testtools</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/testing-cabal/testtools">https://github.com/testing-cabal/testtools</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/testtools">https://pypi.python.org/pypi/testtools</a></div>
@@ -767,14 +880,14 @@ def test_true(): assert True == True
 </div>
 </div>
 <div class="section" id="gui-test-runners">
-<h2><a class="toc-backref" href="#id24">GUI Test Runners</a></h2>
+<h2><a class="toc-backref" href="#id31">GUI Test Runners</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/pybee/cricket">https://github.com/pybee/cricket</a></li>
 <li>See: <a class="reference internal" href="#debugging-gui">Debugging: GUI</a></li>
 </ul>
 </div>
 <div class="section" id="tox">
-<h2><a class="toc-backref" href="#id25">Tox</a></h2>
+<h2><a class="toc-backref" href="#id32">Tox</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/hpk42/tox">https://bitbucket.org/hpk42/tox</a></div>
 <div class="line">Docs: <a class="reference external" href="http://tox.readthedocs.org/en/latest/">http://tox.readthedocs.org/en/latest/</a></div>
@@ -785,7 +898,7 @@ def test_true(): assert True == True
 </div>
 </div>
 <div class="section" id="continuous-integration-ci-and-continuous-delivery-cd">
-<h1><a class="toc-backref" href="#id26">Continuous Integration (CI) and Continuous Delivery (CD)</a></h1>
+<h1><a class="toc-backref" href="#id33">Continuous Integration (CI) and Continuous Delivery (CD)</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></li>
@@ -793,7 +906,7 @@ def test_true(): assert True == True
 <li><a class="reference external" href="http://docs.python-guide.org/en/latest/scenarios/ci/">http://docs.python-guide.org/en/latest/scenarios/ci/</a></li>
 </ul>
 <div class="section" id="buildbot">
-<h2><a class="toc-backref" href="#id27">Buildbot</a></h2>
+<h2><a class="toc-backref" href="#id34">Buildbot</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Buildbot">https://en.wikipedia.org/wiki/Buildbot</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://buildbot.net">http://buildbot.net</a></div>
@@ -808,7 +921,7 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="jenkins">
-<h2><a class="toc-backref" href="#id28">Jenkins</a></h2>
+<h2><a class="toc-backref" href="#id35">Jenkins</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Jenkins_(software)">https://en.wikipedia.org/wiki/Jenkins_(software)</a></div>
 </div>
@@ -819,8 +932,10 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="xunit-xml">
-<h2><a class="toc-backref" href="#id29">xUnit XML</a></h2>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/XUnit">https://en.wikipedia.org/wiki/XUnit</a></p>
+<h2><a class="toc-backref" href="#id36">xUnit XML</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XUnit">https://en.wikipedia.org/wiki/XUnit</a></div>
+</div>
 <ul class="simple">
 <li><a class="reference external" href="https://nose.readthedocs.org/en/latest/plugins/xunit.html">https://nose.readthedocs.org/en/latest/plugins/xunit.html</a></li>
 <li><a class="reference external" href="http://nosexunit.sourceforge.net/">http://nosexunit.sourceforge.net/</a></li>
@@ -830,7 +945,7 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="travis">
-<h2><a class="toc-backref" href="#id30">Travis</a></h2>
+<h2><a class="toc-backref" href="#id37">Travis</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Travis_CI">https://en.wikipedia.org/wiki/Travis_CI</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://travis-ci.org/">http://travis-ci.org/</a></div>
@@ -842,9 +957,9 @@ def test_true(): assert True == True
 </div>
 </div>
 <div class="section" id="version-control">
-<h1><a class="toc-backref" href="#id31">Version Control</a></h1>
+<h1><a class="toc-backref" href="#id38">Version Control</a></h1>
 <div class="section" id="patches-tags-branches-merging">
-<h2><a class="toc-backref" href="#id32">Patches, Tags, Branches, Merging</a></h2>
+<h2><a class="toc-backref" href="#id39">Patches, Tags, Branches, Merging</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/ACID">https://en.wikipedia.org/wiki/ACID</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Patch_(computing)">https://en.wikipedia.org/wiki/Patch_(computing)</a></li>
@@ -861,7 +976,7 @@ def test_true(): assert True == True
 </ul>
 </div>
 <div class="section" id="bisect-blame">
-<h2><a class="toc-backref" href="#id33">Bisect, Blame</a></h2>
+<h2><a class="toc-backref" href="#id40">Bisect, Blame</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Code_Bisection">https://en.wikipedia.org/wiki/Code_Bisection</a></li>
 <li><a class="reference external" href="https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html">https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html</a></li>
@@ -874,7 +989,7 @@ def test_true(): assert True == True
 </div>
 </div>
 <div class="section" id="debugging">
-<h1><a class="toc-backref" href="#id34">Debugging</a></h1>
+<h1><a class="toc-backref" href="#id41">Debugging</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Debugging">https://en.wikipedia.org/wiki/Debugging</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Breakpoint">https://en.wikipedia.org/wiki/Breakpoint</a></li>
@@ -885,25 +1000,63 @@ def test_true(): assert True == True
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/debugging/">https://scipy-lectures.github.io/advanced/debugging/</a></li>
 </ul>
 <div class="section" id="debugging-console-cli-terminal-repl-ipython">
-<h2><a class="toc-backref" href="#id35">Debugging: Console, CLI, Terminal, REPL, IPython</a></h2>
+<h2><a class="toc-backref" href="#id42">Debugging: Console, CLI, Terminal, REPL, IPython</a></h2>
+<div class="section" id="pdb">
+<h3><a class="toc-backref" href="#id43">pdb</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://hg.python.org/cpython/file/tip/Lib/pdb.py">https://hg.python.org/cpython/file/tip/Lib/pdb.py</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.python.org/3/library/pdb.html">http://docs.python.org/3/library/pdb.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pymotw.com/2/pdb/">https://pymotw.com/2/pdb/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pymotw.com/3/pdb/">https://pymotw.com/3/pdb/</a></div>
+</div>
 <pre class="code python literal-block">
 <span class="keyword namespace">import</span> <span class="name namespace">pdb</span><span class="punctuation">;</span> <span class="name">pdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>    <span class="comment single"># pdb, pdbpp</span>
-<span class="keyword namespace">import</span> <span class="name namespace">ipdb</span><span class="punctuation">;</span> <span class="name">ipdb</span><span class="operator">.</span><span class="name">set_trace</span><span class="punctuation">()</span>  <span class="comment single"># ipdb</span>
-</pre>
-<pre class="code bash literal-block">
-nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressive  # nose-progressive
-</span>py.test --pdb  <span class="comment single"># --full-trace</span>
 </pre>
 <ul class="simple">
-<li><a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></li>
 <li><a class="reference external" href="http://docs.python.org/2/library/inspect.html">http://docs.python.org/2/library/inspect.html</a></li>
 <li><a class="reference external" href="http://docs.python.org/2/library/dis.html">http://docs.python.org/2/library/dis.html</a></li>
-<li><a class="reference external" href="https://pypi.python.org/pypi/pudb">https://pypi.python.org/pypi/pudb</a></li>
-<li><a class="reference external" href="https://github.com/gotcha/ipdb">https://github.com/gotcha/ipdb</a></li>
-<li><a class="reference external" href="https://pypi.python.org/pypi/pdbpp/">https://pypi.python.org/pypi/pdbpp/</a></li>
 </ul>
+</div>
+<div class="section" id="pudb">
+<h3><a class="toc-backref" href="#id44">pudb</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/inducer/pudb">https://github.com/inducer/pudb</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pudb">https://pypi.python.org/pypi/pudb</a></div>
+</div>
+</div>
+<div class="section" id="ipdb">
+<h3><a class="toc-backref" href="#id45">ipdb</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/gotcha/ipdb">https://github.com/gotcha/ipdb</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/ipdb">https://pypi.python.org/pypi/ipdb</a></div>
+</div>
+<pre class="code bash literal-block">
+import ipdb<span class="punctuation">;</span> ipdb.set_trace<span class="operator">()</span>  <span class="comment single"># ipdb
+</span>nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressive  # nose-progressive</span>
+</pre>
+</div>
+<div class="section" id="pdbpp">
+<h3><a class="toc-backref" href="#id46">pdbpp</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="http://bitbucket.org/antocuni/pdb">http://bitbucket.org/antocuni/pdb</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pdbpp">https://pypi.python.org/pypi/pdbpp</a></div>
+</div>
+<p>pdb++ (pdbpp) is a &quot;drop-in replacement for pdb&quot; with additional
+debugging commands, tab completion, syntax highlighting, sticky mode,</p>
+<ul class="simple">
+<li>When pdb++ is installed (in <tt class="docutils literal">sys.path</tt>) pdb++ overloads pdb:</li>
+</ul>
+<pre class="code bash literal-block">
+pip install pdbpp funcsigs  <span class="comment single"># installs pdb.py
+</span>python -m pdb ./code.py
+
+nosetests --pdb ./code.py
+py.test --pdb ./code.py
+</pre>
+</div>
 <div class="section" id="vim">
-<h3><a class="toc-backref" href="#id36">Vim</a></h3>
+<h3><a class="toc-backref" href="#id47">Vim</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/gotcha/vimpdb">https://github.com/gotcha/vimpdb</a></li>
 <li><a class="reference external" href="https://dev.launchpad.net/UltimateVimPythonSetup">https://dev.launchpad.net/UltimateVimPythonSetup</a> (F7 for <cite>set_trace</cite>)</li>
@@ -912,14 +1065,14 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="debugging-gui">
-<h2><a class="toc-backref" href="#id37">Debugging: GUI</a></h2>
+<h2><a class="toc-backref" href="#id48">Debugging: GUI</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://winpdb.org/docs/">http://winpdb.org/docs/</a></li>
 <li><a class="reference external" href="https://github.com/lmacken/pyrasite-gui">https://github.com/lmacken/pyrasite-gui</a></li>
 <li><a class="reference external" href="https://github.com/pybee/bugjar">https://github.com/pybee/bugjar</a></li>
 </ul>
 <div class="section" id="ides">
-<h3><a class="toc-backref" href="#id38">IDEs</a></h3>
+<h3><a class="toc-backref" href="#id49">IDEs</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger">http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger</a></li>
 <li><a class="reference external" href="http://www.jetbrains.com/pycharm/features/index.html#debugger">http://www.jetbrains.com/pycharm/features/index.html#debugger</a></li>
@@ -932,7 +1085,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="debugging-web">
-<h2><a class="toc-backref" href="#id39">Debugging: Web</a></h2>
+<h2><a class="toc-backref" href="#id50">Debugging: Web</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://werkzeug.pocoo.org/">http://werkzeug.pocoo.org/</a></li>
 <li><a class="reference external" href="http://firelogger.binaryage.com#python">http://firelogger.binaryage.com#python</a></li>
@@ -940,7 +1093,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="advanced-debugging">
-<h2><a class="toc-backref" href="#id40">Advanced Debugging</a></h2>
+<h2><a class="toc-backref" href="#id51">Advanced Debugging</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py">https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py</a></li>
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Misc/README.valgrind">https://hg.python.org/cpython/file/tip/Misc/README.valgrind</a></li>
@@ -955,9 +1108,9 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="performance-instrumentation-and-profiling">
-<h1><a class="toc-backref" href="#id41">Performance Instrumentation and Profiling</a></h1>
+<h1><a class="toc-backref" href="#id52">Performance Instrumentation and Profiling</a></h1>
 <div class="section" id="profiling">
-<h2><a class="toc-backref" href="#id42">Profiling</a></h2>
+<h2><a class="toc-backref" href="#id53">Profiling</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Profiling_(computer_programming)">https://en.wikipedia.org/wiki/Profiling_(computer_programming)</a></li>
@@ -966,7 +1119,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="benchmarks">
-<h2><a class="toc-backref" href="#id43">Benchmarks</a></h2>
+<h2><a class="toc-backref" href="#id54">Benchmarks</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/tobami/codespeed/">https://github.com/tobami/codespeed/</a><ul>
 <li><a class="reference external" href="https://speed.python.org/">https://speed.python.org/</a></li>
@@ -1006,7 +1159,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="performance">
-<h2><a class="toc-backref" href="#id44">Performance</a></h2>
+<h2><a class="toc-backref" href="#id55">Performance</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/optimizing/">https://scipy-lectures.github.io/advanced/optimizing/</a></li>
 <li><a class="reference external" href="http://pypy.org/performance.html">http://pypy.org/performance.html</a></li>
@@ -1018,9 +1171,9 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="databases">
-<h1><a class="toc-backref" href="#id45">Databases</a></h1>
+<h1><a class="toc-backref" href="#id56">Databases</a></h1>
 <div class="section" id="fixtures">
-<h2><a class="toc-backref" href="#id46">Fixtures</a></h2>
+<h2><a class="toc-backref" href="#id57">Fixtures</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Test_fixture">https://en.wikipedia.org/wiki/Test_fixture</a></li>
 <li><a class="reference external" href="https://factoryboy.readthedocs.org/en/latest/orms.html">https://factoryboy.readthedocs.org/en/latest/orms.html</a></li>
@@ -1031,21 +1184,21 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="schema-migrations">
-<h2><a class="toc-backref" href="#id47">Schema Migrations</a></h2>
+<h2><a class="toc-backref" href="#id58">Schema Migrations</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Schema_migration">https://en.wikipedia.org/wiki/Schema_migration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_refactoring">https://en.wikipedia.org/wiki/Database_refactoring</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></li>
 </ul>
 <div class="section" id="django-migrations">
-<h3><a class="toc-backref" href="#id48">Django Migrations</a></h3>
+<h3><a class="toc-backref" href="#id59">Django Migrations</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://docs.djangoproject.com/en/1.7/topics/migrations/">https://docs.djangoproject.com/en/1.7/topics/migrations/</a></li>
 <li><a class="reference external" href="https://south.readthedocs.org/en/latest/">https://south.readthedocs.org/en/latest/</a></li>
 </ul>
 </div>
 <div class="section" id="sqlalchemy-migrations">
-<h3><a class="toc-backref" href="#id49">SQLAlchemy Migrations</a></h3>
+<h3><a class="toc-backref" href="#id60">SQLAlchemy Migrations</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://alembic.readthedocs.org/en/latest/">https://alembic.readthedocs.org/en/latest/</a></li>
 <li><a class="reference external" href="https://sqlalchemy-migrate.readthedocs.org/en/latest/">https://sqlalchemy-migrate.readthedocs.org/en/latest/</a></li>
@@ -1057,14 +1210,14 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="web-frameworks">
-<h1><a class="toc-backref" href="#id50">Web Frameworks</a></h1>
+<h1><a class="toc-backref" href="#id61">Web Frameworks</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_application_framework">https://en.wikipedia.org/wiki/Web_application_framework</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python">https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python</a></li>
 <li><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></li>
 </ul>
 <div class="section" id="plone">
-<h2><a class="toc-backref" href="#id51">Plone</a></h2>
+<h2><a class="toc-backref" href="#id62">Plone</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plone_(software)">https://en.wikipedia.org/wiki/Plone_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://plone.org/">https://plone.org/</a></div>
@@ -1079,7 +1232,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="django">
-<h2><a class="toc-backref" href="#id52">Django</a></h2>
+<h2><a class="toc-backref" href="#id63">Django</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Django_(web_framework)">https://en.wikipedia.org/wiki/Django_(web_framework)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></div>
@@ -1099,7 +1252,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="flask">
-<h2><a class="toc-backref" href="#id53">Flask</a></h2>
+<h2><a class="toc-backref" href="#id64">Flask</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Flask_(web_framework)">https://en.wikipedia.org/wiki/Flask_(web_framework)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://flask.pocoo.org/">https://flask.pocoo.org/</a></div>
@@ -1115,7 +1268,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="bottle">
-<h2><a class="toc-backref" href="#id54">Bottle</a></h2>
+<h2><a class="toc-backref" href="#id65">Bottle</a></h2>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://bottlepy.org">http://bottlepy.org</a></div>
 <div class="line">Src: git <a class="reference external" href="https://github.com/bottlepy/bottle">https://github.com/bottlepy/bottle</a></div>
@@ -1136,7 +1289,7 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </ul>
 </div>
 <div class="section" id="pyramid">
-<h2><a class="toc-backref" href="#id55">Pyramid</a></h2>
+<h2><a class="toc-backref" href="#id66">Pyramid</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pylons_project#Pyramid">https://en.wikipedia.org/wiki/Pylons_project#Pyramid</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.pylonsproject.org/projects/pyramid/about">http://www.pylonsproject.org/projects/pyramid/about</a></div>
@@ -1153,13 +1306,15 @@ nosetests --ipdb --ipdb-failure  <span class="comment single"># --with-progressi
 </div>
 </div>
 <div class="section" id="web-applications">
-<h1><a class="toc-backref" href="#id56">Web Applications</a></h1>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></p>
+<h1><a class="toc-backref" href="#id67">Web Applications</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></div>
+</div>
 <ul class="simple">
 <li><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></li>
 </ul>
 <div class="section" id="webtest">
-<h2><a class="toc-backref" href="#id57">WebTest</a></h2>
+<h2><a class="toc-backref" href="#id68">WebTest</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/webtest">https://github.com/Pylons/webtest</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/WebTest">https://pypi.python.org/pypi/WebTest</a></div>
@@ -1170,7 +1325,7 @@ without running a webserver
 (e.g. <a class="reference internal" href="#pyramid">Pyramid</a>, <a class="reference internal" href="#flask">Flask</a>, <a class="reference internal" href="#django">Django</a>, <a class="reference internal" href="#bottle">Bottle</a>)</p>
 </div>
 <div class="section" id="splinter">
-<h2><a class="toc-backref" href="#id58">Splinter</a></h2>
+<h2><a class="toc-backref" href="#id69">Splinter</a></h2>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/cobrateam/splinter">https://github.com/cobrateam/splinter</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/splinter">https://pypi.python.org/pypi/splinter</a></div>
@@ -1184,8 +1339,21 @@ zopetestbrowser, remote webdriver)</li>
 </ul>
 </blockquote>
 </div>
+<div class="section" id="ghost-py">
+<h2><a class="toc-backref" href="#id70">ghost.py</a></h2>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/jeanphix/Ghost.py">https://github.com/jeanphix/Ghost.py</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Ghost.py">https://pypi.python.org/pypi/Ghost.py</a></div>
+<div class="line">Docs: <a class="reference external" href="http://ghost-py.readthedocs.org/en/latest/">http://ghost-py.readthedocs.org/en/latest/</a></div>
+</div>
+<blockquote class="epigraph">
+Webkit based scriptable web browser for python.</blockquote>
+<ul class="simple">
+<li>PyQT or PySide</li>
+</ul>
+</div>
 <div class="section" id="selenium">
-<h2><a class="toc-backref" href="#id59">Selenium</a></h2>
+<h2><a class="toc-backref" href="#id71">Selenium</a></h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></div>
 </div>
