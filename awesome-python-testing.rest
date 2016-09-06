@@ -587,34 +587,36 @@ debugging commands, tab completion, syntax highlighting, sticky mode,
 Vim
 ~~~~~
 
+- https://westurner.org/tools/#vim
+
 vimpdb
-~~~~~~~~
+^^^^^^^^
 | Src:  https://github.com/gotcha/vimpdb
 | PyPI: https://pypi.python.org/pypi/vimpdb
 
 vimpdb integrates `vim`_ and `pdb`_
 
 vim-ipython
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 | Src: https://github.com/ivanov/vim-ipython
 
 vim-unstack
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 | Src: https://github.com/mattboehm/vim-unstack
 
 jedi-vim
-~~~~~~~~~~
+^^^^^^^^^^
 | Src: https://github.com/davidhalter/jedi-vim
 
 python-mode
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 | Src: https://github.com/klen/python-mode
 | Docs:  https://klen.github.io/python-mode/
 | Docs: https://github.com/klen/python-mode#source-links
 
 
 westurner/dotvim
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 | Src: https://github.com/westurner/dotvim
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc
