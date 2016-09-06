@@ -314,18 +314,73 @@ Nose
         # pip install nose-progressive
         nosetests --with-progressive
 
-Nose plugins:
 
-* https://github.com/flavioamieiro/nose-ipdb (pip install ipdbplugin)
-* https://github.com/wolever/nose-parameterized
-* https://github.com/erikrose/nose-progressive
+nose-ipdb
+~~~~~~~~~~~
+| Src: https://github.com/flavioamieiro/nose-ipdb
+| Docs: https://pypi.python.org/pypi/ipdbplugin
 
-Nose IPython/Jupyter plugins:
+nose-ipdb is a `Nose`_ plugin for running `pdb`_ debugger
+with IPython (so tab completion, ``obj?`` and ``obj??`` all work.
 
-* https://github.com/taavi/ipython_nose
-* https://github.com/bollwyvl/nosebook
 
-Nose and `pdbpp`_:
+nose-parameterized
+~~~~~~~~~~~~~~~~~~~~
+| Src: https://github.com/wolever/nose-parameterized
+
+nose-parameterized is a `Nose`_ plugin for separating
+test data from test code.
+
+See also:
+
+* `Database fixtures`_
+
+
+nose-progressive
+~~~~~~~~~~~~~~~~~~
+| Src https://github.com/erikrose/nose-progressive
+| PyPI: https://pypi.python.org/pypi/nose-progressive
+
+nose-progressive is a `Nose`_ plugin which adds a progress bar,
+better/different configurable tracebacks, and editor shortcuts
+
+* https://github.com/erikrose/nose-progressive#editor-shortcuts
+
+  .. code:: bash
+
+      export EDITOR='e'
+
+  - https://github.com/westurner/dotfiles/blob/develop/scripts/e
+
+
+ipython_nose
+~~~~~~~~~~~~~~~
+| Src: https://github.com/taavi/ipython_nose
+
+ipython_nose is a `Nose`_ plugin for running ``test_*`` functions
+within the current Jupyter Notebook.
+
+.. code:: python
+
+   !pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
+   %load_ext ipython_nose
+   def test_func():
+       assert sum([1, 1]) == 2
+   %nose  # discover and run "test_*" functions
+
+
+nosebook
+~~~~~~~~~
+| Src: https://github.com/bollwyvl/nosebook
+| PyPI: https://pypi.python.org/pypi/nosebook
+
+* nosebook is a Nose plugin for running test functions
+  in Jupyter Notebooks from the CLI.
+
+
+nose and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
 
 .. code:: bash
 
@@ -343,6 +398,15 @@ py.test
 .. code:: bash
 
     py.test --pdb  # --full-trace
+
+py.test and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pytest
+   py.test --pdb
 
 
 testtools
@@ -407,7 +471,7 @@ Jenkins
 
 xUnit XML
 ----------
-https://en.wikipedia.org/wiki/XUnit
+| Wikipedia: https://en.wikipedia.org/wiki/XUnit
 
 * https://nose.readthedocs.org/en/latest/plugins/xunit.html
 * http://nosexunit.sourceforge.net/
@@ -473,9 +537,6 @@ Debugging: Console, CLI, Terminal, REPL, IPython
 .. code:: python
 
     import pdb; pdb.set_trace()    # pdb, pdbpp
-    import ipdb; ipdb.set_trace()  # ipdb
-
-
 
 * http://docs.python.org/2/library/pdb.html
 * http://docs.python.org/2/library/inspect.html
@@ -493,6 +554,7 @@ ipdb
 
 .. code:: bash
 
+    import ipdb; ipdb.set_trace()  # ipdb
     nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
 
 pdbpp
