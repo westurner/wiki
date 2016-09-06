@@ -219,7 +219,7 @@ ThingSequence, CourseSequence, CourseUnit
 - learning from prepared materials / learning by watching / learning by doing
 
 LinkedReproducibility
-=======================
+----------------------------
 | https://wrdrd.com/docs/consulting/linkedreproducibility
 
 - Linked-
