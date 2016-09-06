@@ -207,7 +207,6 @@ schema.org/Course
 -------------------
 https://github.com/schemaorg/schemaorg/issues/195
 
-
 ThingSequence, CourseSequence, CourseUnit
 --------------------------------------------
 - Multi-Track Video Editing
@@ -218,20 +217,6 @@ ThingSequence, CourseSequence, CourseUnit
 - Fading, Beatmatching, Event spike synchronicity (cuepoints)
 - JSONLD (schema.org RDF)
 - learning from prepared materials / learning by watching / learning by doing
-
-
-Tools Vocabularies
-=====================
-| https://westurner.org/tools/
-| Src: https://github.com/westurner/tools
-| Docs: https://westurner.org/wiki/tools.html#tool-collections
-
-Central tools.rst [ ... -> tools.rdf, tools.ttl, tools.jsonld ]
-
-* https://westurner.org/provis/tools.html
-* https://westurner.org/dotfiles/tools.html
-* See RDFJS pad re "Tools Schema" Classes and Properties: https://text.allmende.io/p/rdfjs 
-
 
 LinkedReproducibility
 =======================
@@ -251,3 +236,18 @@ Links:
 - https://wrdrd.com/docs/consulting/linkedreproducibility
 - https://news.ycombinator.com/item?id=11685292
 - https://news.ycombinator.com/item?id=12195302
+
+
+Tools Vocabularies
+=====================
+| https://westurner.org/tools/
+| Src: https://github.com/westurner/tools
+| Docs: https://westurner.org/wiki/tools.html#tool-collections
+
+Central tools.rst [ ... -> tools.rdf, tools.ttl, tools.jsonld ]
+
+* https://westurner.org/provis/tools.html
+* https://westurner.org/dotfiles/tools.html
+* See RDFJS pad re "Tools Schema" Classes and Properties: https://text.allmende.io/p/rdfjs 
+
+
