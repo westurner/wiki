@@ -534,11 +534,19 @@ Debugging
 
 Debugging: Console, CLI, Terminal, REPL, IPython
 -----------------------------------------------------
+
+pdb
+~~~~~
+| Src: https://hg.python.org/cpython/file/tip/Lib/pdb.py
+| Docs: http://docs.python.org/2/library/pdb.html
+| Docs: http://docs.python.org/3/library/pdb.html
+| Docs: https://pymotw.com/2/pdb/
+| Docs: https://pymotw.com/3/pdb/
+
 .. code:: python
 
     import pdb; pdb.set_trace()    # pdb, pdbpp
 
-* http://docs.python.org/2/library/pdb.html
 * http://docs.python.org/2/library/inspect.html
 * http://docs.python.org/2/library/dis.html
 
