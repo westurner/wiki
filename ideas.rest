@@ -208,6 +208,18 @@ schema.org/Course
 https://github.com/schemaorg/schemaorg/issues/195
 
 
+ThingSequence, CourseSequence, CourseUnit
+--------------------------------------------
+- Multi-Track Video Editing
+- https://github.com/westurner/brw (IFrame carousel timer)
+- https://github.com/westurner/pbm (Bookmarks JSON CLI & Tornado app w/ brw)
+- https://lists.w3.org/Archives/Public/public-schema-course-extend/2016Jan/0020.html
+- https://twitter.com/westurner/status/738471673767165953
+- Fading, Beatmatching, Event spike synchronicity (cuepoints)
+- JSONLD (schema.org RDF)
+- learning from prepared materials / learning by watching / learning by doing
+
+
 Tools Vocabularies
 =====================
 | https://westurner.org/tools/
