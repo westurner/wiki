@@ -294,19 +294,56 @@ Nose
 --------------
 
 | Src: git https://github.com/nose-devs/nose
+| PyPI: https://pypi.python.org/pypi/nose
 | Docs: https://nose.readthedocs.org/en/latest/testing.html
 | Docs https://nose.readthedocs.org/en/latest/writing_tests.html
 
-* https://github.com/taavi/ipython_nose
+.. code:: bash
+
+        nosetests --help
+        nosetests --with-xunit
+
+        # python -m pdb --help
+        nosetests --pdb
+        nosetests --pdb-failures
+        nosetests --pdb-errors
+
+        # pip install nose_ipdb
+        nosetests --ipdb --ipdb-failure
+
+        # pip install nose-progressive
+        nosetests --with-progressive
+
+Nose plugins:
+
 * https://github.com/flavioamieiro/nose-ipdb (pip install ipdbplugin)
 * https://github.com/wolever/nose-parameterized
+* https://github.com/erikrose/nose-progressive
+
+Nose IPython/Jupyter plugins:
+
+* https://github.com/taavi/ipython_nose
+* https://github.com/bollwyvl/nosebook
+
+Nose and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pdbpp
+   nosetests --pdb
 
 
 py.test
 ---------------
 
 | Src: https://bitbucket.org/hpk42/pytest
+| PyPI: https://pypi.python.org/pypi/pytest
 | Docs: http://pytest.org/latest/
+
+.. code:: bash
+
+    py.test --pdb  # --full-trace
+
 
 testtools
 -------------
@@ -439,17 +476,43 @@ Debugging: Console, CLI, Terminal, REPL, IPython
     import ipdb; ipdb.set_trace()  # ipdb
 
 
-.. code:: bash
-
-    nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
-    py.test --pdb  # --full-trace
 
 * http://docs.python.org/2/library/pdb.html
 * http://docs.python.org/2/library/inspect.html
 * http://docs.python.org/2/library/dis.html
-* https://pypi.python.org/pypi/pudb
-* https://github.com/gotcha/ipdb
-* https://pypi.python.org/pypi/pdbpp/
+
+pudb
+~~~~~~
+| Src: https://github.com/inducer/pudb
+| PyPI: https://pypi.python.org/pypi/pudb
+
+ipdb
+~~~~~~
+| Src: https://github.com/gotcha/ipdb
+| PyPI: https://pypi.python.org/pypi/ipdb
+
+.. code:: bash
+
+    nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
+
+pdbpp
+~~~~~~~~~
+| Src: http://bitbucket.org/antocuni/pdb
+| PyPI: https://pypi.python.org/pypi/pdbpp
+
+pdb++ (pdbpp) is a "drop-in replacement for pdb" with additional
+debugging commands, tab completion, syntax highlighting, sticky mode,
+
+* When pdb++ is installed (in ``sys.path``) pdb++ overloads pdb:
+
+.. code:: bash
+
+   pip install pdbpp funcsigs  # installs pdb.py
+   python -m pdb ./code.py
+
+   nosetests --pdb ./code.py
+   py.test --pdb ./code.py
+
 
 Vim
 ~~~~~
