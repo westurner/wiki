@@ -333,7 +333,7 @@ test data from test code.
 
 See also:
 
-* `Database fixtures`_
+* `Fixtures`_
 
 
 nose-progressive
