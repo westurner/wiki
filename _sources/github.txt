@@ -4,18 +4,24 @@ GitHub Quicklinks
 ##################
 
 - https://westurner.org/wiki/projects
-- https://westurner.org/wiki/contributions
+- https://westurner.org/wiki/contributions#code
 - https://westurner.org/resume/html/resume.html#open-source-contributions
 
   - https://githubcontributions.io/user/westurner
-  
+
 - https://westurner.org/wiki/workflow
 
+  - https://westurner.org/wiki/workflow#github-repos-issues-wikis
   - https://westurner.org/tools/#gitflow
-  
+
     - https://westurner.org/tools/#hubflow
 
-  
+- code labels {..., ENH, BUG, DOC, BLD, TST, UBY, RLS}
+
+  | ``TAG code, labels, color names, background hex, text hex``
+
+  - https://westurner.org/wiki/workflow#code-labels
+  - https://wrdrd.com/docs/consulting/software-development#codelabels
 
 GitHub Features
 =================
