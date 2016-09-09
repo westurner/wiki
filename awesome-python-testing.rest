@@ -182,8 +182,15 @@ IPython
 
 IPython Notebook
 ~~~~~~~~~~~~~~~~~
-* https://github.com/westurner/notebooks/blob/gh-pages/Makefile
+* https://westurner.org/tools/#ipython-notebook
+* https://westurner.org/tools/#jupyter-notebook
 * https://pypi.python.org/pypi/runipy
+* `ipython_nose`_
+* `nosebook`_
+
+. 
+
+* https://github.com/westurner/notebooks/blob/gh-pages/Makefile
 
 
 IPython Blocks
