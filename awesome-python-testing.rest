@@ -280,6 +280,9 @@ structlog
 | Docs: https://structlog.readthedocs.io/en/stable/logging-best-practices.html#graylog2
 | Docs: https://structlog.readthedocs.io/en/stable/examples.html
 
+* structlog w/ `logbook`_
+  https://github.com/hynek/structlog/issues/30#issuecomment-67754813
+
 
 logbook
 ---------
@@ -289,6 +292,161 @@ logbook
 | Docs: https://logbook.readthedocs.io/en/stable/features.html
 | Docs: https://logbook.readthedocs.io/en/stable/designexplained.html
 | Docs: https://logbook.readthedocs.io/en/stable/quickstart.html#handlers
+
+Logbook is a drop-in replacement for the Python `logging`_ module
+with a number of simplifications and lots of additional handlers.
+
+* MultiProcessingHandler
+  https://logbook.readthedocs.io/en/stable/api/queues.html#logbook.queues.MultiProcessingHandler
+* ThreadedWrapperHandler
+  https://logbook.readthedocs.io/en/stable/api/queues.html#logbook.queues.ThreadedWrapperHandler
+* structlog w/ `logbook`_
+  https://github.com/hynek/structlog/issues/30#issuecomment-67754813
+
+
+Logging Strategies
+--------------------
+* https://www.fullstackpython.com/logging.html
+
+
+syslog
+~~~~~~~~
+| Wikipedia: http://docs.graylog.org/en/latest/pages/gelf.html#gelf-format-specification
+| Spec: https://en.wikipedia.org/wiki/Syslog#Internet_standard_documents
+
+| Docs: https://docs.python.org/2/library/syslog.html
+| Docs: https://docs.python.org/3/library/syslog.html
+| Docs: https://docs.python.org/2/library/logging.handlers.html#sysloghandler
+| Docs: https://docs.python.org/3/library/logging.handlers.html#sysloghandler
+
+* logging.handlers.SyslogHandler(logging.Handler) blocks
+
+  + https://docs.python.org/2/library/logging.handlers.html#sysloghandler
+  + http://www.somethinkodd.com/oddthinking/2010/04/29/how-python-logging-bit-me-part-1/
+  + `logbook`_ ThreadedWrapperHandler, MultiProcessingHandler
+  + 
+
+rsyslog
+^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Rsyslog
+| Homepage: http://www.rsyslog.com/
+| Src: https://github.com/rsyslog/rsyslog
+| Docs: http://www.rsyslog.com/doc/v8-stable/
+
+* "20.7 Interaction of rsyslog and journal" [journald]
+  https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/s1-interaction_of_rsyslog_and_journal.htmlq
+
+
+syslog-ng
+^^^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Syslog-ng
+| Homepage: https://syslog-ng.org/
+| Src: https://github.com/balabit/syslog-ng
+| Docs: https://github.com/balabit/syslog-ng#features
+| Docs: https://www.balabit.com/sites/default/files/documents/syslog-ng-ose-latest-guides/en/syslog-ng-ose-guide-admin/html/index.html
+
+
+sentry
+~~~~~~~~
+| Homepage: https://sentry.io
+| Src: https://github.com/getsentry/sentry
+
+
+raven-python
+^^^^^^^^^^^^^^^
+| Src: https://github.com/getsentry/raven-python
+| PyPI: https://pypi.python.org/pypi/raven
+| Docs: https://docs.sentry.io/hosted/clients/python/
+| Docs: https://docs.sentry.io/hosted/clients/python/integrations/
+
+
+graylog
+~~~~~~~~
+| Homepage: https://www.graylog.org/
+| Src: https://github.com/Graylog2/graylog2-server
+| Src: https://github.com/Graylog2
+| DockerHub: https://hub.docker.com/r/graylog2/server/
+| Docs: http://docs.graylog.org/en/latest/
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/pages/installation.html
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/pages/installation/docker.html
+
+- Elasticsearch, MongoDB, Java 8+
+
+
+GELF
+^^^^^
+| Docs: http://docs.graylog.org/en/latest/pages/gelf.html
+
+GELF (*Graylog Extended Log Format*)
+
+- `Graylog`_
+
+
+graypy
+^^^^^^^^
+| Src: https://github.com/severb/graypy
+| PyPI: https://pypi.python.org/pypi/graypy
+| Docs: https://github.com/severb/graypy#using-with-django
+
+logstash
+~~~~~~~~~~
+
+ELK
+^^^^
+- ElasticSearch: storage, indexing, search
+- Logstash: logging adapters
+- Kibana: ElasticSearch Search UI
+
+
+---------------
+Elasticsearch
+---------------
+| Homepage: https://www.elastic.co/products/elasticsearch
+| Src:  https://github.com/elastic/elasticsearch
+| DockerHub: https://hub.docker.com/_/elasticsearch/
+| Wrdrddocs: https://wrdrd.com/docs/consulting/knowledge-engineering#elasticsearch
+
+----------
+Logstash
+----------
+| Homepage: https://www.elastic.co/products/logstash
+| Src: https://github.com/elastic/logstash
+| DockerHub: https://hub.docker.com/_/logstash/
+
+* Logstash `GELF`_ Plugin
+  https://www.loggly.com/docs/rsyslog-tls-configuration/
+
+
+--------
+Kibana
+--------
+| Homepage: https://github.com/elastic/kibana
+| Src: https://www.elastic.co/products/kibana
+| DockerHub: https://hub.docker.com/_/kibana/
+
+
+python-logstash
+^^^^^^^^^^^^^^^^^^^^
+| Src: https://github.com/vklochan/python-logstash
+| PyPI: https://pypi.python.org/pypi/python-logstash
+
+
+logstash_formatter
+^^^^^^^^^^^^^^^^^^^
+| Src: https://github.com/exoscale/python-logstash-formatter
+| PyPI: https://pypi.python.org/pypi/logstash_formatter
+
+
+loggly
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Loggly
+| Homepage: https://www.loggly.com/
+| Docs: https://www.loggly.com/docs/
+| Docs: https://www.loggly.com/docs/python-logging/
+| Docs: https://www.loggly.com/docs/python-syslog/
+| Docs: https://www.loggly.com/docs/rsyslog-tls-configuration/
+
 
 
 Test-Driven Development (TDD)
