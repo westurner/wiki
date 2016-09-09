@@ -207,8 +207,6 @@ Logging
 * https://en.wikipedia.org/wiki/Syslog
 * http://docs.python.org/2/howto/logging.html
 * http://docs.python.org/3/library/logging.config.html
-* http://pythonhosted.org/Logbook/features.html
-* https://structlog.readthedocs.org/en/latest/
 
 Python Logging Primer
 -----------------------
@@ -257,6 +255,8 @@ A primer on `Python`_ logging (and testing):
         log.setLevel(TRAC)
         log.log(err, BLAT)  # not printed because msg.level < log.level
 
+        log.log((err, 'string'), BLAT)
+
     # run unittest.main() when run like:
     #   python ./filename.py
     # but not when imported like:
@@ -269,6 +269,26 @@ See also:
 
 * http://learnxinyminutes.com/docs/python
 * https://westurner.org/tools/#python
+
+
+structlog
+----------------
+| Src: https://github.com/hynek/structlog 
+| PyPI: https://pypi.python.org/pypi/structlog
+| Docs: https://structlog.readthedocs.org/en/latest/
+| Docs: http://www.structlog.org/en/stable/
+| Docs: https://structlog.readthedocs.io/en/stable/logging-best-practices.html#graylog2
+| Docs: https://structlog.readthedocs.io/en/stable/examples.html
+
+
+logbook
+---------
+| Src: https://github.com/getlogbook/logbook
+| PyPI: https://pypi.python.org/pypi/logbook
+| Docs: https://logbook.readthedocs.io/en/stable/
+| Docs: https://logbook.readthedocs.io/en/stable/features.html
+| Docs: https://logbook.readthedocs.io/en/stable/designexplained.html
+| Docs: https://logbook.readthedocs.io/en/stable/quickstart.html#handlers
 
 
 Test-Driven Development (TDD)
