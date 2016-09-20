@@ -240,7 +240,7 @@ Links:
 
 Jupyter Notebook Meta object
 -----------------------------
-- ``_repr_html`` => RDFa
+- ``_repr_html_`` => RDFa **and/or** JSONLD
 - Challenges
 
   - I want some metadata to be displayed at the top;
