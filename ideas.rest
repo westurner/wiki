@@ -239,7 +239,7 @@ Links:
 
 
 Jupyter Notebook Meta object
-=============================
+-----------------------------
 - ``_repr_html`` => RDFa
 - Challenges
 
