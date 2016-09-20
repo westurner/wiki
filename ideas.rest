@@ -288,6 +288,11 @@ Jupyter Notebook Meta object
             }
           }
 
+      - SoftwareApplication versions
+
+        - version_information, watermark
+        - requirements.txt
+
 
 Tools Vocabularies
 =====================
