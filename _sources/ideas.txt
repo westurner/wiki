@@ -239,9 +239,16 @@ Links:
 
 
 Jupyter Notebook Meta object
-=============================
-- ``_repr_html`` => RDFa
-- Challenges
+-----------------------------
+
+- Jupyter Notebook
+
+  - https://wrdrd.com/docs/tools/#jupyter-notebook
+  - https://wrdrd.com/docs/tools/#nbformat
+  - https://wrdrd.com/docs/consulting/education-technology#jupyter-and-reproducibility
+
+- ``_repr_html_`` => RDFa **and/or** JSONLD
+- Challenges / Objectives
 
   - I want some metadata to be displayed at the top;
     but also to add metadata through the notebook
