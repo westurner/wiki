@@ -258,7 +258,7 @@ Jupyter Notebook Meta object
             {"@context": {"schema": "http://schema.org/"},
              "@type": ["schema:JupyterNotebook",
                        "schema:ScholarlyArticle",
-                       "schema:DataCatalog"],
+                       "schema:DataCatalog"], # dataset/hasPart ?
              "name": "Notebook Name",
              "author": {
                "@type": "schema:Person",
@@ -277,7 +277,7 @@ Jupyter Notebook Meta object
             "schema": "http://schema.org/",
             "prov": "http://www.w3.org/ns/prov#"},
            ...,
-           "dataset": {
+           "hasPart": {
              "@type": "schema:Dataset",
              "name": "Months of the Year",
              "distribution": {

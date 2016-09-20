@@ -573,7 +573,7 @@ but also to add metadata through the notebook</p>
 <div class="code json highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://schema.org/&quot;</span><span class="p">},</span>
  <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;schema:JupyterNotebook&quot;</span><span class="p">,</span>
            <span class="s2">&quot;schema:ScholarlyArticle&quot;</span><span class="p">,</span>
-           <span class="s2">&quot;schema:DataCatalog&quot;</span><span class="p">],</span>
+           <span class="s2">&quot;schema:DataCatalog&quot;</span><span class="p">],</span> <span class="c1"># dataset/hasPart ?</span>
  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Notebook Name&quot;</span><span class="p">,</span>
  <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;schema:Person&quot;</span><span class="p">,</span>
@@ -593,7 +593,7 @@ but also to add metadata through the notebook</p>
   <span class="s2">&quot;schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://schema.org/&quot;</span><span class="p">,</span>
   <span class="s2">&quot;prov&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/ns/prov#&quot;</span><span class="p">},</span>
  <span class="o">...</span><span class="p">,</span>
- <span class="s2">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">{</span>
+ <span class="s2">&quot;hasPart&quot;</span><span class="p">:</span> <span class="p">{</span>
    <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;schema:Dataset&quot;</span><span class="p">,</span>
    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Months of the Year&quot;</span><span class="p">,</span>
    <span class="s2">&quot;distribution&quot;</span><span class="p">:</span> <span class="p">{</span>
