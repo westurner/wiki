@@ -363,7 +363,8 @@ ul.auto-toc {
 <li><a class="reference internal" href="#linkedreproducibility" id="id15">LinkedReproducibility</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tools-vocabularies" id="id16">Tools Vocabularies</a></li>
+<li><a class="reference internal" href="#jupyter-notebook-meta-object" id="id16">Jupyter Notebook Meta object</a></li>
+<li><a class="reference internal" href="#tools-vocabularies" id="id17">Tools Vocabularies</a></li>
 </ul>
 </div>
 <div class="section" id="themes">
@@ -639,8 +640,66 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 </ul>
 </div>
 </div>
+<div class="section" id="jupyter-notebook-meta-object">
+<h1><a class="toc-backref" href="#id16">Jupyter Notebook Meta object</a></h1>
+<ul>
+<li><p class="first"><tt class="docutils literal">_repr_html</tt> =&gt; RDFa</p>
+</li>
+<li><p class="first">Challenges</p>
+<ul>
+<li><p class="first">I want some metadata to be displayed at the top;
+but also to add metadata through the notebook</p>
+<ul>
+<li><p class="first">Metadata about the JupyterNotebook</p>
+<ul>
+<li><p class="first">&quot;Add JSONLD &#64;context to the top level .ipynb node &quot;
+<a class="reference external" href="https://github.com/jupyter/nbformat/issues/44">https://github.com/jupyter/nbformat/issues/44</a></p>
+</li>
+<li><p class="first">Example JupyterNotebook metadata:</p>
+<pre class="code json literal-block">
+<span class="punctuation">{</span><span class="name tag">&quot;&#64;context&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span><span class="name tag">&quot;schema&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;http://schema.org/&quot;</span><span class="punctuation">},</span>
+ <span class="name tag">&quot;&#64;type&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="literal string double">&quot;schema:JupyterNotebook&quot;</span><span class="punctuation">,</span>
+           <span class="literal string double">&quot;schema:ScholarlyArticle&quot;</span><span class="punctuation">,</span>
+           <span class="literal string double">&quot;schema:DataCatalog&quot;</span><span class="punctuation">],</span>
+ <span class="name tag">&quot;name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Notebook Name&quot;</span><span class="punctuation">,</span>
+ <span class="name tag">&quot;author&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+   <span class="name tag">&quot;&#64;type&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;schema:Person&quot;</span><span class="punctuation">,</span>
+   <span class="name tag">&quot;givenName&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Wesley&quot;</span><span class="punctuation">,</span>
+   <span class="name tag">&quot;familyName&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Turner&quot;</span><span class="punctuation">,</span>
+   <span class="name tag">&quot;url&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;https://westurner.org/&quot;</span>
+ <span class="punctuation">},</span>
+ <span class="name tag">&quot;dateCreated&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;2016-09-20&quot;</span>
+<span class="punctuation">}</span>
+</pre>
+</li>
+</ul>
+</li>
+<li><p class="first">Metadata from the JupyterNotebook</p>
+<pre class="code json literal-block">
+<span class="punctuation">{</span><span class="name tag">&quot;&#64;context&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+  <span class="name tag">&quot;schema&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;http://schema.org/&quot;</span><span class="punctuation">,</span>
+  <span class="name tag">&quot;prov&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;http://www.w3.org/ns/prov#&quot;</span><span class="punctuation">},</span>
+ <span class="error">...,</span>
+ <span class="name tag">&quot;dataset&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+   <span class="name tag">&quot;&#64;type&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;schema:Dataset&quot;</span><span class="punctuation">,</span>
+   <span class="name tag">&quot;name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Months of the Year&quot;</span><span class="punctuation">,</span>
+   <span class="name tag">&quot;distribution&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+     <span class="name tag">&quot;&#64;type&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;schema:DataDownload&quot;</span><span class="punctuation">,</span>
+     <span class="name tag">&quot;contentUrl&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;http://...&quot;</span><span class="punctuation">,</span>
+     <span class="name tag">&quot;encodingFormat&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;CSV&quot;</span><span class="punctuation">,</span>  <span class="error">#</span> <span class="error">URI?</span>
+   <span class="punctuation">}</span>
+  <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="tools-vocabularies">
-<h1><a class="toc-backref" href="#id16">Tools Vocabularies</a></h1>
+<h1><a class="toc-backref" href="#id17">Tools Vocabularies</a></h1>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://westurner.org/tools/">https://westurner.org/tools/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/tools">https://github.com/westurner/tools</a></div>

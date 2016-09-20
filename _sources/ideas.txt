@@ -238,6 +238,57 @@ Links:
 - https://news.ycombinator.com/item?id=12195302
 
 
+Jupyter Notebook Meta object
+=============================
+- ``_repr_html`` => RDFa
+- Challenges
+
+  - I want some metadata to be displayed at the top;
+    but also to add metadata through the notebook
+
+    - Metadata about the JupyterNotebook
+
+      - "Add JSONLD @context to the top level .ipynb node "
+        https://github.com/jupyter/nbformat/issues/44
+
+      - Example JupyterNotebook metadata:
+
+        .. code:: json
+
+            {"@context": {"schema": "http://schema.org/"},
+             "@type": ["schema:JupyterNotebook",
+                       "schema:ScholarlyArticle",
+                       "schema:DataCatalog"],
+             "name": "Notebook Name",
+             "author": {
+               "@type": "schema:Person",
+               "givenName": "Wesley",
+               "familyName": "Turner",
+               "url": "https://westurner.org/"
+             },
+             "dateCreated": "2016-09-20"
+            }
+
+    - Metadata from the JupyterNotebook
+
+      .. code:: json
+
+          {"@context": {
+            "schema": "http://schema.org/",
+            "prov": "http://www.w3.org/ns/prov#"},
+           ...,
+           "dataset": {
+             "@type": "schema:Dataset",
+             "name": "Months of the Year",
+             "distribution": {
+               "@type": "schema:DataDownload",
+               "contentUrl": "http://...",
+               "encodingFormat": "CSV",  # URI?
+             }
+            }
+          }
+
+
 Tools Vocabularies
 =====================
 | https://westurner.org/tools/
