@@ -251,8 +251,42 @@ Jupyter Notebook Meta object
       - "Add JSONLD @context to the top level .ipynb node "
         https://github.com/jupyter/nbformat/issues/44
 
+      - Example JupyterNotebook metadata:
+
+        .. code:: json
+
+            {"@context": {"schema": "http://schema.org/"},
+             "@type": ["schema:JupyterNotebook",
+                       "schema:ScholarlyArticle",
+                       "schema:DataCatalog"],
+             "name": "Notebook Name",
+             "author": {
+               "@type": "schema:Person",
+               "givenName": "Wesley",
+               "familyName": "Turner",
+               "url": "https://westurner.org/"
+             },
+             "dateCreated": "2016-09-20"
+            }
+
     - Metadata from the JupyterNotebook
 
+      .. code:: json
+
+          {"@context": {
+            "schema": "http://schema.org/",
+            "prov": "http://www.w3.org/ns/prov#"},
+           ...,
+           "dataset": {
+             "@type": "schema:Dataset",
+             "name": "Months of the Year",
+             "distribution": {
+               "@type": "schema:DataDownload",
+               "contentUrl": "http://...",
+               "encodingFormat": "CSV",  # URI?
+             }
+            }
+          }
 
 
 Tools Vocabularies
