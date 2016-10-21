@@ -593,6 +593,15 @@ py.test and pdbpp
    pip install pytest
    py.test --pdb
 
+pytest-sugar
+~~~~~~~~~~~~~~~
+| Homepage: https://pivotfinland.com/pytest-sugar/
+| Src: https://github.com/Frozenball/pytest-sugar
+| PyPI: https://pivotfinland.com/pytest-sugar/
+
+- pytest-sugar adds a progressbar
+- See also `nose-progressive`_
+
 
 testtools
 -------------
