@@ -157,6 +157,7 @@
 </li>
 <li><a class="reference internal" href="#py-test">py.test</a><ul>
 <li><a class="reference internal" href="#py-test-and-pdbpp">py.test and pdbpp</a></li>
+<li><a class="reference internal" href="#pytest-sugar">pytest-sugar</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#testtools">testtools</a></li>
@@ -350,6 +351,7 @@
 </li>
 <li><a class="reference internal" href="#py-test">py.test</a><ul>
 <li><a class="reference internal" href="#py-test-and-pdbpp">py.test and pdbpp</a></li>
+<li><a class="reference internal" href="#pytest-sugar">pytest-sugar</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#testtools">testtools</a></li>
@@ -580,78 +582,79 @@
 </li>
 <li><a class="reference internal" href="#py-test" id="id49">py.test</a><ul>
 <li><a class="reference internal" href="#py-test-and-pdbpp" id="id50">py.test and pdbpp</a></li>
+<li><a class="reference internal" href="#pytest-sugar" id="id51">pytest-sugar</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#testtools" id="id51">testtools</a></li>
-<li><a class="reference internal" href="#gui-test-runners" id="id52">GUI Test Runners</a></li>
-<li><a class="reference internal" href="#tox" id="id53">Tox</a></li>
+<li><a class="reference internal" href="#testtools" id="id52">testtools</a></li>
+<li><a class="reference internal" href="#gui-test-runners" id="id53">GUI Test Runners</a></li>
+<li><a class="reference internal" href="#tox" id="id54">Tox</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id54">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
-<li><a class="reference internal" href="#buildbot" id="id55">Buildbot</a></li>
-<li><a class="reference internal" href="#jenkins" id="id56">Jenkins</a></li>
-<li><a class="reference internal" href="#xunit-xml" id="id57">xUnit XML</a></li>
-<li><a class="reference internal" href="#travis" id="id58">Travis</a></li>
+<li><a class="reference internal" href="#continuous-integration-ci-and-continuous-delivery-cd" id="id55">Continuous Integration (CI) and Continuous Delivery (CD)</a><ul>
+<li><a class="reference internal" href="#buildbot" id="id56">Buildbot</a></li>
+<li><a class="reference internal" href="#jenkins" id="id57">Jenkins</a></li>
+<li><a class="reference internal" href="#xunit-xml" id="id58">xUnit XML</a></li>
+<li><a class="reference internal" href="#travis" id="id59">Travis</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#version-control" id="id59">Version Control</a><ul>
-<li><a class="reference internal" href="#patches-tags-branches-merging" id="id60">Patches, Tags, Branches, Merging</a></li>
-<li><a class="reference internal" href="#bisect-blame" id="id61">Bisect, Blame</a></li>
+<li><a class="reference internal" href="#version-control" id="id60">Version Control</a><ul>
+<li><a class="reference internal" href="#patches-tags-branches-merging" id="id61">Patches, Tags, Branches, Merging</a></li>
+<li><a class="reference internal" href="#bisect-blame" id="id62">Bisect, Blame</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#debugging" id="id62">Debugging</a><ul>
-<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id63">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
-<li><a class="reference internal" href="#pdb" id="id64">pdb</a></li>
-<li><a class="reference internal" href="#pudb" id="id65">pudb</a></li>
-<li><a class="reference internal" href="#ipdb" id="id66">ipdb</a></li>
-<li><a class="reference internal" href="#pdbpp" id="id67">pdbpp</a></li>
-<li><a class="reference internal" href="#vim" id="id68">Vim</a><ul>
-<li><a class="reference internal" href="#vimpdb" id="id69">vimpdb</a></li>
-<li><a class="reference internal" href="#vim-ipython" id="id70">vim-ipython</a></li>
-<li><a class="reference internal" href="#vim-unstack" id="id71">vim-unstack</a></li>
-<li><a class="reference internal" href="#jedi-vim" id="id72">jedi-vim</a></li>
-<li><a class="reference internal" href="#python-mode" id="id73">python-mode</a></li>
-<li><a class="reference internal" href="#westurner-dotvim" id="id74">westurner/dotvim</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debugging-gui" id="id75">Debugging: GUI</a><ul>
-<li><a class="reference internal" href="#ides" id="id76">IDEs</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#debugging-web" id="id77">Debugging: Web</a></li>
-<li><a class="reference internal" href="#advanced-debugging" id="id78">Advanced Debugging</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id79">Performance Instrumentation and Profiling</a><ul>
-<li><a class="reference internal" href="#profiling" id="id80">Profiling</a></li>
-<li><a class="reference internal" href="#benchmarks" id="id81">Benchmarks</a></li>
-<li><a class="reference internal" href="#performance" id="id82">Performance</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#databases" id="id83">Databases</a><ul>
-<li><a class="reference internal" href="#fixtures" id="id84">Fixtures</a></li>
-<li><a class="reference internal" href="#schema-migrations" id="id85">Schema Migrations</a><ul>
-<li><a class="reference internal" href="#django-migrations" id="id86">Django Migrations</a></li>
-<li><a class="reference internal" href="#sqlalchemy-migrations" id="id87">SQLAlchemy Migrations</a></li>
+<li><a class="reference internal" href="#debugging" id="id63">Debugging</a><ul>
+<li><a class="reference internal" href="#debugging-console-cli-terminal-repl-ipython" id="id64">Debugging: Console, CLI, Terminal, REPL, IPython</a><ul>
+<li><a class="reference internal" href="#pdb" id="id65">pdb</a></li>
+<li><a class="reference internal" href="#pudb" id="id66">pudb</a></li>
+<li><a class="reference internal" href="#ipdb" id="id67">ipdb</a></li>
+<li><a class="reference internal" href="#pdbpp" id="id68">pdbpp</a></li>
+<li><a class="reference internal" href="#vim" id="id69">Vim</a><ul>
+<li><a class="reference internal" href="#vimpdb" id="id70">vimpdb</a></li>
+<li><a class="reference internal" href="#vim-ipython" id="id71">vim-ipython</a></li>
+<li><a class="reference internal" href="#vim-unstack" id="id72">vim-unstack</a></li>
+<li><a class="reference internal" href="#jedi-vim" id="id73">jedi-vim</a></li>
+<li><a class="reference internal" href="#python-mode" id="id74">python-mode</a></li>
+<li><a class="reference internal" href="#westurner-dotvim" id="id75">westurner/dotvim</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-frameworks" id="id88">Web Frameworks</a><ul>
-<li><a class="reference internal" href="#plone" id="id89">Plone</a></li>
-<li><a class="reference internal" href="#django" id="id90">Django</a></li>
-<li><a class="reference internal" href="#flask" id="id91">Flask</a></li>
-<li><a class="reference internal" href="#bottle" id="id92">Bottle</a></li>
-<li><a class="reference internal" href="#pyramid" id="id93">Pyramid</a></li>
+<li><a class="reference internal" href="#debugging-gui" id="id76">Debugging: GUI</a><ul>
+<li><a class="reference internal" href="#ides" id="id77">IDEs</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-applications" id="id94">Web Applications</a><ul>
-<li><a class="reference internal" href="#webtest" id="id95">WebTest</a></li>
-<li><a class="reference internal" href="#splinter" id="id96">Splinter</a></li>
-<li><a class="reference internal" href="#ghost-py" id="id97">ghost.py</a></li>
-<li><a class="reference internal" href="#selenium" id="id98">Selenium</a></li>
+<li><a class="reference internal" href="#debugging-web" id="id78">Debugging: Web</a></li>
+<li><a class="reference internal" href="#advanced-debugging" id="id79">Advanced Debugging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#performance-instrumentation-and-profiling" id="id80">Performance Instrumentation and Profiling</a><ul>
+<li><a class="reference internal" href="#profiling" id="id81">Profiling</a></li>
+<li><a class="reference internal" href="#benchmarks" id="id82">Benchmarks</a></li>
+<li><a class="reference internal" href="#performance" id="id83">Performance</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#databases" id="id84">Databases</a><ul>
+<li><a class="reference internal" href="#fixtures" id="id85">Fixtures</a></li>
+<li><a class="reference internal" href="#schema-migrations" id="id86">Schema Migrations</a><ul>
+<li><a class="reference internal" href="#django-migrations" id="id87">Django Migrations</a></li>
+<li><a class="reference internal" href="#sqlalchemy-migrations" id="id88">SQLAlchemy Migrations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-frameworks" id="id89">Web Frameworks</a><ul>
+<li><a class="reference internal" href="#plone" id="id90">Plone</a></li>
+<li><a class="reference internal" href="#django" id="id91">Django</a></li>
+<li><a class="reference internal" href="#flask" id="id92">Flask</a></li>
+<li><a class="reference internal" href="#bottle" id="id93">Bottle</a></li>
+<li><a class="reference internal" href="#pyramid" id="id94">Pyramid</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-applications" id="id95">Web Applications</a><ul>
+<li><a class="reference internal" href="#webtest" id="id96">WebTest</a></li>
+<li><a class="reference internal" href="#splinter" id="id97">Splinter</a></li>
+<li><a class="reference internal" href="#ghost-py" id="id98">ghost.py</a></li>
+<li><a class="reference internal" href="#selenium" id="id99">Selenium</a></li>
 </ul>
 </li>
 </ul>
@@ -1278,9 +1281,21 @@ in Jupyter Notebooks from the CLI.</li>
 </pre></div>
 </div>
 </div>
+<div class="section" id="pytest-sugar">
+<h4><a class="toc-backref" href="#id51">pytest-sugar</a><a class="headerlink" href="#pytest-sugar" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://pivotfinland.com/pytest-sugar/">https://pivotfinland.com/pytest-sugar/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/Frozenball/pytest-sugar">https://github.com/Frozenball/pytest-sugar</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pivotfinland.com/pytest-sugar/">https://pivotfinland.com/pytest-sugar/</a></div>
+</div>
+<ul class="simple">
+<li>pytest-sugar adds a progressbar</li>
+<li>See also <a class="reference internal" href="#nose-progressive">nose-progressive</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="testtools">
-<h3><a class="toc-backref" href="#id51">testtools</a><a class="headerlink" href="#testtools" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id52">testtools</a><a class="headerlink" href="#testtools" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/testing-cabal/testtools">https://github.com/testing-cabal/testtools</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/testtools">https://pypi.python.org/pypi/testtools</a></div>
@@ -1292,14 +1307,14 @@ in Jupyter Notebooks from the CLI.</li>
 </div>
 </div>
 <div class="section" id="gui-test-runners">
-<h3><a class="toc-backref" href="#id52">GUI Test Runners</a><a class="headerlink" href="#gui-test-runners" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id53">GUI Test Runners</a><a class="headerlink" href="#gui-test-runners" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/pybee/cricket">https://github.com/pybee/cricket</a></li>
 <li>See: <a class="reference internal" href="#debugging-gui">Debugging: GUI</a></li>
 </ul>
 </div>
 <div class="section" id="tox">
-<h3><a class="toc-backref" href="#id53">Tox</a><a class="headerlink" href="#tox" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id54">Tox</a><a class="headerlink" href="#tox" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/hpk42/tox">https://bitbucket.org/hpk42/tox</a></div>
 <div class="line">Docs: <a class="reference external" href="http://tox.readthedocs.org/en/latest/">http://tox.readthedocs.org/en/latest/</a></div>
@@ -1310,7 +1325,7 @@ in Jupyter Notebooks from the CLI.</li>
 </div>
 </div>
 <div class="section" id="continuous-integration-ci-and-continuous-delivery-cd">
-<h2><a class="toc-backref" href="#id54">Continuous Integration (CI) and Continuous Delivery (CD)</a><a class="headerlink" href="#continuous-integration-ci-and-continuous-delivery-cd" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id55">Continuous Integration (CI) and Continuous Delivery (CD)</a><a class="headerlink" href="#continuous-integration-ci-and-continuous-delivery-cd" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></li>
@@ -1318,7 +1333,7 @@ in Jupyter Notebooks from the CLI.</li>
 <li><a class="reference external" href="http://docs.python-guide.org/en/latest/scenarios/ci/">http://docs.python-guide.org/en/latest/scenarios/ci/</a></li>
 </ul>
 <div class="section" id="buildbot">
-<h3><a class="toc-backref" href="#id55">Buildbot</a><a class="headerlink" href="#buildbot" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id56">Buildbot</a><a class="headerlink" href="#buildbot" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Buildbot">https://en.wikipedia.org/wiki/Buildbot</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://buildbot.net">http://buildbot.net</a></div>
@@ -1333,7 +1348,7 @@ in Jupyter Notebooks from the CLI.</li>
 </ul>
 </div>
 <div class="section" id="jenkins">
-<h3><a class="toc-backref" href="#id56">Jenkins</a><a class="headerlink" href="#jenkins" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id57">Jenkins</a><a class="headerlink" href="#jenkins" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Jenkins_(software)">https://en.wikipedia.org/wiki/Jenkins_(software)</a></div>
 </div>
@@ -1344,7 +1359,7 @@ in Jupyter Notebooks from the CLI.</li>
 </ul>
 </div>
 <div class="section" id="xunit-xml">
-<h3><a class="toc-backref" href="#id57">xUnit XML</a><a class="headerlink" href="#xunit-xml" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id58">xUnit XML</a><a class="headerlink" href="#xunit-xml" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XUnit">https://en.wikipedia.org/wiki/XUnit</a></div>
 </div>
@@ -1357,7 +1372,7 @@ in Jupyter Notebooks from the CLI.</li>
 </ul>
 </div>
 <div class="section" id="travis">
-<h3><a class="toc-backref" href="#id58">Travis</a><a class="headerlink" href="#travis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id59">Travis</a><a class="headerlink" href="#travis" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Travis_CI">https://en.wikipedia.org/wiki/Travis_CI</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://travis-ci.org/">http://travis-ci.org/</a></div>
@@ -1369,9 +1384,9 @@ in Jupyter Notebooks from the CLI.</li>
 </div>
 </div>
 <div class="section" id="version-control">
-<h2><a class="toc-backref" href="#id59">Version Control</a><a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id60">Version Control</a><a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="patches-tags-branches-merging">
-<h3><a class="toc-backref" href="#id60">Patches, Tags, Branches, Merging</a><a class="headerlink" href="#patches-tags-branches-merging" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id61">Patches, Tags, Branches, Merging</a><a class="headerlink" href="#patches-tags-branches-merging" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/ACID">https://en.wikipedia.org/wiki/ACID</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Patch_(computing)">https://en.wikipedia.org/wiki/Patch_(computing)</a></li>
@@ -1388,7 +1403,7 @@ in Jupyter Notebooks from the CLI.</li>
 </ul>
 </div>
 <div class="section" id="bisect-blame">
-<h3><a class="toc-backref" href="#id61">Bisect, Blame</a><a class="headerlink" href="#bisect-blame" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id62">Bisect, Blame</a><a class="headerlink" href="#bisect-blame" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Code_Bisection">https://en.wikipedia.org/wiki/Code_Bisection</a></li>
 <li><a class="reference external" href="https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html">https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html</a></li>
@@ -1401,7 +1416,7 @@ in Jupyter Notebooks from the CLI.</li>
 </div>
 </div>
 <div class="section" id="debugging">
-<h2><a class="toc-backref" href="#id62">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id63">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Debugging">https://en.wikipedia.org/wiki/Debugging</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Breakpoint">https://en.wikipedia.org/wiki/Breakpoint</a></li>
@@ -1412,9 +1427,9 @@ in Jupyter Notebooks from the CLI.</li>
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/debugging/">https://scipy-lectures.github.io/advanced/debugging/</a></li>
 </ul>
 <div class="section" id="debugging-console-cli-terminal-repl-ipython">
-<h3><a class="toc-backref" href="#id63">Debugging: Console, CLI, Terminal, REPL, IPython</a><a class="headerlink" href="#debugging-console-cli-terminal-repl-ipython" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id64">Debugging: Console, CLI, Terminal, REPL, IPython</a><a class="headerlink" href="#debugging-console-cli-terminal-repl-ipython" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="pdb">
-<h4><a class="toc-backref" href="#id64">pdb</a><a class="headerlink" href="#pdb" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id65">pdb</a><a class="headerlink" href="#pdb" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://hg.python.org/cpython/file/tip/Lib/pdb.py">https://hg.python.org/cpython/file/tip/Lib/pdb.py</a></div>
 <div class="line">Docs: <a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></div>
@@ -1431,14 +1446,14 @@ in Jupyter Notebooks from the CLI.</li>
 </ul>
 </div>
 <div class="section" id="pudb">
-<h4><a class="toc-backref" href="#id65">pudb</a><a class="headerlink" href="#pudb" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id66">pudb</a><a class="headerlink" href="#pudb" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/inducer/pudb">https://github.com/inducer/pudb</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pudb">https://pypi.python.org/pypi/pudb</a></div>
 </div>
 </div>
 <div class="section" id="ipdb">
-<h4><a class="toc-backref" href="#id66">ipdb</a><a class="headerlink" href="#ipdb" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id67">ipdb</a><a class="headerlink" href="#ipdb" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/gotcha/ipdb">https://github.com/gotcha/ipdb</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/ipdb">https://pypi.python.org/pypi/ipdb</a></div>
@@ -1449,7 +1464,7 @@ in Jupyter Notebooks from the CLI.</li>
 </div>
 </div>
 <div class="section" id="pdbpp">
-<h4><a class="toc-backref" href="#id67">pdbpp</a><a class="headerlink" href="#pdbpp" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id68">pdbpp</a><a class="headerlink" href="#pdbpp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="http://bitbucket.org/antocuni/pdb">http://bitbucket.org/antocuni/pdb</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pdbpp">https://pypi.python.org/pypi/pdbpp</a></div>
@@ -1468,12 +1483,12 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="vim">
-<h4><a class="toc-backref" href="#id68">Vim</a><a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id69">Vim</a><a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://westurner.org/tools/#vim">https://westurner.org/tools/#vim</a></li>
 </ul>
 <div class="section" id="vimpdb">
-<h5><a class="toc-backref" href="#id69">vimpdb</a><a class="headerlink" href="#vimpdb" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id70">vimpdb</a><a class="headerlink" href="#vimpdb" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src:  <a class="reference external" href="https://github.com/gotcha/vimpdb">https://github.com/gotcha/vimpdb</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/vimpdb">https://pypi.python.org/pypi/vimpdb</a></div>
@@ -1481,25 +1496,25 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 <p>vimpdb integrates <a class="reference internal" href="#vim">vim</a> and <a class="reference internal" href="#pdb">pdb</a></p>
 </div>
 <div class="section" id="vim-ipython">
-<h5><a class="toc-backref" href="#id70">vim-ipython</a><a class="headerlink" href="#vim-ipython" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id71">vim-ipython</a><a class="headerlink" href="#vim-ipython" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/ivanov/vim-ipython">https://github.com/ivanov/vim-ipython</a></div>
 </div>
 </div>
 <div class="section" id="vim-unstack">
-<h5><a class="toc-backref" href="#id71">vim-unstack</a><a class="headerlink" href="#vim-unstack" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id72">vim-unstack</a><a class="headerlink" href="#vim-unstack" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/mattboehm/vim-unstack">https://github.com/mattboehm/vim-unstack</a></div>
 </div>
 </div>
 <div class="section" id="jedi-vim">
-<h5><a class="toc-backref" href="#id72">jedi-vim</a><a class="headerlink" href="#jedi-vim" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id73">jedi-vim</a><a class="headerlink" href="#jedi-vim" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/davidhalter/jedi-vim">https://github.com/davidhalter/jedi-vim</a></div>
 </div>
 </div>
 <div class="section" id="python-mode">
-<h5><a class="toc-backref" href="#id73">python-mode</a><a class="headerlink" href="#python-mode" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id74">python-mode</a><a class="headerlink" href="#python-mode" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/klen/python-mode">https://github.com/klen/python-mode</a></div>
 <div class="line">Docs:  <a class="reference external" href="https://klen.github.io/python-mode/">https://klen.github.io/python-mode/</a></div>
@@ -1507,7 +1522,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="westurner-dotvim">
-<h5><a class="toc-backref" href="#id74">westurner/dotvim</a><a class="headerlink" href="#westurner-dotvim" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id75">westurner/dotvim</a><a class="headerlink" href="#westurner-dotvim" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim">https://github.com/westurner/dotvim</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim/blob/master/vimrc">https://github.com/westurner/dotvim/blob/master/vimrc</a></div>
@@ -1522,14 +1537,14 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="debugging-gui">
-<h3><a class="toc-backref" href="#id75">Debugging: GUI</a><a class="headerlink" href="#debugging-gui" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id76">Debugging: GUI</a><a class="headerlink" href="#debugging-gui" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://winpdb.org/docs/">http://winpdb.org/docs/</a></li>
 <li><a class="reference external" href="https://github.com/lmacken/pyrasite-gui">https://github.com/lmacken/pyrasite-gui</a></li>
 <li><a class="reference external" href="https://github.com/pybee/bugjar">https://github.com/pybee/bugjar</a></li>
 </ul>
 <div class="section" id="ides">
-<h4><a class="toc-backref" href="#id76">IDEs</a><a class="headerlink" href="#ides" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id77">IDEs</a><a class="headerlink" href="#ides" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger">http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger</a></li>
 <li><a class="reference external" href="http://www.jetbrains.com/pycharm/features/index.html#debugger">http://www.jetbrains.com/pycharm/features/index.html#debugger</a></li>
@@ -1542,7 +1557,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="debugging-web">
-<h3><a class="toc-backref" href="#id77">Debugging: Web</a><a class="headerlink" href="#debugging-web" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id78">Debugging: Web</a><a class="headerlink" href="#debugging-web" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://werkzeug.pocoo.org/">http://werkzeug.pocoo.org/</a></li>
 <li><a class="reference external" href="http://firelogger.binaryage.com#python">http://firelogger.binaryage.com#python</a></li>
@@ -1550,7 +1565,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="advanced-debugging">
-<h3><a class="toc-backref" href="#id78">Advanced Debugging</a><a class="headerlink" href="#advanced-debugging" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id79">Advanced Debugging</a><a class="headerlink" href="#advanced-debugging" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py">https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py</a></li>
 <li><a class="reference external" href="https://hg.python.org/cpython/file/tip/Misc/README.valgrind">https://hg.python.org/cpython/file/tip/Misc/README.valgrind</a></li>
@@ -1565,9 +1580,9 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="performance-instrumentation-and-profiling">
-<h2><a class="toc-backref" href="#id79">Performance Instrumentation and Profiling</a><a class="headerlink" href="#performance-instrumentation-and-profiling" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id80">Performance Instrumentation and Profiling</a><a class="headerlink" href="#performance-instrumentation-and-profiling" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="profiling">
-<h3><a class="toc-backref" href="#id80">Profiling</a><a class="headerlink" href="#profiling" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id81">Profiling</a><a class="headerlink" href="#profiling" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)">https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Profiling_(computer_programming)">https://en.wikipedia.org/wiki/Profiling_(computer_programming)</a></li>
@@ -1576,7 +1591,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="benchmarks">
-<h3><a class="toc-backref" href="#id81">Benchmarks</a><a class="headerlink" href="#benchmarks" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id82">Benchmarks</a><a class="headerlink" href="#benchmarks" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/tobami/codespeed/">https://github.com/tobami/codespeed/</a><ul>
 <li><a class="reference external" href="https://speed.python.org/">https://speed.python.org/</a></li>
@@ -1616,7 +1631,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="performance">
-<h3><a class="toc-backref" href="#id82">Performance</a><a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id83">Performance</a><a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/optimizing/">https://scipy-lectures.github.io/advanced/optimizing/</a></li>
 <li><a class="reference external" href="http://pypy.org/performance.html">http://pypy.org/performance.html</a></li>
@@ -1628,9 +1643,9 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="databases">
-<h2><a class="toc-backref" href="#id83">Databases</a><a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id84">Databases</a><a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="fixtures">
-<h3><a class="toc-backref" href="#id84">Fixtures</a><a class="headerlink" href="#fixtures" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id85">Fixtures</a><a class="headerlink" href="#fixtures" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Test_fixture">https://en.wikipedia.org/wiki/Test_fixture</a></li>
 <li><a class="reference external" href="https://factoryboy.readthedocs.org/en/latest/orms.html">https://factoryboy.readthedocs.org/en/latest/orms.html</a></li>
@@ -1641,21 +1656,21 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="schema-migrations">
-<h3><a class="toc-backref" href="#id85">Schema Migrations</a><a class="headerlink" href="#schema-migrations" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id86">Schema Migrations</a><a class="headerlink" href="#schema-migrations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Schema_migration">https://en.wikipedia.org/wiki/Schema_migration</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_refactoring">https://en.wikipedia.org/wiki/Database_refactoring</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></li>
 </ul>
 <div class="section" id="django-migrations">
-<h4><a class="toc-backref" href="#id86">Django Migrations</a><a class="headerlink" href="#django-migrations" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id87">Django Migrations</a><a class="headerlink" href="#django-migrations" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://docs.djangoproject.com/en/1.7/topics/migrations/">https://docs.djangoproject.com/en/1.7/topics/migrations/</a></li>
 <li><a class="reference external" href="https://south.readthedocs.org/en/latest/">https://south.readthedocs.org/en/latest/</a></li>
 </ul>
 </div>
 <div class="section" id="sqlalchemy-migrations">
-<h4><a class="toc-backref" href="#id87">SQLAlchemy Migrations</a><a class="headerlink" href="#sqlalchemy-migrations" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id88">SQLAlchemy Migrations</a><a class="headerlink" href="#sqlalchemy-migrations" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://alembic.readthedocs.org/en/latest/">https://alembic.readthedocs.org/en/latest/</a></li>
 <li><a class="reference external" href="https://sqlalchemy-migrate.readthedocs.org/en/latest/">https://sqlalchemy-migrate.readthedocs.org/en/latest/</a></li>
@@ -1667,14 +1682,14 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="web-frameworks">
-<h2><a class="toc-backref" href="#id88">Web Frameworks</a><a class="headerlink" href="#web-frameworks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id89">Web Frameworks</a><a class="headerlink" href="#web-frameworks" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_application_framework">https://en.wikipedia.org/wiki/Web_application_framework</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python">https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python</a></li>
 <li><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></li>
 </ul>
 <div class="section" id="plone">
-<h3><a class="toc-backref" href="#id89">Plone</a><a class="headerlink" href="#plone" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id90">Plone</a><a class="headerlink" href="#plone" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plone_(software)">https://en.wikipedia.org/wiki/Plone_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://plone.org/">https://plone.org/</a></div>
@@ -1689,7 +1704,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="django">
-<h3><a class="toc-backref" href="#id90">Django</a><a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id91">Django</a><a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Django_(web_framework)">https://en.wikipedia.org/wiki/Django_(web_framework)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></div>
@@ -1709,7 +1724,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="flask">
-<h3><a class="toc-backref" href="#id91">Flask</a><a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id92">Flask</a><a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Flask_(web_framework)">https://en.wikipedia.org/wiki/Flask_(web_framework)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://flask.pocoo.org/">https://flask.pocoo.org/</a></div>
@@ -1725,7 +1740,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="bottle">
-<h3><a class="toc-backref" href="#id92">Bottle</a><a class="headerlink" href="#bottle" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id93">Bottle</a><a class="headerlink" href="#bottle" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://bottlepy.org">http://bottlepy.org</a></div>
 <div class="line">Src: git <a class="reference external" href="https://github.com/bottlepy/bottle">https://github.com/bottlepy/bottle</a></div>
@@ -1746,7 +1761,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </ul>
 </div>
 <div class="section" id="pyramid">
-<h3><a class="toc-backref" href="#id93">Pyramid</a><a class="headerlink" href="#pyramid" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id94">Pyramid</a><a class="headerlink" href="#pyramid" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pylons_project#Pyramid">https://en.wikipedia.org/wiki/Pylons_project#Pyramid</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.pylonsproject.org/projects/pyramid/about">http://www.pylonsproject.org/projects/pyramid/about</a></div>
@@ -1763,7 +1778,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 </div>
 </div>
 <div class="section" id="web-applications">
-<h2><a class="toc-backref" href="#id94">Web Applications</a><a class="headerlink" href="#web-applications" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id95">Web Applications</a><a class="headerlink" href="#web-applications" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></div>
 </div>
@@ -1771,7 +1786,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 <li><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></li>
 </ul>
 <div class="section" id="webtest">
-<h3><a class="toc-backref" href="#id95">WebTest</a><a class="headerlink" href="#webtest" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id96">WebTest</a><a class="headerlink" href="#webtest" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/webtest">https://github.com/Pylons/webtest</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/WebTest">https://pypi.python.org/pypi/WebTest</a></div>
@@ -1782,7 +1797,7 @@ without running a webserver
 (e.g. <a class="reference internal" href="#pyramid">Pyramid</a>, <a class="reference internal" href="#flask">Flask</a>, <a class="reference internal" href="#django">Django</a>, <a class="reference internal" href="#bottle">Bottle</a>)</p>
 </div>
 <div class="section" id="splinter">
-<h3><a class="toc-backref" href="#id96">Splinter</a><a class="headerlink" href="#splinter" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id97">Splinter</a><a class="headerlink" href="#splinter" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/cobrateam/splinter">https://github.com/cobrateam/splinter</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/splinter">https://pypi.python.org/pypi/splinter</a></div>
@@ -1797,7 +1812,7 @@ zopetestbrowser, remote webdriver)</li>
 </div></blockquote>
 </div>
 <div class="section" id="ghost-py">
-<h3><a class="toc-backref" href="#id97">ghost.py</a><a class="headerlink" href="#ghost-py" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id98">ghost.py</a><a class="headerlink" href="#ghost-py" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: git <a class="reference external" href="https://github.com/jeanphix/Ghost.py">https://github.com/jeanphix/Ghost.py</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Ghost.py">https://pypi.python.org/pypi/Ghost.py</a></div>
@@ -1810,7 +1825,7 @@ zopetestbrowser, remote webdriver)</li>
 </ul>
 </div>
 <div class="section" id="selenium">
-<h3><a class="toc-backref" href="#id98">Selenium</a><a class="headerlink" href="#selenium" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id99">Selenium</a><a class="headerlink" href="#selenium" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></div>
 </div>
