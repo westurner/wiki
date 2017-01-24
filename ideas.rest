@@ -23,13 +23,13 @@ Projects
 
 Projects I have created:
 
-| https://westurner.org/wiki/projects
-| Src: https://github.com/westurner/wiki/wiki/projects
+* https://westurner.org/wiki/projects
+* Src: https://github.com/westurner/wiki/wiki/projects
 
 Open Source Projects I have contributed to:
 
-| https://westurner.org/wiki/contributions
-| Src: https://github.com/westurner/wiki/wiki/contributions
+* https://westurner.org/wiki/contributions
+* Src: https://github.com/westurner/wiki/wiki/contributions
 
 Twedges
 --------
