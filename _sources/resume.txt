@@ -3,13 +3,39 @@
 Resume
 #######
 
-HTML
-=====
-Current Resume: https://westurner.org/pages/resume.html
+Contents
+==========
+.. contents::
+
+Views
+========
+
+HTML 
+--------------------------
+| https://westurner.org/pages/resume
+
+- (Tinkerer > Sphinx)
+- Click "HTML" for the `Sphinx HTML`_ view
+
+Sphinx HTML
+--------------
+| https://westurner.org/resume/html/resume
+
+- (Sphinx)
 
 PDF
-=====
-http://westurner.org/resume/latex/resume_wes-turner.pdf
+------
+| http://westurner.org/resume/latex/resume_wes-turner.pdf
+
+- (Sphinx)
+
+
+Source
+--------
+- https://github.com/westurner/westurner.github.io
+- ``pages/resume.rst``: https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
+- ``resume/Makefile``: https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
+
 
 Links
 =======
@@ -39,3 +65,5 @@ Links
 - [x] http://resume.wrd.nu/skills
 - [x] http://resume.wrd.nu/portfolio
 - [ ] https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
+
