@@ -10,7 +10,7 @@ Themes
 
 Data
 
-* URIs
+* URIs, HTTP, HTML, HTML5
 * Linked Data (RDF, RDFa, JSONLD)
 * Graphs, Nodes, Edges
 
@@ -113,6 +113,21 @@ Sphinx Extensions
     interactively (e.g. w/ tmpipnb)
   * ipythonify tests (ipython_nose + what API w/ a notebook?)
 
+* sphinxcontrib-srclinks
+  
+  * Add links to {Source, Edit, History, Annotate} with {GitHub, BitBucket,} to the Sphinx HTML template sidebar.
+  * Source: https://github.com/westurner/sphinxcontrib-srclinks
+  * jinja2 template and contexts
+
+* sphinx extensions
+
+  * Add an arrow indicating the currently selected heading (⬅)
+  * Add an arrow indicating the currently selected TOC heading (⬅)
+  * Scroll the sidebar to the selected TOC heading (¶)
+  * "Open link in new tab"
+  * "Show visited links"
+  * [ ] Factor into sphinxcontrib. plugins
+  * Source: https://github.com/wrdrd/docs/tree/master/docs/_static/js
 
 Open Source Mailing List Extractor
 ----------------------------------
@@ -205,10 +220,19 @@ https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html
 
 schema.org/Course
 -------------------
-https://github.com/schemaorg/schemaorg/issues/195
+- https://schema.org/Course
+- https://pending.schema.org/Course
+- https://github.com/schemaorg/schemaorg/issues/195
+
+.
+
+- What is schema.org?
+
+  https://wrdrd.com/docs/consulting/knowledge-engineering#schema-org
+
 
 ThingSequence, CourseSequence, CourseUnit
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Multi-Track Video Editing
 - https://github.com/westurner/brw (IFrame carousel timer)
 - https://github.com/westurner/pbm (Bookmarks JSON CLI & Tornado app w/ brw)
