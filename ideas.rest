@@ -20,6 +20,9 @@ seeAlso:
 
 Projects
 =========
+Resume projects:
+
+* https://westurner.org/resume/html/resume.html#projects
 
 Projects I have created:
 
