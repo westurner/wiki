@@ -6,9 +6,11 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
    :alt: "Stories in Ready"
 
 - `Home <https://github.com/westurner/wiki/wiki>`__
-- `Projects <https://github.com/westurner/wiki/wiki/projects>`__
-- `Contributions <https://github.com/westurner/wiki/wiki/contributions>`__
 - `Resume <https://github.com/westurner/wiki/wiki/resume>`__
+
+  - `Projects <https://github.com/westurner/wiki/wiki/projects>`__
+  - `Contributions <https://github.com/westurner/wiki/wiki/contributions>`__
+
 - `Workflow <https://github.com/westurner/wiki/wiki/workflow>`__
 
   - `GitHub <https://github.com/westurner/wiki/wiki/github>`__
