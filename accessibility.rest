@@ -97,8 +97,8 @@ Content Management Systems / Web Portals
   
 
 
-Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs
-------------------------------------------------------------
+"Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs"
+============================================================
 | BlogPost: https://medium.com/@westurner/the-20-20-20-rule-1fc591155a28
 | Reformatted here as ReStructuredText.
 
@@ -106,15 +106,16 @@ Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs
    :local:
 
 The 20–20–20 rule:
-~~~~~~~~~~~~~~~~~~~
-Every 20 minutes, look at something at least 20ft (6.09m) away, for at least like 20 seconds.
+-------------------
+Every **20 minutes**,
+look at something at least **20 ft** (*6.09m*) away,
+for at least like **20 seconds**.
 
 Computer glasses
-~~~~~~~~~~~~~~~~~~
+------------------
 (to reduce glare and eyestrain):
 
-- gaming glasses (e.g. the Gunnar tint and coating (http://www.gunnars.com/faq/)
-can be found at e.g. Best Buy (where they are known to carry e.g. Gunnar Intercept computer gaming eyewear glasses frames))
+- gaming glasses (e.g. the Gunnar tint and coating (http://www.gunnars.com/faq/) can be found at e.g. Best Buy (where they are known to carry e.g. Gunnar Intercept computer gaming eyewear glasses frames))
 - safety glasses (can often buy in bulk)
 - nosepads (replaceable)
 - nosepads (built-in)
@@ -125,7 +126,7 @@ can be found at e.g. Best Buy (where they are known to carry e.g. Gunnar Interce
   - eye_size*2 + bridge size ~= width
 
 Monitor adjustments
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 (to reduce glare and eyestrain):
 
 - brightness/contrast
@@ -133,29 +134,54 @@ Monitor adjustments
 - good monitor stands support vertical tilt
 
 Monitor settings
-~~~~~~~~~~~~~~~~~~~
+-------------------
 Tools that gradually modify monitor settings to match the natural solar cycle:
 
 - f.lux (http://justgetflux.com) — Linux, Mac, Windows, iOS
 - Twilight (https://play.google.com/store/apps/details?id=com.urbandroid.lux) — Android
 
-Browser extensions for modifying brightness, contrast, background, text color; inverting just the CSS colors:
+Browser extensions
+-------------------
+Browser extensions for modifying style attributes:
 
-- [Deluminate, Stylish (userstyles.org), High Contrast] — https://westurner.org/tools/#browser-extensions
+- brightness
+- contrast
+- background
+- text color
+- inverting just the CSS colors
+
+— https://westurner.org/tools/#browser-extensions
+
+  - Deluminate -- https://westurner.org/tools/#deluminate
+  - Stylish ( http://userstyles.org/ )
+  - High Contrast -- https://westurner.org/tools/#high-contrast
+  
 - Disadvantages:
 
-  1. These sometimes cause hiccups (easily diagnosable by unchecking the extension(s) and CTRL-R refreshing the current tab)     2. If the browser colors are inverted AND the whole screen is inverted, there’s probably a less contrasty CSS styleset
+  1. These sometimes cause hiccups (easily diagnosable by unchecking the extension(s) and CTRL-R refreshing the current tab)     
+  2. If the browser colors are inverted AND the whole screen is inverted, there’s probably a less contrasty CSS styleset
 
-System High Contrast / Color Inversion:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- “settings” > “appearance” / “accessibility”
-- Compiz color filters (e.g. negative-red, negative-red-dim
+System high contrast / color inversion:
+-------------------------------------------------
+
+    {“settings”, "config", "control panel"} -> { “appearance” , “accessibility” }
+
+
+X11, Xorg, Gnome, Linux, BSD, Unix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Compiz color filters (e.g. negative-red, negative-red-dim)
+
   - https://github.com/westurner/dotfiles/tree/master/etc/compiz/colorfilters)
-- xgamma, xbacklight, xrandr, xflux (e.g. https://github.com/westurner/dotfiles/blob/master/etc/i3/config)
+
+- xgamma, xbacklight, xrandr, xflux
+
+  - https://github.com/westurner/dotfiles/blob/master/etc/i3/config
+
 
 Dark window manager themes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 - Windows: WindowBlinds, Win7+
 - Ubuntu 10.04+
 - Gnome 3: [dnf install -y] gnome-tweak-tool > “Appearance” > ”Global dark theme”
@@ -177,7 +203,7 @@ Dark window manager themes
    [I think] red light is easier to accommodate to in the dark.
 
 Lightbulbs
-~~~~~~~~~~~~~
+-------------
 Features for Multicolor LED [Bluetooth] light bulbs:
 
 - adjustable (spectrum; millions of colors)
@@ -193,7 +219,7 @@ Features for Multicolor LED [Bluetooth] light bulbs:
 - Misfit Bolt (http://misfit.com/products/bolt)
 
 Font Antialiasing
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 - System font ”smoothing”; LCD
 - System FXAA full-screen Antialiasing
 - GUI toolkit antialiasing configuration::
@@ -202,7 +228,7 @@ Font Antialiasing
 
 
 Font Size
-~~~~~~~~~~~~
+------------
 
 - System DPI (dots per inch)
 - System base font size (px pixels)
@@ -212,7 +238,7 @@ Font Size
 
     
 Keyboard Shortcuts
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 - Increase font size:
 
   - CTRL + +
