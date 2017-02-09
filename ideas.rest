@@ -342,7 +342,17 @@ Jupyter Notebook Meta object
 
 [EDIT]
 
+schema:JupyterNotebook, SoftwareEnvironment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+schema.org classes for ``@type=[":JupyterNotebook",]`` : 
+
+- https://schema.org/CreativeWork
+- https://schema.org/DigitalDocument
+- https://schema.org/Article
+- https://schema.org/ScholarlyArticle
+- https://schema.org/CreativeWorkSeries
+- https://schema.org/ItemList
 
 nbmeta
 ~~~~~~~
