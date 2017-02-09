@@ -344,6 +344,8 @@ Jupyter Notebook Meta object
 
 schema:JupyterNotebook, SoftwareEnvironment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+see:
+- https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832
 
 schema.org classes for ``@type=[":JupyterNotebook",]`` : 
 
