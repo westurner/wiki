@@ -75,9 +75,14 @@ WCAG
 | Docs: http://www.w3.org/WAI/intro/wcag # WCAG Overview
 
 
-WCAG Overview: http://www.w3.org/WAI/intro/wcag
+- WCAG Overview: http://www.w3.org/WAI/intro/wcag
 
 
+ATAG
+~~~~~~
+| Name: W3C ATAG
+| Name: Authoring Tool Accessibility Guidelines (ATAG) 2.0
+| Spec: http://www.w3.org/TR/ATAG20/
 
 
 Accessibility support
@@ -154,8 +159,8 @@ From https://plone.org/accessibility-info :
 
   A number of checkpoints in WCAG 2.0 and ATAG 2.0 guidelines are subjective; there may be instances where interpretations vary
 
-- W3C WCAG 2.0 http://www.w3.org/TR/WCAG20/
-- W3C ATAG 2.0: http://www.w3.org/TR/ATAG20/
+- W3C `WCAG`_ 2.0 http://www.w3.org/TR/WCAG20/
+- W3C `ATAG`_ 2.0: http://www.w3.org/TR/ATAG20/
 
 Accessible Markup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
