@@ -104,11 +104,17 @@ Emacspeak
 | Docs: https://tvraman.github.io/emacspeak/manual/
 
 * "Speech-enabled Applications On The Emacspeak Desktop"
-  https://tvraman.github.io/emacspeak/applications.html
+  https://tvraman.github.io/emacspeak/applications.html ::
+  
+    # [...]
+    22	python	Editting support for interactive Python development. Features aural highlighting, structured browsing and debugging.
+    23	elpy	IDE for interactive Python development.
+    # [..]
 
 * "Beautiful Code" > Chapter 31 "Emacspeak: The Complete Audio Desktop"
   http://emacspeak.sourceforge.net/raman/publications/bc-emacspeak/publish-emacspeak-bc.html
 
+* 
 
 JS Libraries
 ~~~~~~~~~~~~~
@@ -143,6 +149,7 @@ Languages
 Python
 ~~~~~~~~~~
 
+* `Emacspeak`_ has support for {, python, IDLE,}
 * IPython / Jupyter
 * IPython in a terminal
 * IPython qtconsole (`Qt`_ toolkit)
