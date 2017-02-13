@@ -20,6 +20,7 @@ Standards
 
 WAI
 ----
+| Name: Web Accessibility Initiative (WAI)
 | Homepage: https://www.w3.org/WAI/
 | Wikipedia: https://en.wikipedia.org/wiki/Web_Accessibility_Initiative
 
@@ -28,22 +29,39 @@ W3C WAI (*Web Accessibility Initiative*) is a group of standards and guidelines 
 
 WAI-ARIA
 ~~~~~~~~~~
+| Name: Web Accessibility Initiative Accessible Rich Internet Applications (WAI-ARIA)
 | Homepage: https://www.w3.org/WAI/intro/aria.php
+| Spec: https://www.w3.org/TR/wai-aria/
+| Spec: https://www.w3.org/TR/wai-aria/complete (as one page)
 | Wikipedia: https://en.wikipedia.org/wiki/WAI-ARIA
 | Dbpedia: http://dbpedia.org/page/WAI-ARIA
 
-Mozilla MDN WAI-ARIA resources: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+* "Accessible Rich Internet Applications (WAI-ARIA) 1.0"
+  https://www.w3.org/TR/wai-aria/complete
+* "WAI-ARIA: States and Properties"
+  https://www.w3.org/TR/wai-aria/usage#introstates
 
+  * ``aria-invalid`` -- form validation errors
+  * ``aria-required`` -- required form fields
+
+* "WAI-ARIA Role, State, and Property Quick Reference"
+  https://www.w3.org/TR/wai-aria/complete#quickref
+
+.
+
+* Mozilla MDN WAI-ARIA resources:
+  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 * "WAI-ARIA: An introduction to Accessible Rich Internet Applications"
   https://patrickhlauke.github.io/aria/presentation/
 
 
-* https://www.w3.org/TR/wai-aria-practices/
-* https://www.w3.org/TR/wai-aria-practices/#ariaform
-  
-  * ``aria-invalid`` -- form validation errors
-  * ``aria-required`` -- required form fields
-  
+WAI-ARIA Best Practices
+~~~~~~~~~~~~~~~~~~~~~~~~~
+| Homepage: https://www.w3.org/TR/wai-aria-practices-1.1/
+| Draft: https://w3c.github.io/aria-practices/
+| Src: https://github.com/w3c/aria-practices
+
+* https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_form
 * https://www.w3.org/TR/html51/dom.html#wai-aria 
 
 >   What is ARIA, and why do we need it?
@@ -51,8 +69,8 @@ Mozilla MDN WAI-ARIA resources: https://developer.mozilla.org/en-US/docs/Web/Acc
 
 WCAG
 ~~~~~~~~
-| Label: W3C WCAG
-| Label: Web Content Accessibility Guidelines
+| Name: W3C WCAG
+| Name: Web Content Accessibility Guidelines
 | Wikipedia: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines
 | Docs: http://www.w3.org/WAI/intro/wcag # WCAG Overview
 
@@ -66,34 +84,95 @@ Accessibility support
 -------------------------------------
 Things I've heard have better than average accessibility support:
 
-Text Editors:
+Text Editors
+~~~~~~~~~~~~~
 
-* Emacs:
+Emacs
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Emacs
+
+
+JS Libraries
+~~~~~~~~~~~~~
+
+YUI
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/YUI_Library
+
+* YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards
   
-  * https://en.wikipedia.org/wiki/Emacs
+GWT
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Web_Toolkit
 
 
-JS Libraries:
+GUI Toolkits
+~~~~~~~~~~~~~~~~~
 
-* YUI:
+Qt
+~~~
+From http://doc.qt.io/qt-5/accessible.html :
 
-  * https://en.wikipedia.org/wiki/YUI_Library
-  * YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards
+    [...] Semantic information about user interface elements, such as buttons and scroll bars, is exposed to the assistive technologies. Qt supports Microsoft Active Accessibility (MSAA) and IAccessible2 on Windows, OS X Accessibility on OS X, and AT-SPI via DBus on Unix/X11. The platform specific technologies are abstracted by Qt, so that applications do not need any platform specific changes to work with the different native APIs. Qt tries to make adding accessibility support to your application as easy as possible, only a few changes from your side may be required to allow even more users to enjoy it. [...]
+
+
+Gnome
+~~~~~~~
+
+Languages
+~~~~~~~~~~~~~~
+
+Python
+~~~~~~~~~~
+
+* IPython / Jupyter
+* IPython in a terminal
+* IPython qtconsole (`Qt`_ toolkit)
+* Spyder IDE (`Qt`_ toolkit) embeds an IPython console with a Run button and lightweight code completion: https://code.google.com/p/spyderlib/
+
+- [ ]  Jupyter Notebook may / should have `WAI-ARIA`_ role tags (which are really easy to add to most templates)
+
+
+Content Management Systems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Plone
+~~~~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+
+From https://plone.org/accessibility-info :
+
+  **Accessibility**
+  This site uses the open source Content Management System Plone. It meets the Web Content Accessibility Guidelines (`WCAG v2.0 <http://www.w3.org/TR/WCAG20/>`_) level 'AA' for people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity, and combinations of these.
+
+  It is also accessible to content authors with disabilities per the level 'AA' Authoring Tool Accessibility Guidelines (`ATAG 2.0 <http://www.w3.org/TR/ATAG20/>`_).
+
+  **Accessibility Statement**
+  This site was designed to accommodate the different ways people access and use the Internet.
+
+  **Validation**
+  The site uses assistive technology like WAI-ARIA roles to the current best practices; however, site standards and content vary over time. If this web site does not validate correctly, please contact the Site Administration.
+
+  A number of checkpoints in WCAG 2.0 and ATAG 2.0 guidelines are subjective; there may be instances where interpretations vary
+
+- W3C WCAG 2.0 http://www.w3.org/TR/WCAG20/
+- W3C ATAG 2.0: http://www.w3.org/TR/ATAG20/
+
+Accessible Markup
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ARIA tags (role, properties
+- 
+
+Lightweight Markup Languages:
+
+- Markdown
+- ReStructuredText
+- {..., Textile, BBCode}
   
-* GWT:
 
-  * https://en.wikipedia.org/wiki/Google_Web_Toolkit
-
-
-Content Management Systems / Web Portals
-
-* Plone:
-
-  * `<https://en.wikipedia.org/wiki/Plone_(software)>`__
-
-* ReStructuredText:
-
-  * ReStructuredText ``.. contents::`` directives add a hyperlinked table of contents for the current document.
+ReStructuredText
+~~~~~~~~~~~~~~~~~~~
+* This document is written in ReStructuredText and post-processed into HTML with Sphinx (and docutils).
+* ReStructuredText ``.. contents::`` directives add a hyperlinked table of contents for the current document.
   
 
 
