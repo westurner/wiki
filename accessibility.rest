@@ -96,12 +96,25 @@ Emacs
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Emacs
 
+Emacspeak
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Emacspeak
+| Homepage: http://emacspeak.sourceforge.net/
+| Src: https://github.com/tvraman/emacspeak
+| Docs: https://tvraman.github.io/emacspeak/manual/
+
+* "Speech-enabled Applications On The Emacspeak Desktop"
+  https://tvraman.github.io/emacspeak/applications.html
+
+* "Beautiful Code" > Chapter 31 "Emacspeak: The Complete Audio Desktop"
+  http://emacspeak.sourceforge.net/raman/publications/bc-emacspeak/publish-emacspeak-bc.html
+
 
 JS Libraries
 ~~~~~~~~~~~~~
 
 YUI
-~~~~~
+~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/YUI_Library
 
 * YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards
