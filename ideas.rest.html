@@ -363,10 +363,17 @@ ul.auto-toc {
 </ul>
 </li>
 <li><a class="reference internal" href="#linkedreproducibility" id="id15">LinkedReproducibility</a></li>
-<li><a class="reference internal" href="#jupyter-notebook-meta-object" id="id16">Jupyter Notebook Meta object</a></li>
+<li><a class="reference internal" href="#jupyter-notebook-meta-object" id="id16">Jupyter Notebook Meta object</a><ul>
+<li><a class="reference internal" href="#schema-jupyternotebook-softwareenvironment" id="id17">schema:JupyterNotebook, SoftwareEnvironment</a></li>
+<li><a class="reference internal" href="#nbmeta" id="id18">nbmeta</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tools-vocabularies" id="id17">Tools Vocabularies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tools-vocabularies" id="id19">Tools Vocabularies</a><ul>
+<li><a class="reference internal" href="#westurner-org-tools" id="id20">westurner.org/tools</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="themes">
@@ -614,6 +621,9 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 </div>
 <div class="section" id="schema-org-animal-animalshelter-and-imagenet">
 <h2><a class="toc-backref" href="#id12">schema.org/Animal, AnimalShelter, and ImageNet</a></h2>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
 <p><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html">https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://schema.org/Animal">http://schema.org/Animal</a> ( <a class="reference external" href="http://schema.org/AnimalShelter">http://schema.org/AnimalShelter</a> )</li>
@@ -623,6 +633,9 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 </div>
 <div class="section" id="schema-org-course">
 <h2><a class="toc-backref" href="#id13">schema.org/Course</a></h2>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
 <ul class="simple">
 <li><a class="reference external" href="https://schema.org/Course">https://schema.org/Course</a></li>
 <li><a class="reference external" href="https://pending.schema.org/Course">https://pending.schema.org/Course</a></li>
@@ -636,6 +649,9 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 </ul>
 <div class="section" id="thingsequence-coursesequence-courseunit">
 <h3><a class="toc-backref" href="#id14">ThingSequence, CourseSequence, CourseUnit</a></h3>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
 <ul class="simple">
 <li>Multi-Track Video Editing</li>
 <li><a class="reference external" href="https://github.com/westurner/brw">https://github.com/westurner/brw</a> (IFrame carousel timer)</li>
@@ -651,7 +667,10 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 <div class="section" id="linkedreproducibility">
 <h2><a class="toc-backref" href="#id15">LinkedReproducibility</a></h2>
 <div class="line-block">
-<div class="line"><a class="reference external" href="https://wrdrd.com/docs/consulting/linkedreproducibility">https://wrdrd.com/docs/consulting/linkedreproducibility</a></div>
+<div class="line">tags: #linkedreproducibility &amp; #linkedrepro</div>
+<div class="line">tags: #linkeddata #schemaorg</div>
+<div class="line">Homepage: <a class="reference external" href="https://wrdrd.com/docs/consulting/linkedreproducibility">https://wrdrd.com/docs/consulting/linkedreproducibility</a></div>
+<div class="line">Src:</div>
 </div>
 <ul class="simple">
 <li>Linked-</li>
@@ -673,6 +692,10 @@ https // 'user&#64;host.netloc:port' / path ** query % fragment
 </div>
 <div class="section" id="jupyter-notebook-meta-object">
 <h2><a class="toc-backref" href="#id16">Jupyter Notebook Meta object</a></h2>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">See: <a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></p>
+</div>
 <ul>
 <li><p class="first">Jupyter Notebook</p>
 <ul class="simple">
@@ -742,21 +765,75 @@ but also to add metadata through the notebook</p>
 </ul>
 </li>
 </ul>
+<p>[EDIT]</p>
+<div class="section" id="schema-jupyternotebook-softwareenvironment">
+<h3><a class="toc-backref" href="#id17">schema:JupyterNotebook, SoftwareEnvironment</a></h3>
+<p>see:
+- <a class="reference external" href="https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832">https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832</a></p>
+<p>schema.org classes for <tt class="docutils literal"><span class="pre">&#64;type=[&quot;:JupyterNotebook&quot;,]</span></tt> :</p>
+<ul class="simple">
+<li><a class="reference external" href="https://schema.org/CreativeWork">https://schema.org/CreativeWork</a></li>
+<li><a class="reference external" href="https://schema.org/DigitalDocument">https://schema.org/DigitalDocument</a></li>
+<li><a class="reference external" href="https://schema.org/Article">https://schema.org/Article</a></li>
+<li><a class="reference external" href="https://schema.org/ScholarlyArticle">https://schema.org/ScholarlyArticle</a></li>
+<li><a class="reference external" href="https://schema.org/CreativeWorkSeries">https://schema.org/CreativeWorkSeries</a></li>
+<li><a class="reference external" href="https://schema.org/ItemList">https://schema.org/ItemList</a></li>
+</ul>
+</div>
+<div class="section" id="nbmeta">
+<h3><a class="toc-backref" href="#id18">nbmeta</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/nbmeta">https://github.com/westurner/nbmeta</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/nbmeta/tree/master/nb">https://github.com/westurner/nbmeta/tree/master/nb</a></div>
+<div class="line">Roadmap: <a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></div>
+</div>
+<p>nbmeta is a research project for structured data in Jupyter (IPython) Notebooks.</p>
+<p>Objectives</p>
+<ul class="simple">
+<li>Store and publish JSONLD and RDFa</li>
+<li><a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></li>
+</ul>
+<p>nbmeta and #LinkedReproducibility</p>
+<ul class="simple">
+<li>StudyGraph -- things with structured edges (:CreativeWork with :name, :url, :authors, :funders, :about)</li>
+<li>StructuredPremises -- premises with structured edges, satisfaction criteria</li>
+<li>LinkedMetaAnalyses -- shared structured metadata, variable inclusion criteria</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="tools-vocabularies">
-<h1><a class="toc-backref" href="#id17">Tools Vocabularies</a></h1>
+<h1><a class="toc-backref" href="#id19">Tools Vocabularies</a></h1>
+<ul class="simple">
+<li>See: RDFJS pad re &quot;Tools Schema&quot; Classes and Properties:
+<a class="reference external" href="https://text.allmende.io/p/rdfjs">https://text.allmende.io/p/rdfjs</a></li>
+</ul>
+<div class="section" id="westurner-org-tools">
+<h2><a class="toc-backref" href="#id20">westurner.org/tools</a></h2>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://westurner.org/tools/">https://westurner.org/tools/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/tools">https://github.com/westurner/tools</a></div>
 <div class="line">Docs: <a class="reference external" href="https://westurner.org/wiki/tools.html#tool-collections">https://westurner.org/wiki/tools.html#tool-collections</a></div>
 </div>
 <p>Central tools.rst [ ... -&gt; tools.rdf, tools.ttl, tools.jsonld ]</p>
-<ul class="simple">
+<ul>
+<li><ol class="first arabic simple">
 <li><a class="reference external" href="https://westurner.org/provis/tools.html">https://westurner.org/provis/tools.html</a></li>
+</ol>
+</li>
+<li><ol class="first arabic simple" start="2">
 <li><a class="reference external" href="https://westurner.org/dotfiles/tools.html">https://westurner.org/dotfiles/tools.html</a></li>
-<li>See RDFJS pad re &quot;Tools Schema&quot; Classes and Properties: <a class="reference external" href="https://text.allmende.io/p/rdfjs">https://text.allmende.io/p/rdfjs</a></li>
+</ol>
+</li>
+<li><ol class="first arabic simple" start="3">
+<li><a class="reference external" href="https://westurner.org/tools.html">https://westurner.org/tools.html</a> ( <a class="reference internal" href="#westurner-org-tools">westurner.org/tools</a> )</li>
+</ol>
+<ul class="simple">
+<li>Projects that link with <cite>westurner.org/tools</cite>: provis, dotfiles, <a class="reference external" href="https://wrdrd.github.io/docs/tools">https://wrdrd.github.io/docs/tools</a></li>
 </ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </body>
