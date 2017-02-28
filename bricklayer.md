@@ -338,6 +338,8 @@ TODO
   - [ ] Minecraft Server
     - q("docker minecraft")
       - https://hub.docker.com/r/itzg/minecraft-server/
+      - https://github.com/kubernetes/charts/tree/master/stable/minecraft
+        - [minikube](#minikube) + [helm](#helm)
   - [ ] nbgrader
     - nbgrader-demo
       - https://github.com/jhamrick/nbgrader-demo/blob/master/Dockerfile
