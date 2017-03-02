@@ -682,6 +682,7 @@ else:
 IPython.display.display(_output)
 ```
 - [ipywidgets](#ipywidgets)
+  - https://github.com/jupyter-widgets/widget-cookiecutter
 - UI
   - Render all
     - render from standard angles w/
