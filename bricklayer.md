@@ -104,7 +104,6 @@ Teach coding, pattern based reasoning, spatial reasoning (3D), rotation
 ### bricklayer
 - | Src: 
 - | Download:
-- | 
 - [SML/NJS](#smlnj) ([SML](#SML): Standard ML)
 - Input: name.bl : A Bricklayer program
 - Output: name.ldr : [LDraw](#ldraw)
@@ -116,12 +115,14 @@ Teach coding, pattern based reasoning, spatial reasoning (3D), rotation
 - | Src: http://wintercoding.com/vitruvia/js/graph.js
 - | Src: http://wintercoding.com/vitruvia/js/scripts.js
 
+.
+
 - Exercises:
   http://wintercoding.com/vitruvia/#
   - Bootstrap, JQuery
 
 
-###
+### Wx IDE
 
 
 - [Wx](#wx) IDE for [SML](#sml) with bindings for {TODO: slide}
@@ -214,12 +215,14 @@ TODO
 - | Homepage: http://k12cs.org/
 - | Supporters: https://k12cs.org/statements-of-support/
 - | Download: https://k12cs.org/downloads/
+- | Docs:Glossary: https://k12cs.org/glossary/
+
+.
 
 - Download the PDF:
   https://k12cs.org/wp-content/uploads/2016/09/K%E2%80%9312-Computer-Science-Framework.pdf
 - https://k12cs.org/navigating-the-practices/
 - https://k12cs.org/navigating-the-concepts/
-- | Docs:Glossary: https://k12cs.org/glossary/
 
 
 ## K12+ Computers
@@ -296,6 +299,8 @@ TODO
 - | docs: https://docs.docker.com/engine/
 - | docs: https://docs.docker.com/engine/getstarted/
 - | docs: https://docs.docker.com/engine/getstarted-voting-app/
+
+.
 
 - Simplify setup, ensure repeatable and reproducible configuration
 - Identify data to persist, log, backup
