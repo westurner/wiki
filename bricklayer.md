@@ -672,6 +672,8 @@ TODO: sage calc tutorial
   ```python
 
  # something like:
+
+```
 if hasattr(obj, '_repr_html_'):
     _output = obj._repr_html_()
 elif hasattr(obj, '_repr_json_'):
@@ -681,6 +683,7 @@ else:
     _output = repr(obj)  # obj.__repr__()
 IPython.display.display(_output)
 ```
+
 - [ipywidgets](#ipywidgets)
   - https://github.com/jupyter-widgets/widget-cookiecutter
 - UI
