@@ -761,13 +761,9 @@ IPython.display.display(_output)
   - ldraw
   - wine + lego digital designer
   - everything else
-
 - Create a [SML Jupyter Kernel](#sml-jupyter-kernel)
 - Create a [Bricklayer Jupyter Extension](#bricklayer-jupyter-extension)
+- Develop a docker, kubernetes, auth configuration for jupyter/nbgrader, jupyter/kubespawner, kubernetes/minikube
 
-- Create a Jupyter
-
-MiniKube
-- KubeSpawner
 
 
