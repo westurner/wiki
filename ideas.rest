@@ -162,14 +162,17 @@ Use cases:
   * Src: https://hg.python.org/<repo>/<path>
   * Src: https://github.com/<org>/<project>/<path>
   * Src: https://bitbucket.org/<org>/<project>/<path>
-  * Patch/Attachment: http[s]://bugs.python.org/(file[\d]+)/<filename(.diff)>
+  * Patch/Attachment: https://bugs.python.org/(file[\d]+)/<filename(.diff)>
   * Doc: https://docs.python.org/<ver>/<path>
   * Wiki: https://wiki.python.org/moin/<path>
   * Homepage: https://www.python.org/<path>
-  * PyPI pkg: https://pypi.python.org/pypi/<path>
-  * Warehouse pkg: https://warehouse.python.org/project/<path>
-  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
   * Build: http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771
+  * Packages
+
+    + PyPI pkg: https://pypi.python.org/pypi/<path>
+    + Warehouse pkg: https://warehouse.python.org/project/<path>
+
+  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
 
 
 * This could - most efficiently - be added to mailman
