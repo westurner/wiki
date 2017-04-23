@@ -16,22 +16,22 @@ Data
 
 seeAlso:
 
-* https://wrdrd.com/docs/consulting/knowledge-engineering.html
+* https://wrdrd.github.io/docs/consulting/knowledge-engineering.html
 
 Projects
 =========
 Resume projects:
 
-* https://westurner.org/resume/html/resume.html#projects
+* https://westurner.github.io/resume/html/resume.html#projects
 
 Projects I have created:
 
-* https://westurner.org/wiki/projects
+* https://westurner.github.io/wiki/projects
 * Src: https://github.com/westurner/wiki/wiki/projects
 
 Open Source Projects I have contributed to:
 
-* https://westurner.org/wiki/contributions
+* https://westurner.github.io/wiki/contributions
 * Src: https://github.com/westurner/wiki/wiki/contributions
 
 Twedges
@@ -162,14 +162,17 @@ Use cases:
   * Src: https://hg.python.org/<repo>/<path>
   * Src: https://github.com/<org>/<project>/<path>
   * Src: https://bitbucket.org/<org>/<project>/<path>
-  * Patch/Attachment: http[s]://bugs.python.org/(file[\d]+)/<filename(.diff)>
+  * Patch/Attachment: https://bugs.python.org/(file[\d]+)/<filename(.diff)>
   * Doc: https://docs.python.org/<ver>/<path>
   * Wiki: https://wiki.python.org/moin/<path>
   * Homepage: https://www.python.org/<path>
-  * PyPI pkg: https://pypi.python.org/pypi/<path>
-  * Warehouse pkg: https://warehouse.python.org/project/<path>
-  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
   * Build: http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771
+  * Packages
+
+    + PyPI pkg: https://pypi.python.org/pypi/<path>
+    + Warehouse pkg: https://warehouse.python.org/project/<path>
+
+  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
 
 
 * This could - most efficiently - be added to mailman
@@ -237,7 +240,7 @@ schema.org/Course
 
 - What is schema.org?
 
-  https://wrdrd.com/docs/consulting/knowledge-engineering#schema-org
+  https://wrdrd.github.io/docs/consulting/knowledge-engineering#schema-org
 
 
 ThingSequence, CourseSequence, CourseUnit
@@ -257,7 +260,7 @@ LinkedReproducibility
 ----------------------------
 | tags: #linkedreproducibility & #linkedrepro
 | tags: #linkeddata #schemaorg
-| Homepage: https://wrdrd.com/docs/consulting/linkedreproducibility
+| Homepage: https://wrdrd.github.io/docs/consulting/linkedreproducibility
 | Src: 
 
 - Linked-
@@ -270,8 +273,8 @@ Links:
 | Hashtag:``#LinkedReproducibility``
 
 - https://twitter.com/hashtag/linkedreproducibility
-- https://wrdrd.com/docs/consulting/data-science#linked-reproducibility
-- https://wrdrd.com/docs/consulting/linkedreproducibility
+- https://wrdrd.github.io/docs/consulting/data-science#linked-reproducibility
+- https://wrdrd.github.io/docs/consulting/linkedreproducibility
 - https://news.ycombinator.com/item?id=11685292
 - https://news.ycombinator.com/item?id=12195302
 
@@ -283,9 +286,9 @@ Jupyter Notebook Meta object
 
 - Jupyter Notebook
 
-  - https://wrdrd.com/docs/tools/#jupyter-notebook
-  - https://wrdrd.com/docs/tools/#nbformat
-  - https://wrdrd.com/docs/consulting/education-technology#jupyter-and-reproducibility
+  - https://wrdrd.github.io/docs/tools/#jupyter-notebook
+  - https://wrdrd.github.io/docs/tools/#nbformat
+  - https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility
 
 - ``_repr_html_`` => RDFa **and/or** JSONLD
 - Challenges / Objectives
@@ -311,7 +314,7 @@ Jupyter Notebook Meta object
                "@type": "schema:Person",
                "givenName": "Wesley",
                "familyName": "Turner",
-               "url": "https://westurner.org/"
+               "url": "https://westurner.github.io/"
              },
              "dateCreated": "2016-09-20"
             }
@@ -382,19 +385,19 @@ Tools Vocabularies
 * See: RDFJS pad re "Tools Schema" Classes and Properties:
   https://text.allmende.io/p/rdfjs 
 
-westurner.org/tools
+westurner.github.io/tools
 --------------------
-| https://westurner.org/tools/
+| https://westurner.github.io/tools/
 | Src: https://github.com/westurner/tools
-| Docs: https://westurner.org/wiki/tools.html#tool-collections
+| Docs: https://westurner.github.io/wiki/tools.html#tool-collections
 
 Central tools.rst [ ... -> tools.rdf, tools.ttl, tools.jsonld ]
 
-* 1. https://westurner.org/provis/tools.html
-* 2. https://westurner.org/dotfiles/tools.html
-* 3. https://westurner.org/tools.html ( `westurner.org/tools`_ )
+* 1. https://westurner.github.io/provis/tools.html
+* 2. https://westurner.github.io/dotfiles/tools.html
+* 3. https://westurner.github.io/tools.html ( `westurner.github.io/tools`_ )
 
-  - Projects that link with `westurner.org/tools`: provis, dotfiles, https://wrdrd.github.io/docs/tools
+  - Projects that link with `westurner.github.io/tools`: provis, dotfiles, https://wrdrd.github.io/docs/tools
 
 
 

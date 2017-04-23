@@ -113,7 +113,7 @@ version_information
    
    https://github.com/jrjohansson/version_information/issues/1
 
-   - see: https://wrdrd.com/docs/consulting/education-technology#jupyter-and-reproducibility
+   - see: https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility
 
 
 jinja2
@@ -200,7 +200,7 @@ redem
 ---------
 | Src: https://github.com/westurner/redem
 
-- [ ] https://westurner.org/redditlog/
+- [ ] https://westurner.github.io/redditlog/
 - [ ] https://github.com/westurner/redditlog
 
 

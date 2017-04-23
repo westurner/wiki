@@ -846,7 +846,7 @@ Ways to work with tasks and GitHub:
     * `hubflow <https://github.com/datasift/gitflow>`_ --
       adds ``git hf <command>``
       branching workflow automation commands by extending gitflow.
-    * see: https://westurner.org/dotfiles/tools.html#hubflow
+    * see: https://westurner.github.io/dotfiles/tools.html#hubflow
 
 
 * [ ] Create a GitHub Issue with a title and a description (Markdown) {.md}
@@ -1260,11 +1260,11 @@ Continuous Integration
 -------------------------
 https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 
-| https://wrdrd.com/docs/consulting/software-development#continuous-delivery
-| https://wrdrd.com/docs/consulting/software-development#continuous-integration
-| https://westurner.org/wiki/awesome-python-testing#
-| https://westurner.org/wiki/awesome-python-testing#workflow-evolution
-| https://westurner.org/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd
+| https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery
+| https://wrdrd.github.io/docs/consulting/software-development#continuous-integration
+| https://westurner.github.io/wiki/awesome-python-testing#
+| https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution
+| https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd
 
 * [ ] Run tests before releasing
 * [ ] Run tests before merging (e.g. Pull Request Webhooks)
@@ -1279,8 +1279,8 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
   ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
 
   * https://datasift.github.io/gitflow/
-  * https://westurner.org/tools/#git
-  * https://westurner.org/tools/#hubflow
+  * https://westurner.github.io/tools/#git
+  * https://westurner.github.io/tools/#hubflow
 
 * [ ] Release semantic versions (`<http://semver.org>`_) tagged as
   ``major.minor.patch`` (e.g. ``v1.0.01``)

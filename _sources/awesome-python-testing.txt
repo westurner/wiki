@@ -65,7 +65,7 @@ Python
 | Docs: https://en.wikiversity.org/wiki/Python
 | Docs: https://www.class-central.com/search?q=python
 | Docs: http://learnxinyminutes.com/docs/python/
-| Tools: https://westurner.org/tools/#python
+| Tools: https://westurner.github.io/tools/#python
 
 * http://docs.python.org/2/library/unittest.html
 * http://docs.python.org/2/library/doctest.html
@@ -82,7 +82,7 @@ Python 3
 | Docs: https://docs.python.org/3/howto/pyporting.html
 | Docs: https://docs.python.org/3/howto/cporting.html
 | Docs: http://learnxinyminutes.com/docs/python3/
-| Tools: https://westurner.org/tools/#python-3
+| Tools: https://westurner.github.io/tools/#python-3
 
 * https://docs.python.org/3/library/unittest.html
 * https://docs.python.org/3/library/unittest.mock.html (python >= 3.3)
@@ -182,8 +182,8 @@ IPython
 
 IPython Notebook
 ~~~~~~~~~~~~~~~~~
-* https://westurner.org/tools/#ipython-notebook
-* https://westurner.org/tools/#jupyter-notebook
+* https://westurner.github.io/tools/#ipython-notebook
+* https://westurner.github.io/tools/#jupyter-notebook
 * https://pypi.python.org/pypi/runipy
 * `ipython_nose`_
 * `nosebook`_
@@ -268,7 +268,7 @@ A primer on `Python`_ logging (and testing):
 See also:
 
 * http://learnxinyminutes.com/docs/python
-* https://westurner.org/tools/#python
+* https://westurner.github.io/tools/#python
 
 
 structlog
@@ -405,7 +405,7 @@ Elasticsearch
 | Homepage: https://www.elastic.co/products/elasticsearch
 | Src:  https://github.com/elastic/elasticsearch
 | DockerHub: https://hub.docker.com/_/elasticsearch/
-| Wrdrddocs: https://wrdrd.com/docs/consulting/knowledge-engineering#elasticsearch
+| Wrdrddocs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#elasticsearch
 
 ----------
 Logstash
@@ -781,7 +781,7 @@ debugging commands, tab completion, syntax highlighting, sticky mode,
 Vim
 ~~~~~
 
-- https://westurner.org/tools/#vim
+- https://westurner.github.io/tools/#vim
 
 vimpdb
 ^^^^^^^^
@@ -815,7 +815,7 @@ westurner/dotvim
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc
-| Docs: https://westurner.org/dotfiles/usage/#vim
+| Docs: https://westurner.github.io/dotfiles/usage/#vim
 
 * https://dev.launchpad.net/UltimateVimPythonSetup (F7 for `set_trace`)
 
