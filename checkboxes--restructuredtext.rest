@@ -7,7 +7,7 @@ A number of tests of checkboxes with ReStructuredText (docutils (Python)).
    * | Docs: http://docutils.sourceforge.net/docs/
    * | Docs: http://docutils.sourceforge.net/rst.html
    * | Docs: http://docutils.sourceforge.net/docs/ref/doctree.html
-   * | Wrdrddocs: https://wrdrd.com/docs/tools/#docutils
+   * | Wrdrddocs: https://wrdrd.github.io/docs/tools/#docutils
 
 * github ReStructuredText (``rest2html`` (docutils)):
 

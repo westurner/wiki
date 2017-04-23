@@ -11,16 +11,16 @@ Tools
 
 Dotfiles
 ------------
-| Docs: https://westurner.org/dotfiles/
+| Docs: https://westurner.github.io/dotfiles/
 | Src: https://github.com/westurner/dotfiles
-| Tools: https://westurner.org/tools/#dotfiles
+| Tools: https://westurner.github.io/tools/#dotfiles
 
 osquery
 --------
 | Homepage: https://osquery.io/
 | Src: https://github.com/facebook/osquery 
 | Docs: https://osquery.io/docs/tables/
-| Tools: https://westurner.org/tools/#osquery
+| Tools: https://westurner.github.io/tools/#osquery
 
 
 * https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
@@ -29,7 +29,7 @@ Salt
 ------
 | Docs: http://docs.saltstack.com/en/latest/
 | Src: https://github.com/saltstack/salt
-| Tools: https://westurner.org/tools/#salt
+| Tools: https://westurner.github.io/tools/#salt
 
 .. code:: bash
 
@@ -39,27 +39,27 @@ Salt
 
 OS
 ***
-| Tools: https://westurner.org/tools/#operating-systems
+| Tools: https://westurner.github.io/tools/#operating-systems
 
 Windows
 ---------
-| Tools: https://westurner.org/tools/#windows-notes
+| Tools: https://westurner.github.io/tools/#windows-notes
 
 OSX
 ----
-| Tools: https://westurner.org/tools/#osx-notes
+| Tools: https://westurner.github.io/tools/#osx-notes
 
 iOS
 ----
-| Tools: https://westurner.org/tools/#ios-notes
+| Tools: https://westurner.github.io/tools/#ios-notes
 
 Linux
 -------
-| Tools: https://westurner.org/tools/#linux-notes
+| Tools: https://westurner.github.io/tools/#linux-notes
 
 Android
 ---------
-| Tools: https://westurner.org/tools/#android-notes
+| Tools: https://westurner.github.io/tools/#android-notes
 
 
 Wandroid
@@ -97,7 +97,7 @@ Wandroid
 Equipment
 ************
 
-see also: https://wrdrd.com/docs/consulting/computer-engineering
+see also: https://wrdrd.github.io/docs/consulting/computer-engineering
 
 
 Keyboard
@@ -181,7 +181,7 @@ Cables
   - [x] RJ-45 (ethernet) crimper tool
   - [ ] T568A Diagram
 
-    - https://wrdrd.com/docs/consulting/computer-engineering#t568b
+    - https://wrdrd.github.io/docs/consulting/computer-engineering#t568b
 
       - https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination
 

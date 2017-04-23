@@ -9,15 +9,15 @@ Tool Collections
 
 My Tool Collection
 -----------------------
-- https://westurner.org/tools/
+- https://westurner.github.io/tools/
 
-  - https://westurner.org/dotfiles/tools.html (originally from provis#tools)
-  - https://westurner.org/provis/tools
+  - https://westurner.github.io/dotfiles/tools.html (originally from provis#tools)
+  - https://westurner.github.io/provis/tools
 
     - https://github.com/westurner/provis/blob/master/docs/tools.rst (ReStructuredText -> HTML)
     - https://provis.readthedocs.org/en/latest/tools.html (HTML)
 
-  - https://wrdrd.com/docs/tools
+  - https://wrdrd.github.io/docs/tools
 
     - WRD R&D Docs only link into the ./tools docs
     - ``| wrdrddocs:``)
@@ -25,7 +25,7 @@ My Tool Collection
 
 Great Tool Collections
 ------------------------
-- https://westurner.org/redditlog/#comment/c9tfxgd (Markdown comment)
+- https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
 - https://github.com/bayandin/awesome-awesomeness
 
 
@@ -44,7 +44,7 @@ Bobcat
 sphinxcontrib-rdf
 ------------------
 - https://github.com/westurner/sphinxcontrib-rdf (ReStructuredText + RDF ?-> HTML)
-- https://westurner.org/wiki/ideas#sphinx-extensions
+- https://westurner.github.io/wiki/ideas#sphinx-extensions
 
 
 heathref

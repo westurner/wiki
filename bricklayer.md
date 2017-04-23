@@ -28,7 +28,7 @@ spent the time to put this together:
         - [ ] show/view/collect {Metadata}
         - [ ] validate {metadata}
 - https://youtu.be/qWSovC2-yM4
-  - https://westurner.org/opengov/us/ne/#what-about-creating-computer-games
+  - https://westurner.github.io/opengov/us/ne/#what-about-creating-computer-games
 - +1 for Open Source
 - What is SML?
 - I like LEGOS, too.
@@ -705,14 +705,14 @@ IPython.display.display(_output)
 ### nbgrader
 - | Src: https://github.com/jupyter/nbgrader
 - | Docs: http://nbgrader.readthedocs.io/ 
-- | Docs:Wrdrd: https://wrdrd.com/docs/consulting/education-technology#nbgrader
+- | Docs:Wrdrd: https://wrdrd.github.io/docs/consulting/education-technology#nbgrader
 - JupyterHub [+ kubespawner] + nbgrader:
   https://nbgrader.readthedocs.io/en/stable/configuration/jupyterhub_config.html
 - seeAlso: [pytest-mpl](#pytest-mpl)
 - #TDD #TestDrivenDevelopment #ContinuousIntegration
 
 #### pytest
-- https://westurner.org/wiki/awesome-python-testing#py-test
+- https://westurner.github.io/wiki/awesome-python-testing#py-test
 
 ##### pytest-mpl
 - | Src: https://github.com/matplotlib/pytest-mpl

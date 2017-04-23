@@ -4,8 +4,8 @@ A number of tests of checkboxes with Markdown
 
 * Markdown
 
-  * | Wrdrddocs: https://wrdrd.com/docs/tools#markdown
-  * | Wrdrddocs: https://wrdrd.com/docs/tools#commonmark
+  * | Wrdrddocs: https://wrdrd.github.io/docs/tools#markdown
+  * | Wrdrddocs: https://wrdrd.github.io/docs/tools#commonmark
 
 * GitHub markdown:
   * | Src: https://github.com/github/markup/
