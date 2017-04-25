@@ -23,5 +23,5 @@ Contents:
 
 ******
 
-@ `westurner.org <https://westurner.org/>`__
+@ `westurner.github.io <https://westurner.github.io/>`__
 
