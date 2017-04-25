@@ -25,6 +25,9 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
   - `workstations
     <https://github.com/westurner/wiki/wiki/workstations>`__
 
+  - `webframeworks
+    <https://github.com/westurner/wiki/wiki/webframeworks>`__
+
 - `Ideas <https://github.com/westurner/wiki/wiki/ideas>`__
 - `Accessibility
   <https://github.com/westurner/wiki/wiki/accessibility>`__
