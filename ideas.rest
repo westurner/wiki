@@ -386,7 +386,7 @@ Tools Vocabularies
   https://text.allmende.io/p/rdfjs 
 
 westurner.github.io/tools
---------------------
+----------------------------
 | https://westurner.github.io/tools/
 | Src: https://github.com/westurner/tools
 | Docs: https://westurner.github.io/wiki/tools.html#tool-collections
