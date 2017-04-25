@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.13.1: http://docutils.sourceforge.net/" />
 <title>Awesome Python Testing</title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -36,6 +36,14 @@ table.borderless td, table.borderless th {
 
 .hidden {
   display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
 
 a.toc-backref {
   text-decoration: none ;
@@ -161,18 +169,23 @@ h2.subtitle {
 hr.docutils {
   width: 75% }
 
-img.align-left, .figure.align-left, object.align-left {
+img.align-left, .figure.align-left, object.align-left, table.align-left {
   clear: left ;
   float: left ;
   margin-right: 1em }
 
-img.align-right, .figure.align-right, object.align-right {
+img.align-right, .figure.align-right, object.align-right, table.align-right {
   clear: right ;
   float: right ;
   margin-left: 1em }
 
 img.align-center, .figure.align-center, object.align-center {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -193,6 +206,15 @@ div.align-right {
 
 /* div.align-center * { */
 /*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
 
 ol.simple, ul.simple {
   margin-bottom: 1em }
@@ -740,7 +762,7 @@ def test_true(): assert True == True
     <span class="keyword namespace">import</span> <span class="name namespace">logging</span>
     <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span>                       <span class="comment single"># global logger</span>
     <span class="name">log</span> <span class="operator">=</span> <span class="name builtin">__import__</span><span class="punctuation">(</span><span class="literal string single">'logging'</span><span class="punctuation">)</span>         <span class="comment single"># global logger</span>
-    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span><span class="operator">.</span><span class="name">getLogger</span><span class="punctuation">(</span><span class="name">__name__</span><span class="punctuation">)</span>   <span class="comment single"># local logger (&lt;__name__&gt;.py)</span>
+    <span class="name">log</span> <span class="operator">=</span> <span class="name">logging</span><span class="operator">.</span><span class="name">getLogger</span><span class="punctuation">(</span><span class="name variable magic">__name__</span><span class="punctuation">)</span>   <span class="comment single"># local logger (&lt;__name__&gt;.py)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">debug</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">info</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
     <span class="name">log</span><span class="operator">.</span><span class="name">error</span><span class="punctuation">(</span><span class="name">err</span><span class="punctuation">)</span>
@@ -762,7 +784,7 @@ def test_true(): assert True == True
 <span class="comment single">#   python ./filename.py</span>
 <span class="comment single"># but not when imported like:</span>
 <span class="comment single">#   import filename</span>
-<span class="keyword">if</span> <span class="name">__name__</span> <span class="operator">==</span> <span class="literal string double">&quot;__main__&quot;</span><span class="punctuation">:</span>
+<span class="keyword">if</span> <span class="name variable magic">__name__</span> <span class="operator">==</span> <span class="literal string double">&quot;__main__&quot;</span><span class="punctuation">:</span>
     <span class="keyword namespace">import</span> <span class="name namespace">sys</span>
     <span class="name">sys</span><span class="operator">.</span><span class="name">exit</span><span class="punctuation">(</span><span class="name">unittest</span><span class="operator">.</span><span class="name">main</span><span class="punctuation">())</span>
 </pre>
@@ -1470,9 +1492,9 @@ py.test --pdb ./code.py
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/optimizing/">https://scipy-lectures.github.io/advanced/optimizing/</a></li>
 <li><a class="reference external" href="http://pypy.org/performance.html">http://pypy.org/performance.html</a></li>
 <li><a class="reference external" href="http://scikit-learn.org/dev/developers/performance.html">http://scikit-learn.org/dev/developers/performance.html</a></li>
-<li><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html">http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html</a></li>
+<li><a class="reference external" href="https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html">https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html</a></li>
 <li><a class="reference external" href="http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf">http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf</a></li>
-<li><a class="reference external" href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb">http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb</a></li>
+<li><a class="reference external" href="https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb">https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb</a></li>
 </ul>
 </div>
 </div>

@@ -917,9 +917,9 @@ Performance
 * https://scipy-lectures.github.io/advanced/optimizing/
 * http://pypy.org/performance.html
 * http://scikit-learn.org/dev/developers/performance.html
-* http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html
+* https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html
 * http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf
-* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb
+* https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb
 
 Databases
 ==========

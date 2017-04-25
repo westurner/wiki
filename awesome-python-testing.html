@@ -47,7 +47,7 @@
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
             URL_ROOT:    './',
-            VERSION:     'None',
+            VERSION:     '',
             COLLAPSE_INDEX: false,
             FILE_SUFFIX: '.html',
             HAS_SOURCE:  true
@@ -62,8 +62,10 @@
 <script type="text/javascript" src="_static/js/basicstrap.js"></script>
 <script type="text/javascript">
 </script>
+    <link rel="index" title="Index" href="genindex" />
+    <link rel="search" title="Search" href="search" />
     <link rel="top" title="westurner/wiki" href="index" />
-    <link rel="next" title="Tools" href="tools" />
+    <link rel="next" title="Web Frameworks" href="webframeworks" />
     <link rel="prev" title="Accessibility" href="accessibility" /> 
   </head>
   <body role="document">
@@ -241,10 +243,10 @@
 
             
               <li><a href="accessibility" title="Accessibility" accesskey="P">previous </a></li>
-              <li><a href="tools" title="Tools" accesskey="N">next </a></li>
+              <li><a href="webframeworks" title="Web Frameworks" accesskey="N">next </a></li>
               <li><a href="genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="_sources/awesome-python-testing.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="_sources/awesome-python-testing.rest.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search" method="get">
@@ -434,8 +436,8 @@
   <p class="topless"><a href="accessibility"
                         title="previous chapter">Accessibility</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="tools"
-                        title="next chapter">Tools</a></p>
+  <p class="topless"><a href="webframeworks"
+                        title="next chapter">Web Frameworks</a></p>
 <div id="searchbox" role="search">
   <h3>Quick search</h3>
   <form class="search form-inline" action="search" method="get">
@@ -454,7 +456,7 @@
 </div>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/awesome-python-testing.txt"
+    <li><a href="_sources/awesome-python-testing.rest.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/westurner/wiki/blob/master/awesome-python-testing.rest"
@@ -905,7 +907,7 @@
     <span class="kn">import</span> <span class="nn">logging</span>
     <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span>                       <span class="c1"># global logger</span>
     <span class="n">log</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;logging&#39;</span><span class="p">)</span>         <span class="c1"># global logger</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>   <span class="c1"># local logger (&lt;__name__&gt;.py)</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>   <span class="c1"># local logger (&lt;__name__&gt;.py)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
@@ -927,7 +929,7 @@
 <span class="c1">#   python ./filename.py</span>
 <span class="c1"># but not when imported like:</span>
 <span class="c1">#   import filename</span>
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
@@ -1636,9 +1638,9 @@ debugging commands, tab completion, syntax highlighting, sticky mode,</p>
 <li><a class="reference external" href="https://scipy-lectures.github.io/advanced/optimizing/">https://scipy-lectures.github.io/advanced/optimizing/</a></li>
 <li><a class="reference external" href="http://pypy.org/performance.html">http://pypy.org/performance.html</a></li>
 <li><a class="reference external" href="http://scikit-learn.org/dev/developers/performance.html">http://scikit-learn.org/dev/developers/performance.html</a></li>
-<li><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html">http://pandas.pydata.org/pandas-docs/dev/enhancingperf.html</a></li>
+<li><a class="reference external" href="https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html">https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html</a></li>
 <li><a class="reference external" href="http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf">http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf</a></li>
-<li><a class="reference external" href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb">http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb</a></li>
+<li><a class="reference external" href="https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb">https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb</a></li>
 </ul>
 </div>
 </div>
@@ -1857,7 +1859,7 @@ zopetestbrowser, remote webdriver)</li>
 <ul class="nav navbar-nav text-center">
       
         <li><a href="accessibility" title="Accessibility" >previous</a></li>
-        <li><a href="tools" title="Tools" >next</a></li>
+        <li><a href="webframeworks" title="Web Frameworks" >next</a></li>
         <li><a href="genindex" title="General Index" >index</a></li>
         <li><a href="#">top</a></li> 
       
@@ -1869,7 +1871,7 @@ zopetestbrowser, remote webdriver)</li>
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.1.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
       </footer>
       <!-- /footer -->
 
