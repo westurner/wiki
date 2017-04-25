@@ -17,6 +17,7 @@ Contents:
    workstations
    accessibility
    awesome-python-testing
+   webframeworks
    tools
 
 
