@@ -761,7 +761,7 @@ Composer is a package manager for :ref:`PHP` programs.
 ========
 Python
 ========
-https://westurner.org/wiki/awesome-python-testing
+https://westurner.github.io/wiki/awesome-python-testing
 
 
 .. index:: Ruby
@@ -772,7 +772,7 @@ Ruby
 ======
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ruby_(programming_language)>`__
 | LearnXinYminutes: https://learnxinyminutes.com/docs/ruby/
-| https://westurner.org/tools/#ruby
+| https://westurner.github.io/tools/#ruby
 
 
 

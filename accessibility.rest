@@ -254,11 +254,11 @@ Browser extensions for modifying style attributes:
 - text color
 - inverting just the CSS colors
 
-— https://westurner.org/tools/#browser-extensions
+— https://westurner.github.io/tools/#browser-extensions
 
-  - Deluminate -- https://westurner.org/tools/#deluminate
+  - Deluminate -- https://westurner.github.io/tools/#deluminate
   - Stylish ( http://userstyles.org/ )
-  - High Contrast -- https://westurner.org/tools/#high-contrast
+  - High Contrast -- https://westurner.github.io/tools/#high-contrast
   
 - Disadvantages:
 

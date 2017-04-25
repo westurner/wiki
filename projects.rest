@@ -16,7 +16,7 @@ provis
 Self Directed Learning
 -----------------------
 | Src: https://github.com/westurner/self-directed-learning
-| Docs: https://westurner.org/self-directed-learning/
+| Docs: https://westurner.github.io/self-directed-learning/
 | Docs: https://self-directed-learning.readthedocs.org/en/latest/
 
 health-marketplace
@@ -26,7 +26,7 @@ health-marketplace
 healthref
 ---------------
 | Src: https://github.com/westurner/healthref
-| Web: https://westurner.org/healthref/
+| Web: https://westurner.github.io/healthref/
  
 pycd10api
 ---------------
@@ -43,7 +43,7 @@ wbcms
 opengov
 ---------------
 | Src: https://github.com/westurner/opengov
-| Docs: https://westurner.org/opengov/
+| Docs: https://westurner.github.io/opengov/
 
 presense
 ---------------
@@ -52,7 +52,7 @@ presense
 notebooks
 ---------------
 | Src: https://github.com/westurner/notebooks
-| Web: https://westurner.org/notebooks/
+| Web: https://westurner.github.io/notebooks/
 
 contributions
 ---------------
@@ -70,7 +70,7 @@ browenv
 brw
 ----
 | Src: https://github.com/westurner/brw
-| Web: https://westurner.org/brw/
+| Web: https://westurner.github.io/brw/
 
 bobcat
 ---------------
@@ -110,7 +110,7 @@ pkgsetcomp
 pwd
 -----
 | Src: https://github.com/westurner/pwd
-| Web: https://westurner.org/pwd/
+| Web: https://westurner.github.io/pwd/
 
 pygments-style-jellywrd
 ---------------------------
@@ -191,16 +191,16 @@ Personal
 USA
 ---------------
 | Src: https://github.com/westurner/USA
-| Web: https://westurner.org/USA
+| Web: https://westurner.github.io/USA
 
 tools
 ---------------
-| https://westurner.org/tools/
+| https://westurner.github.io/tools/
 | Src: https://github.com/westurner/tools
 
 dotfiles
 ---------------
-| https://westurner.org/dotfiles/
+| https://westurner.github.io/dotfiles/
 | Src: https://github.com/westurner/dotfiles
 | Docs: https://wrdfiles.readthedocs.org/en/latest/
 
@@ -216,19 +216,19 @@ hello_world
 redditlog
 ---------------
 | Src: https://github.com/westurner/redditlog
-| Web: https://westurner.org/redditlog/
+| Web: https://westurner.github.io/redditlog/
 
 wiki
 ---------------
-| https://westurner.org/wiki/
+| https://westurner.github.io/wiki/
 | Src: https://github.com/westurner/wiki/wiki
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
   
 resume
 ---------------
-| Web: https://westurner.org/pages/resume
-| Web: https://westurner.org/resume
+| Web: https://westurner.github.io/pages/resume
+| Web: https://westurner.github.io/resume
 | Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
 
 westurner.bitbucket.org
@@ -237,8 +237,8 @@ westurner.bitbucket.org
 | Src: https://bitbucket.org/westurner/westurner.bitbucket.org
 | Web: http://westurner.bitbucket.org/
 
-westurner.org
+westurner.github.io
 ----------------------
 | Src: https://github.com/westurner/westurner.github.io
-| Web: https://westurner.org/
+| Web: https://westurner.github.io/
 

@@ -35,5 +35,5 @@ Welcome to `<https://github.com/westurner/wiki/wiki>`_
 ******
 
 | `github.com/westurner/wiki/wiki <https://github.com/westurner/wiki/wiki>`__
-| `westurner.org/wiki <https://westurner.org/wiki/>`__
-| `westurner.org <https://westurner.org/>`__
+| `westurner.github.io/wiki <https://westurner.github.io/wiki/>`__
+| `westurner.github.io <https://westurner.github.io/>`__
