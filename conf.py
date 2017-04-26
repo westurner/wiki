@@ -46,7 +46,7 @@ project_src_path = project_github_path
 project_url = project_github_url
 project_title = u'{}'.format(project_src_path)
 project_description_oneline = (
-    u'Documentation for the {} project'.format(project_name))
+    u'westurner.github.io/wiki'.format(project_name))
 project_og_site_name = project_src_path  # e.g. westurner/dotfiles
 
 srclink_project = project_github_url
