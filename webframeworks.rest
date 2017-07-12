@@ -18,7 +18,7 @@ Web Framework Benchmarks
 ==========================
 - https://github.com/TechEmpower/FrameworkBenchmarks
 - https://www.techempower.com/benchmarks/
-- 
+-
 
 
 .. index:: C++
@@ -269,7 +269,7 @@ JS Packaging
 CommonJS
 **********
 | Wikipedia: https://en.wikipedia.org/wiki/CommonJS
-| Homepage: 
+| Homepage:
 | Docs: https://webpack.github.io/docs/commonjs.html
 
 - CommonJS is more than just packaging
@@ -326,7 +326,7 @@ System.js
 ***********
 | Src: https://github.com/systemjs/systemjs
 
-- System.js supports :ref:`CommonJS`, :ref:`NodeJS`, 
+- System.js supports :ref:`CommonJS`, :ref:`NodeJS`,
   :ref:`AMD`, and :ref:`ES2015 Modules`
 
 .. index:: RequireJS
@@ -897,7 +897,7 @@ Ruby
 
 - irb: interactive ruby shell
 - rdoc
-- erb: 
+- erb:
 - capistrano
 
 - https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/
