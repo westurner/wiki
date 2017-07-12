@@ -478,18 +478,6 @@ Webpack
 | NPM: https://www.npmjs.com/package/webpack
 
 
-.. index:: Yarn
-.. _yarn:
-
-Yarn
-******
-| Homepage: https://yarnpkg.com/
-| Src: https://github.com/yarnpkg
-| Docs: https://yarnpkg.com/en/docs/
-| NPM: https://www.npmjs.com/package/yarn
-
-
-
 .. index:: Browserify
 .. _browserify:
 
@@ -514,14 +502,15 @@ Requirify
 | ChromeExt: https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm?hl=en
 
 
-.. index:: Yarn (JS)
+.. index:: Yarn
 .. _yarn:
 
 Yarn
-*****
-| Homepage: https://yarnpkg.com/en/
-| Src: https://github.com/yarnpkg/yarn
-| Docs: https://yarnpkg.com/en/docs
+******
+| Homepage: https://yarnpkg.com/
+| Src: https://github.com/yarnpkg
+| NPM: https://www.npmjs.com/package/yarn
+| Docs: https://yarnpkg.com/en/docs/
 | Docs: https://yarnpkg.com/en/docs/migrating-from-npm
 
 - Yarn can consume :ref:`NPM` ``package.json``
