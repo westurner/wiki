@@ -1115,3 +1115,38 @@ Ruby Testing
 ==============
 
 - https://www.ruby-toolbox.com/categories/testing_frameworks#bacon
+
+
+=============
+Web Testing
+=============
+
+- https://westurner.github.io/wiki/awesome-python-testing#web-frameworks
+
+Browsers
+==========
+- | **Headless Browsers**
+  | A list of (almost) all headless web browsers in existence
+
+  https://github.com/dhamaniasad/HeadlessBrowsers
+
+
+  - https://github.com/substack/browser-launcher
+  - https://github.com/nodeca/navit
+
+    - "All methods are chainable" (Helpful instead of
+      ``async``/``await``)
+
+Selenium
+==========
+| Docs: http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
+
+* https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin
+* http://www.seleniumhq.org/projects/ide/
+
+
+WebDriver
+===========
+| Homepage: http://www.seleniumhq.org/projects/webdriver/
+| Docs: http://www.seleniumhq.org/projects/webdriver/
+| Spec: https://www.w3.org/TR/webdriver/
