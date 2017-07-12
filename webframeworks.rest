@@ -761,7 +761,126 @@ Composer is a package manager for :ref:`PHP` programs.
 ========
 Python
 ========
-https://westurner.github.io/wiki/awesome-python-testing
+https://westurner.github.io/wiki/awesome-python-testing#web-frameworks
+
+
+Python Frameworks
+===================
+
+Plone
+******
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+| Homepage: https://plone.org/
+| Src: https://github.com/plone/plone
+| PyPI: https://pypi.python.org/pypi/Plone
+| Docs: https://plone.org/documentation
+| Docs: http://developer.plone.org/
+| Docs: http://docs.plone.org/manage/installing/installation.html
+
+* http://developer.plone.org/testing_and_debugging/
+
+Django
+********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Django_(web_framework)>`__
+| Homepage: https://www.djangoproject.com/
+| Src: git https://github.com/django/django
+| PyPI: https://pypi.python.org/pypi/django
+| Docs: https://docs.djangoproject.com/
+| Docs: https://docs.djangoproject.com/en/dev/topics/testing/
+| Docs: https://docs.djangoproject.com/en/dev/topics/settings/
+| Awesome: https://github.com/rosarior/awesome-django
+
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+* https://www.djangopackages.com/
+
+  * https://www.djangopackages.com/grids/g/cms/
+
+Flask
+******
+| Wikipedia: `<https://en.wikipedia.org/wiki/Flask_(web_framework)>`__
+| Homepage: https://flask.pocoo.org/
+| Src: git https://github.com/mitsuhiko/flask
+| PyPI: https://pypi.python.org/pypi/Flask
+| Docs: https://flask.readthedocs.org/en/latest/config/
+| Docs: https://flask.pocoo.org/docs/latest/
+| Docs: https://flask.pocoo.org/docs/latest/testing/
+| Awesome: https://github.com/humiaozuzu/awesome-flask
+
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+
+Bottle
+*******
+| Homepage: http://bottlepy.org
+| Src: git https://github.com/bottlepy/bottle
+| PyPI: https://pypi.python.org/pypi/bottle
+| Docs: http://bottlepy.org/docs/dev/
+| Docs: http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+
+Bottle is a one file WSGI Python web framework.
+
+* http://bottlepy.org/docs/dev/plugins/
+
+pgs is written with bottle.py:
+
+* | Src: https://github.com/westurner/pgs
+
+
+Pyramid
+********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Pylons_project#Pyramid>`__
+| Homepage: http://www.pylonsproject.org/projects/pyramid/about
+| Src: git https://github.com/Pylons/pyramid
+| PyPI: https://pypi.python.org/pypi/pyramid
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+| Docs:  http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
+| Awesome: https://github.com/ITCase/awesome-pyramid
+
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+
+
+Python Testing
+==================
+| Wikipedia: https://en.wikipedia.org/wiki/Web_application
+
+* http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
+
+
+WebTest
+********
+| Src: git https://github.com/Pylons/webtest
+| PyPI: https://pypi.python.org/pypi/WebTest
+| Docs: http://webtest.pythonpaste.org/en/latest/
+
+WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. `Pyramid`_, `Flask`_, `Django`_, `Bottle`_)
+
+
+Splinter
+*********
+| Src: git https://github.com/cobrateam/splinter
+| PyPI: https://pypi.python.org/pypi/splinter
+| Docs: https://splinter.readthedocs.org/en/latest/
+
+.. epigraph::
+
+  * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+    zopetestbrowser, remote webdriver)
+  * css and xpath selectors \*
+
+
+ghost.py
+*********
+| Src: git https://github.com/jeanphix/Ghost.py
+| PyPI: https://pypi.python.org/pypi/Ghost.py
+| Docs: http://ghost-py.readthedocs.org/en/latest/
+
+.. epigraph::
+
+    Webkit based scriptable web browser for python.
+
+- PyQT or PySide
 
 
 .. index:: Ruby
