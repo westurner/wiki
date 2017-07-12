@@ -247,12 +247,18 @@ Jasmine
 *********
 
 
+Jest
+*****
+| Homepage: https://facebook.github.io/jest/
+| Src: https://github.com/facebook/jest
+| Docs: https://facebook.github.io/jest/docs/en/
+
+- https://facebook.github.io/jest/docs/en/snapshot-testing.html
+
+
 PhantomJS
 ***********
-
-
-WebDriver
-***********
+- see: `Web Testing`_
 
 
 .. index:: JS Packaging
