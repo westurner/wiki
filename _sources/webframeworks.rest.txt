@@ -172,7 +172,25 @@ Bootstrap
 
 jQuery
 *******
+| Homepage: https://jquery.com/
+| Src: https://github.com/jquery/jquery
+| Docs: https://api.jquery.com/
+| NPM: https://www.npmjs.com/package/jquery
+
+
 - lodash
+
+
+.. index:: Zepto.js
+.. _zepto:
+
+Zepto.js
+***********
+| Homepage: http://zeptojs.com/
+| Src: https://github.com/madrobby/zepto
+| Docs: http://zeptojs.com/
+
+- Zepto.js is a minimal, mostly-jQuery-compatible JS library.
 
 
 .. index:: Underscore
@@ -180,13 +198,33 @@ jQuery
 
 Underscore
 ***********
+| Wikipedia: https://en.wikipedia.org/wiki/Underscore.js
+| Homepage: http://underscorejs.org/
+| Src: https://github.com/jashkenas/underscore
 
 
 .. index:: Babel
 .. _babel:
 
 Babel
-******
+*******
+| Homepage: https://babeljs.io/
+| Src: https://github.com/babel/babel
+| Docs: https://babeljs.io/docs/setup/
+| Docs: https://babeljs.io/learn-es2015/
+| Docs: https://babeljs.io/docs/plugins/preset-stage-0/ (,1,2,3)
+| NPM: https://www.npmjs.com/package/babel-cli
+
+.
+
+- style-loader, css-loader, less, less-loader
+- babel-plugin-react-transform
+- babel-plugin-transform-class-properties
+- babel-plugin-transform-object-assign
+- babel-preset-es2015
+- babel-preset-react
+- babel-preset-stage0
+
 
 
 .. index:: JS Frameworks
@@ -201,12 +239,76 @@ JS Frameworks
 Angular
 ***********
 
+Angular 1
+-----------
+| Homepage: https://angularjs.org/
+| Src: https://github.com/angular/angular.js
+| Docs: https://docs.angularjs.org/
+| Docs: https://docs.angularjs.org/guide/concepts
+
+
+.. index:: Ionic
+.. _ionic:
+
+Ionic
+------
+| Homepage:
+| Src:
+
+
 
 .. index:: React
 .. _react:
 
 React
 *********
+| Homepage: https://facebook.github.io/react/docs/
+| Src: https://github.com/facebook/react
+| Src: https://github.com/reactjs
+| Docs: https://facebook.github.io/react/docs/
+| NPM: https://www.npmjs.com/package/react
+
+See: `Jest`_
+
+
+.. index:: React-Native
+.. _react-native:
+
+React-Native
+**************
+
+
+.. index:: Redux
+.. _redux:
+
+Redux
+******
+| Homepage: http://redux.js.org/
+| Src: https://github.com/reactjs/redux
+| Docs: http://redux.js.org/
+| NPM: https://www.npmjs.com/package/redux
+
+
+.. index:: Redux-actions
+.. _redux-actions:
+
+Redux-actions
+----------------
+| Src: https://github.com/acdlite/redux-actions
+| Tests: https://github.com/acdlite/redux-actions/tree/master/src/__tests__
+| NPM: https://www.npmjs.com/package/redux-actions
+
+
+.. index:: Redux-devtools
+.. _redux-devtools:
+
+Redux-devtools
+----------------
+| Homepage: http://extension.remotedev.io/
+| Src: https://github.com/zalmoxisus/redux-devtools-extension
+| Docs: http://extension.remotedev.io/
+| ChromeExt: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
 
 
 .. index:: Node
@@ -363,11 +465,30 @@ Bower
 .. index:: WebPack
 .. _webpack:
 
-WebPack
-**********
+
+Webpack
+*************
+| Homepage: https://webpack.js.org/
 | Homepage: https://webpack.github.io/
+| Src: https://github.com/webpack/webpack
+| Docs: https://webpack.js.org/configuration/
 | Docs: https://webpack.github.io/docs/
 | Docs: https://webpack.github.io/docs/commonjs.html
+| Q&A Tag: https://stackoverflow.com/questions/tagged/webpack
+| NPM: https://www.npmjs.com/package/webpack
+
+
+.. index:: Yarn
+.. _yarn:
+
+Yarn
+******
+| Homepage: https://yarnpkg.com/
+| Src: https://github.com/yarnpkg
+| Docs: https://yarnpkg.com/en/docs/
+| NPM: https://www.npmjs.com/package/yarn
+
+
 
 .. index:: Browserify
 .. _browserify:
