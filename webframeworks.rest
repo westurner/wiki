@@ -465,7 +465,7 @@ Bower
 - :ref:`Bower`
 
 
-.. index:: WebPack
+.. index:: Webpack
 .. _webpack:
 
 
