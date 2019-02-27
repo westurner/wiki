@@ -316,6 +316,9 @@ Redux-devtools
 
 Node
 *******
+| Homepage: https://nodejs.org/en/
+| Src: https://github.com/nodejs/node/
+| Docs: https://nodejs.org/en/docs/
 
 
 .. index:: Express
