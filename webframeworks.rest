@@ -471,6 +471,7 @@ Bower
 
 Webpack
 *************
+| Wikipedia: https://en.wikipedia.org/wiki/Webpack
 | Homepage: https://webpack.js.org/
 | Homepage: https://webpack.github.io/
 | Src: https://github.com/webpack/webpack
