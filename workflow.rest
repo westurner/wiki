@@ -1212,6 +1212,35 @@ There are plugins to host and synchronize TaskWarrior task databases
 (with TaskWarrior JSON: http://taskwarrior.org/docs/design/task.html).
 
 
+.. index:: Usrlog
+.. _usrlog:
+
+Usrlog
+---------
+| Src: https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh
+| Docs: https://westurner.github.io/dotfiles/usrlog
+
+> usrlog logs the most recent userspace
+> interactive shell commandline CLI command to ``$_USRLOG``
+> **after** the shell command completes,
+> with :ref:`Bash` ``PROMPT_COMMAND``
+> and :ref:`ZSH` ``precmd_functions`` (see: `Caveats`_).
+
+.. code:: bash
+
+    source "${__DOTFILES}/scripts/usrlog.sh"
+    echo "${_USRLOG}"
+    echo "${_TERM_ID}"
+
+    # Parse with sed and grep
+    usrlog_grep "sudo" | _usrlog_parse_commands
+    ug "sudo" | ugp
+
+    # Parse into records and fields, select the commands, and grep
+    usrlog.py -u --cmds | grep "sudo"
+
+.. index:: Best Practices
+
 Best Practices
 ============================
 Project Templating
