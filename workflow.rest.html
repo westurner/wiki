@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.13.1: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
 <title>Workflow</title>
 <style type="text/css">
 
@@ -367,147 +367,156 @@ ul.auto-toc {
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#concept" id="id5">Concept</a></li>
-<li><a class="reference internal" href="#goals" id="id6">Goals</a><ul>
-<li><a class="reference internal" href="#objectives" id="id7">Objectives</a></li>
+<li><a class="reference internal" href="#concept" id="id16">Concept</a></li>
+<li><a class="reference internal" href="#goals" id="id17">Goals</a><ul>
+<li><a class="reference internal" href="#objectives" id="id18">Objectives</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tasks" id="id8">Tasks</a><ul>
-<li><a class="reference internal" href="#daily" id="id9">Daily</a></li>
-<li><a class="reference internal" href="#scheduled" id="id10">Scheduled</a></li>
-<li><a class="reference internal" href="#recurring" id="id11">Recurring</a></li>
-<li><a class="reference internal" href="#phone" id="id12">Phone</a></li>
-<li><a class="reference internal" href="#emails" id="id13">Emails</a></li>
-<li><a class="reference internal" href="#text-files" id="id14">Text Files</a><ul>
-<li><a class="reference internal" href="#lightweight-markup-syntax" id="id15">Lightweight Markup Syntax</a><ul>
-<li><a class="reference internal" href="#text-file-headings" id="id16">Text File Headings</a></li>
+<li><a class="reference internal" href="#tasks" id="id19">Tasks</a><ul>
+<li><a class="reference internal" href="#daily" id="id20">Daily</a></li>
+<li><a class="reference internal" href="#scheduled" id="id21">Scheduled</a></li>
+<li><a class="reference internal" href="#recurring" id="id22">Recurring</a></li>
+<li><a class="reference internal" href="#phone" id="id23">Phone</a></li>
+<li><a class="reference internal" href="#emails" id="id24">Emails</a></li>
+<li><a class="reference internal" href="#text-files" id="id25">Text Files</a><ul>
+<li><a class="reference internal" href="#lightweight-markup-syntax" id="id26">Lightweight Markup Syntax</a><ul>
+<li><a class="reference internal" href="#text-file-headings" id="id27">Text File Headings</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#text-file-attributes" id="id17">Text File Attributes</a></li>
+<li><a class="reference internal" href="#text-file-attributes" id="id28">Text File Attributes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#source-code" id="id18">Source Code</a><ul>
-<li><a class="reference internal" href="#source-code-file-attributes" id="id19">Source Code File Attributes</a></li>
-<li><a class="reference internal" href="#comment-tags" id="id20">Comment Tags</a></li>
+<li><a class="reference internal" href="#source-code" id="id29">Source Code</a><ul>
+<li><a class="reference internal" href="#source-code-file-attributes" id="id30">Source Code File Attributes</a></li>
+<li><a class="reference internal" href="#comment-tags" id="id31">Comment Tags</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#patches" id="id21">Patches</a><ul>
-<li><a class="reference internal" href="#patch-attributes" id="id22">Patch attributes</a><ul>
-<li><a class="reference internal" href="#patch-header" id="id23">Patch Header</a></li>
-<li><a class="reference internal" href="#patch-diff" id="id24">Patch Diff</a></li>
+<li><a class="reference internal" href="#patches" id="id32">Patches</a><ul>
+<li><a class="reference internal" href="#patch-attributes" id="id33">Patch attributes</a><ul>
+<li><a class="reference internal" href="#patch-header" id="id34">Patch Header</a></li>
+<li><a class="reference internal" href="#patch-diff" id="id35">Patch Diff</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#patch-workflow" id="id25">Patch workflow</a></li>
+<li><a class="reference internal" href="#patch-workflow" id="id36">Patch workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#issues" id="id26">Issues</a><ul>
-<li><a class="reference internal" href="#issue-attributes" id="id27">Issue attributes</a><ul>
-<li><a class="reference internal" href="#github-issues" id="id28">GitHub Issues</a></li>
-<li><a class="reference internal" href="#bitbucket-issues" id="id29">BitBucket Issues</a></li>
-<li><a class="reference internal" href="#google-code-issues" id="id30">Google Code Issues</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#pull-requests" id="id31">Pull Requests</a><ul>
-<li><a class="reference internal" href="#send-a-pull-request" id="id32">Send a Pull Request</a></li>
-<li><a class="reference internal" href="#review-a-pull-request" id="id33">Review a Pull Request</a></li>
+<li><a class="reference internal" href="#issues" id="id37">Issues</a><ul>
+<li><a class="reference internal" href="#issue-attributes" id="id38">Issue attributes</a><ul>
+<li><a class="reference internal" href="#github-issues" id="id39">GitHub Issues</a></li>
+<li><a class="reference internal" href="#bitbucket-issues" id="id40">BitBucket Issues</a></li>
+<li><a class="reference internal" href="#google-code-issues" id="id41">Google Code Issues</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lists" id="id34">Lists</a><ul>
-<li><a class="reference internal" href="#mental" id="id35">Mental</a><ul>
-<li><a class="reference internal" href="#mental-list-attributes" id="id36">Mental list attributes</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#paper" id="id37">Paper</a><ul>
-<li><a class="reference internal" href="#pros" id="id38">Pros</a></li>
-<li><a class="reference internal" href="#cons" id="id39">Cons</a></li>
-<li><a class="reference internal" href="#implementations" id="id40">Implementations</a><ul>
-<li><a class="reference internal" href="#schedule" id="id41">Schedule</a></li>
-<li><a class="reference internal" href="#calendar" id="id42">Calendar</a></li>
-<li><a class="reference internal" href="#agenda" id="id43">Agenda</a></li>
-<li><a class="reference internal" href="#todo-list" id="id44">TODO List</a></li>
-<li><a class="reference internal" href="#hipster-pda" id="id45">Hipster PDA</a></li>
+<li><a class="reference internal" href="#pull-requests" id="id42">Pull Requests</a><ul>
+<li><a class="reference internal" href="#send-a-pull-request" id="id43">Send a Pull Request</a></li>
+<li><a class="reference internal" href="#review-a-pull-request" id="id44">Review a Pull Request</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#text" id="id46">Text</a><ul>
-<li><a class="reference internal" href="#id1" id="id47">Pros</a></li>
-<li><a class="reference internal" href="#id2" id="id48">Cons</a></li>
-<li><a class="reference internal" href="#syntax" id="id49">Syntax</a><ul>
-<li><a class="reference internal" href="#checkboxes" id="id50">Checkboxes</a></li>
+<li><a class="reference internal" href="#lists" id="id45">Lists</a><ul>
+<li><a class="reference internal" href="#mental" id="id46">Mental</a><ul>
+<li><a class="reference internal" href="#mental-list-attributes" id="id47">Mental list attributes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#paper" id="id48">Paper</a><ul>
+<li><a class="reference internal" href="#pros" id="id49">Pros</a></li>
+<li><a class="reference internal" href="#cons" id="id50">Cons</a></li>
+<li><a class="reference internal" href="#implementations" id="id51">Implementations</a><ul>
+<li><a class="reference internal" href="#schedule" id="id52">Schedule</a></li>
+<li><a class="reference internal" href="#calendar" id="id53">Calendar</a></li>
+<li><a class="reference internal" href="#agenda" id="id54">Agenda</a></li>
+<li><a class="reference internal" href="#todo-list" id="id55">TODO List</a></li>
+<li><a class="reference internal" href="#hipster-pda" id="id56">Hipster PDA</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text" id="id57">Text</a><ul>
+<li><a class="reference internal" href="#id1" id="id58">Pros</a></li>
+<li><a class="reference internal" href="#id2" id="id59">Cons</a></li>
+<li><a class="reference internal" href="#syntax" id="id60">Syntax</a><ul>
+<li><a class="reference internal" href="#checkboxes" id="id61">Checkboxes</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#services" id="id51">Services</a><ul>
-<li><a class="reference internal" href="#service-evaluation-criteria" id="id52">Service Evaluation Criteria</a></li>
-<li><a class="reference internal" href="#google-calendar" id="id53">Google Calendar</a></li>
-<li><a class="reference internal" href="#rememberthemilk" id="id54">RememberTheMilk</a></li>
-<li><a class="reference internal" href="#google-tasks" id="id55">Google Tasks</a></li>
-<li><a class="reference internal" href="#google-keep" id="id56">Google Keep</a></li>
-<li><a class="reference internal" href="#wikis" id="id57">Wikis</a><ul>
-<li><a class="reference internal" href="#github-wiki" id="id58">GitHub Wiki</a></li>
+<li><a class="reference internal" href="#services" id="id62">Services</a><ul>
+<li><a class="reference internal" href="#service-evaluation-criteria" id="id63">Service Evaluation Criteria</a></li>
+<li><a class="reference internal" href="#google-calendar" id="id64">Google Calendar</a></li>
+<li><a class="reference internal" href="#rememberthemilk" id="id65">RememberTheMilk</a></li>
+<li><a class="reference internal" href="#google-tasks" id="id66">Google Tasks</a></li>
+<li><a class="reference internal" href="#google-keep" id="id67">Google Keep</a></li>
+<li><a class="reference internal" href="#wikis" id="id68">Wikis</a><ul>
+<li><a class="reference internal" href="#github-wiki" id="id69">GitHub Wiki</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mailing-lists" id="id59">Mailing Lists</a><ul>
-<li><a class="reference internal" href="#gnu-mailman" id="id60">GNU Mailman</a></li>
-<li><a class="reference internal" href="#google-groups" id="id61">Google Groups</a></li>
+<li><a class="reference internal" href="#mailing-lists" id="id70">Mailing Lists</a><ul>
+<li><a class="reference internal" href="#gnu-mailman" id="id71">GNU Mailman</a></li>
+<li><a class="reference internal" href="#google-groups" id="id72">Google Groups</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#forge-sites" id="id62">Forge Sites</a><ul>
-<li><a class="reference internal" href="#code-hosting" id="id63">Code hosting</a></li>
-<li><a class="reference internal" href="#collaborative-software" id="id64">Collaborative Software</a></li>
+<li><a class="reference internal" href="#forge-sites" id="id73">Forge Sites</a><ul>
+<li><a class="reference internal" href="#code-hosting" id="id74">Code hosting</a></li>
+<li><a class="reference internal" href="#collaborative-software" id="id75">Collaborative Software</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#github-repos-issues-wikis" id="id65">Github Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#github-workflow" id="id66">Github Workflow</a></li>
+<li><a class="reference internal" href="#github-repos-issues-wikis" id="id76">Github Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#github-workflow" id="id77">Github Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id67">BitBucket Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#id3" id="id68">Workflow</a></li>
+<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id78">BitBucket Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#id3" id="id79">Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#trac" id="id69">Trac</a></li>
-<li><a class="reference internal" href="#redmine" id="id70">Redmine</a></li>
-<li><a class="reference internal" href="#gitlab" id="id71">GitLab</a></li>
+<li><a class="reference internal" href="#trac" id="id80">Trac</a></li>
+<li><a class="reference internal" href="#redmine" id="id81">Redmine</a></li>
+<li><a class="reference internal" href="#gitlab" id="id82">GitLab</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#labels" id="id72">Labels</a><ul>
-<li><a class="reference internal" href="#history" id="id73">History</a></li>
-<li><a class="reference internal" href="#label-syntax" id="id74">Label Syntax</a></li>
-<li><a class="reference internal" href="#task-labels" id="id75">Task Labels</a></li>
-<li><a class="reference internal" href="#project-labels" id="id76">Project Labels</a></li>
-<li><a class="reference internal" href="#context-labels" id="id77">Context Labels</a></li>
-<li><a class="reference internal" href="#email-labels" id="id78">Email Labels</a></li>
-<li><a class="reference internal" href="#id4" id="id79">Code Labels</a><ul>
-<li><a class="reference internal" href="#code-label-syntax" id="id80">Code Label Syntax</a></li>
+<li><a class="reference internal" href="#labels" id="id83">Labels</a><ul>
+<li><a class="reference internal" href="#history" id="id84">History</a></li>
+<li><a class="reference internal" href="#label-syntax" id="id85">Label Syntax</a></li>
+<li><a class="reference internal" href="#task-labels" id="id86">Task Labels</a></li>
+<li><a class="reference internal" href="#project-labels" id="id87">Project Labels</a></li>
+<li><a class="reference internal" href="#context-labels" id="id88">Context Labels</a></li>
+<li><a class="reference internal" href="#email-labels" id="id89">Email Labels</a></li>
+<li><a class="reference internal" href="#id4" id="id90">Code Labels</a><ul>
+<li><a class="reference internal" href="#code-label-syntax" id="id91">Code Label Syntax</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tools" id="id81">Tools</a><ul>
-<li><a class="reference internal" href="#pyrtm-task-cli" id="id82">pyrtm-task-cli</a></li>
-<li><a class="reference internal" href="#workhours" id="id83">workhours</a></li>
-<li><a class="reference internal" href="#taskwarrior" id="id84">TaskWarrior</a></li>
+<li><a class="reference internal" href="#tools" id="id92">Tools</a><ul>
+<li><a class="reference internal" href="#pyrtm-task-cli" id="id93">pyrtm-task-cli</a></li>
+<li><a class="reference internal" href="#workhours" id="id94">workhours</a></li>
+<li><a class="reference internal" href="#taskwarrior" id="id95">TaskWarrior</a></li>
+<li><a class="reference internal" href="#id5" id="id96">Usrlog</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#best-practices" id="id85">Best Practices</a><ul>
-<li><a class="reference internal" href="#project-templating" id="id86">Project Templating</a></li>
-<li><a class="reference internal" href="#requirements-traceability" id="id87">Requirements Traceability</a></li>
-<li><a class="reference internal" href="#revision-control" id="id88">Revision Control</a></li>
-<li><a class="reference internal" href="#continuous-integration" id="id89">Continuous Integration</a></li>
+<li><a class="reference internal" href="#best-practices" id="id97">Best Practices</a><ul>
+<li><a class="reference internal" href="#use-project-templates" id="id98">Use Project Templates</a></li>
+<li><a class="reference internal" href="#develop-projects-with-requirements-traceability" id="id99">Develop Projects with Requirements Traceability</a><ul>
+<li><a class="reference internal" href="#github-gitlab-projects" id="id100">GitHub / Gitlab Projects</a></li>
+<li><a class="reference internal" href="#use-code-labels" id="id101">Use Code Labels</a></li>
+<li><a class="reference internal" href="#use-links" id="id102">Use Links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#revision-control" id="id103">Revision Control</a><ul>
+<li><a class="reference internal" href="#gitflow-and-hubflow" id="id104">GitFlow and HubFlow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#continuous-integration" id="id105">Continuous Integration</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="concept">
-<h1><a class="toc-backref" href="#id5">Concept</a></h1>
+<h1><a class="toc-backref" href="#id16">Concept</a></h1>
 <pre class="literal-block">
 The morning question,  |  5 | Rise, wash, and address
                        |      *Powerful Goodness*;
@@ -542,34 +551,36 @@ this day?              |  7 | resolution of the day; prosecute the
 </pre>
 </div>
 <div class="section" id="goals">
-<h1><a class="toc-backref" href="#id6">Goals</a></h1>
+<h1><a class="toc-backref" href="#id17">Goals</a></h1>
 <ul class="simple">
 <li>Find simple workflows for productivity, efficiency, and collaboration</li>
 <li>Develop methods to retain and analyze relevant information</li>
 <li>Develop heuristics to identify tasks and sub-tasks</li>
 </ul>
 <div class="section" id="objectives">
-<h2><a class="toc-backref" href="#id7">Objectives</a></h2>
+<h2><a class="toc-backref" href="#id18">Objectives</a></h2>
 <ul class="simple">
 <li>[ ] Document optimal workflows</li>
+<li>[ ] Document productivity tools and their productive use</li>
 <li>[x] Create <tt class="docutils literal">workflow.rst</tt> (see: current headings)</li>
 <li>[ ] Develop file metadata strategies: (folders, names, tagging, labeling)</li>
 <li>[x] Synthesize existing labeling strategies</li>
 <li>[ ] Define and describe resources: skills, time, tools, tasks</li>
 <li>[ ] Define and describe outputs: artifacts, products, deliverables</li>
 <li>[ ] R&amp;D: integrate workflow information flows<ul>
-<li>Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli, pytodo?)</li>
-<li>Logs: workhours, heka, elasticsearch, kibana</li>
+<li>Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli,
+<cite>taskw &lt;TaskWarrior&gt;</cite>)</li>
+<li>Logs: <a class="reference internal" href="#usrlog">Usrlog</a>, workhours, elasticsearch, kibana</li>
 </ul>
 </li>
 </ul>
-<p>See: <a class="reference internal" href="#requirements-traceability">Requirements Traceability</a></p>
+<p>See: <a href="#id106"><span class="problematic" id="id107">`Requirements Traceability`_</span></a></p>
 </div>
 </div>
 <div class="section" id="tasks">
-<h1><a class="toc-backref" href="#id8">Tasks</a></h1>
+<h1><a class="toc-backref" href="#id19">Tasks</a></h1>
 <div class="section" id="daily">
-<h2><a class="toc-backref" href="#id9">Daily</a></h2>
+<h2><a class="toc-backref" href="#id20">Daily</a></h2>
 <ul class="simple">
 <li>Daily Google Tasks list<ul>
 <li>Daily: Uncheck list box(es), update date</li>
@@ -578,21 +589,21 @@ this day?              |  7 | resolution of the day; prosecute the
 </ul>
 </div>
 <div class="section" id="scheduled">
-<h2><a class="toc-backref" href="#id10">Scheduled</a></h2>
+<h2><a class="toc-backref" href="#id21">Scheduled</a></h2>
 <ul class="simple">
 <li>Google Calendar events (and reminders)</li>
 <li>ReadTheMilk tasks</li>
 </ul>
 </div>
 <div class="section" id="recurring">
-<h2><a class="toc-backref" href="#id11">Recurring</a></h2>
+<h2><a class="toc-backref" href="#id22">Recurring</a></h2>
 <ul class="simple">
 <li>Repeating Google Calendar events (and reminders)</li>
 <li>Repeating ReadTheMilk tasks</li>
 </ul>
 </div>
 <div class="section" id="phone">
-<h2><a class="toc-backref" href="#id12">Phone</a></h2>
+<h2><a class="toc-backref" href="#id23">Phone</a></h2>
 <p><tt class="docutils literal">&#64;phone</tt></p>
 <ul class="simple">
 <li>While you were out stickies</li>
@@ -600,7 +611,7 @@ this day?              |  7 | resolution of the day; prosecute the
 </ul>
 </div>
 <div class="section" id="emails">
-<h2><a class="toc-backref" href="#id13">Emails</a></h2>
+<h2><a class="toc-backref" href="#id24">Emails</a></h2>
 <p><tt class="docutils literal">&#64;email</tt></p>
 <ul class="simple">
 <li><a class="reference internal" href="#email-labels">Email Labels</a>: <tt class="docutils literal">.tasks</tt>, <tt class="docutils literal">.tasks.done</tt></li>
@@ -611,7 +622,7 @@ change <tt class="docutils literal">.tasks</tt> to <tt class="docutils literal">
 </ul>
 </div>
 <div class="section" id="text-files">
-<h2><a class="toc-backref" href="#id14">Text Files</a></h2>
+<h2><a class="toc-backref" href="#id25">Text Files</a></h2>
 <ul class="simple">
 <li><tt class="docutils literal">README</tt>, <tt class="docutils literal">README.txt</tt>, <tt class="docutils literal">README.md</tt>, <tt class="docutils literal">README.rst</tt></li>
 <li><tt class="docutils literal">CHANGES</tt>, <tt class="docutils literal">CHANGES.txt</tt>, <tt class="docutils literal">CHANGES.md</tt>, <tt class="docutils literal">CHANGES.rst</tt></li>
@@ -621,10 +632,10 @@ change <tt class="docutils literal">.tasks</tt> to <tt class="docutils literal">
 <li><tt class="docutils literal">index.html</tt>, <tt class="docutils literal">index.htm</tt></li>
 </ul>
 <div class="section" id="lightweight-markup-syntax">
-<h3><a class="toc-backref" href="#id15">Lightweight Markup Syntax</a></h3>
+<h3><a class="toc-backref" href="#id26">Lightweight Markup Syntax</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Lightweight_markup_language">https://en.wikipedia.org/wiki/Lightweight_markup_language</a></p>
 <div class="section" id="text-file-headings">
-<h4><a class="toc-backref" href="#id16">Text File Headings</a></h4>
+<h4><a class="toc-backref" href="#id27">Text File Headings</a></h4>
 <p>ATX Headings (Markdown,):</p>
 <pre class="literal-block">
 # h1
@@ -660,7 +671,7 @@ paragraph
 </div>
 </div>
 <div class="section" id="text-file-attributes">
-<h3><a class="toc-backref" href="#id17">Text File Attributes</a></h3>
+<h3><a class="toc-backref" href="#id28">Text File Attributes</a></h3>
 <ul class="simple">
 <li>Path: relative (<tt class="docutils literal">./path/to/file.ext</tt>)</li>
 <li>Path: absolute (<tt class="docutils literal">/home/user/path/to/file.ext</tt>)</li>
@@ -677,10 +688,10 @@ paragraph
 </div>
 </div>
 <div class="section" id="source-code">
-<h2><a class="toc-backref" href="#id18">Source Code</a></h2>
+<h2><a class="toc-backref" href="#id29">Source Code</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Source_code">https://en.wikipedia.org/wiki/Source_code</a></p>
 <div class="section" id="source-code-file-attributes">
-<h3><a class="toc-backref" href="#id19">Source Code File Attributes</a></h3>
+<h3><a class="toc-backref" href="#id30">Source Code File Attributes</a></h3>
 <ul class="simple">
 <li><a class="reference internal" href="#text-file-attributes">Text File Attributes</a></li>
 <li>path: relative_to_repo_path</li>
@@ -694,7 +705,7 @@ paragraph
 </ul>
 </div>
 <div class="section" id="comment-tags">
-<h3><a class="toc-backref" href="#id20">Comment Tags</a></h3>
+<h3><a class="toc-backref" href="#id31">Comment Tags</a></h3>
 <p>Comment tags:</p>
 <pre class="literal-block">
 TODO
@@ -710,7 +721,7 @@ git grep <span class="literal string single">'TODO|FIXME|XXX'</span>
 </div>
 </div>
 <div class="section" id="patches">
-<h2><a class="toc-backref" href="#id21">Patches</a></h2>
+<h2><a class="toc-backref" href="#id32">Patches</a></h2>
 <p>Also referred to as a diff.</p>
 <p>When an author has modified a file in a repository,
 there is a difference (in terms of text lines and/or bytes changed)
@@ -724,9 +735,9 @@ or not applying the changes to a branch of a repository.</p>
 can produce lots of text: both revisions to the patch and an
 asynchronous stream of emails and IRC messages.</p>
 <div class="section" id="patch-attributes">
-<h3><a class="toc-backref" href="#id22">Patch attributes</a></h3>
+<h3><a class="toc-backref" href="#id33">Patch attributes</a></h3>
 <div class="section" id="patch-header">
-<h4><a class="toc-backref" href="#id23">Patch Header</a></h4>
+<h4><a class="toc-backref" href="#id34">Patch Header</a></h4>
 <ul>
 <li><p class="first">[ ] Patch header</p>
 <pre class="literal-block">
@@ -748,7 +759,7 @@ indicated by new tests (TST).
 </ul>
 </div>
 <div class="section" id="patch-diff">
-<h4><a class="toc-backref" href="#id24">Patch Diff</a></h4>
+<h4><a class="toc-backref" href="#id35">Patch Diff</a></h4>
 <ul class="simple">
 <li>[ ] Patch <tt class="docutils literal">diff</tt><ul>
 <li>[ ] <tt class="docutils literal"><span class="pre">--git</span></tt>-style diffs</li>
@@ -758,7 +769,7 @@ indicated by new tests (TST).
 </div>
 </div>
 <div class="section" id="patch-workflow">
-<h3><a class="toc-backref" href="#id25">Patch workflow</a></h3>
+<h3><a class="toc-backref" href="#id36">Patch workflow</a></h3>
 <ul class="simple">
 <li>Send patch(es) as an email attachment (&quot;a patch bomb&quot;)<ul>
 <li>DOC: write a Patch header for a new BUG,TST,ENH</li>
@@ -790,7 +801,7 @@ the correct revision of the patch</li>
 </div>
 </div>
 <div class="section" id="issues">
-<h2><a class="toc-backref" href="#id26">Issues</a></h2>
+<h2><a class="toc-backref" href="#id37">Issues</a></h2>
 <p>An issue records attributes of, notes regarding, and progress towards a finite request, report, or work item.</p>
 <p>Issues are often also referred to as tickets, issues, cards, and bugtracking.</p>
 <p>Agile methodologies for working with issues:
@@ -802,7 +813,7 @@ with <tt class="docutils literal">in progress</tt></li>
 <li><a class="reference external" href="https://taiga.io/">https://taiga.io/</a> -- Kanban/Scrum issues with code labels</li>
 </ul>
 <div class="section" id="issue-attributes">
-<h3><a class="toc-backref" href="#id27">Issue attributes</a></h3>
+<h3><a class="toc-backref" href="#id38">Issue attributes</a></h3>
 <ul class="simple">
 <li>a title</li>
 <li>a description</li>
@@ -810,7 +821,7 @@ with <tt class="docutils literal">in progress</tt></li>
 <li>metadata</li>
 </ul>
 <div class="section" id="github-issues">
-<h4><a class="toc-backref" href="#id28">GitHub Issues</a></h4>
+<h4><a class="toc-backref" href="#id39">GitHub Issues</a></h4>
 <ul class="simple">
 <li>title</li>
 <li>body</li>
@@ -835,7 +846,7 @@ with <tt class="docutils literal">in progress</tt></li>
 </ul>
 </div>
 <div class="section" id="bitbucket-issues">
-<h4><a class="toc-backref" href="#id29">BitBucket Issues</a></h4>
+<h4><a class="toc-backref" href="#id40">BitBucket Issues</a></h4>
 <ul class="simple">
 <li>title (Title)</li>
 <li>content (Description)</li>
@@ -873,7 +884,7 @@ with <tt class="docutils literal">in progress</tt></li>
 </ul>
 </div>
 <div class="section" id="google-code-issues">
-<h4><a class="toc-backref" href="#id30">Google Code Issues</a></h4>
+<h4><a class="toc-backref" href="#id41">Google Code Issues</a></h4>
 <p>(configurable templates)</p>
 <ul class="simple">
 <li>Summary</li>
@@ -919,7 +930,7 @@ with <tt class="docutils literal">in progress</tt></li>
 </div>
 </div>
 <div class="section" id="pull-requests">
-<h2><a class="toc-backref" href="#id31">Pull Requests</a></h2>
+<h2><a class="toc-backref" href="#id42">Pull Requests</a></h2>
 <p>Projects hosted with GitHub and BitBucket generally support accepting,
 reviewing, and merging changes as pull requests; which, like
 regular patches people used to send over the email,
@@ -930,7 +941,7 @@ a free-form comment stream
 and line-based commenting
 -- features which simplify the change review and evaluation feedback loop.</p>
 <div class="section" id="send-a-pull-request">
-<h3><a class="toc-backref" href="#id32">Send a Pull Request</a></h3>
+<h3><a class="toc-backref" href="#id43">Send a Pull Request</a></h3>
 <ul>
 <li><p class="first">Branch/fork, update, commit</p>
 </li>
@@ -952,7 +963,7 @@ and line-based commenting
 </ul>
 </div>
 <div class="section" id="review-a-pull-request">
-<h3><a class="toc-backref" href="#id33">Review a Pull Request</a></h3>
+<h3><a class="toc-backref" href="#id44">Review a Pull Request</a></h3>
 <ul>
 <li><p class="first">Open Loop: they're waiting for feedback</p>
 </li>
@@ -981,9 +992,9 @@ and line-based commenting
 </div>
 </div>
 <div class="section" id="lists">
-<h1><a class="toc-backref" href="#id34">Lists</a></h1>
+<h1><a class="toc-backref" href="#id45">Lists</a></h1>
 <div class="section" id="mental">
-<h2><a class="toc-backref" href="#id35">Mental</a></h2>
+<h2><a class="toc-backref" href="#id46">Mental</a></h2>
 <ul class="simple">
 <li>Mnemonics</li>
 <li>String around one's finger</li>
@@ -992,7 +1003,7 @@ and line-based commenting
 <li>Graph with edges that have magnitude</li>
 </ul>
 <div class="section" id="mental-list-attributes">
-<h3><a class="toc-backref" href="#id36">Mental list attributes</a></h3>
+<h3><a class="toc-backref" href="#id47">Mental list attributes</a></h3>
 <ul class="simple">
 <li>[ ] 6-Ws: Who, What, When, Where, Why, and How<ul>
 <li>[ ] What: Project</li>
@@ -1007,9 +1018,9 @@ and line-based commenting
 </div>
 </div>
 <div class="section" id="paper">
-<h2><a class="toc-backref" href="#id37">Paper</a></h2>
+<h2><a class="toc-backref" href="#id48">Paper</a></h2>
 <div class="section" id="pros">
-<h3><a class="toc-backref" href="#id38">Pros</a></h3>
+<h3><a class="toc-backref" href="#id49">Pros</a></h3>
 <blockquote class="epigraph">
 Just pick up a sheet of paper,
 write something down,
@@ -1021,7 +1032,7 @@ and hand it to me.</blockquote>
 </ul>
 </div>
 <div class="section" id="cons">
-<h3><a class="toc-backref" href="#id39">Cons</a></h3>
+<h3><a class="toc-backref" href="#id50">Cons</a></h3>
 <blockquote class="epigraph">
 Ask ____ to ask _____ to have that sent over to _________.</blockquote>
 <p>Collaboration strategy:</p>
@@ -1034,22 +1045,22 @@ Ask ____ to ask _____ to have that sent over to _________.</blockquote>
 </ul>
 </div>
 <div class="section" id="implementations">
-<h3><a class="toc-backref" href="#id40">Implementations</a></h3>
+<h3><a class="toc-backref" href="#id51">Implementations</a></h3>
 <div class="section" id="schedule">
-<h4><a class="toc-backref" href="#id41">Schedule</a></h4>
+<h4><a class="toc-backref" href="#id52">Schedule</a></h4>
 <p>Chronological sequence of events</p>
 </div>
 <div class="section" id="calendar">
-<h4><a class="toc-backref" href="#id42">Calendar</a></h4>
+<h4><a class="toc-backref" href="#id53">Calendar</a></h4>
 <p>Visual grid of day, week, month, quarter, year</p>
 <p>Weekly views: <tt class="docutils literal"><span class="pre">M-Su</span></tt>, <tt class="docutils literal"><span class="pre">Su-Sa</span></tt></p>
 </div>
 <div class="section" id="agenda">
-<h4><a class="toc-backref" href="#id43">Agenda</a></h4>
+<h4><a class="toc-backref" href="#id54">Agenda</a></h4>
 <p>Action items to accomplish within a given context</p>
 </div>
 <div class="section" id="todo-list">
-<h4><a class="toc-backref" href="#id44">TODO List</a></h4>
+<h4><a class="toc-backref" href="#id55">TODO List</a></h4>
 <ul class="simple">
 <li>[ ] create a list of items to accomplish</li>
 <li>[ ] show completion with <tt class="docutils literal">[x]</tt> checkmarks</li>
@@ -1057,14 +1068,14 @@ Ask ____ to ask _____ to have that sent over to _________.</blockquote>
 </ul>
 </div>
 <div class="section" id="hipster-pda">
-<h4><a class="toc-backref" href="#id45">Hipster PDA</a></h4>
+<h4><a class="toc-backref" href="#id56">Hipster PDA</a></h4>
 <p>Pocket-sized notebook sheet of paper</p>
 <p>see: <a class="reference internal" href="#pyrtm-task-cli">pyrtm-task-cli</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="text">
-<h2><a class="toc-backref" href="#id46">Text</a></h2>
+<h2><a class="toc-backref" href="#id57">Text</a></h2>
 <p>Typed plaintext.  Usually with some form of lightweight markup for
 lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <p>Stored with:</p>
@@ -1074,14 +1085,14 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <li>VCS Repository (git, hg)</li>
 </ul>
 <div class="section" id="id1">
-<h3><a class="toc-backref" href="#id47">Pros</a></h3>
+<h3><a class="toc-backref" href="#id58">Pros</a></h3>
 <ul class="simple">
 <li>Simple</li>
 <li>Great with a keyboard, syntax highlighting, and syntax checking</li>
 </ul>
 </div>
 <div class="section" id="id2">
-<h3><a class="toc-backref" href="#id48">Cons</a></h3>
+<h3><a class="toc-backref" href="#id59">Cons</a></h3>
 <ul class="simple">
 <li>Synchronicity: keeping everyone on the same revision of the page</li>
 <li>Mobile Interface: no</li>
@@ -1090,7 +1101,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </ul>
 </div>
 <div class="section" id="syntax">
-<h3><a class="toc-backref" href="#id49">Syntax</a></h3>
+<h3><a class="toc-backref" href="#id60">Syntax</a></h3>
 <p>ReStructuredText, Markdown, [MediaWiki, BBCode, Textile]:</p>
 <pre class="literal-block">
 * one
@@ -1102,7 +1113,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 - blue
 </pre>
 <div class="section" id="checkboxes">
-<h4><a class="toc-backref" href="#id50">Checkboxes</a></h4>
+<h4><a class="toc-backref" href="#id61">Checkboxes</a></h4>
 <p>ReStructuredText:</p>
 <pre class="literal-block">
 * [x] one **bold**
@@ -1126,13 +1137,13 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </div>
 </div>
 <div class="section" id="services">
-<h1><a class="toc-backref" href="#id51">Services</a></h1>
+<h1><a class="toc-backref" href="#id62">Services</a></h1>
 <p>Web applications and web service
 systems designed to track task state for one or more people
 moving toward achieving objectives that satisfy the goals.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
 <div class="section" id="service-evaluation-criteria">
-<h2><a class="toc-backref" href="#id52">Service Evaluation Criteria</a></h2>
+<h2><a class="toc-backref" href="#id63">Service Evaluation Criteria</a></h2>
 <p>There is a spectrum between
 &quot;we'll remember which checkboxes for you&quot;
 and &quot;this task is part of a project
@@ -1164,7 +1175,7 @@ with these permissions.&quot;</p>
 </ul>
 </div>
 <div class="section" id="google-calendar">
-<h2><a class="toc-backref" href="#id53">Google Calendar</a></h2>
+<h2><a class="toc-backref" href="#id64">Google Calendar</a></h2>
 <ul class="simple">
 <li>Web Interface: <a class="reference external" href="https://google.com/calendar/">https://google.com/calendar/</a></li>
 <li>Mobile Interface: <a class="reference external" href="https://www.google.com/calendar/m">https://www.google.com/calendar/m</a></li>
@@ -1177,7 +1188,7 @@ with these permissions.&quot;</p>
 </ul>
 </div>
 <div class="section" id="rememberthemilk">
-<h2><a class="toc-backref" href="#id54">RememberTheMilk</a></h2>
+<h2><a class="toc-backref" href="#id65">RememberTheMilk</a></h2>
 <ul class="simple">
 <li>Web Interface: <a class="reference external" href="https://www.rememberthemilk.com/">https://www.rememberthemilk.com/</a></li>
 <li>Mobile Interface:</li>
@@ -1195,7 +1206,7 @@ with these permissions.&quot;</p>
 </ul>
 </div>
 <div class="section" id="google-tasks">
-<h2><a class="toc-backref" href="#id55">Google Tasks</a></h2>
+<h2><a class="toc-backref" href="#id66">Google Tasks</a></h2>
 <ul class="simple">
 <li>Integrates with Google Calendar: <a class="reference external" href="https://www.google.com/calendar/">https://www.google.com/calendar/</a></li>
 <li>Web Interface: <a class="reference external" href="https://www.gmail.com/mail/help/tasks/">https://www.gmail.com/mail/help/tasks/</a></li>
@@ -1206,7 +1217,7 @@ with these permissions.&quot;</p>
 </ul>
 </div>
 <div class="section" id="google-keep">
-<h2><a class="toc-backref" href="#id56">Google Keep</a></h2>
+<h2><a class="toc-backref" href="#id67">Google Keep</a></h2>
 <ul class="simple">
 <li>Checkbox sticky notes</li>
 <li>Web Interface: <a class="reference external" href="https://drive.google.com/keep/">https://drive.google.com/keep/</a></li>
@@ -1218,7 +1229,7 @@ with these permissions.&quot;</p>
 </ul>
 </div>
 <div class="section" id="wikis">
-<h2><a class="toc-backref" href="#id57">Wikis</a></h2>
+<h2><a class="toc-backref" href="#id68">Wikis</a></h2>
 <p>A wiki is a set of documents and attachments
 that can be edited through the web,
 usually with some form of <cite>Lightweight Markup Language</cite>
@@ -1241,7 +1252,7 @@ and WikiText linking extensions.</p>
 <li>Pandoc converts (sometimes lossily) between many wiki markup syntaxes</li>
 </ul>
 <div class="section" id="github-wiki">
-<h3><a class="toc-backref" href="#id58">GitHub Wiki</a></h3>
+<h3><a class="toc-backref" href="#id69">GitHub Wiki</a></h3>
 <p>These <tt class="docutils literal">.rst</tt> ReStructuredText files are maintained with a <tt class="docutils literal">.rest</tt>
 extension to make it possible to edit these pages as both
 a GitHub wiki and
@@ -1254,11 +1265,11 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </div>
 </div>
 <div class="section" id="mailing-lists">
-<h2><a class="toc-backref" href="#id59">Mailing Lists</a></h2>
+<h2><a class="toc-backref" href="#id70">Mailing Lists</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Electronic_mailing_list">https://en.wikipedia.org/wiki/Electronic_mailing_list</a></p>
 <p>Email relay application server (&quot;listserv&quot;)</p>
 <div class="section" id="gnu-mailman">
-<h3><a class="toc-backref" href="#id60">GNU Mailman</a></h3>
+<h3><a class="toc-backref" href="#id71">GNU Mailman</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/mailman/">https://www.gnu.org/software/mailman/</a></div>
 <div class="line">Src: <a class="reference external" href="https://launchpad.net/mailman/3.0">https://launchpad.net/mailman/3.0</a></div>
@@ -1279,7 +1290,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </ul>
 </div>
 <div class="section" id="google-groups">
-<h3><a class="toc-backref" href="#id61">Google Groups</a></h3>
+<h3><a class="toc-backref" href="#id72">Google Groups</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://groups.google.com/">https://groups.google.com/</a></div>
 </div>
@@ -1293,7 +1304,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </div>
 </div>
 <div class="section" id="forge-sites">
-<h2><a class="toc-backref" href="#id62">Forge Sites</a></h2>
+<h2><a class="toc-backref" href="#id73">Forge Sites</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Forge_(software)">https://en.wikipedia.org/wiki/Forge_(software)</a></p>
 <ul class="simple">
 <li>[ ] Code Repository</li>
@@ -1304,7 +1315,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities</a></p>
 <div class="section" id="code-hosting">
-<h3><a class="toc-backref" href="#id63">Code hosting</a></h3>
+<h3><a class="toc-backref" href="#id74">Code hosting</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/westurner/wiki/wiki/GitHub">https://github.com/westurner/wiki/wiki/GitHub</a></li>
@@ -1312,7 +1323,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </ul>
 </div>
 <div class="section" id="collaborative-software">
-<h3><a class="toc-backref" href="#id64">Collaborative Software</a></h3>
+<h3><a class="toc-backref" href="#id75">Collaborative Software</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
 <p>Examples:</p>
 <ul class="simple">
@@ -1325,7 +1336,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 </div>
 </div>
 <div class="section" id="github-repos-issues-wikis">
-<h2><a class="toc-backref" href="#id65">Github Repos, Issues, Wikis</a></h2>
+<h2><a class="toc-backref" href="#id76">Github Repos, Issues, Wikis</a></h2>
 <ul class="simple">
 <li>Free public Git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://github.com/">https://github.com/</a></li>
@@ -1340,7 +1351,7 @@ manually published to a <tt class="docutils literal"><span class="pre">gh-pages<
 <p>GitHub renders the first README {.md, .rst, .txt, } it finds.</p>
 <p>GitHub ReStructuredText does not support Sphinx ReStructuredText.</p>
 <div class="section" id="github-workflow">
-<h3><a class="toc-backref" href="#id66">Github Workflow</a></h3>
+<h3><a class="toc-backref" href="#id77">Github Workflow</a></h3>
 <p>Ways to work with tasks and GitHub:</p>
 <ul>
 <li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
@@ -1442,7 +1453,7 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 </div>
 </div>
 <div class="section" id="bitbucket-repos-issues-wikis">
-<h2><a class="toc-backref" href="#id67">BitBucket Repos, Issues, Wikis</a></h2>
+<h2><a class="toc-backref" href="#id78">BitBucket Repos, Issues, Wikis</a></h2>
 <ul class="simple">
 <li>Free public and private hg and git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://bitbucket.org/">https://bitbucket.org/</a></li>
@@ -1458,7 +1469,7 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 <li>Language: Python</li>
 </ul>
 <div class="section" id="id3">
-<h3><a class="toc-backref" href="#id68">Workflow</a></h3>
+<h3><a class="toc-backref" href="#id79">Workflow</a></h3>
 <ul>
 <li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
 <pre class="literal-block">
@@ -1521,7 +1532,7 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="trac">
-<h2><a class="toc-backref" href="#id69">Trac</a></h2>
+<h2><a class="toc-backref" href="#id80">Trac</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Trac">https://en.wikipedia.org/wiki/Trac</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></div>
@@ -1533,7 +1544,7 @@ BUG: fix bug (fixes: #03)
 </ul>
 </div>
 <div class="section" id="redmine">
-<h2><a class="toc-backref" href="#id70">Redmine</a></h2>
+<h2><a class="toc-backref" href="#id81">Redmine</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Redmine">https://en.wikipedia.org/wiki/Redmine</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.redmine.org/">http://www.redmine.org/</a></div>
@@ -1541,7 +1552,7 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="gitlab">
-<h2><a class="toc-backref" href="#id71">GitLab</a></h2>
+<h2><a class="toc-backref" href="#id82">GitLab</a></h2>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://about.gitlab.com/">https://about.gitlab.com/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/gitlabhq/gitlabhq">https://github.com/gitlabhq/gitlabhq</a></div>
@@ -1549,9 +1560,9 @@ BUG: fix bug (fixes: #03)
 </div>
 </div>
 <div class="section" id="labels">
-<h1><a class="toc-backref" href="#id72">Labels</a></h1>
+<h1><a class="toc-backref" href="#id83">Labels</a></h1>
 <div class="section" id="history">
-<h2><a class="toc-backref" href="#id73">History</a></h2>
+<h2><a class="toc-backref" href="#id84">History</a></h2>
 <ul class="simple">
 <li>Text files</li>
 <li>First-line file naming</li>
@@ -1559,7 +1570,7 @@ BUG: fix bug (fixes: #03)
 </ul>
 </div>
 <div class="section" id="label-syntax">
-<h2><a class="toc-backref" href="#id74">Label Syntax</a></h2>
+<h2><a class="toc-backref" href="#id85">Label Syntax</a></h2>
 <p>Personal labeling syntax</p>
 <ul class="simple">
 <li><tt class="docutils literal">lower case</tt></li>
@@ -1571,7 +1582,7 @@ BUG: fix bug (fixes: #03)
 </ul>
 </div>
 <div class="section" id="task-labels">
-<h2><a class="toc-backref" href="#id75">Task Labels</a></h2>
+<h2><a class="toc-backref" href="#id86">Task Labels</a></h2>
 <pre class="literal-block">
 -next       a next action                    ( seeAlso: code: ready )
 -waiting    a task that is blocked
@@ -1580,7 +1591,7 @@ BUG: fix bug (fixes: #03)
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Getting_Things_Done">https://en.wikipedia.org/wiki/Getting_Things_Done</a></p>
 </div>
 <div class="section" id="project-labels">
-<h2><a class="toc-backref" href="#id76">Project Labels</a></h2>
+<h2><a class="toc-backref" href="#id87">Project Labels</a></h2>
 <p>See: <a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></p>
 <pre class="literal-block">
 .random        an unfiled note to self
@@ -1600,7 +1611,7 @@ BUG: fix bug (fixes: #03)
 </pre>
 </div>
 <div class="section" id="context-labels">
-<h2><a class="toc-backref" href="#id77">Context Labels</a></h2>
+<h2><a class="toc-backref" href="#id88">Context Labels</a></h2>
 <pre class="literal-block">
 &#64;home    at home
 &#64;travel  when traveling
@@ -1618,7 +1629,7 @@ BUG: fix bug (fixes: #03)
 </pre>
 </div>
 <div class="section" id="email-labels">
-<h2><a class="toc-backref" href="#id78">Email Labels</a></h2>
+<h2><a class="toc-backref" href="#id89">Email Labels</a></h2>
 <pre class="literal-block">
 .tasks         tasks, action items
 .tasks/.daily  repeating daily tasks
@@ -1652,7 +1663,7 @@ wd.&lt;project&gt;  web development
 </pre>
 </div>
 <div class="section" id="id4">
-<span id="code-labels"></span><h2><a class="toc-backref" href="#id79">Code Labels</a></h2>
+<span id="code-labels"></span><h2><a class="toc-backref" href="#id90">Code Labels</a></h2>
 <p>Code labels are three-letter codes with which commit messages can be prefixed.</p>
 <pre class="literal-block">
 CODE Label          color name      background  text
@@ -1694,7 +1705,7 @@ Note: There are 18 labels listed here.
 see <a class="reference external" href="https://github.com/westurner/dotfiles/labels">https://github.com/westurner/dotfiles/labels</a></p>
 </div>
 <div class="section" id="code-label-syntax">
-<h3><a class="toc-backref" href="#id80">Code Label Syntax</a></h3>
+<h3><a class="toc-backref" href="#id91">Code Label Syntax</a></h3>
 <pre class="literal-block">
 ENH: Add new feature (#1)
 BUG: Fixes #3
@@ -1712,16 +1723,16 @@ BLD,CLN: Makefile: remove extra newlines
 <li>aggregating changes into release logs (<tt class="docutils literal">HISTORY</tt>)</li>
 <li>correlating changes with requirements
 (<a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_traceability">https://en.wikipedia.org/wiki/Requirements_traceability</a>)
-[<a class="reference internal" href="#requirements-traceability">Requirements Traceability</a>]</li>
+[<a href="#id108"><span class="problematic" id="id109">`Requirements Traceability`_</span></a>]</li>
 </ul>
 <p>-- adapted from <a class="reference external" href="https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md">pandas/CONTRIBUTING.md</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="tools">
-<h1><a class="toc-backref" href="#id81">Tools</a></h1>
+<h1><a class="toc-backref" href="#id92">Tools</a></h1>
 <div class="section" id="pyrtm-task-cli">
-<h2><a class="toc-backref" href="#id82">pyrtm-task-cli</a></h2>
+<h2><a class="toc-backref" href="#id93">pyrtm-task-cli</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/pyrtm-task-cli">https://bitbucket.org/westurner/pyrtm-task-cli</a></div>
 </div>
@@ -1732,7 +1743,7 @@ notebook-sized sheet of paper
 of a list of tasks at one point in time.</p>
 </div>
 <div class="section" id="workhours">
-<h2><a class="toc-backref" href="#id83">workhours</a></h2>
+<h2><a class="toc-backref" href="#id94">workhours</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/workhours">https://bitbucket.org/westurner/workhours</a></div>
 </div>
@@ -1740,7 +1751,7 @@ of a list of tasks at one point in time.</p>
 (bookmarks, existing browser history, <tt class="docutils literal"><span class="pre">-usrlog</span></tt> files)</p>
 </div>
 <div class="section" id="taskwarrior">
-<h2><a class="toc-backref" href="#id84">TaskWarrior</a></h2>
+<h2><a class="toc-backref" href="#id95">TaskWarrior</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Taskwarrior">https://en.wikipedia.org/wiki/Taskwarrior</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://taskwarrior.org/">http://taskwarrior.org/</a></div>
@@ -1754,62 +1765,191 @@ written in other languages.</p>
 updating, and reporting on tasks, their statuses, and their priorities.</p>
 <p>There are plugins to host and synchronize TaskWarrior task databases
 (with TaskWarrior JSON: <a class="reference external" href="http://taskwarrior.org/docs/design/task.html">http://taskwarrior.org/docs/design/task.html</a>).</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1215)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Usrlog
+</pre>
+</div>
+</div>
+<div class="section" id="id5">
+<span id="usrlog"></span><h2><a class="toc-backref" href="#id96">Usrlog</a></h2>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh">https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh</a></div>
+<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/dotfiles/usrlog">https://westurner.github.io/dotfiles/usrlog</a></div>
+</div>
+<p>&gt; usrlog logs the most recent userspace
+&gt; interactive shell commandline CLI command to <tt class="docutils literal">$_USRLOG</tt>
+&gt; <strong>after</strong> the shell command completes,
+&gt; with <a href="#id6"><span class="problematic" id="id7">:ref:`Bash`</span></a> <tt class="docutils literal">PROMPT_COMMAND</tt>
+&gt; and <a href="#id8"><span class="problematic" id="id9">:ref:`ZSH`</span></a> <tt class="docutils literal">precmd_functions</tt> (see: <a href="#id110"><span class="problematic" id="id111">`Caveats`_</span></a>).</p>
+<div class="system-message" id="id6">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1223); <em><a href="#id7">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<div class="system-message" id="id8">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1223); <em><a href="#id9">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<pre class="code bash literal-block">
+<span class="name builtin">source</span> <span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">__DOTFILES</span><span class="literal string interpol">}</span><span class="literal string double">/scripts/usrlog.sh&quot;</span>
+<span class="name builtin">echo</span> <span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">_USRLOG</span><span class="literal string interpol">}</span><span class="literal string double">&quot;</span>
+<span class="name builtin">echo</span> <span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">_TERM_ID</span><span class="literal string interpol">}</span><span class="literal string double">&quot;</span>
+
+<span class="comment single"># Parse with sed and grep
+</span>usrlog_grep <span class="literal string double">&quot;sudo&quot;</span> <span class="punctuation">|</span> _usrlog_parse_commands
+ug <span class="literal string double">&quot;sudo&quot;</span> <span class="punctuation">|</span> ugp
+
+<span class="comment single"># Parse into records and fields, select the commands, and grep
+</span>usrlog.py -u --cmds <span class="punctuation">|</span> grep <span class="literal string double">&quot;sudo&quot;</span>
+</pre>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1242)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Best Practices
+
+</pre>
+</div>
 </div>
 </div>
 <div class="section" id="best-practices">
-<h1><a class="toc-backref" href="#id85">Best Practices</a></h1>
-<div class="section" id="project-templating">
-<h2><a class="toc-backref" href="#id86">Project Templating</a></h2>
+<h1><a class="toc-backref" href="#id97">Best Practices</a></h1>
+<div class="section" id="use-project-templates">
+<h2><a class="toc-backref" href="#id98">Use Project Templates</a></h2>
 <ul class="simple">
-<li>[ ] Generate a new project with templated packaging and documentation
-(e.g. with <a class="reference external" href="https://github.com/audreyr/cookiecutter">https://github.com/audreyr/cookiecutter</a>)</li>
+<li>[ ] Generate a new project with templated packaging and documentation<ul>
+<li><a class="reference external" href="https://github.com/audreyr/cookiecutter">https://github.com/audreyr/cookiecutter</a><ul>
+<li><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters">https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters</a></li>
+<li><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta">https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="https://github.com/yeoman/yo">https://github.com/yeoman/yo</a><ul>
+<li><a class="reference external" href="https://yeoman.io/generators/">https://yeoman.io/generators/</a></li>
+<li><a class="reference external" href="https://github.com/yeoman/generator-generator">https://github.com/yeoman/generator-generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="requirements-traceability">
-<h2><a class="toc-backref" href="#id87">Requirements Traceability</a></h2>
-<ul>
-<li><p class="first">[ ] Write a Roadmap wiki entry with links to Release Plans
-and/or issue milestones
-(<a class="reference external" href="git&#64;github.com:westurner/wiki.wiki.git">git&#64;github.com:westurner/wiki.wiki.git</a> / <tt class="docutils literal">Roadmap.rest</tt>)</p>
+<div class="section" id="develop-projects-with-requirements-traceability">
+<span id="requirements-traceability"></span><h2><a class="toc-backref" href="#id99">Develop Projects with Requirements Traceability</a></h2>
+<div class="section" id="github-gitlab-projects">
+<h3><a class="toc-backref" href="#id100">GitHub / Gitlab Projects</a></h3>
 <ul class="simple">
+<li>[ ] When you create a new GitHub / GitLab project,<ul>
+<li>[ ] Create Issue #1. You could call it <tt class="docutils literal">#1</tt> and leave it blank for now.</li>
+<li>[ ] Write a Roadmap wiki entry with links to Release Plans
+and/or issue milestones
+(<a class="reference external" href="https://github.com/westurner/wiki.wiki.git">https://github.com/westurner/wiki.wiki.git</a> / <tt class="docutils literal">Roadmap.rest</tt>)<ul>
 <li>Roadmap wiki page: <a class="reference external" href="https://github.com/westurner/wiki/wiki/Roadmap">https://github.com/westurner/wiki/wiki/Roadmap</a></li>
-<li>Milestone: <a class="reference external" href="https://github.com/westurner/wiki/milestones/0.1">https://github.com/westurner/wiki/milestones/0.1</a></li>
 </ul>
 </li>
-<li><p class="first">[ ] Write Features and <em>User Stories</em> as issues prefixed with <tt class="docutils literal">ENH:</tt>:</p>
-<pre class="literal-block">
-ENH: Users can place orders
-</pre>
+<li>[ ] Create a milestone and an issue for it<ul>
+<li>[ ] Milestone:<ul>
+<li><a class="reference external" href="https://github.com/westurner/wiki/milestones/0.1">https://github.com/westurner/wiki/milestones/0.1</a> (open)</li>
+<li><a class="reference external" href="https://github.com/westurner/wiki/issues?q=milestone%3A0.1">https://github.com/westurner/wiki/issues?q=milestone%3A0.1</a>
+(open/closed)</li>
+</ul>
 </li>
+<li>[ ] Milestone Issue:<ul>
+<li><a class="reference external" href="https://github.com/westurner/wiki/issues/17">https://github.com/westurner/wiki/issues/17</a> &quot;Milestone 1&quot;<ul>
+<li>[ ] Link to the milestone issues URLs</li>
+<li>[ ] Add the Deadline:/Ends: and/or Completed: date</li>
+<li>[ ] Add a link to the release tag</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] Add a link from Issue #1 to the Milestone Issue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="use-code-labels">
+<h3><a class="toc-backref" href="#id101">Use Code Labels</a></h3>
+<ul>
 <li><p class="first">[ ] Prefix commit messages with <a class="reference internal" href="#code-labels">Code Labels</a>:</p>
 <pre class="literal-block">
 TST: Create order placing tests
 DOC: Add order placing documentation
 BLD: Update the build configuration
 </pre>
+<ul>
+<li><p class="first">[ ] Write Features and <em>User Stories</em> as issues prefixed with <tt class="docutils literal">STORY</tt>
+and <tt class="docutils literal">ENH:</tt>:</p>
+<pre class="literal-block">
+STORY: Users can place orders
+ENH: app/orders: Show the cart item count in the header
+</pre>
 </li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="use-links">
+<h3><a class="toc-backref" href="#id102">Use Links</a></h3>
+<p>Create traceable edges between things by adding links.</p>
+<ul>
 <li><p class="first">[ ] Link between <strong>Issues</strong>, <strong>Commits</strong>, <strong>Pull Requests</strong>, and
-<em>Release Logs</em> by referencing an issue number:</p>
+other docs by referencing an issue number in a title, description,
+or comment:</p>
 <pre class="literal-block">
 TST: Create order placing tests (#123)
+TST: Create order placing tests (projname#123)
+TST: Create order placing tests (orgname/projname#123)
 DOC: Add order placing documentation (for #123)
 CLN: Cleanup syntax for style guide (#5678)
 </pre>
 </li>
 <li><p class="first">[ ] Link between <strong>Issues</strong>, <strong>Commits</strong>, <strong>Pull Requests</strong>, and
-<em>Release Logs</em> by referencing (pasting) a link (URL, URI)
-as-is (with no anchor text):</p>
+<em>Release Logs</em> by referencing a full URL with no anchor text
+and optional trailing title or description:</p>
 <pre class="literal-block">
 https://github.com/westurner/wiki/issues/1
 </pre>
 </li>
 </ul>
 </div>
+</div>
 <div class="section" id="revision-control">
-<h2><a class="toc-backref" href="#id88">Revision Control</a></h2>
+<h2><a class="toc-backref" href="#id103">Revision Control</a></h2>
+<div class="section" id="gitflow-and-hubflow">
+<h3><a class="toc-backref" href="#id104">GitFlow and HubFlow</a></h3>
+<p><a href="#id10"><span class="problematic" id="id11">:ref:`GitFlow`</span></a> and <a href="#id12"><span class="problematic" id="id13">:ref:`HubFlow`</span></a> are workflow and branch management
+systems for <a href="#id14"><span class="problematic" id="id15">:ref:`Git`</span></a> and <cite>GitHub</cite>
+which specify and implement branch naming conventions
+and merge patterns which can minimize
+the need to teach new collaborators how we prefer to do branches
+around here.</p>
+<div class="system-message" id="id10">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1337); <em><a href="#id11">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<div class="system-message" id="id12">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1337); <em><a href="#id13">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<div class="system-message" id="id14">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1337); <em><a href="#id15">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<p>Sometimes GitFlow and HubFlow do fail though, so it's good to understand
+which git commands they're running for you so that:</p>
+<ul class="simple">
+<li><tt class="docutils literal">master</tt> only has stable releases that are cleanly merged in from a
+named release branch (<tt class="docutils literal">release/0.1.0</tt>) which is a branch of
+<tt class="docutils literal">develop</tt></li>
+<li><tt class="docutils literal">hotfix</tt> branches (<tt class="docutils literal"><span class="pre">hotfix/CVE-2001-fix-urgent-bug</span></tt>)
+are merged to <tt class="docutils literal">master</tt> as new releases and also into <tt class="docutils literal">develop</tt></li>
+<li>feature branches (<tt class="docutils literal"><span class="pre">feature/3-STORY-users-can-place-orders</span></tt>)
+branch from <tt class="docutils literal">develop</tt>;
+and are always expected to <tt class="docutils literal">git rebase <span class="pre">-i</span> develop</tt>
+before a Pull Request can be considered for merging</li>
+</ul>
+</div>
 </div>
 <div class="section" id="continuous-integration">
-<h2><a class="toc-backref" href="#id89">Continuous Integration</a></h2>
+<h2><a class="toc-backref" href="#id105">Continuous Integration</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration#Best_practices">https://en.wikipedia.org/wiki/Continuous_integration#Best_practices</a></p>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery">https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery</a></div>
@@ -1818,63 +1958,71 @@ https://github.com/westurner/wiki/issues/1
 <div class="line"><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution">https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution</a></div>
 <div class="line"><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd">https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd</a></div>
 </div>
-<ul>
-<li><p class="first">[ ] Run tests before releasing</p>
-</li>
-<li><p class="first">[ ] Run tests before merging (e.g. Pull Request Webhooks)</p>
-</li>
-<li><p class="first">[ ] Run tests after merging. (e.g. HubFlow
-[<tt class="docutils literal">feature/*</tt> -&gt;] <tt class="docutils literal">develop</tt> -&gt;
-<tt class="docutils literal">release/v0.1.0</tt> -&gt; <tt class="docutils literal">master</tt> branch structure)</p>
-</li>
-<li><p class="first">[ ] Run tests before committing (while coding)</p>
-</li>
-<li><p class="first">[ ] Run tests when committing
-(with [required/local/central] repo event scripts)</p>
-</li>
-<li><p class="first">[ ] Write Tests First.</p>
-</li>
-<li><p class="first">[ ] Utilize Git HubFlow for managing project repository branches:
-<tt class="docutils literal">develop</tt>, <tt class="docutils literal">master</tt>, <tt class="docutils literal">feature/*</tt>, <tt class="docutils literal">release/*</tt>, <tt class="docutils literal">hotfix/*</tt></p>
 <ul class="simple">
+<li>[ ] Run tests before releasing</li>
+<li>[ ] Run tests before merging (e.g. Pull Request Webhooks)</li>
+<li>[ ] Run tests after merging. (e.g. HubFlow
+[<tt class="docutils literal">feature/*</tt> -&gt;] <tt class="docutils literal">develop</tt> -&gt;
+<tt class="docutils literal">release/v0.1.0</tt> -&gt; <tt class="docutils literal">master</tt> branch structure)</li>
+<li>[ ] Run tests before committing (while coding)</li>
+<li>[ ] Run tests when committing
+(with [required/local/central] repo event scripts such as pre-commit
+hooks)<ul>
+<li><a class="reference external" href="https://pre-commit.github.io">https://pre-commit.github.io</a></li>
+</ul>
+</li>
+<li>[ ] Write Tests First.</li>
+<li>[ ] Utilize Git HubFlow for managing project repository branches:
+<tt class="docutils literal">develop</tt>, <tt class="docutils literal">master</tt>, <tt class="docutils literal">feature/*</tt>, <tt class="docutils literal">release/*</tt>, <tt class="docutils literal">hotfix/*</tt><ul>
 <li><a class="reference external" href="https://datasift.github.io/gitflow/">https://datasift.github.io/gitflow/</a></li>
 <li><a class="reference external" href="https://westurner.github.io/tools/#git">https://westurner.github.io/tools/#git</a></li>
 <li><a class="reference external" href="https://westurner.github.io/tools/#hubflow">https://westurner.github.io/tools/#hubflow</a></li>
 </ul>
 </li>
-<li><p class="first">[ ] Release semantic versions (<a class="reference external" href="http://semver.org">http://semver.org</a>) tagged as
-<tt class="docutils literal">major.minor.patch</tt> (e.g. <tt class="docutils literal">v1.0.01</tt>)</p>
+<li>[ ] Release semantic versions (<a class="reference external" href="http://semver.org">http://semver.org</a>) tagged as
+<tt class="docutils literal">major.minor.patch</tt> (e.g. <tt class="docutils literal">v1.0.01</tt>)<ul>
+<li>Semver 3.0 (Python PEP 440 versiontag-compatible):
+<a class="reference external" href="http://docs.openstack.org/developer/pbr/semver.html">http://docs.openstack.org/developer/pbr/semver.html</a><ul>
+<li>PEP 440:
+&quot;Version Identification and Dependency Specification&quot;
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes">https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes</a></li>
+</ul>
+</li>
+<li>bumpversion <a class="reference external" href="https://github.com/peritus/bumpversion">https://github.com/peritus/bumpversion</a></li>
+</ul>
+</li>
+</ul>
 <ul>
-<li><p class="first">Semver 3.0 (Python PEP 440 version tag compatible):
-<a class="reference external" href="http://docs.openstack.org/developer/pbr/semver.html">http://docs.openstack.org/developer/pbr/semver.html</a></p>
+<li><p class="first">[ ] Include useful data (like version, revision, platform)
+in package filenames (and/or also create a JSON-LD metadata manifest):</p>
 <ul>
-<li><p class="first">Python PEP 440
-&quot;Version Identification and Dependency Specification&quot;</p>
-<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes">https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes</a></p>
+<li><p class="first">e.g. <tt class="docutils literal"><span class="pre">westurner-wiki-v1.0.01-eb4df7f-linux64.whl</span></tt></p>
 </li>
-</ul>
+<li><p class="first">Conda selectors: {<tt class="docutils literal">linux64</tt>, <tt class="docutils literal">py27</tt>, <tt class="docutils literal">py37</tt> }
+<a class="reference external" href="http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors">http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors</a></p>
 </li>
-<li><p class="first">bumpversion <a class="reference external" href="https://github.com/peritus/bumpversion">https://github.com/peritus/bumpversion</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="simple">
-<li>[ ] Include useful data (like version, revision, platform)
-in package filenames (and/or also create a JSON-LD metadata manifest):<ul>
-<li>e.g. <tt class="docutils literal"><span class="pre">westurner-wiki-v1.0.01-eb4df7f-linux64.whl</span></tt></li>
-<li>Conda selectors: {<tt class="docutils literal">linux64</tt>, <tt class="docutils literal">py27</tt>, <tt class="docutils literal">py35</tt> }
-<a class="reference external" href="http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors">http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors</a></li>
-<li>pbr (<em>Python Build Reasonableness</em>)<ul>
-<li>Source:
-<a class="reference external" href="https://github.com/openstack-dev/pbr">https://github.com/openstack-dev/pbr</a></li>
-<li>Docs: <a class="reference external" href="http://docs.openstack.org/developer/pbr/">http://docs.openstack.org/developer/pbr/</a></li>
-</ul>
+<li><p class="first">pbr (<em>Python Build Reasonableness</em>)</p>
+<div class="line-block">
+<div class="line">Source: <a class="reference external" href="https://github.com/openstack-dev/pbr">https://github.com/openstack-dev/pbr</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.openstack.org/developer/pbr/">http://docs.openstack.org/developer/pbr/</a></div>
+</div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
+</div>
+<div class="system-messages section">
+<h1>Docutils System Messages</h1>
+<div class="system-message" id="id106">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 67); <em><a href="#id107">backlink</a></em></p>
+Unknown target name: &quot;requirements traceability&quot;.</div>
+<div class="system-message" id="id108">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1165); <em><a href="#id109">backlink</a></em></p>
+Unknown target name: &quot;requirements traceability&quot;.</div>
+<div class="system-message" id="id110">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./workflow.rest</tt>, line 1223); <em><a href="#id111">backlink</a></em></p>
+Unknown target name: &quot;caveats&quot;.</div>
 </div>
 </div>
 </body>

@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="westurner/wiki" />
     <!--
-    <meta property="og:description" content="Documentation for the wiki project" />
+    <meta property="og:description" content="westurner.github.io/wiki" />
     -->
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="470" />
@@ -24,7 +24,7 @@
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="Workstations" />
-    <meta property="twitter:description" content="Documentation for the wiki project" />
+    <meta property="twitter:description" content="westurner.github.io/wiki" />
     <meta property="twitter:site" content="westurner" />
     <meta property="twitter:creator" content="westurner" />
     
@@ -56,6 +56,7 @@
     <script type="text/javascript" src="_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
@@ -181,7 +182,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="index">Table Of Contents</a></h3>
+  <h3><a href="index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Workstations</a><ul>
 <li><a class="reference internal" href="#tools">Tools</a><ul>
@@ -399,7 +400,7 @@
 <div class="line">Src: <a class="reference external" href="https://github.com/saltstack/salt">https://github.com/saltstack/salt</a></div>
 <div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#salt">https://westurner.github.io/tools/#salt</a></div>
 </div>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">salt</span><span class="o">-</span><span class="n">call</span> <span class="o">--</span><span class="n">local</span> <span class="o">--</span><span class="n">out</span><span class="o">=</span><span class="n">yaml</span> <span class="n">grains</span><span class="o">.</span><span class="n">items</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">salt</span><span class="o">-</span><span class="n">call</span> <span class="o">--</span><span class="n">local</span> <span class="o">--</span><span class="n">out</span><span class="o">=</span><span class="n">yaml</span> <span class="n">grains</span><span class="o">.</span><span class="n">items</span>
 <span class="n">salt</span><span class="o">-</span><span class="n">call</span> <span class="o">--</span><span class="n">local</span> <span class="o">--</span><span class="n">out</span><span class="o">=</span><span class="n">yaml</span> <span class="n">pkg</span><span class="o">.</span><span class="n">list_pkgs</span>
 </pre></div>
 </div>
@@ -450,7 +451,7 @@
 (scripts, console_scripts entry_points)</p>
 </li>
 <li><p class="first"><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh">https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh</a></p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash -x</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash -x</span>
 <span class="n">export</span> <span class="n">ANDROID_PATH</span><span class="o">=</span><span class="s2">&quot;$</span><span class="si">{HOME}</span><span class="s2">/.local/android&quot;</span>
 <span class="n">export</span> <span class="n">ANDROID_ADTPATH</span><span class="o">=</span><span class="s2">&quot;$</span><span class="si">{ANDROID_PATH}</span><span class="s2">/adt&quot;</span>
 <span class="n">export</span> <span class="n">ANDROID_SDKPATH</span><span class="o">=</span><span class="s2">&quot;$</span><span class="si">{ANDROID_ADTPATH}</span><span class="s2">/sdk&quot;</span>
@@ -471,7 +472,7 @@
 </pre></div>
 </div>
 </li>
-<li><p class="first">[ ] <code class="docutils literal"><span class="pre">cat</span> <span class="pre">scripts/postactivate</span> <span class="pre">&gt;&gt;</span> <span class="pre">$_BIN/postactivate</span> <span class="pre">#</span> <span class="pre">for</span> <span class="pre">virtualenvwrapper</span></code></p>
+<li><p class="first">[ ] <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">scripts/postactivate</span> <span class="pre">&gt;&gt;</span> <span class="pre">$_BIN/postactivate</span> <span class="pre">#</span> <span class="pre">for</span> <span class="pre">virtualenvwrapper</span></code></p>
 </li>
 </ul>
 </div></blockquote>
@@ -527,10 +528,10 @@
 <li>Need:</li>
 <li>[x] 1x 20-inch panel (DVI, VGA)</li>
 <li>[x] 2x 24-inch panels (DVI, VGA)<ul>
-<li>2x 1/3&#8221; monitor bezel</li>
+<li>2x 1/3” monitor bezel</li>
 </ul>
 </li>
-<li>[ ] 40&#8221;+ monitor w/ <em>HDMI</em>, (adapters for: [DVI], [VGA])</li>
+<li>[ ] 40”+ monitor w/ <em>HDMI</em>, (adapters for: [DVI], [VGA])</li>
 </ul>
 <div class="section" id="monitor-stand">
 <h4><a class="toc-backref" href="#id22">Monitor Stand</a><a class="headerlink" href="#monitor-stand" title="Permalink to this headline">¶</a></h4>
@@ -561,8 +562,8 @@
 <li>[x] MicroSD Cards {phone, tablet, -&gt; SD &lt;- MicroSD adapter}</li>
 <li>[x] SD &lt;- MicroSD adapter</li>
 <li>[x] 2x USB 3.0 to IDE/SATA adapter (backups, recovery, migration)</li>
-<li>[x] 2.5&#8221; external hard drive case SATA</li>
-<li>[x] 3.5&#8221; external hard drive case SATA</li>
+<li>[x] 2.5” external hard drive case SATA</li>
+<li>[x] 3.5” external hard drive case SATA</li>
 </ul>
 </div>
 <div class="section" id="cables">
@@ -599,9 +600,9 @@
 <div class="section" id="chromecast-audio">
 <h4><a class="toc-backref" href="#id27">Chromecast Audio</a><a class="headerlink" href="#chromecast-audio" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>[x] 3.5&#8221; headphone jack &lt;- Chromecast Audio &lt;-&gt; WiFi<ul>
-<li>[ ] 3.5&#8221; headphone cable (Male-Male)</li>
-<li>[ ] 3.5&#8221; headphone cable (Male-Female)</li>
+<li>[x] 3.5” headphone jack &lt;- Chromecast Audio &lt;-&gt; WiFi<ul>
+<li>[ ] 3.5” headphone cable (Male-Male)</li>
+<li>[ ] 3.5” headphone cable (Male-Female)</li>
 <li>[ ] MicroUSB to USB cable (e.g. phone charger cable)</li>
 <li>[ ] Chromecast AC-USB adapter</li>
 </ul>
@@ -623,8 +624,8 @@
 <div class="section" id="headphones">
 <h4><a class="toc-backref" href="#id29">Headphones</a><a class="headerlink" href="#headphones" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>[x] headphone headphones &#8220;headphones&#8221;</li>
-<li>[x] microphone headphones &#8220;headset&#8221;</li>
+<li>[x] headphone headphones “headphones”</li>
+<li>[x] microphone headphones “headset”</li>
 <li>[x] earbuds {bose, sennheiser, }</li>
 <li>[ ] studio headphones</li>
 <li>[x] headset: with the proprietary buttons for my phone</li>
@@ -654,7 +655,7 @@
 <li>[ ] Regular pencil sharpener (mini) (or in the drawer thanks)</li>
 <li>[ ] Ink pens: Fine</li>
 <li>[ ] Ink pens: Medium</li>
-<li>[ ] Ink pens: Bold &#8211; Uni-ball,</li>
+<li>[ ] Ink pens: Bold – Uni-ball,</li>
 <li>[x] Permanent Marker: Black</li>
 <li>[ ] Permanent Marker: Red</li>
 <li>[ ] <strong>Pink Pearl</strong> eraser</li>
@@ -680,7 +681,7 @@
 <div class="section" id="lamp">
 <h4><a class="toc-backref" href="#id35">Lamp</a><a class="headerlink" href="#lamp" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>[ ] Tall architects&#8217; lamp</li>
+<li>[ ] Tall architects’ lamp</li>
 </ul>
 </div>
 </div>
@@ -718,8 +719,8 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+          &copy; Copyright @westurner 2014-2019, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
       </footer>
       <!-- /footer -->
 

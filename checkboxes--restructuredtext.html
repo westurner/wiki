@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="westurner/wiki" />
     <!--
-    <meta property="og:description" content="Documentation for the wiki project" />
+    <meta property="og:description" content="westurner.github.io/wiki" />
     -->
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="470" />
@@ -24,7 +24,7 @@
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="checkboxes (ReStructuredText)" />
-    <meta property="twitter:description" content="Documentation for the wiki project" />
+    <meta property="twitter:description" content="westurner.github.io/wiki" />
     <meta property="twitter:site" content="westurner" />
     <meta property="twitter:creator" content="westurner" />
     
@@ -56,6 +56,7 @@
     <script type="text/javascript" src="_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
@@ -126,7 +127,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="index">Table Of Contents</a></h3>
+  <h3><a href="index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">checkboxes (ReStructuredText)</a></li>
 <li><a class="reference internal" href="#source-restructuredtext">Source (ReStructuredText)</a></li>
@@ -224,7 +225,7 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">github ReStructuredText (<code class="docutils literal"><span class="pre">rest2html</span></code> (docutils)):</p>
+<li><p class="first">github ReStructuredText (<code class="docutils literal notranslate"><span class="pre">rest2html</span></code> (docutils)):</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/github/markup/blob/master/lib/github/commands/rest2html">https://github.com/github/markup/blob/master/lib/github/commands/rest2html</a></li>
 </ul>
@@ -240,33 +241,33 @@
 </ul>
 <ul class="simple">
 <li>[ ]          # [checkbox:unchecked]</li>
-<li>[-]          # &#8216;[-]&#8217;</li>
-<li>[o]          # &#8216;[o]&#8217;</li>
-<li>[O]          # &#8216;[O]&#8217;</li>
+<li>[-]          # ‘[-]’</li>
+<li>[o]          # ‘[o]’</li>
+<li>[O]          # ‘[O]’</li>
 <li>.</li>
 <li>[ ]         # [checkbox:unchecked]</li>
-<li>/[ ]         # &#8216;/[ ]&#8217;</li>
-<li>\[ ]        # &#8216;[ ]&#8217;</li>
-<li>[-]         # &#8216;[-]&#8217;</li>
-<li>[o]         # <a href="#id1"><span class="problematic" id="id2">`</span></a>[o]&#8217;</li>
+<li>/[ ]         # ‘/[ ]’</li>
+<li>\[ ]        # ‘[ ]’</li>
+<li>[-]         # ‘[-]’</li>
+<li>[o]         # <a href="#id1"><span class="problematic" id="id2">`</span></a>[o]’</li>
 <li>[x]         # [checkbox:checked]</li>
 <li>[X]         # [checkbox:checked]</li>
 <li>.</li>
-<li>\[ ]        # &#8216;[ ]&#8217;</li>
-<li>\[x]        # &#8216;[x]&#8217;</li>
+<li>\[ ]        # ‘[ ]’</li>
+<li>\[x]        # ‘[x]’</li>
 <li>.</li>
-<li>[[ ]]        # &#8216;&#8217;</li>
+<li>[[ ]]        # ‘’</li>
 <li>[[x]]        # [link]</li>
 <li>[[o]]        # [link]</li>
 <li>.</li>
-<li>][ ]         # &#8216;][ ]&#8217;</li>
-<li>][x]         # &#8216;][x]&#8217;</li>
+<li>][ ]         # ‘][ ]’</li>
+<li>][x]         # ‘][x]’</li>
 <li>.</li>
-<li>] [          #  &#8216;] [&#8216;</li>
-<li>]x[          #  &#8216;]x[&#8216;</li>
+<li>] [          #  ‘] [‘</li>
+<li>]x[          #  ‘]x[‘</li>
 <li>.</li>
-<li>.[ ]         #  &#8216;.[ ]&#8217;</li>
-<li>.[x]         #  &#8216;.[x]&#8217;</li>
+<li>.[ ]         #  ‘.[ ]’</li>
+<li>.[x]         #  ‘.[x]’</li>
 <li>.1.</li>
 <li>.2.</li>
 <li>.3.</li>
@@ -290,15 +291,15 @@
 </li>
 <li></li>
 <li>.</li>
-<li>[[[ ]        # &#8216;[[[ ]&#8217;</li>
-<li>[[[x]        # &#8216;[[[x]&#8217;</li>
+<li>[[[ ]        # ‘[[[ ]’</li>
+<li>[[[x]        # ‘[[[x]’</li>
 </ul>
 <p>.
 - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)]</p>
 </div>
 <div class="section" id="source-restructuredtext">
 <h1><a class="toc-backref" href="#id4">Source (ReStructuredText)</a><a class="headerlink" href="#source-restructuredtext" title="Permalink to this headline">¶</a></h1>
-<div class="code restructuredtext highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="p">[</span> <span class="p">]</span> <span class="n">unchecked</span> <span class="c1"># [checkbox:unchecked]</span>
+<div class="code restructuredtext highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="p">[</span> <span class="p">]</span> <span class="n">unchecked</span> <span class="c1"># [checkbox:unchecked]</span>
 <span class="o">*</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">checked</span>   <span class="c1"># [checkbox:checked]</span>
 <span class="o">*</span> <span class="p">[</span><span class="n">X</span><span class="p">]</span> <span class="n">checked</span>   <span class="c1"># [checkbox:checked]</span>
 <span class="o">*</span> <span class="o">.</span>
@@ -347,7 +348,7 @@
 <span class="o">-</span> <span class="p">[</span><span class="n">X</span> <span class="p">(</span><span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span> <span class="n">HH</span><span class="p">:</span><span class="n">MM</span><span class="p">:</span><span class="n">SS</span><span class="p">)]</span>   <span class="c1"># [X (YYYY-MM-DD HH:MM:SS)]</span>
 </pre></div>
 </div>
-<div class="code restructuredtext highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">contents</span><span class="p">::</span>
+<div class="code restructuredtext highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">contents</span><span class="p">::</span>
 </pre></div>
 </div>
 <div class="contents topic" id="contents">
@@ -388,8 +389,8 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+          &copy; Copyright @westurner 2014-2019, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
       </footer>
       <!-- /footer -->
 

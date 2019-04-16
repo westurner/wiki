@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="westurner/wiki" />
     <!--
-    <meta property="og:description" content="Documentation for the wiki project" />
+    <meta property="og:description" content="westurner.github.io/wiki" />
     -->
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="470" />
@@ -24,7 +24,7 @@
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="Workflow" />
-    <meta property="twitter:description" content="Documentation for the wiki project" />
+    <meta property="twitter:description" content="westurner.github.io/wiki" />
     <meta property="twitter:site" content="westurner" />
     <meta property="twitter:creator" content="westurner" />
     
@@ -56,6 +56,7 @@
     <script type="text/javascript" src="_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
@@ -215,12 +216,21 @@
 <li><a class="reference internal" href="#pyrtm-task-cli">pyrtm-task-cli</a></li>
 <li><a class="reference internal" href="#workhours">workhours</a></li>
 <li><a class="reference internal" href="#taskwarrior">TaskWarrior</a></li>
+<li><a class="reference internal" href="#usrlog">Usrlog</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#best-practices">Best Practices</a><ul>
-<li><a class="reference internal" href="#project-templating">Project Templating</a></li>
-<li><a class="reference internal" href="#requirements-traceability">Requirements Traceability</a></li>
-<li><a class="reference internal" href="#revision-control">Revision Control</a></li>
+<li><a class="reference internal" href="#use-project-templates">Use Project Templates</a></li>
+<li><a class="reference internal" href="#develop-projects-with-requirements-traceability">Develop Projects with Requirements Traceability</a><ul>
+<li><a class="reference internal" href="#github-gitlab-projects">GitHub / Gitlab Projects</a></li>
+<li><a class="reference internal" href="#use-code-labels">Use Code Labels</a></li>
+<li><a class="reference internal" href="#use-links">Use Links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#revision-control">Revision Control</a><ul>
+<li><a class="reference internal" href="#gitflow-and-hubflow">GitFlow and HubFlow</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#continuous-integration">Continuous Integration</a></li>
 </ul>
 </li>
@@ -268,7 +278,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="index">Table Of Contents</a></h3>
+  <h3><a href="index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Workflow</a><ul>
 <li><a class="reference internal" href="#concept">Concept</a></li>
@@ -399,12 +409,21 @@
 <li><a class="reference internal" href="#pyrtm-task-cli">pyrtm-task-cli</a></li>
 <li><a class="reference internal" href="#workhours">workhours</a></li>
 <li><a class="reference internal" href="#taskwarrior">TaskWarrior</a></li>
+<li><a class="reference internal" href="#usrlog">Usrlog</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#best-practices">Best Practices</a><ul>
-<li><a class="reference internal" href="#project-templating">Project Templating</a></li>
-<li><a class="reference internal" href="#requirements-traceability">Requirements Traceability</a></li>
-<li><a class="reference internal" href="#revision-control">Revision Control</a></li>
+<li><a class="reference internal" href="#use-project-templates">Use Project Templates</a></li>
+<li><a class="reference internal" href="#develop-projects-with-requirements-traceability">Develop Projects with Requirements Traceability</a><ul>
+<li><a class="reference internal" href="#github-gitlab-projects">GitHub / Gitlab Projects</a></li>
+<li><a class="reference internal" href="#use-code-labels">Use Code Labels</a></li>
+<li><a class="reference internal" href="#use-links">Use Links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#revision-control">Revision Control</a><ul>
+<li><a class="reference internal" href="#gitflow-and-hubflow">GitFlow and HubFlow</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#continuous-integration">Continuous Integration</a></li>
 </ul>
 </li>
@@ -485,147 +504,156 @@
                 <div class="body">
                   
   <div class="section" id="workflow">
-<h1><a class="toc-backref" href="#id5">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id6">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h1>
 <p>Find simple workflows for productivity, efficiency, and collaboration.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#workflow" id="id5">Workflow</a><ul>
-<li><a class="reference internal" href="#concept" id="id6">Concept</a></li>
-<li><a class="reference internal" href="#goals" id="id7">Goals</a><ul>
-<li><a class="reference internal" href="#objectives" id="id8">Objectives</a></li>
+<li><a class="reference internal" href="#workflow" id="id6">Workflow</a><ul>
+<li><a class="reference internal" href="#concept" id="id7">Concept</a></li>
+<li><a class="reference internal" href="#goals" id="id8">Goals</a><ul>
+<li><a class="reference internal" href="#objectives" id="id9">Objectives</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tasks" id="id9">Tasks</a><ul>
-<li><a class="reference internal" href="#daily" id="id10">Daily</a></li>
-<li><a class="reference internal" href="#scheduled" id="id11">Scheduled</a></li>
-<li><a class="reference internal" href="#recurring" id="id12">Recurring</a></li>
-<li><a class="reference internal" href="#phone" id="id13">Phone</a></li>
-<li><a class="reference internal" href="#emails" id="id14">Emails</a></li>
-<li><a class="reference internal" href="#text-files" id="id15">Text Files</a><ul>
-<li><a class="reference internal" href="#lightweight-markup-syntax" id="id16">Lightweight Markup Syntax</a><ul>
-<li><a class="reference internal" href="#text-file-headings" id="id17">Text File Headings</a></li>
+<li><a class="reference internal" href="#tasks" id="id10">Tasks</a><ul>
+<li><a class="reference internal" href="#daily" id="id11">Daily</a></li>
+<li><a class="reference internal" href="#scheduled" id="id12">Scheduled</a></li>
+<li><a class="reference internal" href="#recurring" id="id13">Recurring</a></li>
+<li><a class="reference internal" href="#phone" id="id14">Phone</a></li>
+<li><a class="reference internal" href="#emails" id="id15">Emails</a></li>
+<li><a class="reference internal" href="#text-files" id="id16">Text Files</a><ul>
+<li><a class="reference internal" href="#lightweight-markup-syntax" id="id17">Lightweight Markup Syntax</a><ul>
+<li><a class="reference internal" href="#text-file-headings" id="id18">Text File Headings</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#text-file-attributes" id="id18">Text File Attributes</a></li>
+<li><a class="reference internal" href="#text-file-attributes" id="id19">Text File Attributes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#source-code" id="id19">Source Code</a><ul>
-<li><a class="reference internal" href="#source-code-file-attributes" id="id20">Source Code File Attributes</a></li>
-<li><a class="reference internal" href="#comment-tags" id="id21">Comment Tags</a></li>
+<li><a class="reference internal" href="#source-code" id="id20">Source Code</a><ul>
+<li><a class="reference internal" href="#source-code-file-attributes" id="id21">Source Code File Attributes</a></li>
+<li><a class="reference internal" href="#comment-tags" id="id22">Comment Tags</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#patches" id="id22">Patches</a><ul>
-<li><a class="reference internal" href="#patch-attributes" id="id23">Patch attributes</a><ul>
-<li><a class="reference internal" href="#patch-header" id="id24">Patch Header</a></li>
-<li><a class="reference internal" href="#patch-diff" id="id25">Patch Diff</a></li>
+<li><a class="reference internal" href="#patches" id="id23">Patches</a><ul>
+<li><a class="reference internal" href="#patch-attributes" id="id24">Patch attributes</a><ul>
+<li><a class="reference internal" href="#patch-header" id="id25">Patch Header</a></li>
+<li><a class="reference internal" href="#patch-diff" id="id26">Patch Diff</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#patch-workflow" id="id26">Patch workflow</a></li>
+<li><a class="reference internal" href="#patch-workflow" id="id27">Patch workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#issues" id="id27">Issues</a><ul>
-<li><a class="reference internal" href="#issue-attributes" id="id28">Issue attributes</a><ul>
-<li><a class="reference internal" href="#github-issues" id="id29">GitHub Issues</a></li>
-<li><a class="reference internal" href="#bitbucket-issues" id="id30">BitBucket Issues</a></li>
-<li><a class="reference internal" href="#google-code-issues" id="id31">Google Code Issues</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#pull-requests" id="id32">Pull Requests</a><ul>
-<li><a class="reference internal" href="#send-a-pull-request" id="id33">Send a Pull Request</a></li>
-<li><a class="reference internal" href="#review-a-pull-request" id="id34">Review a Pull Request</a></li>
+<li><a class="reference internal" href="#issues" id="id28">Issues</a><ul>
+<li><a class="reference internal" href="#issue-attributes" id="id29">Issue attributes</a><ul>
+<li><a class="reference internal" href="#github-issues" id="id30">GitHub Issues</a></li>
+<li><a class="reference internal" href="#bitbucket-issues" id="id31">BitBucket Issues</a></li>
+<li><a class="reference internal" href="#google-code-issues" id="id32">Google Code Issues</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lists" id="id35">Lists</a><ul>
-<li><a class="reference internal" href="#mental" id="id36">Mental</a><ul>
-<li><a class="reference internal" href="#mental-list-attributes" id="id37">Mental list attributes</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#paper" id="id38">Paper</a><ul>
-<li><a class="reference internal" href="#pros" id="id39">Pros</a></li>
-<li><a class="reference internal" href="#cons" id="id40">Cons</a></li>
-<li><a class="reference internal" href="#implementations" id="id41">Implementations</a><ul>
-<li><a class="reference internal" href="#schedule" id="id42">Schedule</a></li>
-<li><a class="reference internal" href="#calendar" id="id43">Calendar</a></li>
-<li><a class="reference internal" href="#agenda" id="id44">Agenda</a></li>
-<li><a class="reference internal" href="#todo-list" id="id45">TODO List</a></li>
-<li><a class="reference internal" href="#hipster-pda" id="id46">Hipster PDA</a></li>
+<li><a class="reference internal" href="#pull-requests" id="id33">Pull Requests</a><ul>
+<li><a class="reference internal" href="#send-a-pull-request" id="id34">Send a Pull Request</a></li>
+<li><a class="reference internal" href="#review-a-pull-request" id="id35">Review a Pull Request</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#text" id="id47">Text</a><ul>
-<li><a class="reference internal" href="#id1" id="id48">Pros</a></li>
-<li><a class="reference internal" href="#id2" id="id49">Cons</a></li>
-<li><a class="reference internal" href="#syntax" id="id50">Syntax</a><ul>
-<li><a class="reference internal" href="#checkboxes" id="id51">Checkboxes</a></li>
+<li><a class="reference internal" href="#lists" id="id36">Lists</a><ul>
+<li><a class="reference internal" href="#mental" id="id37">Mental</a><ul>
+<li><a class="reference internal" href="#mental-list-attributes" id="id38">Mental list attributes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#paper" id="id39">Paper</a><ul>
+<li><a class="reference internal" href="#pros" id="id40">Pros</a></li>
+<li><a class="reference internal" href="#cons" id="id41">Cons</a></li>
+<li><a class="reference internal" href="#implementations" id="id42">Implementations</a><ul>
+<li><a class="reference internal" href="#schedule" id="id43">Schedule</a></li>
+<li><a class="reference internal" href="#calendar" id="id44">Calendar</a></li>
+<li><a class="reference internal" href="#agenda" id="id45">Agenda</a></li>
+<li><a class="reference internal" href="#todo-list" id="id46">TODO List</a></li>
+<li><a class="reference internal" href="#hipster-pda" id="id47">Hipster PDA</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text" id="id48">Text</a><ul>
+<li><a class="reference internal" href="#id1" id="id49">Pros</a></li>
+<li><a class="reference internal" href="#id2" id="id50">Cons</a></li>
+<li><a class="reference internal" href="#syntax" id="id51">Syntax</a><ul>
+<li><a class="reference internal" href="#checkboxes" id="id52">Checkboxes</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#services" id="id52">Services</a><ul>
-<li><a class="reference internal" href="#service-evaluation-criteria" id="id53">Service Evaluation Criteria</a></li>
-<li><a class="reference internal" href="#google-calendar" id="id54">Google Calendar</a></li>
-<li><a class="reference internal" href="#rememberthemilk" id="id55">RememberTheMilk</a></li>
-<li><a class="reference internal" href="#google-tasks" id="id56">Google Tasks</a></li>
-<li><a class="reference internal" href="#google-keep" id="id57">Google Keep</a></li>
-<li><a class="reference internal" href="#wikis" id="id58">Wikis</a><ul>
-<li><a class="reference internal" href="#github-wiki" id="id59">GitHub Wiki</a></li>
+<li><a class="reference internal" href="#services" id="id53">Services</a><ul>
+<li><a class="reference internal" href="#service-evaluation-criteria" id="id54">Service Evaluation Criteria</a></li>
+<li><a class="reference internal" href="#google-calendar" id="id55">Google Calendar</a></li>
+<li><a class="reference internal" href="#rememberthemilk" id="id56">RememberTheMilk</a></li>
+<li><a class="reference internal" href="#google-tasks" id="id57">Google Tasks</a></li>
+<li><a class="reference internal" href="#google-keep" id="id58">Google Keep</a></li>
+<li><a class="reference internal" href="#wikis" id="id59">Wikis</a><ul>
+<li><a class="reference internal" href="#github-wiki" id="id60">GitHub Wiki</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mailing-lists" id="id60">Mailing Lists</a><ul>
-<li><a class="reference internal" href="#gnu-mailman" id="id61">GNU Mailman</a></li>
-<li><a class="reference internal" href="#google-groups" id="id62">Google Groups</a></li>
+<li><a class="reference internal" href="#mailing-lists" id="id61">Mailing Lists</a><ul>
+<li><a class="reference internal" href="#gnu-mailman" id="id62">GNU Mailman</a></li>
+<li><a class="reference internal" href="#google-groups" id="id63">Google Groups</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#forge-sites" id="id63">Forge Sites</a><ul>
-<li><a class="reference internal" href="#code-hosting" id="id64">Code hosting</a></li>
-<li><a class="reference internal" href="#collaborative-software" id="id65">Collaborative Software</a></li>
+<li><a class="reference internal" href="#forge-sites" id="id64">Forge Sites</a><ul>
+<li><a class="reference internal" href="#code-hosting" id="id65">Code hosting</a></li>
+<li><a class="reference internal" href="#collaborative-software" id="id66">Collaborative Software</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#github-repos-issues-wikis" id="id66">Github Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#github-workflow" id="id67">Github Workflow</a></li>
+<li><a class="reference internal" href="#github-repos-issues-wikis" id="id67">Github Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#github-workflow" id="id68">Github Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id68">BitBucket Repos, Issues, Wikis</a><ul>
-<li><a class="reference internal" href="#id3" id="id69">Workflow</a></li>
+<li><a class="reference internal" href="#bitbucket-repos-issues-wikis" id="id69">BitBucket Repos, Issues, Wikis</a><ul>
+<li><a class="reference internal" href="#id3" id="id70">Workflow</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#trac" id="id70">Trac</a></li>
-<li><a class="reference internal" href="#redmine" id="id71">Redmine</a></li>
-<li><a class="reference internal" href="#gitlab" id="id72">GitLab</a></li>
+<li><a class="reference internal" href="#trac" id="id71">Trac</a></li>
+<li><a class="reference internal" href="#redmine" id="id72">Redmine</a></li>
+<li><a class="reference internal" href="#gitlab" id="id73">GitLab</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#labels" id="id73">Labels</a><ul>
-<li><a class="reference internal" href="#history" id="id74">History</a></li>
-<li><a class="reference internal" href="#label-syntax" id="id75">Label Syntax</a></li>
-<li><a class="reference internal" href="#task-labels" id="id76">Task Labels</a></li>
-<li><a class="reference internal" href="#project-labels" id="id77">Project Labels</a></li>
-<li><a class="reference internal" href="#context-labels" id="id78">Context Labels</a></li>
-<li><a class="reference internal" href="#email-labels" id="id79">Email Labels</a></li>
-<li><a class="reference internal" href="#code-labels" id="id80">Code Labels</a><ul>
-<li><a class="reference internal" href="#code-label-syntax" id="id81">Code Label Syntax</a></li>
+<li><a class="reference internal" href="#labels" id="id74">Labels</a><ul>
+<li><a class="reference internal" href="#history" id="id75">History</a></li>
+<li><a class="reference internal" href="#label-syntax" id="id76">Label Syntax</a></li>
+<li><a class="reference internal" href="#task-labels" id="id77">Task Labels</a></li>
+<li><a class="reference internal" href="#project-labels" id="id78">Project Labels</a></li>
+<li><a class="reference internal" href="#context-labels" id="id79">Context Labels</a></li>
+<li><a class="reference internal" href="#email-labels" id="id80">Email Labels</a></li>
+<li><a class="reference internal" href="#code-labels" id="id81">Code Labels</a><ul>
+<li><a class="reference internal" href="#code-label-syntax" id="id82">Code Label Syntax</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tools" id="id82">Tools</a><ul>
-<li><a class="reference internal" href="#pyrtm-task-cli" id="id83">pyrtm-task-cli</a></li>
-<li><a class="reference internal" href="#workhours" id="id84">workhours</a></li>
-<li><a class="reference internal" href="#taskwarrior" id="id85">TaskWarrior</a></li>
+<li><a class="reference internal" href="#tools" id="id83">Tools</a><ul>
+<li><a class="reference internal" href="#pyrtm-task-cli" id="id84">pyrtm-task-cli</a></li>
+<li><a class="reference internal" href="#workhours" id="id85">workhours</a></li>
+<li><a class="reference internal" href="#taskwarrior" id="id86">TaskWarrior</a></li>
+<li><a class="reference internal" href="#usrlog" id="id87">Usrlog</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#best-practices" id="id86">Best Practices</a><ul>
-<li><a class="reference internal" href="#project-templating" id="id87">Project Templating</a></li>
-<li><a class="reference internal" href="#requirements-traceability" id="id88">Requirements Traceability</a></li>
-<li><a class="reference internal" href="#revision-control" id="id89">Revision Control</a></li>
-<li><a class="reference internal" href="#continuous-integration" id="id90">Continuous Integration</a></li>
+<li><a class="reference internal" href="#best-practices" id="id88">Best Practices</a><ul>
+<li><a class="reference internal" href="#use-project-templates" id="id89">Use Project Templates</a></li>
+<li><a class="reference internal" href="#develop-projects-with-requirements-traceability" id="id90">Develop Projects with Requirements Traceability</a><ul>
+<li><a class="reference internal" href="#github-gitlab-projects" id="id91">GitHub / Gitlab Projects</a></li>
+<li><a class="reference internal" href="#use-code-labels" id="id92">Use Code Labels</a></li>
+<li><a class="reference internal" href="#use-links" id="id93">Use Links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#revision-control" id="id94">Revision Control</a><ul>
+<li><a class="reference internal" href="#gitflow-and-hubflow" id="id95">GitFlow and HubFlow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#continuous-integration" id="id96">Continuous Integration</a></li>
 </ul>
 </li>
 </ul>
@@ -633,8 +661,8 @@
 </ul>
 </div>
 <div class="section" id="concept">
-<h2><a class="toc-backref" href="#id6">Concept</a><a class="headerlink" href="#concept" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default"><div class="highlight"><pre><span></span>The morning question,  |  5 | Rise, wash, and address
+<h2><a class="toc-backref" href="#id7">Concept</a><a class="headerlink" href="#concept" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The morning question,  |  5 | Rise, wash, and address
                        |      *Powerful Goodness*;
 What good shall I do   |  6 | contrive day&#39;s business and take the
 this day?              |  7 | resolution of the day; prosecute the
@@ -668,34 +696,36 @@ this day?              |  7 | resolution of the day; prosecute the
 </div>
 </div>
 <div class="section" id="goals">
-<h2><a class="toc-backref" href="#id7">Goals</a><a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Goals</a><a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Find simple workflows for productivity, efficiency, and collaboration</li>
 <li>Develop methods to retain and analyze relevant information</li>
 <li>Develop heuristics to identify tasks and sub-tasks</li>
 </ul>
 <div class="section" id="objectives">
-<h3><a class="toc-backref" href="#id8">Objectives</a><a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Objectives</a><a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[ ] Document optimal workflows</li>
-<li>[x] Create <code class="docutils literal"><span class="pre">workflow.rst</span></code> (see: current headings)</li>
+<li>[ ] Document productivity tools and their productive use</li>
+<li>[x] Create <code class="docutils literal notranslate"><span class="pre">workflow.rst</span></code> (see: current headings)</li>
 <li>[ ] Develop file metadata strategies: (folders, names, tagging, labeling)</li>
 <li>[x] Synthesize existing labeling strategies</li>
 <li>[ ] Define and describe resources: skills, time, tools, tasks</li>
 <li>[ ] Define and describe outputs: artifacts, products, deliverables</li>
 <li>[ ] R&amp;D: integrate workflow information flows<ul>
-<li>Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli, pytodo?)</li>
-<li>Logs: workhours, heka, elasticsearch, kibana</li>
+<li>Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli,
+<cite>taskw &lt;TaskWarrior&gt;</cite>)</li>
+<li>Logs: <a class="reference internal" href="#usrlog">Usrlog</a>, workhours, elasticsearch, kibana</li>
 </ul>
 </li>
 </ul>
-<p>See: <a class="reference internal" href="#requirements-traceability">Requirements Traceability</a></p>
+<p>See: <a href="#id97"><span class="problematic" id="id98">`Requirements Traceability`_</span></a></p>
 </div>
 </div>
 <div class="section" id="tasks">
-<h2><a class="toc-backref" href="#id9">Tasks</a><a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Tasks</a><a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="daily">
-<h3><a class="toc-backref" href="#id10">Daily</a><a class="headerlink" href="#daily" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Daily</a><a class="headerlink" href="#daily" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Daily Google Tasks list<ul>
 <li>Daily: Uncheck list box(es), update date</li>
@@ -704,55 +734,55 @@ this day?              |  7 | resolution of the day; prosecute the
 </ul>
 </div>
 <div class="section" id="scheduled">
-<h3><a class="toc-backref" href="#id11">Scheduled</a><a class="headerlink" href="#scheduled" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Scheduled</a><a class="headerlink" href="#scheduled" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Google Calendar events (and reminders)</li>
 <li>ReadTheMilk tasks</li>
 </ul>
 </div>
 <div class="section" id="recurring">
-<h3><a class="toc-backref" href="#id12">Recurring</a><a class="headerlink" href="#recurring" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Recurring</a><a class="headerlink" href="#recurring" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Repeating Google Calendar events (and reminders)</li>
 <li>Repeating ReadTheMilk tasks</li>
 </ul>
 </div>
 <div class="section" id="phone">
-<h3><a class="toc-backref" href="#id13">Phone</a><a class="headerlink" href="#phone" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">&#64;phone</span></code></p>
+<h3><a class="toc-backref" href="#id14">Phone</a><a class="headerlink" href="#phone" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">&#64;phone</span></code></p>
 <ul class="simple">
 <li>While you were out stickies</li>
-<li><a class="reference internal" href="#email-labels">Email Labels</a>: <code class="docutils literal"><span class="pre">.p</span></code></li>
+<li><a class="reference internal" href="#email-labels">Email Labels</a>: <code class="docutils literal notranslate"><span class="pre">.p</span></code></li>
 </ul>
 </div>
 <div class="section" id="emails">
-<h3><a class="toc-backref" href="#id14">Emails</a><a class="headerlink" href="#emails" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">&#64;email</span></code></p>
+<h3><a class="toc-backref" href="#id15">Emails</a><a class="headerlink" href="#emails" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">&#64;email</span></code></p>
 <ul class="simple">
-<li><a class="reference internal" href="#email-labels">Email Labels</a>: <code class="docutils literal"><span class="pre">.tasks</span></code>, <code class="docutils literal"><span class="pre">.tasks.done</span></code></li>
-<li>Recurring daily tasks <code class="docutils literal"><span class="pre">.tasks.daily</span></code>
+<li><a class="reference internal" href="#email-labels">Email Labels</a>: <code class="docutils literal notranslate"><span class="pre">.tasks</span></code>, <code class="docutils literal notranslate"><span class="pre">.tasks.done</span></code></li>
+<li>Recurring daily tasks <code class="docutils literal notranslate"><span class="pre">.tasks.daily</span></code>
 * Google Calendar Event Reminders</li>
 <li>When a task is completed,
-change <code class="docutils literal"><span class="pre">.tasks</span></code> to <code class="docutils literal"><span class="pre">.tasks.done</span></code></li>
+change <code class="docutils literal notranslate"><span class="pre">.tasks</span></code> to <code class="docutils literal notranslate"><span class="pre">.tasks.done</span></code></li>
 </ul>
 </div>
 <div class="section" id="text-files">
-<h3><a class="toc-backref" href="#id15">Text Files</a><a class="headerlink" href="#text-files" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Text Files</a><a class="headerlink" href="#text-files" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">README</span></code>, <code class="docutils literal"><span class="pre">README.txt</span></code>, <code class="docutils literal"><span class="pre">README.md</span></code>, <code class="docutils literal"><span class="pre">README.rst</span></code></li>
-<li><code class="docutils literal"><span class="pre">CHANGES</span></code>, <code class="docutils literal"><span class="pre">CHANGES.txt</span></code>, <code class="docutils literal"><span class="pre">CHANGES.md</span></code>, <code class="docutils literal"><span class="pre">CHANGES.rst</span></code></li>
-<li><code class="docutils literal"><span class="pre">CHANGELOG</span></code>, <code class="docutils literal"><span class="pre">CHANGELOG.txt</span></code>, <code class="docutils literal"><span class="pre">CHANGELOG.md</span></code>, <code class="docutils literal"><span class="pre">CHANGELOG.rst</span></code></li>
-<li><code class="docutils literal"><span class="pre">HISTORY</span></code>, <code class="docutils literal"><span class="pre">HISTORY.txt</span></code>, <code class="docutils literal"><span class="pre">HISTORY.md</span></code>, <code class="docutils literal"><span class="pre">HISTORY.rst</span></code></li>
-<li><code class="docutils literal"><span class="pre">TODO</span></code>, <code class="docutils literal"><span class="pre">TODO.rst</span></code>, <code class="docutils literal"><span class="pre">TODO.md</span></code>, <code class="docutils literal"><span class="pre">TODO.html</span></code></li>
-<li><code class="docutils literal"><span class="pre">index.html</span></code>, <code class="docutils literal"><span class="pre">index.htm</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">README</span></code>, <code class="docutils literal notranslate"><span class="pre">README.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, <code class="docutils literal notranslate"><span class="pre">README.rst</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CHANGES</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGES.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGES.md</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGES.rst</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CHANGELOG</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGELOG.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGELOG.md</span></code>, <code class="docutils literal notranslate"><span class="pre">CHANGELOG.rst</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">HISTORY</span></code>, <code class="docutils literal notranslate"><span class="pre">HISTORY.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">HISTORY.md</span></code>, <code class="docutils literal notranslate"><span class="pre">HISTORY.rst</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">TODO</span></code>, <code class="docutils literal notranslate"><span class="pre">TODO.rst</span></code>, <code class="docutils literal notranslate"><span class="pre">TODO.md</span></code>, <code class="docutils literal notranslate"><span class="pre">TODO.html</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">index.html</span></code>, <code class="docutils literal notranslate"><span class="pre">index.htm</span></code></li>
 </ul>
 <div class="section" id="lightweight-markup-syntax">
-<h4><a class="toc-backref" href="#id16">Lightweight Markup Syntax</a><a class="headerlink" href="#lightweight-markup-syntax" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id17">Lightweight Markup Syntax</a><a class="headerlink" href="#lightweight-markup-syntax" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Lightweight_markup_language">https://en.wikipedia.org/wiki/Lightweight_markup_language</a></p>
 <div class="section" id="text-file-headings">
-<h5><a class="toc-backref" href="#id17">Text File Headings</a><a class="headerlink" href="#text-file-headings" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id18">Text File Headings</a><a class="headerlink" href="#text-file-headings" title="Permalink to this headline">¶</a></h5>
 <p>ATX Headings (Markdown,):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># h1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># h1</span>
 <span class="c1">## h2</span>
 <span class="c1">### h3</span>
 </pre></div>
@@ -762,7 +792,7 @@ change <code class="docutils literal"><span class="pre">.tasks</span></code> to 
 <div class="line"><a class="reference external" href="https://docs.python.org/devguide/documenting.html#sections">https://docs.python.org/devguide/documenting.html#sections</a></div>
 <div class="line"><a class="reference external" href="http://sphinx-doc.org/rest.html#sections">http://sphinx-doc.org/rest.html#sections</a></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#####</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#####</span>
 <span class="n">part</span>
 <span class="c1">#####</span>
 
@@ -786,48 +816,48 @@ change <code class="docutils literal"><span class="pre">.tasks</span></code> to 
 </div>
 </div>
 <div class="section" id="text-file-attributes">
-<h4><a class="toc-backref" href="#id18">Text File Attributes</a><a class="headerlink" href="#text-file-attributes" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id19">Text File Attributes</a><a class="headerlink" href="#text-file-attributes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Path: relative (<code class="docutils literal"><span class="pre">./path/to/file.ext</span></code>)</li>
-<li>Path: absolute (<code class="docutils literal"><span class="pre">/home/user/path/to/file.ext</span></code>)</li>
-<li>File extension (<code class="docutils literal"><span class="pre">.ext</span></code>)</li>
-<li>Filesystem attributes (<code class="docutils literal"><span class="pre">getfacl</span></code>, <code class="docutils literal"><span class="pre">setfacl</span></code>)</li>
-<li>MIME-type (<code class="docutils literal"><span class="pre">file</span> <span class="pre">--mime</span></code>)</li>
-<li>Byte-order-marker (<code class="docutils literal"><span class="pre">file</span> <span class="pre">--mime</span></code>)</li>
-<li>Line endings (DOS, UNIX) (<code class="docutils literal"><span class="pre">Ctrl-V</span> <span class="pre">Ctrl-M</span></code>)</li>
-<li>Shebang line (<code class="docutils literal"><span class="pre">#!/bin/sh</span></code>, <code class="docutils literal"><span class="pre">#!/usr/bin/env</span> <span class="pre">python</span></code>)</li>
-<li>Creation time (<code class="docutils literal"><span class="pre">stat</span></code>)</li>
-<li>Modification time (<code class="docutils literal"><span class="pre">stat</span></code>)</li>
+<li>Path: relative (<code class="docutils literal notranslate"><span class="pre">./path/to/file.ext</span></code>)</li>
+<li>Path: absolute (<code class="docutils literal notranslate"><span class="pre">/home/user/path/to/file.ext</span></code>)</li>
+<li>File extension (<code class="docutils literal notranslate"><span class="pre">.ext</span></code>)</li>
+<li>Filesystem attributes (<code class="docutils literal notranslate"><span class="pre">getfacl</span></code>, <code class="docutils literal notranslate"><span class="pre">setfacl</span></code>)</li>
+<li>MIME-type (<code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">--mime</span></code>)</li>
+<li>Byte-order-marker (<code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">--mime</span></code>)</li>
+<li>Line endings (DOS, UNIX) (<code class="docutils literal notranslate"><span class="pre">Ctrl-V</span> <span class="pre">Ctrl-M</span></code>)</li>
+<li>Shebang line (<code class="docutils literal notranslate"><span class="pre">#!/bin/sh</span></code>, <code class="docutils literal notranslate"><span class="pre">#!/usr/bin/env</span> <span class="pre">python</span></code>)</li>
+<li>Creation time (<code class="docutils literal notranslate"><span class="pre">stat</span></code>)</li>
+<li>Modification time (<code class="docutils literal notranslate"><span class="pre">stat</span></code>)</li>
 <li>Local undo/backup cache path</li>
 </ul>
 </div>
 </div>
 <div class="section" id="source-code">
-<h3><a class="toc-backref" href="#id19">Source Code</a><a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id20">Source Code</a><a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Source_code">https://en.wikipedia.org/wiki/Source_code</a></p>
 <div class="section" id="source-code-file-attributes">
-<h4><a class="toc-backref" href="#id20">Source Code File Attributes</a><a class="headerlink" href="#source-code-file-attributes" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id21">Source Code File Attributes</a><a class="headerlink" href="#source-code-file-attributes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="#text-file-attributes">Text File Attributes</a></li>
 <li>path: relative_to_repo_path</li>
 <li>repo_revid</li>
 <li>repo_branch</li>
 <li>repo_path</li>
-<li>repo_remote_URL(s)=``[{&#8216;name&#8217;:&#8217;origin&#8217;,
-&#8216;url&#8217;:&#8217;<a class="reference external" href="ssh://git&#64;github.com/westurner/wiki">ssh://git&#64;github.com/westurner/wiki</a>&#8216;}]``</li>
+<li>repo_remote_URL(s)=``[{‘name’:’origin’,
+‘url’:’<a class="reference external" href="ssh://git&#64;github.com/westurner/wiki">ssh://git&#64;github.com/westurner/wiki</a>’}]``</li>
 <li>repo_log(paths) history log</li>
 <li>repo_log(paths) history log across renames</li>
 </ul>
 </div>
 <div class="section" id="comment-tags">
-<h4><a class="toc-backref" href="#id21">Comment Tags</a><a class="headerlink" href="#comment-tags" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id22">Comment Tags</a><a class="headerlink" href="#comment-tags" title="Permalink to this headline">¶</a></h4>
 <p>Comment tags:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">TODO</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TODO</span>
 <span class="n">FIXME</span>
 <span class="n">XXX</span>
 </pre></div>
 </div>
-<div class="highlight-sh"><div class="highlight"><pre><span></span>grep <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>grep <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
 grin <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
 hg grep <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
 git grep <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
@@ -836,26 +866,26 @@ git grep <span class="s1">&#39;TODO|FIXME|XXX&#39;</span>
 </div>
 </div>
 <div class="section" id="patches">
-<h3><a class="toc-backref" href="#id22">Patches</a><a class="headerlink" href="#patches" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id23">Patches</a><a class="headerlink" href="#patches" title="Permalink to this headline">¶</a></h3>
 <p>Also referred to as a diff.</p>
 <p>When an author has modified a file in a repository,
 there is a difference (in terms of text lines and/or bytes changed)
 between their local revision and
 the repository revision they started with.
-That&#8217;s called a &#8216;diff&#8217; or a &#8216;patch&#8217;.</p>
+That’s called a ‘diff’ or a ‘patch’.</p>
 <p>To share those changes, an author must submit a patch to
 a repository maintainer, who is responsible for applying
 or not applying the changes to a branch of a repository.</p>
-<p>The patch review feedback cycle &#8211; classically over NNTP or SMTP (email) &#8211;
+<p>The patch review feedback cycle – classically over NNTP or SMTP (email) –
 can produce lots of text: both revisions to the patch and an
 asynchronous stream of emails and IRC messages.</p>
 <div class="section" id="patch-attributes">
-<h4><a class="toc-backref" href="#id23">Patch attributes</a><a class="headerlink" href="#patch-attributes" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id24">Patch attributes</a><a class="headerlink" href="#patch-attributes" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="patch-header">
-<h5><a class="toc-backref" href="#id24">Patch Header</a><a class="headerlink" href="#patch-header" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id25">Patch Header</a><a class="headerlink" href="#patch-header" title="Permalink to this headline">¶</a></h5>
 <ul>
 <li><p class="first">[ ] Patch header</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">Add</span> <span class="n">sphinx</span> <span class="n">Makefile</span> <span class="ow">and</span> <span class="n">conf</span><span class="o">.</span><span class="n">py</span> <span class="p">(</span><span class="c1">#3)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">Add</span> <span class="n">sphinx</span> <span class="n">Makefile</span> <span class="ow">and</span> <span class="n">conf</span><span class="o">.</span><span class="n">py</span> <span class="p">(</span><span class="c1">#3)</span>
 
 <span class="n">Add</span> <span class="n">a</span> <span class="n">new</span> <span class="n">feature</span> <span class="n">called</span> <span class="n">XYZ</span><span class="p">,</span>
 <span class="n">which</span> <span class="n">modifies</span> <span class="n">components</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Z</span>
@@ -864,32 +894,32 @@ asynchronous stream of emails and IRC messages.</p>
 </pre></div>
 </div>
 <ul class="simple">
-<li>[ ] <a class="reference internal" href="#code-labels">Code labels</a> in subject line: <code class="docutils literal"><span class="pre">ENH:</span> <span class="pre">Add</span> <span class="pre">sphinx</span> <span class="pre">Makefile</span> <span class="pre">and</span> <span class="pre">conf.py</span></code></li>
-<li>[ ] <a class="reference internal" href="#issues">Issues</a> number in subject line: <code class="docutils literal"><span class="pre">(#3)</span></code></li>
+<li>[ ] <a class="reference internal" href="#code-labels">Code labels</a> in subject line: <code class="docutils literal notranslate"><span class="pre">ENH:</span> <span class="pre">Add</span> <span class="pre">sphinx</span> <span class="pre">Makefile</span> <span class="pre">and</span> <span class="pre">conf.py</span></code></li>
+<li>[ ] <a class="reference internal" href="#issues">Issues</a> number in subject line: <code class="docutils literal notranslate"><span class="pre">(#3)</span></code></li>
 <li>[ ] <a class="reference internal" href="#issues">Issues</a> link in commit message:
-<code class="docutils literal"><span class="pre">https://github.com/westurner/wiki/issues/3</span></code></li>
+<code class="docutils literal notranslate"><span class="pre">https://github.com/westurner/wiki/issues/3</span></code></li>
 <li>[ ] Patch header description (complete commit message)</li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="patch-diff">
-<h5><a class="toc-backref" href="#id25">Patch Diff</a><a class="headerlink" href="#patch-diff" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id26">Patch Diff</a><a class="headerlink" href="#patch-diff" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
-<li>[ ] Patch <code class="docutils literal"><span class="pre">diff</span></code><ul>
-<li>[ ] <code class="docutils literal"><span class="pre">--git</span></code>-style diffs</li>
+<li>[ ] Patch <code class="docutils literal notranslate"><span class="pre">diff</span></code><ul>
+<li>[ ] <code class="docutils literal notranslate"><span class="pre">--git</span></code>-style diffs</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div class="section" id="patch-workflow">
-<h4><a class="toc-backref" href="#id26">Patch workflow</a><a class="headerlink" href="#patch-workflow" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id27">Patch workflow</a><a class="headerlink" href="#patch-workflow" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Send patch(es) as an email attachment (&#8220;a patch bomb&#8221;)<ul>
+<li>Send patch(es) as an email attachment (“a patch bomb”)<ul>
 <li>DOC: write a Patch header for a new BUG,TST,ENH</li>
 <li>DOC: prepend <a class="reference internal" href="#code-labels">Code Labels</a> to first line of patch header (commit message)<ul>
-<li><code class="docutils literal"><span class="pre">TST,BLD,CLN:</span> <span class="pre">code</span> <span class="pre">and</span> <span class="pre">test</span> <span class="pre">an</span> <span class="pre">ENHancement</span> <span class="pre">or</span> <span class="pre">fix</span> <span class="pre">a</span> <span class="pre">BUG</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">TST,BLD,CLN:</span> <span class="pre">code</span> <span class="pre">and</span> <span class="pre">test</span> <span class="pre">an</span> <span class="pre">ENHancement</span> <span class="pre">or</span> <span class="pre">fix</span> <span class="pre">a</span> <span class="pre">BUG</span></code></li>
 </ul>
 </li>
 <li>DOC: write a commit message</li>
@@ -898,37 +928,37 @@ asynchronous stream of emails and IRC messages.</p>
 <li>(pending) correlate manual line references in feedback emails with
 the correct revision of the patch</li>
 <li>(pending|accepted|rejected) review constructive feedback</li>
-<li>(closed,done) Reach &#8216;done&#8217;; update TODO system</li>
+<li>(closed,done) Reach ‘done’; update TODO system</li>
 </ul>
 </li>
 <li>Receive patch(es) as an email attachment<ul>
-<li>(.unread) Open Loop: they&#8217;re waiting for feedback</li>
+<li>(.unread) Open Loop: they’re waiting for feedback</li>
 <li>(.read) read, review, revise, respond: email, editor</li>
 <li>(.tested) Test: run existing or documentation tests</li>
 <li>(pending) Respond: [Email] Feedback</li>
 <li>(pending|accepted|rejected) Evauluate: Apply or do not apply</li>
 <li>(accepted) Update release log (Desire <a class="reference internal" href="#code-labels">Code Labels</a>)</li>
 <li>(released) Release: issue a version identifier with merged patch</li>
-<li>(closed,done) Reach &#8216;done&#8217;; update TODO system</li>
+<li>(closed,done) Reach ‘done’; update TODO system</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div class="section" id="issues">
-<h3><a class="toc-backref" href="#id27">Issues</a><a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id28">Issues</a><a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h3>
 <p>An issue records attributes of, notes regarding, and progress towards a finite request, report, or work item.</p>
 <p>Issues are often also referred to as tickets, issues, cards, and bugtracking.</p>
 <p>Agile methodologies for working with issues:
 <a class="reference external" href="https://wrdrd.github.io/docs/consulting/software-development#agile">https://wrdrd.github.io/docs/consulting/software-development#agile</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems">https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems</a></p>
 <ul class="simple">
-<li><a class="reference external" href="https://waffle.io/">https://waffle.io/</a> &#8211; Kanban board of <a class="reference internal" href="#github-issues">GitHub Issues</a>
-with <code class="docutils literal"><span class="pre">in</span> <span class="pre">progress</span></code></li>
-<li><a class="reference external" href="https://taiga.io/">https://taiga.io/</a> &#8211; Kanban/Scrum issues with code labels</li>
+<li><a class="reference external" href="https://waffle.io/">https://waffle.io/</a> – Kanban board of <a class="reference internal" href="#github-issues">GitHub Issues</a>
+with <code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">progress</span></code></li>
+<li><a class="reference external" href="https://taiga.io/">https://taiga.io/</a> – Kanban/Scrum issues with code labels</li>
 </ul>
 <div class="section" id="issue-attributes">
-<h4><a class="toc-backref" href="#id28">Issue attributes</a><a class="headerlink" href="#issue-attributes" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id29">Issue attributes</a><a class="headerlink" href="#issue-attributes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>a title</li>
 <li>a description</li>
@@ -936,7 +966,7 @@ with <code class="docutils literal"><span class="pre">in</span> <span class="pre
 <li>metadata</li>
 </ul>
 <div class="section" id="github-issues">
-<h5><a class="toc-backref" href="#id29">GitHub Issues</a><a class="headerlink" href="#github-issues" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id30">GitHub Issues</a><a class="headerlink" href="#github-issues" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li>title</li>
 <li>body</li>
@@ -961,7 +991,7 @@ with <code class="docutils literal"><span class="pre">in</span> <span class="pre
 </ul>
 </div>
 <div class="section" id="bitbucket-issues">
-<h5><a class="toc-backref" href="#id30">BitBucket Issues</a><a class="headerlink" href="#bitbucket-issues" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id31">BitBucket Issues</a><a class="headerlink" href="#bitbucket-issues" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li>title (Title)</li>
 <li>content (Description)</li>
@@ -999,7 +1029,7 @@ with <code class="docutils literal"><span class="pre">in</span> <span class="pre
 </ul>
 </div>
 <div class="section" id="google-code-issues">
-<h5><a class="toc-backref" href="#id31">Google Code Issues</a><a class="headerlink" href="#google-code-issues" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id32">Google Code Issues</a><a class="headerlink" href="#google-code-issues" title="Permalink to this headline">¶</a></h5>
 <p>(configurable templates)</p>
 <ul class="simple">
 <li>Summary</li>
@@ -1045,7 +1075,7 @@ with <code class="docutils literal"><span class="pre">in</span> <span class="pre
 </div>
 </div>
 <div class="section" id="pull-requests">
-<h3><a class="toc-backref" href="#id32">Pull Requests</a><a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33">Pull Requests</a><a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
 <p>Projects hosted with GitHub and BitBucket generally support accepting,
 reviewing, and merging changes as pull requests; which, like
 regular patches people used to send over the email,
@@ -1054,9 +1084,9 @@ are hunks of differences between one or more files.</p>
 pull requests have
 a free-form comment stream
 and line-based commenting
-&#8211; features which simplify the change review and evaluation feedback loop.</p>
+– features which simplify the change review and evaluation feedback loop.</p>
 <div class="section" id="send-a-pull-request">
-<h4><a class="toc-backref" href="#id33">Send a Pull Request</a><a class="headerlink" href="#send-a-pull-request" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id34">Send a Pull Request</a><a class="headerlink" href="#send-a-pull-request" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first">Branch/fork, update, commit</p>
 </li>
@@ -1067,20 +1097,20 @@ and line-based commenting
 <li><p class="first">Send a pull request</p>
 <blockquote>
 <div><ul class="simple">
-<li>Email: Send a URL to the branch to pull from (tags: <code class="docutils literal"><span class="pre">.tasks</span></code>, <code class="docutils literal"><span class="pre">.code</span></code>, <code class="docutils literal"><span class="pre">-waiting</span></code>)</li>
-<li>GitHub: Click &#8216;Send Pull Request&#8217;</li>
-<li>BitBucket: Click &#8216;Send Pull Request&#8217;</li>
+<li>Email: Send a URL to the branch to pull from (tags: <code class="docutils literal notranslate"><span class="pre">.tasks</span></code>, <code class="docutils literal notranslate"><span class="pre">.code</span></code>, <code class="docutils literal notranslate"><span class="pre">-waiting</span></code>)</li>
+<li>GitHub: Click ‘Send Pull Request’</li>
+<li>BitBucket: Click ‘Send Pull Request’</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Open Loop: <code class="docutils literal"><span class="pre">-waiting</span></code> for feedback</p>
+<li><p class="first">Open Loop: <code class="docutils literal notranslate"><span class="pre">-waiting</span></code> for feedback</p>
 </li>
 </ul>
 </div>
 <div class="section" id="review-a-pull-request">
-<h4><a class="toc-backref" href="#id34">Review a Pull Request</a><a class="headerlink" href="#review-a-pull-request" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id35">Review a Pull Request</a><a class="headerlink" href="#review-a-pull-request" title="Permalink to this headline">¶</a></h4>
 <ul>
-<li><p class="first">Open Loop: they&#8217;re waiting for feedback</p>
+<li><p class="first">Open Loop: they’re waiting for feedback</p>
 </li>
 <li><p class="first">Read, ReviewTest*, Respond</p>
 </li>
@@ -1107,18 +1137,18 @@ and line-based commenting
 </div>
 </div>
 <div class="section" id="lists">
-<h2><a class="toc-backref" href="#id35">Lists</a><a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id36">Lists</a><a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mental">
-<h3><a class="toc-backref" href="#id36">Mental</a><a class="headerlink" href="#mental" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id37">Mental</a><a class="headerlink" href="#mental" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Mnemonics</li>
-<li>String around one&#8217;s finger</li>
-<li>Note on one&#8217;s hand</li>
+<li>String around one’s finger</li>
+<li>Note on one’s hand</li>
 <li>Cognitive representation (mental picture) of a list</li>
 <li>Graph with edges that have magnitude</li>
 </ul>
 <div class="section" id="mental-list-attributes">
-<h4><a class="toc-backref" href="#id37">Mental list attributes</a><a class="headerlink" href="#mental-list-attributes" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id38">Mental list attributes</a><a class="headerlink" href="#mental-list-attributes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>[ ] 6-Ws: Who, What, When, Where, Why, and How<ul>
 <li>[ ] What: Project</li>
@@ -1133,9 +1163,9 @@ and line-based commenting
 </div>
 </div>
 <div class="section" id="paper">
-<h3><a class="toc-backref" href="#id38">Paper</a><a class="headerlink" href="#paper" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id39">Paper</a><a class="headerlink" href="#paper" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="pros">
-<h4><a class="toc-backref" href="#id39">Pros</a><a class="headerlink" href="#pros" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id40">Pros</a><a class="headerlink" href="#pros" title="Permalink to this headline">¶</a></h4>
 <blockquote class="epigraph">
 <div>Just pick up a sheet of paper,
 write something down,
@@ -1147,7 +1177,7 @@ and hand it to me.</div></blockquote>
 </ul>
 </div>
 <div class="section" id="cons">
-<h4><a class="toc-backref" href="#id40">Cons</a><a class="headerlink" href="#cons" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id41">Cons</a><a class="headerlink" href="#cons" title="Permalink to this headline">¶</a></h4>
 <blockquote class="epigraph">
 <div>Ask ____ to ask _____ to have that sent over to _________.</div></blockquote>
 <p>Collaboration strategy:</p>
@@ -1160,37 +1190,37 @@ and hand it to me.</div></blockquote>
 </ul>
 </div>
 <div class="section" id="implementations">
-<h4><a class="toc-backref" href="#id41">Implementations</a><a class="headerlink" href="#implementations" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id42">Implementations</a><a class="headerlink" href="#implementations" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="schedule">
-<h5><a class="toc-backref" href="#id42">Schedule</a><a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id43">Schedule</a><a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h5>
 <p>Chronological sequence of events</p>
 </div>
 <div class="section" id="calendar">
-<h5><a class="toc-backref" href="#id43">Calendar</a><a class="headerlink" href="#calendar" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id44">Calendar</a><a class="headerlink" href="#calendar" title="Permalink to this headline">¶</a></h5>
 <p>Visual grid of day, week, month, quarter, year</p>
-<p>Weekly views: <code class="docutils literal"><span class="pre">M-Su</span></code>, <code class="docutils literal"><span class="pre">Su-Sa</span></code></p>
+<p>Weekly views: <code class="docutils literal notranslate"><span class="pre">M-Su</span></code>, <code class="docutils literal notranslate"><span class="pre">Su-Sa</span></code></p>
 </div>
 <div class="section" id="agenda">
-<h5><a class="toc-backref" href="#id44">Agenda</a><a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id45">Agenda</a><a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h5>
 <p>Action items to accomplish within a given context</p>
 </div>
 <div class="section" id="todo-list">
-<h5><a class="toc-backref" href="#id45">TODO List</a><a class="headerlink" href="#todo-list" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id46">TODO List</a><a class="headerlink" href="#todo-list" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li>[ ] create a list of items to accomplish</li>
-<li>[ ] show completion with <code class="docutils literal"><span class="pre">[x]</span></code> checkmarks</li>
+<li>[ ] show completion with <code class="docutils literal notranslate"><span class="pre">[x]</span></code> checkmarks</li>
 <li>[ ] show completion with strikethrough (crossing things off)</li>
 </ul>
 </div>
 <div class="section" id="hipster-pda">
-<h5><a class="toc-backref" href="#id46">Hipster PDA</a><a class="headerlink" href="#hipster-pda" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id47">Hipster PDA</a><a class="headerlink" href="#hipster-pda" title="Permalink to this headline">¶</a></h5>
 <p>Pocket-sized notebook sheet of paper</p>
 <p>see: <a class="reference internal" href="#pyrtm-task-cli">pyrtm-task-cli</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="text">
-<h3><a class="toc-backref" href="#id47">Text</a><a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id48">Text</a><a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
 <p>Typed plaintext.  Usually with some form of lightweight markup for
 lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <p>Stored with:</p>
@@ -1200,14 +1230,14 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 <li>VCS Repository (git, hg)</li>
 </ul>
 <div class="section" id="id1">
-<h4><a class="toc-backref" href="#id48">Pros</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id49">Pros</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Simple</li>
 <li>Great with a keyboard, syntax highlighting, and syntax checking</li>
 </ul>
 </div>
 <div class="section" id="id2">
-<h4><a class="toc-backref" href="#id49">Cons</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id50">Cons</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Synchronicity: keeping everyone on the same revision of the page</li>
 <li>Mobile Interface: no</li>
@@ -1216,9 +1246,9 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </ul>
 </div>
 <div class="section" id="syntax">
-<h4><a class="toc-backref" href="#id50">Syntax</a><a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id51">Syntax</a><a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h4>
 <p>ReStructuredText, Markdown, [MediaWiki, BBCode, Textile]:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">one</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">one</span>
 <span class="o">*</span> <span class="n">two</span>
 <span class="o">*</span> <span class="n">three</span>
 
@@ -1228,9 +1258,9 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </pre></div>
 </div>
 <div class="section" id="checkboxes">
-<h5><a class="toc-backref" href="#id51">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id52">Checkboxes</a><a class="headerlink" href="#checkboxes" title="Permalink to this headline">¶</a></h5>
 <p>ReStructuredText:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>* [x] one **bold**
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* [x] one **bold**
 * [ ] two *italic*
 
   * [x] two.one
@@ -1240,7 +1270,7 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </pre></div>
 </div>
 <p>Markdown:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>* [x] one **bold**
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* [x] one **bold**
 * [ ] two *italic*
   * [x] two.one
   * [ ] two.two \* two
@@ -1252,19 +1282,19 @@ lists, nested lists, bold, italic, [underline, strikethrough].</p>
 </div>
 </div>
 <div class="section" id="services">
-<h2><a class="toc-backref" href="#id52">Services</a><a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id53">Services</a><a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
 <p>Web applications and web service
 systems designed to track task state for one or more people
 moving toward achieving objectives that satisfy the goals.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
 <div class="section" id="service-evaluation-criteria">
-<h3><a class="toc-backref" href="#id53">Service Evaluation Criteria</a><a class="headerlink" href="#service-evaluation-criteria" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id54">Service Evaluation Criteria</a><a class="headerlink" href="#service-evaluation-criteria" title="Permalink to this headline">¶</a></h3>
 <p>There is a spectrum between
-&#8220;we&#8217;ll remember which checkboxes for you&#8221;
-and &#8220;this task is part of a project
+“we’ll remember which checkboxes for you”
+and “this task is part of a project
 supported by these people
 in these roles
-with these permissions.&#8221;</p>
+with these permissions.”</p>
 <ul class="simple">
 <li>Web Interface: yes/link/no/date</li>
 <li>Mobile Interface: yes/link/no/date</li>
@@ -1290,7 +1320,7 @@ with these permissions.&#8221;</p>
 </ul>
 </div>
 <div class="section" id="google-calendar">
-<h3><a class="toc-backref" href="#id54">Google Calendar</a><a class="headerlink" href="#google-calendar" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id55">Google Calendar</a><a class="headerlink" href="#google-calendar" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Web Interface: <a class="reference external" href="https://google.com/calendar/">https://google.com/calendar/</a></li>
 <li>Mobile Interface: <a class="reference external" href="https://www.google.com/calendar/m">https://www.google.com/calendar/m</a></li>
@@ -1303,7 +1333,7 @@ with these permissions.&#8221;</p>
 </ul>
 </div>
 <div class="section" id="rememberthemilk">
-<h3><a class="toc-backref" href="#id55">RememberTheMilk</a><a class="headerlink" href="#rememberthemilk" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id56">RememberTheMilk</a><a class="headerlink" href="#rememberthemilk" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Web Interface: <a class="reference external" href="https://www.rememberthemilk.com/">https://www.rememberthemilk.com/</a></li>
 <li>Mobile Interface:</li>
@@ -1321,7 +1351,7 @@ with these permissions.&#8221;</p>
 </ul>
 </div>
 <div class="section" id="google-tasks">
-<h3><a class="toc-backref" href="#id56">Google Tasks</a><a class="headerlink" href="#google-tasks" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id57">Google Tasks</a><a class="headerlink" href="#google-tasks" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Integrates with Google Calendar: <a class="reference external" href="https://www.google.com/calendar/">https://www.google.com/calendar/</a></li>
 <li>Web Interface: <a class="reference external" href="https://www.gmail.com/mail/help/tasks/">https://www.gmail.com/mail/help/tasks/</a></li>
@@ -1332,7 +1362,7 @@ with these permissions.&#8221;</p>
 </ul>
 </div>
 <div class="section" id="google-keep">
-<h3><a class="toc-backref" href="#id57">Google Keep</a><a class="headerlink" href="#google-keep" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id58">Google Keep</a><a class="headerlink" href="#google-keep" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Checkbox sticky notes</li>
 <li>Web Interface: <a class="reference external" href="https://drive.google.com/keep/">https://drive.google.com/keep/</a></li>
@@ -1344,7 +1374,7 @@ with these permissions.&#8221;</p>
 </ul>
 </div>
 <div class="section" id="wikis">
-<h3><a class="toc-backref" href="#id58">Wikis</a><a class="headerlink" href="#wikis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id59">Wikis</a><a class="headerlink" href="#wikis" title="Permalink to this headline">¶</a></h3>
 <p>A wiki is a set of documents and attachments
 that can be edited through the web,
 usually with some form of <cite>Lightweight Markup Language</cite>
@@ -1367,24 +1397,24 @@ and WikiText linking extensions.</p>
 <li>Pandoc converts (sometimes lossily) between many wiki markup syntaxes</li>
 </ul>
 <div class="section" id="github-wiki">
-<h4><a class="toc-backref" href="#id59">GitHub Wiki</a><a class="headerlink" href="#github-wiki" title="Permalink to this headline">¶</a></h4>
-<p>These <code class="docutils literal"><span class="pre">.rst</span></code> ReStructuredText files are maintained with a <code class="docutils literal"><span class="pre">.rest</span></code>
+<h4><a class="toc-backref" href="#id60">GitHub Wiki</a><a class="headerlink" href="#github-wiki" title="Permalink to this headline">¶</a></h4>
+<p>These <code class="docutils literal notranslate"><span class="pre">.rst</span></code> ReStructuredText files are maintained with a <code class="docutils literal notranslate"><span class="pre">.rest</span></code>
 extension to make it possible to edit these pages as both
 a GitHub wiki and
 a normal Sphinx git repository
-manually published to a <code class="docutils literal"><span class="pre">gh-pages</span></code> branch.</p>
+manually published to a <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch.</p>
 <p><a class="reference external" href="https://github.com/westurner/wiki/blob/master/Makefile">https://github.com/westurner/wiki/blob/master/Makefile</a></p>
 <ul class="simple">
-<li>&#8220;What advantages/disadvantages are there to having both a wiki view and a Sphinx view?&#8221; <a class="reference external" href="https://github.com/westurner/wiki/issues/5">https://github.com/westurner/wiki/issues/5</a></li>
+<li>“What advantages/disadvantages are there to having both a wiki view and a Sphinx view?” <a class="reference external" href="https://github.com/westurner/wiki/issues/5">https://github.com/westurner/wiki/issues/5</a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="mailing-lists">
-<h3><a class="toc-backref" href="#id60">Mailing Lists</a><a class="headerlink" href="#mailing-lists" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id61">Mailing Lists</a><a class="headerlink" href="#mailing-lists" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Electronic_mailing_list">https://en.wikipedia.org/wiki/Electronic_mailing_list</a></p>
-<p>Email relay application server (&#8220;listserv&#8221;)</p>
+<p>Email relay application server (“listserv”)</p>
 <div class="section" id="gnu-mailman">
-<h4><a class="toc-backref" href="#id61">GNU Mailman</a><a class="headerlink" href="#gnu-mailman" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id62">GNU Mailman</a><a class="headerlink" href="#gnu-mailman" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/mailman/">https://www.gnu.org/software/mailman/</a></div>
 <div class="line">Src: <a class="reference external" href="https://launchpad.net/mailman/3.0">https://launchpad.net/mailman/3.0</a></div>
@@ -1405,7 +1435,7 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 </ul>
 </div>
 <div class="section" id="google-groups">
-<h4><a class="toc-backref" href="#id62">Google Groups</a><a class="headerlink" href="#google-groups" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id63">Google Groups</a><a class="headerlink" href="#google-groups" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://groups.google.com/">https://groups.google.com/</a></div>
 </div>
@@ -1419,7 +1449,7 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 </div>
 </div>
 <div class="section" id="forge-sites">
-<h3><a class="toc-backref" href="#id63">Forge Sites</a><a class="headerlink" href="#forge-sites" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id64">Forge Sites</a><a class="headerlink" href="#forge-sites" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Forge_(software)">https://en.wikipedia.org/wiki/Forge_(software)</a></p>
 <ul class="simple">
 <li>[ ] Code Repository</li>
@@ -1430,7 +1460,7 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities</a></p>
 <div class="section" id="code-hosting">
-<h4><a class="toc-backref" href="#id64">Code hosting</a><a class="headerlink" href="#code-hosting" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id65">Code hosting</a><a class="headerlink" href="#code-hosting" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/westurner/wiki/wiki/GitHub">https://github.com/westurner/wiki/wiki/GitHub</a></li>
@@ -1438,7 +1468,7 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 </ul>
 </div>
 <div class="section" id="collaborative-software">
-<h4><a class="toc-backref" href="#id65">Collaborative Software</a><a class="headerlink" href="#collaborative-software" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id66">Collaborative Software</a><a class="headerlink" href="#collaborative-software" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
 <p>Examples:</p>
 <ul class="simple">
@@ -1451,7 +1481,7 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 </div>
 </div>
 <div class="section" id="github-repos-issues-wikis">
-<h3><a class="toc-backref" href="#id66">Github Repos, Issues, Wikis</a><a class="headerlink" href="#github-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id67">Github Repos, Issues, Wikis</a><a class="headerlink" href="#github-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Free public Git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://github.com/">https://github.com/</a></li>
@@ -1466,11 +1496,11 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 <p>GitHub renders the first README {.md, .rst, .txt, } it finds.</p>
 <p>GitHub ReStructuredText does not support Sphinx ReStructuredText.</p>
 <div class="section" id="github-workflow">
-<h4><a class="toc-backref" href="#id67">Github Workflow</a><a class="headerlink" href="#github-workflow" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id68">Github Workflow</a><a class="headerlink" href="#github-workflow" title="Permalink to this headline">¶</a></h4>
 <p>Ways to work with tasks and GitHub:</p>
 <ul>
 <li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">1.</span>  <span class="p">[</span> <span class="p">]</span> <span class="n">mkdir</span> <span class="n">tasks</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">tasks</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span>  <span class="p">[</span> <span class="p">]</span> <span class="n">mkdir</span> <span class="n">tasks</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">tasks</span>
 <span class="mf">2.</span>  <span class="p">[</span> <span class="p">]</span> <span class="n">git</span> <span class="n">init</span>
 <span class="mf">3.</span>  <span class="p">[</span> <span class="p">]</span> <span class="n">echo</span> <span class="s2">&quot;Tasks list&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
 <span class="mf">4.</span>  <span class="p">[</span> <span class="p">]</span> <span class="n">git</span> <span class="n">diff</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
@@ -1485,14 +1515,14 @@ manually published to a <code class="docutils literal"><span class="pre">gh-page
 <ul class="simple">
 <li>Learn to git pull, diff, patch, merge, stash, push, and send pull requests
 (with a terminal interface)<ul>
-<li><a class="reference external" href="http://hub.github.com/">hub</a> &#8211;
-a wrapper script for git that can be aliased with <code class="docutils literal"><span class="pre">alias</span> <span class="pre">git=hub</span></code></li>
-<li><a class="reference external" href="https://github.com/nvie/gitflow">gitflow</a> &#8211;
-adds <code class="docutils literal"><span class="pre">git</span> <span class="pre">flow</span> <span class="pre">&lt;command&gt;</span></code>
+<li><a class="reference external" href="http://hub.github.com/">hub</a> –
+a wrapper script for git that can be aliased with <code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">git=hub</span></code></li>
+<li><a class="reference external" href="https://github.com/nvie/gitflow">gitflow</a> –
+adds <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">flow</span> <span class="pre">&lt;command&gt;</span></code>
 <a class="reference external" href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">branching workflow</a>
 automation commands.</li>
-<li><a class="reference external" href="https://github.com/datasift/gitflow">hubflow</a> &#8211;
-adds <code class="docutils literal"><span class="pre">git</span> <span class="pre">hf</span> <span class="pre">&lt;command&gt;</span></code>
+<li><a class="reference external" href="https://github.com/datasift/gitflow">hubflow</a> –
+adds <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">hf</span> <span class="pre">&lt;command&gt;</span></code>
 branching workflow automation commands by extending gitflow.</li>
 <li>see: <a class="reference external" href="https://westurner.github.io/dotfiles/tools.html#hubflow">https://westurner.github.io/dotfiles/tools.html#hubflow</a></li>
 </ul>
@@ -1500,7 +1530,7 @@ branching workflow automation commands by extending gitflow.</li>
 </ul>
 </li>
 <li><p class="first">[ ] Create a GitHub Issue with a title and a description (Markdown) {.md}</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>1. [ ] Open the GitHub url in the browser
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. [ ] Open the GitHub url in the browser
 2. [ ] Click &#39;Issues&#39;
 3. [ ] Click &#39;New Issue&#39;
 4. [ ] Add a description &quot;ENH: New Feature&quot;
@@ -1512,15 +1542,15 @@ branching workflow automation commands by extending gitflow.</li>
 </li>
 <li><p class="first">Collaborators add labels, a milestone, and an assignee to the issue</p>
 </li>
-<li><p class="first">Link to issues with <code class="docutils literal"><span class="pre">#123</span></code> in commit messages, issues, and wikis</p>
+<li><p class="first">Link to issues with <code class="docutils literal notranslate"><span class="pre">#123</span></code> in commit messages, issues, and wikis</p>
 </li>
 <li><p class="first">Close the issue when it is done or not going to be done</p>
 <ul>
-<li><p class="first">Close a GitHub issue with the web interface &#8216;Close&#8217; button</p>
+<li><p class="first">Close a GitHub issue with the web interface ‘Close’ button</p>
 </li>
 <li><p class="first">Close a GitHub issue with text in a <strong>commit message</strong> or <strong>pull
 request description</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="n">closes</span><span class="p">:</span> <span class="c1">#01 #02)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="n">closes</span><span class="p">:</span> <span class="c1">#01 #02)</span>
 <span class="n">BUG</span><span class="p">:</span> <span class="n">fix</span> <span class="n">bug</span> <span class="p">(</span><span class="n">fixes</span><span class="p">:</span> <span class="c1">#03)</span>
 </pre></div>
 </div>
@@ -1531,16 +1561,16 @@ request description</strong>:</p>
 </ul>
 </li>
 <li><p class="first">[ ] Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>* [ ] Add list items with checkboxes (``- [x] Task three``)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* [ ] Add list items with checkboxes (``- [x] Task three``)
 </pre></div>
 </div>
 <blockquote>
 <div><ul class="simple">
-<li>[x] one &#8211;bold&#8211;</li>
+<li>[x] one –bold–</li>
 <li>[ ] two -italic-
 - [x] two.one
 - [ ] two.two - two</li>
-<li>[ ] <code class="docutils literal"><span class="pre">three</span></code> (also <cite>three</cite>)</li>
+<li>[ ] <code class="docutils literal notranslate"><span class="pre">three</span></code> (also <cite>three</cite>)</li>
 </ul>
 </div></blockquote>
 <ul class="simple">
@@ -1554,9 +1584,9 @@ request description</strong>:</p>
 </li>
 <li><p class="first">Publish Task Reports into a repository as HTML served by GitHub Pages</p>
 <ul class="simple">
-<li>Create a Sphinx ReStructuredText <code class="docutils literal"><span class="pre">conf.py</span></code></li>
-<li>Render the ReStructuredText into HTML with <code class="docutils literal"><span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span></code></li>
-<li>Host <code class="docutils literal"><span class="pre">_build/html</span></code> in the <code class="docutils literal"><span class="pre">gh-pages</span></code> branch<ul>
+<li>Create a Sphinx ReStructuredText <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></li>
+<li>Render the ReStructuredText into HTML with <code class="docutils literal notranslate"><span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span></code></li>
+<li>Host <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> in the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch<ul>
 <li>e.g. with <a class="reference external" href="https://github.com/davisp/ghp-import">https://github.com/davisp/ghp-import</a></li>
 </ul>
 </li>
@@ -1568,7 +1598,7 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 </div>
 </div>
 <div class="section" id="bitbucket-repos-issues-wikis">
-<h3><a class="toc-backref" href="#id68">BitBucket Repos, Issues, Wikis</a><a class="headerlink" href="#bitbucket-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id69">BitBucket Repos, Issues, Wikis</a><a class="headerlink" href="#bitbucket-repos-issues-wikis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Free public and private hg and git repositories</li>
 <li>Web Interface: <a class="reference external" href="https://bitbucket.org/">https://bitbucket.org/</a></li>
@@ -1584,10 +1614,10 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 <li>Language: Python</li>
 </ul>
 <div class="section" id="id3">
-<h4><a class="toc-backref" href="#id69">Workflow</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id70">Workflow</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first">[ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>1. [ ] mkdir tasks &amp;&amp; cd tasks
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. [ ] mkdir tasks &amp;&amp; cd tasks
 2. [ ] hg init
 3. [ ] echo &quot;Tasks list&quot; &gt;&gt; README.md
 4. [ ] hg add README.md
@@ -1600,16 +1630,16 @@ with <a class="reference external" href="https://readthedocs.org/">ReadTheDocs</
 </div>
 <ul class="simple">
 <li>Learn to hg pull, diff, patch, merge, shelve, push, and send pull requests<ul>
-<li><a class="reference external" href="http://mercurial.selenic.com/wiki/MqExtension">mq</a> &#8211;
+<li><a class="reference external" href="http://mercurial.selenic.com/wiki/MqExtension">mq</a> –
 a mercurial extension for working with Mercurial Patch Queues</li>
-<li><a class="reference external" href="http://tortoisehg.bitbucket.org/">tortoisehg</a> &#8211;
+<li><a class="reference external" href="http://tortoisehg.bitbucket.org/">tortoisehg</a> –
 an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p class="first">[ ] Create a BitBucket Issue with a title and a description (Markdown) {.md}</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>1. [ ] Open the BitBucket url in the browser
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. [ ] Open the BitBucket url in the browser
 2. [ ] Click &#39;Issues&#39;
 3. [ ] Click &#39;Create Issue&#39;
 4. [ ] Add a description &quot;ENH: New Feature&quot;
@@ -1623,15 +1653,15 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </li>
 <li><p class="first">[ ] Collaborators may assign an issue to a specific user</p>
 </li>
-<li><p class="first">[ ] Link to issues with <code class="docutils literal"><span class="pre">#123</span></code> in commit messages, issues, and wikis</p>
+<li><p class="first">[ ] Link to issues with <code class="docutils literal notranslate"><span class="pre">#123</span></code> in commit messages, issues, and wikis</p>
 </li>
 <li><p class="first">[ ] Close the issue when it is done or not going to be done</p>
 <ul>
-<li><p class="first">Close a BitBucket issue with the &#8216;Resolve&#8217; button</p>
+<li><p class="first">Close a BitBucket issue with the ‘Resolve’ button</p>
 </li>
 <li><p class="first">Close a BitBucket issue with text in a patch header
 (a <strong>commit message</strong> or <strong>pull request description</strong>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="n">closes</span><span class="p">:</span> <span class="c1">#01 #02)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="n">closes</span><span class="p">:</span> <span class="c1">#01 #02)</span>
 <span class="n">BUG</span><span class="p">:</span> <span class="n">fix</span> <span class="n">bug</span> <span class="p">(</span><span class="n">fixes</span><span class="p">:</span> <span class="c1">#03)</span>
 </pre></div>
 </div>
@@ -1647,7 +1677,7 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="trac">
-<h3><a class="toc-backref" href="#id70">Trac</a><a class="headerlink" href="#trac" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id71">Trac</a><a class="headerlink" href="#trac" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Trac">https://en.wikipedia.org/wiki/Trac</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></div>
@@ -1659,7 +1689,7 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </ul>
 </div>
 <div class="section" id="redmine">
-<h3><a class="toc-backref" href="#id71">Redmine</a><a class="headerlink" href="#redmine" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id72">Redmine</a><a class="headerlink" href="#redmine" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Redmine">https://en.wikipedia.org/wiki/Redmine</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.redmine.org/">http://www.redmine.org/</a></div>
@@ -1667,7 +1697,7 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="gitlab">
-<h3><a class="toc-backref" href="#id72">GitLab</a><a class="headerlink" href="#gitlab" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id73">GitLab</a><a class="headerlink" href="#gitlab" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://about.gitlab.com/">https://about.gitlab.com/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/gitlabhq/gitlabhq">https://github.com/gitlabhq/gitlabhq</a></div>
@@ -1675,9 +1705,9 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="labels">
-<h2><a class="toc-backref" href="#id73">Labels</a><a class="headerlink" href="#labels" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id74">Labels</a><a class="headerlink" href="#labels" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="history">
-<h3><a class="toc-backref" href="#id74">History</a><a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id75">History</a><a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Text files</li>
 <li>First-line file naming</li>
@@ -1685,20 +1715,20 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </ul>
 </div>
 <div class="section" id="label-syntax">
-<h3><a class="toc-backref" href="#id75">Label Syntax</a><a class="headerlink" href="#label-syntax" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id76">Label Syntax</a><a class="headerlink" href="#label-syntax" title="Permalink to this headline">¶</a></h3>
 <p>Personal labeling syntax</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">lower</span> <span class="pre">case</span></code></li>
-<li><code class="docutils literal"><span class="pre">dash-slugified</span></code></li>
-<li><code class="docutils literal"><span class="pre">period.delimited</span></code></li>
-<li><code class="docutils literal"><span class="pre">-task</span></code> (<code class="docutils literal"><span class="pre">-next</span></code>, <code class="docutils literal"><span class="pre">-waiting</span></code>, <code class="docutils literal"><span class="pre">-someday</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">&#64;context</span></code> (<code class="docutils literal"><span class="pre">&#64;home</span></code>, <code class="docutils literal"><span class="pre">&#64;campus</span></code>, <code class="docutils literal"><span class="pre">&#64;work</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">.project</span></code> (<code class="docutils literal"><span class="pre">.project.subproject</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">lower</span> <span class="pre">case</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">dash-slugified</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">period.delimited</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">-task</span></code> (<code class="docutils literal notranslate"><span class="pre">-next</span></code>, <code class="docutils literal notranslate"><span class="pre">-waiting</span></code>, <code class="docutils literal notranslate"><span class="pre">-someday</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> (<code class="docutils literal notranslate"><span class="pre">&#64;home</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;campus</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;work</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">.project</span></code> (<code class="docutils literal notranslate"><span class="pre">.project.subproject</span></code>)</li>
 </ul>
 </div>
 <div class="section" id="task-labels">
-<h3><a class="toc-backref" href="#id76">Task Labels</a><a class="headerlink" href="#task-labels" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">-</span><span class="nb">next</span>       <span class="n">a</span> <span class="nb">next</span> <span class="n">action</span>                    <span class="p">(</span> <span class="n">seeAlso</span><span class="p">:</span> <span class="n">code</span><span class="p">:</span> <span class="n">ready</span> <span class="p">)</span>
+<h3><a class="toc-backref" href="#id77">Task Labels</a><a class="headerlink" href="#task-labels" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="nb">next</span>       <span class="n">a</span> <span class="nb">next</span> <span class="n">action</span>                    <span class="p">(</span> <span class="n">seeAlso</span><span class="p">:</span> <span class="n">code</span><span class="p">:</span> <span class="n">ready</span> <span class="p">)</span>
 <span class="o">-</span><span class="n">waiting</span>    <span class="n">a</span> <span class="n">task</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">blocked</span>
 <span class="o">-</span><span class="n">someday</span>    <span class="n">an</span> <span class="n">opportunity</span> <span class="k">for</span> <span class="n">a</span> <span class="n">later</span> <span class="n">date</span>
 </pre></div>
@@ -1706,9 +1736,9 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Getting_Things_Done">https://en.wikipedia.org/wiki/Getting_Things_Done</a></p>
 </div>
 <div class="section" id="project-labels">
-<h3><a class="toc-backref" href="#id77">Project Labels</a><a class="headerlink" href="#project-labels" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id78">Project Labels</a><a class="headerlink" href="#project-labels" title="Permalink to this headline">¶</a></h3>
 <p>See: <a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">random</span>        <span class="n">an</span> <span class="n">unfiled</span> <span class="n">note</span> <span class="n">to</span> <span class="bp">self</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">random</span>        <span class="n">an</span> <span class="n">unfiled</span> <span class="n">note</span> <span class="n">to</span> <span class="bp">self</span>
 <span class="o">.</span><span class="n">d</span>             <span class="n">degrees</span>
 <span class="o">.</span><span class="n">d</span><span class="o">.&lt;</span><span class="n">name</span><span class="o">&gt;</span>      <span class="n">degree</span> <span class="n">course</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">team</span>
 <span class="o">.</span><span class="n">bills</span>         <span class="n">bills</span>
@@ -1726,8 +1756,8 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="context-labels">
-<h3><a class="toc-backref" href="#id78">Context Labels</a><a class="headerlink" href="#context-labels" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default"><div class="highlight"><pre><span></span>@home    at home
+<h3><a class="toc-backref" href="#id79">Context Labels</a><a class="headerlink" href="#context-labels" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@home    at home
 @travel  when traveling
 @campus  at school
 @class   in class    ( see: .d.&lt;course&gt; )
@@ -1744,8 +1774,8 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="email-labels">
-<h3><a class="toc-backref" href="#id79">Email Labels</a><a class="headerlink" href="#email-labels" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">tasks</span>         <span class="n">tasks</span><span class="p">,</span> <span class="n">action</span> <span class="n">items</span>
+<h3><a class="toc-backref" href="#id80">Email Labels</a><a class="headerlink" href="#email-labels" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">tasks</span>         <span class="n">tasks</span><span class="p">,</span> <span class="n">action</span> <span class="n">items</span>
 <span class="o">.</span><span class="n">tasks</span><span class="o">/.</span><span class="n">daily</span>  <span class="n">repeating</span> <span class="n">daily</span> <span class="n">tasks</span>
 <span class="o">.</span><span class="n">tasks</span><span class="o">/.</span><span class="n">done</span>   <span class="n">completed</span> <span class="n">tasks</span>
 
@@ -1778,9 +1808,9 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 </div>
 </div>
 <div class="section" id="code-labels">
-<span id="id4"></span><h3><a class="toc-backref" href="#id80">Code Labels</a><a class="headerlink" href="#code-labels" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3><a class="toc-backref" href="#id81">Code Labels</a><a class="headerlink" href="#code-labels" title="Permalink to this headline">¶</a></h3>
 <p>Code labels are three-letter codes with which commit messages can be prefixed.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CODE</span> <span class="n">Label</span>          <span class="n">color</span> <span class="n">name</span>      <span class="n">background</span>  <span class="n">text</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CODE</span> <span class="n">Label</span>          <span class="n">color</span> <span class="n">name</span>      <span class="n">background</span>  <span class="n">text</span>
 <span class="o">----</span> <span class="o">--------------</span> <span class="o">---------------</span> <span class="o">----------</span>  <span class="o">-------</span>
 <span class="n">BLD</span><span class="p">:</span> <span class="n">build</span>          <span class="n">light</span> <span class="n">green</span>     <span class="c1">#bfe5bf     #2a332a</span>
 <span class="n">BUG</span><span class="p">:</span> <span class="n">bug</span>            <span class="n">red</span>             <span class="c1">#fc2929     #ffffff  (github default)</span>
@@ -1820,8 +1850,8 @@ an excellent VCS gui for Mercurial (and git, with hg-git)</li>
 see <a class="reference external" href="https://github.com/westurner/dotfiles/labels">https://github.com/westurner/dotfiles/labels</a></p>
 </div>
 <div class="section" id="code-label-syntax">
-<h4><a class="toc-backref" href="#id81">Code Label Syntax</a><a class="headerlink" href="#code-label-syntax" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">Add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="c1">#1)</span>
+<h4><a class="toc-backref" href="#id82">Code Label Syntax</a><a class="headerlink" href="#code-label-syntax" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">Add</span> <span class="n">new</span> <span class="n">feature</span> <span class="p">(</span><span class="c1">#1)</span>
 <span class="n">BUG</span><span class="p">:</span> <span class="n">Fixes</span> <span class="c1">#3</span>
 <span class="n">DOC</span><span class="p">:</span> <span class="n">index</span><span class="o">.</span><span class="n">rst</span><span class="p">:</span> <span class="n">Add</span> <span class="n">readme</span><span class="o">.</span><span class="n">rst</span>
 <span class="n">TST</span><span class="p">:</span> <span class="n">Extend</span> <span class="n">tests</span> <span class="k">for</span> <span class="c1">#1</span>
@@ -1829,25 +1859,25 @@ see <a class="reference external" href="https://github.com/westurner/dotfiles/la
 </pre></div>
 </div>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">COMMA,DELIMITED,</span> <span class="pre">SET:</span> <span class="pre">of</span> <span class="pre">prefix</span> <span class="pre">labels</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">COMMA,DELIMITED,</span> <span class="pre">SET:</span> <span class="pre">of</span> <span class="pre">prefix</span> <span class="pre">labels</span></code></li>
 <li>Three-characters, if possible</li>
 </ul>
 <p>Code labels are helpful for:</p>
 <ul class="simple">
 <li>working with issue tracking tagging and labeling systems</li>
-<li>aggregating changes into release logs (<code class="docutils literal"><span class="pre">HISTORY</span></code>)</li>
+<li>aggregating changes into release logs (<code class="docutils literal notranslate"><span class="pre">HISTORY</span></code>)</li>
 <li>correlating changes with requirements
 (<a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_traceability">https://en.wikipedia.org/wiki/Requirements_traceability</a>)
-[<a class="reference internal" href="#requirements-traceability">Requirements Traceability</a>]</li>
+[<a href="#id99"><span class="problematic" id="id100">`Requirements Traceability`_</span></a>]</li>
 </ul>
-<p>&#8211; adapted from <a class="reference external" href="https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md">pandas/CONTRIBUTING.md</a></p>
+<p>– adapted from <a class="reference external" href="https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md">pandas/CONTRIBUTING.md</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="tools">
-<h2><a class="toc-backref" href="#id82">Tools</a><a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id83">Tools</a><a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="pyrtm-task-cli">
-<h3><a class="toc-backref" href="#id83">pyrtm-task-cli</a><a class="headerlink" href="#pyrtm-task-cli" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id84">pyrtm-task-cli</a><a class="headerlink" href="#pyrtm-task-cli" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/pyrtm-task-cli">https://bitbucket.org/westurner/pyrtm-task-cli</a></div>
 </div>
@@ -1858,15 +1888,15 @@ notebook-sized sheet of paper
 of a list of tasks at one point in time.</p>
 </div>
 <div class="section" id="workhours">
-<h3><a class="toc-backref" href="#id84">workhours</a><a class="headerlink" href="#workhours" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id85">workhours</a><a class="headerlink" href="#workhours" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/workhours">https://bitbucket.org/westurner/workhours</a></div>
 </div>
 <p>Aggregate streams of event tuples generated by various activity streams
-(bookmarks, existing browser history, <code class="docutils literal"><span class="pre">-usrlog</span></code> files)</p>
+(bookmarks, existing browser history, <code class="docutils literal notranslate"><span class="pre">-usrlog</span></code> files)</p>
 </div>
 <div class="section" id="taskwarrior">
-<h3><a class="toc-backref" href="#id85">TaskWarrior</a><a class="headerlink" href="#taskwarrior" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id86">TaskWarrior</a><a class="headerlink" href="#taskwarrior" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Taskwarrior">https://en.wikipedia.org/wiki/Taskwarrior</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://taskwarrior.org/">http://taskwarrior.org/</a></div>
@@ -1881,61 +1911,160 @@ updating, and reporting on tasks, their statuses, and their priorities.</p>
 <p>There are plugins to host and synchronize TaskWarrior task databases
 (with TaskWarrior JSON: <a class="reference external" href="http://taskwarrior.org/docs/design/task.html">http://taskwarrior.org/docs/design/task.html</a>).</p>
 </div>
+<div class="section" id="usrlog">
+<span id="index-0"></span><span id="id5"></span><h3><a class="toc-backref" href="#id87">Usrlog</a><a class="headerlink" href="#usrlog" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh">https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh</a></div>
+<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/dotfiles/usrlog">https://westurner.github.io/dotfiles/usrlog</a></div>
 </div>
-<div class="section" id="best-practices">
-<h2><a class="toc-backref" href="#id86">Best Practices</a><a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="project-templating">
-<h3><a class="toc-backref" href="#id87">Project Templating</a><a class="headerlink" href="#project-templating" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>[ ] Generate a new project with templated packaging and documentation
-(e.g. with <a class="reference external" href="https://github.com/audreyr/cookiecutter">https://github.com/audreyr/cookiecutter</a>)</li>
-</ul>
-</div>
-<div class="section" id="requirements-traceability">
-<h3><a class="toc-backref" href="#id88">Requirements Traceability</a><a class="headerlink" href="#requirements-traceability" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first">[ ] Write a Roadmap wiki entry with links to Release Plans
-and/or issue milestones
-(<a class="reference external" href="git&#64;github.com:westurner/wiki.wiki.git">git&#64;github.com:westurner/wiki.wiki.git</a> / <code class="docutils literal"><span class="pre">Roadmap.rest</span></code>)</p>
-<ul class="simple">
-<li>Roadmap wiki page: <a class="reference external" href="https://github.com/westurner/wiki/wiki/Roadmap">https://github.com/westurner/wiki/wiki/Roadmap</a></li>
-<li>Milestone: <a class="reference external" href="https://github.com/westurner/wiki/milestones/0.1">https://github.com/westurner/wiki/milestones/0.1</a></li>
-</ul>
-</li>
-<li><p class="first">[ ] Write Features and <em>User Stories</em> as issues prefixed with <code class="docutils literal"><span class="pre">ENH:</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENH</span><span class="p">:</span> <span class="n">Users</span> <span class="n">can</span> <span class="n">place</span> <span class="n">orders</span>
+<p>&gt; usrlog logs the most recent userspace
+&gt; interactive shell commandline CLI command to <code class="docutils literal notranslate"><span class="pre">$_USRLOG</span></code>
+&gt; <strong>after</strong> the shell command completes,
+&gt; with <span class="xref std std-ref">Bash</span> <code class="docutils literal notranslate"><span class="pre">PROMPT_COMMAND</span></code>
+&gt; and <span class="xref std std-ref">ZSH</span> <code class="docutils literal notranslate"><span class="pre">precmd_functions</span></code> (see: <a href="#id101"><span class="problematic" id="id102">`Caveats`_</span></a>).</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="s2">&quot;$</span><span class="si">{__DOTFILES}</span><span class="s2">/scripts/usrlog.sh&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;$</span><span class="si">{_USRLOG}</span><span class="s2">&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;$</span><span class="si">{_TERM_ID}</span><span class="s2">&quot;</span>
+
+<span class="c1"># Parse with sed and grep</span>
+<span class="n">usrlog_grep</span> <span class="s2">&quot;sudo&quot;</span> <span class="o">|</span> <span class="n">_usrlog_parse_commands</span>
+<span class="n">ug</span> <span class="s2">&quot;sudo&quot;</span> <span class="o">|</span> <span class="n">ugp</span>
+
+<span class="c1"># Parse into records and fields, select the commands, and grep</span>
+<span class="n">usrlog</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">u</span> <span class="o">--</span><span class="n">cmds</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;sudo&quot;</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="best-practices">
+<span id="index-1"></span><h2><a class="toc-backref" href="#id88">Best Practices</a><a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="use-project-templates">
+<h3><a class="toc-backref" href="#id89">Use Project Templates</a><a class="headerlink" href="#use-project-templates" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>[ ] Generate a new project with templated packaging and documentation<ul>
+<li><a class="reference external" href="https://github.com/audreyr/cookiecutter">https://github.com/audreyr/cookiecutter</a><ul>
+<li><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters">https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters</a></li>
+<li><a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta">https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta</a></li>
+</ul>
 </li>
+<li><a class="reference external" href="https://github.com/yeoman/yo">https://github.com/yeoman/yo</a><ul>
+<li><a class="reference external" href="https://yeoman.io/generators/">https://yeoman.io/generators/</a></li>
+<li><a class="reference external" href="https://github.com/yeoman/generator-generator">https://github.com/yeoman/generator-generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="develop-projects-with-requirements-traceability">
+<span id="requirements-traceability"></span><h3><a class="toc-backref" href="#id90">Develop Projects with Requirements Traceability</a><a class="headerlink" href="#develop-projects-with-requirements-traceability" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="github-gitlab-projects">
+<h4><a class="toc-backref" href="#id91">GitHub / Gitlab Projects</a><a class="headerlink" href="#github-gitlab-projects" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>[ ] When you create a new GitHub / GitLab project,<ul>
+<li>[ ] Create Issue #1. You could call it <code class="docutils literal notranslate"><span class="pre">#1</span></code> and leave it blank for now.</li>
+<li>[ ] Write a Roadmap wiki entry with links to Release Plans
+and/or issue milestones
+(<a class="reference external" href="https://github.com/westurner/wiki.wiki.git">https://github.com/westurner/wiki.wiki.git</a> / <code class="docutils literal notranslate"><span class="pre">Roadmap.rest</span></code>)<ul>
+<li>Roadmap wiki page: <a class="reference external" href="https://github.com/westurner/wiki/wiki/Roadmap">https://github.com/westurner/wiki/wiki/Roadmap</a></li>
+</ul>
+</li>
+<li>[ ] Create a milestone and an issue for it<ul>
+<li>[ ] Milestone:<ul>
+<li><a class="reference external" href="https://github.com/westurner/wiki/milestones/0.1">https://github.com/westurner/wiki/milestones/0.1</a> (open)</li>
+<li><a class="reference external" href="https://github.com/westurner/wiki/issues?q=milestone%3A0.1">https://github.com/westurner/wiki/issues?q=milestone%3A0.1</a>
+(open/closed)</li>
+</ul>
+</li>
+<li>[ ] Milestone Issue:<ul>
+<li><a class="reference external" href="https://github.com/westurner/wiki/issues/17">https://github.com/westurner/wiki/issues/17</a> “Milestone 1”<ul>
+<li>[ ] Link to the milestone issues URLs</li>
+<li>[ ] Add the Deadline:/Ends: and/or Completed: date</li>
+<li>[ ] Add a link to the release tag</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[ ] Add a link from Issue #1 to the Milestone Issue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="use-code-labels">
+<h4><a class="toc-backref" href="#id92">Use Code Labels</a><a class="headerlink" href="#use-code-labels" title="Permalink to this headline">¶</a></h4>
+<ul>
 <li><p class="first">[ ] Prefix commit messages with <a class="reference internal" href="#code-labels">Code Labels</a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span>
 <span class="n">DOC</span><span class="p">:</span> <span class="n">Add</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">documentation</span>
 <span class="n">BLD</span><span class="p">:</span> <span class="n">Update</span> <span class="n">the</span> <span class="n">build</span> <span class="n">configuration</span>
 </pre></div>
 </div>
+<ul>
+<li><p class="first">[ ] Write Features and <em>User Stories</em> as issues prefixed with <code class="docutils literal notranslate"><span class="pre">STORY</span></code>
+and <code class="docutils literal notranslate"><span class="pre">ENH:</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">STORY</span><span class="p">:</span> <span class="n">Users</span> <span class="n">can</span> <span class="n">place</span> <span class="n">orders</span>
+<span class="n">ENH</span><span class="p">:</span> <span class="n">app</span><span class="o">/</span><span class="n">orders</span><span class="p">:</span> <span class="n">Show</span> <span class="n">the</span> <span class="n">cart</span> <span class="n">item</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">header</span>
+</pre></div>
+</div>
 </li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="use-links">
+<h4><a class="toc-backref" href="#id93">Use Links</a><a class="headerlink" href="#use-links" title="Permalink to this headline">¶</a></h4>
+<p>Create traceable edges between things by adding links.</p>
+<ul>
 <li><p class="first">[ ] Link between <strong>Issues</strong>, <strong>Commits</strong>, <strong>Pull Requests</strong>, and
-<em>Release Logs</em> by referencing an issue number:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span> <span class="p">(</span><span class="c1">#123)</span>
+other docs by referencing an issue number in a title, description,
+or comment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span> <span class="p">(</span><span class="c1">#123)</span>
+<span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span> <span class="p">(</span><span class="n">projname</span><span class="c1">#123)</span>
+<span class="n">TST</span><span class="p">:</span> <span class="n">Create</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">tests</span> <span class="p">(</span><span class="n">orgname</span><span class="o">/</span><span class="n">projname</span><span class="c1">#123)</span>
 <span class="n">DOC</span><span class="p">:</span> <span class="n">Add</span> <span class="n">order</span> <span class="n">placing</span> <span class="n">documentation</span> <span class="p">(</span><span class="k">for</span> <span class="c1">#123)</span>
 <span class="n">CLN</span><span class="p">:</span> <span class="n">Cleanup</span> <span class="n">syntax</span> <span class="k">for</span> <span class="n">style</span> <span class="n">guide</span> <span class="p">(</span><span class="c1">#5678)</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">[ ] Link between <strong>Issues</strong>, <strong>Commits</strong>, <strong>Pull Requests</strong>, and
-<em>Release Logs</em> by referencing (pasting) a link (URL, URI)
-as-is (with no anchor text):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">westurner</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">issues</span><span class="o">/</span><span class="mi">1</span>
+<em>Release Logs</em> by referencing a full URL with no anchor text
+and optional trailing title or description:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">westurner</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">issues</span><span class="o">/</span><span class="mi">1</span>
 </pre></div>
 </div>
 </li>
 </ul>
 </div>
+</div>
 <div class="section" id="revision-control">
-<h3><a class="toc-backref" href="#id89">Revision Control</a><a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id94">Revision Control</a><a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gitflow-and-hubflow">
+<h4><a class="toc-backref" href="#id95">GitFlow and HubFlow</a><a class="headerlink" href="#gitflow-and-hubflow" title="Permalink to this headline">¶</a></h4>
+<p><span class="xref std std-ref">GitFlow</span> and <span class="xref std std-ref">HubFlow</span> are workflow and branch management
+systems for <span class="xref std std-ref">Git</span> and <cite>GitHub</cite>
+which specify and implement branch naming conventions
+and merge patterns which can minimize
+the need to teach new collaborators how we prefer to do branches
+around here.</p>
+<p>Sometimes GitFlow and HubFlow do fail though, so it’s good to understand
+which git commands they’re running for you so that:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">master</span></code> only has stable releases that are cleanly merged in from a
+named release branch (<code class="docutils literal notranslate"><span class="pre">release/0.1.0</span></code>) which is a branch of
+<code class="docutils literal notranslate"><span class="pre">develop</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">hotfix</span></code> branches (<code class="docutils literal notranslate"><span class="pre">hotfix/CVE-2001-fix-urgent-bug</span></code>)
+are merged to <code class="docutils literal notranslate"><span class="pre">master</span></code> as new releases and also into <code class="docutils literal notranslate"><span class="pre">develop</span></code></li>
+<li>feature branches (<code class="docutils literal notranslate"><span class="pre">feature/3-STORY-users-can-place-orders</span></code>)
+branch from <code class="docutils literal notranslate"><span class="pre">develop</span></code>;
+and are always expected to <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">-i</span> <span class="pre">develop</span></code>
+before a Pull Request can be considered for merging</li>
+</ul>
+</div>
 </div>
 <div class="section" id="continuous-integration">
-<h3><a class="toc-backref" href="#id90">Continuous Integration</a><a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id96">Continuous Integration</a><a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration#Best_practices">https://en.wikipedia.org/wiki/Continuous_integration#Best_practices</a></p>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery">https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery</a></div>
@@ -1944,58 +2073,54 @@ as-is (with no anchor text):</p>
 <div class="line"><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution">https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution</a></div>
 <div class="line"><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd">https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd</a></div>
 </div>
-<ul>
-<li><p class="first">[ ] Run tests before releasing</p>
-</li>
-<li><p class="first">[ ] Run tests before merging (e.g. Pull Request Webhooks)</p>
-</li>
-<li><p class="first">[ ] Run tests after merging. (e.g. HubFlow
-[<code class="docutils literal"><span class="pre">feature/*</span></code> -&gt;] <code class="docutils literal"><span class="pre">develop</span></code> -&gt;
-<code class="docutils literal"><span class="pre">release/v0.1.0</span></code> -&gt; <code class="docutils literal"><span class="pre">master</span></code> branch structure)</p>
-</li>
-<li><p class="first">[ ] Run tests before committing (while coding)</p>
-</li>
-<li><p class="first">[ ] Run tests when committing
-(with [required/local/central] repo event scripts)</p>
-</li>
-<li><p class="first">[ ] Write Tests First.</p>
-</li>
-<li><p class="first">[ ] Utilize Git HubFlow for managing project repository branches:
-<code class="docutils literal"><span class="pre">develop</span></code>, <code class="docutils literal"><span class="pre">master</span></code>, <code class="docutils literal"><span class="pre">feature/*</span></code>, <code class="docutils literal"><span class="pre">release/*</span></code>, <code class="docutils literal"><span class="pre">hotfix/*</span></code></p>
 <ul class="simple">
+<li>[ ] Run tests before releasing</li>
+<li>[ ] Run tests before merging (e.g. Pull Request Webhooks)</li>
+<li>[ ] Run tests after merging. (e.g. HubFlow
+[<code class="docutils literal notranslate"><span class="pre">feature/*</span></code> -&gt;] <code class="docutils literal notranslate"><span class="pre">develop</span></code> -&gt;
+<code class="docutils literal notranslate"><span class="pre">release/v0.1.0</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">master</span></code> branch structure)</li>
+<li>[ ] Run tests before committing (while coding)</li>
+<li>[ ] Run tests when committing
+(with [required/local/central] repo event scripts such as pre-commit
+hooks)<ul>
+<li><a class="reference external" href="https://pre-commit.github.io">https://pre-commit.github.io</a></li>
+</ul>
+</li>
+<li>[ ] Write Tests First.</li>
+<li>[ ] Utilize Git HubFlow for managing project repository branches:
+<code class="docutils literal notranslate"><span class="pre">develop</span></code>, <code class="docutils literal notranslate"><span class="pre">master</span></code>, <code class="docutils literal notranslate"><span class="pre">feature/*</span></code>, <code class="docutils literal notranslate"><span class="pre">release/*</span></code>, <code class="docutils literal notranslate"><span class="pre">hotfix/*</span></code><ul>
 <li><a class="reference external" href="https://datasift.github.io/gitflow/">https://datasift.github.io/gitflow/</a></li>
 <li><a class="reference external" href="https://westurner.github.io/tools/#git">https://westurner.github.io/tools/#git</a></li>
 <li><a class="reference external" href="https://westurner.github.io/tools/#hubflow">https://westurner.github.io/tools/#hubflow</a></li>
 </ul>
 </li>
-<li><p class="first">[ ] Release semantic versions (<a class="reference external" href="http://semver.org">http://semver.org</a>) tagged as
-<code class="docutils literal"><span class="pre">major.minor.patch</span></code> (e.g. <code class="docutils literal"><span class="pre">v1.0.01</span></code>)</p>
+<li>[ ] Release semantic versions (<a class="reference external" href="http://semver.org">http://semver.org</a>) tagged as
+<code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">v1.0.01</span></code>)<ul>
+<li>Semver 3.0 (Python PEP 440 versiontag-compatible):
+<a class="reference external" href="http://docs.openstack.org/developer/pbr/semver.html">http://docs.openstack.org/developer/pbr/semver.html</a><ul>
+<li>PEP 440:
+“Version Identification and Dependency Specification”
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes">https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes</a></li>
+</ul>
+</li>
+<li>bumpversion <a class="reference external" href="https://github.com/peritus/bumpversion">https://github.com/peritus/bumpversion</a></li>
+</ul>
+</li>
+</ul>
 <ul>
-<li><p class="first">Semver 3.0 (Python PEP 440 version tag compatible):
-<a class="reference external" href="http://docs.openstack.org/developer/pbr/semver.html">http://docs.openstack.org/developer/pbr/semver.html</a></p>
+<li><p class="first">[ ] Include useful data (like version, revision, platform)
+in package filenames (and/or also create a JSON-LD metadata manifest):</p>
 <ul>
-<li><p class="first">Python PEP 440
-&#8220;Version Identification and Dependency Specification&#8221;</p>
-<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes">https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes</a></p>
+<li><p class="first">e.g. <code class="docutils literal notranslate"><span class="pre">westurner-wiki-v1.0.01-eb4df7f-linux64.whl</span></code></p>
 </li>
-</ul>
+<li><p class="first">Conda selectors: {<code class="docutils literal notranslate"><span class="pre">linux64</span></code>, <code class="docutils literal notranslate"><span class="pre">py27</span></code>, <code class="docutils literal notranslate"><span class="pre">py37</span></code> }
+<a class="reference external" href="http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors">http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors</a></p>
 </li>
-<li><p class="first">bumpversion <a class="reference external" href="https://github.com/peritus/bumpversion">https://github.com/peritus/bumpversion</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="simple">
-<li>[ ] Include useful data (like version, revision, platform)
-in package filenames (and/or also create a JSON-LD metadata manifest):<ul>
-<li>e.g. <code class="docutils literal"><span class="pre">westurner-wiki-v1.0.01-eb4df7f-linux64.whl</span></code></li>
-<li>Conda selectors: {<code class="docutils literal"><span class="pre">linux64</span></code>, <code class="docutils literal"><span class="pre">py27</span></code>, <code class="docutils literal"><span class="pre">py35</span></code> }
-<a class="reference external" href="http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors">http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors</a></li>
-<li>pbr (<em>Python Build Reasonableness</em>)<ul>
-<li>Source:
-<a class="reference external" href="https://github.com/openstack-dev/pbr">https://github.com/openstack-dev/pbr</a></li>
-<li>Docs: <a class="reference external" href="http://docs.openstack.org/developer/pbr/">http://docs.openstack.org/developer/pbr/</a></li>
-</ul>
+<li><p class="first">pbr (<em>Python Build Reasonableness</em>)</p>
+<div class="line-block">
+<div class="line">Source: <a class="reference external" href="https://github.com/openstack-dev/pbr">https://github.com/openstack-dev/pbr</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.openstack.org/developer/pbr/">http://docs.openstack.org/developer/pbr/</a></div>
+</div>
 </li>
 </ul>
 </li>
@@ -2035,8 +2160,8 @@ in package filenames (and/or also create a JSON-LD metadata manifest):<ul>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+          &copy; Copyright @westurner 2014-2019, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
       </footer>
       <!-- /footer -->
 
