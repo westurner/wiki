@@ -52,6 +52,7 @@ Objectives
 -----------
 
 * [ ] Document optimal workflows
+* [ ] Document productivity tools and their productive use
 * [x] Create ``workflow.rst`` (see: current headings)
 * [ ] Develop file metadata strategies: (folders, names, tagging, labeling)
 * [x] Synthesize existing labeling strategies
@@ -59,8 +60,9 @@ Objectives
 * [ ] Define and describe outputs: artifacts, products, deliverables
 * [ ] R&D: integrate workflow information flows
 
-  * Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli, pytodo?)
-  * Logs: workhours, heka, elasticsearch, kibana
+  * Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli,
+    `taskw <TaskWarrior>`)
+  * Logs: `Usrlog`_, workhours, elasticsearch, kibana
 
 See: `Requirements Traceability`_
 
