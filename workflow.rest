@@ -1243,25 +1243,57 @@ Usrlog
 
 Best Practices
 ============================
-Project Templating
---------------------
+Use Project Templates
+-----------------------
 - [ ] Generate a new project with templated packaging and documentation
-  (e.g. with `<https://github.com/audreyr/cookiecutter>`_)
 
+  - https://github.com/audreyr/cookiecutter
 
-Requirements Traceability
----------------------------
+    - https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters
+    - https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta
 
-- [ ] Write a Roadmap wiki entry with links to Release Plans
-  and/or issue milestones
-  (`<git@github.com:westurner/wiki.wiki.git>`_ / ``Roadmap.rest``)
+  - https://github.com/yeoman/yo
 
-  * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
-  * Milestone: https://github.com/westurner/wiki/milestones/0.1
+    - https://yeoman.io/generators/
+    - https://github.com/yeoman/generator-generator
 
-- [ ] Write Features and *User Stories* as issues prefixed with ``ENH:``::
+.. _requirements-traceability:
 
-      ENH: Users can place orders
+Develop Projects with Requirements Traceability
+------------------------------------------------
+
+GitHub / Gitlab Projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- [ ] When you create a new GitHub / GitLab project,
+
+  - [ ] Create Issue #1. You could call it ``#1`` and leave it blank for now.
+
+  - [ ] Write a Roadmap wiki entry with links to Release Plans
+    and/or issue milestones
+    (`<https://github.com/westurner/wiki.wiki.git>`_ / ``Roadmap.rest``)
+
+    * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
+
+  - [ ] Create a milestone and an issue for it
+
+    * [ ] Milestone:
+
+      - https://github.com/westurner/wiki/milestones/0.1 (open)
+      - https://github.com/westurner/wiki/issues?q=milestone%3A0.1
+        (open/closed)
+
+    * [ ] Milestone Issue:
+
+      - https://github.com/westurner/wiki/issues/17 "Milestone 1"
+
+        - [ ] Link to the milestone issues URLs
+        - [ ] Add the Deadline:/Ends: and/or Completed: date
+        - [ ] Add a link to the release tag
+
+    * [ ] Add a link from Issue #1 to the Milestone Issue
+
+Use Code Labels
+~~~~~~~~~~~~~~~~~
 
 - [ ] Prefix commit messages with `Code Labels`_::
 
@@ -1269,22 +1301,58 @@ Requirements Traceability
       DOC: Add order placing documentation
       BLD: Update the build configuration
 
+  - [ ] Write Features and *User Stories* as issues prefixed with ``STORY``
+    and ``ENH:``::
+
+        STORY: Users can place orders
+        ENH: app/orders: Show the cart item count in the header
+
+
+Use Links
+~~~~~~~~~~~
+Create traceable edges between things by adding links.
+
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
-  *Release Logs* by referencing an issue number::
+  other docs by referencing an issue number in a title, description,
+  or comment::
 
       TST: Create order placing tests (#123)
+      TST: Create order placing tests (projname#123)
+      TST: Create order placing tests (orgname/projname#123)
       DOC: Add order placing documentation (for #123)
       CLN: Cleanup syntax for style guide (#5678)
 
 - [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
-  *Release Logs* by referencing (pasting) a link (URL, URI)
-  as-is (with no anchor text)::
+  *Release Logs* by referencing a full URL with no anchor text
+  and optional trailing title or description::
 
       https://github.com/westurner/wiki/issues/1
 
 
 Revision Control
 -----------------
+
+GitFlow and HubFlow
+~~~~~~~~~~~~~~~~~~~~~
+:ref:`GitFlow` and :ref:`HubFlow` are workflow and branch management
+systems for :ref:`Git` and `GitHub`
+which specify and implement branch naming conventions
+and merge patterns which can minimize
+the need to teach new collaborators how we prefer to do branches
+around here.
+
+Sometimes GitFlow and HubFlow do fail though, so it's good to understand
+which git commands they're running for you so that:
+
+- ``master`` only has stable releases that are cleanly merged in from a
+  named release branch (``release/0.1.0``) which is a branch of
+  ``develop``
+- ``hotfix`` branches (``hotfix/CVE-2001-fix-urgent-bug``)
+  are merged to ``master`` as new releases and also into ``develop``
+- feature branches (``feature/3-STORY-users-can-place-orders``)
+  branch from ``develop``;
+  and are always expected to ``git rebase -i develop``
+  before a Pull Request can be considered for merging
 
 
 Continuous Integration
@@ -1304,7 +1372,11 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
   ``release/v0.1.0`` -> ``master`` branch structure)
 * [ ] Run tests before committing (while coding)
 * [ ] Run tests when committing
-  (with [required/local/central] repo event scripts)
+  (with [required/local/central] repo event scripts such as pre-commit
+  hooks)
+
+  * https://pre-commit.github.io
+
 * [ ] Write Tests First.
 * [ ] Utilize Git HubFlow for managing project repository branches:
   ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
@@ -1316,12 +1388,11 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 * [ ] Release semantic versions (`<http://semver.org>`_) tagged as
   ``major.minor.patch`` (e.g. ``v1.0.01``)
 
-  * Semver 3.0 (Python PEP 440 version tag compatible):
+  * Semver 3.0 (Python PEP 440 versiontag-compatible):
     http://docs.openstack.org/developer/pbr/semver.html
 
-    * Python PEP 440
+    * PEP 440:
       "Version Identification and Dependency Specification"
-
       https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes
 
   * bumpversion https://github.com/peritus/bumpversion
@@ -1331,11 +1402,9 @@ https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
 
   * e.g. ``westurner-wiki-v1.0.01-eb4df7f-linux64.whl``
 
-  * Conda selectors: {``linux64``, ``py27``, ``py35`` }
+  * Conda selectors: {``linux64``, ``py27``, ``py37`` }
     `<http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors>`_
   * pbr (*Python Build Reasonableness*)
 
-    * Source:
-      https://github.com/openstack-dev/pbr
-
-    * Docs: http://docs.openstack.org/developer/pbr/
+    | Source: https://github.com/openstack-dev/pbr
+    | Docs: http://docs.openstack.org/developer/pbr/
