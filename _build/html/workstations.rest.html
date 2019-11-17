@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Workstations</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="workstations">
+<h1 class="title">Workstations</h1>
+
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#tools" id="id3">Tools</a><ul>
+<li><a class="reference internal" href="#dotfiles" id="id4">Dotfiles</a></li>
+<li><a class="reference internal" href="#osquery" id="id5">osquery</a></li>
+<li><a class="reference internal" href="#salt" id="id6">Salt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#os" id="id7">OS</a><ul>
+<li><a class="reference internal" href="#windows" id="id8">Windows</a></li>
+<li><a class="reference internal" href="#osx" id="id9">OSX</a></li>
+<li><a class="reference internal" href="#ios" id="id10">iOS</a></li>
+<li><a class="reference internal" href="#linux" id="id11">Linux</a></li>
+<li><a class="reference internal" href="#android" id="id12">Android</a><ul>
+<li><a class="reference internal" href="#wandroid" id="id13">Wandroid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#equipment" id="id14">Equipment</a><ul>
+<li><a class="reference internal" href="#keyboard" id="id15">Keyboard</a><ul>
+<li><a class="reference internal" href="#microsoft-natural-keyboard" id="id16">Microsoft Natural Keyboard</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mouse" id="id17">Mouse</a><ul>
+<li><a class="reference internal" href="#portable-mouse" id="id18">Portable Mouse</a></li>
+<li><a class="reference internal" href="#desktop-mouse" id="id19">Desktop Mouse</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#monitors" id="id20">Monitors</a><ul>
+<li><a class="reference internal" href="#monitor-stand" id="id21">Monitor Stand</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gigabit-usb-hub" id="id22">Gigabit USB Hub</a></li>
+<li><a class="reference internal" href="#storage" id="id23">Storage</a></li>
+<li><a class="reference internal" href="#cables" id="id24">Cables</a></li>
+<li><a class="reference internal" href="#sound" id="id25">Sound</a><ul>
+<li><a class="reference internal" href="#chromecast-audio" id="id26">Chromecast Audio</a></li>
+<li><a class="reference internal" href="#speakers" id="id27">Speakers</a></li>
+<li><a class="reference internal" href="#headphones" id="id28">Headphones</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#power" id="id29">Power</a></li>
+<li><a class="reference internal" href="#desk" id="id30">Desk</a><ul>
+<li><a class="reference internal" href="#pen-cylinder" id="id31">Pen Cylinder</a></li>
+<li><a class="reference internal" href="#speakermagnet" id="id32">SpeakerMagnet</a></li>
+<li><a class="reference internal" href="#tablet-w-hdmi" id="id33">Tablet w/ HDMI</a></li>
+<li><a class="reference internal" href="#lamp" id="id34">Lamp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="tools">
+<h1><a class="toc-backref" href="#id3">Tools</a></h1>
+<div class="section" id="dotfiles">
+<h2><a class="toc-backref" href="#id4">Dotfiles</a></h2>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/dotfiles/">https://westurner.github.io/dotfiles/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotfiles">https://github.com/westurner/dotfiles</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#dotfiles">https://westurner.github.io/tools/#dotfiles</a></div>
+</div>
+</div>
+<div class="section" id="osquery">
+<h2><a class="toc-backref" href="#id5">osquery</a></h2>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://osquery.io/">https://osquery.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/facebook/osquery">https://github.com/facebook/osquery</a></div>
+<div class="line">Docs: <a class="reference external" href="https://osquery.io/docs/tables/">https://osquery.io/docs/tables/</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#osquery">https://westurner.github.io/tools/#osquery</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh">https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh</a></li>
+</ul>
+</div>
+<div class="section" id="salt">
+<h2><a class="toc-backref" href="#id6">Salt</a></h2>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="http://docs.saltstack.com/en/latest/">http://docs.saltstack.com/en/latest/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/saltstack/salt">https://github.com/saltstack/salt</a></div>
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#salt">https://westurner.github.io/tools/#salt</a></div>
+</div>
+<pre class="code bash literal-block">
+salt-call --local --out<span class="operator">=</span>yaml grains.items
+salt-call --local --out<span class="operator">=</span>yaml pkg.list_pkgs
+</pre>
+</div>
+</div>
+<div class="section" id="os">
+<h1><a class="toc-backref" href="#id7">OS</a></h1>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#operating-systems">https://westurner.github.io/tools/#operating-systems</a></div>
+</div>
+<div class="section" id="windows">
+<h2><a class="toc-backref" href="#id8">Windows</a></h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#windows-notes">https://westurner.github.io/tools/#windows-notes</a></div>
+</div>
+</div>
+<div class="section" id="osx">
+<h2><a class="toc-backref" href="#id9">OSX</a></h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#osx-notes">https://westurner.github.io/tools/#osx-notes</a></div>
+</div>
+</div>
+<div class="section" id="ios">
+<h2><a class="toc-backref" href="#id10">iOS</a></h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#ios-notes">https://westurner.github.io/tools/#ios-notes</a></div>
+</div>
+</div>
+<div class="section" id="linux">
+<h2><a class="toc-backref" href="#id11">Linux</a></h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#linux-notes">https://westurner.github.io/tools/#linux-notes</a></div>
+</div>
+</div>
+<div class="section" id="android">
+<h2><a class="toc-backref" href="#id12">Android</a></h2>
+<div class="line-block">
+<div class="line">Tools: <a class="reference external" href="https://westurner.github.io/tools/#android-notes">https://westurner.github.io/tools/#android-notes</a></div>
+</div>
+<div class="section" id="wandroid">
+<h3><a class="toc-backref" href="#id13">Wandroid</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://bitbucket.org/westurner/wandroid">https://bitbucket.org/westurner/wandroid</a></div>
+</div>
+<blockquote>
+<ul>
+<li><p class="first"><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/setup.py">https://bitbucket.org/westurner/wandroid/src/tip/setup.py</a>
+(scripts, console_scripts entry_points)</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh">https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh</a></p>
+<pre class="code bash literal-block">
+<span class="comment hashbang">#!/bin/bash -x
+</span><span class="name builtin">export</span> <span class="name variable">ANDROID_PATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">HOME</span><span class="literal string interpol">}</span><span class="literal string double">/.local/android&quot;</span>
+<span class="name builtin">export</span> <span class="name variable">ANDROID_ADTPATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_PATH</span><span class="literal string interpol">}</span><span class="literal string double">/adt&quot;</span>
+<span class="name builtin">export</span> <span class="name variable">ANDROID_SDKPATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_ADTPATH</span><span class="literal string interpol">}</span><span class="literal string double">/sdk&quot;</span>
+<span class="comment single">#      ANDROID_SDKPATH=&quot;~/.local/android/adt/sdk&quot;
+</span><span class="name builtin">export</span> <span class="name variable">ANDROID_TOOLSPATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_SDKPATH</span><span class="literal string interpol">}</span><span class="literal string double">/tools&quot;</span>
+<span class="comment single">#      ANDROID_TOOLSPATH=&quot;~/.local/android/adt/sdk/tools&quot;
+</span><span class="name builtin">export</span> <span class="name variable">ANDROID_PTOOLSPATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_SDKPATH</span><span class="literal string interpol">}</span><span class="literal string double">/platform-tools&quot;</span>
+<span class="comment single">#      ANDROID_PTOOLSPATH=&quot;~/.local/android/adt/sdk/platform-tools&quot;
+</span>
+<span class="name builtin">export</span> <span class="name variable">ANDROID_WORKSPACEPATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">PROJECT_HOME</span><span class="literal string interpol">}</span><span class="literal string double">/aclipse&quot;</span>
+<span class="comment single"># westurner/dotfiles:
+#      ANDROID_WORKSPACEPATH=&quot;~/-wrk/aclipse&quot;
+</span>
+<span class="name builtin">export</span> <span class="name variable">PATH</span><span class="operator">=</span><span class="literal string double">&quot;</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_PTOOLSPATH</span><span class="literal string interpol">}</span><span class="literal string double">:</span><span class="literal string interpol">${</span><span class="name variable">ANDROID_TOOLSPATH</span><span class="literal string interpol">}</span><span class="literal string double">:</span><span class="literal string interpol">${</span><span class="name variable">PATH</span><span class="literal string interpol">}</span><span class="literal string double">&quot;</span>
+<span class="comment single"># westurner/dotfiles:
+#   PATH_prepend &quot;${ANDROID_TOOLSPATH}&quot;
+#   PATH_prepend &quot;${ANDROID_PTOOLSPATH}&quot;</span>
+</pre>
+</li>
+<li><p class="first">[ ] <tt class="docutils literal">cat scripts/postactivate &gt;&gt; $_BIN/postactivate # for virtualenvwrapper</tt></p>
+</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="equipment">
+<h1><a class="toc-backref" href="#id14">Equipment</a></h1>
+<p>see also: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/computer-engineering">https://wrdrd.github.io/docs/consulting/computer-engineering</a></p>
+<div class="section" id="keyboard">
+<h2><a class="toc-backref" href="#id15">Keyboard</a></h2>
+<ul class="simple">
+<li>[ ] 104/105-key PC keyboard - PS/2</li>
+<li>[ ] 104/105-key PC keyboard - USB</li>
+<li>[ ] PS/2 -&gt; USB keyboard adapter</li>
+</ul>
+<div class="section" id="microsoft-natural-keyboard">
+<h3><a class="toc-backref" href="#id16">Microsoft Natural Keyboard</a></h3>
+<ul>
+<li><p class="first">[ ] Microsoft Natural Keyboard 4000</p>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Microsoft_Natural_keyboard#Natural_Ergonomic_Keyboard_4000">https://en.wikipedia.org/wiki/Microsoft_Natural_keyboard#Natural_Ergonomic_Keyboard_4000</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="mouse">
+<h2><a class="toc-backref" href="#id17">Mouse</a></h2>
+<div class="section" id="portable-mouse">
+<h3><a class="toc-backref" href="#id18">Portable Mouse</a></h3>
+<ul class="simple">
+<li>[ ] Toggle-able scroll wheel</li>
+<li>see <a class="reference internal" href="#desktop-mouse">Desktop Mouse</a></li>
+</ul>
+</div>
+<div class="section" id="desktop-mouse">
+<h3><a class="toc-backref" href="#id19">Desktop Mouse</a></h3>
+<ul class="simple">
+<li>[ ] Minimum 5 button w/ forward &amp; back buttons</li>
+<li>[ ] Adjustable sensitivity</li>
+<li>[ ] Toggle-able scroll wheel<ul>
+<li>ratchet-mode</li>
+<li>free-scroll mode</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="monitors">
+<h2><a class="toc-backref" href="#id20">Monitors</a></h2>
+<ul class="simple">
+<li>Need:</li>
+<li>[x] 1x 20-inch panel (DVI, VGA)</li>
+<li>[x] 2x 24-inch panels (DVI, VGA)<ul>
+<li>2x 1/3&quot; monitor bezel</li>
+</ul>
+</li>
+<li>[ ] 40&quot;+ monitor w/ <em>HDMI</em>, (adapters for: [DVI], [VGA])</li>
+</ul>
+<div class="section" id="monitor-stand">
+<h3><a class="toc-backref" href="#id21">Monitor Stand</a></h3>
+<ul class="simple">
+<li>Need:</li>
+<li>[x] min. dual-monitor post w/ clamp and hex-wrench<ul>
+<li>[x] $40: <a class="reference external" href="http://www.amazon.com/Tyke-Supply-Dual-Monitor-Stand/dp/B002R9HQLI">http://www.amazon.com/Tyke-Supply-Dual-Monitor-Stand/dp/B002R9HQLI</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="gigabit-usb-hub">
+<h2><a class="toc-backref" href="#id22">Gigabit USB Hub</a></h2>
+<ul class="simple">
+<li>[x] 3x 3 port USB 3.0 Hub w/ a Gigabit Ethernet port<ul>
+<li>[x] <a class="reference internal" href="#monitor-stand">Monitor Stand</a> USB Hub</li>
+<li>[x] Backup <a class="reference internal" href="#monitor-stand">Monitor Stand</a> USB Hub</li>
+<li>[x] Extra LAN port (for e.g. a notebook)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="storage">
+<h2><a class="toc-backref" href="#id23">Storage</a></h2>
+<ul class="simple">
+<li>[x] SD SecureDigital Cards {computer, camera, stream, tablet}</li>
+<li>[x] MicroSD Cards {phone, tablet, -&gt; SD &lt;- MicroSD adapter}</li>
+<li>[x] SD &lt;- MicroSD adapter</li>
+<li>[x] 2x USB 3.0 to IDE/SATA adapter (backups, recovery, migration)</li>
+<li>[x] 2.5&quot; external hard drive case SATA</li>
+<li>[x] 3.5&quot; external hard drive case SATA</li>
+</ul>
+</div>
+<div class="section" id="cables">
+<h2><a class="toc-backref" href="#id24">Cables</a></h2>
+<ul class="simple">
+<li>[x] AC Power Cable - power supply</li>
+<li>[x] SATA</li>
+<li>[x] eSATA</li>
+<li>[x] 2x DVI</li>
+<li>[x] 2x AC Power Cable - monitors</li>
+<li>[x] 3x USB cable extension { keyboard; hub: mouse; spare (charging) }</li>
+<li>[x] Ethernet<ul>
+<li>[x] Patch cables with fancy plastic connectors</li>
+<li>[x] special color patch cables for e.g. ingress lines: blue, yellow</li>
+<li>[x] RJ-45 (ethernet) crimper tool</li>
+<li>[ ] T568A Diagram<ul>
+<li><a class="reference external" href="https://wrdrd.github.io/docs/consulting/computer-engineering#t568b">https://wrdrd.github.io/docs/consulting/computer-engineering#t568b</a><ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination">https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Extra / spare monitor:</p>
+<ul class="simple">
+<li>[x] 1x DVI, 1x VGA</li>
+<li>[x] 1x AC Power cable - monitor</li>
+</ul>
+</div>
+<div class="section" id="sound">
+<h2><a class="toc-backref" href="#id25">Sound</a></h2>
+<div class="section" id="chromecast-audio">
+<h3><a class="toc-backref" href="#id26">Chromecast Audio</a></h3>
+<ul>
+<li><p class="first">[x] 3.5&quot; headphone jack &lt;- Chromecast Audio &lt;-&gt; WiFi</p>
+<ul class="simple">
+<li>[ ] 3.5&quot; headphone cable (Male-Male)</li>
+<li>[ ] 3.5&quot; headphone cable (Male-Female)</li>
+<li>[ ] MicroUSB to USB cable (e.g. phone charger cable)</li>
+<li>[ ] Chromecast AC-USB adapter</li>
+</ul>
+</li>
+<li><p class="first">[ ] browser setup / phone app setup</p>
+</li>
+<li><p class="first">Requires WiFi (<a href="#id1"><span class="problematic" id="id2">*</span></a>sync/delay) (see: <a class="reference internal" href="#speakers">speakers</a>)</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">./workstations.rest</tt>, line 209); <em><a href="#id2">backlink</a></em></p>
+<p>Inline emphasis start-string without end-string.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="speakers">
+<h3><a class="toc-backref" href="#id27">Speakers</a></h3>
+<ul class="simple">
+<li>[ ] desktop workstation speakers</li>
+<li>[x] 2x USB audio w/ headphone &amp; mic jack<ul>
+<li>These cut down on the system noise from e.g. grounding.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="headphones">
+<h3><a class="toc-backref" href="#id28">Headphones</a></h3>
+<ul class="simple">
+<li>[x] headphone headphones &quot;headphones&quot;</li>
+<li>[x] microphone headphones &quot;headset&quot;</li>
+<li>[x] earbuds {bose, sennheiser, }</li>
+<li>[ ] studio headphones</li>
+<li>[x] headset: with the proprietary buttons for my phone</li>
+<li>[x] headset: one from big lots (mesh cord)}</li>
+</ul>
+</div>
+</div>
+<div class="section" id="power">
+<h2><a class="toc-backref" href="#id29">Power</a></h2>
+<ul class="simple">
+<li>[x] 2x 8-outlet w/ 2x 2.1v USB plugs</li>
+<li>[x] 2x UPS Uninterruptible Power Supplies<ul>
+<li>[ ] 2x UPS batteries (every ___ months)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="desk">
+<h2><a class="toc-backref" href="#id30">Desk</a></h2>
+<div class="section" id="pen-cylinder">
+<h3><a class="toc-backref" href="#id31">Pen Cylinder</a></h3>
+<ul class="simple">
+<li>[x] Stapler with rubber for leaning against the wall</li>
+<li>[ ] Mechanical pencils</li>
+<li>[ ] Mechanical pencil graphite (* graphite + CD burder = graphene )</li>
+<li>[ ] Regular pencils</li>
+<li>[ ] Regular pencil sharpener (mini) (or in the drawer thanks)</li>
+<li>[ ] Ink pens: Fine</li>
+<li>[ ] Ink pens: Medium</li>
+<li>[ ] Ink pens: Bold -- Uni-ball,</li>
+<li>[x] Permanent Marker: Black</li>
+<li>[ ] Permanent Marker: Red</li>
+<li>[ ] <strong>Pink Pearl</strong> eraser</li>
+</ul>
+</div>
+<div class="section" id="speakermagnet">
+<h3><a class="toc-backref" href="#id32">SpeakerMagnet</a></h3>
+<ul class="simple">
+<li>[x] Old magnetic [car stereo] speaker</li>
+</ul>
+</div>
+<div class="section" id="tablet-w-hdmi">
+<h3><a class="toc-backref" href="#id33">Tablet w/ HDMI</a></h3>
+<ul class="simple">
+<li>[x] micro HDMI to HDMI adapter<ul>
+<li>[x] regular-shaped micro HDMI to HDMI adapter</li>
+<li>[x] L-shaped micro HDMI to HDMI adapter</li>
+</ul>
+</li>
+<li>[x] microUSB cable</li>
+</ul>
+</div>
+<div class="section" id="lamp">
+<h3><a class="toc-backref" href="#id34">Lamp</a></h3>
+<ul class="simple">
+<li>[ ] Tall architects' lamp</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

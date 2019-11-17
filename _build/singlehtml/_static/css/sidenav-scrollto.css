@@ -1,0 +1,37 @@
+
+#sidebar-wrapper a.youarehere,
+#navbar-top a.youarehere {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+#sidebar-wrapper a.youarehere:after,
+#navbar-top a.youarehere:after {
+    content: " ⬅" !important;
+}
+
+#content-wrapper a.headerlink {
+    font-size: inherit !important;
+}
+
+#content-wrapper a.youarehere {
+    visibility: visible !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    button.toplink {
+        position: fixed;
+        right: 1px;
+        top: 0;
+        padding: 6px !important;
+        z-index: 900 !important;
+        opacity: 0.3;
+    }
+}

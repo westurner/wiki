@@ -1,0 +1,272 @@
+
+============
+Workstations
+============
+
+.. contents::
+
+Tools
+*********
+
+
+Dotfiles
+------------
+| Docs: https://westurner.github.io/dotfiles/
+| Src: https://github.com/westurner/dotfiles
+| Tools: https://westurner.github.io/tools/#dotfiles
+
+osquery
+--------
+| Homepage: https://osquery.io/
+| Src: https://github.com/facebook/osquery 
+| Docs: https://osquery.io/docs/tables/
+| Tools: https://westurner.github.io/tools/#osquery
+
+
+* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
+
+Salt
+------
+| Docs: http://docs.saltstack.com/en/latest/
+| Src: https://github.com/saltstack/salt
+| Tools: https://westurner.github.io/tools/#salt
+
+.. code:: bash
+
+   salt-call --local --out=yaml grains.items
+   salt-call --local --out=yaml pkg.list_pkgs
+
+
+OS
+***
+| Tools: https://westurner.github.io/tools/#operating-systems
+
+Windows
+---------
+| Tools: https://westurner.github.io/tools/#windows-notes
+
+OSX
+----
+| Tools: https://westurner.github.io/tools/#osx-notes
+
+iOS
+----
+| Tools: https://westurner.github.io/tools/#ios-notes
+
+Linux
+-------
+| Tools: https://westurner.github.io/tools/#linux-notes
+
+Android
+---------
+| Tools: https://westurner.github.io/tools/#android-notes
+
+
+Wandroid
+~~~~~~~~~
+| Src: https://bitbucket.org/westurner/wandroid
+
+  * https://bitbucket.org/westurner/wandroid/src/tip/setup.py
+    (scripts, console_scripts entry_points)
+  * https://bitbucket.org/westurner/wandroid/src/tip/scripts/configure_path.sh
+
+    .. code:: bash
+
+        #!/bin/bash -x
+        export ANDROID_PATH="${HOME}/.local/android"
+        export ANDROID_ADTPATH="${ANDROID_PATH}/adt"
+        export ANDROID_SDKPATH="${ANDROID_ADTPATH}/sdk" 
+        #      ANDROID_SDKPATH="~/.local/android/adt/sdk"
+        export ANDROID_TOOLSPATH="${ANDROID_SDKPATH}/tools"
+        #      ANDROID_TOOLSPATH="~/.local/android/adt/sdk/tools"
+        export ANDROID_PTOOLSPATH="${ANDROID_SDKPATH}/platform-tools"
+        #      ANDROID_PTOOLSPATH="~/.local/android/adt/sdk/platform-tools"
+
+        export ANDROID_WORKSPACEPATH="${PROJECT_HOME}/aclipse"
+        # westurner/dotfiles:
+        #      ANDROID_WORKSPACEPATH="~/-wrk/aclipse"
+
+        export PATH="${ANDROID_PTOOLSPATH}:${ANDROID_TOOLSPATH}:${PATH}"
+        # westurner/dotfiles:
+        #   PATH_prepend "${ANDROID_TOOLSPATH}"
+        #   PATH_prepend "${ANDROID_PTOOLSPATH}"
+
+  * [ ] ``cat scripts/postactivate >> $_BIN/postactivate # for virtualenvwrapper``
+
+
+Equipment
+************
+
+see also: https://wrdrd.github.io/docs/consulting/computer-engineering
+
+
+Keyboard
+----------
+- [ ] 104/105-key PC keyboard - PS/2
+- [ ] 104/105-key PC keyboard - USB
+- [ ] PS/2 -> USB keyboard adapter
+
+Microsoft Natural Keyboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- [ ] Microsoft Natural Keyboard 4000
+
+  | Wikipedia: https://en.wikipedia.org/wiki/Microsoft_Natural_keyboard#Natural_Ergonomic_Keyboard_4000
+
+Mouse
+-------
+Portable Mouse
+~~~~~~~~~~~~~~~~
+- [ ] Toggle-able scroll wheel
+- see `Desktop Mouse`_
+
+Desktop Mouse
+~~~~~~~~~~~~~~~~
+- [ ] Minimum 5 button w/ forward & back buttons
+- [ ] Adjustable sensitivity
+- [ ] Toggle-able scroll wheel
+
+  - ratchet-mode
+  - free-scroll mode
+
+
+Monitors
+----------
+- Need: 
+- [x] 1x 20-inch panel (DVI, VGA)
+- [x] 2x 24-inch panels (DVI, VGA)
+
+  - 2x 1/3" monitor bezel
+
+- [ ] 40"+ monitor w/ *HDMI*, (adapters for: [DVI], [VGA])
+
+
+Monitor Stand
+~~~~~~~~~~~~~~~~~
+- Need:
+- [x] min. dual-monitor post w/ clamp and hex-wrench
+
+  - [x] $40: http://www.amazon.com/Tyke-Supply-Dual-Monitor-Stand/dp/B002R9HQLI
+
+
+
+Gigabit USB Hub
+-----------------
+- [x] 3x 3 port USB 3.0 Hub w/ a Gigabit Ethernet port
+
+  - [x] `Monitor Stand`_ USB Hub
+  - [x] Backup `Monitor Stand`_ USB Hub
+  - [x] Extra LAN port (for e.g. a notebook)
+
+Storage
+-------
+- [x] SD SecureDigital Cards {computer, camera, stream, tablet}
+- [x] MicroSD Cards {phone, tablet, -> SD <- MicroSD adapter}
+- [x] SD <- MicroSD adapter
+- [x] 2x USB 3.0 to IDE/SATA adapter (backups, recovery, migration)
+- [x] 2.5" external hard drive case SATA
+- [x] 3.5" external hard drive case SATA
+
+Cables
+--------
+- [x] AC Power Cable - power supply
+- [x] SATA
+- [x] eSATA
+- [x] 2x DVI
+- [x] 2x AC Power Cable - monitors
+- [x] 3x USB cable extension { keyboard; hub: mouse; spare (charging) }
+- [x] Ethernet
+
+  - [x] Patch cables with fancy plastic connectors
+  - [x] special color patch cables for e.g. ingress lines: blue, yellow
+  - [x] RJ-45 (ethernet) crimper tool
+  - [ ] T568A Diagram
+
+    - https://wrdrd.github.io/docs/consulting/computer-engineering#t568b
+
+      - https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination
+
+Extra / spare monitor:
+
+- [x] 1x DVI, 1x VGA
+- [x] 1x AC Power cable - monitor
+
+
+
+
+Sound
+--------
+
+Chromecast Audio
+~~~~~~~~~~~~~~~~~~
+- [x] 3.5" headphone jack <- Chromecast Audio <-> WiFi
+
+  - [ ] 3.5" headphone cable (Male-Male)
+  - [ ] 3.5" headphone cable (Male-Female)
+  - [ ] MicroUSB to USB cable (e.g. phone charger cable)
+  - [ ] Chromecast AC-USB adapter
+
+- [ ] browser setup / phone app setup
+- Requires WiFi (*sync/delay) (see: `speakers`_)
+
+
+Speakers
+~~~~~~~~~
+- [ ] desktop workstation speakers
+- [x] 2x USB audio w/ headphone & mic jack
+
+  - These cut down on the system noise from e.g. grounding.
+
+
+Headphones
+~~~~~~~~~~~~
+- [x] headphone headphones "headphones"
+- [x] microphone headphones "headset"
+- [x] earbuds {bose, sennheiser, }
+- [ ] studio headphones
+- [x] headset: with the proprietary buttons for my phone
+- [x] headset: one from big lots (mesh cord)}
+
+
+Power
+--------------
+- [x] 2x 8-outlet w/ 2x 2.1v USB plugs
+- [x] 2x UPS Uninterruptible Power Supplies
+
+  - [ ] 2x UPS batteries (every ___ months)
+
+
+Desk
+-----
+
+Pen Cylinder
+~~~~~~~~~~~~~~
+- [x] Stapler with rubber for leaning against the wall
+- [ ] Mechanical pencils
+- [ ] Mechanical pencil graphite (* graphite + CD burder = graphene )
+- [ ] Regular pencils
+- [ ] Regular pencil sharpener (mini) (or in the drawer thanks)
+- [ ] Ink pens: Fine
+- [ ] Ink pens: Medium 
+- [ ] Ink pens: Bold -- Uni-ball, 
+- [x] Permanent Marker: Black
+- [ ] Permanent Marker: Red
+- [ ] **Pink Pearl** eraser
+
+SpeakerMagnet
+~~~~~~~~~~~~~~~
+- [x] Old magnetic [car stereo] speaker
+
+
+Tablet w/ HDMI
+~~~~~~~~~~~~~~~~
+- [x] micro HDMI to HDMI adapter
+  
+  - [x] regular-shaped micro HDMI to HDMI adapter
+  - [x] L-shaped micro HDMI to HDMI adapter
+
+- [x] microUSB cable
+
+
+Lamp
+~~~~~~
+- [ ] Tall architects' lamp

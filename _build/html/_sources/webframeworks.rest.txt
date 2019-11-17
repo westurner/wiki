@@ -1,0 +1,1272 @@
+
+
+.. index:: Web Frameworks
+.. _web frameworks:
+
+******************
+Web Frameworks
+******************
+
+.. contents::
+
+
+.. index:: Web Framework Benchmarks
+.. _web framework benchmarks:
+
+==========================
+Web Framework Benchmarks
+==========================
+- https://github.com/TechEmpower/FrameworkBenchmarks
+- https://www.techempower.com/benchmarks/
+-
+
+
+.. index:: C++
+.. _cpp:
+
+====
+C++
+====
+
+.. index:: C++ Web Frameworks
+.. _cpp web frameworks:
+
+C++ Web Frameworks
+====================
+
+.. index:: Wt
+.. _wt:
+
+Wt
+****
+
+
+.. index:: C#
+.. _csharp:
+
+===
+C#
+===
+
+.. index:: Go
+.. index:: Golang
+.. _golang:
+.. _go:
+
+====
+Go
+====
+| Awesome: https://github.com/avelino/awesome-go
+
+
+
+.. index:: Java
+.. _java:
+
+=====
+Java
+=====
+
+
+.. index:: Java Web Frameworks
+.. _java web frameworks:
+
+Java Web Frameworks
+=====================
+
+.. index:: J2EE
+.. _j2ee:
+
+J2EE
+******
+
+
+.. index:: JBoss
+.. _jboss:
+
+JBoss
+*******
+
+
+.. index:: JWt
+.. _jwt:
+
+JWt
+****
+- Source transpilation of :ref:`Wt` framework from C++ to Java
+
+
+.. index:: Restlet
+.. _restlet:
+
+Restlet
+*********
+
+
+.. index:: Struts
+.. _struts:
+
+Struts
+********
+
+
+
+.. index:: Java Servers
+.. _java servers:
+
+Java Servers
+================
+
+.. index:: Jetty
+.. _jetty:
+
+Jetty
+*******
+
+
+.. index:: Apache Tomcat
+.. index:: Tomcat
+.. _tomcat:
+
+Tomcat
+********
+
+
+.. index:: Javascript
+.. _javascript:
+
+============
+Javascript
+============
+
+.. index:: JS Libraries
+.. _js libraries:
+
+JS Libraries
+==============
+
+.. index:: JS CDNs
+.. _js cdns:
+
+JS CDNs
+*********
+- https://developers.google.com/speed/libraries/
+- https://www.maxcdn.com/blog/free-open-source-cdns/
+- http://www.bootstrapcdn.com/ (MaxCDN)
+- https://cdnjs.com/ (CloudFlare)
+- https://www.cloudflare.com/cdn/
+- https://github.com/jesusabdullah/browserify-cdn
+- https://wiki.openstack.org/wiki/Poppy
+
+
+.. index:: Bootstrap
+.. _bootstrap_:
+
+Bootstrap
+***********
+- :ref:`Bootstrap`
+
+
+.. index:: jQuery
+.. _jquery:
+
+jQuery
+*******
+| Homepage: https://jquery.com/
+| Src: https://github.com/jquery/jquery
+| Docs: https://api.jquery.com/
+| NPM: https://www.npmjs.com/package/jquery
+
+
+- lodash
+
+
+.. index:: Zepto.js
+.. _zepto:
+
+Zepto.js
+***********
+| Homepage: http://zeptojs.com/
+| Src: https://github.com/madrobby/zepto
+| Docs: http://zeptojs.com/
+
+- Zepto.js is a minimal, mostly-jQuery-compatible JS library.
+
+
+.. index:: Underscore
+.. _underscore:
+
+Underscore
+***********
+| Wikipedia: https://en.wikipedia.org/wiki/Underscore.js
+| Homepage: http://underscorejs.org/
+| Src: https://github.com/jashkenas/underscore
+
+
+.. index:: Babel
+.. _babel:
+
+Babel
+*******
+| Homepage: https://babeljs.io/
+| Src: https://github.com/babel/babel
+| Docs: https://babeljs.io/docs/setup/
+| Docs: https://babeljs.io/learn-es2015/
+| Docs: https://babeljs.io/docs/plugins/preset-stage-0/ (,1,2,3)
+| NPM: https://www.npmjs.com/package/babel-cli
+
+.
+
+- style-loader, css-loader, less, less-loader
+- babel-plugin-react-transform
+- babel-plugin-transform-class-properties
+- babel-plugin-transform-object-assign
+- babel-preset-es2015
+- babel-preset-react
+- babel-preset-stage0
+
+
+
+.. index:: JS Frameworks
+.. _js frameworks:
+
+JS Frameworks
+===============
+
+.. index:: Angular
+.. _angular:
+
+Angular
+***********
+
+Angular 1
+-----------
+| Homepage: https://angularjs.org/
+| Src: https://github.com/angular/angular.js
+| Docs: https://docs.angularjs.org/
+| Docs: https://docs.angularjs.org/guide/concepts
+
+
+.. index:: Ionic
+.. _ionic:
+
+Ionic
+------
+| Homepage:
+| Src:
+
+
+
+.. index:: React
+.. _react:
+
+React
+*********
+| Homepage: https://facebook.github.io/react/docs/
+| Src: https://github.com/facebook/react
+| Src: https://github.com/reactjs
+| Docs: https://facebook.github.io/react/docs/
+| NPM: https://www.npmjs.com/package/react
+
+See: `Jest`_
+
+
+.. index:: React-Native
+.. _react-native:
+
+React-Native
+**************
+
+
+.. index:: Redux
+.. _redux:
+
+Redux
+******
+| Homepage: http://redux.js.org/
+| Src: https://github.com/reactjs/redux
+| Docs: http://redux.js.org/
+| NPM: https://www.npmjs.com/package/redux
+
+
+.. index:: Redux-actions
+.. _redux-actions:
+
+Redux-actions
+----------------
+| Src: https://github.com/acdlite/redux-actions
+| Tests: https://github.com/acdlite/redux-actions/tree/master/src/__tests__
+| NPM: https://www.npmjs.com/package/redux-actions
+
+
+.. index:: Redux-devtools
+.. _redux-devtools:
+
+Redux-devtools
+----------------
+| Homepage: http://extension.remotedev.io/
+| Src: https://github.com/zalmoxisus/redux-devtools-extension
+| Docs: http://extension.remotedev.io/
+| ChromeExt: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
+
+
+.. index:: Node
+.. _node:
+
+Node
+*******
+| Homepage: https://nodejs.org/en/
+| Src: https://github.com/nodejs/node/
+| Docs: https://nodejs.org/en/docs/
+
+
+.. index:: Express
+.. _express:
+
+Express
+*********
+| Homepage: http://expressjs.com/
+| Src: https://github.com/expressjs/express
+
+
+.. index:: JS Testing
+.. _js testing:
+
+JS Testing
+============
+
+Blessings
+***********
+
+Chai
+*****
+
+
+Mocha
+*******
+
+
+
+Jasmine
+*********
+
+
+Jest
+*****
+| Homepage: https://facebook.github.io/jest/
+| Src: https://github.com/facebook/jest
+| Docs: https://facebook.github.io/jest/docs/en/
+
+- https://facebook.github.io/jest/docs/en/snapshot-testing.html
+
+
+PhantomJS
+***********
+- see: `Web Testing`_
+
+
+.. index:: JS Packaging
+.. _js packaging:
+
+JS Packaging
+==============
+- https://auth0.com/blog/javascript-module-systems-showdown/
+
+
+.. index:: CommonJS
+.. _commonjs:
+
+CommonJS
+**********
+| Wikipedia: https://en.wikipedia.org/wiki/CommonJS
+| Homepage:
+| Docs: https://webpack.github.io/docs/commonjs.html
+
+- CommonJS is more than just packaging
+- :ref:`NodeJS` modules are very similar to CommonJS modules
+
+.. code:: javascript
+
+   exports( );
+   require( );
+
+
+.. index:: AMD (JS)
+.. index:: Asynchronous Module Definition
+.. _amd js:
+
+AMD
+******
+| Wikipedia: https://en.wikipedia.org/wiki/Asynchronous_module_definition
+| Src: https://github.com/amdjs/amdjs-api
+| Spec: https://github.com/amdjs/amdjs-api/blob/master/AMD.md
+| Docs: http://requirejs.org/docs/whyamd.html
+| Docs: http://requirejs.org/docs/whyamd.html#amd
+| Docs: https://addyosmani.com/writing-modular-js/
+
+- AMD forked from :ref:`CommonJS`
+- :ref:`Dojo`, :ref:`RequireJS`, ScriptManJS
+
+.. code:: javascript
+
+       define( );
+
+
+.. index:: ES2015 Modules
+.. index:: ES6 Modules
+.. _es2015 modules:
+
+ES2015 Modules
+***************
+|
+| Docs: https://github.com/tc39/proposal-dynamic-import
+
+
+.. code:: javascript
+
+   import ;
+   export ;
+
+
+
+.. index:: System.js
+.. _system.js:
+
+System.js
+***********
+| Src: https://github.com/systemjs/systemjs
+
+- System.js supports :ref:`CommonJS`, :ref:`NodeJS`,
+  :ref:`AMD`, and :ref:`ES2015 Modules`
+
+.. index:: RequireJS
+.. _requirejs:
+
+RequireJS
+***********
+| Homepage: http://requirejs.org/
+| Src: http://github.com/requirejs/requirejs
+
+
+.. index:: NPM
+.. _npm_:
+
+NPM
+*****
+- :ref:`NPM`
+
+
+.. index:: Bower
+.. _bower:
+
+Bower
+*******
+- :ref:`Bower`
+
+
+.. index:: Webpack
+.. _webpack:
+
+
+Webpack
+*************
+| Wikipedia: https://en.wikipedia.org/wiki/Webpack
+| Homepage: https://webpack.js.org/
+| Homepage: https://webpack.github.io/
+| Src: https://github.com/webpack/webpack
+| Docs: https://webpack.js.org/configuration/
+| Docs: https://webpack.github.io/docs/
+| Docs: https://webpack.github.io/docs/commonjs.html
+| Q&A Tag: https://stackoverflow.com/questions/tagged/webpack
+| NPM: https://www.npmjs.com/package/webpack
+
+
+.. index:: Browserify
+.. _browserify:
+
+Browserify
+***********
+| Homepage: http://browserify.org/
+| Src: https://github.com/substack/node-browserify
+| Docs: https://github.com/substack/node-browserify#usage
+| Docs: https://github.com/substack/browserify-handbook
+
+    browserify is a tool for compiling node-flavored commonjs modules for the browser.
+
+- https://github.com/jesusabdullah/browserify-cdn
+
+
+.. index:: Requirify
+.. _requirify:
+
+Requirify
+-----------
+| Src: https://github.com/mathisonian/requirify
+| ChromeExt: https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm?hl=en
+
+
+.. index:: Yarn
+.. _yarn:
+
+Yarn
+******
+| Homepage: https://yarnpkg.com/
+| Src: https://github.com/yarnpkg
+| NPM: https://www.npmjs.com/package/yarn
+| Docs: https://yarnpkg.com/en/docs/
+| Docs: https://yarnpkg.com/en/docs/migrating-from-npm
+
+- Yarn can consume :ref:`NPM` ``package.json``
+
+
+.. index:: PHP
+.. _php:
+
+=====
+PHP
+=====
+| Wikipedia: https://en.wikipedia.org/wiki/PHP
+| Homepage: https://secure.php.net/
+| Download: https://php.net/downloads.php
+| Twitter: https://twitter.com/official_php
+| Src: https://git.php.net/?p=php-src.git
+| Src: https://github.com/php/php-src
+| Src: https://github.com/php
+| Spec: https://github.com/php/php-langspec/tree/master/spec
+| DockerHub: https://hub.docker.com/_/php/
+| Docs: https://secure.php.net/docs.php
+| Docs: https://secure.php.net/manual/en/
+| Docs: https://secure.php.net/manual/en/langref.php
+| Docs: https://secure.php.net/manual/en/security.php
+| Docs: https://secure.php.net/manual/en/funcref.php
+| Docs: https://en.wikipedia.org/wiki/Template:PHP
+| Awesome: https://github.com/ziadoz/awesome-php
+
+
+
+.. index:: PHP Security
+.. _php security:
+
+PHP Security
+==============
+
+- https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet
+- https://www.owasp.org/index.php/PHP_Top_5
+- https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet
+
+
+- https://www.owasp.org/index.php/OWASP_PHP_Security_Project
+- https://github.com/OWASP/phpsec
+- Unmaintained but still a good reference.
+
+
+.. index:: HHVM
+.. _hhvm:
+
+HHVM
+========
+| Wikipedia: https://en.wikipedia.org/wiki/HipHop_Virtual_Machine
+| Homepage: http://hhvm.com/
+| Src: https://github.com/facebook/hhvm
+| Twitter: https://twitter.com/HipHopVM
+| Docs: https://docs.hhvm.com/hhvm/
+| Docs: https://docs.hhvm.com/hhvm/inconsistencies/introduction
+| Docs: https://docs.hhvm.com/hhvm/inconsistencies/arrays-and-foreach
+| Docs: https://docs.hhvm.com/hhvm/inconsistencies/classes-and-objects
+| Docs: https://docs.hhvm.com/hhvm/inconsistencies/miscellaneous
+| Docs: https://docs.hhvm.com/hhvm/advanced-usage/fastCGI
+
+
+.. index:: PHP Frameworks
+.. _php frameworks:
+
+PHP Frameworks
+=================
+
+
+.. index:: CakePHP
+.. _cakephp:
+
+CakePHP
+*********
+| Wikipedia:
+| Homepage: https://cakephp.org/
+| Src: https://github.com/cakephp/cakephp
+| Docs: https://book.cakephp.org/
+| Docs: https://api.cakephp.org/
+| Twitter: https://twitter.com/cakephp
+
+- https://book.cakephp.org/3.0/en/elasticsearch.html
+
+
+.. index:: Laravel
+.. _laravel:
+
+Laravel
+*********
+| Wikipedia: https://en.wikipedia.org/wiki/Laravel
+| Homepage: https://laravel.com/
+| Src: https://github.com/laravel/framework
+| Docs: https://laravel.com/docs/
+| Docs: https://laravel.com/api/5.4/
+
+
+
+
+.. index:: Symfony
+.. _symfony:
+
+Symfony
+********
+| Wikipedia: https://en.wikipedia.org/wiki/Symfony
+| Homepage: https://symfony.com/
+| Src: https://github.com/symfony/symfony
+| Docs: https://symfony.com/doc/current/index.html
+| Docs: https://symfony.com/doc/current/reference/index.html
+| Docs: https://symfony.com/doc/current/best_practices/index.html
+| Twitter: https://twitter.com/sensiolabs
+
+
+.. index:: API Platform (PHP)
+.. _api platform:
+
+API Platform
+--------------
+| Homepage: https://api-platform.com/
+| Download: https://api.github.com/repos/api-platform/api-platform/zipball
+| Src: https://github.com/api-platform/api-platform
+| Docs: https://api-platform.com/docs/
+| Docs: https://api-platform.com/docs/distribution/
+| Docs: https://api-platform.com/docs/core/getting-started
+| Docs: https://api-platform.com/docs/core/security
+| Docs: https://symfony.com/doc/current/security.html
+| Docs: https://api-platform.com/docs/core/external-vocabularies
+| Docs: https://api-platform.com/docs/core/extending-jsonld-context
+| Docs: https://api-platform.com/docs/core/performance#eager-loading
+| Docs: https://api-platform.com/docs/core/angularjs-integration
+
+- Built on :ref:`Symfony`
+- :ref:`RESTful` :ref:`Schema.org` :ref:`JSON-LD`, :ref:`Hydra`
+- https://github.com/api-platform/admin
+
+  :ref:`Angular`, ng-admin
+
+  - https://github.com/marmelab/ng-admin
+
+
+
+.. index:: PHP Applications
+.. _php applications:
+
+PHP Applications
+===================
+
+
+.. index:: Drupal
+.. _drupal:
+
+Drupal
+********
+| Wikipedia: https://en.wikipedia.org/wiki/Drupal
+| Homepage: https://www.drupal.org/
+| Src: http://cgit.drupalcode.org/drupal
+| Docs: https://www.drupal.org/project/drupal
+| Docs: https://www.drupal.org/documentation
+| Docs: https://www.drupal.org/docs/
+| Docs: https://www.drupal.org/docs/user_guide/en/index.html
+| Docs: https://www.drupal.org/docs/7/theming
+| Docs: https://www.drupal.org/docs/7/understanding-drupal/glossary
+
+
+- https://www.drupal.org/project/project_theme
+- https://www.drupal.org/project/project_module
+
+
+
+.. index:: Joomla
+.. index:: Mambo
+.. _joomla:
+
+Joomla
+********
+| Wikipedia: https://en.wikipedia.org/wiki/Joomla
+| Src: https://github.com/joomla/joomla-cms
+| Download: https://downloads.joomla.org/
+| Docs: https://docs.joomla.org/
+
+Joomla (formerly "Mambo") is an open source :ref:`CMS` written in :ref:`PHP`.
+
+- https://extensions.joomla.org/
+
+
+.. index:: MediaWiki
+.. _mediawiki:
+
+MediaWiki
+***********
+| Wikipedia: https://en.wikipedia.org/wiki/MediaWiki
+| Homepage: https://www.mediawiki.org/wiki/MediaWiki
+| Src: https://phabricator.wikimedia.org/source/mediawiki/
+| Src: https://gerrit.wikimedia.org/r/p/mediawiki/core
+| Docs: https://www.mediawiki.org/wiki/MediaWiki
+
+
+.. index:: Semantic MediaWiki
+.. _semantic mediawiki:
+
+Semantic MediaWiki
+--------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Semantic_MediaWiki
+| Homepage: https://www.semantic-mediawiki.org/
+| Src: https://github.com/SemanticMediaWiki/SemanticMediaWiki
+| Docs: https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki
+| Docs: https://www.mediawiki.org/wiki/Category:Semantic_MediaWiki_extensions
+| Docs: https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:Getting_started|
+| Docs: https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_reference
+| Docs: https://www.semantic-mediawiki.org/w/images/e/e9/SMW_quick_reference.pdf
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:User_manual
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:Inferencing
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:Semantic_search
+| Docs: https://www.semantic-mediawiki.org/wiki/Ask_API
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:Semantic_Web
+| Docs: https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores
+
+Semantic Mediawiki (*SMW*) is an open source extension of
+:ref:`MediaWiki` for semantic data.
+
+- :ref:`SQL` (:ref:`MySQL`)
+- :ref:`SPARQL` (:ref:`Virtuoso`, 4store, :ref:`Blazegraph`, Fuseki,
+  :ref:`Sesame`)
+
+  https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores#Available_repository_connectors
+
+- Concepts: ~composable saved searches
+
+  https://www.semantic-mediawiki.org/wiki/Help:Concepts
+
+seeAlso:
+
+- :ref:`Semantic Web`, :ref:`Linked Data`, :ref:`RDFS`, :ref:`OWL`
+- :ref:`Semantic Bundle` (includes SMW)
+- :ref:`Wikibase` (:ref:`Wikidata`)
+- :ref:`Dbpedia` (:ref:`MediaWiki` infoboxes)
+
+
+.. index:: Semantic Bundle
+.. _semantic bundle:
+
+Semantic Bundle
+-----------------
+| Docs: https://www.mediawiki.org/wiki/Semantic_Bundle
+| Src: https://github.com/mwjames/SemanticBundle
+| Src: https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticBundle.git
+
+
+.. index:: Wikibase
+.. _wikibase:
+
+Wikibase
+----------
+| Docs: https://www.mediawiki.org/wiki/Extension:Wikibase
+
+- :ref:`Wikidata` is built on Wikibase
+- " DataValues + ValueParsers + ValueFormatters + ValueValidators"
+
+
+.. index:: MODx
+.. _modx:
+
+MODx
+******
+| Wikipedia: https://en.wikipedia.org/wiki/MODX
+| Homepage: https://modx.com/
+| Src: https://github.com/modxcms/revolution
+| Docs: https://docs.modx.com/
+| Docs: https://docs.modx.com/revolution/2.x/
+
+.. index:: WordPress
+.. _wordpress:
+
+WordPress
+***********
+| Wikipedia: https://en.wikipedia.org/wiki/WordPress
+| Homepage: https://wordpress.org/
+| Src: svn https://core.svn.wordpress.org/
+| Src: git://core.git.wordpress.org/
+| Src: https://core.trac.wordpress.org/browser
+| Src: https://github.com/WordPress/WordPress
+| Download: https://wordpress.org/download/
+| Docs: https://codex.wordpress.org/
+| Docs: https://developer.wordpress.org/reference/
+| Docs: https://developer.wordpress.org/themes/
+| Docs: https://developer.wordpress.org/plugins/
+| Docs: https://developer.wordpress.org/rest-api/
+| Awesome: https://github.com/miziomon/awesome-wordpress
+
+- https://github.com/miziomon/awesome-wordpress#websites
+- https://wordpress.org/plugins/
+- https://wordpress.org/themes/
+
+
+
+
+.. index:: PHP Testing
+.. _php testing:
+
+PHP Testing
+=============
+- https://github.com/ziadoz/awesome-php#testing
+
+.. index:: PHPunit
+.. _phpunit:
+
+PHPUnit
+*********
+| Wikipedia: https://en.wikipedia.org/wiki/PHPUnit
+| Homepage: https://phpunit.de/
+| Src: https://github.com/sebastianbergmann/phpunit
+| Docs: https://phpunit.de/documentation.html
+| Docs: https://phpunit.de/manual/current/en/phpunit-book.html
+
+- PHPUnit cheat sheet
+  https://gist.github.com/loonies/1255249
+
+
+
+.. index:: PHP Packaging
+.. _php packaging:
+
+PHP Packaging
+===============
+
+.. index:: PHAR
+.. _phar:
+
+PHAR
+*****
+| Wikipedia: `<https://en.wikipedia.org/wiki/PHAR_(file_format)>`__
+| Docs: https://secure.php.net/manual/en/intro.phar.php
+| Docs: https://secure.php.net/manual/en/phar.creating.php
+| Docs: https://secure.php.net/manual/en/book.phar.php
+
+PHAR (*PHP Archive*) is a packaging format for :ref:`PHP` programs.
+
+- Compression: :ref:`Tar`, :ref:`Zip`, or PHAR
+- Layout: Stub, Manifest, File Contents
+- Metadata: "Meta-data can be any PHP variable that can be serialized."
+- :ref:`Composer` and :ref:`PHPUnit` are distributed as PHARs (PHAR
+  archives).
+
+
+.. index:: Composer (PHP)
+.. _composer:
+
+Composer
+**********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Composer_(software)>`_
+| Homepage: https://getcomposer.org/
+| Src: http://github.com/composer/composer
+| Download: https://getcomposer.org/download/
+| Docs: https://getcomposer.org/doc/
+| Docs: https://getcomposer.org/doc/01-basic-usage.md
+
+Composer is a package manager for :ref:`PHP` programs.
+
+
+.. index:: Python
+.. _python:
+
+========
+Python
+========
+https://westurner.github.io/wiki/awesome-python-testing#web-frameworks
+
+
+Python Frameworks
+===================
+
+Plone
+******
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+| Homepage: https://plone.org/
+| Src: https://github.com/plone/plone
+| PyPI: https://pypi.python.org/pypi/Plone
+| Docs: https://plone.org/documentation
+| Docs: http://developer.plone.org/
+| Docs: http://docs.plone.org/manage/installing/installation.html
+
+* http://developer.plone.org/testing_and_debugging/
+
+Django
+********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Django_(web_framework)>`__
+| Homepage: https://www.djangoproject.com/
+| Src: git https://github.com/django/django
+| PyPI: https://pypi.python.org/pypi/django
+| Docs: https://docs.djangoproject.com/
+| Docs: https://docs.djangoproject.com/en/dev/topics/testing/
+| Docs: https://docs.djangoproject.com/en/dev/topics/settings/
+| Awesome: https://github.com/rosarior/awesome-django
+
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+* https://www.djangopackages.com/
+
+  * https://www.djangopackages.com/grids/g/cms/
+
+Flask
+******
+| Wikipedia: `<https://en.wikipedia.org/wiki/Flask_(web_framework)>`__
+| Homepage: https://flask.pocoo.org/
+| Src: git https://github.com/mitsuhiko/flask
+| PyPI: https://pypi.python.org/pypi/Flask
+| Docs: https://flask.readthedocs.org/en/latest/config/
+| Docs: https://flask.pocoo.org/docs/latest/
+| Docs: https://flask.pocoo.org/docs/latest/testing/
+| Awesome: https://github.com/humiaozuzu/awesome-flask
+
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+
+Bottle
+*******
+| Homepage: http://bottlepy.org
+| Src: git https://github.com/bottlepy/bottle
+| PyPI: https://pypi.python.org/pypi/bottle
+| Docs: http://bottlepy.org/docs/dev/
+| Docs: http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+
+Bottle is a one file WSGI Python web framework.
+
+* http://bottlepy.org/docs/dev/plugins/
+
+pgs is written with bottle.py:
+
+* | Src: https://github.com/westurner/pgs
+
+
+Pyramid
+********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Pylons_project#Pyramid>`__
+| Homepage: http://www.pylonsproject.org/projects/pyramid/about
+| Src: git https://github.com/Pylons/pyramid
+| PyPI: https://pypi.python.org/pypi/pyramid
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+| Docs:  http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
+| Awesome: https://github.com/ITCase/awesome-pyramid
+
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+
+
+Python Testing
+==================
+| Wikipedia: https://en.wikipedia.org/wiki/Web_application
+
+* http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
+
+
+WebTest
+********
+| Src: git https://github.com/Pylons/webtest
+| PyPI: https://pypi.python.org/pypi/WebTest
+| Docs: http://webtest.pythonpaste.org/en/latest/
+
+WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. `Pyramid`_, `Flask`_, `Django`_, `Bottle`_)
+
+
+Splinter
+*********
+| Src: git https://github.com/cobrateam/splinter
+| PyPI: https://pypi.python.org/pypi/splinter
+| Docs: https://splinter.readthedocs.org/en/latest/
+
+.. epigraph::
+
+  * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+    zopetestbrowser, remote webdriver)
+  * css and xpath selectors \*
+
+
+ghost.py
+*********
+| Src: git https://github.com/jeanphix/Ghost.py
+| PyPI: https://pypi.python.org/pypi/Ghost.py
+| Docs: http://ghost-py.readthedocs.org/en/latest/
+
+.. epigraph::
+
+    Webkit based scriptable web browser for python.
+
+- PyQT or PySide
+
+
+.. index:: Ruby
+.. _ruby:
+
+======
+Ruby
+======
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ruby_(programming_language)>`__
+| LearnXinYminutes: https://learnxinyminutes.com/docs/ruby/
+| https://westurner.github.io/tools/#ruby
+
+
+
+- irb: interactive ruby shell
+- rdoc
+- erb:
+- capistrano
+
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/
+- https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/
+
+
+.. index:: Ruby Devtools
+.. _ruby devtools:
+
+Ruby Devtools
+===============
+
+
+rake
+********
+- rake: :ref:`Make` for Ruby
+
+
+.. index:: Ruby Frameworks
+.. _ruby frameworks:
+
+Ruby Frameworks
+===============
+
+
+.. index:: Rack (Ruby)
+.. _rack:
+
+Rack
+******
+| Wikipedia: `<https://en.wikipedia.org/wiki/Rack_(web_server_interface)>`__
+| Homepage: https://rack.github.io/
+| Src: https://github.com/rack/rack
+| Docs: http://www.rubydoc.info/github/rack/rack/master/file/README.rdoc
+| Docs: http://www.rubydoc.info/github/rack/rack/master/file/SPEC
+
+- Rack is a :ref:`Ruby` middleware API spec for a "Rack application"
+  which receives a Request Environment and returns a Response.
+- Rack is similar in form and function to
+  and partially derived from :ref:`WSGI.`
+- :ref:`Rails` and :ref:`Sinatra` are Rack applications
+
+
+.. index:: Rails
+.. index:: Ruby on Rails
+.. index:: RoR
+.. _ruby on rails:
+
+Ruby on Rails
+***************
+| Wikipedia: https://en.wikipedia.org/wiki/Ruby_on_Rails
+
+
+- ActionController
+- acts_as_authenticated
+- _partials
+- :ref:`jQuery`, :ref:`CoffeeScript`, :ref:`Sass`
+
+
+.. index:: React on Rails
+.. _react on rails:
+
+React on Rails
+-----------------
+| Src: https://github.com/shakacode/react_on_rails
+
+
+
+
+.. index:: CoC
+.. index:: Convention over Configuration
+.. _convention over configuration:
+
+Convention over Configuration
+---------------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Convention_over_configuration
+
+- CoC: Convention over Configuration
+
+  - File naming defaults,
+
+
+
+
+.. index:: DRY
+.. index:: Don't Repeat Yourself
+.. _dry:
+
+Don't Repeat Yourself
+-----------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+
+- DRY: Don't Repeat Yourself
+
+  - Models have many attributes and representations
+
+
+.. index:: Active Record (Pattern)
+.. index:: Pattern: Active Record
+.. _activerecord:
+
+Active Record
+---------------
+| Wikipedia: https://en.wikipedia.org/wiki/Active_record_pattern
+
+
+
+.. index:: Sinatra (Ruby)
+.. _sinatra:
+
+Sinatra
+*********
+| Wikipedia: `<https://en.wikipedia.org/wiki/Sinatra_(software)>`__|
+| Homepage: http://www.sinatrarb.com/
+| Src: https://github.com/sinatra/sinatra
+| Docs: http://www.sinatrarb.com/documentation.html
+| Changelog: https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md
+
+
+.. index:: Ruby Servers
+.. _ruby servers:
+
+Ruby Servers
+==============
+
+
+.. index:: Mongrel
+.. _mongrel:
+
+Mongrel
+********
+| Src: https://github.com/mongrel/mongrel
+| Wikipedia: `<https://en.wikipedia.org/wiki/Mongrel_(web_server)>`__
+
+
+.. index:: Phusion Passenger
+.. _phusion passenger:
+
+Phusion Passenger
+******************
+| Wikipedia: https://en.wikipedia.org/wiki/Phusion_Passenger
+| Homepage: https://www.phusionpassenger.com/
+| Src: https://github.com/phusion/passenger/
+| Src: https://github.com/phusion/passenger-docker
+| DockerHub: https://hub.docker.com/r/phusion/baseimage/
+| DockerHub: https://hub.docker.com/r/phusion/passenger-full/
+| DockerHub: https://hub.docker.com/r/phusion/passenger-ruby23/
+| Docs: https://www.phusionpassenger.com/library/
+| Docs: https://www.phusionpassenger.com/library/#guides
+| Docs: https://www.phusionpassenger.com/library/config/reference/
+| Docs: https://www.phusionpassenger.com/library/config/nginx/
+| Docs: https://www.phusionpassenger.com/library/config/nginx/reference/
+| Docs: https://www.phusionpassenger.com/library/config/apache/
+| Docs: https://www.phusionpassenger.com/library/config/apache/reference/
+| Docs: https://www.phusionpassenger.com/library/config/standalone/
+| Docs: https://www.phusionpassenger.com/library/config/standalone/reference/
+| Docs: https://www.phusionpassenger.com/library/config/standalone/optimization/
+| Twitter: https://twitter.com/phusion_nl
+
+- Phusion Passenger is a web server
+- Nginx, Apache, Standalone
+- Serve apps written in Ruby, Python, Node.js
+- Development mode restart:
+
+  .. code:: bash
+
+      #TODO  touch .RESTART_FILENAME
+
+
+.. index:: Thin (Ruby)
+.. _thin:
+
+Thin
+*****
+| Homepage: http://code.macournoyer.com/thin/
+| Src: https://github.com/macournoyer/thin
+
+
+.. index:: WEBrick
+.. _webrick:
+
+WEBrick
+********
+| Wikipedia: https://en.wikipedia.org/wiki/WEBrick
+| Src: https://github.com/ruby/ruby/tree/trunk/lib/webrick
+| Src: https://github.com/ruby/ruby/tree/trunk/lib/webrick.rb
+| Docs: https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick.html
+| Docs: https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick/HTTPServer.html
+
+
+
+.. index:: Ruby Applications
+.. _ruby applications:
+
+Ruby Applications
+==================
+
+.. index:: Project Hydra
+.. _project hydra:
+
+Project Hydra
+***************
+| Homepage: https://projecthydra.org/
+| Src:
+
+
+.. index:: Ruby Testing
+.. _ruby testing:
+
+Ruby Testing
+==============
+
+- https://www.ruby-toolbox.com/categories/testing_frameworks#bacon
+
+
+=============
+Web Testing
+=============
+
+- https://westurner.github.io/wiki/awesome-python-testing#web-frameworks
+
+Browsers
+==========
+- | **Headless Browsers**
+  | A list of (almost) all headless web browsers in existence
+
+  https://github.com/dhamaniasad/HeadlessBrowsers
+
+
+  - https://github.com/substack/browser-launcher
+  - https://github.com/nodeca/navit
+
+    - "All methods are chainable" (Helpful instead of
+      ``async``/``await``)
+
+Selenium
+==========
+| Docs: http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
+
+* https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin
+* http://www.seleniumhq.org/projects/ide/
+
+
+WebDriver
+===========
+| Homepage: http://www.seleniumhq.org/projects/webdriver/
+| Docs: http://www.seleniumhq.org/projects/webdriver/
+| Spec: https://www.w3.org/TR/webdriver/

@@ -1,0 +1,404 @@
+
+=========
+Ideas
+=========
+
+.. contents:: 
+
+Themes
+=======
+
+Data
+
+* URIs, HTTP, HTML, HTML5
+* Linked Data (RDF, RDFa, JSONLD)
+* Graphs, Nodes, Edges
+
+seeAlso:
+
+* https://wrdrd.github.io/docs/consulting/knowledge-engineering.html
+
+Projects
+=========
+Resume projects:
+
+* https://westurner.github.io/resume/html/resume.html#projects
+
+Projects I have created:
+
+* https://westurner.github.io/wiki/projects
+* Src: https://github.com/westurner/wiki/wiki/projects
+
+Open Source Projects I have contributed to:
+
+* https://westurner.github.io/wiki/contributions
+* Src: https://github.com/westurner/wiki/wiki/contributions
+
+Twedges
+--------
+* (Directed) edges between tweets, later
+
+  * Visualize "View Conversation" directed edges
+  * Add edges with attributes and provenance metadata
+  * Add a hashtag (recent/all tags w/ checkboxes)
+
+    * Use case: I am developing a report on [Self Directed Learning],
+      and have a few topics I'd like to discover and curate, mashup,
+      remix
+
+* [ ] Twitter #JSONLD @context
+
+  * Additional properties:
+
+    * Expanded links
+    * Picture URIs
+    * Twitter Card Metadata
+    * OpenGraph Metadata
+    * Extracted RDF
+
+      * Parse Errors
+
+  * Additional edge classes:
+
+    * TopicEdge
+    * ReplyEdge
+    * ReplyWithCommentEdge
+
+* FOAF, SIOC, Schema.org
+* Extract links, count uniques
+* #Nanotation RDF microsyntax (seeAlso: `Sphinx Extensions`)
+
+  * Tab-completion for subjects, predicates, objects?
+
+    * see http://json-ld.org/playground/
+
+Trails
+-------
+* Sequences of actions
+
+  * https://github.com/westurner/brw
+  * https://bitbucket.org/westurner/browselinks
+
+GrannyTweet.com
+-----------------
+- "Because think first"
+- Concept stage
+
+Overlay
+--------
+* EAV visualization
+
+RDFLib Extensions
+-------------------
+* RDFLib IPython notebook
+
+  * https://bitbucket.org/westurner/rdflib_notebooks
+
+* RDF exploration CLI
+
+  * https://github.com/jonathanslenders/python-prompt-toolkit
+  * schema-aware tab-completion
+
+Sphinx Extensions
+-------------------
+
+* sphinxcontrib-RDF
+
+  * https://github.com/westurner/sphinxcontrib-rdf
+  * Directive to include an RDF syntax w/ pygments highlighting (see: healthref
+    (ttl))
+  * Extract triples from an RST (docutils) node graph
+  * Role w/ context? (like RDFa)
+
+* sphinxcontrib-ipython
+
+  * run sphinx docs with ``.. ipython::`` directives through IPython
+    interactively (e.g. w/ tmpipnb)
+  * ipythonify tests (ipython_nose + what API w/ a notebook?)
+
+* sphinxcontrib-srclinks
+  
+  * Add links to {Source, Edit, History, Annotate} with {GitHub, BitBucket,} to the Sphinx HTML template sidebar.
+  * Source: https://github.com/westurner/sphinxcontrib-srclinks
+  * jinja2 template and contexts
+
+* sphinx extensions
+
+  * Add an arrow indicating the currently selected heading (⬅)
+  * Add an arrow indicating the currently selected TOC heading (⬅)
+  * Scroll the sidebar to the selected TOC heading (¶)
+  * "Open link in new tab"
+  * "Show visited links"
+  * [ ] Factor into sphinxcontrib. plugins
+  * Source: https://github.com/wrdrd/docs/tree/master/docs/_static/js
+
+Open Source Mailing List Extractor
+----------------------------------
+Use cases:
+
+* https://mail.python.org/pipermail/python-ideas/2014-December/030228.html
+* incentivization of actionable crossreferences
+* PEP research
+* "is this actionable?"
+* "are we voting?"
+
+
+* Crawl/parse/extract links and +1 from given thread(s)
+  
+  * Detect a few standard link types:
+
+    * Issue
+    * Src
+    * Doc
+    * Ref
+    * x-link
+
+  * +1s with expandable snippets? (like ``grep -C``)
+
+* There could be configurable per-list link heuristics:
+
+  * http[s]
+  * Issue: https://bugs.python.org/issue(\d+)
+  * Src: https://hg.python.org/<repo>/<path>
+  * Src: https://github.com/<org>/<project>/<path>
+  * Src: https://bitbucket.org/<org>/<project>/<path>
+  * Patch/Attachment: https://bugs.python.org/(file[\d]+)/<filename(.diff)>
+  * Doc: https://docs.python.org/<ver>/<path>
+  * Wiki: https://wiki.python.org/moin/<path>
+  * Homepage: https://www.python.org/<path>
+  * Build: http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771
+  * Packages
+
+    + PyPI pkg: https://pypi.python.org/pypi/<path>
+    + Warehouse pkg: https://warehouse.python.org/project/<path>
+
+  * Wikipedia: https://[lang].wikipedia.org/wiki/<page> --> (dbpedia:<page>)
+
+
+* This could - most efficiently - be added to mailman
+  (e.g. in Postorious and/or HyperKitty)
+
+  * http://mailman-bundler.readthedocs.org/en/latest/
+  * http://pythonhosted.org//mailman/
+  * https://mail.python.org/mailman/listinfo/mailman-developers
+
+
+Path / URI / URN and the __div__ operator
+-------------------------------------------
+* build URI paths with ``/``
+* URL encoding
+* some combination of operators could be useful::
+
+   scheme://user@host.netloc:port/path/?query#fragment
+
+   from _ import URI, https, //, http
+   https // 'user@host.netloc:port' / path ** query % fragment
+
+* __div__      /
+* __floordiv__ //
+* __and__      &&
+* __mod__      %
+* __invert__   ~
+* __or__       |
+* __xor__      ^
+* __and__      +
+* __mul__      *
+* __pow__      **
+* __lshift__   <<
+* __rshift__   >>
+
+References
+~~~~~~~~~~~~
+* https://pypi.python.org/pypi/path.py -- __div__
+* https://pypi.python.org/pypi/pathlib (stdlib)
+* https://pypi.python.org/pypi/furl
+* https://pypi.python.org/pypi/URLObject
+* https://pypi.python.org/pypi/rdflib
+
+
+
+
+schema.org/Animal, AnimalShelter, and ImageNet
+-----------------------------------------------
+| tags: #linkeddata #schemaorg
+
+https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html
+
+* http://schema.org/Animal ( http://schema.org/AnimalShelter )
+* Labeling (e.g. ImageNet animals)
+* Matching / gamification
+
+schema.org/Course
+-------------------
+| tags: #linkeddata #schemaorg
+
+- https://schema.org/Course
+- https://pending.schema.org/Course
+- https://github.com/schemaorg/schemaorg/issues/195
+
+.
+
+- What is schema.org?
+
+  https://wrdrd.github.io/docs/consulting/knowledge-engineering#schema-org
+
+
+ThingSequence, CourseSequence, CourseUnit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| tags: #linkeddata #schemaorg
+
+- Multi-Track Video Editing
+- https://github.com/westurner/brw (IFrame carousel timer)
+- https://github.com/westurner/pbm (Bookmarks JSON CLI & Tornado app w/ brw)
+- https://lists.w3.org/Archives/Public/public-schema-course-extend/2016Jan/0020.html
+- https://twitter.com/westurner/status/738471673767165953
+- Fading, Beatmatching, Event spike synchronicity (cuepoints)
+- JSONLD (schema.org RDF)
+- learning from prepared materials / learning by watching / learning by doing
+
+LinkedReproducibility
+----------------------------
+| tags: #linkedreproducibility & #linkedrepro
+| tags: #linkeddata #schemaorg
+| Homepage: https://wrdrd.github.io/docs/consulting/linkedreproducibility
+| Src: 
+
+- Linked-
+- StudyGraph
+- StructuredPremises
+- LinkedMetaAnalyses
+
+Links:
+
+| Hashtag:``#LinkedReproducibility``
+
+- https://twitter.com/hashtag/linkedreproducibility
+- https://wrdrd.github.io/docs/consulting/data-science#linked-reproducibility
+- https://wrdrd.github.io/docs/consulting/linkedreproducibility
+- https://news.ycombinator.com/item?id=11685292
+- https://news.ycombinator.com/item?id=12195302
+
+
+Jupyter Notebook Meta object
+-----------------------------
+
+.. note:: See: https://github.com/westurner/nbmeta/issues/1
+
+- Jupyter Notebook
+
+  - https://wrdrd.github.io/docs/tools/#jupyter-notebook
+  - https://wrdrd.github.io/docs/tools/#nbformat
+  - https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility
+
+- ``_repr_html_`` => RDFa **and/or** JSONLD
+- Challenges / Objectives
+
+  - I want some metadata to be displayed at the top;
+    but also to add metadata through the notebook
+
+    - Metadata about the JupyterNotebook
+
+      - "Add JSONLD @context to the top level .ipynb node "
+        https://github.com/jupyter/nbformat/issues/44
+
+      - Example JupyterNotebook metadata:
+
+        .. code:: json
+
+            {"@context": {"schema": "http://schema.org/"},
+             "@type": ["schema:JupyterNotebook",
+                       "schema:ScholarlyArticle",
+                       "schema:DataCatalog"], # dataset/hasPart ?
+             "name": "Notebook Name",
+             "author": {
+               "@type": "schema:Person",
+               "givenName": "Wesley",
+               "familyName": "Turner",
+               "url": "https://westurner.github.io/"
+             },
+             "dateCreated": "2016-09-20"
+            }
+
+    - Metadata from the JupyterNotebook
+
+      .. code:: json
+
+          {"@context": {
+            "schema": "http://schema.org/",
+            "prov": "http://www.w3.org/ns/prov#"},
+           ...,
+           "hasPart": {
+             "@type": "schema:Dataset",
+             "name": "Months of the Year",
+             "distribution": {
+               "@type": "schema:DataDownload",
+               "contentUrl": "http://...",
+               "encodingFormat": "CSV",  # URI?
+             }
+            }
+          }
+
+      - SoftwareApplication versions
+
+        - version_information, watermark
+        - requirements.txt
+
+[EDIT]
+
+schema:JupyterNotebook, SoftwareEnvironment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+see:
+- https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832
+
+schema.org classes for ``@type=[":JupyterNotebook",]`` : 
+
+- https://schema.org/CreativeWork
+- https://schema.org/DigitalDocument
+- https://schema.org/Article
+- https://schema.org/ScholarlyArticle
+- https://schema.org/CreativeWorkSeries
+- https://schema.org/ItemList
+
+nbmeta
+~~~~~~~
+| Src: https://github.com/westurner/nbmeta
+| Src: https://github.com/westurner/nbmeta/tree/master/nb
+| Roadmap: https://github.com/westurner/nbmeta/issues/1
+
+nbmeta is a research project for structured data in Jupyter (IPython) Notebooks.
+
+Objectives
+
+- Store and publish JSONLD and RDFa
+- https://github.com/westurner/nbmeta/issues/1
+
+nbmeta and #LinkedReproducibility
+
+- StudyGraph -- things with structured edges (:CreativeWork with :name, :url, :authors, :funders, :about)
+- StructuredPremises -- premises with structured edges, satisfaction criteria
+- LinkedMetaAnalyses -- shared structured metadata, variable inclusion criteria
+
+
+
+Tools Vocabularies
+=====================
+* See: RDFJS pad re "Tools Schema" Classes and Properties:
+  https://text.allmende.io/p/rdfjs 
+
+westurner.github.io/tools
+----------------------------
+| https://westurner.github.io/tools/
+| Src: https://github.com/westurner/tools
+| Docs: https://westurner.github.io/wiki/tools.html#tool-collections
+
+Central tools.rst [ ... -> tools.rdf, tools.ttl, tools.jsonld ]
+
+* 1. https://westurner.github.io/provis/tools.html
+* 2. https://westurner.github.io/dotfiles/tools.html
+* 3. https://westurner.github.io/tools.html ( `westurner.github.io/tools`_ )
+
+  - Projects that link with `westurner.github.io/tools`: provis, dotfiles, https://wrdrd.github.io/docs/tools
+
+
+
+

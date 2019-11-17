@@ -1,0 +1,244 @@
+===========
+Projects
+===========
+
+.. contents::
+
+Projects
+==========
+https://github.com/westurner/wiki/wiki/ideas
+
+provis
+-------
+| Src: https://github.com/westurner/provis
+| Docs: https://provis.readthedocs.org/en/latest/
+
+Self Directed Learning
+-----------------------
+| Src: https://github.com/westurner/self-directed-learning
+| Docs: https://westurner.github.io/self-directed-learning/
+| Docs: https://self-directed-learning.readthedocs.org/en/latest/
+
+health-marketplace
+--------------------
+| Src: https://github.com/westurner/health-marketplace
+
+healthref
+---------------
+| Src: https://github.com/westurner/healthref
+| Web: https://westurner.github.io/healthref/
+ 
+pycd10api
+---------------
+| Src: https://github.com/westurner/pycd10api
+
+eaglefin
+---------------
+| Src: https://bitbucket.org/westurner/eaglefin
+
+wbcms
+---------------
+| Src: https://bitbucket.org/westurner/wbcms
+
+opengov
+---------------
+| Src: https://github.com/westurner/opengov
+| Docs: https://westurner.github.io/opengov/
+
+presense
+---------------
+| Src: https://bitbucket.org/westurner/presense
+
+notebooks
+---------------
+| Src: https://github.com/westurner/notebooks
+| Web: https://westurner.github.io/notebooks/
+
+contributions
+---------------
+| See: https://github.com/westurner/wiki/wiki/contributions
+
+
+Tools
+=======
+| See: https://github.com/westurner/wiki/wiki/tools
+
+browenv
+--------
+| Src: https://github.com/westurner/browenv
+
+brw
+----
+| Src: https://github.com/westurner/brw
+| Web: https://westurner.github.io/brw/
+
+bobcat
+---------------
+| Src: https://bitbucket.org/westurner/bobcat
+
+certtool
+---------------
+| Src: https://bitbucket.org/westurner/certtool
+
+cookiecutter-saltformula
+--------------------------
+| Src: https://github.com/westurner/cookiecutter-saltformula
+
+elasticsearchjsonld
+--------------------
+| Src: https://github.com/westurner/elasticsearchjsonld
+
+pandasrdf
+---------------
+| Src: https://github.com/westurner/pandasrdf
+
+pbm
+-----------------
+| Src: https://github.com/westurner/pbm
+| Pypi: https://pypi.python.org/pypi/pbm
+
+pgs
+---------------
+| Src: https://github.com/westurner/pgs
+
+pkgsetcomp
+---------------
+| Src: https://github.com/westurner/pkgsetcomp
+| Pypi: https://pypi.python.org/pypi/pkgsetcomp
+| Docs: http://pkgsetcomp.readthedocs.org/en/latest/
+
+pwd
+-----
+| Src: https://github.com/westurner/pwd
+| Web: https://westurner.github.io/pwd/
+
+pygments-style-jellywrd
+---------------------------
+| Src: https://github.com/westurner/pygments-style-jellywrd
+
+pyjobsearch
+---------------
+| Src: https://bitbucket.org/westurner/pyjobsearch
+
+pyleset
+---------------
+| Src: https://github.com/westurner/pyleset
+
+pyline
+---------------
+| Src: https://github.com/westurner/pyline
+| Pypi: https://pypi.python.org/pypi/pyline
+| Docs: https://pyline.readthedocs.org/en/latest/
+
+pyliveping
+------------
+| Src: https://github.com/westurner/pyliveping
+
+pypfi
+---------------
+| Src: https://github.com/westurner/pypfi
+
+pyrpo
+---------------
+| Src: https://github.com/westurner/pyrpo
+| Pypi: https://pypi.python.org/pypi/pyrpo
+| Docs: https://pyrpo.readthedocs.org/en/latest/
+
+pyrtm-task-cli
+---------------
+| Src: https://bitbucket.org/westurner/pyrtm-task-cli
+
+pytracepath
+-------------
+| Src: https://github.com/westurner/pytracepath
+
+pywifiloc
+---------------
+| Src: https://bitbucket.org/westurner/pywifiloc
+
+redem
+---------------
+| Src: https://github.com/westurner/redem
+
+rst-tools
+---------------
+| Src: https://github.com/westurner/rst-tools
+
+sphinxcontrib-rdf
+------------------------
+| Src: https://github.com/westurner/sphinxcontrib-rdf
+
+sphinxcontrib-srclinks
+------------------------
+| Src: https://github.com/westurner/sphinxcontrib-srclinks
+
+vim2vim
+---------------
+| Src: https://github.com/westurner/vim2vim
+
+web.sh
+---------------
+| PyPI: https://pypi.python.org/pypi/web.sh
+| Src: https://github.com/westurner/web.sh
+
+workhours
+---------------
+| Src: https://github.com/westurner/workhours
+
+Personal
+==========
+
+USA
+---------------
+| Src: https://github.com/westurner/USA
+| Web: https://westurner.github.io/USA
+
+tools
+---------------
+| https://westurner.github.io/tools/
+| Src: https://github.com/westurner/tools
+
+dotfiles
+---------------
+| https://westurner.github.io/dotfiles/
+| Src: https://github.com/westurner/dotfiles
+| Docs: https://wrdfiles.readthedocs.org/en/latest/
+
+dotvim
+---------------
+| Src: https://github.com/westurner/dotvim
+| Docs: https://wrdfiles.readthedocs.org/en/latest/usage.html#vim
+
+hello_world
+---------------
+| Src: https://github.com/westurner/hello_world
+
+redditlog
+---------------
+| Src: https://github.com/westurner/redditlog
+| Web: https://westurner.github.io/redditlog/
+
+wiki
+---------------
+| https://westurner.github.io/wiki/
+| Src: https://github.com/westurner/wiki/wiki
+| Src: https://github.com/westurner/wiki/wiki/projects
+| Src: https://github.com/westurner/wiki/wiki/contributions
+  
+resume
+---------------
+| Web: https://westurner.github.io/pages/resume
+| Web: https://westurner.github.io/resume
+| Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
+westurner.bitbucket.org
+--------------------------
+
+| Src: https://bitbucket.org/westurner/westurner.bitbucket.org
+| Web: http://westurner.bitbucket.org/
+
+westurner.github.io
+----------------------
+| Src: https://github.com/westurner/westurner.github.io
+| Web: https://westurner.github.io/
+

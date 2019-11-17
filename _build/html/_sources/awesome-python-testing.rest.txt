@@ -1,0 +1,1089 @@
+========================
+Awesome Python Testing
+========================
+
+`<https://en.wikipedia.org/wiki/Software_testing>`__
+
+`<https://en.wikipedia.org/wiki/Python_(programming_language)>`__
+
+
+.. contents::
+
+
+Background
+============
+
+Software Testing
+-------------------
+
+https://en.wikipedia.org/wiki/Software_testing
+
+* https://en.wikipedia.org/wiki/Test-driven_development
+* `<https://en.wikipedia.org/wiki/Assertion_(computing)>`__
+* http://docs.python-guide.org/en/latest/writing/tests/
+* http://martinfowler.com/bliki/TestCoverage.html
+* http://martinfowler.com/eaaCatalog/
+* https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria
+* https://en.wikipedia.org/wiki/Category:Formal_methods
+
+
+Unit, Functional, Integration, Acceptance
+--------------------------------------------
+
+* http://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test
+* http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test
+
+
+Workflow Evolution
+----------------------
+::
+
+    1. edit, edit, commit
+    2. edit, commit
+    3. todo, edit, commit
+    4. todo, edit, test, commit
+    5. todo, test, edit, test, commit
+    6. todo, test, edit, test, commit, tag
+
+    7. todo, branch, test, edit, test, commit, { tag, push, send patch }
+    8. todo, qnew, test, edit, test, commit, finish, { tag, push, send patch }
+
+
+Python
+-----------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Python_(programming_language)>`__
+| Homepage: https://www.python.org/
+| Source: https://hg.python.org/cpython
+| Docs: https://docs.python.org/2/
+| Docs: https://docs.python.org/devguide/
+| Docs: https://docs.python.org/devguide/documenting.html
+| Docs: https://wiki.python.org/moin/PythonBooks
+| Docs: http://www.onlineprogrammingbooks.com/python/
+| Docs: https://www.reddit.com/r/learnpython/wiki/index
+| Docs: https://www.reddit.com/r/learnpython/wiki/books
+| Docs: https://www.quora.com/Python-programming-language-1/What-are-the-best-books-courses-for-learning-Python
+| Docs: https://en.wikiversity.org/wiki/Python
+| Docs: https://www.class-central.com/search?q=python
+| Docs: http://learnxinyminutes.com/docs/python/
+| Tools: https://westurner.github.io/tools/#python
+
+* http://docs.python.org/2/library/unittest.html
+* http://docs.python.org/2/library/doctest.html
+* http://wiki.python.org/moin/PythonTestingToolsTaxonomy
+* http://docs.python-guide.org/en/latest/writing/tests/
+* https://pypi.python.org/pypi/unittest2 (python < 2.7)
+* https://pypi.python.org/pypi/mock (python < 3.3)
+* https://pypi.python.org/pypi/pathlib (python < 3.4)
+* `testtools`_
+
+Python 3
+~~~~~~~~~~~
+| Docs: https://docs.python.org/3/
+| Docs: https://docs.python.org/3/howto/pyporting.html
+| Docs: https://docs.python.org/3/howto/cporting.html
+| Docs: http://learnxinyminutes.com/docs/python3/
+| Tools: https://westurner.github.io/tools/#python-3
+
+* https://docs.python.org/3/library/unittest.html
+* https://docs.python.org/3/library/unittest.mock.html (python >= 3.3)
+* https://docs.python.org/3/library/doctest.html
+* https://docs.python.org/3/library/pathlib.html
+* `testtools`_
+
+Python 2 <--> Python 3
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* https://mail.python.org/mailman/listinfo/python-porting
+* http://python3porting.com/
+* `2to3`_, `six`_, `nine`_, `future`_
+
+
+2to3
+^^^^^
+| Src: https://hg.python.org/cpython/file/tip/Lib/lib2to3
+| Docs: https://docs.python.org/2/library/2to3.html
+| Docs: https://docs.python.org/3/library/2to3.html
+
+* https://hg.python.org/cpython/file/tip/Lib/lib2to3/Grammar.txt
+* https://pythonhosted.org/setuptools/python3.html#supporting-both-python-2-and-python-3-with-setuptools
+
+six
+^^^^
+| Src: hg https://bitbucket.org/gutworth/six
+| PyPI: http://pypi.python.org/pypi/six/
+| Docs: https://pythonhosted.org/six/
+
+* https://pythonhosted.org/six/#module-six.moves
+
+nine
+^^^^^^
+| Src: git https://github.com/nandoflorestan/nine
+| PyPI: https://pypi.python.org/pypi/nine
+
+* https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py
+
+future
+^^^^^^^
+| Src: git https://github.com/PythonCharmers/python-future
+| PyPI: https://pypi.python.org/pypi/future
+| Docs: http://python-future.org/
+
+* http://python-future.org/compatible_idioms.html
+
+IPython
+----------------
+| Wikipedia: https://en.wikipedia.org/wiki/IPython
+| Homepage: http://ipython.org
+| Source: https://github.com/ipython/ipython
+
+* http://ipython.org/ipython-doc/dev/interactive/tips.html
+
+::
+
+    def test_true(): assert True == True
+    %logstart log_input_to_here.py
+    %logstart -o log_input_and_output_to_here.py
+    %ed log_input_and_output_to_here.py
+
+    !nosetests ./log_input_and_output_to_here.py
+    !nosetests --help
+    !nosetests --ipdb   # pip install ipdbplugin # nose-progressive
+
+    # Run a file in IPython's namespace, print timing, skip sys.exit
+    %run -i -t -e ./log_input_and_output_to_here.py
+
+    # Run a file in IPython's namespace, print timing, skip sys.exit, and pdb
+    %run -i -t -e -d ./log_input_and_output_to_here.py
+
+    # Add >>> and ... prompts (useful for recording doctests)
+    %doctest_mode
+
+    # List defined aliases
+    %alias
+
+    # Get help for an alias
+    %logstart?
+    %alias?
+
+    # List available aliases and commands
+    %<TAB>
+
+    # Run a statement through the Python line profiler
+    %prun test_true()
+    %prun (2**2)*2)
+
+    # Time a number of loops
+    %timeit test_true()
+    %timeit (lambda x: (x**2)*2)(10)
+
+    # Run tests (see ipython_nose)
+    %nose
+
+
+IPython Notebook
+~~~~~~~~~~~~~~~~~
+* https://westurner.github.io/tools/#ipython-notebook
+* https://westurner.github.io/tools/#jupyter-notebook
+* https://pypi.python.org/pypi/runipy
+* `ipython_nose`_
+* `nosebook`_
+
+. 
+
+* https://github.com/westurner/notebooks/blob/gh-pages/Makefile
+
+
+IPython Blocks
+~~~~~~~~~~~~~~~~
+
+* https://github.com/jiffyclub/ipythonblocks
+* http://nbviewer.ipython.org/urls/raw.github.com/jiffyclub/ipythonblocks/master/demos/ipythonblocks_animation.ipynb
+
+
+Logging
+=========
+
+* https://en.wikipedia.org/wiki/Computer_data_logging
+* https://en.wikipedia.org/wiki/Syslog
+* http://docs.python.org/2/howto/logging.html
+* http://docs.python.org/3/library/logging.config.html
+
+Python Logging Primer
+-----------------------
+A primer on `Python`_ logging (and testing):
+
+.. code:: python
+
+    #### Logging examples
+
+    # test setup (fixtures)
+    x = 2
+    data = {'x': x}
+
+    # asserts get compiled out with python -O2
+    assert x == 2
+
+    # these always run
+    class TestTwo(unittest.TestCase):
+        def test_001_x_equals_2(self):
+            self.assertEqual(self, x, 2)
+    unittest.main()
+
+    if x != 2:
+        ### Exceptions
+        err = ('...', x)
+        raise Exception(err)
+        raise ValueError(err)
+
+        ### Logging
+        import logging
+        log = logging                       # global logger
+        log = __import__('logging')         # global logger
+        log = logging.getLogger(__name__)   # local logger (<__name__>.py)
+        log.debug(err)
+        log.info(err)
+        log.error(err)
+        log.exception(err)
+        log.critical(err)
+        log.fatal(err)
+        # see: supervisor.loggers.LevelsByName and .LevelsByDescription
+        TRAC = LevelsByName.TRAC = 5
+        BLAT = LevelsByName.BLAT = 3
+        log.log(err, TRAC)
+        logging.addLevelName(TRAC, 'TRAC')
+        logging.addLevelName(BLAT, 'BLAT')
+        log.setLevel(TRAC)
+        log.log(err, BLAT)  # not printed because msg.level < log.level
+
+        log.log((err, 'string'), BLAT)
+
+    # run unittest.main() when run like:
+    #   python ./filename.py
+    # but not when imported like:
+    #   import filename
+    if __name__ == "__main__":
+        import sys
+        sys.exit(unittest.main())
+
+See also:
+
+* http://learnxinyminutes.com/docs/python
+* https://westurner.github.io/tools/#python
+
+
+structlog
+----------------
+| Src: https://github.com/hynek/structlog 
+| PyPI: https://pypi.python.org/pypi/structlog
+| Docs: https://structlog.readthedocs.org/en/latest/
+| Docs: http://www.structlog.org/en/stable/
+| Docs: https://structlog.readthedocs.io/en/stable/logging-best-practices.html#graylog2
+| Docs: https://structlog.readthedocs.io/en/stable/examples.html
+
+* structlog w/ `logbook`_
+  https://github.com/hynek/structlog/issues/30#issuecomment-67754813
+
+
+logbook
+---------
+| Src: https://github.com/getlogbook/logbook
+| PyPI: https://pypi.python.org/pypi/logbook
+| Docs: https://logbook.readthedocs.io/en/stable/
+| Docs: https://logbook.readthedocs.io/en/stable/features.html
+| Docs: https://logbook.readthedocs.io/en/stable/designexplained.html
+| Docs: https://logbook.readthedocs.io/en/stable/quickstart.html#handlers
+
+Logbook is a drop-in replacement for the Python `logging`_ module
+with a number of simplifications and lots of additional handlers.
+
+* MultiProcessingHandler
+  https://logbook.readthedocs.io/en/stable/api/queues.html#logbook.queues.MultiProcessingHandler
+* ThreadedWrapperHandler
+  https://logbook.readthedocs.io/en/stable/api/queues.html#logbook.queues.ThreadedWrapperHandler
+* structlog w/ `logbook`_
+  https://github.com/hynek/structlog/issues/30#issuecomment-67754813
+
+
+Logging Strategies
+--------------------
+* https://www.fullstackpython.com/logging.html
+
+
+syslog
+~~~~~~~~
+| Wikipedia: http://docs.graylog.org/en/latest/pages/gelf.html#gelf-format-specification
+| Spec: https://en.wikipedia.org/wiki/Syslog#Internet_standard_documents
+
+| Docs: https://docs.python.org/2/library/syslog.html
+| Docs: https://docs.python.org/3/library/syslog.html
+| Docs: https://docs.python.org/2/library/logging.handlers.html#sysloghandler
+| Docs: https://docs.python.org/3/library/logging.handlers.html#sysloghandler
+
+* logging.handlers.SyslogHandler(logging.Handler) blocks
+
+  + https://docs.python.org/2/library/logging.handlers.html#sysloghandler
+  + http://www.somethinkodd.com/oddthinking/2010/04/29/how-python-logging-bit-me-part-1/
+  + `logbook`_ ThreadedWrapperHandler, MultiProcessingHandler
+  + 
+
+rsyslog
+^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Rsyslog
+| Homepage: http://www.rsyslog.com/
+| Src: https://github.com/rsyslog/rsyslog
+| Docs: http://www.rsyslog.com/doc/v8-stable/
+
+* "20.7 Interaction of rsyslog and journal" [journald]
+  https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/s1-interaction_of_rsyslog_and_journal.htmlq
+
+
+syslog-ng
+^^^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Syslog-ng
+| Homepage: https://syslog-ng.org/
+| Src: https://github.com/balabit/syslog-ng
+| Docs: https://github.com/balabit/syslog-ng#features
+| Docs: https://www.balabit.com/sites/default/files/documents/syslog-ng-ose-latest-guides/en/syslog-ng-ose-guide-admin/html/index.html
+
+
+sentry
+~~~~~~~~
+| Homepage: https://sentry.io
+| Src: https://github.com/getsentry/sentry
+
+
+raven-python
+^^^^^^^^^^^^^^^
+| Src: https://github.com/getsentry/raven-python
+| PyPI: https://pypi.python.org/pypi/raven
+| Docs: https://docs.sentry.io/hosted/clients/python/
+| Docs: https://docs.sentry.io/hosted/clients/python/integrations/
+
+
+graylog
+~~~~~~~~
+| Homepage: https://www.graylog.org/
+| Src: https://github.com/Graylog2/graylog2-server
+| Src: https://github.com/Graylog2
+| DockerHub: https://hub.docker.com/r/graylog2/server/
+| Docs: http://docs.graylog.org/en/latest/
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/pages/installation.html
+| Docs: https://graylog2-docs.readthedocs.io/en/latest/pages/installation/docker.html
+
+- Elasticsearch, MongoDB, Java 8+
+
+
+GELF
+^^^^^
+| Docs: http://docs.graylog.org/en/latest/pages/gelf.html
+
+GELF (*Graylog Extended Log Format*)
+
+- `Graylog`_
+
+
+graypy
+^^^^^^^^
+| Src: https://github.com/severb/graypy
+| PyPI: https://pypi.python.org/pypi/graypy
+| Docs: https://github.com/severb/graypy#using-with-django
+
+logstash
+~~~~~~~~~~
+
+ELK
+^^^^
+- ElasticSearch: storage, indexing, search
+- Logstash: logging adapters
+- Kibana: ElasticSearch Search UI
+
+
+---------------
+Elasticsearch
+---------------
+| Homepage: https://www.elastic.co/products/elasticsearch
+| Src:  https://github.com/elastic/elasticsearch
+| DockerHub: https://hub.docker.com/_/elasticsearch/
+| Wrdrddocs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#elasticsearch
+
+----------
+Logstash
+----------
+| Homepage: https://www.elastic.co/products/logstash
+| Src: https://github.com/elastic/logstash
+| DockerHub: https://hub.docker.com/_/logstash/
+
+* Logstash `GELF`_ Plugin
+  https://www.loggly.com/docs/rsyslog-tls-configuration/
+
+
+--------
+Kibana
+--------
+| Homepage: https://github.com/elastic/kibana
+| Src: https://www.elastic.co/products/kibana
+| DockerHub: https://hub.docker.com/_/kibana/
+
+
+python-logstash
+^^^^^^^^^^^^^^^^^^^^
+| Src: https://github.com/vklochan/python-logstash
+| PyPI: https://pypi.python.org/pypi/python-logstash
+
+
+logstash_formatter
+^^^^^^^^^^^^^^^^^^^
+| Src: https://github.com/exoscale/python-logstash-formatter
+| PyPI: https://pypi.python.org/pypi/logstash_formatter
+
+
+loggly
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Loggly
+| Homepage: https://www.loggly.com/
+| Docs: https://www.loggly.com/docs/
+| Docs: https://www.loggly.com/docs/python-logging/
+| Docs: https://www.loggly.com/docs/python-syslog/
+| Docs: https://www.loggly.com/docs/rsyslog-tls-configuration/
+
+
+
+Test-Driven Development (TDD)
+================================
+https://en.wikipedia.org/wiki/Test-driven_development
+
+
+Behavior-Driven Development (BDD)
+===================================
+https://en.wikipedia.org/wiki/Behavior-driven_development
+
+* http://pythonhosted.org/lettuce/
+* http://pythonhosted.org/lettuce/tutorial/simple.html
+* http://heynemann.github.io/pyvows/
+
+
+Mocks
+===========================
+https://en.wikipedia.org/wiki/Mock_object
+
+* http://mock.readthedocs.org/en/latest/index.html
+* http://mock.readthedocs.org/en/latest/patch.html
+* http://docs.python.org/3/library/unittest.mock.html
+
+
+Test Runners
+==============
+
+Nose
+--------------
+
+| Src: git https://github.com/nose-devs/nose
+| PyPI: https://pypi.python.org/pypi/nose
+| Docs: https://nose.readthedocs.org/en/latest/testing.html
+| Docs https://nose.readthedocs.org/en/latest/writing_tests.html
+
+.. code:: bash
+
+        nosetests --help
+        nosetests --with-xunit
+
+        # python -m pdb --help
+        nosetests --pdb
+        nosetests --pdb-failures
+        nosetests --pdb-errors
+
+        # pip install nose_ipdb
+        nosetests --ipdb --ipdb-failure
+
+        # pip install nose-progressive
+        nosetests --with-progressive
+
+
+nose-ipdb
+~~~~~~~~~~~
+| Src: https://github.com/flavioamieiro/nose-ipdb
+| Docs: https://pypi.python.org/pypi/ipdbplugin
+
+nose-ipdb is a `Nose`_ plugin for running `pdb`_ debugger
+with IPython (so tab completion, ``obj?`` and ``obj??`` all work.
+
+
+nose-parameterized
+~~~~~~~~~~~~~~~~~~~~
+| Src: https://github.com/wolever/nose-parameterized
+
+nose-parameterized is a `Nose`_ plugin for separating
+test data from test code.
+
+See also:
+
+* `Fixtures`_
+
+
+nose-progressive
+~~~~~~~~~~~~~~~~~~
+| Src https://github.com/erikrose/nose-progressive
+| PyPI: https://pypi.python.org/pypi/nose-progressive
+
+nose-progressive is a `Nose`_ plugin which adds a progress bar,
+better/different configurable tracebacks, and editor shortcuts
+
+* https://github.com/erikrose/nose-progressive#editor-shortcuts
+
+  .. code:: bash
+
+      export EDITOR='e'
+
+  - https://github.com/westurner/dotfiles/blob/develop/scripts/e
+
+
+ipython_nose
+~~~~~~~~~~~~~~~
+| Src: https://github.com/taavi/ipython_nose
+
+ipython_nose is a `Nose`_ plugin for running ``test_*`` functions
+within the current Jupyter Notebook.
+
+.. code:: python
+
+   !pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
+   %load_ext ipython_nose
+   def test_func():
+       assert sum([1, 1]) == 2
+   %nose  # discover and run "test_*" functions
+
+
+nosebook
+~~~~~~~~~
+| Src: https://github.com/bollwyvl/nosebook
+| PyPI: https://pypi.python.org/pypi/nosebook
+
+* nosebook is a Nose plugin for running test functions
+  in Jupyter Notebooks from the CLI.
+
+
+nose and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pdbpp
+   nosetests --pdb
+
+
+py.test
+---------------
+
+| Src: https://bitbucket.org/hpk42/pytest
+| PyPI: https://pypi.python.org/pypi/pytest
+| Docs: http://pytest.org/latest/
+
+.. code:: bash
+
+    py.test --pdb  # --full-trace
+
+py.test and pdbpp
+~~~~~~~~~~~~~~~~~~
+`Nose`_ and `pdbpp`_:
+
+.. code:: bash
+
+   pip install pytest
+   py.test --pdb
+
+pytest-sugar
+~~~~~~~~~~~~~~~
+| Homepage: https://pivotfinland.com/pytest-sugar/
+| Src: https://github.com/Frozenball/pytest-sugar
+| PyPI: https://pivotfinland.com/pytest-sugar/
+
+- pytest-sugar adds a progressbar
+- See also `nose-progressive`_
+
+
+testtools
+-------------
+
+| Src: git https://github.com/testing-cabal/testtools
+| PyPI: https://pypi.python.org/pypi/testtools
+| Docs: https://testing-cabal.github.io/testtools/
+| Docs: https://testtools.readthedocs.org/en/latest/
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#assertions
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#matchers
+| Docs: https://testtools.readthedocs.org/en/latest/for-test-authors.html#running-your-tests
+
+
+GUI Test Runners
+-----------------
+
+* https://github.com/pybee/cricket
+* See: `Debugging: GUI`_
+
+
+Tox
+----------------
+
+| Src: https://bitbucket.org/hpk42/tox
+| Docs: http://tox.readthedocs.org/en/latest/
+
+* https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/tox.ini
+
+
+Continuous Integration (CI) and Continuous Delivery (CD)
+=========================================================
+
+* https://en.wikipedia.org/wiki/Continuous_integration
+* https://en.wikipedia.org/wiki/Continuous_delivery
+* https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software
+
+* http://docs.python-guide.org/en/latest/scenarios/ci/
+
+
+Buildbot
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Buildbot
+| Homepage: http://buildbot.net
+| Src: https://github.com/buildbot/buildbot
+| PyPI: https://pypi.python.org/pypi/buildbot
+| PyPI: https://pypi.python.org/pypi/buildbot-slave
+| Docs: docs.buildbot.net/latest/
+| Docs: docs.buildbot.net/latest/full.html
+
+* https://docs.python.org/devguide/buildbots.html
+
+
+Jenkins
+--------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Jenkins_(software)>`__
+
+* https://github.com/saltstack/salt-jenkins
+* https://wiki.jenkins-ci.org/display/JENKINS/ShiningPanda+Plugin
+* `xUnit XML`_
+
+
+xUnit XML
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/XUnit
+
+* https://nose.readthedocs.org/en/latest/plugins/xunit.html
+* http://nosexunit.sourceforge.net/
+* https://pytest.org/latest/usage.html#creating-junitxml-format-files
+* https://github.com/xmlrunner/unittest-xml-reporting
+* https://github.com/zandev/shunit2/compare/master...jeremycarroll:master
+
+
+Travis
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/Travis_CI
+| Homepage: http://travis-ci.org/
+
+* http://about.travis-ci.org/docs/user/getting-started/
+* https://github.com/audreyr/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/.travis.yml
+
+
+Version Control
+==================
+
+Patches, Tags, Branches, Merging
+------------------------------------
+
+* https://en.wikipedia.org/wiki/ACID
+* `<https://en.wikipedia.org/wiki/Patch_(computing)>`__
+* `<https://en.wikipedia.org/wiki/Branching_(revision_control)>`__
+* `<https://en.wikipedia.org/wiki/Merge_(revision_control)>`__
+* https://en.wikipedia.org/wiki/Revision_control
+* https://en.wikipedia.org/wiki/Distributed_revision_control
+* http://savannah.nongnu.org/projects/quilt
+* http://www.infoq.com/articles/agile-version-control
+* http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging
+* http://linux.die.net/man/7/guilt
+* http://hgbook.red-bean.com/read/advanced-uses-of-mercurial-queues.html
+* http://mercurial.selenic.com/wiki/Bookmarks
+
+
+Bisect, Blame
+----------------
+
+* https://en.wikipedia.org/wiki/Code_Bisection
+* https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html
+* https://www.kernel.org/pub/software/scm/git/docs/git-blame.html
+* http://git-scm.com/book/en/Git-Tools-Debugging-with-Git
+* http://www.selenic.com/mercurial/hg.1.html#bisect
+* http://www.selenic.com/mercurial/hg.1.html#annotate
+* http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#sec:undo:bisect
+
+
+Debugging
+===========
+
+* https://en.wikipedia.org/wiki/Debugging
+* https://en.wikipedia.org/wiki/Breakpoint
+* https://en.wikipedia.org/wiki/Program_animation
+* `<https://en.wikipedia.org/wiki/Tracing_(software)>`__
+* https://en.wikipedia.org/wiki/Fault_injection
+* https://en.wikipedia.org/wiki/Probe_effect
+* https://scipy-lectures.github.io/advanced/debugging/
+
+Debugging: Console, CLI, Terminal, REPL, IPython
+-----------------------------------------------------
+
+pdb
+~~~~~
+| Src: https://hg.python.org/cpython/file/tip/Lib/pdb.py
+| Docs: http://docs.python.org/2/library/pdb.html
+| Docs: http://docs.python.org/3/library/pdb.html
+| Docs: https://pymotw.com/2/pdb/
+| Docs: https://pymotw.com/3/pdb/
+
+.. code:: python
+
+    import pdb; pdb.set_trace()    # pdb, pdbpp
+
+* http://docs.python.org/2/library/inspect.html
+* http://docs.python.org/2/library/dis.html
+
+pudb
+~~~~~~
+| Src: https://github.com/inducer/pudb
+| PyPI: https://pypi.python.org/pypi/pudb
+
+ipdb
+~~~~~~
+| Src: https://github.com/gotcha/ipdb
+| PyPI: https://pypi.python.org/pypi/ipdb
+
+.. code:: bash
+
+    import ipdb; ipdb.set_trace()  # ipdb
+    nosetests --ipdb --ipdb-failure  # --with-progressive  # nose-progressive
+
+pdbpp
+~~~~~~~~~
+| Src: http://bitbucket.org/antocuni/pdb
+| PyPI: https://pypi.python.org/pypi/pdbpp
+
+pdb++ (pdbpp) is a "drop-in replacement for pdb" with additional
+debugging commands, tab completion, syntax highlighting, sticky mode,
+
+* When pdb++ is installed (in ``sys.path``) pdb++ overloads pdb:
+
+.. code:: bash
+
+   pip install pdbpp funcsigs  # installs pdb.py
+   python -m pdb ./code.py
+
+   nosetests --pdb ./code.py
+   py.test --pdb ./code.py
+
+
+Vim
+~~~~~
+
+- https://westurner.github.io/tools/#vim
+
+vimpdb
+^^^^^^^^
+| Src:  https://github.com/gotcha/vimpdb
+| PyPI: https://pypi.python.org/pypi/vimpdb
+
+vimpdb integrates `vim`_ and `pdb`_
+
+vim-ipython
+^^^^^^^^^^^^
+| Src: https://github.com/ivanov/vim-ipython
+
+vim-unstack
+^^^^^^^^^^^^^
+| Src: https://github.com/mattboehm/vim-unstack
+
+jedi-vim
+^^^^^^^^^^
+| Src: https://github.com/davidhalter/jedi-vim
+
+python-mode
+^^^^^^^^^^^^^
+| Src: https://github.com/klen/python-mode
+| Docs:  https://klen.github.io/python-mode/
+| Docs: https://github.com/klen/python-mode#source-links
+
+
+westurner/dotvim
+^^^^^^^^^^^^^^^^^^
+| Src: https://github.com/westurner/dotvim
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc
+| Docs: https://westurner.github.io/dotfiles/usage/#vim
+
+* https://dev.launchpad.net/UltimateVimPythonSetup (F7 for `set_trace`)
+
+Debugging: GUI
+----------------
+
+* http://winpdb.org/docs/
+* https://github.com/lmacken/pyrasite-gui
+* https://github.com/pybee/bugjar
+
+IDEs
+~~~~~
+* http://wiki.python.org/moin/IntegratedDevelopmentEnvironments#IDEs_with_introspection-based_code_completion_and_integrated_debugger
+
+* http://www.jetbrains.com/pycharm/features/index.html#debugger
+* http://www.activestate.com/komodo-ide/features#debugging
+* http://pythonhosted.org/spyder/debugging.html
+* http://pydev.org/manual_adv_debugger.html
+* https://wingware.com/doc/debug
+* https://pytools.codeplex.com/
+
+
+
+Debugging: Web
+----------------
+
+* http://werkzeug.pocoo.org/
+* http://firelogger.binaryage.com#python
+* See: `Web Frameworks`_
+
+
+
+Advanced Debugging
+--------------------
+
+* https://hg.python.org/cpython/file/tip/Tools/gdb/libpython.py
+* https://hg.python.org/cpython/file/tip/Misc/README.valgrind
+* https://hg.python.org/cpython/file/tip/Misc/valgrind-python.supp
+* https://github.com/tmetsch/python-dtrace
+* https://github.com/lmacken/pyrasite
+* https://github.com/lmacken/pyrasite-gui
+* https://github.com/google/pyringe
+* https://github.com/alonho/pytrace
+* https://github.com/haypo/pytracemalloc
+
+
+Performance Instrumentation and Profiling
+============================================
+
+Profiling
+----------
+* `<https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)>`__
+* `<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>`__
+* https://en.wikipedia.org/wiki/Call_graph
+* https://docs.python.org/2/library/profile.html
+
+Benchmarks
+--------------
+
+* https://github.com/tobami/codespeed/
+
+  + https://speed.python.org/
+  + https://bitbucket.org/pypy/benchmarks/
+
+    + https://speed.pypy.org/
+
+* https://github.com/numfocus/python-benchmarks
+
+  * https://numfocus.github.io/python-benchmarks/
+
+* https://github.com/scikit-learn/scikit-learn/tree/master/benchmarks
+* https://github.com/pydata/vbench
+
+  + https://github.com/statsmodels/vbench
+
+    + http://statsmodels.sourceforge.net/vbench/
+
+  + https://github.com/pydata/pandas/tree/master/bench
+
+    + http://pandas.pydata.org/pandas-docs/vbench/
+    + https://github.com/pydata/pandas/wiki/Performance-Testing
+
+* https://github.com/amcfague/linesman
+* https://github.com/bdarnell/plop
+* http://firelogger.binaryage.com#python
+
+* https://github.com/scikit-learn/ml-benchmarks
+* https://github.com/TechEmpower/FrameworkBenchmarks
+
+  * https://www.techempower.com/benchmarks/
+
+* https://benchmarksgame.alioth.debian.org/
+* http://rosettacode.org/wiki/Category:Programming_Tasks
+
+
+Performance
+-------------
+
+* https://scipy-lectures.github.io/advanced/optimizing/
+* http://pypy.org/performance.html
+* http://scikit-learn.org/dev/developers/performance.html
+* https://pandas-docs.github.io/pandas-docs-travis/enhancingperf.html
+* http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf
+* https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-6B-HPC.ipynb
+
+Databases
+==========
+
+Fixtures
+----------------
+
+* https://en.wikipedia.org/wiki/Test_fixture
+* https://factoryboy.readthedocs.org/en/latest/orms.html
+* https://docs.djangoproject.com/en/dev/topics/testing/overview/#topics-testing-fixtures
+* http://farmdev.com/projects/fixture/
+
+
+* https://pypi.python.org/pypi/tablib
+* https://pypi.python.org/pypi/anyconfig
+
+
+Schema Migrations
+-------------------
+
+* https://en.wikipedia.org/wiki/Schema_migration
+* https://en.wikipedia.org/wiki/Database_refactoring
+* https://en.wikipedia.org/wiki/Database_normalization
+
+Django Migrations
+~~~~~~~~~~~~~~~~~~~
+* https://docs.djangoproject.com/en/1.7/topics/migrations/
+* https://south.readthedocs.org/en/latest/
+
+SQLAlchemy Migrations
+~~~~~~~~~~~~~~~~~~~~~~~
+* https://alembic.readthedocs.org/en/latest/
+* https://sqlalchemy-migrate.readthedocs.org/en/latest/
+
+| Awesome:  https://github.com/dahlia/awesome-sqlalchemy
+
+
+Web Frameworks
+========================
+
+https://en.wikipedia.org/wiki/Web_application_framework
+
+* https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#Python
+* https://www.techempower.com/benchmarks/
+
+Plone
+------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+| Homepage: https://plone.org/
+| Src: https://github.com/plone/plone
+| PyPI: https://pypi.python.org/pypi/Plone
+| Docs: https://plone.org/documentation
+| Docs: http://developer.plone.org/
+| Docs: http://docs.plone.org/manage/installing/installation.html
+
+* http://developer.plone.org/testing_and_debugging/
+
+Django
+--------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Django_(web_framework)>`__
+| Homepage: https://www.djangoproject.com/
+| Src: git https://github.com/django/django
+| PyPI: https://pypi.python.org/pypi/django
+| Docs: https://docs.djangoproject.com/
+| Docs: https://docs.djangoproject.com/en/dev/topics/testing/
+| Docs: https://docs.djangoproject.com/en/dev/topics/settings/
+| Awesome: https://github.com/rosarior/awesome-django
+
+* https://github.com/django-debug-toolbar/django-debug-toolbar
+* https://www.djangopackages.com/
+
+  * https://www.djangopackages.com/grids/g/cms/
+
+Flask
+------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Flask_(web_framework)>`__
+| Homepage: https://flask.pocoo.org/
+| Src: git https://github.com/mitsuhiko/flask
+| PyPI: https://pypi.python.org/pypi/Flask
+| Docs: https://flask.readthedocs.org/en/latest/config/
+| Docs: https://flask.pocoo.org/docs/latest/
+| Docs: https://flask.pocoo.org/docs/latest/testing/
+| Awesome: https://github.com/humiaozuzu/awesome-flask
+
+* https://flask-debugtoolbar.readthedocs.org/en/latest/
+
+Bottle
+-------
+| Homepage: http://bottlepy.org
+| Src: git https://github.com/bottlepy/bottle
+| PyPI: https://pypi.python.org/pypi/bottle
+| Docs: http://bottlepy.org/docs/dev/
+| Docs: http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications
+
+Bottle is a one file WSGI Python web framework.
+
+* http://bottlepy.org/docs/dev/plugins/
+
+pgs is written with bottle.py:
+
+* | Src: https://github.com/westurner/pgs
+
+
+Pyramid
+--------
+| Wikipedia: `<https://en.wikipedia.org/wiki/Pylons_project#Pyramid>`__
+| Homepage: http://www.pylonsproject.org/projects/pyramid/about
+| Src: git https://github.com/Pylons/pyramid
+| PyPI: https://pypi.python.org/pypi/pyramid
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/
+| Docs: http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
+| Docs:  http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html
+| Awesome: https://github.com/ITCase/awesome-pyramid
+
+* http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/
+
+
+Web Applications
+==================
+| Wikipedia: https://en.wikipedia.org/wiki/Web_application
+
+* http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7
+
+
+WebTest
+--------
+| Src: git https://github.com/Pylons/webtest
+| PyPI: https://pypi.python.org/pypi/WebTest
+| Docs: http://webtest.pythonpaste.org/en/latest/
+
+WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. `Pyramid`_, `Flask`_, `Django`_, `Bottle`_)
+
+
+Splinter
+---------
+| Src: git https://github.com/cobrateam/splinter
+| PyPI: https://pypi.python.org/pypi/splinter
+| Docs: https://splinter.readthedocs.org/en/latest/
+
+.. epigraph::
+
+  * multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+    zopetestbrowser, remote webdriver)
+  * css and xpath selectors \*
+
+
+ghost.py
+---------
+| Src: git https://github.com/jeanphix/Ghost.py
+| PyPI: https://pypi.python.org/pypi/Ghost.py
+| Docs: http://ghost-py.readthedocs.org/en/latest/
+
+.. epigraph::
+
+    Webkit based scriptable web browser for python.
+
+- PyQT or PySide
+
+
+Selenium
+----------
+| Docs: http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html
+
+* https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin
+* http://www.seleniumhq.org/projects/ide/

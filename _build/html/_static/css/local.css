@@ -1,0 +1,147 @@
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+button.navbar-toggle {
+    z-index: 1000;
+    background-color: #f0f0f0;
+}
+
+#sidebar-wrapper {
+    background: #f8f8f8;
+    /* border-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-top: 0; */
+    margin-top: -1px;
+    padding-top: 4px;
+}
+
+div.sidebar ul ul{
+    padding-left: 12px;
+    list-style-type: none;
+}
+
+div.sidebar {
+    padding-bottom: 14px; /* square */
+}
+
+div.sidebar pre {
+    font-size: 9px;
+}
+
+div.sidebar h3 {
+    padding-top: 14px;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+div.body h1 {
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding-bottom: 10px;
+}
+
+
+#sidebar-wrapper {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#sidebar-wrapper.affix-bottom, #sidebar-wrapper.affix-top {
+    position: fixed;
+    height: 100%;
+}
+
+#sidebar-wrapper.affix-bottom, #sidebar-wrapper.affix {
+    margin-top: -52px; /* magic */
+}
+
+#navbar-related {
+    border: 0;
+    background: none;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+div.document ul {
+    padding-left: 18px;
+}
+
+div.footer-relbar {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer {
+    color: #777;
+    opacity: 0.7;
+}
+
+#content-wrapper {
+    background: white;
+    border: 1px solid #e7e7e7;
+    margin-top: -1px;
+}
+
+
+#sidebar-wrapper a.youarehere,
+#navbar-top a.youarehere {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+#sidebar-wrapper a.youarehere:after,
+#navbar-top a.youarehere:after {
+    content: " ⬅" !important;
+}
+
+#content-wrapper a.headerlink {
+    font-size: inherit !important;
+}
+
+#content-wrapper a.youarehere {
+    visibility: visible !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    button.toplink {
+        position: fixed;
+        right: 1px;
+        top: 0;
+        padding: 6px !important;
+        z-index: 900 !important;
+        opacity: 0.3;
+    }
+}
+
+/* leftnavbar.css */
+@media (min-width: 767px) {
+    #content-wrapper, div.footer-relbar, footer {
+        position: relative;
+        /* left: 25%; */
+        margin-left: 25%;
+        width: 75%;
+    }
+
+    ul.navbar-nav.navbar-right {
+        position: fixed;
+        right: 24px;
+        z-index: 1000;
+    }
+}
+
+/* GitHub wiki CSS */
+div#contents {
+    display: none;
+}

@@ -1,0 +1,128 @@
+checkboxes (ReStructuredText)
+==============================
+A number of tests of checkboxes with ReStructuredText (docutils (Python)).
+
+* docutils ReStructuredText:
+
+   * | Docs: http://docutils.sourceforge.net/docs/
+   * | Docs: http://docutils.sourceforge.net/rst.html
+   * | Docs: http://docutils.sourceforge.net/docs/ref/doctree.html
+   * | Wrdrddocs: https://wrdrd.github.io/docs/tools/#docutils
+
+* github ReStructuredText (``rest2html`` (docutils)):
+
+  * https://github.com/github/markup/blob/master/lib/github/commands/rest2html
+
+
+A number of tests of checkboxes with ReStructuredText:
+
+.
+
+* [ ] unchecked # [checkbox:unchecked]
+* [x] checked   # [checkbox:checked]
+* [X] checked   # [checkbox:checked]
+* .
+- [ ]          # [checkbox:unchecked]
+- [-]          # '[-]'
+- [o]          # '[o]'
+- [O]          # '[O]'
+- .
+- \[ ]         # [checkbox:unchecked]
+- /[ ]         # '/[ ]'
+- \\[ ]        # '\[ ]'
+- \[-]         # '\[-]' 
+- \[o]         # `\[o]'
+- \[x]         # [checkbox:checked]
+- \[X]         # [checkbox:checked]
+- .
+- \\[ ]        # '\[ ]'
+- \\[x]        # '\[x]'
+- .
+- [[ ]]        # ''
+- [[x]]        # [link]
+- [[o]]        # [link]
+- .
+- ][ ]         # '][ ]'
+- ][x]         # '][x]'
+- .
+- ] [          #  '] ['
+- ]x[          #  ']x['
+- .
+- .[ ]         #  '.[ ]'
+- .[x]         #  '.[x]'
+- .1.
+- .2.
+- .3.
+- 1.
+- .
+- 2.
+- 3.
+- .
+- 96.
+-
+- .
+- [[[ ]        # '[[[ ]'
+- [[[x]        # '[[[x]'
+.
+- [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
+
+
+Source (ReStructuredText)
+===========================
+
+.. code:: restructuredtext
+
+    * [ ] unchecked # [checkbox:unchecked]
+    * [x] checked   # [checkbox:checked]
+    * [X] checked   # [checkbox:checked]
+    * .
+    - [ ]          # [checkbox:unchecked]
+    - [-]          # '[-]'
+    - [o]          # '[o]'
+    - [O]          # '[O]'
+    - .
+    - \[ ]         # [checkbox:unchecked]
+    - /[ ]         # '/[ ]'
+    - \\[ ]        # '\[ ]'
+    - \[-]         # '\[-]' 
+    - \[o]         # `\[o]'
+    - \[x]         # [checkbox:checked]
+    - \[X]         # [checkbox:checked]
+    - .
+    - \\[ ]        # '\[ ]'
+    - \\[x]        # '\[x]'
+    - .
+    - [[ ]]        # ''
+    - [[x]]        # [link]
+    - [[o]]        # [link]
+    - .
+    - ][ ]         # '][ ]'
+    - ][x]         # '][x]'
+    - .
+    - ] [          #  '] ['
+    - ]x[          #  ']x['
+    - .
+    - .[ ]         #  '.[ ]'
+    - .[x]         #  '.[x]'
+    - .1.
+    - .2.
+    - .3.
+    - 1.
+    - .
+    - 2.
+    - 3.
+    - .
+    - 96.
+    -
+    - .
+    - [[[ ]        # '[[[ ]'
+    - [[[x]        # '[[[x]'
+    .
+    - [X (YYYY-MM-DD HH:MM:SS)]   # [X (YYYY-MM-DD HH:MM:SS)] 
+
+
+.. code:: restructuredtext
+
+    .. contents::
+
+.. contents::

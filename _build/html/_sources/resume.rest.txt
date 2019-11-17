@@ -1,0 +1,69 @@
+
+#######
+Resume
+#######
+
+Contents
+==========
+.. contents::
+
+Views
+========
+
+HTML 
+--------------------------
+| https://westurner.github.io/pages/resume
+
+- (Tinkerer > Sphinx)
+- Click "HTML" for the `Sphinx HTML`_ view
+
+Sphinx HTML
+--------------
+| https://westurner.github.io/resume/html/resume
+
+- (Sphinx)
+
+PDF
+------
+| http://westurner.github.io/resume/latex/resume_wes-turner.pdf
+
+- (Sphinx)
+
+
+Source
+--------
+- https://github.com/westurner/westurner.github.io
+- ``pages/resume.rst``: https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
+- ``resume/Makefile``: https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
+
+
+Links
+=======
+
+- [x] https://westurner.github.io/pages/resume.html (April 2014)
+- [x] https://github.com/westurner/westurner.github.io/blob/source/pages/resume.rst
+- [x] https://github.com/westurner/westurner.github.io/blob/source/resume/Makefile
+- [x] `resume_wes-turner.rst <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.rst>`__
+  (`web <http://westurner.github.io/resume/resume_wes-turner.rst>`__)
+- [x] `resume.html <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/html/resume.html>`__
+  (`web <http://westurner.github.io/resume/html/resume.html>`__)
+- [x] `resume_wes-turner.tex <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.tex>`__
+  (`web <http://westurner.github.io/resume/latex/resume_wes-turner.tex>`__)
+- [x] `resume_wes-turner.pdf <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/latex/resume_wes-turner.pdf>`__
+  (`web <http://westurner.github.io/resume/latex/resume_wes-turner.pdf>`__)
+- [x] `resume_wes-turner.odt <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.odt>`__
+  (`web <http://westurner.github.io/resume/resume_wes-turner.odt>`__)
+- [x] `resume_wes-turner.doc <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.doc>`__
+  (`web <http://westurner.github.io/resume/resume_wes-turner.doc>`__)
+- [x] `resume_wes-turner.docx <https://github.com/westurner/westurner.github.io/blob/source/_copy/resume/resume_wes-turner.docx>`__
+  (`web <http://westurner.github.io/resume/resume_wes-turner.docx>`__)
+- [x] https://github.com/westurner/westurner.github.io/blob/source/Makefile
+- [x] `accounts.html <https://github.com/westurner/westurner.github.io/blob/source/_themes/flat5000/accounts.html>`__
+- [x] https://westurner.github.io/resume (redirect)
+- [x] https://github.com/westurner/resume (November 2013)
+- [x] http://resume.wrd.nu/skills (~2010)
+- [x] http://resume.wrd.nu/skills
+- [x] http://resume.wrd.nu/portfolio
+- [ ] https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
+
+

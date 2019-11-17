@@ -1,0 +1,1410 @@
+=========
+Workflow
+=========
+Find simple workflows for productivity, efficiency, and collaboration.
+
+.. contents::
+
+Concept
+========
+::
+
+   The morning question,  |  5 | Rise, wash, and address
+                          |      *Powerful Goodness*;
+   What good shall I do   |  6 | contrive day's business and take the
+   this day?              |  7 | resolution of the day; prosecute the
+                          |      present study; and breakfast.
+                          |  8 -
+                          |  9 | Work.
+                          | 10 |
+                          | 11 |
+                          | 12 -
+                          |  1 | Read or overlook my accounts, and
+                          |      dine.
+                          |  2 -
+                          |  3 | Work.
+                          |  4 |
+                          |  5 |
+                          |  6 -
+                          |  7 | Put things in their places,
+                          |      supper, music,
+                          |  8 | or diversion, or conversation;
+    Evening question,     |  9 | examination of the day.
+    What good have I done | 10 -
+    today?                | 11 |
+                          | 12 |
+                          |  1 | Sleep.
+                          |  2 |
+                          |  3 |
+                          |  4 |
+
+   -- Benjamin Franklin
+
+
+Goals
+=======
+* Find simple workflows for productivity, efficiency, and collaboration
+* Develop methods to retain and analyze relevant information
+* Develop heuristics to identify tasks and sub-tasks
+
+
+Objectives
+-----------
+
+* [ ] Document optimal workflows
+* [ ] Document productivity tools and their productive use
+* [x] Create ``workflow.rst`` (see: current headings)
+* [ ] Develop file metadata strategies: (folders, names, tagging, labeling)
+* [x] Synthesize existing labeling strategies
+* [ ] Define and describe resources: skills, time, tools, tasks
+* [ ] Define and describe outputs: artifacts, products, deliverables
+* [ ] R&D: integrate workflow information flows
+
+  * Tasks, Lists, Labels, Services, Tools (pyrtm-task-cli,
+    `taskw <TaskWarrior>`)
+  * Logs: `Usrlog`_, workhours, elasticsearch, kibana
+
+See: `Requirements Traceability`_
+
+
+Tasks
+======
+
+Daily
+------
+* Daily Google Tasks list
+
+  * Daily: Uncheck list box(es), update date
+
+
+Scheduled
+----------
+* Google Calendar events (and reminders)
+* ReadTheMilk tasks
+
+
+Recurring
+-----------
+* Repeating Google Calendar events (and reminders)
+* Repeating ReadTheMilk tasks
+
+
+Phone
+-------
+``@phone``
+
+* While you were out stickies
+* `Email Labels`_: ``.p``
+
+
+
+Emails
+-------
+``@email``
+
+* `Email Labels`_: ``.tasks``, ``.tasks.done``
+* Recurring daily tasks ``.tasks.daily``
+  * Google Calendar Event Reminders
+* When a task is completed,
+  change ``.tasks`` to ``.tasks.done``
+
+
+Text Files
+------------
+* ``README``, ``README.txt``, ``README.md``, ``README.rst``
+* ``CHANGES``, ``CHANGES.txt``, ``CHANGES.md``, ``CHANGES.rst``
+* ``CHANGELOG``, ``CHANGELOG.txt``, ``CHANGELOG.md``, ``CHANGELOG.rst``
+* ``HISTORY``, ``HISTORY.txt``, ``HISTORY.md``, ``HISTORY.rst``
+* ``TODO``, ``TODO.rst``, ``TODO.md``, ``TODO.html``
+* ``index.html``, ``index.htm``
+
+Lightweight Markup Syntax
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Lightweight_markup_language
+
+
+Text File Headings
+++++++++++++++++++++
+
+ATX Headings (Markdown,)::
+
+    # h1
+    ## h2
+    ### h3
+
+Setext Headings (document-local ordering) (ReStructuredText, Markdown)
+
+| https://docs.python.org/devguide/documenting.html#sections
+| http://sphinx-doc.org/rest.html#sections
+
+::
+
+    #####
+    part
+    #####
+
+    chapter
+    ********
+
+    section
+    ========
+
+    subsection
+    -----------
+
+    subsection
+    ^^^^^^^^^^^
+
+    paragraph
+    """"""""""
+
+See: https://github.com/westurner/rst-tools
+
+
+Text File Attributes
+~~~~~~~~~~~~~~~~~~~~~~
+* Path: relative (``./path/to/file.ext``)
+* Path: absolute (``/home/user/path/to/file.ext``)
+* File extension (``.ext``)
+* Filesystem attributes (``getfacl``, ``setfacl``)
+* MIME-type (``file --mime``)
+* Byte-order-marker (``file --mime``)
+* Line endings (DOS, UNIX) (``Ctrl-V Ctrl-M``)
+* Shebang line (``#!/bin/sh``, ``#!/usr/bin/env python``)
+* Creation time (``stat``)
+* Modification time (``stat``)
+* Local undo/backup cache path
+
+Source Code
+-------------
+https://en.wikipedia.org/wiki/Source_code
+
+Source Code File Attributes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `Text File Attributes`_
+* path: relative_to_repo_path
+* repo_revid
+* repo_branch
+* repo_path
+* repo_remote_URL(s)=``[{'name':'origin',
+  'url':'ssh://git@github.com/westurner/wiki'}]``
+* repo_log(paths) history log
+* repo_log(paths) history log across renames
+
+Comment Tags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Comment tags::
+
+    TODO
+    FIXME
+    XXX
+
+.. code-block:: sh
+
+   grep 'TODO|FIXME|XXX'
+   grin 'TODO|FIXME|XXX'
+   hg grep 'TODO|FIXME|XXX'
+   git grep 'TODO|FIXME|XXX'
+
+
+Patches
+---------
+Also referred to as a diff.
+
+When an author has modified a file in a repository,
+there is a difference (in terms of text lines and/or bytes changed)
+between their local revision and
+the repository revision they started with.
+That's called a 'diff' or a 'patch'.
+
+To share those changes, an author must submit a patch to
+a repository maintainer, who is responsible for applying
+or not applying the changes to a branch of a repository.
+
+The patch review feedback cycle -- classically over NNTP or SMTP (email) --
+can produce lots of text: both revisions to the patch and an
+asynchronous stream of emails and IRC messages.
+
+Patch attributes
+~~~~~~~~~~~~~~~~~
+
+Patch Header
++++++++++++++++
+* [ ] Patch header
+
+  ::
+
+      ENH: Add sphinx Makefile and conf.py (#3)
+
+      Add a new feature called XYZ,
+      which modifies components X, Y, and Z
+      in order to provide new functionality (ENH)
+      indicated by new tests (TST).
+
+  - [ ] `Code labels`_ in subject line: ``ENH: Add sphinx Makefile and conf.py``
+  - [ ] `Issues`_ number in subject line: ``(#3)``
+  - [ ] `Issues`_ link in commit message:
+    ``https://github.com/westurner/wiki/issues/3``
+  - [ ] Patch header description (complete commit message)
+
+Patch Diff
+++++++++++++
+* [ ] Patch ``diff``
+
+  - [ ] ``--git``-style diffs
+
+
+Patch workflow
+~~~~~~~~~~~~~~~
+* Send patch(es) as an email attachment ("a patch bomb")
+
+  * DOC: write a Patch header for a new BUG,TST,ENH
+  * DOC: prepend `Code Labels`_ to first line of patch header (commit message)
+
+    * ``TST,BLD,CLN: code and test an ENHancement or fix a BUG``
+
+  * DOC: write a commit message
+  * (.sent, .code) Open Loop: wait for feedback (add email label)
+  * (pending) respond, revise, respond (add email labels)
+  * (pending) correlate manual line references in feedback emails with
+    the correct revision of the patch
+  * (pending|accepted|rejected) review constructive feedback
+  * (closed,done) Reach 'done'; update TODO system
+
+* Receive patch(es) as an email attachment
+
+  * (.unread) Open Loop: they're waiting for feedback
+  * (.read) read, review, revise, respond: email, editor
+  * (.tested) Test: run existing or documentation tests
+  * (pending) Respond: [Email] Feedback
+  * (pending|accepted|rejected) Evauluate: Apply or do not apply
+  * (accepted) Update release log (Desire `Code Labels`_)
+  * (released) Release: issue a version identifier with merged patch
+  * (closed,done) Reach 'done'; update TODO system
+
+
+Issues
+--------
+
+An issue records attributes of, notes regarding, and progress towards a finite request, report, or work item.
+
+Issues are often also referred to as tickets, issues, cards, and bugtracking.
+
+Agile methodologies for working with issues:
+https://wrdrd.github.io/docs/consulting/software-development#agile
+
+https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
+
+* https://waffle.io/ -- Kanban board of `GitHub Issues`_
+  with ``in progress``
+* https://taiga.io/ -- Kanban/Scrum issues with code labels
+
+
+Issue attributes
+~~~~~~~~~~~~~~~~~~
+
+* a title
+* a description
+* comments
+* metadata
+
+GitHub Issues
++++++++++++++++
+
+* title
+* body
+* user
+* assignee
+* state:
+
+  * open
+  * closed
+
+* milestone (configurable)
+* labels: (configurable)
+
+  * bug
+  * duplicate
+  * enhancement
+  * help wanted
+  * invalid
+  * question
+  * wontfix
+
+BitBucket Issues
++++++++++++++++++
+
+* title (Title)
+* content (Description)
+* reported_by
+* assignee
+* follower_count
+* status:
+
+  * new
+  * open
+  * resolved
+  * on hold
+  * invalid
+  * duplicate
+  * wontfix
+
+* kind:
+
+  * bug
+  * enhancement
+  * proposal
+  * task
+
+* priority:
+
+  * trivial
+  * minor
+  * major
+  * critical
+  * blocker
+
+* component (configurable)
+* milestone (configurable)
+* version (configurable)
+
+Google Code Issues
++++++++++++++++++++++
+(configurable templates)
+
+* Summary
+* Description
+* Reporter
+* Attachments
+* Status: (configurable)
+
+  * Open: (configurable)
+
+    * New
+    * Accepted
+    * Started
+    * MoreINFOneeded
+    * NeedsTesting
+    * Completed
+    * PassedTesting
+
+  * Closed: (configurable)
+
+    * Fixed
+    * Verified
+    * Invalid
+    * Duplicate
+    * WontFix
+    * Done
+
+* Owner
+* Cc
+* Labels: (configurable)
+
+  * OpSys-*
+  * Milestone-Release*
+  * Component-*
+  * Security
+  * Performance
+  * Usability
+  * Maintainability
+
+
+
+
+Pull Requests
+--------------
+Projects hosted with GitHub and BitBucket generally support accepting,
+reviewing, and merging changes as pull requests; which, like
+regular patches people used to send over the email,
+are hunks of differences between one or more files.
+
+Unlike a patch archived in a mailing list,
+pull requests have
+a free-form comment stream
+and line-based commenting
+-- features which simplify the change review and evaluation feedback loop.
+
+
+Send a Pull Request
+~~~~~~~~~~~~~~~~~~~~~~
+
+* Branch/fork, update, commit
+* Compare, test (review diff)
+* DOC: Prepend `Code Labels`_ to first line of patch header (commit message)
+* Send a pull request
+
+   * Email: Send a URL to the branch to pull from (tags: ``.tasks``, ``.code``, ``-waiting``)
+   * GitHub: Click 'Send Pull Request'
+   * BitBucket: Click 'Send Pull Request'
+
+* Open Loop: ``-waiting`` for feedback
+
+
+Review a Pull Request
+~~~~~~~~~~~~~~~~~~~~~~~
+* Open Loop: they're waiting for feedback
+* Read, ReviewTest*, Respond
+* Check whether the tests pass with the pull request applied
+* Apply or do not apply
+
+   * Do Not Apply
+
+     * Send feedback: not interested, needs work
+
+   * Apply
+
+     * Update release log (See: `<#code-labels>`__)
+     * Commit
+     * Push
+
+
+
+Lists
+======
+
+Mental
+-------
+* Mnemonics
+* String around one's finger
+* Note on one's hand
+* Cognitive representation (mental picture) of a list
+* Graph with edges that have magnitude
+
+Mental list attributes
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* [ ] 6-Ws: Who, What, When, Where, Why, and How
+
+  + [ ] What: Project
+  + [ ] When: Date recorded
+  + [ ] Where: Location recorded
+  + [ ] When: Date of task/event milestone
+  + [ ] Where: Location for task/event milestone
+  + [ ] What,Why,How: Description
+
+Paper
+------
+
+Pros
+~~~~~
+
+.. epigraph::
+
+    Just pick up a sheet of paper,
+    write something down,
+    and hand it to me.
+
+* Classic, ubiquitous
+* Visual
+* Battery-free
+
+Cons
+~~~~~
+.. epigraph::
+
+    Ask ____ to ask _____ to have that sent over to _________.
+
+Collaboration strategy:
+
+* Backup: manual replication: scanner, copier, keyboard
+* Sharing: who has which version of this sheet of paper?
+* Synchrony: Correlating list status
+* When: things were added/update/*renamed*/completed
+* When,Why: Assigning and sorting by priority
+
+Implementations
+~~~~~~~~~~~~~~~~~
+
+Schedule
++++++++++
+Chronological sequence of events
+
+Calendar
+++++++++++
+Visual grid of day, week, month, quarter, year
+
+Weekly views: ``M-Su``, ``Su-Sa``
+
+Agenda
+++++++++
+Action items to accomplish within a given context
+
+
+TODO List
+++++++++++++
+- [ ] create a list of items to accomplish
+- [ ] show completion with ``[x]`` checkmarks
+- [ ] show completion with strikethrough (crossing things off)
+
+Hipster PDA
++++++++++++++
+Pocket-sized notebook sheet of paper
+
+see: `pyrtm-task-cli`_
+
+
+Text
+-----
+Typed plaintext.  Usually with some form of lightweight markup for
+lists, nested lists, bold, italic, [underline, strikethrough].
+
+Stored with:
+
+* Paper
+* Filesystem
+* VCS Repository (git, hg)
+
+Pros
+~~~~~
+* Simple
+* Great with a keyboard, syntax highlighting, and syntax checking
+
+Cons
+~~~~~
+* Synchronicity: keeping everyone on the same revision of the page
+* Mobile Interface: no
+* Picking a syntax (try pandoc while deciding)
+* Lightweight markup language syntax learning curve
+
+Syntax
+~~~~~~~
+ReStructuredText, Markdown, [MediaWiki, BBCode, Textile]::
+
+   * one
+   * two
+   * three
+
+   - red
+   - green
+   - blue
+
+Checkboxes
+++++++++++++
+
+ReStructuredText::
+
+   * [x] one **bold**
+   * [ ] two *italic*
+
+     * [x] two.one
+     - [ ] two.two \* two
+
+   * [ ] ``three``
+
+Markdown::
+
+   * [x] one **bold**
+   * [ ] two *italic*
+     * [x] two.one
+     * [ ] two.two \* two
+   * [ ] ``three`` (also `three`)
+
+
+
+Services
+==========
+Web applications and web service
+systems designed to track task state for one or more people
+moving toward achieving objectives that satisfy the goals.
+
+https://en.wikipedia.org/wiki/List_of_collaborative_software
+
+Service Evaluation Criteria
+----------------------------------
+There is a spectrum between
+"we'll remember which checkboxes for you"
+and "this task is part of a project
+supported by these people
+in these roles
+with these permissions."
+
+* Web Interface: yes/link/no/date
+* Mobile Interface: yes/link/no/date
+* iOS App: yes/link/no/date
+* Android App: yes/link/no/date
+* BlackBerry App: yes/link/no/date
+* WinMo App: yes/link/no/date
+* API: yes/link/no
+* XML: yes/link/no
+* JSON: yes/link/no
+* Sharing/Internal: yes/link/no
+* Sharing/External: yes/link/no
+* Integrates with Google Calendar: yes/link/no
+* Integrates with Gmail: yes/link/no
+* Integrates with Twitter: yes/link/no
+* Integrates with Evernote: yes/link/no
+* Integrates with GitHub: yes/link/no
+* Cost/Free: yes/link/no
+* Cost/Paid: yes/link/no
+* Reminders/Pop-up: yes/link/no
+* Reminders/Email: yes/link/no
+* Tagging: yes/no
+
+
+Google Calendar
+-----------------
+* Web Interface: https://google.com/calendar/
+* Mobile Interface: https://www.google.com/calendar/m
+* iOS App: yes
+* Android App: yes
+* BlackBerry App: no (EOL 2012)
+* API: https://developers.google.com/google-apps/calendar/
+* JSON: yes
+* XML: yes
+
+
+RememberTheMilk
+------------------
+* Web Interface: https://www.rememberthemilk.com/
+* Mobile Interface:
+* iOS App: yes
+* Android App: yes
+* BlackBerry App: yes
+* API: https://www.rememberthemilk.com/services/api/
+* XML: yes
+* JSON: yes
+* Integrates with Google Calendar: yes
+* Integrates with Gmail: yes
+* Integrates with Twitter: yes
+* Integrates with Evernote: yes
+* Tagging: yes (see: `Task Labels`_, `Project Labels`_, `Context Labels`_)
+
+
+Google Tasks
+-------------
+* Integrates with Google Calendar: https://www.google.com/calendar/
+* Web Interface: https://www.gmail.com/mail/help/tasks/
+* Mobile Interface: https://www.gmail.com/mail/help/tasks/
+* API: https://developers.google.com/google-apps/tasks/
+* JSON: yes
+* Tagging: no
+
+
+
+Google Keep
+------------
+* Checkbox sticky notes
+* Web Interface: https://drive.google.com/keep/
+* Mobile Interface: yes
+* API: no
+* Sharing/Internal: yes
+* Sharing/External: no
+* Tagging: colors, labels
+
+
+
+Wikis
+-----
+A wiki is a set of documents and attachments
+that can be edited through the web,
+usually with some form of `Lightweight Markup Language`
+and WikiText linking extensions.
+
+* `GitHub Wiki`_ (Markdown, ReStructuredText)
+* BitBucket Wiki (Markdown)
+* Trac Wiki (Trac Wiki, ReStructuredText)
+* wiki.python.org (MoinMoin)
+* Wikipedia (Mediawiki)
+
+Wikis are good for:
+
+  * Links Pages, Outlines
+  * Roadmaps, Todo lists
+
+* Pandoc converts (sometimes lossily) between many wiki markup syntaxes
+
+
+GitHub Wiki
+~~~~~~~~~~~~
+These ``.rst`` ReStructuredText files are maintained with a ``.rest``
+extension to make it possible to edit these pages as both
+a GitHub wiki and
+a normal Sphinx git repository
+manually published to a ``gh-pages`` branch.
+
+https://github.com/westurner/wiki/blob/master/Makefile
+
+* "What advantages/disadvantages are there to having both a wiki view and a Sphinx view?" https://github.com/westurner/wiki/issues/5
+
+
+Mailing Lists
+--------------
+`<https://en.wikipedia.org/wiki/Electronic_mailing_list>`_
+
+Email relay application server ("listserv")
+
+GNU Mailman
+~~~~~~~~~~~~~
+| Homepage: https://www.gnu.org/software/mailman/
+| Src: https://launchpad.net/mailman/3.0
+| Docs: https://pythonhosted.org/mailman/
+| Docs: https://pythonhosted.org/mailman/src/mailman/docs/WebUIin5.html
+
+* Hosting: Self-hosted
+* Cost: Free
+* Language: Python
+* Mailman 3 Web UI: Postorious (Django)
+
+  * https://launchpad.net/postorius
+
+* Tagging: no
+* Lightweight Markup Languages: no
+* Editing: no
+
+
+Google Groups
+~~~~~~~~~~~~~~~
+| Homepage: https://groups.google.com/
+
+* Hosting: Cloud
+* Cost: Free
+* Tagging: no
+* Lightweight Markup Languages: no
+* Editing: no
+
+
+
+Forge Sites
+-------------
+`<https://en.wikipedia.org/wiki/Forge_(software)>`_
+
+- [ ] Code Repository
+- [ ] Mailing List and/or Forums
+- [ ] Wikis
+- [ ] Downloads
+- [ ] Issue Tracking
+
+
+`<https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities>`_
+
+
+
+Code hosting
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities
+
+* https://github.com/westurner/wiki/wiki/GitHub
+* https://github.com/westurner/wiki/wiki/BitBucket
+
+
+Collaborative Software
+~~~~~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/List_of_collaborative_software
+
+
+Examples:
+
+* SourceForge
+* GNU Savannah
+* LaunchPad
+* GitHub
+* Bitbucket
+
+
+Github Repos, Issues, Wikis
+-----------------------------
+* Free public Git repositories
+* Web Interface: https://github.com/
+* Mobile Interface: https://mobile.github.com/
+* API: https://developer.github.com/v3/
+* API note: most recent 1000 events
+* XML: no
+* JSON: yes
+* Tagging: yes (issue labels: see `Code Labels`_)
+* Language: Ruby
+
+GitHub renders the first README {.md, .rst, .txt, } it finds.
+
+GitHub ReStructuredText does not support Sphinx ReStructuredText.
+
+Github Workflow
+~~~~~~~~~~~~~~~~
+Ways to work with tasks and GitHub:
+
+* [ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
+  ::
+
+     1.  [ ] mkdir tasks && cd tasks
+     2.  [ ] git init
+     3.  [ ] echo "Tasks list" >> README.md
+     4.  [ ] git diff README.md
+     5.  [ ] git add README.md
+     6.  [ ] git diff --cached README.md
+     7.  [ ] git commit -m "DOC: Create tasks list"
+     8.  [ ] git remote add origin ssh://git@github.com/<username>/<reponame>
+     9.  [ ] Create a new github project named <reponame>
+     10. [ ] git push origin master
+
+  * Learn to git pull, diff, patch, merge, stash, push, and send pull requests
+    (with a terminal interface)
+
+    * `hub <http://hub.github.com/>`_ --
+      a wrapper script for git that can be aliased with ``alias git=hub``
+    * `gitflow <https://github.com/nvie/gitflow>`_ --
+      adds ``git flow <command>``
+      `branching workflow <https://datasift.github.io/gitflow/IntroducingGitFlow.html>`_
+      automation commands.
+    * `hubflow <https://github.com/datasift/gitflow>`_ --
+      adds ``git hf <command>``
+      branching workflow automation commands by extending gitflow.
+    * see: https://westurner.github.io/dotfiles/tools.html#hubflow
+
+
+* [ ] Create a GitHub Issue with a title and a description (Markdown) {.md}
+  ::
+
+     1. [ ] Open the GitHub url in the browser
+     2. [ ] Click 'Issues'
+     3. [ ] Click 'New Issue'
+     4. [ ] Add a description "ENH: New Feature"
+     5. [ ] Also select corresponding `<#code-labels>`__
+
+  * Per-objective
+  * Collaborators add labels, a milestone, and an assignee to the issue
+  * Link to issues with ``#123`` in commit messages, issues, and wikis
+  * Close the issue when it is done or not going to be done
+
+    * Close a GitHub issue with the web interface 'Close' button
+    * Close a GitHub issue with text in a **commit message** or **pull
+      request description**::
+
+         ENH: add new feature (closes: #01 #02)
+         BUG: fix bug (fixes: #03)
+
+      See: `Closing issues via commit messages <https://help.github.com/articles/closing-issues-via-commit-messages>`_
+
+
+* [ ] Create a GitHub Issue with a GitHub Markdown Task List (Markdown) {.md}::
+
+  * [ ] Add list items with checkboxes (``- [x] Task three``)
+
+    - [x] one --bold--
+    - [ ] two -italic-
+      - [x] two.one
+      - [ ] two.two \- two
+    - [ ] ``three`` (also `three`)
+
+  * [ ] Check off each checkbox to complete the issue
+
+* [ ] Create a GitHub Wiki page w/ title and text (Markdown, ReST) {.md, .rest}
+
+  * [ ] Create a Roadmap page with a sprint/release plan of issue number/links
+
+* Publish Task Reports into a repository as HTML served by GitHub Pages
+
+  * Create a Sphinx ReStructuredText ``conf.py``
+  * Render the ReStructuredText into HTML with ``sphinx-build -b html``
+  * Host ``_build/html`` in the ``gh-pages`` branch
+
+    * e.g. with `<https://github.com/davisp/ghp-import>`_
+
+  * Consider building and hosting Sphinx ReStructuredText documentation
+    with `ReadTheDocs <https://readthedocs.org/>`_
+
+
+BitBucket Repos, Issues, Wikis
+---------------------------------
+* Free public and private hg and git repositories
+* Web Interface: https://bitbucket.org/
+* Mobile Interface: Third Party
+* Integration with Jira: Yes
+* Integration with Crucible: yes
+* API: https://bitbucket-api.readthedocs.org/en/latest/
+* API note: http://restbrowser.bitbucket.org/
+* XML: yes
+* JSON: yes
+* YAML: yes
+* Tagging: yes (issue labels: see `Code Labels`_)
+* Language: Python
+
+Workflow
+~~~~~~~~~~
+* [ ] Store a README, HISTORY, ROADMAP, TODO, etc. file in a repo {.md, .rst, .txt}
+  ::
+
+     1. [ ] mkdir tasks && cd tasks
+     2. [ ] hg init
+     3. [ ] echo "Tasks list" >> README.md
+     4. [ ] hg add README.md
+     5. [ ] hg diff README.md
+     6. [ ] hg commit -m "DOC: Create tasks list"
+     7. [ ] Add "bb = ssh://hg@bitbucket.org/${USERNAME}/${REPONAME}" to ``[paths]`` in ./.hgrc
+     8. [ ] Create a new bitbucket repository named REPONAME
+     8. [ ] hg push bb
+
+  * Learn to hg pull, diff, patch, merge, shelve, push, and send pull requests
+
+    * `mq <http://mercurial.selenic.com/wiki/MqExtension>`_ --
+      a mercurial extension for working with Mercurial Patch Queues
+    * `tortoisehg <http://tortoisehg.bitbucket.org/>`_ --
+      an excellent VCS gui for Mercurial (and git, with hg-git)
+
+
+* [ ] Create a BitBucket Issue with a title and a description (Markdown) {.md}
+  ::
+
+     1. [ ] Open the BitBucket url in the browser
+     2. [ ] Click 'Issues'
+     3. [ ] Click 'Create Issue'
+     4. [ ] Add a description "ENH: New Feature"
+     5. [ ] Also select corresponding `<#code-labels>`__
+
+  * Per-objective
+  * [ ] Apply kind and priority values to the issue with the web interface
+  * [ ] Collaborators may assign an issue to a specific user
+  * [ ] Link to issues with ``#123`` in commit messages, issues, and wikis
+  * [ ] Close the issue when it is done or not going to be done
+
+    * Close a BitBucket issue with the 'Resolve' button
+    * Close a BitBucket issue with text in a patch header
+      (a **commit message** or **pull request description**)::
+
+         ENH: add new feature (closes: #01 #02)
+         BUG: fix bug (fixes: #03)
+
+      See: `Resolve issues automatically when users push code <https://confluence.atlassian.com/display/BITBUCKET/Resolve+issues+automatically+when+users+push+code>`_
+
+* [ ] Create Pull Request Tasks: http://blog.bitbucket.org/2014/09/16/introducing-pull-request-tasks/
+
+
+Trac
+-----
+
+| Wikipedia: https://en.wikipedia.org/wiki/Trac
+| Homepage: http://trac.edgewall.org/
+| Src: https://hg.edgewall.org/trac/mirror/
+
+* http://trac.edgewall.org/wiki/TracDev
+* https://trac-hacks.org/
+
+
+Redmine
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/Redmine
+| Homepage: http://www.redmine.org/
+| Src: https://github.com/redmine/redmine
+
+
+GitLab
+-------
+| Homepage: https://about.gitlab.com/
+| Src: https://github.com/gitlabhq/gitlabhq
+
+
+Labels
+=======
+
+History
+---------
+* Text files
+* First-line file naming
+* PDA memos
+
+Label Syntax
+--------------
+Personal labeling syntax
+
+* ``lower case``
+* ``dash-slugified``
+* ``period.delimited``
+* ``-task`` (``-next``, ``-waiting``, ``-someday``)
+* ``@context`` (``@home``, ``@campus``, ``@work``)
+* ``.project`` (``.project.subproject``)
+
+
+Task Labels
+---------------
+::
+
+   -next       a next action                    ( seeAlso: code: ready )
+   -waiting    a task that is blocked
+   -someday    an opportunity for a later date
+
+https://en.wikipedia.org/wiki/Getting_Things_Done
+
+
+Project Labels
+----------------
+See: https://github.com/westurner/wiki/wiki/projects
+
+::
+
+   .random        an unfiled note to self
+   .d             degrees
+   .d.<name>      degree course/project/team
+   .bills         bills
+   .career        career
+   .civic         civic
+   .health        health
+   .diet          diet
+   .exercise      exercise
+   .relax         relax
+   .ride          transportation
+
+   .<projectname> project
+   .dotfiles      dotfiles project
+
+
+Context Labels
+----------------
+::
+
+   @home    at home
+   @travel  when traveling
+   @campus  at school
+   @class   in class    ( see: .d.<course> )
+   @work    at work
+   @phone   at the phone
+   @pc      at a computer
+   @online  at a computer with internet
+   @email   checking email
+   @forum   reading forums
+   @read    having time for reading
+   @food    buying food
+   @list    general shopping list
+
+
+Email Labels
+-------------
+::
+
+   .tasks         tasks, action items
+   .tasks/.daily  repeating daily tasks
+   .tasks/.done   completed tasks
+
+   b.
+   b./b.ills
+   b./b.rent
+   b./b.svc
+   b./b.uy
+   c.ode         GitHub, BitBucket, SourceForge, Savannah (list: circle:#me)
+   d.            degrees                     ( seeAlso: .d )
+   d./d.<name>   degree course/project/team  ( seeAlso: .d.<course> )
+   d./o.<org>    academic organizations
+   p.            people / humans
+   p./p.career   job offers, applications
+   p./p.fam      family and friends
+   p./p.self     from:me AND to:me
+   p./p.sweb     social web
+   l.            mailing lists
+   l./l.art      art things
+   l./l.biz      business
+   l./l.music    music, concerts
+   l./l.py       Python (list:python.org)
+   l./l.semweb   semantic web
+   o.<orgname>   organization
+   wd.
+   wd.<project>  web development
+
+   @travel
+
+
+.. _code labels:
+
+Code Labels
+------------
+Code labels are three-letter codes with which commit messages can be prefixed.
+
+::
+
+    CODE Label          color name      background  text
+    ---- -------------- --------------- ----------  -------
+    BLD: build          light green     #bfe5bf     #2a332a
+    BUG: bug            red             #fc2929     #ffffff  (github default)
+    CLN: cleanup        light yellow    #fef2c0     #333026
+    DOC: documentation  light blue      #c7def8     #282d33
+    ENH: enhancement    blue            #84b6eb     #1c2733  (github default)
+    PRF: performance    deep purple     #5319e7     #ffffff
+    REF: refactor       dark green      #009800     #ffffff
+    RLS: release        dark blue       #0052cc     #ffffff
+    SEC: security       orange          #eb6420     #ffffff
+    TST: test           light purple    #d4c5f9     #2b2833
+    UBY: usability      light pink      #f7c6c7     #332829
+
+    DAT: data
+    SCH: schema
+
+    # Workflow Labels   (e.g. for waffle.io kanban board columns)
+    ready               dark sea green  #006b75     #ffffff
+    in progress         yellow          #fbca04     #332900
+
+    # GitHub Labels
+    duplicate           darker gray     #cccccc     #333333  (github default)
+    help wanted         green           #159818     #ffffff  (github default)
+    invalid             light gray      #e6e6e6     #333333  (github default)
+    question            fuschia         #cc317c     #ffffff  (github default)
+    wontfix             white           #ffffff     #333333  (github default)
+
+    Note: All of these color codes (except for fuschia)
+    are drawn from the default GitHub palette.
+
+    Note: There are 18 labels listed here.
+
+.. note:: For examples with color swatches in alphabetical order,
+   see https://github.com/westurner/dotfiles/labels
+
+Code Label Syntax
+~~~~~~~~~~~~~~~~~~~
+
+::
+
+    ENH: Add new feature (#1)
+    BUG: Fixes #3
+    DOC: index.rst: Add readme.rst
+    TST: Extend tests for #1
+    BLD,CLN: Makefile: remove extra newlines
+
+* ``COMMA,DELIMITED, SET: of prefix labels``
+* Three-characters, if possible
+
+Code labels are helpful for:
+
+* working with issue tracking tagging and labeling systems
+* aggregating changes into release logs (``HISTORY``)
+* correlating changes with requirements
+  (https://en.wikipedia.org/wiki/Requirements_traceability)
+  [`Requirements Traceability`_]
+
+
+-- adapted from `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
+
+
+
+
+Tools
+=======
+
+pyrtm-task-cli
+---------------
+| Src: https://bitbucket.org/westurner/pyrtm-task-cli
+
+A python CLI for working with tasks and pyrtm RememberTheMilk API.
+
+Query/rename tasks in Python and generate a printable,
+templated, minimal HTML `Hipster PDA`_
+notebook-sized sheet of paper
+of a list of tasks at one point in time.
+
+workhours
+----------
+| Src: https://bitbucket.org/westurner/workhours
+
+Aggregate streams of event tuples generated by various activity streams
+(bookmarks, existing browser history, ``-usrlog`` files)
+
+
+TaskWarrior
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/Taskwarrior
+| Homepage: http://taskwarrior.org/
+| Src: https://git.tasktools.org/scm/tm/task.git
+| Docs: http://taskwarrior.org/docs/
+| Standard: http://taskwarrior.org/docs/design/task.html
+
+TaskWarrior is a task management tool written in C with lots of plugins
+written in other languages.
+
+TaskWarrior comes with an awesome commandline interface for adding,
+updating, and reporting on tasks, their statuses, and their priorities.
+
+There are plugins to host and synchronize TaskWarrior task databases
+(with TaskWarrior JSON: http://taskwarrior.org/docs/design/task.html).
+
+
+.. index:: Usrlog
+.. _usrlog:
+
+Usrlog
+---------
+| Src: https://github.com/westurner/dotfiles/blob/master/scripts/usrlog.sh
+| Docs: https://westurner.github.io/dotfiles/usrlog
+
+> usrlog logs the most recent userspace
+> interactive shell commandline CLI command to ``$_USRLOG``
+> **after** the shell command completes,
+> with :ref:`Bash` ``PROMPT_COMMAND``
+> and :ref:`ZSH` ``precmd_functions`` (see: `Caveats`_).
+
+.. code:: bash
+
+    source "${__DOTFILES}/scripts/usrlog.sh"
+    echo "${_USRLOG}"
+    echo "${_TERM_ID}"
+
+    # Parse with sed and grep
+    usrlog_grep "sudo" | _usrlog_parse_commands
+    ug "sudo" | ugp
+
+    # Parse into records and fields, select the commands, and grep
+    usrlog.py -u --cmds | grep "sudo"
+
+.. index:: Best Practices
+
+Best Practices
+============================
+Use Project Templates
+-----------------------
+- [ ] Generate a new project with templated packaging and documentation
+
+  - https://github.com/audreyr/cookiecutter
+
+    - https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters
+    - https://cookiecutter.readthedocs.io/en/latest/readme.html#cookiecutter-meta
+
+  - https://github.com/yeoman/yo
+
+    - https://yeoman.io/generators/
+    - https://github.com/yeoman/generator-generator
+
+.. _requirements-traceability:
+
+Develop Projects with Requirements Traceability
+------------------------------------------------
+
+GitHub / Gitlab Projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- [ ] When you create a new GitHub / GitLab project,
+
+  - [ ] Create Issue #1. You could call it ``#1`` and leave it blank for now.
+
+  - [ ] Write a Roadmap wiki entry with links to Release Plans
+    and/or issue milestones
+    (`<https://github.com/westurner/wiki.wiki.git>`_ / ``Roadmap.rest``)
+
+    * Roadmap wiki page: https://github.com/westurner/wiki/wiki/Roadmap
+
+  - [ ] Create a milestone and an issue for it
+
+    * [ ] Milestone:
+
+      - https://github.com/westurner/wiki/milestones/0.1 (open)
+      - https://github.com/westurner/wiki/issues?q=milestone%3A0.1
+        (open/closed)
+
+    * [ ] Milestone Issue:
+
+      - https://github.com/westurner/wiki/issues/17 "Milestone 1"
+
+        - [ ] Link to the milestone issues URLs
+        - [ ] Add the Deadline:/Ends: and/or Completed: date
+        - [ ] Add a link to the release tag
+
+    * [ ] Add a link from Issue #1 to the Milestone Issue
+
+Use Code Labels
+~~~~~~~~~~~~~~~~~
+
+- [ ] Prefix commit messages with `Code Labels`_::
+
+      TST: Create order placing tests
+      DOC: Add order placing documentation
+      BLD: Update the build configuration
+
+  - [ ] Write Features and *User Stories* as issues prefixed with ``STORY``
+    and ``ENH:``::
+
+        STORY: Users can place orders
+        ENH: app/orders: Show the cart item count in the header
+
+
+Use Links
+~~~~~~~~~~~
+Create traceable edges between things by adding links.
+
+- [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
+  other docs by referencing an issue number in a title, description,
+  or comment::
+
+      TST: Create order placing tests (#123)
+      TST: Create order placing tests (projname#123)
+      TST: Create order placing tests (orgname/projname#123)
+      DOC: Add order placing documentation (for #123)
+      CLN: Cleanup syntax for style guide (#5678)
+
+- [ ] Link between **Issues**, **Commits**, **Pull Requests**, and
+  *Release Logs* by referencing a full URL with no anchor text
+  and optional trailing title or description::
+
+      https://github.com/westurner/wiki/issues/1
+
+
+Revision Control
+-----------------
+
+GitFlow and HubFlow
+~~~~~~~~~~~~~~~~~~~~~
+:ref:`GitFlow` and :ref:`HubFlow` are workflow and branch management
+systems for :ref:`Git` and `GitHub`
+which specify and implement branch naming conventions
+and merge patterns which can minimize
+the need to teach new collaborators how we prefer to do branches
+around here.
+
+Sometimes GitFlow and HubFlow do fail though, so it's good to understand
+which git commands they're running for you so that:
+
+- ``master`` only has stable releases that are cleanly merged in from a
+  named release branch (``release/0.1.0``) which is a branch of
+  ``develop``
+- ``hotfix`` branches (``hotfix/CVE-2001-fix-urgent-bug``)
+  are merged to ``master`` as new releases and also into ``develop``
+- feature branches (``feature/3-STORY-users-can-place-orders``)
+  branch from ``develop``;
+  and are always expected to ``git rebase -i develop``
+  before a Pull Request can be considered for merging
+
+
+Continuous Integration
+-------------------------
+https://en.wikipedia.org/wiki/Continuous_integration#Best_practices
+
+| https://wrdrd.github.io/docs/consulting/software-development#continuous-delivery
+| https://wrdrd.github.io/docs/consulting/software-development#continuous-integration
+| https://westurner.github.io/wiki/awesome-python-testing#
+| https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution
+| https://westurner.github.io/wiki/awesome-python-testing#continuous-integration-ci-and-continuous-delivery-cd
+
+* [ ] Run tests before releasing
+* [ ] Run tests before merging (e.g. Pull Request Webhooks)
+* [ ] Run tests after merging. (e.g. HubFlow
+  [``feature/*`` ->] ``develop`` ->
+  ``release/v0.1.0`` -> ``master`` branch structure)
+* [ ] Run tests before committing (while coding)
+* [ ] Run tests when committing
+  (with [required/local/central] repo event scripts such as pre-commit
+  hooks)
+
+  * https://pre-commit.github.io
+
+* [ ] Write Tests First.
+* [ ] Utilize Git HubFlow for managing project repository branches:
+  ``develop``, ``master``, ``feature/*``, ``release/*``, ``hotfix/*``
+
+  * https://datasift.github.io/gitflow/
+  * https://westurner.github.io/tools/#git
+  * https://westurner.github.io/tools/#hubflow
+
+* [ ] Release semantic versions (`<http://semver.org>`_) tagged as
+  ``major.minor.patch`` (e.g. ``v1.0.01``)
+
+  * Semver 3.0 (Python PEP 440 versiontag-compatible):
+    http://docs.openstack.org/developer/pbr/semver.html
+
+    * PEP 440:
+      "Version Identification and Dependency Specification"
+      https://www.python.org/dev/peps/pep-0440/#examples-of-compliant-version-schemes
+
+  * bumpversion https://github.com/peritus/bumpversion
+
+- [ ] Include useful data (like version, revision, platform)
+  in package filenames (and/or also create a JSON-LD metadata manifest):
+
+  * e.g. ``westurner-wiki-v1.0.01-eb4df7f-linux64.whl``
+
+  * Conda selectors: {``linux64``, ``py27``, ``py37`` }
+    `<http://conda.pydata.org/docs/building/meta-yaml.html#preprocessing-selectors>`_
+  * pbr (*Python Build Reasonableness*)
+
+    | Source: https://github.com/openstack-dev/pbr
+    | Docs: http://docs.openstack.org/developer/pbr/
