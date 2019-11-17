@@ -502,12 +502,21 @@
 <li class="toctree-l3"><a class="reference internal" href="workflow#pyrtm-task-cli">pyrtm-task-cli</a></li>
 <li class="toctree-l3"><a class="reference internal" href="workflow#workhours">workhours</a></li>
 <li class="toctree-l3"><a class="reference internal" href="workflow#taskwarrior">TaskWarrior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflow#usrlog">Usrlog</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="workflow#best-practices">Best Practices</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="workflow#project-templating">Project Templating</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workflow#requirements-traceability">Requirements Traceability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workflow#revision-control">Revision Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflow#use-project-templates">Use Project Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflow#develop-projects-with-requirements-traceability">Develop Projects with Requirements Traceability</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="workflow#github-gitlab-projects">GitHub / Gitlab Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="workflow#use-code-labels">Use Code Labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="workflow#use-links">Use Links</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="workflow#revision-control">Revision Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="workflow#gitflow-and-hubflow">GitFlow and HubFlow</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="workflow#continuous-integration">Continuous Integration</a></li>
 </ul>
 </li>
@@ -617,7 +626,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="accessibility#eyestrain-computers-the-20-2020-rule-light-bulb-apis">&#8220;Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs&#8221;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="accessibility#eyestrain-computers-the-20-2020-rule-light-bulb-apis">“Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs”</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="accessibility#the-202020-rule">The 20–20–20 rule:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility#computer-glasses">Computer glasses</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility#monitor-adjustments">Monitor adjustments</a></li>
@@ -643,7 +652,7 @@
 <li class="toctree-l3"><a class="reference internal" href="awesome-python-testing#workflow-evolution">Workflow Evolution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="awesome-python-testing#python">Python</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="awesome-python-testing#python-3">Python 3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="awesome-python-testing#python-2-python-3">Python 2 &lt;&#8211;&gt; Python 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="awesome-python-testing#python-2-python-3">Python 2 &lt;–&gt; Python 3</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="awesome-python-testing#to3">2to3</a></li>
 <li class="toctree-l5"><a class="reference internal" href="awesome-python-testing#six">six</a></li>
 <li class="toctree-l5"><a class="reference internal" href="awesome-python-testing#nine">nine</a></li>
@@ -930,7 +939,7 @@
 <li class="toctree-l4"><a class="reference internal" href="webframeworks#ruby-on-rails">Ruby on Rails</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="webframeworks#react-on-rails">React on Rails</a></li>
 <li class="toctree-l5"><a class="reference internal" href="webframeworks#convention-over-configuration">Convention over Configuration</a></li>
-<li class="toctree-l5"><a class="reference internal" href="webframeworks#don-t-repeat-yourself">Don&#8217;t Repeat Yourself</a></li>
+<li class="toctree-l5"><a class="reference internal" href="webframeworks#don-t-repeat-yourself">Don’t Repeat Yourself</a></li>
 <li class="toctree-l5"><a class="reference internal" href="webframeworks#active-record">Active Record</a></li>
 </ul>
 </li>
@@ -1019,8 +1028,8 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+          &copy; Copyright @westurner 2014-2019, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.7.9.
       </footer>
       <!-- /footer -->
 

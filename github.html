@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="westurner/wiki" />
     <!--
-    <meta property="og:description" content="Documentation for the wiki project" />
+    <meta property="og:description" content="westurner.github.io/wiki" />
     -->
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="470" />
@@ -24,7 +24,7 @@
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="GitHub Quicklinks" />
-    <meta property="twitter:description" content="Documentation for the wiki project" />
+    <meta property="twitter:description" content="westurner.github.io/wiki" />
     <meta property="twitter:site" content="westurner" />
     <meta property="twitter:creator" content="westurner" />
     
@@ -253,9 +253,9 @@
 </li>
 </ul>
 </li>
-<li><p class="first">code labels {..., ENH, BUG, DOC, BLD, TST, UBY, RLS}</p>
+<li><p class="first">code labels {…, ENH, BUG, DOC, BLD, TST, UBY, RLS}</p>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">TAG</span> <span class="pre">code,</span> <span class="pre">labels,</span> <span class="pre">color</span> <span class="pre">names,</span> <span class="pre">background</span> <span class="pre">hex,</span> <span class="pre">text</span> <span class="pre">hex</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">TAG</span> <span class="pre">code,</span> <span class="pre">labels,</span> <span class="pre">color</span> <span class="pre">names,</span> <span class="pre">background</span> <span class="pre">hex,</span> <span class="pre">text</span> <span class="pre">hex</span></code></div>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="https://westurner.github.io/wiki/workflow#code-labels">https://westurner.github.io/wiki/workflow#code-labels</a></li>
@@ -283,7 +283,7 @@
 <li>Activity: <a class="reference external" href="https://github.com/westurner?tab=activity">https://github.com/westurner?tab=activity</a></li>
 <li>Contributions: Past Month: <a class="reference external" href="https://github.com/westurner?tab=contributions&amp;period=monthly">https://github.com/westurner?tab=contributions&amp;period=monthly</a></li>
 <li>Contributions: Past Week: <a class="reference external" href="https://github.com/westurner?tab=contributions&amp;period=weekly">https://github.com/westurner?tab=contributions&amp;period=weekly</a></li>
-<li>Mentions: <a class="reference external" href="https://www.google.com/search?q=site%3Agithub.com+&quot;%40westurner&quot;">https://www.google.com/search?q=site%3Agithub.com+&#8221;%40westurner&#8221;</a></li>
+<li>Mentions: <a class="reference external" href="https://www.google.com/search?q=site%3Agithub.com+&quot;%40westurner&quot;">https://www.google.com/search?q=site%3Agithub.com+”%40westurner”</a></li>
 </ul>
 </div>
 <div class="section" id="pull-requests">
@@ -312,7 +312,7 @@
 </ul>
 <div class="section" id="my-activity">
 <h3>My Activity<a class="headerlink" href="#my-activity" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-sql"><div class="highlight"><pre><span></span><span class="k">sql</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">sql</span>
 <span class="k">SELECT</span> <span class="n">actor</span><span class="p">,</span> <span class="n">repository_url</span><span class="p">,</span> <span class="n">created_at</span><span class="p">,</span> <span class="n">payload_action</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="k">type</span>
 <span class="k">FROM</span> <span class="p">[</span><span class="n">githubarchive</span><span class="p">:</span><span class="n">github</span><span class="p">.</span><span class="n">timeline</span><span class="p">]</span>
 <span class="k">WHERE</span>
@@ -323,7 +323,7 @@
 </div>
 <div class="section" id="my-activity-watchevent">
 <h3>My Activity &gt; -WatchEvent<a class="headerlink" href="#my-activity-watchevent" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-sql"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">actor</span><span class="p">,</span> <span class="n">repository_url</span><span class="p">,</span> <span class="n">created_at</span><span class="p">,</span> <span class="n">payload_action</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="k">type</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">actor</span><span class="p">,</span> <span class="n">repository_url</span><span class="p">,</span> <span class="n">created_at</span><span class="p">,</span> <span class="n">payload_action</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="k">type</span>
 <span class="k">FROM</span> <span class="p">[</span><span class="n">githubarchive</span><span class="p">:</span><span class="n">github</span><span class="p">.</span><span class="n">timeline</span><span class="p">]</span>
 <span class="k">WHERE</span>
 <span class="n">actor</span><span class="o">==</span><span class="ss">&quot;westurner&quot;</span>
@@ -336,7 +336,7 @@
 </div>
 <div class="section" id="my-activity-recently-starred">
 <h3>My Activity &gt; Recently Starred<a class="headerlink" href="#my-activity-recently-starred" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-sql"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">repository_url</span><span class="p">,</span> <span class="n">created_at</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">repository_url</span><span class="p">,</span> <span class="n">created_at</span>
 <span class="k">FROM</span> <span class="p">[</span><span class="n">githubarchive</span><span class="p">:</span><span class="n">github</span><span class="p">.</span><span class="n">timeline</span><span class="p">]</span>
 <span class="k">WHERE</span>
   <span class="n">actor</span><span class="o">==</span><span class="ss">&quot;westurner&quot;</span>
@@ -384,8 +384,8 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; Copyright @westurner 2014-2017, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+          &copy; Copyright @westurner 2014-2019, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.7.9.
       </footer>
       <!-- /footer -->
 
