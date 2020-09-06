@@ -1,5 +1,6 @@
 docutils
 sphinxcontrib-srclinks
 -e git+https://github.com/westurner/sphinxjp.themes.basicstrap#egg=sphinxjp.themes.basicstrap
+-e git+https://github.com/westurner/wrd_sphinx_theme#egg=wrd_sphinx_theme
 # ghp-import
 -e git+https://github.com/davisp/ghp-import#egg=ghp-import
