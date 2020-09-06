@@ -57,6 +57,7 @@
     <script type="text/javascript" src="_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
@@ -303,7 +304,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="index">Table Of Contents</a></h3>
+  <h3><a href="index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Web Frameworks</a><ul>
 <li><a class="reference internal" href="#web-framework-benchmarks">Web Framework Benchmarks</a></li>
@@ -557,175 +558,206 @@
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#web-frameworks" id="id86">Web Frameworks</a><ul>
-<li><a class="reference internal" href="#web-framework-benchmarks" id="id87">Web Framework Benchmarks</a></li>
-<li><a class="reference internal" href="#c" id="id88">C++</a><ul>
-<li><a class="reference internal" href="#c-web-frameworks" id="id89">C++ Web Frameworks</a><ul>
-<li><a class="reference internal" href="#wt" id="id90">Wt</a></li>
+<li><p><a class="reference internal" href="#web-frameworks" id="id86">Web Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#web-framework-benchmarks" id="id87">Web Framework Benchmarks</a></p></li>
+<li><p><a class="reference internal" href="#c" id="id88">C++</a></p>
+<ul>
+<li><p><a class="reference internal" href="#c-web-frameworks" id="id89">C++ Web Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#wt" id="id90">Wt</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#csharp" id="id91">C#</a></li>
-<li><a class="reference internal" href="#go" id="id92">Go</a></li>
-<li><a class="reference internal" href="#java" id="id93">Java</a><ul>
-<li><a class="reference internal" href="#java-web-frameworks" id="id94">Java Web Frameworks</a><ul>
-<li><a class="reference internal" href="#j2ee" id="id95">J2EE</a></li>
-<li><a class="reference internal" href="#jboss" id="id96">JBoss</a></li>
-<li><a class="reference internal" href="#jwt" id="id97">JWt</a></li>
-<li><a class="reference internal" href="#restlet" id="id98">Restlet</a></li>
-<li><a class="reference internal" href="#struts" id="id99">Struts</a></li>
+<li><p><a class="reference internal" href="#csharp" id="id91">C#</a></p></li>
+<li><p><a class="reference internal" href="#go" id="id92">Go</a></p></li>
+<li><p><a class="reference internal" href="#java" id="id93">Java</a></p>
+<ul>
+<li><p><a class="reference internal" href="#java-web-frameworks" id="id94">Java Web Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#j2ee" id="id95">J2EE</a></p></li>
+<li><p><a class="reference internal" href="#jboss" id="id96">JBoss</a></p></li>
+<li><p><a class="reference internal" href="#jwt" id="id97">JWt</a></p></li>
+<li><p><a class="reference internal" href="#restlet" id="id98">Restlet</a></p></li>
+<li><p><a class="reference internal" href="#struts" id="id99">Struts</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#java-servers" id="id100">Java Servers</a><ul>
-<li><a class="reference internal" href="#jetty" id="id101">Jetty</a></li>
-<li><a class="reference internal" href="#tomcat" id="id102">Tomcat</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#javascript" id="id103">Javascript</a><ul>
-<li><a class="reference internal" href="#js-libraries" id="id104">JS Libraries</a><ul>
-<li><a class="reference internal" href="#js-cdns" id="id105">JS CDNs</a></li>
-<li><a class="reference internal" href="#bootstrap" id="id106">Bootstrap</a></li>
-<li><a class="reference internal" href="#jquery" id="id107">jQuery</a></li>
-<li><a class="reference internal" href="#zepto-js" id="id108">Zepto.js</a></li>
-<li><a class="reference internal" href="#underscore" id="id109">Underscore</a></li>
-<li><a class="reference internal" href="#babel" id="id110">Babel</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#js-frameworks" id="id111">JS Frameworks</a><ul>
-<li><a class="reference internal" href="#angular" id="id112">Angular</a><ul>
-<li><a class="reference internal" href="#angular-1" id="id113">Angular 1</a></li>
-<li><a class="reference internal" href="#ionic" id="id114">Ionic</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#react" id="id115">React</a></li>
-<li><a class="reference internal" href="#react-native" id="id116">React-Native</a></li>
-<li><a class="reference internal" href="#redux" id="id117">Redux</a><ul>
-<li><a class="reference internal" href="#redux-actions" id="id118">Redux-actions</a></li>
-<li><a class="reference internal" href="#redux-devtools" id="id119">Redux-devtools</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#node" id="id120">Node</a></li>
-<li><a class="reference internal" href="#express" id="id121">Express</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#js-testing" id="id122">JS Testing</a><ul>
-<li><a class="reference internal" href="#blessings" id="id123">Blessings</a></li>
-<li><a class="reference internal" href="#chai" id="id124">Chai</a></li>
-<li><a class="reference internal" href="#mocha" id="id125">Mocha</a></li>
-<li><a class="reference internal" href="#jasmine" id="id126">Jasmine</a></li>
-<li><a class="reference internal" href="#jest" id="id127">Jest</a></li>
-<li><a class="reference internal" href="#phantomjs" id="id128">PhantomJS</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#js-packaging" id="id129">JS Packaging</a><ul>
-<li><a class="reference internal" href="#commonjs" id="id130">CommonJS</a></li>
-<li><a class="reference internal" href="#amd" id="id131">AMD</a></li>
-<li><a class="reference internal" href="#es2015-modules" id="id132">ES2015 Modules</a></li>
-<li><a class="reference internal" href="#system-js" id="id133">System.js</a></li>
-<li><a class="reference internal" href="#requirejs" id="id134">RequireJS</a></li>
-<li><a class="reference internal" href="#npm" id="id135">NPM</a></li>
-<li><a class="reference internal" href="#bower" id="id136">Bower</a></li>
-<li><a class="reference internal" href="#webpack" id="id137">Webpack</a></li>
-<li><a class="reference internal" href="#browserify" id="id138">Browserify</a><ul>
-<li><a class="reference internal" href="#requirify" id="id139">Requirify</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#yarn" id="id140">Yarn</a></li>
+<li><p><a class="reference internal" href="#java-servers" id="id100">Java Servers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#jetty" id="id101">Jetty</a></p></li>
+<li><p><a class="reference internal" href="#tomcat" id="id102">Tomcat</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#php" id="id141">PHP</a><ul>
-<li><a class="reference internal" href="#php-security" id="id142">PHP Security</a></li>
-<li><a class="reference internal" href="#hhvm" id="id143">HHVM</a></li>
-<li><a class="reference internal" href="#php-frameworks" id="id144">PHP Frameworks</a><ul>
-<li><a class="reference internal" href="#cakephp" id="id145">CakePHP</a></li>
-<li><a class="reference internal" href="#laravel" id="id146">Laravel</a></li>
-<li><a class="reference internal" href="#symfony" id="id147">Symfony</a><ul>
-<li><a class="reference internal" href="#api-platform" id="id148">API Platform</a></li>
+<li><p><a class="reference internal" href="#javascript" id="id103">Javascript</a></p>
+<ul>
+<li><p><a class="reference internal" href="#js-libraries" id="id104">JS Libraries</a></p>
+<ul>
+<li><p><a class="reference internal" href="#js-cdns" id="id105">JS CDNs</a></p></li>
+<li><p><a class="reference internal" href="#bootstrap" id="id106">Bootstrap</a></p></li>
+<li><p><a class="reference internal" href="#jquery" id="id107">jQuery</a></p></li>
+<li><p><a class="reference internal" href="#zepto-js" id="id108">Zepto.js</a></p></li>
+<li><p><a class="reference internal" href="#underscore" id="id109">Underscore</a></p></li>
+<li><p><a class="reference internal" href="#babel" id="id110">Babel</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#js-frameworks" id="id111">JS Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#angular" id="id112">Angular</a></p>
+<ul>
+<li><p><a class="reference internal" href="#angular-1" id="id113">Angular 1</a></p></li>
+<li><p><a class="reference internal" href="#ionic" id="id114">Ionic</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#react" id="id115">React</a></p></li>
+<li><p><a class="reference internal" href="#react-native" id="id116">React-Native</a></p></li>
+<li><p><a class="reference internal" href="#redux" id="id117">Redux</a></p>
+<ul>
+<li><p><a class="reference internal" href="#redux-actions" id="id118">Redux-actions</a></p></li>
+<li><p><a class="reference internal" href="#redux-devtools" id="id119">Redux-devtools</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#node" id="id120">Node</a></p></li>
+<li><p><a class="reference internal" href="#express" id="id121">Express</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#js-testing" id="id122">JS Testing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#blessings" id="id123">Blessings</a></p></li>
+<li><p><a class="reference internal" href="#chai" id="id124">Chai</a></p></li>
+<li><p><a class="reference internal" href="#mocha" id="id125">Mocha</a></p></li>
+<li><p><a class="reference internal" href="#jasmine" id="id126">Jasmine</a></p></li>
+<li><p><a class="reference internal" href="#jest" id="id127">Jest</a></p></li>
+<li><p><a class="reference internal" href="#phantomjs" id="id128">PhantomJS</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#js-packaging" id="id129">JS Packaging</a></p>
+<ul>
+<li><p><a class="reference internal" href="#commonjs" id="id130">CommonJS</a></p></li>
+<li><p><a class="reference internal" href="#amd" id="id131">AMD</a></p></li>
+<li><p><a class="reference internal" href="#es2015-modules" id="id132">ES2015 Modules</a></p></li>
+<li><p><a class="reference internal" href="#system-js" id="id133">System.js</a></p></li>
+<li><p><a class="reference internal" href="#requirejs" id="id134">RequireJS</a></p></li>
+<li><p><a class="reference internal" href="#npm" id="id135">NPM</a></p></li>
+<li><p><a class="reference internal" href="#bower" id="id136">Bower</a></p></li>
+<li><p><a class="reference internal" href="#webpack" id="id137">Webpack</a></p></li>
+<li><p><a class="reference internal" href="#browserify" id="id138">Browserify</a></p>
+<ul>
+<li><p><a class="reference internal" href="#requirify" id="id139">Requirify</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#yarn" id="id140">Yarn</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#php-applications" id="id149">PHP Applications</a><ul>
-<li><a class="reference internal" href="#drupal" id="id150">Drupal</a></li>
-<li><a class="reference internal" href="#joomla" id="id151">Joomla</a></li>
-<li><a class="reference internal" href="#mediawiki" id="id152">MediaWiki</a><ul>
-<li><a class="reference internal" href="#semantic-mediawiki" id="id153">Semantic MediaWiki</a></li>
-<li><a class="reference internal" href="#semantic-bundle" id="id154">Semantic Bundle</a></li>
-<li><a class="reference internal" href="#wikibase" id="id155">Wikibase</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#modx" id="id156">MODx</a></li>
-<li><a class="reference internal" href="#wordpress" id="id157">WordPress</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#php-testing" id="id158">PHP Testing</a><ul>
-<li><a class="reference internal" href="#phpunit" id="id159">PHPUnit</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#php-packaging" id="id160">PHP Packaging</a><ul>
-<li><a class="reference internal" href="#phar" id="id161">PHAR</a></li>
-<li><a class="reference internal" href="#composer" id="id162">Composer</a></li>
+<li><p><a class="reference internal" href="#php" id="id141">PHP</a></p>
+<ul>
+<li><p><a class="reference internal" href="#php-security" id="id142">PHP Security</a></p></li>
+<li><p><a class="reference internal" href="#hhvm" id="id143">HHVM</a></p></li>
+<li><p><a class="reference internal" href="#php-frameworks" id="id144">PHP Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#cakephp" id="id145">CakePHP</a></p></li>
+<li><p><a class="reference internal" href="#laravel" id="id146">Laravel</a></p></li>
+<li><p><a class="reference internal" href="#symfony" id="id147">Symfony</a></p>
+<ul>
+<li><p><a class="reference internal" href="#api-platform" id="id148">API Platform</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#python" id="id163">Python</a><ul>
-<li><a class="reference internal" href="#python-frameworks" id="id164">Python Frameworks</a><ul>
-<li><a class="reference internal" href="#plone" id="id165">Plone</a></li>
-<li><a class="reference internal" href="#django" id="id166">Django</a></li>
-<li><a class="reference internal" href="#flask" id="id167">Flask</a></li>
-<li><a class="reference internal" href="#bottle" id="id168">Bottle</a></li>
-<li><a class="reference internal" href="#pyramid" id="id169">Pyramid</a></li>
+<li><p><a class="reference internal" href="#php-applications" id="id149">PHP Applications</a></p>
+<ul>
+<li><p><a class="reference internal" href="#drupal" id="id150">Drupal</a></p></li>
+<li><p><a class="reference internal" href="#joomla" id="id151">Joomla</a></p></li>
+<li><p><a class="reference internal" href="#mediawiki" id="id152">MediaWiki</a></p>
+<ul>
+<li><p><a class="reference internal" href="#semantic-mediawiki" id="id153">Semantic MediaWiki</a></p></li>
+<li><p><a class="reference internal" href="#semantic-bundle" id="id154">Semantic Bundle</a></p></li>
+<li><p><a class="reference internal" href="#wikibase" id="id155">Wikibase</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#python-testing" id="id170">Python Testing</a><ul>
-<li><a class="reference internal" href="#webtest" id="id171">WebTest</a></li>
-<li><a class="reference internal" href="#splinter" id="id172">Splinter</a></li>
-<li><a class="reference internal" href="#ghost-py" id="id173">ghost.py</a></li>
+<li><p><a class="reference internal" href="#modx" id="id156">MODx</a></p></li>
+<li><p><a class="reference internal" href="#wordpress" id="id157">WordPress</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#php-testing" id="id158">PHP Testing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#phpunit" id="id159">PHPUnit</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#php-packaging" id="id160">PHP Packaging</a></p>
+<ul>
+<li><p><a class="reference internal" href="#phar" id="id161">PHAR</a></p></li>
+<li><p><a class="reference internal" href="#composer" id="id162">Composer</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruby" id="id174">Ruby</a><ul>
-<li><a class="reference internal" href="#ruby-devtools" id="id175">Ruby Devtools</a><ul>
-<li><a class="reference internal" href="#rake" id="id176">rake</a></li>
+<li><p><a class="reference internal" href="#python" id="id163">Python</a></p>
+<ul>
+<li><p><a class="reference internal" href="#python-frameworks" id="id164">Python Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#plone" id="id165">Plone</a></p></li>
+<li><p><a class="reference internal" href="#django" id="id166">Django</a></p></li>
+<li><p><a class="reference internal" href="#flask" id="id167">Flask</a></p></li>
+<li><p><a class="reference internal" href="#bottle" id="id168">Bottle</a></p></li>
+<li><p><a class="reference internal" href="#pyramid" id="id169">Pyramid</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruby-frameworks" id="id177">Ruby Frameworks</a><ul>
-<li><a class="reference internal" href="#rack" id="id178">Rack</a></li>
-<li><a class="reference internal" href="#ruby-on-rails" id="id179">Ruby on Rails</a><ul>
-<li><a class="reference internal" href="#react-on-rails" id="id180">React on Rails</a></li>
-<li><a class="reference internal" href="#convention-over-configuration" id="id181">Convention over Configuration</a></li>
-<li><a class="reference internal" href="#don-t-repeat-yourself" id="id182">Don’t Repeat Yourself</a></li>
-<li><a class="reference internal" href="#active-record" id="id183">Active Record</a></li>
+<li><p><a class="reference internal" href="#python-testing" id="id170">Python Testing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#webtest" id="id171">WebTest</a></p></li>
+<li><p><a class="reference internal" href="#splinter" id="id172">Splinter</a></p></li>
+<li><p><a class="reference internal" href="#ghost-py" id="id173">ghost.py</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#sinatra" id="id184">Sinatra</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruby-servers" id="id185">Ruby Servers</a><ul>
-<li><a class="reference internal" href="#mongrel" id="id186">Mongrel</a></li>
-<li><a class="reference internal" href="#phusion-passenger" id="id187">Phusion Passenger</a></li>
-<li><a class="reference internal" href="#thin" id="id188">Thin</a></li>
-<li><a class="reference internal" href="#webrick" id="id189">WEBrick</a></li>
+<li><p><a class="reference internal" href="#ruby" id="id174">Ruby</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ruby-devtools" id="id175">Ruby Devtools</a></p>
+<ul>
+<li><p><a class="reference internal" href="#rake" id="id176">rake</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruby-applications" id="id190">Ruby Applications</a><ul>
-<li><a class="reference internal" href="#project-hydra" id="id191">Project Hydra</a></li>
+<li><p><a class="reference internal" href="#ruby-frameworks" id="id177">Ruby Frameworks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#rack" id="id178">Rack</a></p></li>
+<li><p><a class="reference internal" href="#ruby-on-rails" id="id179">Ruby on Rails</a></p>
+<ul>
+<li><p><a class="reference internal" href="#react-on-rails" id="id180">React on Rails</a></p></li>
+<li><p><a class="reference internal" href="#convention-over-configuration" id="id181">Convention over Configuration</a></p></li>
+<li><p><a class="reference internal" href="#don-t-repeat-yourself" id="id182">Don’t Repeat Yourself</a></p></li>
+<li><p><a class="reference internal" href="#active-record" id="id183">Active Record</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ruby-testing" id="id192">Ruby Testing</a></li>
+<li><p><a class="reference internal" href="#sinatra" id="id184">Sinatra</a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-testing" id="id193">Web Testing</a><ul>
-<li><a class="reference internal" href="#browsers" id="id194">Browsers</a></li>
-<li><a class="reference internal" href="#selenium" id="id195">Selenium</a></li>
-<li><a class="reference internal" href="#webdriver" id="id196">WebDriver</a></li>
+<li><p><a class="reference internal" href="#ruby-servers" id="id185">Ruby Servers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#mongrel" id="id186">Mongrel</a></p></li>
+<li><p><a class="reference internal" href="#phusion-passenger" id="id187">Phusion Passenger</a></p></li>
+<li><p><a class="reference internal" href="#thin" id="id188">Thin</a></p></li>
+<li><p><a class="reference internal" href="#webrick" id="id189">WEBrick</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#ruby-applications" id="id190">Ruby Applications</a></p>
+<ul>
+<li><p><a class="reference internal" href="#project-hydra" id="id191">Project Hydra</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#ruby-testing" id="id192">Ruby Testing</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#web-testing" id="id193">Web Testing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#browsers" id="id194">Browsers</a></p></li>
+<li><p><a class="reference internal" href="#selenium" id="id195">Selenium</a></p></li>
+<li><p><a class="reference internal" href="#webdriver" id="id196">WebDriver</a></p></li>
 </ul>
 </li>
 </ul>
@@ -735,8 +767,8 @@
 <div class="section" id="web-framework-benchmarks">
 <span id="index-1"></span><span id="id2"></span><h2><a class="toc-backref" href="#id87">Web Framework Benchmarks</a><a class="headerlink" href="#web-framework-benchmarks" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/TechEmpower/FrameworkBenchmarks">https://github.com/TechEmpower/FrameworkBenchmarks</a></li>
-<li><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></li>
+<li><p><a class="reference external" href="https://github.com/TechEmpower/FrameworkBenchmarks">https://github.com/TechEmpower/FrameworkBenchmarks</a></p></li>
+<li><p><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></p></li>
 <li></li>
 </ul>
 </div>
@@ -771,7 +803,7 @@
 <div class="section" id="jwt">
 <span id="index-12"></span><span id="id10"></span><h4><a class="toc-backref" href="#id97">JWt</a><a class="headerlink" href="#jwt" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Source transpilation of <a class="reference internal" href="#wt"><span class="std std-ref">Wt</span></a> framework from C++ to Java</li>
+<li><p>Source transpilation of <a class="reference internal" href="#wt"><span class="std std-ref">Wt</span></a> framework from C++ to Java</p></li>
 </ul>
 </div>
 <div class="section" id="restlet">
@@ -798,19 +830,19 @@
 <div class="section" id="js-cdns">
 <span id="index-21"></span><span id="id18"></span><h4><a class="toc-backref" href="#id105">JS CDNs</a><a class="headerlink" href="#js-cdns" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><a class="reference external" href="https://developers.google.com/speed/libraries/">https://developers.google.com/speed/libraries/</a></li>
-<li><a class="reference external" href="https://www.maxcdn.com/blog/free-open-source-cdns/">https://www.maxcdn.com/blog/free-open-source-cdns/</a></li>
-<li><a class="reference external" href="http://www.bootstrapcdn.com/">http://www.bootstrapcdn.com/</a> (MaxCDN)</li>
-<li><a class="reference external" href="https://cdnjs.com/">https://cdnjs.com/</a> (CloudFlare)</li>
-<li><a class="reference external" href="https://www.cloudflare.com/cdn/">https://www.cloudflare.com/cdn/</a></li>
-<li><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></li>
-<li><a class="reference external" href="https://wiki.openstack.org/wiki/Poppy">https://wiki.openstack.org/wiki/Poppy</a></li>
+<li><p><a class="reference external" href="https://developers.google.com/speed/libraries/">https://developers.google.com/speed/libraries/</a></p></li>
+<li><p><a class="reference external" href="https://www.maxcdn.com/blog/free-open-source-cdns/">https://www.maxcdn.com/blog/free-open-source-cdns/</a></p></li>
+<li><p><a class="reference external" href="http://www.bootstrapcdn.com/">http://www.bootstrapcdn.com/</a> (MaxCDN)</p></li>
+<li><p><a class="reference external" href="https://cdnjs.com/">https://cdnjs.com/</a> (CloudFlare)</p></li>
+<li><p><a class="reference external" href="https://www.cloudflare.com/cdn/">https://www.cloudflare.com/cdn/</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></p></li>
+<li><p><a class="reference external" href="https://wiki.openstack.org/wiki/Poppy">https://wiki.openstack.org/wiki/Poppy</a></p></li>
 </ul>
 </div>
 <div class="section" id="bootstrap">
 <span id="index-22"></span><span id="id19"></span><h4><a class="toc-backref" href="#id106">Bootstrap</a><a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><span class="xref std std-ref">Bootstrap</span></li>
+<li><p><span class="xref std std-ref">Bootstrap</span></p></li>
 </ul>
 </div>
 <div class="section" id="jquery">
@@ -822,7 +854,7 @@
 <div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/jquery">https://www.npmjs.com/package/jquery</a></div>
 </div>
 <ul class="simple">
-<li>lodash</li>
+<li><p>lodash</p></li>
 </ul>
 </div>
 <div class="section" id="zepto-js">
@@ -833,7 +865,7 @@
 <div class="line">Docs: <a class="reference external" href="http://zeptojs.com/">http://zeptojs.com/</a></div>
 </div>
 <ul class="simple">
-<li>Zepto.js is a minimal, mostly-jQuery-compatible JS library.</li>
+<li><p>Zepto.js is a minimal, mostly-jQuery-compatible JS library.</p></li>
 </ul>
 </div>
 <div class="section" id="underscore">
@@ -856,13 +888,13 @@
 </div>
 <p>.</p>
 <ul class="simple">
-<li>style-loader, css-loader, less, less-loader</li>
-<li>babel-plugin-react-transform</li>
-<li>babel-plugin-transform-class-properties</li>
-<li>babel-plugin-transform-object-assign</li>
-<li>babel-preset-es2015</li>
-<li>babel-preset-react</li>
-<li>babel-preset-stage0</li>
+<li><p>style-loader, css-loader, less, less-loader</p></li>
+<li><p>babel-plugin-react-transform</p></li>
+<li><p>babel-plugin-transform-class-properties</p></li>
+<li><p>babel-plugin-transform-object-assign</p></li>
+<li><p>babel-preset-es2015</p></li>
+<li><p>babel-preset-react</p></li>
+<li><p>babel-preset-stage0</p></li>
 </ul>
 </div>
 </div>
@@ -966,20 +998,20 @@
 <div class="line">Docs: <a class="reference external" href="https://facebook.github.io/jest/docs/en/">https://facebook.github.io/jest/docs/en/</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://facebook.github.io/jest/docs/en/snapshot-testing.html">https://facebook.github.io/jest/docs/en/snapshot-testing.html</a></li>
+<li><p><a class="reference external" href="https://facebook.github.io/jest/docs/en/snapshot-testing.html">https://facebook.github.io/jest/docs/en/snapshot-testing.html</a></p></li>
 </ul>
 </div>
 <div class="section" id="phantomjs">
 <h4><a class="toc-backref" href="#id128">PhantomJS</a><a class="headerlink" href="#phantomjs" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>see: <a class="reference internal" href="#web-testing">Web Testing</a></li>
+<li><p>see: <a class="reference internal" href="#web-testing">Web Testing</a></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="js-packaging">
 <span id="index-38"></span><span id="id34"></span><h3><a class="toc-backref" href="#id129">JS Packaging</a><a class="headerlink" href="#js-packaging" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://auth0.com/blog/javascript-module-systems-showdown/">https://auth0.com/blog/javascript-module-systems-showdown/</a></li>
+<li><p><a class="reference external" href="https://auth0.com/blog/javascript-module-systems-showdown/">https://auth0.com/blog/javascript-module-systems-showdown/</a></p></li>
 </ul>
 <div class="section" id="commonjs">
 <span id="index-39"></span><span id="id35"></span><h4><a class="toc-backref" href="#id130">CommonJS</a><a class="headerlink" href="#commonjs" title="Permalink to this headline">¶</a></h4>
@@ -989,11 +1021,11 @@
 <div class="line">Docs: <a class="reference external" href="https://webpack.github.io/docs/commonjs.html">https://webpack.github.io/docs/commonjs.html</a></div>
 </div>
 <ul class="simple">
-<li>CommonJS is more than just packaging</li>
-<li><span class="xref std std-ref">NodeJS</span> modules are very similar to CommonJS modules</li>
+<li><p>CommonJS is more than just packaging</p></li>
+<li><p><span class="xref std std-ref">NodeJS</span> modules are very similar to CommonJS modules</p></li>
 </ul>
-<div class="code javascript highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exports</span><span class="p">(</span> <span class="p">);</span>
-<span class="n">require</span><span class="p">(</span> <span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">exports</span><span class="p">(</span> <span class="p">);</span>
+<span class="nx">require</span><span class="p">(</span> <span class="p">);</span>
 </pre></div>
 </div>
 <span class="target" id="index-40"></span></div>
@@ -1008,10 +1040,10 @@
 <div class="line">Docs: <a class="reference external" href="https://addyosmani.com/writing-modular-js/">https://addyosmani.com/writing-modular-js/</a></div>
 </div>
 <ul class="simple">
-<li>AMD forked from <a class="reference internal" href="#commonjs"><span class="std std-ref">CommonJS</span></a></li>
-<li><span class="xref std std-ref">Dojo</span>, <a class="reference internal" href="#requirejs"><span class="std std-ref">RequireJS</span></a>, ScriptManJS</li>
+<li><p>AMD forked from <a class="reference internal" href="#commonjs"><span class="std std-ref">CommonJS</span></a></p></li>
+<li><p><span class="xref std std-ref">Dojo</span>, <a class="reference internal" href="#requirejs"><span class="std std-ref">RequireJS</span></a>, ScriptManJS</p></li>
 </ul>
-<div class="code javascript highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">define</span><span class="p">(</span> <span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span> <span class="p">);</span>
 </pre></div>
 </div>
 <span class="target" id="index-42"></span></div>
@@ -1021,8 +1053,8 @@
 <div class="line"><br /></div>
 <div class="line">Docs: <a class="reference external" href="https://github.com/tc39/proposal-dynamic-import">https://github.com/tc39/proposal-dynamic-import</a></div>
 </div>
-<div class="code javascript highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="p">;</span>
-<span class="n">export</span> <span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">;</span>
+<span class="kr">export</span> <span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -1032,8 +1064,8 @@
 <div class="line">Src: <a class="reference external" href="https://github.com/systemjs/systemjs">https://github.com/systemjs/systemjs</a></div>
 </div>
 <ul class="simple">
-<li>System.js supports <a class="reference internal" href="#commonjs"><span class="std std-ref">CommonJS</span></a>, <span class="xref std std-ref">NodeJS</span>,
-<span class="xref std std-ref">AMD</span>, and <a class="reference internal" href="#es2015-modules"><span class="std std-ref">ES2015 Modules</span></a></li>
+<li><p>System.js supports <a class="reference internal" href="#commonjs"><span class="std std-ref">CommonJS</span></a>, <span class="xref std std-ref">NodeJS</span>,
+<span class="xref std std-ref">AMD</span>, and <a class="reference internal" href="#es2015-modules"><span class="std std-ref">ES2015 Modules</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="requirejs">
@@ -1046,13 +1078,13 @@
 <div class="section" id="npm">
 <span id="index-46"></span><span id="id39"></span><h4><a class="toc-backref" href="#id135">NPM</a><a class="headerlink" href="#npm" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><span class="xref std std-ref">NPM</span></li>
+<li><p><span class="xref std std-ref">NPM</span></p></li>
 </ul>
 </div>
 <div class="section" id="bower">
 <span id="index-47"></span><span id="id40"></span><h4><a class="toc-backref" href="#id136">Bower</a><a class="headerlink" href="#bower" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><a class="reference internal" href="#bower"><span class="std std-ref">Bower</span></a></li>
+<li><p><a class="reference internal" href="#bower"><span class="std std-ref">Bower</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="webpack">
@@ -1078,9 +1110,10 @@
 <div class="line">Docs: <a class="reference external" href="https://github.com/substack/browserify-handbook">https://github.com/substack/browserify-handbook</a></div>
 </div>
 <blockquote>
-<div>browserify is a tool for compiling node-flavored commonjs modules for the browser.</div></blockquote>
+<div><p>browserify is a tool for compiling node-flavored commonjs modules for the browser.</p>
+</div></blockquote>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></li>
+<li><p><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></p></li>
 </ul>
 <div class="section" id="requirify">
 <span id="index-50"></span><span id="id43"></span><h5><a class="toc-backref" href="#id139">Requirify</a><a class="headerlink" href="#requirify" title="Permalink to this headline">¶</a></h5>
@@ -1100,7 +1133,7 @@
 <div class="line">Docs: <a class="reference external" href="https://yarnpkg.com/en/docs/migrating-from-npm">https://yarnpkg.com/en/docs/migrating-from-npm</a></div>
 </div>
 <ul class="simple">
-<li>Yarn can consume <span class="xref std std-ref">NPM</span> <code class="docutils literal notranslate"><span class="pre">package.json</span></code></li>
+<li><p>Yarn can consume <span class="xref std std-ref">NPM</span> <code class="docutils literal notranslate"><span class="pre">package.json</span></code></p></li>
 </ul>
 </div>
 </div>
@@ -1128,12 +1161,12 @@
 <div class="section" id="php-security">
 <span id="index-53"></span><span id="id46"></span><h3><a class="toc-backref" href="#id142">PHP Security</a><a class="headerlink" href="#php-security" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet</a></li>
-<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Top_5">https://www.owasp.org/index.php/PHP_Top_5</a></li>
-<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet</a></li>
-<li><a class="reference external" href="https://www.owasp.org/index.php/OWASP_PHP_Security_Project">https://www.owasp.org/index.php/OWASP_PHP_Security_Project</a></li>
-<li><a class="reference external" href="https://github.com/OWASP/phpsec">https://github.com/OWASP/phpsec</a></li>
-<li>Unmaintained but still a good reference.</li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet</a></p></li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/PHP_Top_5">https://www.owasp.org/index.php/PHP_Top_5</a></p></li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet</a></p></li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/OWASP_PHP_Security_Project">https://www.owasp.org/index.php/OWASP_PHP_Security_Project</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OWASP/phpsec">https://github.com/OWASP/phpsec</a></p></li>
+<li><p>Unmaintained but still a good reference.</p></li>
 </ul>
 </div>
 <div class="section" id="hhvm">
@@ -1164,7 +1197,7 @@
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/cakephp">https://twitter.com/cakephp</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://book.cakephp.org/3.0/en/elasticsearch.html">https://book.cakephp.org/3.0/en/elasticsearch.html</a></li>
+<li><p><a class="reference external" href="https://book.cakephp.org/3.0/en/elasticsearch.html">https://book.cakephp.org/3.0/en/elasticsearch.html</a></p></li>
 </ul>
 </div>
 <div class="section" id="laravel">
@@ -1205,14 +1238,12 @@
 <div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/angularjs-integration">https://api-platform.com/docs/core/angularjs-integration</a></div>
 </div>
 <ul>
-<li><p class="first">Built on <a class="reference internal" href="#symfony"><span class="std std-ref">Symfony</span></a></p>
-</li>
-<li><p class="first"><span class="xref std std-ref">RESTful</span> <span class="xref std std-ref">Schema.org</span> <span class="xref std std-ref">JSON-LD</span>, <span class="xref std std-ref">Hydra</span></p>
-</li>
-<li><p class="first"><a class="reference external" href="https://github.com/api-platform/admin">https://github.com/api-platform/admin</a></p>
+<li><p>Built on <a class="reference internal" href="#symfony"><span class="std std-ref">Symfony</span></a></p></li>
+<li><p><span class="xref std std-ref">RESTful</span> <span class="xref std std-ref">Schema.org</span> <span class="xref std std-ref">JSON-LD</span>, <span class="xref std std-ref">Hydra</span></p></li>
+<li><p><a class="reference external" href="https://github.com/api-platform/admin">https://github.com/api-platform/admin</a></p>
 <p><a class="reference internal" href="#angular"><span class="std std-ref">Angular</span></a>, ng-admin</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/marmelab/ng-admin">https://github.com/marmelab/ng-admin</a></li>
+<li><p><a class="reference external" href="https://github.com/marmelab/ng-admin">https://github.com/marmelab/ng-admin</a></p></li>
 </ul>
 </li>
 </ul>
@@ -1235,8 +1266,8 @@
 <div class="line">Docs: <a class="reference external" href="https://www.drupal.org/docs/7/understanding-drupal/glossary">https://www.drupal.org/docs/7/understanding-drupal/glossary</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://www.drupal.org/project/project_theme">https://www.drupal.org/project/project_theme</a></li>
-<li><a class="reference external" href="https://www.drupal.org/project/project_module">https://www.drupal.org/project/project_module</a></li>
+<li><p><a class="reference external" href="https://www.drupal.org/project/project_theme">https://www.drupal.org/project/project_theme</a></p></li>
+<li><p><a class="reference external" href="https://www.drupal.org/project/project_module">https://www.drupal.org/project/project_module</a></p></li>
 </ul>
 <span class="target" id="index-62"></span></div>
 <div class="section" id="joomla">
@@ -1249,7 +1280,7 @@
 </div>
 <p>Joomla (formerly “Mambo”) is an open source <span class="xref std std-ref">CMS</span> written in <a class="reference internal" href="#php"><span class="std std-ref">PHP</span></a>.</p>
 <ul class="simple">
-<li><a class="reference external" href="https://extensions.joomla.org/">https://extensions.joomla.org/</a></li>
+<li><p><a class="reference external" href="https://extensions.joomla.org/">https://extensions.joomla.org/</a></p></li>
 </ul>
 </div>
 <div class="section" id="mediawiki">
@@ -1283,22 +1314,21 @@
 <p>Semantic Mediawiki (<em>SMW</em>) is an open source extension of
 <a class="reference internal" href="#mediawiki"><span class="std std-ref">MediaWiki</span></a> for semantic data.</p>
 <ul>
-<li><p class="first"><span class="xref std std-ref">SQL</span> (<span class="xref std std-ref">MySQL</span>)</p>
-</li>
-<li><p class="first"><span class="xref std std-ref">SPARQL</span> (<span class="xref std std-ref">Virtuoso</span>, 4store, <span class="xref std std-ref">Blazegraph</span>, Fuseki,
+<li><p><span class="xref std std-ref">SQL</span> (<span class="xref std std-ref">MySQL</span>)</p></li>
+<li><p><span class="xref std std-ref">SPARQL</span> (<span class="xref std std-ref">Virtuoso</span>, 4store, <span class="xref std std-ref">Blazegraph</span>, Fuseki,
 <span class="xref std std-ref">Sesame</span>)</p>
 <p><a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores#Available_repository_connectors">https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores#Available_repository_connectors</a></p>
 </li>
-<li><p class="first">Concepts: ~composable saved searches</p>
+<li><p>Concepts: ~composable saved searches</p>
 <p><a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Concepts">https://www.semantic-mediawiki.org/wiki/Help:Concepts</a></p>
 </li>
 </ul>
 <p>seeAlso:</p>
 <ul class="simple">
-<li><span class="xref std std-ref">Semantic Web</span>, <span class="xref std std-ref">Linked Data</span>, <span class="xref std std-ref">RDFS</span>, <span class="xref std std-ref">OWL</span></li>
-<li><a class="reference internal" href="#semantic-bundle"><span class="std std-ref">Semantic Bundle</span></a> (includes SMW)</li>
-<li><a class="reference internal" href="#wikibase"><span class="std std-ref">Wikibase</span></a> (<span class="xref std std-ref">Wikidata</span>)</li>
-<li><span class="xref std std-ref">Dbpedia</span> (<a class="reference internal" href="#mediawiki"><span class="std std-ref">MediaWiki</span></a> infoboxes)</li>
+<li><p><span class="xref std std-ref">Semantic Web</span>, <span class="xref std std-ref">Linked Data</span>, <span class="xref std std-ref">RDFS</span>, <span class="xref std std-ref">OWL</span></p></li>
+<li><p><a class="reference internal" href="#semantic-bundle"><span class="std std-ref">Semantic Bundle</span></a> (includes SMW)</p></li>
+<li><p><a class="reference internal" href="#wikibase"><span class="std std-ref">Wikibase</span></a> (<span class="xref std std-ref">Wikidata</span>)</p></li>
+<li><p><span class="xref std std-ref">Dbpedia</span> (<a class="reference internal" href="#mediawiki"><span class="std std-ref">MediaWiki</span></a> infoboxes)</p></li>
 </ul>
 </div>
 <div class="section" id="semantic-bundle">
@@ -1315,8 +1345,8 @@
 <div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/Extension:Wikibase">https://www.mediawiki.org/wiki/Extension:Wikibase</a></div>
 </div>
 <ul class="simple">
-<li><span class="xref std std-ref">Wikidata</span> is built on Wikibase</li>
-<li>” DataValues + ValueParsers + ValueFormatters + ValueValidators”</li>
+<li><p><span class="xref std std-ref">Wikidata</span> is built on Wikibase</p></li>
+<li><p>” DataValues + ValueParsers + ValueFormatters + ValueValidators”</p></li>
 </ul>
 </div>
 </div>
@@ -1348,16 +1378,16 @@
 <div class="line">Awesome: <a class="reference external" href="https://github.com/miziomon/awesome-wordpress">https://github.com/miziomon/awesome-wordpress</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/miziomon/awesome-wordpress#websites">https://github.com/miziomon/awesome-wordpress#websites</a></li>
-<li><a class="reference external" href="https://wordpress.org/plugins/">https://wordpress.org/plugins/</a></li>
-<li><a class="reference external" href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></li>
+<li><p><a class="reference external" href="https://github.com/miziomon/awesome-wordpress#websites">https://github.com/miziomon/awesome-wordpress#websites</a></p></li>
+<li><p><a class="reference external" href="https://wordpress.org/plugins/">https://wordpress.org/plugins/</a></p></li>
+<li><p><a class="reference external" href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="php-testing">
 <span id="index-70"></span><span id="id62"></span><h3><a class="toc-backref" href="#id158">PHP Testing</a><a class="headerlink" href="#php-testing" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/ziadoz/awesome-php#testing">https://github.com/ziadoz/awesome-php#testing</a></li>
+<li><p><a class="reference external" href="https://github.com/ziadoz/awesome-php#testing">https://github.com/ziadoz/awesome-php#testing</a></p></li>
 </ul>
 <div class="section" id="phpunit">
 <span id="index-71"></span><span id="id63"></span><h4><a class="toc-backref" href="#id159">PHPUnit</a><a class="headerlink" href="#phpunit" title="Permalink to this headline">¶</a></h4>
@@ -1369,8 +1399,8 @@
 <div class="line">Docs: <a class="reference external" href="https://phpunit.de/manual/current/en/phpunit-book.html">https://phpunit.de/manual/current/en/phpunit-book.html</a></div>
 </div>
 <ul class="simple">
-<li>PHPUnit cheat sheet
-<a class="reference external" href="https://gist.github.com/loonies/1255249">https://gist.github.com/loonies/1255249</a></li>
+<li><p>PHPUnit cheat sheet
+<a class="reference external" href="https://gist.github.com/loonies/1255249">https://gist.github.com/loonies/1255249</a></p></li>
 </ul>
 </div>
 </div>
@@ -1386,11 +1416,11 @@
 </div>
 <p>PHAR (<em>PHP Archive</em>) is a packaging format for <a class="reference internal" href="#php"><span class="std std-ref">PHP</span></a> programs.</p>
 <ul class="simple">
-<li>Compression: <span class="xref std std-ref">Tar</span>, <span class="xref std std-ref">Zip</span>, or PHAR</li>
-<li>Layout: Stub, Manifest, File Contents</li>
-<li>Metadata: “Meta-data can be any PHP variable that can be serialized.”</li>
-<li><a class="reference internal" href="#composer"><span class="std std-ref">Composer</span></a> and <a class="reference internal" href="#phpunit"><span class="std std-ref">PHPUnit</span></a> are distributed as PHARs (PHAR
-archives).</li>
+<li><p>Compression: <span class="xref std std-ref">Tar</span>, <span class="xref std std-ref">Zip</span>, or PHAR</p></li>
+<li><p>Layout: Stub, Manifest, File Contents</p></li>
+<li><p>Metadata: “Meta-data can be any PHP variable that can be serialized.”</p></li>
+<li><p><a class="reference internal" href="#composer"><span class="std std-ref">Composer</span></a> and <a class="reference internal" href="#phpunit"><span class="std std-ref">PHPUnit</span></a> are distributed as PHARs (PHAR
+archives).</p></li>
 </ul>
 </div>
 <div class="section" id="composer">
@@ -1424,7 +1454,7 @@ archives).</li>
 <div class="line">Docs: <a class="reference external" href="http://docs.plone.org/manage/installing/installation.html">http://docs.plone.org/manage/installing/installation.html</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="http://developer.plone.org/testing_and_debugging/">http://developer.plone.org/testing_and_debugging/</a></li>
+<li><p><a class="reference external" href="http://developer.plone.org/testing_and_debugging/">http://developer.plone.org/testing_and_debugging/</a></p></li>
 </ul>
 </div>
 <div class="section" id="django">
@@ -1440,9 +1470,10 @@ archives).</li>
 <div class="line">Awesome: <a class="reference external" href="https://github.com/rosarior/awesome-django">https://github.com/rosarior/awesome-django</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/django-debug-toolbar/django-debug-toolbar">https://github.com/django-debug-toolbar/django-debug-toolbar</a></li>
-<li><a class="reference external" href="https://www.djangopackages.com/">https://www.djangopackages.com/</a><ul>
-<li><a class="reference external" href="https://www.djangopackages.com/grids/g/cms/">https://www.djangopackages.com/grids/g/cms/</a></li>
+<li><p><a class="reference external" href="https://github.com/django-debug-toolbar/django-debug-toolbar">https://github.com/django-debug-toolbar/django-debug-toolbar</a></p></li>
+<li><p><a class="reference external" href="https://www.djangopackages.com/">https://www.djangopackages.com/</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.djangopackages.com/grids/g/cms/">https://www.djangopackages.com/grids/g/cms/</a></p></li>
 </ul>
 </li>
 </ul>
@@ -1460,7 +1491,7 @@ archives).</li>
 <div class="line">Awesome: <a class="reference external" href="https://github.com/humiaozuzu/awesome-flask">https://github.com/humiaozuzu/awesome-flask</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://flask-debugtoolbar.readthedocs.org/en/latest/">https://flask-debugtoolbar.readthedocs.org/en/latest/</a></li>
+<li><p><a class="reference external" href="https://flask-debugtoolbar.readthedocs.org/en/latest/">https://flask-debugtoolbar.readthedocs.org/en/latest/</a></p></li>
 </ul>
 </div>
 <div class="section" id="bottle">
@@ -1474,11 +1505,11 @@ archives).</li>
 </div>
 <p>Bottle is a one file WSGI Python web framework.</p>
 <ul class="simple">
-<li><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></li>
+<li><p><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></p></li>
 </ul>
 <p>pgs is written with bottle.py:</p>
 <ul>
-<li><div class="first line-block">
+<li><div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/pgs">https://github.com/westurner/pgs</a></div>
 </div>
 </li>
@@ -1497,7 +1528,7 @@ archives).</li>
 <div class="line">Awesome: <a class="reference external" href="https://github.com/ITCase/awesome-pyramid">https://github.com/ITCase/awesome-pyramid</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/">http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/</a></li>
+<li><p><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/">http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/</a></p></li>
 </ul>
 </div>
 </div>
@@ -1507,7 +1538,7 @@ archives).</li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></li>
+<li><p><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></p></li>
 </ul>
 <div class="section" id="webtest">
 <h4><a class="toc-backref" href="#id171">WebTest</a><a class="headerlink" href="#webtest" title="Permalink to this headline">¶</a></h4>
@@ -1529,9 +1560,9 @@ without running a webserver
 </div>
 <blockquote class="epigraph">
 <div><ul class="simple">
-<li>multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
-zopetestbrowser, remote webdriver)</li>
-<li>css and xpath selectors *</li>
+<li><p>multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+zopetestbrowser, remote webdriver)</p></li>
+<li><p>css and xpath selectors *</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1543,9 +1574,10 @@ zopetestbrowser, remote webdriver)</li>
 <div class="line">Docs: <a class="reference external" href="http://ghost-py.readthedocs.org/en/latest/">http://ghost-py.readthedocs.org/en/latest/</a></div>
 </div>
 <blockquote class="epigraph">
-<div>Webkit based scriptable web browser for python.</div></blockquote>
+<div><p>Webkit based scriptable web browser for python.</p>
+</div></blockquote>
 <ul class="simple">
-<li>PyQT or PySide</li>
+<li><p>PyQT or PySide</p></li>
 </ul>
 </div>
 </div>
@@ -1558,23 +1590,23 @@ zopetestbrowser, remote webdriver)</li>
 <div class="line"><a class="reference external" href="https://westurner.github.io/tools/#ruby">https://westurner.github.io/tools/#ruby</a></div>
 </div>
 <ul class="simple">
-<li>irb: interactive ruby shell</li>
-<li>rdoc</li>
-<li>erb:</li>
-<li>capistrano</li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/</a></li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/</a></li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/</a></li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/</a></li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/</a></li>
-<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/</a></li>
+<li><p>irb: interactive ruby shell</p></li>
+<li><p>rdoc</p></li>
+<li><p>erb:</p></li>
+<li><p>capistrano</p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/</a></p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/</a></p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/</a></p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/</a></p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/</a></p></li>
+<li><p><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/</a></p></li>
 </ul>
 <div class="section" id="ruby-devtools">
 <span id="index-77"></span><span id="id69"></span><h3><a class="toc-backref" href="#id175">Ruby Devtools</a><a class="headerlink" href="#ruby-devtools" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="rake">
 <h4><a class="toc-backref" href="#id176">rake</a><a class="headerlink" href="#rake" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>rake: <span class="xref std std-ref">Make</span> for Ruby</li>
+<li><p>rake: <span class="xref std std-ref">Make</span> for Ruby</p></li>
 </ul>
 </div>
 </div>
@@ -1590,11 +1622,11 @@ zopetestbrowser, remote webdriver)</li>
 <div class="line">Docs: <a class="reference external" href="http://www.rubydoc.info/github/rack/rack/master/file/SPEC">http://www.rubydoc.info/github/rack/rack/master/file/SPEC</a></div>
 </div>
 <ul class="simple">
-<li>Rack is a <a class="reference internal" href="#ruby"><span class="std std-ref">Ruby</span></a> middleware API spec for a “Rack application”
-which receives a Request Environment and returns a Response.</li>
-<li>Rack is similar in form and function to
-and partially derived from <span class="xref std std-ref">WSGI.</span></li>
-<li><span class="xref std std-ref">Rails</span> and <a class="reference internal" href="#sinatra"><span class="std std-ref">Sinatra</span></a> are Rack applications</li>
+<li><p>Rack is a <a class="reference internal" href="#ruby"><span class="std std-ref">Ruby</span></a> middleware API spec for a “Rack application”
+which receives a Request Environment and returns a Response.</p></li>
+<li><p>Rack is similar in form and function to
+and partially derived from <span class="xref std std-ref">WSGI.</span></p></li>
+<li><p><span class="xref std std-ref">Rails</span> and <a class="reference internal" href="#sinatra"><span class="std std-ref">Sinatra</span></a> are Rack applications</p></li>
 </ul>
 <span class="target" id="index-80"></span><span class="target" id="index-81"></span></div>
 <div class="section" id="ruby-on-rails">
@@ -1603,10 +1635,10 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ruby_on_Rails">https://en.wikipedia.org/wiki/Ruby_on_Rails</a></div>
 </div>
 <ul class="simple">
-<li>ActionController</li>
-<li>acts_as_authenticated</li>
-<li>_partials</li>
-<li><a class="reference internal" href="#jquery"><span class="std std-ref">jQuery</span></a>, <span class="xref std std-ref">CoffeeScript</span>, <span class="xref std std-ref">Sass</span></li>
+<li><p>ActionController</p></li>
+<li><p>acts_as_authenticated</p></li>
+<li><p>_partials</p></li>
+<li><p><a class="reference internal" href="#jquery"><span class="std std-ref">jQuery</span></a>, <span class="xref std std-ref">CoffeeScript</span>, <span class="xref std std-ref">Sass</span></p></li>
 </ul>
 <div class="section" id="react-on-rails">
 <span id="index-83"></span><span id="id73"></span><h5><a class="toc-backref" href="#id180">React on Rails</a><a class="headerlink" href="#react-on-rails" title="Permalink to this headline">¶</a></h5>
@@ -1620,8 +1652,9 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Convention_over_configuration">https://en.wikipedia.org/wiki/Convention_over_configuration</a></div>
 </div>
 <ul class="simple">
-<li>CoC: Convention over Configuration<ul>
-<li>File naming defaults,</li>
+<li><p>CoC: Convention over Configuration</p>
+<ul>
+<li><p>File naming defaults,</p></li>
 </ul>
 </li>
 </ul>
@@ -1632,8 +1665,9 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">https://en.wikipedia.org/wiki/Don%27t_repeat_yourself</a></div>
 </div>
 <ul class="simple">
-<li>DRY: Don’t Repeat Yourself<ul>
-<li>Models have many attributes and representations</li>
+<li><p>DRY: Don’t Repeat Yourself</p>
+<ul>
+<li><p>Models have many attributes and representations</p></li>
 </ul>
 </li>
 </ul>
@@ -1688,14 +1722,11 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/phusion_nl">https://twitter.com/phusion_nl</a></div>
 </div>
 <ul>
-<li><p class="first">Phusion Passenger is a web server</p>
-</li>
-<li><p class="first">Nginx, Apache, Standalone</p>
-</li>
-<li><p class="first">Serve apps written in Ruby, Python, Node.js</p>
-</li>
-<li><p class="first">Development mode restart:</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#TODO  touch .RESTART_FILENAME</span>
+<li><p>Phusion Passenger is a web server</p></li>
+<li><p>Nginx, Apache, Standalone</p></li>
+<li><p>Serve apps written in Ruby, Python, Node.js</p></li>
+<li><p>Development mode restart:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#TODO  touch .RESTART_FILENAME</span>
 </pre></div>
 </div>
 </li>
@@ -1732,28 +1763,29 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="section" id="ruby-testing">
 <span id="index-98"></span><span id="id85"></span><h3><a class="toc-backref" href="#id192">Ruby Testing</a><a class="headerlink" href="#ruby-testing" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://www.ruby-toolbox.com/categories/testing_frameworks#bacon">https://www.ruby-toolbox.com/categories/testing_frameworks#bacon</a></li>
+<li><p><a class="reference external" href="https://www.ruby-toolbox.com/categories/testing_frameworks#bacon">https://www.ruby-toolbox.com/categories/testing_frameworks#bacon</a></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="web-testing">
 <h2><a class="toc-backref" href="#id193">Web Testing</a><a class="headerlink" href="#web-testing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#web-frameworks">https://westurner.github.io/wiki/awesome-python-testing#web-frameworks</a></li>
+<li><p><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#web-frameworks">https://westurner.github.io/wiki/awesome-python-testing#web-frameworks</a></p></li>
 </ul>
 <div class="section" id="browsers">
 <h3><a class="toc-backref" href="#id194">Browsers</a><a class="headerlink" href="#browsers" title="Permalink to this headline">¶</a></h3>
 <ul>
-<li><div class="first line-block">
+<li><div class="line-block">
 <div class="line"><strong>Headless Browsers</strong></div>
 <div class="line">A list of (almost) all headless web browsers in existence</div>
 </div>
 <p><a class="reference external" href="https://github.com/dhamaniasad/HeadlessBrowsers">https://github.com/dhamaniasad/HeadlessBrowsers</a></p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/substack/browser-launcher">https://github.com/substack/browser-launcher</a></li>
-<li><a class="reference external" href="https://github.com/nodeca/navit">https://github.com/nodeca/navit</a><ul>
-<li>“All methods are chainable” (Helpful instead of
-<code class="docutils literal notranslate"><span class="pre">async</span></code>/<code class="docutils literal notranslate"><span class="pre">await</span></code>)</li>
+<li><p><a class="reference external" href="https://github.com/substack/browser-launcher">https://github.com/substack/browser-launcher</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nodeca/navit">https://github.com/nodeca/navit</a></p>
+<ul>
+<li><p>“All methods are chainable” (Helpful instead of
+<code class="docutils literal notranslate"><span class="pre">async</span></code>/<code class="docutils literal notranslate"><span class="pre">await</span></code>)</p></li>
 </ul>
 </li>
 </ul>
@@ -1766,8 +1798,8 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
 <div class="line">Docs: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin</a></li>
-<li><a class="reference external" href="http://www.seleniumhq.org/projects/ide/">http://www.seleniumhq.org/projects/ide/</a></li>
+<li><p><a class="reference external" href="https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin</a></p></li>
+<li><p><a class="reference external" href="http://www.seleniumhq.org/projects/ide/">http://www.seleniumhq.org/projects/ide/</a></p></li>
 </ul>
 </div>
 <div class="section" id="webdriver">
@@ -1813,7 +1845,7 @@ and partially derived from <span class="xref std std-ref">WSGI.</span></li>
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright @westurner 2014-2020, Wes Turner.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.7.1.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.2.1.
       </footer>
       <!-- /footer -->
 
