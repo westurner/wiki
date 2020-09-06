@@ -2,6 +2,9 @@
     margin-bottom: 0;
 }
 
+div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
+    color: #777 !important;
+}
 
 button.navbar-toggle {
     z-index: 1000;
@@ -17,7 +20,7 @@ button.navbar-toggle {
     padding-top: 4px;
 }
 
-div.sidebar ul ul{
+div.sidebar ul ul {
     padding-left: 12px;
     list-style-type: none;
 }
@@ -28,6 +31,7 @@ div.sidebar {
 
 div.sidebar pre {
     font-size: 9px;
+    text-indent: 0;
 }
 
 div.sidebar h3 {
@@ -36,11 +40,19 @@ div.sidebar h3 {
     font-size: 20px;
 }
 
+div.body {
+    min-width: inherit; /* override sphinx basic.css */
+}
+
 div.body h1 {
     border-bottom: 1px solid rgb(208, 208, 208);
     padding-bottom: 10px;
 }
 
+div.body a,
+div.body p {
+    word-wrap: break-word;
+}
 
 #sidebar-wrapper {
     overflow-y: auto;
@@ -55,6 +67,13 @@ div.body h1 {
 #sidebar-wrapper.affix-bottom, #sidebar-wrapper.affix {
     margin-top: -52px; /* magic */
 }
+
+div.sidebar:first-of-type li {
+    /* hanging indent */
+    padding-left: 8px;
+    text-indent: -8px;
+}
+
 
 #navbar-related {
     border: 0;
@@ -86,3 +105,73 @@ footer {
     margin-top: -1px;
 }
 
+ul.simple {
+    margin-bottom:10px;
+}
+
+span.pre {
+    word-wrap: break-word;
+}
+
+table.docutils caption {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+a.external {
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+div.body a.internal {
+    /* background: #f0f0f0;
+    padding: 3px 4px 2px 4px; */
+    border-bottom: 1px solid;
+}
+
+code {
+    background-color: #f2f2f2;
+    color: #a7052e;
+}
+
+div.widget.srclinks ul {
+    padding-left: 0;
+}
+
+div#searchbox form.search {
+    margin: 8px 0;
+}
+
+ol.upperalpha {
+    padding-left: 18px;
+}
+
+div.shortenText {
+    display: inline;
+}
+
+
+@media print {
+    .affix,
+    #sidebar-wrapper.affix-bottom,
+    #sidebar-wrapper.affix-top {
+        position: inherit !important;
+        margin-top: 0 !important;
+    }
+    #content-wrapper {
+        left: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        clear: both !important;
+        border: 0 !important;
+        overflow-y: visible !important;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+    a[href]::after {
+        opacity: 0.5;
+    }
+}
