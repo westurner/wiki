@@ -64,7 +64,7 @@ Objectives
     `taskw <TaskWarrior>`)
   * Logs: `Usrlog`_, workhours, elasticsearch, kibana
 
-See: `Requirements Traceability`_
+See: `Best Practices`_ > `Develop Projects with Requirements Traceability`_
 
 
 Tasks
