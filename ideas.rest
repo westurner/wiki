@@ -261,7 +261,7 @@ LinkedReproducibility
 | tags: #linkedreproducibility & #linkedrepro
 | tags: #linkeddata #schemaorg
 | Homepage: https://wrdrd.github.io/docs/consulting/linkedreproducibility
-| Src: 
+| ProjectBoard: https://github.com/users/westurner/projects/1
 
 - Linked-
 - StudyGraph
