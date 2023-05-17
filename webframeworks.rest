@@ -6,6 +6,9 @@
 ******************
 Web Frameworks
 ******************
+- Wikipedia: https://en.wikipedia.org/wiki/Web_framework
+- WikipediaCategory: https://en.wikipedia.org/wiki/Category:Web_frameworks
+- https://en.wikipedia.org/wiki/Comparison_of_web_frameworks
 
 .. contents::
 
@@ -18,7 +21,7 @@ Web Framework Benchmarks
 ==========================
 - https://github.com/TechEmpower/FrameworkBenchmarks
 - https://www.techempower.com/benchmarks/
--
+- https://todomvc.com/
 
 
 .. index:: C++
