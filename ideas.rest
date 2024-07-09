@@ -34,6 +34,16 @@ Open Source Projects I have contributed to:
 * https://westurner.github.io/wiki/contributions
 * Src: https://github.com/westurner/wiki/wiki/contributions
 
+UI Ideas
+---------
+
+Shells
+~~~~~~
+- ENH,UBY: Vsplit the terminal with 2 panes: 1) scrollback; 2) current prompt.
+  - ENH: UBY: auto expand the focused terminal pane
+    - ENH: UBY: (with vim-like shortcuts; Ctrl-W _, Ctrl-W=, Ctrl-W-[j|k])
+
+
 Twedges
 --------
 * (Directed) edges between tweets, later
