@@ -29,7 +29,7 @@ healthref
 ---------------
 | Src: https://github.com/westurner/healthref
 | Web: https://westurner.github.io/healthref/
- 
+
 pycd10api
 ---------------
 | Src: https://github.com/westurner/pycd10api
@@ -152,11 +152,23 @@ Mu Animation Video
 - 1 bit RLE to record the screen during test execution,
   then for the device simulator,
   then maybe for web-based view of the display,
-  then for whiteboarding with colors and layers
+  then for whiteboarding with colors and layers,
+  then for animated weather maps,
   then geometric primitives per arduinoGFX or really we want binary SVG lite
   and:
-- Normed Tensor Gaussian Splatters because for an ePaper display with
-  1hz (on ESP32 with meshtastic/firmware)
+- Normed Tensor Gaussian Splatters
+  - for an ePaper display with 1hz (on ESP32 with meshtastic/firmware)
+  - rescaling video anyway, why not full time
+  - SVG can be rescaled without distortion
+  - what gaussian splatter content is there,
+    and how to convert from which formats?
+   - USD Universal Scene Description, USDZ
+- What is the difference between a scene description,
+  and a game engine with input and event handling?
+- Maybe create a web game with this;
+  - "Splat Wombat" Snake-genre game
+  - Integrate with `particlewavefluid`_ particle sim selector app?
+    - could implement in one place
 
 
 contributions
