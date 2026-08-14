@@ -13,6 +13,8 @@ provis
 | Src: https://github.com/westurner/provis
 | Docs: https://provis.readthedocs.org/en/latest/
 
+- See: `Ansiblers`_
+
 Self Directed Learning
 -----------------------
 | Src: https://github.com/westurner/self-directed-learning
@@ -54,9 +56,96 @@ notebooks
 | Src: https://github.com/westurner/notebooks
 | Web: https://westurner.github.io/notebooks/
 
+workboard
+-----------
+| Src: https://github.com/westurner/workboard
+
+
+particlewavefluid
+-----------------
+| Src: https://github.com/westurner/particlewavefluid
+
+- https://github.com/westurner/three.js/tree/localflair
+  - Particle Attractor Simulator UI upgrades
+- Superfluid Quantum Gravity simulator
+  - Normed Tensor Gaussian Splatters
+    - `Mu Animation Video`_
+
+rosettastune
+-------------
+| Src: https://github.com/westurner/rosettastune
+
+
+
+sustainablefactory
+-------------------
+| Src: https://github.com/westurner/sustainablefactory
+| Src: https://github.com/westurner/sustainablefactory/tree/main/data/chats/
+
+
+transform_md
+*************
+| Src: https://github.com/westurner/sustainablefactory/tree/main/src/transform_md
+
+schematool
+***********
+| Src: https://github.com/westurner/sustainablefactory/tree/main/src/schematool
+
+
+docindex
+*********
+| Src: https://github.com/westurner/sustainablefactory/tree/main/src/docindex
+
+
+dsport
+***************
+| Src: https://github.com/westurner/dsport
+
+
+docutilsrs
+~~~~~~~~~~~~~~~
+| Src: https://github.com/westurner/dsport/tree/main/src/docutilrs
+
+sphinxdocrs
+~~~~~~~~~~~~~~~
+| Src: https://github.com/westurner/dsport/tree/main/src/sphinxdocrs
+
+pygmentsrs
+~~~~~~~~~~~~~~~
+| Src: https://github.com/westurner/dsport/tree/main/src/pygmentsrs
+
+jinja2rs
+~~~~~~~~~~~~~~~
+| Src: https://github.com/westurner/dsport/tree/main/src/jinja2rs
+
+myst-md-rs
+~~~~~~~~~~~~~~~
+| Src: https://github.com/westurner/dsport/tree/main/src/myst-md-rs
+
+ansiblers
+**********
+| Src: https://github.com/westurner/ansiblers
+
+
+Mu Animation Video
+--------------------
+| Src: https://github.com/westurner/firmware/tree/add_weather_http_json_protobufs
+| Src: https://github.com/westurner/FFmpeg/tree/mu_animation_video
+
+- 1 bit RLE to record the screen during test execution,
+  then for the device simulator,
+  then maybe for web-based view of the display,
+  then for whiteboarding with colors and layers
+  then geometric primitives per arduinoGFX or really we want binary SVG lite
+  and:
+- Normed Tensor Gaussian Splatters because for an ePaper display with
+  1hz (on ESP32 with meshtastic/firmware)
+
+
 contributions
 ---------------
 | See: https://github.com/westurner/wiki/wiki/contributions
+
 
 
 Tools
@@ -87,6 +176,14 @@ cookiecutter-saltformula
 elasticsearchjsonld
 --------------------
 | Src: https://github.com/westurner/elasticsearchjsonld
+
+gitchangelogger
+-----------------
+| Src: https://github.com/westurner/gitchangelogger
+
+minifylet
+-----------
+| Src: https://github.com/westurner/minifylet
 
 pandasrdf
 ---------------
@@ -164,6 +261,20 @@ rst-tools
 ---------------
 | Src: https://github.com/westurner/rst-tools
 
+shellcov
+----------
+| Src: https://github.com/westurner/shellcov
+
+- Rust port of bashcov
+
+spectral
+---------
+| Src: https://github.com/westurner/spectral
+
+- GUI spectrum monitor with PyQt
+- Ctrl-P
+- Terminal
+
 sphinxcontrib-rdf
 ------------------------
 | Src: https://github.com/westurner/sphinxcontrib-rdf
@@ -172,14 +283,37 @@ sphinxcontrib-srclinks
 ------------------------
 | Src: https://github.com/westurner/sphinxcontrib-srclinks
 
+stemkiosk
+---------------
+| Web: https://stemkiosk.github.io/
+| Src: https://github.com/stemkiosk
+| Src: https://github.com/westurner/stemkiosk
+
+
+tert
+-----
+| Src: https://github.com/westurner/tert
+
+venvv
+------
+| Src:  https://github.com/westurner/venvv
+
+- venv_ipyconfig.py
+
 vim2vim
 ---------------
 | Src: https://github.com/westurner/vim2vim
+
+- See also: `dotvim`_
 
 web.sh
 ---------------
 | PyPI: https://pypi.python.org/pypi/web.sh
 | Src: https://github.com/westurner/web.sh
+
+workboard
+---------------
+| Src: https://github.com/westurner/workboard
 
 workhours
 ---------------
@@ -222,6 +356,8 @@ wiki
 ---------------
 | https://westurner.github.io/wiki/
 | Src: https://github.com/westurner/wiki/wiki
+| Src: https://github.com/westurner/wiki/wiki.wiki
+| Src: https://github.com/westurner/wiki/wiki.wiki.git
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
   
@@ -229,16 +365,9 @@ resume
 ---------------
 | Web: https://westurner.github.io/pages/resume
 | Web: https://westurner.github.io/resume
-| Pics: https://plus.google.com/photos/+WesTurner1/albums/5232361918341295905
-
-westurner.bitbucket.org
---------------------------
-
-| Src: https://bitbucket.org/westurner/westurner.bitbucket.org
-| Web: http://westurner.bitbucket.org/
 
 westurner.github.io
 ----------------------
 | Src: https://github.com/westurner/westurner.github.io
 | Web: https://westurner.github.io/
-
+| Web: https://westurner.org/
