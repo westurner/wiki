@@ -56,10 +56,27 @@ notebooks
 | Src: https://github.com/westurner/notebooks
 | Web: https://westurner.github.io/notebooks/
 
+stemkiosk
+---------------
+| Web: https://stemkiosk.github.io/
+| Src: https://github.com/stemkiosk
+| Src: https://github.com/westurner/stemkiosk
+
 workboard
 -----------
 | Src: https://github.com/westurner/workboard
 
+srchq
+---------
+| Web: https://srchq.github.io/
+| Src: https://github.com/srchq/srchq.github.io
+
+- srchq-weather
+
+
+memegern
+---------
+| Src: https://github.com/westurner/memegern
 
 particlewavefluid
 -----------------
@@ -282,13 +299,6 @@ sphinxcontrib-rdf
 sphinxcontrib-srclinks
 ------------------------
 | Src: https://github.com/westurner/sphinxcontrib-srclinks
-
-stemkiosk
----------------
-| Web: https://stemkiosk.github.io/
-| Src: https://github.com/stemkiosk
-| Src: https://github.com/westurner/stemkiosk
-
 
 tert
 -----
