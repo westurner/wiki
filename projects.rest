@@ -382,7 +382,7 @@ wiki
 | Src: https://github.com/westurner/wiki/wiki.wiki.git
 | Src: https://github.com/westurner/wiki/wiki/projects
 | Src: https://github.com/westurner/wiki/wiki/contributions
-  
+
 resume
 ---------------
 | Web: https://westurner.github.io/pages/resume

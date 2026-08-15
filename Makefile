@@ -299,7 +299,7 @@ build_setup:
 
 rst2html_all: build_setup
 	find . -name '*.rest' -print0 \
-		| xargs -0 -I % rst2html.py % _build/html/%.html
+		| xargs -0 -I % rst2html % _build/html/%.html
 
 copy_sidebar_to_home:
 	@echo '' > Home.rest
