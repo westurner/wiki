@@ -1,0 +1,177 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
+    color: #777 !important;
+}
+
+button.navbar-toggle {
+    z-index: 1000;
+    background-color: #f0f0f0;
+}
+
+#sidebar-wrapper {
+    background: #f8f8f8;
+    /* border-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-top: 0; */
+    margin-top: -1px;
+    padding-top: 4px;
+}
+
+div.sidebar ul ul {
+    padding-left: 12px;
+    list-style-type: none;
+}
+
+div.sidebar {
+    padding-bottom: 14px; /* square */
+}
+
+div.sidebar pre {
+    font-size: 9px;
+    text-indent: 0;
+}
+
+div.sidebar h3 {
+    padding-top: 14px;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+div.body {
+    min-width: inherit; /* override sphinx basic.css */
+}
+
+div.body h1 {
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding-bottom: 10px;
+}
+
+div.body a,
+div.body p {
+    word-wrap: break-word;
+}
+
+#sidebar-wrapper {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#sidebar-wrapper.affix-bottom, #sidebar-wrapper.affix-top {
+    position: fixed;
+    height: 100%;
+}
+
+#sidebar-wrapper.affix-bottom, #sidebar-wrapper.affix {
+    margin-top: -52px; /* magic */
+}
+
+div.sidebar:first-of-type li {
+    /* hanging indent */
+    padding-left: 8px;
+    text-indent: -8px;
+}
+
+
+#navbar-related {
+    border: 0;
+    background: none;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+div.document ul {
+    padding-left: 18px;
+}
+
+div.footer-relbar {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer {
+    color: #777;
+    opacity: 0.7;
+}
+
+#content-wrapper {
+    background: white;
+    border: 1px solid #e7e7e7;
+    margin-top: -1px;
+}
+
+ul.simple {
+    margin-bottom:10px;
+}
+
+span.pre {
+    word-wrap: break-word;
+}
+
+table.docutils caption {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+a.external {
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+div.body a.internal {
+    /* background: #f0f0f0;
+    padding: 3px 4px 2px 4px; */
+    border-bottom: 1px solid;
+}
+
+code {
+    background-color: #f2f2f2;
+    color: #a7052e;
+}
+
+div.widget.srclinks ul {
+    padding-left: 0;
+}
+
+div#searchbox form.search {
+    margin: 8px 0;
+}
+
+ol.upperalpha {
+    padding-left: 18px;
+}
+
+div.shortenText {
+    display: inline;
+}
+
+
+@media print {
+    .affix,
+    #sidebar-wrapper.affix-bottom,
+    #sidebar-wrapper.affix-top {
+        position: inherit !important;
+        margin-top: 0 !important;
+    }
+    #content-wrapper {
+        left: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        clear: both !important;
+        border: 0 !important;
+        overflow-y: visible !important;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+    a[href]::after {
+        opacity: 0.5;
+    }
+}

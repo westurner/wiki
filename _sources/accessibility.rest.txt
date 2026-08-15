@@ -1,0 +1,355 @@
+
+
+***************
+Accessibility
+***************
+
+.. contents:: 
+
+
+Awesome
+=========
+* https://github.com/brunopulis/awesome-a11y
+* https://github.com/a11yproject/a11yproject.com
+
+  * http://a11yproject.com/
+
+
+Standards
+================
+
+WAI
+----
+| Name: Web Accessibility Initiative (WAI)
+| Homepage: https://www.w3.org/WAI/
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Accessibility_Initiative
+
+W3C WAI (*Web Accessibility Initiative*) is a group of standards and guidelines for developing accessible web content and applications.
+
+
+WAI-ARIA
+~~~~~~~~~~
+| Name: Web Accessibility Initiative Accessible Rich Internet Applications (WAI-ARIA)
+| Homepage: https://www.w3.org/WAI/intro/aria.php
+| Spec: https://www.w3.org/TR/wai-aria/
+| Spec: https://www.w3.org/TR/wai-aria/complete (as one page)
+| Wikipedia: https://en.wikipedia.org/wiki/WAI-ARIA
+| Dbpedia: http://dbpedia.org/page/WAI-ARIA
+
+* "Accessible Rich Internet Applications (WAI-ARIA) 1.0"
+  https://www.w3.org/TR/wai-aria/complete
+* "WAI-ARIA: States and Properties"
+  https://www.w3.org/TR/wai-aria/usage#introstates
+
+  * ``aria-invalid`` -- form validation errors
+  * ``aria-required`` -- required form fields
+
+* "WAI-ARIA Role, State, and Property Quick Reference"
+  https://www.w3.org/TR/wai-aria/complete#quickref
+
+.
+
+* Mozilla MDN WAI-ARIA resources:
+  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+* "WAI-ARIA: An introduction to Accessible Rich Internet Applications"
+  https://patrickhlauke.github.io/aria/presentation/
+
+
+WAI-ARIA Best Practices
+~~~~~~~~~~~~~~~~~~~~~~~~~
+| Homepage: https://www.w3.org/TR/wai-aria-practices-1.1/
+| Draft: https://w3c.github.io/aria-practices/
+| Src: https://github.com/w3c/aria-practices
+
+* https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_form
+* https://www.w3.org/TR/html51/dom.html#wai-aria 
+
+>   What is ARIA, and why do we need it?
+
+
+WCAG
+~~~~~~~~
+| Name: W3C WCAG
+| Name: Web Content Accessibility Guidelines
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines
+| Docs: http://www.w3.org/WAI/intro/wcag # WCAG Overview
+
+
+- WCAG Overview: http://www.w3.org/WAI/intro/wcag
+
+
+ATAG
+~~~~~~
+| Name: W3C ATAG
+| Name: Authoring Tool Accessibility Guidelines (ATAG) 2.0
+| Spec: http://www.w3.org/TR/ATAG20/
+
+
+Accessibility support
+-------------------------------------
+Things I've heard have better than average accessibility support:
+
+Text Editors
+~~~~~~~~~~~~~
+
+Emacs
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Emacs
+
+Emacspeak
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Emacspeak
+| Homepage: http://emacspeak.sourceforge.net/
+| Src: https://github.com/tvraman/emacspeak
+| Docs: https://tvraman.github.io/emacspeak/manual/
+
+* "Speech-enabled Applications On The Emacspeak Desktop"
+  https://tvraman.github.io/emacspeak/applications.html ::
+  
+    # [...]
+    22	python	Editting support for interactive Python development. Features aural highlighting, structured browsing and debugging.
+    23	elpy	IDE for interactive Python development.
+    # [..]
+
+* "Beautiful Code" > Chapter 31 "Emacspeak: The Complete Audio Desktop"
+  http://emacspeak.sourceforge.net/raman/publications/bc-emacspeak/publish-emacspeak-bc.html
+
+* 
+
+JS Libraries
+~~~~~~~~~~~~~
+
+YUI
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/YUI_Library
+
+* YUI Library is discontinued with maintenance releases in favor of WAI-ARIA, WCAG, HTML 5, and HTML 5.1 standards
+  
+GWT
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Web_Toolkit
+
+
+GUI Toolkits
+~~~~~~~~~~~~~~~~~
+
+Qt
+~~~
+From http://doc.qt.io/qt-5/accessible.html :
+
+    [...] Semantic information about user interface elements, such as buttons and scroll bars, is exposed to the assistive technologies. Qt supports Microsoft Active Accessibility (MSAA) and IAccessible2 on Windows, OS X Accessibility on OS X, and AT-SPI via DBus on Unix/X11. The platform specific technologies are abstracted by Qt, so that applications do not need any platform specific changes to work with the different native APIs. Qt tries to make adding accessibility support to your application as easy as possible, only a few changes from your side may be required to allow even more users to enjoy it. [...]
+
+
+Gnome
+~~~~~~~
+
+Languages
+~~~~~~~~~~~~~~
+
+Python
+~~~~~~~~~~
+
+* `Emacspeak`_ has support for {, python, IDLE,}
+* IPython / Jupyter
+* IPython in a terminal
+* IPython qtconsole (`Qt`_ toolkit)
+* Spyder IDE (`Qt`_ toolkit) embeds an IPython console with a Run button and lightweight code completion: https://code.google.com/p/spyderlib/
+
+- [ ]  Jupyter Notebook may / should have `WAI-ARIA`_ role tags (which are really easy to add to most templates)
+
+
+Content Management Systems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Plone
+~~~~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plone_(software)>`__
+
+From https://plone.org/accessibility-info :
+
+  **Accessibility**
+  This site uses the open source Content Management System Plone. It meets the Web Content Accessibility Guidelines (`WCAG v2.0 <http://www.w3.org/TR/WCAG20/>`_) level 'AA' for people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity, and combinations of these.
+
+  It is also accessible to content authors with disabilities per the level 'AA' Authoring Tool Accessibility Guidelines (`ATAG 2.0 <http://www.w3.org/TR/ATAG20/>`_).
+
+  **Accessibility Statement**
+  This site was designed to accommodate the different ways people access and use the Internet.
+
+  **Validation**
+  The site uses assistive technology like WAI-ARIA roles to the current best practices; however, site standards and content vary over time. If this web site does not validate correctly, please contact the Site Administration.
+
+  A number of checkpoints in WCAG 2.0 and ATAG 2.0 guidelines are subjective; there may be instances where interpretations vary
+
+- W3C `WCAG`_ 2.0 http://www.w3.org/TR/WCAG20/
+- W3C `ATAG`_ 2.0: http://www.w3.org/TR/ATAG20/
+
+Accessible Markup
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ARIA tags (role, properties
+- 
+
+Lightweight Markup Languages:
+
+- Markdown
+- ReStructuredText
+- {..., Textile, BBCode}
+  
+
+ReStructuredText
+~~~~~~~~~~~~~~~~~~~
+* This document is written in ReStructuredText and post-processed into HTML with Sphinx (and docutils).
+* ReStructuredText ``.. contents::`` directives add a hyperlinked table of contents for the current document.
+  
+
+
+"Eyestrain, Computers, The 20 -20–20 rule, Light bulb APIs"
+============================================================
+| BlogPost: https://medium.com/@westurner/the-20-20-20-rule-1fc591155a28
+| Reformatted here as ReStructuredText.
+
+.. contents::
+   :local:
+
+The 20–20–20 rule:
+-------------------
+Every **20 minutes**,
+look at something at least **20 ft** (*6.09m*) away,
+for at least like **20 seconds**.
+
+Computer glasses
+------------------
+(to reduce glare and eyestrain):
+
+- gaming glasses (e.g. the Gunnar tint and coating (http://www.gunnars.com/faq/) can be found at e.g. Best Buy (where they are known to carry e.g. Gunnar Intercept computer gaming eyewear glasses frames))
+- safety glasses (can often buy in bulk)
+- nosepads (replaceable)
+- nosepads (built-in)
+- glasses measurements (mm)
+
+  - temple measurement
+  - vertical/frame height
+  - eye_size*2 + bridge size ~= width
+
+Monitor adjustments
+----------------------
+(to reduce glare and eyestrain):
+
+- brightness/contrast
+- lighten the blue channel (*)
+- good monitor stands support vertical tilt
+
+Monitor settings
+-------------------
+Tools that gradually modify monitor settings to match the natural solar cycle:
+
+- f.lux (http://justgetflux.com) — Linux, Mac, Windows, iOS
+- Twilight (https://play.google.com/store/apps/details?id=com.urbandroid.lux) — Android
+
+Browser extensions
+-------------------
+Browser extensions for modifying style attributes:
+
+- brightness
+- contrast
+- background
+- text color
+- inverting just the CSS colors
+
+— https://westurner.github.io/tools/#browser-extensions
+
+  - Deluminate -- https://westurner.github.io/tools/#deluminate
+  - Stylish ( http://userstyles.org/ )
+  - High Contrast -- https://westurner.github.io/tools/#high-contrast
+  
+- Disadvantages:
+
+  1. These sometimes cause hiccups (easily diagnosable by unchecking the extension(s) and CTRL-R refreshing the current tab)     
+  2. If the browser colors are inverted AND the whole screen is inverted, there’s probably a less contrasty CSS styleset
+
+
+System high contrast / color inversion:
+-------------------------------------------------
+
+    {“settings”, "config", "control panel"} -> { “appearance” , “accessibility” }
+
+
+X11, Xorg, Gnome, Linux, BSD, Unix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Compiz color filters (e.g. negative-red, negative-red-dim)
+
+  - https://github.com/westurner/dotfiles/tree/master/etc/compiz/colorfilters)
+
+- xgamma, xbacklight, xrandr, xflux
+
+  - https://github.com/westurner/dotfiles/blob/master/etc/i3/config
+
+
+Dark window manager themes
+-----------------------------
+- Windows: WindowBlinds, Win7+
+- Ubuntu 10.04+
+- Gnome 3: [dnf install -y] gnome-tweak-tool > “Appearance” > ”Global dark theme”
+- OSX 10.10 Yosemite “Dark Mode”
+
+[Blue] Light affects sleep (/alertness):
+
+
+.. pullquote:
+   […] experimental research suggests that
+   an average person reading on a tablet for a couple hours before bed
+   may find that their sleep is delayed by about an hour.
+   --  https://justgetflux.com/research.html
+   
+.. note:: Complementary color lenses filter the opposite wavelength(s);
+   so lellow-ish lenses block blue light.
+   Probably because the ocean sounds.
+
+   [I think] red light is easier to accommodate to in the dark.
+
+Lightbulbs
+-------------
+Features for Multicolor LED [Bluetooth] light bulbs:
+
+- adjustable (spectrum; millions of colors)
+- gradual wake-up alarmable (n min)
+- gradual dim (~30min)
+- API: Continuous Integration build lamp, AV, HVAC
+- Hub / Hubless (1[+] registered mobile)
+- API: Digital (Voice) Assistant
+- API: RESTful JSON[-LD] LDP URIs
+- API: HTTP WAMP sensor swarm
+- (Open Source) Web Interface
+- Phillips Hue (http://meethue.com/en-us/products/)
+- Misfit Bolt (http://misfit.com/products/bolt)
+
+Font Antialiasing
+--------------------
+- System font ”smoothing”; LCD
+- System FXAA full-screen Antialiasing
+- GUI toolkit antialiasing configuration::
+  
+   TODO: GIF
+
+
+Font Size
+------------
+
+- System DPI (dots per inch)
+- System base font size (px pixels)
+- [GTK,Qt,Win] Application font size (px)
+- Browser base font size (before e.g. a reset.css) (px,pt,em)
+- Site CSS font styles (px,pt,em)
+
+    
+Keyboard Shortcuts
+--------------------
+- Increase font size:
+
+  - CTRL + +
+  - CTRL + ScrollUp
+
+- Decrease font size:
+
+  - CTRL + -
+  - CTRL + ScrollDown
+  - CTRL + Shift + […]

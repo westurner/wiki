@@ -1,0 +1,382 @@
+
+==============
+Contributions
+==============
+
+.. contents::
+
+Code Labels
+============
+Code labels are three-letter codes with which commit messages can be prefixed.
+
+::
+
+    CODE Label          color name      background  text
+    ---- -------------- --------------- ----------  -------
+    BLD: build          light green     #bfe5bf     #2a332a
+    BUG: bug            red             #fc2929     #ffffff  (github default)
+    CLN: cleanup        light yellow    #fef2c0     #333026
+    DOC: documentation  light blue      #c7def8     #282d33
+    ENH: enhancement    blue            #84b6eb     #1c2733  (github default)
+    PRF: performance    deep purple     #5319e7     #ffffff
+    REF: refactor       dark green      #009800     #ffffff
+    RLS: release        dark blue       #0052cc     #ffffff
+    SEC: security       orange          #eb6420     #ffffff
+    TST: test           light purple    #d4c5f9     #2b2833
+    UBY: usability      light pink      #f7c6c7     #332829
+
+    # Workflow Labels   (e.g. for waffle.io kanban board columns)
+    ready               dark sea green  #006b75     #ffffff
+    in progress         yellow          #fbca04     #332900
+
+    # GitHub Labels
+    duplicate           darker gray     #cccccc     #333333  (github default)
+    help wanted         green           #159818     #ffffff  (github default)
+    invalid             light gray      #e6e6e6     #333333  (github default)
+    question            fuschia         #cc317c     #ffffff  (github default)
+    wontfix             white           #ffffff     #333333  (github default)
+
+    Note: All of these color codes (except for fuschia)
+    are drawn from the default GitHub palette.
+
+    Note: There are 18 labels listed here.
+
+
+.. note:: For examples with color swatches in alphabetical order,
+   see https://github.com/westurner/dotfiles/labels
+
+See: `<workflow#code-labels>`_ for *Code Label* syntax and usage information.
+
+
+Code
+======
+
+bootstrap
+-----------
+| Src: https://github.com/twbs/bootstrap
+
+- [x] *ENH: Add WAI-ARIA roles to examples/theme/index.html (document, main)* https://github.com/twbs/bootstrap/pull/12228
+
+
+celery
+-----------
+| Src: https://github.com/celery/celery
+
+- [x] *BLD: Use console_scripts entry_points in the setup.py file* https://github.com/celery/celery/commit/cf2148e90
+
+
+chromium
+----------
+| Src: https://code.google.com/p/chromium/
+
+- [ ] *SEC: Security: fullscreen nagbar forces (unsafe) site whitelist* https://code.google.com/p/chromium/issues/detail?id=409458
+
+
+fixture
+---------
+| Src: https://github.com/fixture-py/fixture
+
+- [x] *Google Datastore (String)ListProperty* https://code.google.com/p/fixture/issues/detail?id=36
+
+
+ipython
+------------
+| Src: https://github.com/ipython/ipython
+
+- [x] *Allow passing extra arguments to iptest through for nose* https://github.com/ipython/ipython/pull/4242
+
+
+nbviewer
++++++++++++++++
+| Src: https://github.com/ipython/nbviewer
+
+- [x] *ENH: Redirect github blob URLs to raw.github URLs* https://github.com/ipython/nbviewer/pull/118
+
+
+pycon 2014 job survey analysis
++++++++++++++++++++++++++++++++++
+| Src: https://github.com/briandailey/pycon-2014-job-fair
+
+- [x] *Add ipynb crosstab and chart*: https://github.com/briandailey/pycon-2014-job-fair/pull/8
+- [x] *Updated README.md paths, matplotlib fonts, added a Makefile* https://github.com/briandailey/pycon-2014-job-fair/pull/10
+
+
+version_information
+++++++++++++++++++++++++++
+| Src: https://github.com/jrjohansson/version_information
+
+- [x] *Updated version_information.py: Escape JSON, HTMl, and LaTeX version strings* https://github.com/jrjohansson/version_information/pull/2
+- [x] *Added check for pkg_resources version and extended `__doc__`* https://github.com/jrjohansson/version_information/pull/3
+- [ ] ENH: "Adds %version_information extension" 
+
+   https://github.com/ipython/ipython/pull/4666 (2013)
+   
+   https://github.com/jrjohansson/version_information/issues/1
+
+   - see: https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility
+
+
+jinja2
+---------
+| Src: https://github.com/mitsuhiko/jinja2
+
+- [ ] *DOC: Update templates.rst: syntax, commas, expansion* https://github.com/mitsuhiko/jinja2/pull/389
+
+
+jquery-lifestream
+------------------
+| Src: https://github.com/christianv/jquery-lifestream
+
+- [x] *BUG: Match tweet #hashtag word boundaries, https:// URLS, min.js*
+  https://github.com/christianv/jquery-lifestream/issues/181 (#182, #183)
+
+
+pandas
+---------
+| Src: https://github.com/pydata/pandas
+
+- [ ] *ENH: Linked Datasets (RDF)*  https://github.com/pydata/pandas/issues/3402
+- [x] *PERF: generators in dataframe.from_records* https://github.com/pydata/pandas/issues/6700
+- [x] *DOC: CONTRIBUTING.md: Gold plating: syntax, punctuation, Markdown* https://github.com/pydata/pandas/commit/372226c
+
+
+
+pyramid
+--------------
+| Src: https://github.com/Pylons/pyramid
+
+- [x] *DOC: XSS in quicktour/views/views.py* https://github.com/Pylons/pyramid/issues/1294
+- [x] *DOC: Add cgi.escape to quick_tour/views/views.py (Fixes #1294)* https://github.com/Pylons/pyramid/commit/f1f35b7
+- [x] *DOC: Response.content_type defaults to text/html (#1181)* https://github.com/Pylons/pyramid/pull/1295
+
+
+python
+--------
+
+conda
+++++++++
+| Src: https://github.com/conda/conda
+
+- [ ] *ENH: Mirroring/caching support*  https://github.com/conda/conda/issues/414
+
+
+cpython
+++++++++++++
+| Src: http://hg.python.org/cpython
+
+* [x] *ENH: random.shuffle could be faster* (rejected) http://bugs.python.org/issue18511
+
+
+pip
++++++
+| Src: https://github.com/pypa/pip
+
+* [ ] *Implement "hook" support for package signature verification* https://github.com/pypa/pip/issues/1035#issuecomment-20656810
+* [ ] *option to confirm expected package hashes when installing* (`requirements.lock`) https://github.com/pypa/pip/issues/1175#issuecomment-39012189
+
+
+pypi
++++++
+| Src: https://bitbucket.org/pypa/pypi
+
+* [ ] *UBY: static/css/pypi-screen.css: collapse and lighten table.docutils borders*
+  https://bitbucket.org/pypa/pypi/pull-request/61/uby-static-css-pypi-screencss-collapse-and/diff
+
+
+richard
++++++++++
+| Src: https://github.com/pyvideo/richard
+
+- [x] *Add Schema.org VideoObject RDFa metadata* https://github.com/pyvideo/richard/pull/213
+
+warehouse
++++++++++++
+| Src: https://github.com/pypa/warehouse
+
+- [x] *TST: tests/conftest.py: add fixed IPv4 127.0.0.1 and specify /tmp as socket directory (for Ubuntu 12.04 LTS default config)* https://github.com/pypa/warehouse/pull/263
+
+
+redem
+---------
+| Src: https://github.com/westurner/redem
+
+- [ ] https://westurner.github.io/redditlog/
+- [ ] https://github.com/westurner/redditlog
+
+
+salt
+------
+| Src: https://github.com/saltstack/salt
+
+- [x] *DOC: dockerio state: code-block docstring syntax* https://github.com/saltstack/salt/pull/9292
+- [x] *DOC: dockerio module: docs syntax and formatting* https://github.com/saltstack/salt/pull/9294
+- [ ] *ENH: Read Pillar files into OrderedDict to preserve source order*  https://github.com/saltstack/salt/issues/12161
+- [x] *DOC: Update GitFS documentation (syntax, links)* https://github.com/saltstack/salt/pull/12181
+- [x] *BUG, ENH, PERF: Debian/Ubuntu network configuration* https://github.com/saltstack/salt/issues/12216
+- [ ] *Formula dependency management*  https://github.com/saltstack/salt/issues/12179
+- [ ] *ENH: GPG signatures, branch-environment map (GitFS/HgFS workflow)*  https://github.com/saltstack/salt/issues/12183
+
+
+apt-formula
++++++++++++++
+| Src: https://github.com/saltstack-formulas/apt-formula
+
+- [x] *DOC: Use full state names; add RST formatting* https://github.com/saltstack-formulas/apt-formula/pull/5
+- [x] *ENH: Add apt.transports.https and apt.transports.debtorrent* https://github.com/saltstack-formulas/apt-formula/pull/6
+- [x] *ENH: Add apt.ppa for pkg:python-software-properties (add-apt-repository)* https://github.com/saltstack-formulas/apt-formula/pull/7
+
+
+dnsmasq-formula
+++++++++++++++++++++
+| Src: https://github.com/saltstack-formulas/dnsmasq-formula
+
+- [x] *ENH: Add dnsmasq.absent (pkg, service)* https://github.com/saltstack-formulas/dnsmasq-formula/pull/4
+- [x] *DOC: Update README.rst: formatting, Available states* https://github.com/saltstack-formulas/dnsmasq-formula/pull/5
+
+
+nginx-formula
++++++++++++++++
+| Src: https://github.com/saltstack-formulas/nginx-formula
+
+- [x] *ENH: Add install_from_ppa pillar setting and PPA pkgrepo* https://github.com/saltstack-formulas/nginx-formula/pull/42
+- [x] *BUG: pkgrepo.absent, pkgrepo:watch_in(pkg), install_from_ppa* https://github.com/saltstack-formulas/nginx-formula/pull/44
+
+
+openssh-formula
+++++++++++++++++++
+| Src: https://github.com/saltstack-formulas/openssh-formula
+
+- [x] *ENH: Add a UseDNS option* https://github.com/saltstack-formulas/openssh-formula/pull/13
+
+
+salt-formula
+++++++++++++++
+| Src: https://github.com/saltstack-formulas/salt-formula
+
+- [x] *BUG: Fix for nested [file|pillar]_roots in minion tmp* https://github.com/saltstack-formulas/salt-formula/pull/42
+
+
+sarge
+------------
+| Src: https://bitbucket.org/vinay.sajip
+
+* [ ] *ENH: Add call, check_call, check_output, CalledProcessError, expected_returncode (#26)*
+
+  https://bitbucket.org/vinay.sajip/sarge/pull-request/1/enh-add-call-check_call-check_output/diff
+
+seaborn
+------------
+| Src: https://github.com/mwaskom/seaborn
+
+- [ ] *Add Arial and Liberation Sans to mpl.rcParams["font.sans-serif"]* https://github.com/mwaskom/seaborn/pull/171
+
+sphinx
+---------
+| Src: https://bitbucket.org/birkenfeld/sphinx
+
+- [x] *ENH: Added WAI-ARIA roles to themes (document, banner, navigation, main, contentinfo, note, search)* https://bitbucket.org/birkenfeld/sphinx/pull-request/204/added-wai-aria-roles-to-themes-document/diff
+- [x] *ENH: apidoc: Add a -M option to put module documentation before submodule documentation* https://bitbucket.org/birkenfeld/sphinx/pull-request/236/1456-apidoc-add-a-m-option-to-put-module/diff
+- [x] *DOC: Add reference to markup/para.rst#glossary-directive from markup/inline.rst* https://bitbucket.org/birkenfeld/sphinx/pull-request/310/doc-add-reference-to-markup-pararst/diff
+
+
+sphinxjp.themes.basicstrap
+++++++++++++++++++++++++++++++
+| Src: https://github.com/tell-k/sphinxjp.themes.basicstrap
+
+- [x] *ENH: Added WAI-ARIA roles to layout, search, searchbox (document, navigation, banner, main, contentinfo)* https://github.com/tell-k/sphinxjp.themes.basicstrap/pull/7
+
+
+sphinx_rtd_theme
++++++++++++++++++++
+| Src: https://github.com/snide/sphinx_rtd_theme
+
+- [x] *ENH: Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+
+
+readthedocs.org
++++++++++++++++++
+| Src: https://github.com/rtfd/readthedocs.org
+
+- [x] *ENH: Added WAI-ARIA roles (document, navigation, main, note, contentinfo, search)* https://github.com/snide/sphinx_rtd_theme/pull/86
+
+
+tinkerer
++++++++++++++
+| Src: https://github.com/vladris/tinkerer
+
+- [x] *ENH: Added WAI-ARIA roles to themes (document, banner, navigation, main, and contentinfo)* https://github.com/vladris/tinkerer/pull/43
+
+
+turses
+--------
+| Src: https://github.com/alejandrogomez/turses
+
+- [x] *PERF: Inverted configuration keybindings to make reverse lookups faster* https://github.com/alejandrogomez/turses/pull/172
+- [x] *ENH: Add mouse scroll wheel support (#165)* https://github.com/alejandrogomez/turses/pull/171
+
+
+
+Docs
+======
+
+datasciencemasters
+--------------------
+| Web: http://datasciencemasters.org/
+| Src: https://github.com/datasciencemasters/go/
+
+- [x] *DOC: Added sklearn, statsmodels, Rdatasets, and mldata.org dataset resources* https://github.com/datasciencemasters/go/pull/28
+- [x] *DOC: Added links to Python Tutorials, Scipy-lectures, Anaconda, Canopy, and fixed IPython capitalization* https://github.com/datasciencemasters/go/pull/29
+
+jsonld.org
+-----------
+| Web: http://json-ld.org/
+| Src: https://github.com/json-ld/json-ld.org
+
+opsschool
+--------------
+| Web: http://www.opsschool.org/en/latest/
+| Src: https://github.com/opsschool/curriculum
+
+- [ ]
+
+schema-org-rdf
+----------------
+| Web: http://schema.rdfs.org/
+| Src: https://github.com/mhausenblas/schema-org-rdf
+
+- [x] *DOC: Added links to RDFa 1.1 lite and HTML versions* https://github.com/mhausenblas/schema-org-rdf/pull/49
+- [ ] TODO: DOC: Add links to topbraid versions
+
+scientific-python-lectures
+----------------------------
+| Web: http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/
+| Src: https://github.com/jrjohansson/scientific-python-lectures
+
+- [x] *DOC: Lecture-4-Matplotlib.ipynb: Syntax, FFMpeg workaround, clarification* https://github.com/jrjohansson/scientific-python-lectures/pull/12
+
+
+scipy-lecture-notes
+---------------------------
+| Src: https://github.com/scipy-lectures/scipy-lecture-notes
+| Web: https://scipy-lectures.github.io/
+
+- [x] *DOC: Showing the effects of rounding as in the documentation for `numpy.around`* https://github.com/scipy-lectures/scipy-lecture-notes/pull/31
+- [x] *DOC: Update README.rst: github.com -> github.io* https://github.com/scipy-lectures/scipy-lecture-notes/pull/95
+
+
+Awesome
+==========
+
+- [x] https://github.com/bayandin/awesome-awesomeness
+- [x] https://github.com/onurakpolat/awesome-bigdata
+- [x] https://github.com/josephmisiti/awesome-machine-learning
+- [x] https://github.com/caesar0301/awesome-public-datasets
+- [x] https://github.com/vinta/awesome-python
+- [x] https://github.com/yoloseem/awesome-sphinxdoc
+- [x] https://github.com/dahlia/awesome-sqlalchemy
+- [x] https://github.com/kahun/awesome-sysadmin
+- [x] https://github.com/josephmisiti/awesome-machine-learning
+- [x] https://github.com/ligershark/webdevchecklist.com
+- [x] https://github.com/bento-io/collection
+- [x] https://github.com/dypsilon/frontend-dev-bookmarks
+- [x] https://github.com/samsquire/ideas

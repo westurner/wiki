@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Ideas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="westurner/wiki" />
+    <!--
+    <meta property="og:description" content="westurner.github.io/wiki" />
+    -->
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Ideas" />
+    <meta property="twitter:description" content="westurner.github.io/wiki" />
+    <meta property="twitter:site" content="westurner" />
+    <meta property="twitter:creator" content="westurner" />
+    
+    <title>Ideas &mdash; westurner/wiki</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/local.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/local.js"></script>
+    <script type="text/javascript" src="_static/js/local.js"></script>
+    <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="index" title="Index" href="genindex" />
+    <link rel="search" title="Search" href="search" />
+    <link rel="top" title="westurner/wiki" href="index" />
+    <link rel="next" title="Projects" href="projects" />
+    <link rel="prev" title="westurner/wiki" href="index" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index">westurner/wiki</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Ideas</a><ul>
+<li><a class="reference internal" href="#themes">Themes</a></li>
+<li><a class="reference internal" href="#projects">Projects</a><ul>
+<li><a class="reference internal" href="#ui-ideas">UI Ideas</a><ul>
+<li><a class="reference internal" href="#shells">Shells</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#twedges">Twedges</a></li>
+<li><a class="reference internal" href="#trails">Trails</a></li>
+<li><a class="reference internal" href="#grannytweet-com">GrannyTweet.com</a></li>
+<li><a class="reference internal" href="#overlay">Overlay</a></li>
+<li><a class="reference internal" href="#rdflib-extensions">RDFLib Extensions</a></li>
+<li><a class="reference internal" href="#sphinx-extensions">Sphinx Extensions</a></li>
+<li><a class="reference internal" href="#open-source-mailing-list-extractor">Open Source Mailing List Extractor</a></li>
+<li><a class="reference internal" href="#path-uri-urn-and-the-div-operator">Path / URI / URN and the __div__ operator</a><ul>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#schema-org-animal-animalshelter-and-imagenet">schema.org/Animal, AnimalShelter, and ImageNet</a></li>
+<li><a class="reference internal" href="#schema-org-course">schema.org/Course</a><ul>
+<li><a class="reference internal" href="#thingsequence-coursesequence-courseunit">ThingSequence, CourseSequence, CourseUnit</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linkedreproducibility">LinkedReproducibility</a></li>
+<li><a class="reference internal" href="#jupyter-notebook-meta-object">Jupyter Notebook Meta object</a><ul>
+<li><a class="reference internal" href="#schema-jupyternotebook-softwareenvironment">schema:JupyterNotebook, SoftwareEnvironment</a></li>
+<li><a class="reference internal" href="#nbmeta">nbmeta</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tools-vocabularies">Tools Vocabularies</a><ul>
+<li><a class="reference internal" href="#westurner-github-io-tools">westurner.github.io/tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="index" title="westurner/wiki" accesskey="P">previous </a></li>
+              <li><a href="projects" title="Projects" accesskey="N">next </a></li>
+              <li><a href="genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="_sources/ideas.rest.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <div>
+    <h3><a href="index">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Ideas</a><ul>
+<li><a class="reference internal" href="#themes">Themes</a></li>
+<li><a class="reference internal" href="#projects">Projects</a><ul>
+<li><a class="reference internal" href="#ui-ideas">UI Ideas</a><ul>
+<li><a class="reference internal" href="#shells">Shells</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#twedges">Twedges</a></li>
+<li><a class="reference internal" href="#trails">Trails</a></li>
+<li><a class="reference internal" href="#grannytweet-com">GrannyTweet.com</a></li>
+<li><a class="reference internal" href="#overlay">Overlay</a></li>
+<li><a class="reference internal" href="#rdflib-extensions">RDFLib Extensions</a></li>
+<li><a class="reference internal" href="#sphinx-extensions">Sphinx Extensions</a></li>
+<li><a class="reference internal" href="#open-source-mailing-list-extractor">Open Source Mailing List Extractor</a></li>
+<li><a class="reference internal" href="#path-uri-urn-and-the-div-operator">Path / URI / URN and the __div__ operator</a><ul>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#schema-org-animal-animalshelter-and-imagenet">schema.org/Animal, AnimalShelter, and ImageNet</a></li>
+<li><a class="reference internal" href="#schema-org-course">schema.org/Course</a><ul>
+<li><a class="reference internal" href="#thingsequence-coursesequence-courseunit">ThingSequence, CourseSequence, CourseUnit</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linkedreproducibility">LinkedReproducibility</a></li>
+<li><a class="reference internal" href="#jupyter-notebook-meta-object">Jupyter Notebook Meta object</a><ul>
+<li><a class="reference internal" href="#schema-jupyternotebook-softwareenvironment">schema:JupyterNotebook, SoftwareEnvironment</a></li>
+<li><a class="reference internal" href="#nbmeta">nbmeta</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tools-vocabularies">Tools Vocabularies</a><ul>
+<li><a class="reference internal" href="#westurner-github-io-tools">westurner.github.io/tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index"
+                          title="previous chapter">westurner/wiki</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="projects"
+                          title="next chapter">Projects</a></p>
+  </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/ideas.rest.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/westurner/wiki/blob/master/ideas.rest"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/westurner/wiki/edit/master/ideas.rest"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/westurner/wiki/commits/master/ideas.rest"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/westurner/wiki/blame/master/ideas.rest"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+  <h3>Source</h3>
+  <h5><a href="https://github.com/westurner/wiki">github.com/westurner/wiki</a>
+      / <a href="https://github.com/westurner/wiki/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+
+  <ul>
+    <li><pre>git clone https://github.com/westurner/wiki</pre></li>
+    <li><pre>git clone ssh://git@github.com/westurner/wiki</pre></li>
+    <li><pre>git clone git://github.com/westurner/wiki</pre></li>
+  </ul><div class="widget">
+    <h3><a href="https://westurner.github.io/">westurner</a></h3>
+    <ul>
+        <li><a href="https://github.com/westurner/wiki/wiki">github.com/westurner/wiki/wiki</a></li>
+        <li><a href="https://westurner.github.io/wiki/">westurner.github.io/wiki/</a></li>
+        <li><a href="https://westurner.github.io/dotfiles/">westurner.github.io/dotfiles/</a></li>
+        <li><a href="https://westurner.github.io/">westurner.github.io</a></li>
+        <li><a href="https://twitter.com/westurner">@westurner</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <section id="ideas">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Ideas</a><a class="headerlink" href="#ideas" title="Link to this heading">¶</a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ideas" id="id1">Ideas</a></p>
+<ul>
+<li><p><a class="reference internal" href="#themes" id="id2">Themes</a></p></li>
+<li><p><a class="reference internal" href="#projects" id="id3">Projects</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ui-ideas" id="id4">UI Ideas</a></p>
+<ul>
+<li><p><a class="reference internal" href="#shells" id="id5">Shells</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#twedges" id="id6">Twedges</a></p></li>
+<li><p><a class="reference internal" href="#trails" id="id7">Trails</a></p></li>
+<li><p><a class="reference internal" href="#grannytweet-com" id="id8">GrannyTweet.com</a></p></li>
+<li><p><a class="reference internal" href="#overlay" id="id9">Overlay</a></p></li>
+<li><p><a class="reference internal" href="#rdflib-extensions" id="id10">RDFLib Extensions</a></p></li>
+<li><p><a class="reference internal" href="#sphinx-extensions" id="id11">Sphinx Extensions</a></p></li>
+<li><p><a class="reference internal" href="#open-source-mailing-list-extractor" id="id12">Open Source Mailing List Extractor</a></p></li>
+<li><p><a class="reference internal" href="#path-uri-urn-and-the-div-operator" id="id13">Path / URI / URN and the __div__ operator</a></p>
+<ul>
+<li><p><a class="reference internal" href="#references" id="id14">References</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#schema-org-animal-animalshelter-and-imagenet" id="id15">schema.org/Animal, AnimalShelter, and ImageNet</a></p></li>
+<li><p><a class="reference internal" href="#schema-org-course" id="id16">schema.org/Course</a></p>
+<ul>
+<li><p><a class="reference internal" href="#thingsequence-coursesequence-courseunit" id="id17">ThingSequence, CourseSequence, CourseUnit</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#linkedreproducibility" id="id18">LinkedReproducibility</a></p></li>
+<li><p><a class="reference internal" href="#jupyter-notebook-meta-object" id="id19">Jupyter Notebook Meta object</a></p>
+<ul>
+<li><p><a class="reference internal" href="#schema-jupyternotebook-softwareenvironment" id="id20">schema:JupyterNotebook, SoftwareEnvironment</a></p></li>
+<li><p><a class="reference internal" href="#nbmeta" id="id21">nbmeta</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tools-vocabularies" id="id22">Tools Vocabularies</a></p>
+<ul>
+<li><p><a class="reference internal" href="#westurner-github-io-tools" id="id23">westurner.github.io/tools</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="themes">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Themes</a><a class="headerlink" href="#themes" title="Link to this heading">¶</a></h2>
+<p>Data</p>
+<ul class="simple">
+<li><p>URIs, HTTP, HTML, HTML5</p></li>
+<li><p>Linked Data (RDF, RDFa, JSONLD)</p></li>
+<li><p>Graphs, Nodes, Edges</p></li>
+</ul>
+<p>seeAlso:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering.html">https://wrdrd.github.io/docs/consulting/knowledge-engineering.html</a></p></li>
+</ul>
+</section>
+<section id="projects">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Projects</a><a class="headerlink" href="#projects" title="Link to this heading">¶</a></h2>
+<p>Resume projects:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://westurner.github.io/resume/html/resume.html#projects">https://westurner.github.io/resume/html/resume.html#projects</a></p></li>
+</ul>
+<p>Projects I have created:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://westurner.github.io/wiki/projects">https://westurner.github.io/wiki/projects</a></p></li>
+<li><p>Src: <a class="reference external" href="https://github.com/westurner/wiki/wiki/projects">https://github.com/westurner/wiki/wiki/projects</a></p></li>
+</ul>
+<p>Open Source Projects I have contributed to:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://westurner.github.io/wiki/contributions">https://westurner.github.io/wiki/contributions</a></p></li>
+<li><p>Src: <a class="reference external" href="https://github.com/westurner/wiki/wiki/contributions">https://github.com/westurner/wiki/wiki/contributions</a></p></li>
+</ul>
+<section id="ui-ideas">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">UI Ideas</a><a class="headerlink" href="#ui-ideas" title="Link to this heading">¶</a></h3>
+<section id="shells">
+<h4><a class="toc-backref" href="#id5" role="doc-backlink">Shells</a><a class="headerlink" href="#shells" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ENH,UBY: Vsplit the terminal with 2 panes: 1) scrollback; 2) current prompt.</p>
+<ul>
+<li><p>ENH,UBY: auto expand the focused terminal pane</p>
+<ul>
+<li><p>ENH,UBY: (with vim-like shortcuts; Ctrl-W _, Ctrl-W=, Ctrl-W-[j|k])</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="twedges">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Twedges</a><a class="headerlink" href="#twedges" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>(Directed) edges between tweets, later</p>
+<ul>
+<li><p>Visualize “View Conversation” directed edges</p></li>
+<li><p>Add edges with attributes and provenance metadata</p></li>
+<li><p>Add a hashtag (recent/all tags w/ checkboxes)</p>
+<ul>
+<li><p>Use case: I am developing a report on [Self Directed Learning],
+and have a few topics I’d like to discover and curate, mashup,
+remix</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>[ ] Twitter #JSONLD &#64;context</p>
+<ul>
+<li><p>Additional properties:</p>
+<ul>
+<li><p>Expanded links</p></li>
+<li><p>Picture URIs</p></li>
+<li><p>Twitter Card Metadata</p></li>
+<li><p>OpenGraph Metadata</p></li>
+<li><p>Extracted RDF</p>
+<ul>
+<li><p>Parse Errors</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Additional edge classes:</p>
+<ul>
+<li><p>TopicEdge</p></li>
+<li><p>ReplyEdge</p></li>
+<li><p>ReplyWithCommentEdge</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>FOAF, SIOC, Schema.org</p></li>
+<li><p>Extract links, count uniques</p></li>
+<li><p>#Nanotation RDF microsyntax (seeAlso: <cite>Sphinx Extensions</cite>)</p>
+<ul>
+<li><p>Tab-completion for subjects, predicates, objects?</p>
+<ul>
+<li><p>see <a class="reference external" href="http://json-ld.org/playground/">http://json-ld.org/playground/</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="trails">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Trails</a><a class="headerlink" href="#trails" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Sequences of actions</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/westurner/brw">https://github.com/westurner/brw</a></p></li>
+<li><p><a class="reference external" href="https://bitbucket.org/westurner/browselinks">https://bitbucket.org/westurner/browselinks</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="grannytweet-com">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">GrannyTweet.com</a><a class="headerlink" href="#grannytweet-com" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>“Because think first”</p></li>
+<li><p>Concept stage</p></li>
+</ul>
+</section>
+<section id="overlay">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Overlay</a><a class="headerlink" href="#overlay" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>EAV visualization</p></li>
+</ul>
+</section>
+<section id="rdflib-extensions">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">RDFLib Extensions</a><a class="headerlink" href="#rdflib-extensions" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>RDFLib IPython notebook</p>
+<ul>
+<li><p><a class="reference external" href="https://bitbucket.org/westurner/rdflib_notebooks">https://bitbucket.org/westurner/rdflib_notebooks</a></p></li>
+</ul>
+</li>
+<li><p>RDF exploration CLI</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">https://github.com/jonathanslenders/python-prompt-toolkit</a></p></li>
+<li><p>schema-aware tab-completion</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="sphinx-extensions">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Sphinx Extensions</a><a class="headerlink" href="#sphinx-extensions" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>sphinxcontrib-RDF</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/westurner/sphinxcontrib-rdf">https://github.com/westurner/sphinxcontrib-rdf</a></p></li>
+<li><p>Directive to include an RDF syntax w/ pygments highlighting (see: healthref
+(ttl))</p></li>
+<li><p>Extract triples from an RST (docutils) node graph</p></li>
+<li><p>Role w/ context? (like RDFa)</p></li>
+</ul>
+</li>
+<li><p>sphinxcontrib-ipython</p>
+<ul>
+<li><p>run sphinx docs with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">ipython::</span></code> directives through IPython
+interactively (e.g. w/ tmpipnb)</p></li>
+<li><p>ipythonify tests (ipython_nose + what API w/ a notebook?)</p></li>
+</ul>
+</li>
+<li><p>sphinxcontrib-srclinks</p>
+<ul>
+<li><p>Add links to {Source, Edit, History, Annotate} with {GitHub, BitBucket,} to the Sphinx HTML template sidebar.</p></li>
+<li><p>Source: <a class="reference external" href="https://github.com/westurner/sphinxcontrib-srclinks">https://github.com/westurner/sphinxcontrib-srclinks</a></p></li>
+<li><p>jinja2 template and contexts</p></li>
+</ul>
+</li>
+<li><p>sphinx extensions</p>
+<ul>
+<li><p>Add an arrow indicating the currently selected heading (⬅)</p></li>
+<li><p>Add an arrow indicating the currently selected TOC heading (⬅)</p></li>
+<li><p>Scroll the sidebar to the selected TOC heading (¶)</p></li>
+<li><p>“Open link in new tab”</p></li>
+<li><p>“Show visited links”</p></li>
+<li><p>[ ] Factor into sphinxcontrib. plugins</p></li>
+<li><p>Source: <a class="reference external" href="https://github.com/wrdrd/docs/tree/master/docs/_static/js">https://github.com/wrdrd/docs/tree/master/docs/_static/js</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="open-source-mailing-list-extractor">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Open Source Mailing List Extractor</a><a class="headerlink" href="#open-source-mailing-list-extractor" title="Link to this heading">¶</a></h3>
+<p>Use cases:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mail.python.org/pipermail/python-ideas/2014-December/030228.html">https://mail.python.org/pipermail/python-ideas/2014-December/030228.html</a></p></li>
+<li><p>incentivization of actionable crossreferences</p></li>
+<li><p>PEP research</p></li>
+<li><p>“is this actionable?”</p></li>
+<li><p>“are we voting?”</p></li>
+<li><p>Crawl/parse/extract links and +1 from given thread(s)</p>
+<ul>
+<li><p>Detect a few standard link types:</p>
+<ul>
+<li><p>Issue</p></li>
+<li><p>Src</p></li>
+<li><p>Doc</p></li>
+<li><p>Ref</p></li>
+<li><p>x-link</p></li>
+</ul>
+</li>
+<li><p>+1s with expandable snippets? (like <code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-C</span></code>)</p></li>
+</ul>
+</li>
+<li><p>There could be configurable per-list link heuristics:</p>
+<ul>
+<li><p>http[s]</p></li>
+<li><p>Issue: <a class="reference external" href="https://bugs.python.org/issue(d+">https://bugs.python.org/issue(d+</a>)</p></li>
+<li><p>Src: <a class="reference external" href="https://hg.python.org">https://hg.python.org</a>/&lt;repo&gt;/&lt;path&gt;</p></li>
+<li><p>Src: <a class="reference external" href="https://github.com">https://github.com</a>/&lt;org&gt;/&lt;project&gt;/&lt;path&gt;</p></li>
+<li><p>Src: <a class="reference external" href="https://bitbucket.org">https://bitbucket.org</a>/&lt;org&gt;/&lt;project&gt;/&lt;path&gt;</p></li>
+<li><p>Patch/Attachment: <a class="reference external" href="https://bugs.python.org/(file[d]+">https://bugs.python.org/(file[d]+</a>)/&lt;filename(.diff)&gt;</p></li>
+<li><p>Doc: <a class="reference external" href="https://docs.python.org">https://docs.python.org</a>/&lt;ver&gt;/&lt;path&gt;</p></li>
+<li><p>Wiki: <a class="reference external" href="https://wiki.python.org/moin">https://wiki.python.org/moin</a>/&lt;path&gt;</p></li>
+<li><p>Homepage: <a class="reference external" href="https://www.python.org">https://www.python.org</a>/&lt;path&gt;</p></li>
+<li><p>Build: <a class="reference external" href="http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771">http://buildbot.python.org/all/builders/AMD64%20Ubuntu%20LTS%203.4/builds/771</a></p></li>
+<li><p>Packages</p>
+<ul>
+<li><p>PyPI pkg: <a class="reference external" href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>/&lt;path&gt;</p></li>
+<li><p>Warehouse pkg: <a class="reference external" href="https://warehouse.python.org/project">https://warehouse.python.org/project</a>/&lt;path&gt;</p></li>
+</ul>
+</li>
+<li><p>Wikipedia: <a class="reference external" href="https://[lang].wikipedia.org/wiki">https://[lang].wikipedia.org/wiki</a>/&lt;page&gt; –&gt; (dbpedia:&lt;page&gt;)</p></li>
+</ul>
+</li>
+<li><p>This could - most efficiently - be added to mailman
+(e.g. in Postorious and/or HyperKitty)</p>
+<ul>
+<li><p><a class="reference external" href="http://mailman-bundler.readthedocs.org/en/latest/">http://mailman-bundler.readthedocs.org/en/latest/</a></p></li>
+<li><p><a class="reference external" href="http://pythonhosted.org//mailman/">http://pythonhosted.org//mailman/</a></p></li>
+<li><p><a class="reference external" href="https://mail.python.org/mailman/listinfo/mailman-developers">https://mail.python.org/mailman/listinfo/mailman-developers</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="path-uri-urn-and-the-div-operator">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Path / URI / URN and the __div__ operator</a><a class="headerlink" href="#path-uri-urn-and-the-div-operator" title="Link to this heading">¶</a></h3>
+<ul>
+<li><p>build URI paths with <code class="docutils literal notranslate"><span class="pre">/</span></code></p></li>
+<li><p>URL encoding</p></li>
+<li><p>some combination of operators could be useful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>scheme://user@host.netloc:port/path/?query#fragment
+
+from _ import URI, https, //, http
+https // &#39;user@host.netloc:port&#39; / path ** query % fragment
+</pre></div>
+</div>
+</li>
+<li><p>__div__      /</p></li>
+<li><p>__floordiv__ //</p></li>
+<li><p>__and__      &amp;&amp;</p></li>
+<li><p>__mod__      %</p></li>
+<li><p>__invert__   ~</p></li>
+<li><p>__or__       |</p></li>
+<li><p>__xor__      ^</p></li>
+<li><p>__and__      +</p></li>
+<li><p>__mul__      *</p></li>
+<li><p>__pow__      **</p></li>
+<li><p>__lshift__   &lt;&lt;</p></li>
+<li><p>__rshift__   &gt;&gt;</p></li>
+</ul>
+<section id="references">
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">References</a><a class="headerlink" href="#references" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.python.org/pypi/path.py">https://pypi.python.org/pypi/path.py</a> – __div__</p></li>
+<li><p><a class="reference external" href="https://pypi.python.org/pypi/pathlib">https://pypi.python.org/pypi/pathlib</a> (stdlib)</p></li>
+<li><p><a class="reference external" href="https://pypi.python.org/pypi/furl">https://pypi.python.org/pypi/furl</a></p></li>
+<li><p><a class="reference external" href="https://pypi.python.org/pypi/URLObject">https://pypi.python.org/pypi/URLObject</a></p></li>
+<li><p><a class="reference external" href="https://pypi.python.org/pypi/rdflib">https://pypi.python.org/pypi/rdflib</a></p></li>
+</ul>
+</section>
+</section>
+<section id="schema-org-animal-animalshelter-and-imagenet">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">schema.org/Animal, AnimalShelter, and ImageNet</a><a class="headerlink" href="#schema-org-animal-animalshelter-and-imagenet" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
+<p><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html">https://lists.w3.org/Archives/Public/public-vocabs/2015Feb/0121.html</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://schema.org/Animal">http://schema.org/Animal</a> ( <a class="reference external" href="http://schema.org/AnimalShelter">http://schema.org/AnimalShelter</a> )</p></li>
+<li><p>Labeling (e.g. ImageNet animals)</p></li>
+<li><p>Matching / gamification</p></li>
+</ul>
+</section>
+<section id="schema-org-course">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">schema.org/Course</a><a class="headerlink" href="#schema-org-course" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://schema.org/Course">https://schema.org/Course</a></p></li>
+<li><p><a class="reference external" href="https://pending.schema.org/Course">https://pending.schema.org/Course</a></p></li>
+<li><p><a class="reference external" href="https://github.com/schemaorg/schemaorg/issues/195">https://github.com/schemaorg/schemaorg/issues/195</a></p></li>
+</ul>
+<p>.</p>
+<ul>
+<li><p>What is schema.org?</p>
+<p><a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#schema-org">https://wrdrd.github.io/docs/consulting/knowledge-engineering#schema-org</a></p>
+</li>
+</ul>
+<section id="thingsequence-coursesequence-courseunit">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">ThingSequence, CourseSequence, CourseUnit</a><a class="headerlink" href="#thingsequence-coursesequence-courseunit" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">tags: #linkeddata #schemaorg</div>
+</div>
+<ul class="simple">
+<li><p>Multi-Track Video Editing</p></li>
+<li><p><a class="reference external" href="https://github.com/westurner/brw">https://github.com/westurner/brw</a> (IFrame carousel timer)</p></li>
+<li><p><a class="reference external" href="https://github.com/westurner/pbm">https://github.com/westurner/pbm</a> (Bookmarks JSON CLI &amp; Tornado app w/ brw)</p></li>
+<li><p><a class="reference external" href="https://lists.w3.org/Archives/Public/public-schema-course-extend/2016Jan/0020.html">https://lists.w3.org/Archives/Public/public-schema-course-extend/2016Jan/0020.html</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/westurner/status/738471673767165953">https://twitter.com/westurner/status/738471673767165953</a></p></li>
+<li><p>Fading, Beatmatching, Event spike synchronicity (cuepoints)</p></li>
+<li><p>JSONLD (schema.org RDF)</p></li>
+<li><p>learning from prepared materials / learning by watching / learning by doing</p></li>
+</ul>
+</section>
+</section>
+<section id="linkedreproducibility">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">LinkedReproducibility</a><a class="headerlink" href="#linkedreproducibility" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">tags: #linkedreproducibility &amp; #linkedrepro</div>
+<div class="line">tags: #linkeddata #schemaorg</div>
+<div class="line">Homepage: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/linkedreproducibility">https://wrdrd.github.io/docs/consulting/linkedreproducibility</a></div>
+<div class="line">ProjectBoard: <a class="reference external" href="https://github.com/users/westurner/projects/1">https://github.com/users/westurner/projects/1</a></div>
+</div>
+<ul class="simple">
+<li><p>Linked-</p></li>
+<li><p>StudyGraph</p></li>
+<li><p>StructuredPremises</p></li>
+<li><p>LinkedMetaAnalyses</p></li>
+</ul>
+<p>Links:</p>
+<div class="line-block">
+<div class="line">Hashtag:<code class="docutils literal notranslate"><span class="pre">#LinkedReproducibility</span></code></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://twitter.com/hashtag/linkedreproducibility">https://twitter.com/hashtag/linkedreproducibility</a></p></li>
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/consulting/data-science#linked-reproducibility">https://wrdrd.github.io/docs/consulting/data-science#linked-reproducibility</a></p></li>
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/consulting/linkedreproducibility">https://wrdrd.github.io/docs/consulting/linkedreproducibility</a></p></li>
+<li><p><a class="reference external" href="https://news.ycombinator.com/item?id=11685292">https://news.ycombinator.com/item?id=11685292</a></p></li>
+<li><p><a class="reference external" href="https://news.ycombinator.com/item?id=12195302">https://news.ycombinator.com/item?id=12195302</a></p></li>
+</ul>
+</section>
+<section id="jupyter-notebook-meta-object">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Jupyter Notebook Meta object</a><a class="headerlink" href="#jupyter-notebook-meta-object" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See: <a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></p>
+</div>
+<ul>
+<li><p>Jupyter Notebook</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/tools/#jupyter-notebook">https://wrdrd.github.io/docs/tools/#jupyter-notebook</a></p></li>
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/tools/#nbformat">https://wrdrd.github.io/docs/tools/#nbformat</a></p></li>
+<li><p><a class="reference external" href="https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility">https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-reproducibility</a></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_repr_html_</span></code> =&gt; RDFa <strong>and/or</strong> JSONLD</p></li>
+<li><p>Challenges / Objectives</p>
+<ul>
+<li><p>I want some metadata to be displayed at the top;
+but also to add metadata through the notebook</p>
+<ul>
+<li><p>Metadata about the JupyterNotebook</p>
+<ul>
+<li><p>“Add JSONLD &#64;context to the top level .ipynb node ”
+<a class="reference external" href="https://github.com/jupyter/nbformat/issues/44">https://github.com/jupyter/nbformat/issues/44</a></p></li>
+<li><p>Example JupyterNotebook metadata:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://schema.org/&quot;</span><span class="p">},</span>
+<span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;schema:JupyterNotebook&quot;</span><span class="p">,</span>
+<span class="w">           </span><span class="s2">&quot;schema:ScholarlyArticle&quot;</span><span class="p">,</span>
+<span class="w">           </span><span class="s2">&quot;schema:DataCatalog&quot;</span><span class="p">],</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="err">da</span><span class="kc">taset</span><span class="err">/hasPar</span><span class="kc">t</span><span class="w"> </span><span class="err">?</span>
+<span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Notebook Name&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:Person&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;givenName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Wesley&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;familyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Turner&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://westurner.github.io/&quot;</span>
+<span class="w"> </span><span class="p">},</span>
+<span class="w"> </span><span class="nt">&quot;dateCreated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2016-09-20&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Metadata from the JupyterNotebook</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;prov&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/ns/prov#&quot;</span><span class="p">},</span>
+<span class="w"> </span><span class="err">...</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;hasPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:Dataset&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Months of the Year&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;distribution&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:DataDownload&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;contentUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://...&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;encodingFormat&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CSV&quot;</span><span class="p">,</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="err">URI?</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>SoftwareApplication versions</p>
+<ul>
+<li><p>version_information, watermark</p></li>
+<li><p>requirements.txt</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>[EDIT]</p>
+<section id="schema-jupyternotebook-softwareenvironment">
+<h4><a class="toc-backref" href="#id20" role="doc-backlink">schema:JupyterNotebook, SoftwareEnvironment</a><a class="headerlink" href="#schema-jupyternotebook-softwareenvironment" title="Link to this heading">¶</a></h4>
+<p>see:
+- <a class="reference external" href="https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832">https://github.com/jupyter/nbformat/issues/44#issuecomment-275954832</a></p>
+<p>schema.org classes for <code class="docutils literal notranslate"><span class="pre">&#64;type=[&quot;:JupyterNotebook&quot;,]</span></code> :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://schema.org/CreativeWork">https://schema.org/CreativeWork</a></p></li>
+<li><p><a class="reference external" href="https://schema.org/DigitalDocument">https://schema.org/DigitalDocument</a></p></li>
+<li><p><a class="reference external" href="https://schema.org/Article">https://schema.org/Article</a></p></li>
+<li><p><a class="reference external" href="https://schema.org/ScholarlyArticle">https://schema.org/ScholarlyArticle</a></p></li>
+<li><p><a class="reference external" href="https://schema.org/CreativeWorkSeries">https://schema.org/CreativeWorkSeries</a></p></li>
+<li><p><a class="reference external" href="https://schema.org/ItemList">https://schema.org/ItemList</a></p></li>
+</ul>
+</section>
+<section id="nbmeta">
+<h4><a class="toc-backref" href="#id21" role="doc-backlink">nbmeta</a><a class="headerlink" href="#nbmeta" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/nbmeta">https://github.com/westurner/nbmeta</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/nbmeta/tree/master/nb">https://github.com/westurner/nbmeta/tree/master/nb</a></div>
+<div class="line">Roadmap: <a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></div>
+</div>
+<p>nbmeta is a research project for structured data in Jupyter (IPython) Notebooks.</p>
+<p>Objectives</p>
+<ul class="simple">
+<li><p>Store and publish JSONLD and RDFa</p></li>
+<li><p><a class="reference external" href="https://github.com/westurner/nbmeta/issues/1">https://github.com/westurner/nbmeta/issues/1</a></p></li>
+</ul>
+<p>nbmeta and #LinkedReproducibility</p>
+<ul class="simple">
+<li><p>StudyGraph – things with structured edges (:CreativeWork with :name, :url, :authors, :funders, :about)</p></li>
+<li><p>StructuredPremises – premises with structured edges, satisfaction criteria</p></li>
+<li><p>LinkedMetaAnalyses – shared structured metadata, variable inclusion criteria</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="tools-vocabularies">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Tools Vocabularies</a><a class="headerlink" href="#tools-vocabularies" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>See: RDFJS pad re “Tools Schema” Classes and Properties:
+<a class="reference external" href="https://text.allmende.io/p/rdfjs">https://text.allmende.io/p/rdfjs</a></p></li>
+</ul>
+<section id="westurner-github-io-tools">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">westurner.github.io/tools</a><a class="headerlink" href="#westurner-github-io-tools" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://westurner.github.io/tools/">https://westurner.github.io/tools/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/tools">https://github.com/westurner/tools</a></div>
+<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/wiki/tools.html#tool-collections">https://westurner.github.io/wiki/tools.html#tool-collections</a></div>
+</div>
+<p>Central tools.rst [ … -&gt; tools.rdf, tools.ttl, tools.jsonld ]</p>
+<ul>
+<li><ol class="arabic simple">
+<li><p><a class="reference external" href="https://westurner.github.io/provis/tools.html">https://westurner.github.io/provis/tools.html</a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p><a class="reference external" href="https://westurner.github.io/dotfiles/tools.html">https://westurner.github.io/dotfiles/tools.html</a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p><a class="reference external" href="https://westurner.github.io/tools.html">https://westurner.github.io/tools.html</a> ( <a class="reference internal" href="#westurner-github-io-tools">westurner.github.io/tools</a> )</p></li>
+</ol>
+<ul class="simple">
+<li><p>Projects that link with <cite>westurner.github.io/tools</cite>: provis, dotfiles, <a class="reference external" href="https://wrdrd.github.io/docs/tools">https://wrdrd.github.io/docs/tools</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="index">westurner/wiki</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="index" title="westurner/wiki" >previous</a></li>
+        <li><a href="projects" title="Projects" >next</a></li>
+        <li><a href="genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright @westurner 2014-2020, Wes Turner.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 8.1.3.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

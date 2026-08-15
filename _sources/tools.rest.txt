@@ -1,0 +1,117 @@
+======
+Tools
+======
+
+.. contents::
+
+Tool Collections
+=================
+
+My Tool Collection
+-----------------------
+- https://westurner.github.io/tools/
+
+  - https://westurner.github.io/dotfiles/tools.html (originally from provis#tools)
+  - https://westurner.github.io/provis/tools
+
+    - https://github.com/westurner/provis/blob/master/docs/tools.rst (ReStructuredText -> HTML)
+    - https://provis.readthedocs.org/en/latest/tools.html (HTML)
+
+  - https://wrdrd.github.io/docs/tools
+
+    - WRD R&D Docs only link into the ./tools docs
+    - ``| wrdrddocs:``)
+
+
+Great Tool Collections
+------------------------
+- https://westurner.github.io/redditlog/#comment/c9tfxgd (Markdown comment)
+- https://github.com/bayandin/awesome-awesomeness
+
+
+
+Tools for Tools Collections
+==============================
+
+Bobcat
+--------
+- https://bitbucket.org/westurner/bobcat
+- https://bitbucket.org/westurner/bobcat/src/tip/bobcat/__init__.py#cl-57 (RDF -> ReStructuredText)
+
+.. todo:: see RST escaping
+
+
+sphinxcontrib-rdf
+------------------
+- https://github.com/westurner/sphinxcontrib-rdf (ReStructuredText + RDF ?-> HTML)
+- https://westurner.github.io/wiki/ideas#sphinx-extensions
+
+
+heathref
+----------
+.. code::
+
+    cat .ttl | healthref {rdflib, jinja2} > template_with_toc.html
+
+- https://github.com/westurner/healthref/blob/gh-pages/healthref.py (RDF -> HTML (Jinja))
+
+
+Tools Vocabulary
+==================
+- https://github.com/westurner/westurner.github.io/issues/2 (RDF tools Ontology)
+- https://github.com/westurner/wiki/wiki/awesome-python-testing (Markdown wiki)
+- https://text.allmende.io/p/rdfjs ## *RDF* Tools Schema (RDFJS)
+
+
+pip Requirements files
+--------------------------
+https://github.com/westurner/pyleset/issues/8 (Markdown comment)
+
+* https://github.com/westurner/pyleset/blob/57140bcef5/setup.py
+  (pip requirements with metadata and source comments)
+
+  * Requirement
+  * RequirementsMap
+
+* https://github.com/kennethreitz/pipenv
+
+  * https://github.com/kennethreitz/pipenv/blob/master/pipenv/cli.py
+
+* https://libraries.io reads graphs from requirements.txt
+
+
+conda envs
+------------
+- http://conda.pydata.org/docs/using/envs.html
+
+
+Standard Docker Containers
+----------------------------
+
+Notes:
+
+- containers may be built 
+
+kaggle Docker containers
+~~~~~~~~~~~~~~~~~~~~~~~~~
+{Python, }
+
+- https://github.com/Kaggle/docker-python/blob/master/Dockerfile
+
+
+jupyter docker-stacks
+~~~~~~~~~~~~~~~~~~~~~~
+| Src: https://github.com/jupyter/docker-stacks
+
+- https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook
+
+- Debian
+
+  - https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
+
+    - https://github.com/jupyter/docker-stacks/blob/master/minimal-notebook/Dockerfile
+
+      - https://github.com/jupyter/docker-stacks/blob/master/scipy-notebook/Dockerfile
+
+        - https://github.com/jupyter/docker-stacks/blob/master/datascience-notebook/Dockerfile
+

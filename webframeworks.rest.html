@@ -1,0 +1,2524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.21.2: https://docutils.sourceforge.io/" />
+<title>Web Frameworks</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="web-frameworks-1">
+<span id="web-frameworks"></span>
+<h1 class="title">Web Frameworks</h1>
+
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 3)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Web Frameworks
+</pre>
+</div>
+<ul class="simple">
+<li>Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_framework">https://en.wikipedia.org/wiki/Web_framework</a></li>
+<li>WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Web_frameworks">https://en.wikipedia.org/wiki/Category:Web_frameworks</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_web_frameworks">https://en.wikipedia.org/wiki/Comparison_of_web_frameworks</a></li>
+</ul>
+<div class="contents topic" id="contents">
+<p class="topic-title"><a class="reference internal" href="#top">Contents</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#web-framework-benchmarks-1" id="toc-entry-1">Web Framework Benchmarks</a></li>
+<li><a class="reference internal" href="#c" id="toc-entry-2">C++</a><ul>
+<li><a class="reference internal" href="#c-web-frameworks" id="toc-entry-3">C++ Web Frameworks</a><ul>
+<li><a class="reference internal" href="#wt-1" id="toc-entry-4">Wt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#c-1" id="toc-entry-5">C#</a></li>
+<li><a class="reference internal" href="#go-1" id="toc-entry-6">Go</a></li>
+<li><a class="reference internal" href="#java-1" id="toc-entry-7">Java</a><ul>
+<li><a class="reference internal" href="#java-web-frameworks-1" id="toc-entry-8">Java Web Frameworks</a><ul>
+<li><a class="reference internal" href="#j2ee-1" id="toc-entry-9">J2EE</a></li>
+<li><a class="reference internal" href="#jboss-1" id="toc-entry-10">JBoss</a></li>
+<li><a class="reference internal" href="#jwt-1" id="toc-entry-11">JWt</a></li>
+<li><a class="reference internal" href="#restlet-1" id="toc-entry-12">Restlet</a></li>
+<li><a class="reference internal" href="#struts-1" id="toc-entry-13">Struts</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#java-servers-1" id="toc-entry-14">Java Servers</a><ul>
+<li><a class="reference internal" href="#jetty-1" id="toc-entry-15">Jetty</a></li>
+<li><a class="reference internal" href="#tomcat-1" id="toc-entry-16">Tomcat</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#javascript-1" id="toc-entry-17">Javascript</a><ul>
+<li><a class="reference internal" href="#js-libraries-1" id="toc-entry-18">JS Libraries</a><ul>
+<li><a class="reference internal" href="#js-cdns-1" id="toc-entry-19">JS CDNs</a></li>
+<li><a class="reference internal" href="#bootstrap-1" id="toc-entry-20">Bootstrap</a></li>
+<li><a class="reference internal" href="#jquery-1" id="toc-entry-21">jQuery</a></li>
+<li><a class="reference internal" href="#zepto-js" id="toc-entry-22">Zepto.js</a></li>
+<li><a class="reference internal" href="#underscore-1" id="toc-entry-23">Underscore</a></li>
+<li><a class="reference internal" href="#babel-1" id="toc-entry-24">Babel</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#js-frameworks-1" id="toc-entry-25">JS Frameworks</a><ul>
+<li><a class="reference internal" href="#angular-1" id="toc-entry-26">Angular</a><ul>
+<li><a class="reference internal" href="#angular-1-1" id="toc-entry-27">Angular 1</a></li>
+<li><a class="reference internal" href="#ionic-1" id="toc-entry-28">Ionic</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#react-1" id="toc-entry-29">React</a></li>
+<li><a class="reference internal" href="#react-native-1" id="toc-entry-30">React-Native</a></li>
+<li><a class="reference internal" href="#redux-1" id="toc-entry-31">Redux</a><ul>
+<li><a class="reference internal" href="#redux-actions-1" id="toc-entry-32">Redux-actions</a></li>
+<li><a class="reference internal" href="#redux-devtools-1" id="toc-entry-33">Redux-devtools</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#node-1" id="toc-entry-34">Node</a></li>
+<li><a class="reference internal" href="#express-1" id="toc-entry-35">Express</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#js-testing-1" id="toc-entry-36">JS Testing</a><ul>
+<li><a class="reference internal" href="#blessings" id="toc-entry-37">Blessings</a></li>
+<li><a class="reference internal" href="#chai" id="toc-entry-38">Chai</a></li>
+<li><a class="reference internal" href="#mocha" id="toc-entry-39">Mocha</a></li>
+<li><a class="reference internal" href="#jasmine" id="toc-entry-40">Jasmine</a></li>
+<li><a class="reference internal" href="#jest" id="toc-entry-41">Jest</a></li>
+<li><a class="reference internal" href="#phantomjs" id="toc-entry-42">PhantomJS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#js-packaging-1" id="toc-entry-43">JS Packaging</a><ul>
+<li><a class="reference internal" href="#commonjs-1" id="toc-entry-44">CommonJS</a></li>
+<li><a class="reference internal" href="#amd" id="toc-entry-45">AMD</a></li>
+<li><a class="reference internal" href="#es2015-modules-1" id="toc-entry-46">ES2015 Modules</a></li>
+<li><a class="reference internal" href="#system-js-1" id="toc-entry-47">System.js</a></li>
+<li><a class="reference internal" href="#requirejs-1" id="toc-entry-48">RequireJS</a></li>
+<li><a class="reference internal" href="#npm-1" id="toc-entry-49">NPM</a></li>
+<li><a class="reference internal" href="#bower-1" id="toc-entry-50">Bower</a></li>
+<li><a class="reference internal" href="#webpack-1" id="toc-entry-51">Webpack</a></li>
+<li><a class="reference internal" href="#browserify-1" id="toc-entry-52">Browserify</a><ul>
+<li><a class="reference internal" href="#requirify-1" id="toc-entry-53">Requirify</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#yarn-1" id="toc-entry-54">Yarn</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#php-1" id="toc-entry-55">PHP</a><ul>
+<li><a class="reference internal" href="#php-security-1" id="toc-entry-56">PHP Security</a></li>
+<li><a class="reference internal" href="#hhvm-1" id="toc-entry-57">HHVM</a></li>
+<li><a class="reference internal" href="#php-frameworks-1" id="toc-entry-58">PHP Frameworks</a><ul>
+<li><a class="reference internal" href="#cakephp-1" id="toc-entry-59">CakePHP</a></li>
+<li><a class="reference internal" href="#laravel-1" id="toc-entry-60">Laravel</a></li>
+<li><a class="reference internal" href="#symfony-1" id="toc-entry-61">Symfony</a><ul>
+<li><a class="reference internal" href="#api-platform-1" id="toc-entry-62">API Platform</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#php-applications-1" id="toc-entry-63">PHP Applications</a><ul>
+<li><a class="reference internal" href="#drupal-1" id="toc-entry-64">Drupal</a></li>
+<li><a class="reference internal" href="#joomla-1" id="toc-entry-65">Joomla</a></li>
+<li><a class="reference internal" href="#mediawiki-1" id="toc-entry-66">MediaWiki</a><ul>
+<li><a class="reference internal" href="#semantic-mediawiki-1" id="toc-entry-67">Semantic MediaWiki</a></li>
+<li><a class="reference internal" href="#semantic-bundle-1" id="toc-entry-68">Semantic Bundle</a></li>
+<li><a class="reference internal" href="#wikibase-1" id="toc-entry-69">Wikibase</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#modx-1" id="toc-entry-70">MODx</a></li>
+<li><a class="reference internal" href="#wordpress-1" id="toc-entry-71">WordPress</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#php-testing-1" id="toc-entry-72">PHP Testing</a><ul>
+<li><a class="reference internal" href="#phpunit-1" id="toc-entry-73">PHPUnit</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#php-packaging-1" id="toc-entry-74">PHP Packaging</a><ul>
+<li><a class="reference internal" href="#phar-1" id="toc-entry-75">PHAR</a></li>
+<li><a class="reference internal" href="#composer-1" id="toc-entry-76">Composer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#python-1" id="toc-entry-77">Python</a><ul>
+<li><a class="reference internal" href="#python-frameworks" id="toc-entry-78">Python Frameworks</a><ul>
+<li><a class="reference internal" href="#plone" id="toc-entry-79">Plone</a></li>
+<li><a class="reference internal" href="#django" id="toc-entry-80">Django</a></li>
+<li><a class="reference internal" href="#flask" id="toc-entry-81">Flask</a></li>
+<li><a class="reference internal" href="#bottle" id="toc-entry-82">Bottle</a></li>
+<li><a class="reference internal" href="#pyramid" id="toc-entry-83">Pyramid</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#python-testing" id="toc-entry-84">Python Testing</a><ul>
+<li><a class="reference internal" href="#webtest" id="toc-entry-85">WebTest</a></li>
+<li><a class="reference internal" href="#splinter" id="toc-entry-86">Splinter</a></li>
+<li><a class="reference internal" href="#ghost-py" id="toc-entry-87">ghost.py</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruby-1" id="toc-entry-88">Ruby</a><ul>
+<li><a class="reference internal" href="#ruby-devtools-1" id="toc-entry-89">Ruby Devtools</a><ul>
+<li><a class="reference internal" href="#rake" id="toc-entry-90">rake</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruby-frameworks-1" id="toc-entry-91">Ruby Frameworks</a><ul>
+<li><a class="reference internal" href="#rack-1" id="toc-entry-92">Rack</a></li>
+<li><a class="reference internal" href="#ruby-on-rails-1" id="toc-entry-93">Ruby on Rails</a><ul>
+<li><a class="reference internal" href="#react-on-rails-1" id="toc-entry-94">React on Rails</a></li>
+<li><a class="reference internal" href="#convention-over-configuration-1" id="toc-entry-95">Convention over Configuration</a></li>
+<li><a class="reference internal" href="#don-t-repeat-yourself" id="toc-entry-96">Don't Repeat Yourself</a></li>
+<li><a class="reference internal" href="#active-record" id="toc-entry-97">Active Record</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sinatra-1" id="toc-entry-98">Sinatra</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruby-servers-1" id="toc-entry-99">Ruby Servers</a><ul>
+<li><a class="reference internal" href="#mongrel-1" id="toc-entry-100">Mongrel</a></li>
+<li><a class="reference internal" href="#phusion-passenger-1" id="toc-entry-101">Phusion Passenger</a></li>
+<li><a class="reference internal" href="#thin-1" id="toc-entry-102">Thin</a></li>
+<li><a class="reference internal" href="#webrick-1" id="toc-entry-103">WEBrick</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruby-applications-1" id="toc-entry-104">Ruby Applications</a><ul>
+<li><a class="reference internal" href="#project-hydra-1" id="toc-entry-105">Project Hydra</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ruby-testing-1" id="toc-entry-106">Ruby Testing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-testing" id="toc-entry-107">Web Testing</a><ul>
+<li><a class="reference internal" href="#browsers" id="toc-entry-108">Browsers</a></li>
+<li><a class="reference internal" href="#selenium" id="toc-entry-109">Selenium</a></li>
+<li><a class="reference internal" href="#webdriver" id="toc-entry-110">WebDriver</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 16)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Web Framework Benchmarks
+</pre>
+</div>
+<div class="section" id="web-framework-benchmarks-1">
+<span id="web-framework-benchmarks"></span><h1><a class="toc-backref" href="#toc-entry-1">Web Framework Benchmarks</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/TechEmpower/FrameworkBenchmarks">https://github.com/TechEmpower/FrameworkBenchmarks</a></li>
+<li><a class="reference external" href="https://www.techempower.com/benchmarks/">https://www.techempower.com/benchmarks/</a></li>
+<li><a class="reference external" href="https://todomvc.com/">https://todomvc.com/</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 27)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: C++
+</pre>
+</div>
+</div>
+<div class="section" id="c">
+<span id="cpp"></span><h1><a class="toc-backref" href="#toc-entry-2">C++</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 34)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: C++ Web Frameworks
+</pre>
+</div>
+<div class="section" id="c-web-frameworks">
+<span id="cpp-web-frameworks"></span><h2><a class="toc-backref" href="#toc-entry-3">C++ Web Frameworks</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 40)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Wt
+</pre>
+</div>
+<div class="section" id="wt-1">
+<span id="wt"></span><h3><a class="toc-backref" href="#toc-entry-4">Wt</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 47)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: C#
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="c-1">
+<span id="csharp"></span><h1><a class="toc-backref" href="#toc-entry-5">C#</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 54)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Go
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 55)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Golang
+</pre>
+</div>
+</div>
+<div class="section" id="go-1">
+<span id="go"></span><span id="golang"></span><h1><a class="toc-backref" href="#toc-entry-6">Go</a></h1>
+<div class="line-block">
+<div class="line">Awesome: <a class="reference external" href="https://github.com/avelino/awesome-go">https://github.com/avelino/awesome-go</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 66)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Java
+</pre>
+</div>
+</div>
+<div class="section" id="java-1">
+<span id="java"></span><h1><a class="toc-backref" href="#toc-entry-7">Java</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 74)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Java Web Frameworks
+</pre>
+</div>
+<div class="section" id="java-web-frameworks-1">
+<span id="java-web-frameworks"></span><h2><a class="toc-backref" href="#toc-entry-8">Java Web Frameworks</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 80)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: J2EE
+</pre>
+</div>
+<div class="section" id="j2ee-1">
+<span id="j2ee"></span><h3><a class="toc-backref" href="#toc-entry-9">J2EE</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 87)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JBoss
+</pre>
+</div>
+</div>
+<div class="section" id="jboss-1">
+<span id="jboss"></span><h3><a class="toc-backref" href="#toc-entry-10">JBoss</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 94)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JWt
+</pre>
+</div>
+</div>
+<div class="section" id="jwt-1">
+<span id="jwt"></span><h3><a class="toc-backref" href="#toc-entry-11">JWt</a></h3>
+<ul>
+<li><p class="first">Source transpilation of <a href="#system-message-1"><span class="problematic" id="problematic-1">:ref:`Wt`</span></a> framework from C++ to Java</p>
+<div class="system-message" id="system-message-1">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 99); <em><a href="#problematic-1">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 102)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Restlet
+</pre>
+</div>
+</div>
+<div class="section" id="restlet-1">
+<span id="restlet"></span><h3><a class="toc-backref" href="#toc-entry-12">Restlet</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 109)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Struts
+</pre>
+</div>
+</div>
+<div class="section" id="struts-1">
+<span id="struts"></span><h3><a class="toc-backref" href="#toc-entry-13">Struts</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 117)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Java Servers
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="java-servers-1">
+<span id="java-servers"></span><h2><a class="toc-backref" href="#toc-entry-14">Java Servers</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 123)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Jetty
+</pre>
+</div>
+<div class="section" id="jetty-1">
+<span id="jetty"></span><h3><a class="toc-backref" href="#toc-entry-15">Jetty</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 130)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Apache Tomcat
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 131)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Tomcat
+</pre>
+</div>
+</div>
+<div class="section" id="tomcat-1">
+<span id="tomcat"></span><h3><a class="toc-backref" href="#toc-entry-16">Tomcat</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 138)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Javascript
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="javascript-1">
+<span id="javascript"></span><h1><a class="toc-backref" href="#toc-entry-17">Javascript</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 145)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JS Libraries
+</pre>
+</div>
+<div class="section" id="js-libraries-1">
+<span id="js-libraries"></span><h2><a class="toc-backref" href="#toc-entry-18">JS Libraries</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 151)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JS CDNs
+</pre>
+</div>
+<div class="section" id="js-cdns-1">
+<span id="js-cdns"></span><h3><a class="toc-backref" href="#toc-entry-19">JS CDNs</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://developers.google.com/speed/libraries/">https://developers.google.com/speed/libraries/</a></li>
+<li><a class="reference external" href="https://www.maxcdn.com/blog/free-open-source-cdns/">https://www.maxcdn.com/blog/free-open-source-cdns/</a></li>
+<li><a class="reference external" href="http://www.bootstrapcdn.com/">http://www.bootstrapcdn.com/</a> (MaxCDN)</li>
+<li><a class="reference external" href="https://cdnjs.com/">https://cdnjs.com/</a> (CloudFlare)</li>
+<li><a class="reference external" href="https://www.cloudflare.com/cdn/">https://www.cloudflare.com/cdn/</a></li>
+<li><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></li>
+<li><a class="reference external" href="https://wiki.openstack.org/wiki/Poppy">https://wiki.openstack.org/wiki/Poppy</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 165)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Bootstrap
+</pre>
+</div>
+</div>
+<div class="section" id="bootstrap-1">
+<span id="bootstrap"></span><h3><a class="toc-backref" href="#toc-entry-20">Bootstrap</a></h3>
+<ul>
+<li><p class="first"><a href="#system-message-2"><span class="problematic" id="problematic-2">:ref:`Bootstrap`</span></a></p>
+<div class="system-message" id="system-message-2">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 170); <em><a href="#problematic-2">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 173)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: jQuery
+</pre>
+</div>
+</div>
+<div class="section" id="jquery-1">
+<span id="jquery"></span><h3><a class="toc-backref" href="#toc-entry-21">jQuery</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://jquery.com/">https://jquery.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/jquery/jquery">https://github.com/jquery/jquery</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api.jquery.com/">https://api.jquery.com/</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/jquery">https://www.npmjs.com/package/jquery</a></div>
+</div>
+<ul class="simple">
+<li>lodash</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 187)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Zepto.js
+</pre>
+</div>
+</div>
+<div class="section" id="zepto-js">
+<span id="zepto"></span><h3><a class="toc-backref" href="#toc-entry-22">Zepto.js</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://zeptojs.com/">http://zeptojs.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/madrobby/zepto">https://github.com/madrobby/zepto</a></div>
+<div class="line">Docs: <a class="reference external" href="http://zeptojs.com/">http://zeptojs.com/</a></div>
+</div>
+<ul class="simple">
+<li>Zepto.js is a minimal, mostly-jQuery-compatible JS library.</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 199)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Underscore
+</pre>
+</div>
+</div>
+<div class="section" id="underscore-1">
+<span id="underscore"></span><h3><a class="toc-backref" href="#toc-entry-23">Underscore</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Underscore.js">https://en.wikipedia.org/wiki/Underscore.js</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://underscorejs.org/">http://underscorejs.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/jashkenas/underscore">https://github.com/jashkenas/underscore</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 209)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Babel
+</pre>
+</div>
+</div>
+<div class="section" id="babel-1">
+<span id="babel"></span><h3><a class="toc-backref" href="#toc-entry-24">Babel</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://babeljs.io/">https://babeljs.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/babel/babel">https://github.com/babel/babel</a></div>
+<div class="line">Docs: <a class="reference external" href="https://babeljs.io/docs/setup/">https://babeljs.io/docs/setup/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://babeljs.io/learn-es2015/">https://babeljs.io/learn-es2015/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://babeljs.io/docs/plugins/preset-stage-0/">https://babeljs.io/docs/plugins/preset-stage-0/</a> (,1,2,3)</div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/babel-cli">https://www.npmjs.com/package/babel-cli</a></div>
+</div>
+<p>.</p>
+<ul class="simple">
+<li>style-loader, css-loader, less, less-loader</li>
+<li>babel-plugin-react-transform</li>
+<li>babel-plugin-transform-class-properties</li>
+<li>babel-plugin-transform-object-assign</li>
+<li>babel-preset-es2015</li>
+<li>babel-preset-react</li>
+<li>babel-preset-stage0</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 233)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JS Frameworks
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="js-frameworks-1">
+<span id="js-frameworks"></span><h2><a class="toc-backref" href="#toc-entry-25">JS Frameworks</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 239)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Angular
+</pre>
+</div>
+<div class="section" id="angular-1">
+<span id="angular"></span><h3><a class="toc-backref" href="#toc-entry-26">Angular</a></h3>
+<div class="section" id="angular-1-1">
+<h4><a class="toc-backref" href="#toc-entry-27">Angular 1</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://angularjs.org/">https://angularjs.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/angular/angular.js">https://github.com/angular/angular.js</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.angularjs.org/">https://docs.angularjs.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.angularjs.org/guide/concepts">https://docs.angularjs.org/guide/concepts</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 253)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ionic
+</pre>
+</div>
+</div>
+<div class="section" id="ionic-1">
+<span id="ionic"></span><h4><a class="toc-backref" href="#toc-entry-28">Ionic</a></h4>
+<div class="line-block">
+<div class="line">Homepage:</div>
+<div class="line">Src:</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 263)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: React
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="react-1">
+<span id="react"></span><h3><a class="toc-backref" href="#toc-entry-29">React</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://facebook.github.io/react/docs/">https://facebook.github.io/react/docs/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/facebook/react">https://github.com/facebook/react</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/reactjs">https://github.com/reactjs</a></div>
+<div class="line">Docs: <a class="reference external" href="https://facebook.github.io/react/docs/">https://facebook.github.io/react/docs/</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/react">https://www.npmjs.com/package/react</a></div>
+</div>
+<p>See: <a class="reference internal" href="#jest">Jest</a></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 277)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: React-Native
+</pre>
+</div>
+</div>
+<div class="section" id="react-native-1">
+<span id="react-native"></span><h3><a class="toc-backref" href="#toc-entry-30">React-Native</a></h3>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 284)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Redux
+</pre>
+</div>
+</div>
+<div class="section" id="redux-1">
+<span id="redux"></span><h3><a class="toc-backref" href="#toc-entry-31">Redux</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://redux.js.org/">http://redux.js.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/reactjs/redux">https://github.com/reactjs/redux</a></div>
+<div class="line">Docs: <a class="reference external" href="http://redux.js.org/">http://redux.js.org/</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/redux">https://www.npmjs.com/package/redux</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 295)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Redux-actions
+</pre>
+</div>
+<div class="section" id="redux-actions-1">
+<span id="redux-actions"></span><h4><a class="toc-backref" href="#toc-entry-32">Redux-actions</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/acdlite/redux-actions">https://github.com/acdlite/redux-actions</a></div>
+<div class="line">Tests: <a class="reference external" href="https://github.com/acdlite/redux-actions/tree/master/src/__tests__">https://github.com/acdlite/redux-actions/tree/master/src/__tests__</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/redux-actions">https://www.npmjs.com/package/redux-actions</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 305)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Redux-devtools
+</pre>
+</div>
+</div>
+<div class="section" id="redux-devtools-1">
+<span id="redux-devtools"></span><h4><a class="toc-backref" href="#toc-entry-33">Redux-devtools</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://extension.remotedev.io/">http://extension.remotedev.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/zalmoxisus/redux-devtools-extension">https://github.com/zalmoxisus/redux-devtools-extension</a></div>
+<div class="line">Docs: <a class="reference external" href="http://extension.remotedev.io/">http://extension.remotedev.io/</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/remotedev/">https://addons.mozilla.org/en-US/firefox/addon/remotedev/</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 317)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Node
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="node-1">
+<span id="node"></span><h3><a class="toc-backref" href="#toc-entry-34">Node</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://nodejs.org/en/">https://nodejs.org/en/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/nodejs/node/">https://github.com/nodejs/node/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://nodejs.org/en/docs/">https://nodejs.org/en/docs/</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 327)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Express
+</pre>
+</div>
+</div>
+<div class="section" id="express-1">
+<span id="express"></span><h3><a class="toc-backref" href="#toc-entry-35">Express</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://expressjs.com/">http://expressjs.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/expressjs/express">https://github.com/expressjs/express</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 336)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JS Testing
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="js-testing-1">
+<span id="js-testing"></span><h2><a class="toc-backref" href="#toc-entry-36">JS Testing</a></h2>
+<div class="section" id="blessings">
+<h3><a class="toc-backref" href="#toc-entry-37">Blessings</a></h3>
+</div>
+<div class="section" id="chai">
+<h3><a class="toc-backref" href="#toc-entry-38">Chai</a></h3>
+</div>
+<div class="section" id="mocha">
+<h3><a class="toc-backref" href="#toc-entry-39">Mocha</a></h3>
+</div>
+<div class="section" id="jasmine">
+<h3><a class="toc-backref" href="#toc-entry-40">Jasmine</a></h3>
+</div>
+<div class="section" id="jest">
+<h3><a class="toc-backref" href="#toc-entry-41">Jest</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://facebook.github.io/jest/">https://facebook.github.io/jest/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/facebook/jest">https://github.com/facebook/jest</a></div>
+<div class="line">Docs: <a class="reference external" href="https://facebook.github.io/jest/docs/en/">https://facebook.github.io/jest/docs/en/</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://facebook.github.io/jest/docs/en/snapshot-testing.html">https://facebook.github.io/jest/docs/en/snapshot-testing.html</a></li>
+</ul>
+</div>
+<div class="section" id="phantomjs">
+<h3><a class="toc-backref" href="#toc-entry-42">PhantomJS</a></h3>
+<ul class="simple">
+<li>see: <a class="reference internal" href="#web-testing">Web Testing</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 372)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: JS Packaging
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="js-packaging-1">
+<span id="js-packaging"></span><h2><a class="toc-backref" href="#toc-entry-43">JS Packaging</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://auth0.com/blog/javascript-module-systems-showdown/">https://auth0.com/blog/javascript-module-systems-showdown/</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 380)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: CommonJS
+</pre>
+</div>
+<div class="section" id="commonjs-1">
+<span id="commonjs"></span><h3><a class="toc-backref" href="#toc-entry-44">CommonJS</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/CommonJS">https://en.wikipedia.org/wiki/CommonJS</a></div>
+<div class="line">Homepage:</div>
+<div class="line">Docs: <a class="reference external" href="https://webpack.github.io/docs/commonjs.html">https://webpack.github.io/docs/commonjs.html</a></div>
+</div>
+<ul>
+<li><p class="first">CommonJS is more than just packaging</p>
+</li>
+<li><p class="first"><a href="#system-message-3"><span class="problematic" id="problematic-3">:ref:`NodeJS`</span></a> modules are very similar to CommonJS modules</p>
+<div class="system-message" id="system-message-3">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 390); <em><a href="#problematic-3">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<pre class="code javascript literal-block">
+<span class="name other">exports</span><span class="punctuation">(</span><span class="whitespace"> </span><span class="punctuation">);</span><span class="whitespace">
+</span><span class="name other">require</span><span class="punctuation">(</span><span class="whitespace"> </span><span class="punctuation">);</span>
+</pre>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 398)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: AMD (JS)
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 399)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Asynchronous Module Definition
+</pre>
+</div>
+</div>
+<div class="section" id="amd">
+<span id="amd-js"></span><h3><a class="toc-backref" href="#toc-entry-45">AMD</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Asynchronous_module_definition">https://en.wikipedia.org/wiki/Asynchronous_module_definition</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/amdjs/amdjs-api">https://github.com/amdjs/amdjs-api</a></div>
+<div class="line">Spec: <a class="reference external" href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">https://github.com/amdjs/amdjs-api/blob/master/AMD.md</a></div>
+<div class="line">Docs: <a class="reference external" href="http://requirejs.org/docs/whyamd.html">http://requirejs.org/docs/whyamd.html</a></div>
+<div class="line">Docs: <a class="reference external" href="http://requirejs.org/docs/whyamd.html#amd">http://requirejs.org/docs/whyamd.html#amd</a></div>
+<div class="line">Docs: <a class="reference external" href="https://addyosmani.com/writing-modular-js/">https://addyosmani.com/writing-modular-js/</a></div>
+</div>
+<ul>
+<li><p class="first">AMD forked from <a href="#system-message-4"><span class="problematic" id="problematic-4">:ref:`CommonJS`</span></a></p>
+<div class="system-message" id="system-message-4">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 411); <em><a href="#problematic-4">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-5"><span class="problematic" id="problematic-5">:ref:`Dojo`</span></a>, <a href="#system-message-6"><span class="problematic" id="problematic-6">:ref:`RequireJS`</span></a>, ScriptManJS</p>
+<div class="system-message" id="system-message-5">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 412); <em><a href="#problematic-5">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-6">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 412); <em><a href="#problematic-6">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<pre class="code javascript literal-block">
+<span class="name other">define</span><span class="punctuation">(</span><span class="whitespace"> </span><span class="punctuation">);</span>
+</pre>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 419)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: ES2015 Modules
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 420)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: ES6 Modules
+</pre>
+</div>
+</div>
+<div class="section" id="es2015-modules-1">
+<span id="es2015-modules"></span><h3><a class="toc-backref" href="#toc-entry-46">ES2015 Modules</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/tc39/proposal-dynamic-import">https://github.com/tc39/proposal-dynamic-import</a></div>
+</div>
+<pre class="code javascript literal-block">
+<span class="keyword">import</span><span class="whitespace"> </span><span class="punctuation">;</span><span class="whitespace">
+</span><span class="keyword">export</span><span class="whitespace"> </span><span class="punctuation">;</span>
+</pre>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 436)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: System.js
+</pre>
+</div>
+</div>
+<div class="section" id="system-js-1">
+<span id="system-js"></span><h3><a class="toc-backref" href="#toc-entry-47">System.js</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/systemjs/systemjs">https://github.com/systemjs/systemjs</a></div>
+</div>
+<ul>
+<li><p class="first">System.js supports <a href="#system-message-7"><span class="problematic" id="problematic-7">:ref:`CommonJS`</span></a>, <a href="#system-message-8"><span class="problematic" id="problematic-8">:ref:`NodeJS`</span></a>,
+<a href="#system-message-9"><span class="problematic" id="problematic-9">:ref:`AMD`</span></a>, and <a href="#system-message-10"><span class="problematic" id="problematic-10">:ref:`ES2015 Modules`</span></a></p>
+<div class="system-message" id="system-message-7">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 443); <em><a href="#problematic-7">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-8">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 443); <em><a href="#problematic-8">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-9">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 443); <em><a href="#problematic-9">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-10">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 443); <em><a href="#problematic-10">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 446)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: RequireJS
+</pre>
+</div>
+</div>
+<div class="section" id="requirejs-1">
+<span id="requirejs"></span><h3><a class="toc-backref" href="#toc-entry-48">RequireJS</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://requirejs.org/">http://requirejs.org/</a></div>
+<div class="line">Src: <a class="reference external" href="http://github.com/requirejs/requirejs">http://github.com/requirejs/requirejs</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 455)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: NPM
+</pre>
+</div>
+</div>
+<div class="section" id="npm-1">
+<span id="npm"></span><h3><a class="toc-backref" href="#toc-entry-49">NPM</a></h3>
+<ul>
+<li><p class="first"><a href="#system-message-11"><span class="problematic" id="problematic-11">:ref:`NPM`</span></a></p>
+<div class="system-message" id="system-message-11">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 460); <em><a href="#problematic-11">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 463)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Bower
+</pre>
+</div>
+</div>
+<div class="section" id="bower-1">
+<span id="bower"></span><h3><a class="toc-backref" href="#toc-entry-50">Bower</a></h3>
+<ul>
+<li><p class="first"><a href="#system-message-12"><span class="problematic" id="problematic-12">:ref:`Bower`</span></a></p>
+<div class="system-message" id="system-message-12">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 468); <em><a href="#problematic-12">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 471)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Webpack
+</pre>
+</div>
+</div>
+<div class="section" id="webpack-1">
+<span id="webpack"></span><h3><a class="toc-backref" href="#toc-entry-51">Webpack</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Webpack">https://en.wikipedia.org/wiki/Webpack</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://webpack.js.org/">https://webpack.js.org/</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://webpack.github.io/">https://webpack.github.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/webpack/webpack">https://github.com/webpack/webpack</a></div>
+<div class="line">Docs: <a class="reference external" href="https://webpack.js.org/configuration/">https://webpack.js.org/configuration/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://webpack.github.io/docs/">https://webpack.github.io/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://webpack.github.io/docs/commonjs.html">https://webpack.github.io/docs/commonjs.html</a></div>
+<div class="line">Q&amp;A Tag: <a class="reference external" href="https://stackoverflow.com/questions/tagged/webpack">https://stackoverflow.com/questions/tagged/webpack</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/webpack">https://www.npmjs.com/package/webpack</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 488)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Browserify
+</pre>
+</div>
+</div>
+<div class="section" id="browserify-1">
+<span id="browserify"></span><h3><a class="toc-backref" href="#toc-entry-52">Browserify</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://browserify.org/">http://browserify.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/substack/node-browserify">https://github.com/substack/node-browserify</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/substack/node-browserify#usage">https://github.com/substack/node-browserify#usage</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/substack/browserify-handbook">https://github.com/substack/browserify-handbook</a></div>
+</div>
+<blockquote>
+browserify is a tool for compiling node-flavored commonjs modules for the browser.</blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/jesusabdullah/browserify-cdn">https://github.com/jesusabdullah/browserify-cdn</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 503)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Requirify
+</pre>
+</div>
+<div class="section" id="requirify-1">
+<span id="requirify"></span><h4><a class="toc-backref" href="#toc-entry-53">Requirify</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mathisonian/requirify">https://github.com/mathisonian/requirify</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm?hl=en">https://chrome.google.com/webstore/detail/requirify/gajpkncnknlljkhblhllcnnfjpbcmebm?hl=en</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 512)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Yarn
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="yarn-1">
+<span id="yarn"></span><h3><a class="toc-backref" href="#toc-entry-54">Yarn</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://yarnpkg.com/">https://yarnpkg.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/yarnpkg">https://github.com/yarnpkg</a></div>
+<div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/yarn">https://www.npmjs.com/package/yarn</a></div>
+<div class="line">Docs: <a class="reference external" href="https://yarnpkg.com/en/docs/">https://yarnpkg.com/en/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://yarnpkg.com/en/docs/migrating-from-npm">https://yarnpkg.com/en/docs/migrating-from-npm</a></div>
+</div>
+<ul>
+<li><p class="first">Yarn can consume <a href="#system-message-13"><span class="problematic" id="problematic-13">:ref:`NPM`</span></a> <tt class="docutils literal">package.json</tt></p>
+<div class="system-message" id="system-message-13">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 523); <em><a href="#problematic-13">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 526)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="php-1">
+<span id="php"></span><h1><a class="toc-backref" href="#toc-entry-55">PHP</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PHP">https://en.wikipedia.org/wiki/PHP</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://secure.php.net/">https://secure.php.net/</a></div>
+<div class="line">Download: <a class="reference external" href="https://php.net/downloads.php">https://php.net/downloads.php</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/official_php">https://twitter.com/official_php</a></div>
+<div class="line">Src: <a class="reference external" href="https://git.php.net/?p=php-src.git">https://git.php.net/?p=php-src.git</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/php/php-src">https://github.com/php/php-src</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/php">https://github.com/php</a></div>
+<div class="line">Spec: <a class="reference external" href="https://github.com/php/php-langspec/tree/master/spec">https://github.com/php/php-langspec/tree/master/spec</a></div>
+<div class="line">DockerHub: <a class="reference external" href="https://hub.docker.com/_/php/">https://hub.docker.com/_/php/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/docs.php">https://secure.php.net/docs.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/">https://secure.php.net/manual/en/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/langref.php">https://secure.php.net/manual/en/langref.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/security.php">https://secure.php.net/manual/en/security.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/funcref.php">https://secure.php.net/manual/en/funcref.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/Template:PHP">https://en.wikipedia.org/wiki/Template:PHP</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/ziadoz/awesome-php">https://github.com/ziadoz/awesome-php</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 551)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP Security
+</pre>
+</div>
+<div class="section" id="php-security-1">
+<span id="php-security"></span><h2><a class="toc-backref" href="#toc-entry-56">PHP Security</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Top_5">https://www.owasp.org/index.php/PHP_Top_5</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet">https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/OWASP_PHP_Security_Project">https://www.owasp.org/index.php/OWASP_PHP_Security_Project</a></li>
+<li><a class="reference external" href="https://github.com/OWASP/phpsec">https://github.com/OWASP/phpsec</a></li>
+<li>Unmaintained but still a good reference.</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 567)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: HHVM
+</pre>
+</div>
+</div>
+<div class="section" id="hhvm-1">
+<span id="hhvm"></span><h2><a class="toc-backref" href="#toc-entry-57">HHVM</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HipHop_Virtual_Machine">https://en.wikipedia.org/wiki/HipHop_Virtual_Machine</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://hhvm.com/">http://hhvm.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/facebook/hhvm">https://github.com/facebook/hhvm</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/HipHopVM">https://twitter.com/HipHopVM</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/">https://docs.hhvm.com/hhvm/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/inconsistencies/introduction">https://docs.hhvm.com/hhvm/inconsistencies/introduction</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/inconsistencies/arrays-and-foreach">https://docs.hhvm.com/hhvm/inconsistencies/arrays-and-foreach</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/inconsistencies/classes-and-objects">https://docs.hhvm.com/hhvm/inconsistencies/classes-and-objects</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/inconsistencies/miscellaneous">https://docs.hhvm.com/hhvm/inconsistencies/miscellaneous</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.hhvm.com/hhvm/advanced-usage/fastCGI">https://docs.hhvm.com/hhvm/advanced-usage/fastCGI</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 584)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP Frameworks
+</pre>
+</div>
+</div>
+<div class="section" id="php-frameworks-1">
+<span id="php-frameworks"></span><h2><a class="toc-backref" href="#toc-entry-58">PHP Frameworks</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 591)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: CakePHP
+</pre>
+</div>
+<div class="section" id="cakephp-1">
+<span id="cakephp"></span><h3><a class="toc-backref" href="#toc-entry-59">CakePHP</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia:</div>
+<div class="line">Homepage: <a class="reference external" href="https://cakephp.org/">https://cakephp.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/cakephp/cakephp">https://github.com/cakephp/cakephp</a></div>
+<div class="line">Docs: <a class="reference external" href="https://book.cakephp.org/">https://book.cakephp.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api.cakephp.org/">https://api.cakephp.org/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/cakephp">https://twitter.com/cakephp</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://book.cakephp.org/3.0/en/elasticsearch.html">https://book.cakephp.org/3.0/en/elasticsearch.html</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 606)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Laravel
+</pre>
+</div>
+</div>
+<div class="section" id="laravel-1">
+<span id="laravel"></span><h3><a class="toc-backref" href="#toc-entry-60">Laravel</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Laravel">https://en.wikipedia.org/wiki/Laravel</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://laravel.com/">https://laravel.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/laravel/framework">https://github.com/laravel/framework</a></div>
+<div class="line">Docs: <a class="reference external" href="https://laravel.com/docs/">https://laravel.com/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://laravel.com/api/5.4/">https://laravel.com/api/5.4/</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 620)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Symfony
+</pre>
+</div>
+</div>
+<div class="section" id="symfony-1">
+<span id="symfony"></span><h3><a class="toc-backref" href="#toc-entry-61">Symfony</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Symfony">https://en.wikipedia.org/wiki/Symfony</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://symfony.com/">https://symfony.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/symfony/symfony">https://github.com/symfony/symfony</a></div>
+<div class="line">Docs: <a class="reference external" href="https://symfony.com/doc/current/index.html">https://symfony.com/doc/current/index.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://symfony.com/doc/current/reference/index.html">https://symfony.com/doc/current/reference/index.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://symfony.com/doc/current/best_practices/index.html">https://symfony.com/doc/current/best_practices/index.html</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/sensiolabs">https://twitter.com/sensiolabs</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 634)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: API Platform (PHP)
+</pre>
+</div>
+<div class="section" id="api-platform-1">
+<span id="api-platform"></span><h4><a class="toc-backref" href="#toc-entry-62">API Platform</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://api-platform.com/">https://api-platform.com/</a></div>
+<div class="line">Download: <a class="reference external" href="https://api.github.com/repos/api-platform/api-platform/zipball">https://api.github.com/repos/api-platform/api-platform/zipball</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/api-platform/api-platform">https://github.com/api-platform/api-platform</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/">https://api-platform.com/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/distribution/">https://api-platform.com/docs/distribution/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/getting-started">https://api-platform.com/docs/core/getting-started</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/security">https://api-platform.com/docs/core/security</a></div>
+<div class="line">Docs: <a class="reference external" href="https://symfony.com/doc/current/security.html">https://symfony.com/doc/current/security.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/external-vocabularies">https://api-platform.com/docs/core/external-vocabularies</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/extending-jsonld-context">https://api-platform.com/docs/core/extending-jsonld-context</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/performance#eager-loading">https://api-platform.com/docs/core/performance#eager-loading</a></div>
+<div class="line">Docs: <a class="reference external" href="https://api-platform.com/docs/core/angularjs-integration">https://api-platform.com/docs/core/angularjs-integration</a></div>
+</div>
+<ul>
+<li><p class="first">Built on <a href="#system-message-14"><span class="problematic" id="problematic-14">:ref:`Symfony`</span></a></p>
+<div class="system-message" id="system-message-14">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 652); <em><a href="#problematic-14">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-15"><span class="problematic" id="problematic-15">:ref:`RESTful`</span></a> <a href="#system-message-16"><span class="problematic" id="problematic-16">:ref:`Schema.org`</span></a> <a href="#system-message-17"><span class="problematic" id="problematic-17">:ref:`JSON-LD`</span></a>, <a href="#system-message-18"><span class="problematic" id="problematic-18">:ref:`Hydra`</span></a></p>
+<div class="system-message" id="system-message-15">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 653); <em><a href="#problematic-15">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-16">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 653); <em><a href="#problematic-16">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-17">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 653); <em><a href="#problematic-17">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-18">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 653); <em><a href="#problematic-18">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/api-platform/admin">https://github.com/api-platform/admin</a></p>
+<p><a href="#system-message-19"><span class="problematic" id="problematic-19">:ref:`Angular`</span></a>, ng-admin</p>
+<div class="system-message" id="system-message-19">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 656); <em><a href="#problematic-19">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/marmelab/ng-admin">https://github.com/marmelab/ng-admin</a></li>
+</ul>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 662)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP Applications
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="php-applications-1">
+<span id="php-applications"></span><h2><a class="toc-backref" href="#toc-entry-63">PHP Applications</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 669)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Drupal
+</pre>
+</div>
+<div class="section" id="drupal-1">
+<span id="drupal"></span><h3><a class="toc-backref" href="#toc-entry-64">Drupal</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Drupal">https://en.wikipedia.org/wiki/Drupal</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.drupal.org/">https://www.drupal.org/</a></div>
+<div class="line">Src: <a class="reference external" href="http://cgit.drupalcode.org/drupal">http://cgit.drupalcode.org/drupal</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/project/drupal">https://www.drupal.org/project/drupal</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/documentation">https://www.drupal.org/documentation</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/docs/">https://www.drupal.org/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/docs/user_guide/en/index.html">https://www.drupal.org/docs/user_guide/en/index.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/docs/7/theming">https://www.drupal.org/docs/7/theming</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.drupal.org/docs/7/understanding-drupal/glossary">https://www.drupal.org/docs/7/understanding-drupal/glossary</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://www.drupal.org/project/project_theme">https://www.drupal.org/project/project_theme</a></li>
+<li><a class="reference external" href="https://www.drupal.org/project/project_module">https://www.drupal.org/project/project_module</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 690)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Joomla
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 691)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Mambo
+</pre>
+</div>
+</div>
+<div class="section" id="joomla-1">
+<span id="joomla"></span><h3><a class="toc-backref" href="#toc-entry-65">Joomla</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Joomla">https://en.wikipedia.org/wiki/Joomla</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/joomla/joomla-cms">https://github.com/joomla/joomla-cms</a></div>
+<div class="line">Download: <a class="reference external" href="https://downloads.joomla.org/">https://downloads.joomla.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.joomla.org/">https://docs.joomla.org/</a></div>
+</div>
+<p>Joomla (formerly &quot;Mambo&quot;) is an open source <a href="#system-message-20"><span class="problematic" id="problematic-20">:ref:`CMS`</span></a> written in <a href="#system-message-21"><span class="problematic" id="problematic-21">:ref:`PHP`</span></a>.</p>
+<div class="system-message" id="system-message-20">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 701); <em><a href="#problematic-20">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<div class="system-message" id="system-message-21">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 701); <em><a href="#problematic-21">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<ul class="simple">
+<li><a class="reference external" href="https://extensions.joomla.org/">https://extensions.joomla.org/</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 706)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: MediaWiki
+</pre>
+</div>
+</div>
+<div class="section" id="mediawiki-1">
+<span id="mediawiki"></span><h3><a class="toc-backref" href="#toc-entry-66">MediaWiki</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MediaWiki">https://en.wikipedia.org/wiki/MediaWiki</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.mediawiki.org/wiki/MediaWiki">https://www.mediawiki.org/wiki/MediaWiki</a></div>
+<div class="line">Src: <a class="reference external" href="https://phabricator.wikimedia.org/source/mediawiki/">https://phabricator.wikimedia.org/source/mediawiki/</a></div>
+<div class="line">Src: <a class="reference external" href="https://gerrit.wikimedia.org/r/p/mediawiki/core">https://gerrit.wikimedia.org/r/p/mediawiki/core</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/MediaWiki">https://www.mediawiki.org/wiki/MediaWiki</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 718)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Semantic MediaWiki
+</pre>
+</div>
+<div class="section" id="semantic-mediawiki-1">
+<span id="semantic-mediawiki"></span><h4><a class="toc-backref" href="#toc-entry-67">Semantic MediaWiki</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_MediaWiki">https://en.wikipedia.org/wiki/Semantic_MediaWiki</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.semantic-mediawiki.org/">https://www.semantic-mediawiki.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/SemanticMediaWiki/SemanticMediaWiki">https://github.com/SemanticMediaWiki/SemanticMediaWiki</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki">https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/Category:Semantic_MediaWiki_extensions">https://www.mediawiki.org/wiki/Category:Semantic_MediaWiki_extensions</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki">https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help">https://www.semantic-mediawiki.org/wiki/Help</a>:Getting_started|</div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_reference">https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki_reference</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/w/images/e/e9/SMW_quick_reference.pdf">https://www.semantic-mediawiki.org/w/images/e/e9/SMW_quick_reference.pdf</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:User_manual">https://www.semantic-mediawiki.org/wiki/Help:User_manual</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Inferencing">https://www.semantic-mediawiki.org/wiki/Help:Inferencing</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Semantic_search">https://www.semantic-mediawiki.org/wiki/Help:Semantic_search</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Ask_API">https://www.semantic-mediawiki.org/wiki/Ask_API</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Semantic_Web">https://www.semantic-mediawiki.org/wiki/Help:Semantic_Web</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores">https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores</a></div>
+</div>
+<p>Semantic Mediawiki (<em>SMW</em>) is an open source extension of
+<a href="#system-message-22"><span class="problematic" id="problematic-22">:ref:`MediaWiki`</span></a> for semantic data.</p>
+<div class="system-message" id="system-message-22">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 739); <em><a href="#problematic-22">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<ul>
+<li><p class="first"><a href="#system-message-23"><span class="problematic" id="problematic-23">:ref:`SQL`</span></a> (<a href="#system-message-24"><span class="problematic" id="problematic-24">:ref:`MySQL`</span></a>)</p>
+<div class="system-message" id="system-message-23">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 742); <em><a href="#problematic-23">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-24">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 742); <em><a href="#problematic-24">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-25"><span class="problematic" id="problematic-25">:ref:`SPARQL`</span></a> (<a href="#system-message-26"><span class="problematic" id="problematic-26">:ref:`Virtuoso`</span></a>, 4store, <a href="#system-message-27"><span class="problematic" id="problematic-27">:ref:`Blazegraph`</span></a>, Fuseki,
+<a href="#system-message-28"><span class="problematic" id="problematic-28">:ref:`Sesame`</span></a>)</p>
+<div class="system-message" id="system-message-25">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 743); <em><a href="#problematic-25">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-26">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 743); <em><a href="#problematic-26">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-27">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 743); <em><a href="#problematic-27">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-28">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 743); <em><a href="#problematic-28">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<p><a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores#Available_repository_connectors">https://www.semantic-mediawiki.org/wiki/Help:Using_SPARQL_and_RDF_stores#Available_repository_connectors</a></p>
+</li>
+<li><p class="first">Concepts: ~composable saved searches</p>
+<p><a class="reference external" href="https://www.semantic-mediawiki.org/wiki/Help:Concepts">https://www.semantic-mediawiki.org/wiki/Help:Concepts</a></p>
+</li>
+</ul>
+<p>seeAlso:</p>
+<ul>
+<li><p class="first"><a href="#system-message-29"><span class="problematic" id="problematic-29">:ref:`Semantic Web`</span></a>, <a href="#system-message-30"><span class="problematic" id="problematic-30">:ref:`Linked Data`</span></a>, <a href="#system-message-31"><span class="problematic" id="problematic-31">:ref:`RDFS`</span></a>, <a href="#system-message-32"><span class="problematic" id="problematic-32">:ref:`OWL`</span></a></p>
+<div class="system-message" id="system-message-29">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 754); <em><a href="#problematic-29">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-30">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 754); <em><a href="#problematic-30">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-31">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 754); <em><a href="#problematic-31">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-32">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 754); <em><a href="#problematic-32">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-33"><span class="problematic" id="problematic-33">:ref:`Semantic Bundle`</span></a> (includes SMW)</p>
+<div class="system-message" id="system-message-33">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 755); <em><a href="#problematic-33">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-34"><span class="problematic" id="problematic-34">:ref:`Wikibase`</span></a> (<a href="#system-message-35"><span class="problematic" id="problematic-35">:ref:`Wikidata`</span></a>)</p>
+<div class="system-message" id="system-message-34">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 756); <em><a href="#problematic-34">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-35">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 756); <em><a href="#problematic-35">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-36"><span class="problematic" id="problematic-36">:ref:`Dbpedia`</span></a> (<a href="#system-message-37"><span class="problematic" id="problematic-37">:ref:`MediaWiki`</span></a> infoboxes)</p>
+<div class="system-message" id="system-message-36">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 757); <em><a href="#problematic-36">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-37">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 757); <em><a href="#problematic-37">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 760)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Semantic Bundle
+</pre>
+</div>
+</div>
+<div class="section" id="semantic-bundle-1">
+<span id="semantic-bundle"></span><h4><a class="toc-backref" href="#toc-entry-68">Semantic Bundle</a></h4>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/Semantic_Bundle">https://www.mediawiki.org/wiki/Semantic_Bundle</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/mwjames/SemanticBundle">https://github.com/mwjames/SemanticBundle</a></div>
+<div class="line">Src: <a class="reference external" href="https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticBundle.git">https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticBundle.git</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 770)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Wikibase
+</pre>
+</div>
+</div>
+<div class="section" id="wikibase-1">
+<span id="wikibase"></span><h4><a class="toc-backref" href="#toc-entry-69">Wikibase</a></h4>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="https://www.mediawiki.org/wiki/Extension:Wikibase">https://www.mediawiki.org/wiki/Extension:Wikibase</a></div>
+</div>
+<ul>
+<li><p class="first"><a href="#system-message-38"><span class="problematic" id="problematic-38">:ref:`Wikidata`</span></a> is built on Wikibase</p>
+<div class="system-message" id="system-message-38">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 777); <em><a href="#problematic-38">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first">&quot; DataValues + ValueParsers + ValueFormatters + ValueValidators&quot;</p>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 781)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: MODx
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="modx-1">
+<span id="modx"></span><h3><a class="toc-backref" href="#toc-entry-70">MODx</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MODX">https://en.wikipedia.org/wiki/MODX</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://modx.com/">https://modx.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/modxcms/revolution">https://github.com/modxcms/revolution</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.modx.com/">https://docs.modx.com/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.modx.com/revolution/2.x/">https://docs.modx.com/revolution/2.x/</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 792)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: WordPress
+</pre>
+</div>
+</div>
+<div class="section" id="wordpress-1">
+<span id="wordpress"></span><h3><a class="toc-backref" href="#toc-entry-71">WordPress</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WordPress">https://en.wikipedia.org/wiki/WordPress</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://wordpress.org/">https://wordpress.org/</a></div>
+<div class="line">Src: svn <a class="reference external" href="https://core.svn.wordpress.org/">https://core.svn.wordpress.org/</a></div>
+<div class="line">Src: git://core.git.wordpress.org/</div>
+<div class="line">Src: <a class="reference external" href="https://core.trac.wordpress.org/browser">https://core.trac.wordpress.org/browser</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/WordPress/WordPress">https://github.com/WordPress/WordPress</a></div>
+<div class="line">Download: <a class="reference external" href="https://wordpress.org/download/">https://wordpress.org/download/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://codex.wordpress.org/">https://codex.wordpress.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developer.wordpress.org/reference/">https://developer.wordpress.org/reference/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developer.wordpress.org/themes/">https://developer.wordpress.org/themes/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developer.wordpress.org/plugins/">https://developer.wordpress.org/plugins/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developer.wordpress.org/rest-api/">https://developer.wordpress.org/rest-api/</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/miziomon/awesome-wordpress">https://github.com/miziomon/awesome-wordpress</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/miziomon/awesome-wordpress#websites">https://github.com/miziomon/awesome-wordpress#websites</a></li>
+<li><a class="reference external" href="https://wordpress.org/plugins/">https://wordpress.org/plugins/</a></li>
+<li><a class="reference external" href="https://wordpress.org/themes/">https://wordpress.org/themes/</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 818)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP Testing
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="php-testing-1">
+<span id="php-testing"></span><h2><a class="toc-backref" href="#toc-entry-72">PHP Testing</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ziadoz/awesome-php#testing">https://github.com/ziadoz/awesome-php#testing</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 825)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHPunit
+</pre>
+</div>
+<div class="section" id="phpunit-1">
+<span id="phpunit"></span><h3><a class="toc-backref" href="#toc-entry-73">PHPUnit</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PHPUnit">https://en.wikipedia.org/wiki/PHPUnit</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://phpunit.de/">https://phpunit.de/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/sebastianbergmann/phpunit">https://github.com/sebastianbergmann/phpunit</a></div>
+<div class="line">Docs: <a class="reference external" href="https://phpunit.de/documentation.html">https://phpunit.de/documentation.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://phpunit.de/manual/current/en/phpunit-book.html">https://phpunit.de/manual/current/en/phpunit-book.html</a></div>
+</div>
+<ul class="simple">
+<li>PHPUnit cheat sheet
+<a class="reference external" href="https://gist.github.com/loonies/1255249">https://gist.github.com/loonies/1255249</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 841)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHP Packaging
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="php-packaging-1">
+<span id="php-packaging"></span><h2><a class="toc-backref" href="#toc-entry-74">PHP Packaging</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 847)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: PHAR
+</pre>
+</div>
+<div class="section" id="phar-1">
+<span id="phar"></span><h3><a class="toc-backref" href="#toc-entry-75">PHAR</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PHAR_(file_format)">https://en.wikipedia.org/wiki/PHAR_(file_format)</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/intro.phar.php">https://secure.php.net/manual/en/intro.phar.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/phar.creating.php">https://secure.php.net/manual/en/phar.creating.php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://secure.php.net/manual/en/book.phar.php">https://secure.php.net/manual/en/book.phar.php</a></div>
+</div>
+<p>PHAR (<em>PHP Archive</em>) is a packaging format for <a href="#system-message-39"><span class="problematic" id="problematic-39">:ref:`PHP`</span></a> programs.</p>
+<div class="system-message" id="system-message-39">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 857); <em><a href="#problematic-39">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<ul>
+<li><p class="first">Compression: <a href="#system-message-40"><span class="problematic" id="problematic-40">:ref:`Tar`</span></a>, <a href="#system-message-41"><span class="problematic" id="problematic-41">:ref:`Zip`</span></a>, or PHAR</p>
+<div class="system-message" id="system-message-40">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 859); <em><a href="#problematic-40">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-41">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 859); <em><a href="#problematic-41">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first">Layout: Stub, Manifest, File Contents</p>
+</li>
+<li><p class="first">Metadata: &quot;Meta-data can be any PHP variable that can be serialized.&quot;</p>
+</li>
+<li><p class="first"><a href="#system-message-42"><span class="problematic" id="problematic-42">:ref:`Composer`</span></a> and <a href="#system-message-43"><span class="problematic" id="problematic-43">:ref:`PHPUnit`</span></a> are distributed as PHARs (PHAR
+archives).</p>
+<div class="system-message" id="system-message-42">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 862); <em><a href="#problematic-42">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-43">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 862); <em><a href="#problematic-43">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 866)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Composer (PHP)
+</pre>
+</div>
+</div>
+<div class="section" id="composer-1">
+<span id="composer"></span><h3><a class="toc-backref" href="#toc-entry-76">Composer</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Composer_(software)">https://en.wikipedia.org/wiki/Composer_(software)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://getcomposer.org/">https://getcomposer.org/</a></div>
+<div class="line">Src: <a class="reference external" href="http://github.com/composer/composer">http://github.com/composer/composer</a></div>
+<div class="line">Download: <a class="reference external" href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://getcomposer.org/doc/">https://getcomposer.org/doc/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://getcomposer.org/doc/01-basic-usage.md">https://getcomposer.org/doc/01-basic-usage.md</a></div>
+</div>
+<p>Composer is a package manager for <a href="#system-message-44"><span class="problematic" id="problematic-44">:ref:`PHP`</span></a> programs.</p>
+<div class="system-message" id="system-message-44">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 878); <em><a href="#problematic-44">backlink</a></em></p>
+Unknown interpreted text role &quot;ref&quot;.</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 881)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Python
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="python-1">
+<span id="python"></span><h1><a class="toc-backref" href="#toc-entry-77">Python</a></h1>
+<p><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#web-frameworks">https://westurner.github.io/wiki/awesome-python-testing#web-frameworks</a></p>
+<div class="section" id="python-frameworks">
+<h2><a class="toc-backref" href="#toc-entry-78">Python Frameworks</a></h2>
+<div class="section" id="plone">
+<h3><a class="toc-backref" href="#toc-entry-79">Plone</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plone_(software)">https://en.wikipedia.org/wiki/Plone_(software)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://plone.org/">https://plone.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/plone/plone">https://github.com/plone/plone</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Plone">https://pypi.python.org/pypi/Plone</a></div>
+<div class="line">Docs: <a class="reference external" href="https://plone.org/documentation">https://plone.org/documentation</a></div>
+<div class="line">Docs: <a class="reference external" href="http://developer.plone.org/">http://developer.plone.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.plone.org/manage/installing/installation.html">http://docs.plone.org/manage/installing/installation.html</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://developer.plone.org/testing_and_debugging/">http://developer.plone.org/testing_and_debugging/</a></li>
+</ul>
+</div>
+<div class="section" id="django">
+<h3><a class="toc-backref" href="#toc-entry-80">Django</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Django_(web_framework)">https://en.wikipedia.org/wiki/Django_(web_framework)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/django/django">https://github.com/django/django</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/django">https://pypi.python.org/pypi/django</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/">https://docs.djangoproject.com/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/testing/">https://docs.djangoproject.com/en/dev/topics/testing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://docs.djangoproject.com/en/dev/topics/settings/">https://docs.djangoproject.com/en/dev/topics/settings/</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/rosarior/awesome-django">https://github.com/rosarior/awesome-django</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/django-debug-toolbar/django-debug-toolbar">https://github.com/django-debug-toolbar/django-debug-toolbar</a></li>
+<li><a class="reference external" href="https://www.djangopackages.com/">https://www.djangopackages.com/</a><ul>
+<li><a class="reference external" href="https://www.djangopackages.com/grids/g/cms/">https://www.djangopackages.com/grids/g/cms/</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="flask">
+<h3><a class="toc-backref" href="#toc-entry-81">Flask</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Flask_(web_framework)">https://en.wikipedia.org/wiki/Flask_(web_framework)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://flask.pocoo.org/">https://flask.pocoo.org/</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/mitsuhiko/flask">https://github.com/mitsuhiko/flask</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Flask">https://pypi.python.org/pypi/Flask</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.readthedocs.org/en/latest/config/">https://flask.readthedocs.org/en/latest/config/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.pocoo.org/docs/latest/">https://flask.pocoo.org/docs/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://flask.pocoo.org/docs/latest/testing/">https://flask.pocoo.org/docs/latest/testing/</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/humiaozuzu/awesome-flask">https://github.com/humiaozuzu/awesome-flask</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://flask-debugtoolbar.readthedocs.org/en/latest/">https://flask-debugtoolbar.readthedocs.org/en/latest/</a></li>
+</ul>
+</div>
+<div class="section" id="bottle">
+<h3><a class="toc-backref" href="#toc-entry-82">Bottle</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://bottlepy.org">http://bottlepy.org</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/bottlepy/bottle">https://github.com/bottlepy/bottle</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/bottle">https://pypi.python.org/pypi/bottle</a></div>
+<div class="line">Docs: <a class="reference external" href="http://bottlepy.org/docs/dev/">http://bottlepy.org/docs/dev/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications">http://bottlepy.org/docs/dev/recipes.html#functional-testing-bottle-applications</a></div>
+</div>
+<p>Bottle is a one file WSGI Python web framework.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://bottlepy.org/docs/dev/plugins/">http://bottlepy.org/docs/dev/plugins/</a></li>
+</ul>
+<p>pgs is written with bottle.py:</p>
+<ul>
+<li><div class="first line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/westurner/pgs">https://github.com/westurner/pgs</a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="pyramid">
+<h3><a class="toc-backref" href="#toc-entry-83">Pyramid</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pylons_project#Pyramid">https://en.wikipedia.org/wiki/Pylons_project#Pyramid</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.pylonsproject.org/projects/pyramid/about">http://www.pylonsproject.org/projects/pyramid/about</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/pyramid">https://github.com/Pylons/pyramid</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pyramid">https://pypi.python.org/pypi/pyramid</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/">http://docs.pylonsproject.org/projects/pyramid/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html</a></div>
+<div class="line">Docs:  <a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html">http://docs.pylonsproject.org/projects/pyramid/en/latest/api/testing.html</a></div>
+<div class="line">Awesome: <a class="reference external" href="https://github.com/ITCase/awesome-pyramid">https://github.com/ITCase/awesome-pyramid</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/">http://docs.pylonsproject.org/projects/pyramid_debugtoolbar/en/latest/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="python-testing">
+<h2><a class="toc-backref" href="#toc-entry-84">Python Testing</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_application">https://en.wikipedia.org/wiki/Web_application</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7">http://www.reddit.com/r/Python/comments/1qnbq3/webscraping_selenium_vs_conventional_tools/cdeq2t7</a></li>
+</ul>
+<div class="section" id="webtest">
+<h3><a class="toc-backref" href="#toc-entry-85">WebTest</a></h3>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/Pylons/webtest">https://github.com/Pylons/webtest</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/WebTest">https://pypi.python.org/pypi/WebTest</a></div>
+<div class="line">Docs: <a class="reference external" href="http://webtest.pythonpaste.org/en/latest/">http://webtest.pythonpaste.org/en/latest/</a></div>
+</div>
+<p>WebTest is a tool for testing WSGI applications
+without running a webserver
+(e.g. <a class="reference internal" href="#pyramid">Pyramid</a>, <a class="reference internal" href="#flask">Flask</a>, <a class="reference internal" href="#django">Django</a>, <a class="reference internal" href="#bottle">Bottle</a>)</p>
+</div>
+<div class="section" id="splinter">
+<h3><a class="toc-backref" href="#toc-entry-86">Splinter</a></h3>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/cobrateam/splinter">https://github.com/cobrateam/splinter</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/splinter">https://pypi.python.org/pypi/splinter</a></div>
+<div class="line">Docs: <a class="reference external" href="https://splinter.readthedocs.org/en/latest/">https://splinter.readthedocs.org/en/latest/</a></div>
+</div>
+<blockquote class="epigraph">
+<ul class="simple">
+<li>multi webdrivers (chrome webdriver, firefox webdriver, phantomjs webdriver,
+zopetestbrowser, remote webdriver)</li>
+<li>css and xpath selectors *</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="ghost-py">
+<h3><a class="toc-backref" href="#toc-entry-87">ghost.py</a></h3>
+<div class="line-block">
+<div class="line">Src: git <a class="reference external" href="https://github.com/jeanphix/Ghost.py">https://github.com/jeanphix/Ghost.py</a></div>
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/Ghost.py">https://pypi.python.org/pypi/Ghost.py</a></div>
+<div class="line">Docs: <a class="reference external" href="http://ghost-py.readthedocs.org/en/latest/">http://ghost-py.readthedocs.org/en/latest/</a></div>
+</div>
+<blockquote class="epigraph">
+Webkit based scriptable web browser for python.</blockquote>
+<ul class="simple">
+<li>PyQT or PySide</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1009)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ruby-1">
+<span id="ruby"></span><h1><a class="toc-backref" href="#toc-entry-88">Ruby</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">https://en.wikipedia.org/wiki/Ruby_(programming_language)</a></div>
+<div class="line">LearnXinYminutes: <a class="reference external" href="https://learnxinyminutes.com/docs/ruby/">https://learnxinyminutes.com/docs/ruby/</a></div>
+<div class="line"><a class="reference external" href="https://westurner.github.io/tools/#ruby">https://westurner.github.io/tools/#ruby</a></div>
+</div>
+<ul class="simple">
+<li>irb: interactive ruby shell</li>
+<li>rdoc</li>
+<li>erb:</li>
+<li>capistrano</li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/</a></li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/</a></li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/</a></li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-perl/</a></li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-php/</a></li>
+<li><a class="reference external" href="https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/">https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-python/</a></li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1034)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby Devtools
+</pre>
+</div>
+<div class="section" id="ruby-devtools-1">
+<span id="ruby-devtools"></span><h2><a class="toc-backref" href="#toc-entry-89">Ruby Devtools</a></h2>
+<div class="section" id="rake">
+<h3><a class="toc-backref" href="#toc-entry-90">rake</a></h3>
+<ul>
+<li><p class="first">rake: <a href="#system-message-45"><span class="problematic" id="problematic-45">:ref:`Make`</span></a> for Ruby</p>
+<div class="system-message" id="system-message-45">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1043); <em><a href="#problematic-45">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1046)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby Frameworks
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="ruby-frameworks-1">
+<span id="ruby-frameworks"></span><h2><a class="toc-backref" href="#toc-entry-91">Ruby Frameworks</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1053)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Rack (Ruby)
+</pre>
+</div>
+<div class="section" id="rack-1">
+<span id="rack"></span><h3><a class="toc-backref" href="#toc-entry-92">Rack</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Rack_(web_server_interface)">https://en.wikipedia.org/wiki/Rack_(web_server_interface)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://rack.github.io/">https://rack.github.io/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/rack/rack">https://github.com/rack/rack</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.rubydoc.info/github/rack/rack/master/file/README.rdoc">http://www.rubydoc.info/github/rack/rack/master/file/README.rdoc</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.rubydoc.info/github/rack/rack/master/file/SPEC">http://www.rubydoc.info/github/rack/rack/master/file/SPEC</a></div>
+</div>
+<ul>
+<li><p class="first">Rack is a <a href="#system-message-46"><span class="problematic" id="problematic-46">:ref:`Ruby`</span></a> middleware API spec for a &quot;Rack application&quot;
+which receives a Request Environment and returns a Response.</p>
+<div class="system-message" id="system-message-46">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1064); <em><a href="#problematic-46">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first">Rack is similar in form and function to
+and partially derived from <a href="#system-message-47"><span class="problematic" id="problematic-47">:ref:`WSGI.`</span></a></p>
+<div class="system-message" id="system-message-47">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1066); <em><a href="#problematic-47">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+<li><p class="first"><a href="#system-message-48"><span class="problematic" id="problematic-48">:ref:`Rails`</span></a> and <a href="#system-message-49"><span class="problematic" id="problematic-49">:ref:`Sinatra`</span></a> are Rack applications</p>
+<div class="system-message" id="system-message-48">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1068); <em><a href="#problematic-48">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-49">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1068); <em><a href="#problematic-49">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1071)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Rails
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1072)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby on Rails
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1073)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: RoR
+</pre>
+</div>
+</div>
+<div class="section" id="ruby-on-rails-1">
+<span id="ruby-on-rails"></span><h3><a class="toc-backref" href="#toc-entry-93">Ruby on Rails</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ruby_on_Rails">https://en.wikipedia.org/wiki/Ruby_on_Rails</a></div>
+</div>
+<ul>
+<li><p class="first">ActionController</p>
+</li>
+<li><p class="first">acts_as_authenticated</p>
+</li>
+<li><p class="first">_partials</p>
+</li>
+<li><p class="first"><a href="#system-message-50"><span class="problematic" id="problematic-50">:ref:`jQuery`</span></a>, <a href="#system-message-51"><span class="problematic" id="problematic-51">:ref:`CoffeeScript`</span></a>, <a href="#system-message-52"><span class="problematic" id="problematic-52">:ref:`Sass`</span></a></p>
+<div class="system-message" id="system-message-50">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1084); <em><a href="#problematic-50">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-51">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1084); <em><a href="#problematic-51">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+<div class="system-message" id="system-message-52">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1084); <em><a href="#problematic-52">backlink</a></em></p>
+<p>Unknown interpreted text role &quot;ref&quot;.</p>
+</div>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1087)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: React on Rails
+</pre>
+</div>
+<div class="section" id="react-on-rails-1">
+<span id="react-on-rails"></span><h4><a class="toc-backref" href="#toc-entry-94">React on Rails</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/shakacode/react_on_rails">https://github.com/shakacode/react_on_rails</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1097)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: CoC
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1098)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Convention over Configuration
+</pre>
+</div>
+</div>
+<div class="section" id="convention-over-configuration-1">
+<span id="convention-over-configuration"></span><h4><a class="toc-backref" href="#toc-entry-95">Convention over Configuration</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Convention_over_configuration">https://en.wikipedia.org/wiki/Convention_over_configuration</a></div>
+</div>
+<ul class="simple">
+<li>CoC: Convention over Configuration<ul>
+<li>File naming defaults,</li>
+</ul>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1112)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: DRY
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1113)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Don't Repeat Yourself
+</pre>
+</div>
+</div>
+<div class="section" id="don-t-repeat-yourself">
+<span id="dry"></span><h4><a class="toc-backref" href="#toc-entry-96">Don't Repeat Yourself</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">https://en.wikipedia.org/wiki/Don%27t_repeat_yourself</a></div>
+</div>
+<ul class="simple">
+<li>DRY: Don't Repeat Yourself<ul>
+<li>Models have many attributes and representations</li>
+</ul>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1125)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Active Record (Pattern)
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1126)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Pattern: Active Record
+</pre>
+</div>
+</div>
+<div class="section" id="active-record">
+<span id="activerecord"></span><h4><a class="toc-backref" href="#toc-entry-97">Active Record</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Active_record_pattern">https://en.wikipedia.org/wiki/Active_record_pattern</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1135)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Sinatra (Ruby)
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="sinatra-1">
+<span id="sinatra"></span><h3><a class="toc-backref" href="#toc-entry-98">Sinatra</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a href="#system-message-53"><span class="problematic" id="problematic-53">`</span></a>&lt;<a class="reference external" href="https://en.wikipedia.org/wiki/Sinatra_(software)">https://en.wikipedia.org/wiki/Sinatra_(software)</a>&gt;`__|</div>
+<div class="line">Homepage: <a class="reference external" href="http://www.sinatrarb.com/">http://www.sinatrarb.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/sinatra/sinatra">https://github.com/sinatra/sinatra</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.sinatrarb.com/documentation.html">http://www.sinatrarb.com/documentation.html</a></div>
+<div class="line">Changelog: <a class="reference external" href="https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md">https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md</a></div>
+</div>
+<div class="system-message" id="system-message-53">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">./webframeworks.rest</tt>, line 1140); <em><a href="#problematic-53">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1147)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby Servers
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="ruby-servers-1">
+<span id="ruby-servers"></span><h2><a class="toc-backref" href="#toc-entry-99">Ruby Servers</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1154)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Mongrel
+</pre>
+</div>
+<div class="section" id="mongrel-1">
+<span id="mongrel"></span><h3><a class="toc-backref" href="#toc-entry-100">Mongrel</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mongrel/mongrel">https://github.com/mongrel/mongrel</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mongrel_(web_server)">https://en.wikipedia.org/wiki/Mongrel_(web_server)</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1163)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Phusion Passenger
+</pre>
+</div>
+</div>
+<div class="section" id="phusion-passenger-1">
+<span id="phusion-passenger"></span><h3><a class="toc-backref" href="#toc-entry-101">Phusion Passenger</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Phusion_Passenger">https://en.wikipedia.org/wiki/Phusion_Passenger</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.phusionpassenger.com/">https://www.phusionpassenger.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/phusion/passenger/">https://github.com/phusion/passenger/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/phusion/passenger-docker">https://github.com/phusion/passenger-docker</a></div>
+<div class="line">DockerHub: <a class="reference external" href="https://hub.docker.com/r/phusion/baseimage/">https://hub.docker.com/r/phusion/baseimage/</a></div>
+<div class="line">DockerHub: <a class="reference external" href="https://hub.docker.com/r/phusion/passenger-full/">https://hub.docker.com/r/phusion/passenger-full/</a></div>
+<div class="line">DockerHub: <a class="reference external" href="https://hub.docker.com/r/phusion/passenger-ruby23/">https://hub.docker.com/r/phusion/passenger-ruby23/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/">https://www.phusionpassenger.com/library/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/#guides">https://www.phusionpassenger.com/library/#guides</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/reference/">https://www.phusionpassenger.com/library/config/reference/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/nginx/">https://www.phusionpassenger.com/library/config/nginx/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/nginx/reference/">https://www.phusionpassenger.com/library/config/nginx/reference/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/apache/">https://www.phusionpassenger.com/library/config/apache/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/apache/reference/">https://www.phusionpassenger.com/library/config/apache/reference/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/standalone/">https://www.phusionpassenger.com/library/config/standalone/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/standalone/reference/">https://www.phusionpassenger.com/library/config/standalone/reference/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.phusionpassenger.com/library/config/standalone/optimization/">https://www.phusionpassenger.com/library/config/standalone/optimization/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/phusion_nl">https://twitter.com/phusion_nl</a></div>
+</div>
+<ul>
+<li><p class="first">Phusion Passenger is a web server</p>
+</li>
+<li><p class="first">Nginx, Apache, Standalone</p>
+</li>
+<li><p class="first">Serve apps written in Ruby, Python, Node.js</p>
+</li>
+<li><p class="first">Development mode restart:</p>
+<pre class="code bash literal-block">
+<span class="comment single">#TODO  touch .RESTART_FILENAME</span>
+</pre>
+</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1197)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Thin (Ruby)
+</pre>
+</div>
+</div>
+<div class="section" id="thin-1">
+<span id="thin"></span><h3><a class="toc-backref" href="#toc-entry-102">Thin</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://code.macournoyer.com/thin/">http://code.macournoyer.com/thin/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/macournoyer/thin">https://github.com/macournoyer/thin</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1206)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: WEBrick
+</pre>
+</div>
+</div>
+<div class="section" id="webrick-1">
+<span id="webrick"></span><h3><a class="toc-backref" href="#toc-entry-103">WEBrick</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WEBrick">https://en.wikipedia.org/wiki/WEBrick</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/ruby/ruby/tree/trunk/lib/webrick">https://github.com/ruby/ruby/tree/trunk/lib/webrick</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/ruby/ruby/tree/trunk/lib/webrick.rb">https://github.com/ruby/ruby/tree/trunk/lib/webrick.rb</a></div>
+<div class="line">Docs: <a class="reference external" href="https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick.html">https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick/HTTPServer.html">https://ruby-doc.org/stdlib-2.4.0/libdoc/webrick/rdoc/WEBrick/HTTPServer.html</a></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1219)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby Applications
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="ruby-applications-1">
+<span id="ruby-applications"></span><h2><a class="toc-backref" href="#toc-entry-104">Ruby Applications</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1225)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Project Hydra
+</pre>
+</div>
+<div class="section" id="project-hydra-1">
+<span id="project-hydra"></span><h3><a class="toc-backref" href="#toc-entry-105">Project Hydra</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://projecthydra.org/">https://projecthydra.org/</a></div>
+<div class="line">Src:</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">./webframeworks.rest</tt>, line 1234)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Ruby Testing
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="ruby-testing-1">
+<span id="ruby-testing"></span><h2><a class="toc-backref" href="#toc-entry-106">Ruby Testing</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.ruby-toolbox.com/categories/testing_frameworks#bacon">https://www.ruby-toolbox.com/categories/testing_frameworks#bacon</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="web-testing">
+<h1><a class="toc-backref" href="#toc-entry-107">Web Testing</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://westurner.github.io/wiki/awesome-python-testing#web-frameworks">https://westurner.github.io/wiki/awesome-python-testing#web-frameworks</a></li>
+</ul>
+<div class="section" id="browsers">
+<h2><a class="toc-backref" href="#toc-entry-108">Browsers</a></h2>
+<ul>
+<li><div class="first line-block">
+<div class="line"><strong>Headless Browsers</strong></div>
+<div class="line">A list of (almost) all headless web browsers in existence</div>
+</div>
+<p><a class="reference external" href="https://github.com/dhamaniasad/HeadlessBrowsers">https://github.com/dhamaniasad/HeadlessBrowsers</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/substack/browser-launcher">https://github.com/substack/browser-launcher</a></li>
+<li><a class="reference external" href="https://github.com/nodeca/navit">https://github.com/nodeca/navit</a><ul>
+<li>&quot;All methods are chainable&quot; (Helpful instead of
+<tt class="docutils literal">async</tt>/<tt class="docutils literal">await</tt>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="selenium">
+<h2><a class="toc-backref" href="#toc-entry-109">Selenium</a></h2>
+<div class="line-block">
+<div class="line">Docs: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Selenium+Plugin</a></li>
+<li><a class="reference external" href="http://www.seleniumhq.org/projects/ide/">http://www.seleniumhq.org/projects/ide/</a></li>
+</ul>
+</div>
+<div class="section" id="webdriver">
+<h2><a class="toc-backref" href="#toc-entry-110">WebDriver</a></h2>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://www.seleniumhq.org/projects/webdriver/">http://www.seleniumhq.org/projects/webdriver/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.seleniumhq.org/projects/webdriver/">http://www.seleniumhq.org/projects/webdriver/</a></div>
+<div class="line">Spec: <a class="reference external" href="https://www.w3.org/TR/webdriver/">https://www.w3.org/TR/webdriver/</a></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
